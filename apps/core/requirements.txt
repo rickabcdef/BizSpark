@@ -1,0 +1,3 @@
+# 仅构建期依赖
+reportlab
+pyinstaller
