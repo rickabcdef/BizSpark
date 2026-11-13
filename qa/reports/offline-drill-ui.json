@@ -13,12 +13,12 @@
     {
       "step": "detail",
       "ok": true,
-      "ideaId": "bs-svc-mobile-car-wash-053"
+      "ideaId": "bs-svc-errand-runner-063"
     },
     {
       "step": "export",
       "ok": true,
-      "pdf": "BizSpark-Plan-bs-svc-mobile-car-wash-053.pdf"
+      "pdf": "BizSpark-Plan-bs-svc-errand-runner-063.pdf"
     },
     {
       "step": "saved",
@@ -29,10 +29,7 @@
   "consoleErrors": [],
   "externalRequests": [],
   "socketBlocked": 0,
-  "exportPdf": "BizSpark-Plan-bs-svc-mobile-car-wash-053.pdf",
+  "exportPdf": "BizSpark-Plan-bs-svc-errand-runner-063.pdf",
   "status": "PASS",
-  "defects": [
-    "B-09 候选（新发现）：Detail.vue 跳 /export 未携带 ideaId，Export.vue 的 history.state?.ideaId 为空 → 完成页不出文件行（导出静默失败）"
-  ],
   "failed4xx": []
 }

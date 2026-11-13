@@ -71,7 +71,8 @@ onMounted(async () => {
           <div class="eyebrow">{{ t("detail.paper_eyebrow") }}</div>
           <PaperPreview :title="d.title || ''" />
           <div class="tiny paper-note">{{ t("detail.paper_note") }}</div>
-          <button class="btn btn-primary w100" type="button" @click="router.push('/export')">{{ t("detail.cta_export") }}&nbsp;↓</button>
+          <button class="btn btn-primary w100" type="button"
+            @click="router.push({ path: '/export', state: { ideaId: String(d?.id || route.params.id || '') } })">{{ t("detail.cta_export") }}&nbsp;↓</button>
           <button class="btn btn-ghost w100 mt10" type="button" @click="router.push('/results')">← {{ t("detail.cta_back") }}</button>
         </div>
         <div class="foot-note">🔒 {{ t("detail.privacy") }}</div>

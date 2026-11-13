@@ -1,17 +1,17 @@
 {
-  "rounds": 10,
+  "rounds": 12,
   "metrics": {
-    "cold_start_ms": 1253.3,
+    "cold_start_ms": 1397.7,
     "diagnose_ms": {
-      "p50": 36.6,
-      "p95": 37.9,
-      "max": 38.8
+      "p50": 39.5,
+      "p95": 44.0,
+      "max": 47.7
     },
     "export_ms": {
-      "p50": 50.6,
-      "max": 55.3
+      "p50": 62.6,
+      "max": 78.3
     },
-    "rss_mb": 35.7,
+    "rss_mb": 36.2,
     "bundle_mb": {
       "web_dist": 0.2,
       "core_py_and_data": 1.3,

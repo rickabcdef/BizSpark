@@ -9,7 +9,7 @@
 import { computed, onMounted, ref } from "vue";
 import { useRouter } from "vue-router";
 import { t } from "../i18n";
-import { diagnose, saveIdea } from "../bridge/cmd";
+import { diagnose, getState, saveIdea } from "../bridge/cmd";
 import AppShell from "../components/AppShell.vue";
 import IdeaCard from "../components/IdeaCard.vue";
 
@@ -29,23 +29,34 @@ const CAP_LABEL: Record<string, string> = {
 };
 const HOURS_LABEL: Record<string, string> = { "<10": "results.ans_h1", "10-25": "results.ans_h2", full: "results.ans_h3" };
 
+// 国家码 → 英文全名（T-20 复述句要求国家全名展示；枚举与 engine/quiz.py COUNTRIES 一致）
+const COUNTRY_NAME: Record<string, string> = {
+  US: "United States", CA: "Canada", UK: "United Kingdom", AU: "Australia", SG: "Singapore", PH: "Philippines",
+};
+
 const recap = computed(() => {
   const a = answers.value;
   const cap = CAP_LABEL[String(a.capital)] ? t(CAP_LABEL[String(a.capital)]) : "";
   const hrs = HOURS_LABEL[String(a.hours)] ? t(HOURS_LABEL[String(a.hours)]) : "";
-  const country = String(a.country || "US");
+  const code = String(a.country || "US");
+  const country = COUNTRY_NAME[code] || code;
   return t("results.recap", { capital: cap, hours: hrs, country });
 });
 
 onMounted(async () => {
-  const r = await diagnose({});
+  // D-01 修复（PM）：答案复述句数据源取 get_state.last_answers（Quiz 每题已 saveAnswers 落库），
+  // 并用真实答案重放 diagnose——空 payload 会被引擎归一成默认值，导致复述句与推荐都不对
+  try {
+    const st = await getState();
+    const la = (st && (st.last_answers as Record<string, string | string[]>)) || null;
+    if (la && Object.keys(la).length) answers.value = la;
+  } catch { /* 状态读不到时保持空 answers（recap 退化为默认国家句） */ }
+  const r = await diagnose(answers.value);
   if (r) {
     ideas.value = (r.ideas as Idea[]) || [];
     checked.value = r.checked ?? null;
     filtered.value = r.filtered ?? null;
   }
-  // 答案复述句数据源：get_state.last_answers（diagnose 静默失败时也可用缓存拼句）
-  void answers;
 });
 
 async function saveAll(): Promise<void> {

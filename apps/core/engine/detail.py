@@ -20,6 +20,53 @@ DEFAULT_FX = {"USD": 1.0, "CAD": 0.74, "GBP": 0.79, "AUD": 0.66, "SGD": 0.75, "P
 
 OVERRIDE_FIELDS = ("currency", "first_customers", "compliance_note")
 
+# D-02/D-03 修复（PM）：T-32 兜底——get_idea 页面数据与 E 渲染层同口径
+# （兜底句/上限与 render/detail.py 保持一致，详情页与 PDF 文案统一）
+MAX_TEXT = 220
+MAX_LINE = 120
+FALLBACK_PITFALL = "Double-check local rules and your numbers before you spend money."
+FALLBACK_STEP = "Review what you have set up so far, then take the next small step."
+FALLBACK_CHANNEL = "Ask people in your area directly."
+
+
+def _s(text, fallback=""):
+    if isinstance(text, str):
+        cleaned = text.strip()
+        if cleaned and cleaned.lower() not in ("undefined", "null", "none"):
+            return cleaned
+    return fallback
+
+
+def _clip(text, limit):
+    text = _s(text)
+    if len(text) <= limit:
+        return text
+    return text[: limit - 1].rstrip() + "…"
+
+
+def _as_list(value):
+    return value if isinstance(value, list) else []
+
+
+def _t32_sanitize(detail):
+    """T-32 运行期兜底：恰好 7 steps / 3 pitfalls、超长截断、绝不出现空值。返回新 dict。"""
+    d = dict(detail)
+    d["title"] = _clip(d.get("title"), MAX_LINE)
+    d["one_liner"] = _clip(d.get("one_liner"), MAX_TEXT)
+    d["summary"] = d["one_liner"]  # 别名同步截断（D-03）
+    steps = [_clip(s, MAX_TEXT) for s in _as_list(d.get("steps")) if _s(s)]
+    while len(steps) < 7:
+        steps.append(FALLBACK_STEP)
+    d["steps"] = steps[:7]
+    pitfalls = [_clip(p, MAX_TEXT) for p in _as_list(d.get("pitfalls")) if _s(p)]
+    while len(pitfalls) < 3:
+        pitfalls.append(FALLBACK_PITFALL)
+    d["pitfalls"] = pitfalls[:3]
+    channels = [_clip(c, MAX_LINE) for c in _as_list(d.get("first_customers")) if _s(c)]
+    d["first_customers"] = channels or [FALLBACK_CHANNEL]
+    d["channels"] = d["first_customers"]  # 别名同步兜底
+    return d
+
 
 def _load_fx():
     try:
@@ -84,4 +131,4 @@ def assemble(idea, country=None):
     # B 兼容别名：channels（Detail.vue 渠道卡消费），契约字段仍是 first_customers
     detail["channels"] = detail.get("first_customers") or []
     detail["summary"] = detail.get("one_liner")
-    return detail
+    return _t32_sanitize(detail)

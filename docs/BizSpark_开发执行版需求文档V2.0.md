@@ -1565,6 +1565,14 @@ A **不解析业务字段**，F **不发网络请求**，职责不越界。
 | `E_DELTA_INVALID` | delta 校验失败 | true | 否（回滚） |
 | `E_MANIFEST_FAIL` | manifest 拉取/解析失败 | true | 否（静默跳过） |
 | `E_UNKNOWN_CMD` | 未知 cmd | true | 否 |
+| `E_INTERNAL` | sidecar 内部异常（已捕获，进程不崩） | true | 否（静默记录） |
+| `E_IDEA_NOT_FOUND` | 请求的 id 不在当前库 | true | 否（前端回退列表） |
+| `E_EXPORT_CANCELLED` | 用户取消另存为对话框 | true | 否（无提示，符合预期） |
+| `E_CSV_WRITE` | CSV 写盘失败（磁盘满等） | true | **是**：`Choose another folder` |
+| `E_PDF_WRITE` | PDF 写盘失败（磁盘满等） | true | **是**：`Choose another folder` |
+| `E_LIBRARY_WRITE` | 工作库写盘失败（已回滚） | true | 否（下次操作重试） |
+
+> D-09 契约修订（PM，2026-11-13）：以上 6 码为运行期实际在用码，正式收编；目录不可写（权限类）统一归 `E_FS_READONLY`，`E_PDF_WRITE`/`E_CSV_WRITE` 仅指磁盘满等其他写失败。
 
 ---
 

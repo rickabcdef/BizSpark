@@ -9,5 +9,6 @@ import vue from "@vitejs/plugin-vue";
 export default defineConfig({
   plugins: [vue()],
   base: "./",
+  envPrefix: ["VITE_", "BIZSPARK_"],
   build: { target: "chrome110", outDir: "dist" },
 });

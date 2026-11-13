@@ -176,7 +176,8 @@ class TestPdfExport(unittest.TestCase):
         data, err = export_plan({"id": self.detail["id"],
                                  "path": "Q:\\no\\such\\dir\\plan.pdf"})
         self.assertIsNone(data)
-        self.assertEqual(err["code"], "E_PDF_WRITE")
+        # D-08 契约修订（PM，2026-11-13）：不可写目录归附录 D 正名码 E_FS_READONLY
+        self.assertEqual(err["code"], "E_FS_READONLY")
         self.assertIn("Choose another folder", err["message"])
 
     def test_e09_long_content_single_page(self):

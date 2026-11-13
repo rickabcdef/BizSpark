@@ -6,6 +6,10 @@
  */
 import { createRouter, createWebHashHistory, type RouteRecordRaw } from "vue-router";
 
+// D-07 修复（PM）：Store 构建编译期裁掉 /activate（build:store 传 BIZSPARK_BUILD=store），
+// 常规 en/cn 构建不受影响
+export const STORE_BUILD = import.meta.env.BIZSPARK_BUILD === "store";
+
 const routes: RouteRecordRaw[] = [
   { path: "/", name: "welcome", component: () => import("./views/Welcome.vue") },
   { path: "/quiz", name: "quiz", component: () => import("./views/Quiz.vue") },
@@ -15,7 +19,9 @@ const routes: RouteRecordRaw[] = [
   { path: "/export", name: "export", component: () => import("./views/Export.vue") },
   { path: "/saved", name: "saved", component: () => import("./views/Saved.vue") },
   { path: "/library", name: "library", component: () => import("./views/Library.vue") },
-  { path: "/activate", name: "activate", component: () => import("./views/Activate.vue") },
+  ...(STORE_BUILD
+    ? []
+    : [{ path: "/activate", name: "activate", component: () => import("./views/Activate.vue") }]),
   { path: "/settings", name: "settings", component: () => import("./views/Settings.vue") },
   { path: "/:pathMatch(.*)*", redirect: "/" },
 ];

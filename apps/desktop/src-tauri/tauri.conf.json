@@ -23,7 +23,8 @@
       }
     ],
     "security": {
-      "csp": null
+      "_csp_comment": "G 审遗留修复（PM，2026-11-13）：严格 CSP——零出网应用禁外源；Tauri v2 的 IPC 由 ipc:/http://ipc.localhost 承载；style 允许内联（Vue 动态样式），脚本只允许自身（Tauri 自动注入 nonce/hash）",
+      "csp": "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self' data:; connect-src ipc: http://ipc.localhost; object-src 'none'; base-uri 'self'; form-action 'none'"
     }
   },
   "bundle": {

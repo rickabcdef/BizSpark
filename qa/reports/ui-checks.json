@@ -1,17 +1,14 @@
 {
   "total": 16,
-  "passed": 14,
-  "failed": [
-    "T-20",
-    "T-37"
-  ],
+  "passed": 16,
+  "failed": [],
   "results": [
     {
       "id": "T-01",
       "ok": true,
-      "detail": "首屏 256ms（红线 1500）· 溢出 0px · 主 CTA 1 个 · 外网请求 0",
+      "detail": "首屏 234ms（红线 1500）· 溢出 0px · 主 CTA 1 个 · 外网请求 0",
       "metrics": {
-        "ms": 256,
+        "ms": 234,
         "scroll": 0,
         "primaries": 1
       }
@@ -33,9 +30,9 @@
     {
       "id": "T-05",
       "ok": true,
-      "detail": "自动进题 362ms（0.35s 设计值）· Next 按钮 0 个",
+      "detail": "自动进题 357ms（0.35s 设计值）· Next 按钮 0 个",
       "metrics": {
-        "ms": 362
+        "ms": 357
       }
     },
     {
@@ -78,8 +75,8 @@
     },
     {
       "id": "T-20",
-      "ok": false,
-      "detail": "复述句「Based on , , and US. Nothing was sent anywhere.」· 缺 [\"$500–$2,000\",\"under 10 hours a week\",\"United States\"]",
+      "ok": true,
+      "detail": "复述句「Based on $500–$2,000, under 10 hours a week, and United States. Nothing was sent anywhere.」· 缺 []",
       "metrics": {}
     },
     {
@@ -102,12 +99,11 @@
     },
     {
       "id": "T-37",
-      "ok": false,
-      "detail": "对比三项：[\"title\",\"Startup cost\",\"Hours per week\",\"Payback\"]（多出的项：[\"title\"]）· 禁词 []",
+      "ok": true,
+      "detail": "对比三项：[\"Startup cost\",\"Hours per week\",\"Payback\"]（多出的项：[]）· 禁词 []",
       "metrics": {
-        "rows": 8,
+        "rows": 6,
         "keys": [
-          "title",
           "Startup cost",
           "Hours per week",
           "Payback"

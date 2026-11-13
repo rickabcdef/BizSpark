@@ -5,6 +5,10 @@
 #   位于 content/ 与 ui/ 的页面示例数据中，不受门禁约束。
 # 扫描范围：apps/（代码/HTML/CSS/JS/locales）、config/、scripts/、qa/、根级 md
 # 排除：content/（商机内容）、docs/（需求文档，含内容金额示例）、ui/（UI 交付源稿）
+# 白名单（PM 2026-11-13 与 H 的 T-59 双口径对齐，均为"内容数据/QA 证据"，非商品售价）：
+#   apps/core/data/、apps/core/tests/、apps/core/engine/quiz.py —— 商机库/资金档标签等内容数据
+#   apps/web/src/locales/ —— 问卷资金档与结果文案（档位区间标签，非商品售价）
+#   qa/reports/、qa/cases/、qa/content-review.md —— H 的 QA 证据与用例登记（含验证截图/故意渲染价）
 # 退出码：0=通过（零命中），1=存在商品售价硬编码
 set -euo pipefail
 
@@ -38,6 +42,10 @@ done < <(find "$ROOT/apps" "$ROOT/config" "$ROOT/scripts" "$ROOT/qa" \
                         -o -name "*.vue" -o -name "*.json" -o -name "*.py" -o -name "*.rs" \
                         -o -name "*.md" -o -name "*.sh" -o -name "*.toml" \) \
              ! -path "*/node_modules/*" ! -path "*/target/*" ! -path "*/dist/*" \
+             ! -path "*/apps/core/data/*" ! -path "*/apps/core/tests/*" \
+             ! -path "*/apps/core/engine/quiz.py" ! -path "*/apps/web/src/locales/*" \
+             ! -path "*/qa/reports/*" ! -path "*/qa/cases/*" \
+             ! -path "*/qa/content-review.md" ! -path "*/qa/store-assets/*" \
          2>/dev/null; \
          find "$ROOT" -maxdepth 1 -name "*.md" -type f 2>/dev/null)
 

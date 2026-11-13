@@ -10,12 +10,16 @@ echo "[sidecar] 1/2 安装构建期依赖（仅 reportlab + pyinstaller，见 re
 python3 -m pip install -r requirements.txt --quiet
 
 echo "[sidecar] 2/2 PyInstaller 单文件打包"
+# G 审遗留修复（PM，2026-11-13）：显式排除开发/签发工具与测试目录，确保不随包分发
 python3 -m PyInstaller \
     --onefile \
     --name bizspark-core \
     --distpath ../desktop/src-tauri/binaries \
     --exclude-module tkinter \
     --exclude-module unittest \
+    --exclude-module tools \
+    --exclude-module tests \
+    --exclude-module license.tools \
     main.py
 
 echo "[sidecar] 完成: apps/desktop/src-tauri/binaries/bizspark-core"

@@ -182,10 +182,11 @@ def export_plan(payload):
         # T-33：最终写盘仍全程本地
         os.replace(tmp, path)
     except PermissionError:
-        return None, {"code": "E_PDF_WRITE", "message": "Choose another folder",
+        # D-08 修复（PM）：目录不可写回附录 D 正名码 E_FS_READONLY（文案不变，仍引导换文件夹）
+        return None, {"code": "E_FS_READONLY", "message": "Choose another folder",
                       "recoverable": True}
     except OSError as exc:
-        # 磁盘满 / 目录只读等 → 与 T-34 相同的只换文件夹路径
+        # 磁盘满等其他写失败 → E_PDF_WRITE（已收编进附录 D，见 D-09 契约修订）
         return None, {"code": "E_PDF_WRITE", "message": "Choose another folder (%s)" % exc,
                       "recoverable": True}
     elapsed = time.perf_counter() - started

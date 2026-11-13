@@ -25,6 +25,7 @@ from . import store
 ROLLBACK_KEEP = 3          # F-06：只保留最近 3 份
 TARGET_BASELINE = "v1"     # §3.7
 RELEASE_RE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
+DELTA_MAX_BYTES = 200 * 1024  # T-30-5：单包 >200KB 静默跳过（防超大包写爆工作库）
 
 
 # ---------------------------------------------------------------- 工作库
@@ -210,6 +211,43 @@ def apply_delta(payload):
 
     lib, _rebuilt = read_current()
     current_version = lib.get("version") or store.DEFAULT_LIBRARY_VERSION
+
+    # D-04/D-05 修复（PM）：运行期防线——
+    # 1) 体积闸门：>200KB 的包静默跳过，不备份不写盘（T-30-5）
+    try:
+        raw_size = len(json.dumps(delta))
+    except (TypeError, ValueError):
+        return None, {"code": "E_DELTA_INVALID", "message": "delta not JSON-serializable",
+                      "recoverable": True}
+    if raw_size > DELTA_MAX_BYTES:
+        return {"version": current_version, "ideas": len(lib.get("ideas") or []),
+                "applied": False, "skipped": "oversized"}, None
+
+    # 2) revise 白名单复用（V-11）：create_delta 只在生成期校验，这里运行期兜底
+    try:
+        from library.validate import REVISE_WHITELIST, validate_idea  # noqa: E401
+    except ImportError:  # Store 裁剪极端情况下降级为只做体积/结构防线
+        REVISE_WHITELIST = None  # type: ignore[assignment]
+        validate_idea = None     # type: ignore[assignment]
+    for r in delta.get("revise") or []:
+        if isinstance(r, dict) and REVISE_WHITELIST is not None:
+            bad = set(r.keys()) - REVISE_WHITELIST - {"id"}
+            if bad:
+                return None, {"code": "E_DELTA_INVALID",
+                              "message": "revise %s has non-whitelisted fields: %s"
+                                         % (r.get("id"), sorted(bad)),
+                              "recoverable": True}
+    for a in delta.get("add") or []:
+        if not isinstance(a, dict) or not a.get("id"):
+            return None, {"code": "E_DELTA_INVALID", "message": "add item missing id",
+                          "recoverable": True}
+        if validate_idea is not None:
+            _errs, _warns = [], []
+            validate_idea(a, _errs, _warns)
+            if _errs:
+                return None, {"code": "E_DELTA_INVALID", "message": _errs[0],
+                              "recoverable": True}
+
     new_version = _version_of(release)
     if new_version <= current_version:
         # 幂等：已合并过或更旧的包，静默跳过（A 的 manifest 判断之外的二次保险）

@@ -1,7 +1,7 @@
 {
   "task": "H-02 一键全量回归",
-  "generated_at": "2026-11-13 14:28:46",
-  "elapsed_s": 202.9,
+  "generated_at": "2026-11-13 17:46:22",
+  "elapsed_s": 251.6,
   "stages": [
     {
       "stage": "engine",
@@ -12,11 +12,11 @@
         "qa.cases.test_engine",
         "-v"
       ],
-      "cwd": "D:\\XiangMu\\SoftwareDevelopmentEngineerH\\BizSpark",
+      "cwd": "D:\\XiangMu\\Project\\BizSpark",
       "returncode": 0,
-      "elapsed_s": 31.5,
+      "elapsed_s": 31.7,
       "status": "PASS",
-      "tail": "test_why_uses_answer_words (qa.cases.test_engine.T16WhyPlainWords.test_why_uses_answer_words) ... ok\ntest_shape (qa.cases.test_engine.T17OutputShape.test_shape) ... ok\ntest_degrade_with_two_candidates (qa.cases.test_engine.T18Degrade.test_degrade_with_two_candidates) ... ok\n\n----------------------------------------------------------------------\nRan 16 tests in 30.480s\n\nOK"
+      "tail": "test_why_uses_answer_words (qa.cases.test_engine.T16WhyPlainWords.test_why_uses_answer_words) ... ok\ntest_shape (qa.cases.test_engine.T17OutputShape.test_shape) ... ok\ntest_degrade_with_two_candidates (qa.cases.test_engine.T18Degrade.test_degrade_with_two_candidates) ... ok\n\n----------------------------------------------------------------------\nRan 16 tests in 30.791s\n\nOK"
     },
     {
       "stage": "detail_export",
@@ -27,11 +27,11 @@
         "qa.cases.test_detail_export",
         "-v"
       ],
-      "cwd": "D:\\XiangMu\\SoftwareDevelopmentEngineerH\\BizSpark",
-      "returncode": 1,
-      "elapsed_s": 30.6,
-      "status": "FAIL",
-      "tail": "                         \"页面摘要未截断（%d 字），会撑爆详情页\" % len(str(d.get(\"summary\") or \"\")))\n                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: 2220 not less than or equal to 260 : 页面摘要未截断（2220 字），会撑爆详情页\n\n----------------------------------------------------------------------\nRan 16 tests in 29.739s\n\nFAILED (failures=2)"
+      "cwd": "D:\\XiangMu\\Project\\BizSpark",
+      "returncode": 0,
+      "elapsed_s": 33.1,
+      "status": "PASS",
+      "tail": "test_export_without_network (qa.cases.test_detail_export.T33OfflineExport.test_export_without_network) ... ok\ntest_cancel_returns_silent_error (qa.cases.test_detail_export.T34ReadOnlyDir.test_cancel_returns_silent_error) ... ok\ntest_readonly_dir_error_semantics (qa.cases.test_detail_export.T34ReadOnlyDir.test_readonly_dir_error_semantics) ... ok\n\n----------------------------------------------------------------------\nRan 16 tests in 32.090s\n\nOK"
     },
     {
       "stage": "state",
@@ -42,11 +42,11 @@
         "qa.cases.test_state",
         "-v"
       ],
-      "cwd": "D:\\XiangMu\\SoftwareDevelopmentEngineerH\\BizSpark",
-      "returncode": 1,
-      "elapsed_s": 31.6,
-      "status": "FAIL",
-      "tail": "                     % len(json.loads(after.decode(\"utf-8\"))[\"ideas\"]))\n                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: b'{\"version\": \"2026.12\", \"baseline\": \"v1\", \"updated_at\": \"2[925589 chars]}}]}' != b'{\"version\": \"2027.03\", \"baseline\": \"v1\", \"updated_at\": \"2[4298810 chars]}}]}' : >200KB 的 delta 被接受了并写进库（库里现在 1526 条）\n\n----------------------------------------------------------------------\nRan 16 tests in 30.654s\n\nFAILED (failures=2)"
+      "cwd": "D:\\XiangMu\\Project\\BizSpark",
+      "returncode": 0,
+      "elapsed_s": 33.1,
+      "status": "PASS",
+      "tail": "test_good_delta_applies_and_is_idempotent (qa.cases.test_state.T40DeltaRollback.test_good_delta_applies_and_is_idempotent) ... ok\ntest_invalid_delta_rolls_back (qa.cases.test_state.T40DeltaRollback.test_invalid_delta_rolls_back) ... ok\ntest_retire_keeps_entry_on_disk (qa.cases.test_state.T40DeltaRollback.test_retire_keeps_entry_on_disk) ... ok\n\n----------------------------------------------------------------------\nRan 16 tests in 32.103s\n\nOK"
     },
     {
       "stage": "license",
@@ -57,11 +57,11 @@
         "qa.cases.test_license",
         "-v"
       ],
-      "cwd": "D:\\XiangMu\\SoftwareDevelopmentEngineerH\\BizSpark",
+      "cwd": "D:\\XiangMu\\Project\\BizSpark",
       "returncode": 0,
-      "elapsed_s": 14.6,
+      "elapsed_s": 13.4,
       "status": "PASS",
-      "tail": "test_no_heartbeat_commands (qa.cases.test_license.T45OfflineAfterActivation.test_no_heartbeat_commands)\n零心跳：命令表里不该出现 ping 之外的周期性上报类命令。 ... ok\ntest_offline_after_activation (qa.cases.test_license.T45OfflineAfterActivation.test_offline_after_activation) ... ok\n\n----------------------------------------------------------------------\nRan 6 tests in 13.571s\n\nOK"
+      "tail": "test_no_heartbeat_commands (qa.cases.test_license.T45OfflineAfterActivation.test_no_heartbeat_commands)\n零心跳：命令表里不该出现 ping 之外的周期性上报类命令。 ... ok\ntest_offline_after_activation (qa.cases.test_license.T45OfflineAfterActivation.test_offline_after_activation) ... ok\n\n----------------------------------------------------------------------\nRan 6 tests in 12.503s\n\nOK"
     },
     {
       "stage": "content",
@@ -72,11 +72,11 @@
         "qa.cases.test_content",
         "-v"
       ],
-      "cwd": "D:\\XiangMu\\SoftwareDevelopmentEngineerH\\BizSpark",
+      "cwd": "D:\\XiangMu\\Project\\BizSpark",
       "returncode": 0,
-      "elapsed_s": 1.8,
+      "elapsed_s": 1.6,
       "status": "PASS",
-      "tail": "test_content_dir_has_no_scripts (qa.cases.test_content.T53NoExecutableContent.test_content_dir_has_no_scripts) ... ok\ntest_delta_shape_only (qa.cases.test_content.T53NoExecutableContent.test_delta_shape_only) ... ok\ntest_hosting_files_are_data_only (qa.cases.test_content.T53NoExecutableContent.test_hosting_files_are_data_only) ... ok\n\n----------------------------------------------------------------------\nRan 8 tests in 0.794s\n\nOK"
+      "tail": "test_content_dir_has_no_scripts (qa.cases.test_content.T53NoExecutableContent.test_content_dir_has_no_scripts) ... ok\ntest_delta_shape_only (qa.cases.test_content.T53NoExecutableContent.test_delta_shape_only) ... ok\ntest_hosting_files_are_data_only (qa.cases.test_content.T53NoExecutableContent.test_hosting_files_are_data_only) ... ok\n\n----------------------------------------------------------------------\nRan 8 tests in 0.702s\n\nOK"
     },
     {
       "stage": "packaging",
@@ -87,11 +87,11 @@
         "qa.cases.test_packaging",
         "-v"
       ],
-      "cwd": "D:\\XiangMu\\SoftwareDevelopmentEngineerH\\BizSpark",
-      "returncode": 1,
-      "elapsed_s": 6.5,
-      "status": "FAIL",
-      "tail": "                    % sorted(scripts))\n                    ^^^^^^^^^^^^^^^^^^\nAssertionError: False is not true : package.json 没有 build:store 之类脚本，Store 包必然带 Activate 页：['build', 'build:cn', 'build:en', 'dev']\n\n----------------------------------------------------------------------\nRan 11 tests in 5.470s\n\nFAILED (failures=1)"
+      "cwd": "D:\\XiangMu\\Project\\BizSpark",
+      "returncode": 0,
+      "elapsed_s": 6.1,
+      "status": "PASS",
+      "tail": "test_no_price_in_store_assets (qa.cases.test_packaging.T58StoreMaterials.test_no_price_in_store_assets) ... ok\ntest_privacy_and_support (qa.cases.test_packaging.T58StoreMaterials.test_privacy_and_support) ... ok\ntest_screenshots_english_only (qa.cases.test_packaging.T58StoreMaterials.test_screenshots_english_only) ... ok\n\n----------------------------------------------------------------------\nRan 11 tests in 5.152s\n\nOK"
     },
     {
       "stage": "contract",
@@ -102,11 +102,11 @@
         "qa.cases.test_contract",
         "-v"
       ],
-      "cwd": "D:\\XiangMu\\SoftwareDevelopmentEngineerH\\BizSpark",
-      "returncode": 1,
-      "elapsed_s": 5.8,
-      "status": "FAIL",
-      "tail": "    self.assertFalse(unknown, \"出现附录 D 之外的错误码（契约漂移）：%s\" % unknown)\n    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: {'E_INTERNAL': ['apps\\\\core\\\\main.py:163'], 'E_IDEA_NOT_FOUND': ['apps\\\\core\\\\engine\\\\__init__.py:183', 'apps\\\\core\\\\state\\\\store.py:336'], 'E_EXPORT_CANCELLED': ['apps\\\\core\\\\render\\\\csv.py:75', 'apps\\\\core\\\\render\\\\pdf.py:166'], 'E_CSV_WRITE': ['apps\\\\core\\\\render\\\\csv.py:96'], 'E_PDF_WRITE': ['apps\\\\core\\\\render\\\\pdf.py:185', 'apps\\\\core\\\\render\\\\pdf.py:189'], 'E_LIBRARY_WRITE': ['apps\\\\core\\\\state\\\\merge.py:247']} is not false : 出现附录 D 之外的错误码（契约漂移）：{'E_INTERNAL': ['apps\\\\core\\\\main.py:163'], 'E_IDEA_NOT_FOUND': ['apps\\\\core\\\\engine\\\\__init__.py:183', 'apps\\\\core\\\\state\\\\store.py:336'], 'E_EXPORT_CANCELLED': ['apps\\\\core\\\\render\\\\csv.py:75', 'apps\\\\core\\\\render\\\\pdf.py:166'], 'E_CSV_WRITE': ['apps\\\\core\\\\render\\\\csv.py:96'], 'E_PDF_WRITE': ['apps\\\\core\\\\render\\\\pdf.py:185', 'apps\\\\core\\\\render\\\\pdf.py:189'], 'E_LIBRARY_WRITE': ['apps\\\\core\\\\state\\\\merge.py:247']}\n\n----------------------------------------------------------------------\nRan 10 tests in 4.852s\n\nFAILED (failures=1)"
+      "cwd": "D:\\XiangMu\\Project\\BizSpark",
+      "returncode": 0,
+      "elapsed_s": 5.5,
+      "status": "PASS",
+      "tail": "test_four_slots_present (qa.cases.test_contract.PriceSlots.test_four_slots_present) ... ok\ntest_hidden_copy_has_no_amount (qa.cases.test_contract.PriceSlots.test_hidden_copy_has_no_amount) ... ok\ntest_no_hardcoded_copy_in_views (qa.cases.test_contract.UiCopySource.test_no_hardcoded_copy_in_views) ... ok\n\n----------------------------------------------------------------------\nRan 10 tests in 4.615s\n\nOK"
     },
     {
       "stage": "price",
@@ -117,11 +117,11 @@
         "qa.cases.test_price",
         "-v"
       ],
-      "cwd": "D:\\XiangMu\\SoftwareDevelopmentEngineerH\\BizSpark",
+      "cwd": "D:\\XiangMu\\Project\\BizSpark",
       "returncode": 0,
-      "elapsed_s": 1.4,
+      "elapsed_s": 1.3,
       "status": "PASS",
-      "tail": "  text = open(path, encoding=\"utf-8\", errors=\"replace\").read()\nResourceWarning: Enable tracemalloc to get the object allocation traceback\nok\n\n----------------------------------------------------------------------\nRan 4 tests in 0.424s\n\nOK"
+      "tail": "  text = open(path, encoding=\"utf-8\", errors=\"replace\").read()\nResourceWarning: Enable tracemalloc to get the object allocation traceback\nok\n\n----------------------------------------------------------------------\nRan 4 tests in 0.389s\n\nOK"
     },
     {
       "stage": "ui",
@@ -132,19 +132,37 @@
         "qa.cases.test_ui",
         "-v"
       ],
-      "cwd": "D:\\XiangMu\\SoftwareDevelopmentEngineerH\\BizSpark",
-      "returncode": 1,
-      "elapsed_s": 79.1,
-      "status": "FAIL",
-      "tail": "    self.assertTrue(r[\"ok\"], \"%s 未通过：%s\" % (case_id, r[\"detail\"]))\n    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: False is not true : T-37 未通过：对比三项：[\"title\",\"Startup cost\",\"Hours per week\",\"Payback\"]（多出的项：[\"title\"]）· 禁词 []\n\n----------------------------------------------------------------------\nRan 16 tests in 78.161s\n\nFAILED (failures=2)"
+      "cwd": "D:\\XiangMu\\Project\\BizSpark",
+      "returncode": 0,
+      "elapsed_s": 87.0,
+      "status": "PASS",
+      "tail": "test_six_rows (qa.cases.test_ui.T46.test_six_rows) ... ok\ntest_dark_mode (qa.cases.test_ui.T47.test_dark_mode) ... ok\ntest_price_slots_render (qa.cases.test_ui.T59Ui.test_price_slots_render) ... ok\n\n----------------------------------------------------------------------\nRan 16 tests in 86.111s\n\nOK"
+    },
+    {
+      "stage": "perf",
+      "argv": [
+        "C:\\Users\\Administrator\\.workbuddy\\binaries\\python\\versions\\3.13.12\\python.exe",
+        "qa/perf/perf_suite.py"
+      ],
+      "cwd": "D:\\XiangMu\\Project\\BizSpark",
+      "returncode": 0,
+      "elapsed_s": 9.9,
+      "status": "PASS",
+      "tail": "== F14.1 性能（12 轮） ==\n冷启动到 ready        1397.7 ms   红线 1500  PASS\ndiagnose 312 条     p50   39.5 / p95   44.0 ms   红线 300  PASS\n导出 PDF            p50   62.6 / max   78.3 ms   红线 2000  PASS\n常驻内存                36.2 MB   红线 300  PASS\n包体（dist+core）        1.5 MB   红线 80  PASS\n出网请求                   0 处   红线 0   PASS\n报告：D:\\XiangMu\\Project\\BizSpark\\qa\\reports\\perf.json"
+    },
+    {
+      "stage": "drill",
+      "argv": [
+        "C:\\Users\\Administrator\\.workbuddy\\binaries\\python\\versions\\3.13.12\\python.exe",
+        "qa/offline/drill.py"
+      ],
+      "cwd": "D:\\XiangMu\\Project\\BizSpark",
+      "returncode": 0,
+      "elapsed_s": 28.9,
+      "status": "PASS",
+      "tail": "  ✅ D3c  空对象 delta  [PASS]\n  ✅ D3d  manifest 版本倒退（旧包）  [PASS]\n  ✅ D3e  超大包 3.2MB / 1200 条  [PASS]\n  ✅ D4   断网一月回来，乱序补包  [PASS]\n  ✅ D5   前端离线零阻塞（socket 桩 + 真前端全链路）  [PASS]\n\n离线演练总评：PASS  (28.3s)\n报告：D:\\XiangMu\\Project\\BizSpark\\qa\\reports\\offline-drill.json"
     }
   ],
-  "failed": [
-    "detail_export",
-    "state",
-    "packaging",
-    "contract",
-    "ui"
-  ],
-  "status": "FAIL"
+  "failed": [],
+  "status": "PASS"
 }
