@@ -19,6 +19,10 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from engine import diagnose as _diagnose, get_idea as _get_idea  # noqa: E402
 from render.pdf import export_plan as _export_plan  # noqa: E402  E（F06 导出）
 from render.csv import export_csv as _export_csv    # noqa: E402  E（F06 步骤 9）
+# F（本地状态 / 存档 / 设置 / 库合并降级，§2.5 / F07 / F09 / F11 / F13）
+from state import store as _store                  # noqa: E402
+from state import merge as _merge                  # noqa: E402
+from state import settings as _settings            # noqa: E402
 
 # 错误码（附录 D，仅内部使用，禁止展示给用户）
 E_BAD_REQUEST = {"code": "E_BAD_REQUEST", "recoverable": True}
@@ -39,27 +43,68 @@ CMD_HANDLERS = {
     # —— E（F06 本地导出：单页 PDF + 成本表 CSV）——
     "export_plan": _export_plan,
     "export_csv": _export_csv,
+    # —— F（§2.4 本地状态 / F07 存档 / F09 合并 / F11 设置）——
+    "get_state": _store.get_state,
+    "save_answers": _store.save_answers,
+    "save_idea": _store.save_idea,
+    "list_saved": _store.list_saved,
+    "clear_saved": _store.clear_saved,
+    "compare_ideas": _store.compare_ideas,
+    "get_settings": _settings.get_settings,
+    "set_settings": _settings.set_settings,
+    "log_crash": _settings.log_crash_handler,
+    "check_library": _merge.check_library,
+    "apply_delta": _merge.apply_delta,
 }
 
+
+# F-02 / F-10 旁路副作用（**不改变任何人的返回值**，只在自己状态里记一笔；失败静默）：
+# - diagnose 成功后缓存 last_result（F04 步骤 10 / T-31 超时兜底）
+# - export_plan 成功后记住导出目录（F10：下次默认带上）
+def _with_last_result(inner):
+    def handler(payload):
+        data, err = inner(payload)
+        if err is None and isinstance(data, dict):
+            try:
+                _store.save_last_result(data)
+            except Exception:
+                pass  # 缓存失败绝不能影响诊断结果
+        return data, err
+    return handler
+
+
+def _with_export_dir(inner):
+    def handler(payload):
+        data, err = inner(payload)
+        if err is None and isinstance(data, dict):
+            try:
+                _store.remember_export_dir(data.get("path") or (payload or {}).get("path"))
+            except Exception:
+                pass
+        return data, err
+    return handler
+
+
+CMD_HANDLERS["diagnose"] = _with_last_result(_diagnose)
+CMD_HANDLERS["export_plan"] = _with_export_dir(_export_plan)
+
 # §2.4 命令表其余 cmd：保留注册点，等对应负责人实现后挂载（勿删他人名字）
-#   F  get_state / save_answers / save_idea / list_saved / clear_saved / compare_ideas
-#      get_settings / set_settings / check_library / apply_delta / log_crash
-#      （以及 F09 合并、F07 存档等）
 #   G  activate / license_status / release_seat（F10 授权）
 _NOT_IMPLEMENTED_CMDS = [
-    # §2.4 正名
-    "get_state", "save_answers",
-    "save_idea", "list_saved", "clear_saved", "compare_ideas",
-    "get_settings", "set_settings", "check_library", "apply_delta",
-    "activate", "license_status", "release_seat", "log_crash",
+    # §2.4 正名（待 G）
+    "activate", "license_status", "release_seat",
     # 早期脚手架别名（保留，兼容既有调用方；负责人实现正名后可下线）
-    "quiz_next", "quiz_reset", "assemble_detail", "saved_list", "saved_save",
-    "merge_delta", "settings_get", "settings_set",
+    "quiz_next", "quiz_reset", "assemble_detail",
 ]
 for _c in _NOT_IMPLEMENTED_CMDS:
     CMD_HANDLERS.setdefault(_c, _not_implemented)
-# 早期别名 export_pdf / assemble_detail 由 E 正名后接管的兼容挂载（保留别名不破坏既有调用方）
-CMD_HANDLERS["export_pdf"] = _export_plan
+# 早期别名兼容挂载（保留别名不破坏既有调用方；正名已由各负责人接管）
+CMD_HANDLERS["export_pdf"] = CMD_HANDLERS["export_plan"]
+CMD_HANDLERS["saved_list"] = _store.list_saved
+CMD_HANDLERS["saved_save"] = _store.save_idea
+CMD_HANDLERS["merge_delta"] = _merge.apply_delta
+CMD_HANDLERS["settings_get"] = _settings.get_settings
+CMD_HANDLERS["settings_set"] = _settings.set_settings
 
 
 def handle(raw_line):
@@ -69,6 +114,10 @@ def handle(raw_line):
     except ValueError:
         return {"req_id": None, "ok": False,
                 "error": dict(E_BAD_REQUEST, message="invalid JSON line")}
+    if not isinstance(req, dict):
+        # F 补（F13 降级）：脏输入（JSON 数组/标量）只回一行 E_BAD_REQUEST，绝不让 sidecar 崩掉
+        return {"req_id": None, "ok": False,
+                "error": dict(E_BAD_REQUEST, message="request must be a JSON object")}
     req_id = req.get("req_id")
     cmd = req.get("cmd")
     payload = req.get("payload") or {}
