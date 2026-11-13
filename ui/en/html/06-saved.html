@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>BizSpark — My ideas</title>
+<link rel="stylesheet" href="assets/style.css">
+</head><body>
+<div class="shell">
+  <aside class="side">
+    <div class="brand"><div class="brand-mark">B</div><div>BizSpark<small>One idea away</small></div></div>
+    <nav class="nav"><div class="nav-label">Workspace</div><a class="nav-i" href="01-welcome.html"><span class="ico">◈</span>Start</a>
+<a class="nav-i" href="02-quiz.html"><span class="ico">◎</span>Find ideas</a>
+<a class="nav-i" href="03-results.html"><span class="ico">✦</span>Results</a>
+<a class="nav-i" href="04-detail.html"><span class="ico">▤</span>The plan</a>
+<a class="nav-i" href="05-export.html"><span class="ico">↓</span>Export</a>
+<a class="nav-i on" href="06-saved.html"><span class="ico">❑</span>My ideas</a>
+<a class="nav-i" href="08-update.html"><span class="ico">↻</span>Library</a>
+<a class="nav-i" href="07-activate.html"><span class="ico">⚿</span>Activate</a>
+<a class="nav-i" href="09-settings.html"><span class="ico">⚙</span>Settings</a>
+</nav>
+    <div class="side-foot">
+      <div class="badge-line"><span class="dot"></span>One-time purchase · No subscription</div>
+      <div class="side-ver">v1.0.0 · Library 2026.11 · Offline ready</div>
+    </div>
+  </aside>
+  <div class="main">
+    <div class="topbar">
+      <div class="crumb">BizSpark&nbsp;&nbsp;/&nbsp;&nbsp;<b>My ideas</b></div>
+      <div class="top-right">
+        <div class="chip"><span class="dot"></span>All yours, on this device</div>
+        <div class="avatar">BS</div>
+      </div>
+    </div>
+    <div class="content">
+<div class="page-head"><div class="eyebrow">On this device</div><h1>My ideas</h1>
+<p class="lead">Saved locally. No cloud, no sync, no login — open the app six months later and they're still here.</p></div>
+<div class="grid" style="gap:12px">
+<div class="card mini"><div class="thumb">✦</div><div class="mt"><h3>Local shop review-reply desk</h3><p>Saved 12 Nov 2026 · From $120 · 94% match</p></div>
+    <a class="btn btn-ghost" style="height:34px;font-size:12px" href="04-detail.html">Open</a></div><div class="card mini"><div class="thumb">▣</div><div class="mt"><h3>AI-assisted product photo cleanup</h3><p>Saved 12 Nov 2026 · From $80 · 89% match</p></div>
+    <a class="btn btn-ghost" style="height:34px;font-size:12px" href="04-detail.html">Open</a></div><div class="card mini"><div class="thumb">◈</div><div class="mt"><h3>Weekend mobile notary & form helper</h3><p>Saved 12 Nov 2026 · From $260 · 85% match</p></div>
+    <a class="btn btn-ghost" style="height:34px;font-size:12px" href="04-detail.html">Open</a></div>
+</div>
+<div class="hr"></div>
+<div class="btn-row"><a class="btn btn-primary" href="02-quiz.html">Find new ideas &nbsp;→</a>
+  <a class="btn btn-ghost" href="#">Compare two ideas</a>
+  <a class="btn btn-quiet" href="#">Clear saved list</a></div>
+<div class="foot-note">💡 Made your first sale? Come back and run the 5 questions again with a bigger budget. Same button, same 3 cards.</div></div>
+  </div>
+</div>
+<script>
+document.querySelectorAll('.opt').forEach(function(o){
+  o.addEventListener('click',function(){
+    o.parentElement.querySelectorAll('.opt').forEach(function(x){x.classList.remove('sel')});
+    o.classList.add('sel');
+  });
+});
+document.querySelectorAll('.toggle').forEach(function(t){
+  t.addEventListener('click',function(){t.classList.toggle('on')});
+});
+</script>
+<script src="assets/pricing.js"></script>
+<script src="assets/price-render.js"></script>
+</body></html>

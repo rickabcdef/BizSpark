@@ -1,0 +1,11 @@
+pricing.js      唯一价格源（中英两版各放一份，内容相同）
+price-render.js 价格槽渲染器（中英两版各放一份，内容相同）
+
+首版：display_mode="hidden"、amount=null → 页面只显示功能/模式文案，无金额。
+后期：改成 "visible"、填 amount（数字）与 model（one-time/monthly/yearly/seat），
+      再把 currency 设成对应 ISO 代码即可。渲染器无任何写死金额。
+
+页面里 4 个价格槽：hero-trust / hero-foot / export-note / activate-eyebrow。
+改完 pricing.js 后，中英两版 18 页同时生效，不需要改 HTML、不需要重新截图（除非要出新的商店素材）。
+
+注意：商机库里的起步成本、定价建议是内容数据，不是商品售价，不受此配置影响。

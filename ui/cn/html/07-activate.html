@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>BizSpark — 激活</title>
+<link rel="stylesheet" href="assets/style.css">
+</head><body>
+<div class="shell">
+  <aside class="side">
+    <div class="brand"><div class="brand-mark">B</div><div>BizSpark<small>一个点子就够了</small></div></div>
+    <nav class="nav"><div class="nav-label">工作区</div><a class="nav-i" href="01-welcome.html"><span class="ico">◈</span>开始</a>
+<a class="nav-i" href="02-quiz.html"><span class="ico">◎</span>找点子</a>
+<a class="nav-i" href="03-results.html"><span class="ico">✦</span>结果</a>
+<a class="nav-i" href="04-detail.html"><span class="ico">▤</span>一页方案</a>
+<a class="nav-i" href="05-export.html"><span class="ico">↓</span>导出</a>
+<a class="nav-i" href="06-saved.html"><span class="ico">❑</span>我的点子</a>
+<a class="nav-i" href="08-update.html"><span class="ico">↻</span>点子库</a>
+<a class="nav-i on" href="07-activate.html"><span class="ico">⚿</span>激活</a>
+<a class="nav-i" href="09-settings.html"><span class="ico">⚙</span>设置</a>
+</nav>
+    <div class="side-foot">
+      <div class="badge-line"><span class="dot"></span>一次买断 · 无订阅</div>
+      <div class="side-ver">v1.0.0 · 点子库 2026.11 · 可离线</div>
+    </div>
+  </aside>
+  <div class="main">
+    <div class="topbar">
+      <div class="crumb">BizSpark&nbsp;&nbsp;/&nbsp;&nbsp;<b>激活</b></div>
+      <div class="top-right">
+        <div class="chip"><span class="dot"></span>全部留在这台设备</div>
+        <div class="avatar">BS</div>
+      </div>
+    </div>
+    <div class="content">
+<div class="page-head"><div class="eyebrow">给在商店之外购买的版本</div><h1>激活一次，之后离线用。</h1>
+<p class="lead">商店下载的版本已经激活过，你根本不会看到这一页。这页只给在其他软件平台买的副本用。</p></div>
+<div class="grid g2" style="align-items:start">
+  <div class="card pad">
+    <h3>输入激活码</h3><div class="tiny" style="margin-top:5px">付款后它就躺在你的收据邮件里。</div>
+    <div class="code-row"><div class="code-in f">BZSP</div><div class="code-in f">K7Q2</div><div class="code-in f">M9XA</div><div class="code-in">••••</div></div>
+    <div class="tiny">一个码最多用于你自己的 3 台设备。</div>
+    <div class="devs"><div class="dev on">💻</div><div class="dev on">🖥</div><div class="dev">＋</div>
+      <span class="tiny" style="margin-left:6px">已用 2 / 3 台</span></div>
+    <div class="notice"><span>✓</span><span><b>激活不是登录。</b>校验通过后，本机只留一个很小的签名文件；此后软件断网也能用，我们不会再查第二次。</span></div>
+    <div class="btn-row" style="margin-top:22px"><a class="btn btn-primary" href="01-welcome.html">激活并开始 &nbsp;→</a>
+      <a class="btn btn-quiet" href="#">换电脑了？释放一个名额</a></div>
+  </div>
+  <div>
+    <div class="card pad" style="background:var(--deep);border-color:var(--deep);color:#fff">
+      <div class="eyebrow" style="color:var(--gold)" data-price-slot="activate-eyebrow"></div>
+      <h2 style="font-size:24px;line-height:1.3">买一次。<br>用一辈子。</h2>
+      <div class="hr" style="background:rgba(255,255,255,.12)"></div>
+      <div style="font-size:13px;color:#C2D0DC;line-height:2.1">
+        ✓ &nbsp;无订阅<br>✓ &nbsp;不自动续费<br>✓ &nbsp;不用账号、不留邮箱<br>
+        ✓ &nbsp;核心功能离线可用<br>✓ &nbsp;点子库更新免费且可选</div>
+    </div>
+    <div class="card pad" style="margin-top:16px"><h3>为什么还要一个码？</h3>
+      <p class="tiny" style="margin-top:7px">安装包文件是可以被复制转发的。这个码只用来证明这份副本付过钱。不是不信任你，是文件本身能被转发。</p></div>
+  </div>
+</div></div>
+  </div>
+</div>
+<script>
+document.querySelectorAll('.opt').forEach(function(o){
+  o.addEventListener('click',function(){
+    o.parentElement.querySelectorAll('.opt').forEach(function(x){x.classList.remove('sel')});
+    o.classList.add('sel');
+  });
+});
+document.querySelectorAll('.toggle').forEach(function(t){
+  t.addEventListener('click',function(){t.classList.toggle('on')});
+});
+</script>
+<script src="assets/pricing.js"></script>
+<script src="assets/price-render.js"></script>
+</body></html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>BizSpark — 导出</title>
+<link rel="stylesheet" href="assets/style.css">
+</head><body>
+<div class="shell">
+  <aside class="side">
+    <div class="brand"><div class="brand-mark">B</div><div>BizSpark<small>一个点子就够了</small></div></div>
+    <nav class="nav"><div class="nav-label">工作区</div><a class="nav-i" href="01-welcome.html"><span class="ico">◈</span>开始</a>
+<a class="nav-i" href="02-quiz.html"><span class="ico">◎</span>找点子</a>
+<a class="nav-i" href="03-results.html"><span class="ico">✦</span>结果</a>
+<a class="nav-i" href="04-detail.html"><span class="ico">▤</span>一页方案</a>
+<a class="nav-i on" href="05-export.html"><span class="ico">↓</span>导出</a>
+<a class="nav-i" href="06-saved.html"><span class="ico">❑</span>我的点子</a>
+<a class="nav-i" href="08-update.html"><span class="ico">↻</span>点子库</a>
+<a class="nav-i" href="07-activate.html"><span class="ico">⚿</span>激活</a>
+<a class="nav-i" href="09-settings.html"><span class="ico">⚙</span>设置</a>
+</nav>
+    <div class="side-foot">
+      <div class="badge-line"><span class="dot"></span>一次买断 · 无订阅</div>
+      <div class="side-ver">v1.0.0 · 点子库 2026.11 · 可离线</div>
+    </div>
+  </aside>
+  <div class="main">
+    <div class="topbar">
+      <div class="crumb">BizSpark&nbsp;&nbsp;/&nbsp;&nbsp;<b>导出</b></div>
+      <div class="top-right">
+        <div class="chip"><span class="dot"></span>全部留在这台设备</div>
+        <div class="avatar">BS</div>
+      </div>
+    </div>
+    <div class="content">
+<div class="card center-card">
+  <div class="big-check">✓</div>
+  <div class="eyebrow">好了，就在你电脑里</div>
+  <h1>你的方案好了。</h1>
+  <p class="lead" style="margin:10px auto 0">一张 PDF，一页，无水印。它是你硬盘上的一个文件——不是链接、不是账号、也不是会过期的东西。</p>
+  <div class="file-row"><div class="file-ico">▤</div>
+    <div style="flex:1"><div class="fn">BizSpark-Plan-local-review-desk.pdf</div>
+    <div class="fs">已存到 文档 / BizSpark · 214 KB · 1 页</div></div>
+    <span class="tag" style="color:var(--green)">✓ 已保存</span></div>
+  <div class="btn-row" style="justify-content:center">
+    <a class="btn btn-primary" href="#">打开文件夹</a>
+    <a class="btn btn-ghost" href="03-results.html">再找一个点子</a>
+  </div>
+  <div class="hr"></div>
+  <div class="tiny" data-price-slot="export-note"></div>
+</div>
+<div class="card pad" style="max-width:620px;margin:18px auto 0">
+  <div class="grid g2" style="gap:14px">
+    <div><h3>PDF 里有什么</h3><p class="tiny" style="margin-top:6px">成本拆解 · 定价建议 · 7 步 · 第一批客户渠道 · 3 个坑 · 本地合规一句。</p></div>
+    <div><h3>可选附带</h3><p class="tiny" style="margin-top:6px">也可以把成本表另存成 CSV，丢进你自己的表格。依然本地，依然归你。</p></div>
+  </div>
+</div></div>
+  </div>
+</div>
+<script>
+document.querySelectorAll('.opt').forEach(function(o){
+  o.addEventListener('click',function(){
+    o.parentElement.querySelectorAll('.opt').forEach(function(x){x.classList.remove('sel')});
+    o.classList.add('sel');
+  });
+});
+document.querySelectorAll('.toggle').forEach(function(t){
+  t.addEventListener('click',function(){t.classList.toggle('on')});
+});
+</script>
+<script src="assets/pricing.js"></script>
+<script src="assets/price-render.js"></script>
+</body></html>

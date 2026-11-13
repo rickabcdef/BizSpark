@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>BizSpark — 设置</title>
+<link rel="stylesheet" href="assets/style.css">
+</head><body>
+<div class="shell">
+  <aside class="side">
+    <div class="brand"><div class="brand-mark">B</div><div>BizSpark<small>一个点子就够了</small></div></div>
+    <nav class="nav"><div class="nav-label">工作区</div><a class="nav-i" href="01-welcome.html"><span class="ico">◈</span>开始</a>
+<a class="nav-i" href="02-quiz.html"><span class="ico">◎</span>找点子</a>
+<a class="nav-i" href="03-results.html"><span class="ico">✦</span>结果</a>
+<a class="nav-i" href="04-detail.html"><span class="ico">▤</span>一页方案</a>
+<a class="nav-i" href="05-export.html"><span class="ico">↓</span>导出</a>
+<a class="nav-i" href="06-saved.html"><span class="ico">❑</span>我的点子</a>
+<a class="nav-i" href="08-update.html"><span class="ico">↻</span>点子库</a>
+<a class="nav-i" href="07-activate.html"><span class="ico">⚿</span>激活</a>
+<a class="nav-i on" href="09-settings.html"><span class="ico">⚙</span>设置</a>
+</nav>
+    <div class="side-foot">
+      <div class="badge-line"><span class="dot"></span>一次买断 · 无订阅</div>
+      <div class="side-ver">v1.0.0 · 点子库 2026.11 · 可离线</div>
+    </div>
+  </aside>
+  <div class="main">
+    <div class="topbar">
+      <div class="crumb">BizSpark&nbsp;&nbsp;/&nbsp;&nbsp;<b>设置</b></div>
+      <div class="top-right">
+        <div class="chip"><span class="dot"></span>全部留在这台设备</div>
+        <div class="avatar">BS</div>
+      </div>
+    </div>
+    <div class="content">
+<div class="page-head"><div class="eyebrow">就 6 个旋钮，没了</div><h1>设置</h1>
+<p class="lead">这里每一项都是本地的。没有资料、没有密码、没有同步。</p></div>
+<div class="grid g2" style="align-items:start">
+  <div class="card pad">
+    <div class="set-row"><div><div class="st">国家</div><div class="sd">决定币种、本地获客渠道和那句合规提醒</div></div>
+      <button class="sel-box">🇺🇸 美国 ▾</button></div>
+    <div class="set-row"><div><div class="st">语言</div><div class="sd">v1.0 对应英文版</div></div>
+      <button class="sel-box">English ▾</button></div>
+    <div class="set-row"><div><div class="st">方案存到哪</div><div class="sd">文档 / BizSpark</div></div>
+      <button class="btn btn-ghost" style="height:34px;font-size:12px">更改…</button></div>
+    <div class="set-row"><div><div class="st">每月检查点子库</div><div class="sd">可选。失败永远静默。</div></div><div class="toggle on"></div></div>
+    <div class="set-row"><div><div class="st">跟随系统外观</div><div class="sd">浅色 / 深色</div></div><div class="toggle on"></div></div>
+    <div class="set-row"><div><div class="st">匿名崩溃记录</div><div class="sd">默认关闭。不含答案、不含点子、不含文件。</div></div><div class="toggle"></div></div>
+  </div>
+  <div>
+    <div class="card pad"><div class="eyebrow">一句话讲清隐私</div>
+      <h2 style="font-size:19px;line-height:1.4">你的答案、你存的点子、你导出的方案，永远不离开这台设备。</h2>
+      <p class="tiny" style="margin-top:12px">唯一一次向外请求，是每月问一句「有没有更新的点子文件」。它不带任何用户数据。关掉它，这工具就 100% 离线，永久。</p></div>
+    <div class="card pad" style="margin-top:16px"><h3>关于</h3>
+      <div class="kv"><span>版本</span><b>1.0.0</b></div>
+      <div class="kv"><span>点子库</span><b>2026.11（312 条）</b></div>
+      <div class="kv"><span>授权</span><b style="color:var(--green)">一次买断 · 已激活</b></div>
+      <div class="kv"><span>账号</span><b>无</b></div>
+      <div class="btn-row" style="margin-top:18px"><button class="btn btn-ghost" style="height:36px;font-size:12px">检查更新</button>
+      <button class="btn btn-quiet" style="font-size:12px">查看授权</button></div></div>
+  </div>
+</div></div>
+  </div>
+</div>
+<script>
+document.querySelectorAll('.opt').forEach(function(o){
+  o.addEventListener('click',function(){
+    o.parentElement.querySelectorAll('.opt').forEach(function(x){x.classList.remove('sel')});
+    o.classList.add('sel');
+  });
+});
+document.querySelectorAll('.toggle').forEach(function(t){
+  t.addEventListener('click',function(){t.classList.toggle('on')});
+});
+</script>
+<script src="assets/pricing.js"></script>
+<script src="assets/price-render.js"></script>
+</body></html>

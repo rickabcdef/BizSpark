@@ -6,10 +6,16 @@ set -euo pipefail
 
 EDITION="${BIZSPARK_EDITION:-en}"
 
-echo "[pack] 1/3 构建双构建产物之一（edition=$EDITION）"
+echo "[pack] 1/4 金额门禁 T-59（契约 P-14：价格不进包）"
+bash scripts/check-no-price.sh
+
+echo "[pack] 2/4 价格注入（六构建目标共用 config/pricing.json）"
+bash scripts/inject-pricing.sh "${BIZSPARK_TARGET:-store-win-en}"
+
+echo "[pack] 3/4 构建双构建产物之一（edition=$EDITION）"
 bash "scripts/build-${EDITION}.sh"
 
-echo "[pack] 2/3 校验包体（≤80MB 红线）"
+echo "[pack] 4/4 校验包体（≤80MB 红线）"
 APP_DIR="apps/desktop/src-tauri/target/release/bundle"
 BIN=$(find "$APP_DIR" -type f \( -name "*.exe" -o -name "*.msix" -o -name "*.msi" \) | head -1)
 if [ -n "${BIN:-}" ]; then
@@ -22,7 +28,7 @@ else
   echo "[pack] ⚠️ 未找到安装包产物，请检查 tauri build 输出"
 fi
 
-echo "[pack] 3/3 签名（如已配置证书）"
+echo "[pack] 签名（如已配置证书）"
 bash scripts/sign.sh || true
 
 echo "[pack] 完成"

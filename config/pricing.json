@@ -1,0 +1,15 @@
+{
+  "display_mode": "hidden",
+  "amount": null,
+  "currency": "USD",
+  "model": "one-time",
+  "billing_note": null,
+  "_contract": "K-11（需求文档 V2.0 §3.9）唯一工程价格源；六构建目标共用同一份配置。",
+  "_rules": [
+    "首版 display_mode=hidden、amount=null：全项目只讲功能，不出现任何商品售价金额",
+    "后期显示只改本文件：display_mode=visible + 填 amount/model/currency，一处改动全端生效，不加改价界面",
+    "model 枚举: one-time | monthly | yearly | seat；currency 为 ISO 4217",
+    "商店售价由 Partner Center / App Store Connect 后台设置，不进客户端",
+    "商机库起步成本/定价建议（如 From 120）是内容数据，不受本契约约束"
+  ]
+}

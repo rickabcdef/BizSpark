@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>BizSpark — Library</title>
+<link rel="stylesheet" href="assets/style.css">
+</head><body>
+<div class="shell">
+  <aside class="side">
+    <div class="brand"><div class="brand-mark">B</div><div>BizSpark<small>One idea away</small></div></div>
+    <nav class="nav"><div class="nav-label">Workspace</div><a class="nav-i" href="01-welcome.html"><span class="ico">◈</span>Start</a>
+<a class="nav-i" href="02-quiz.html"><span class="ico">◎</span>Find ideas</a>
+<a class="nav-i" href="03-results.html"><span class="ico">✦</span>Results</a>
+<a class="nav-i" href="04-detail.html"><span class="ico">▤</span>The plan</a>
+<a class="nav-i" href="05-export.html"><span class="ico">↓</span>Export</a>
+<a class="nav-i" href="06-saved.html"><span class="ico">❑</span>My ideas</a>
+<a class="nav-i on" href="08-update.html"><span class="ico">↻</span>Library</a>
+<a class="nav-i" href="07-activate.html"><span class="ico">⚿</span>Activate</a>
+<a class="nav-i" href="09-settings.html"><span class="ico">⚙</span>Settings</a>
+</nav>
+    <div class="side-foot">
+      <div class="badge-line"><span class="dot"></span>One-time purchase · No subscription</div>
+      <div class="side-ver">v1.0.0 · Library 2026.11 · Offline ready</div>
+    </div>
+  </aside>
+  <div class="main">
+    <div class="topbar">
+      <div class="crumb">BizSpark&nbsp;&nbsp;/&nbsp;&nbsp;<b>Library</b></div>
+      <div class="top-right">
+        <div class="chip"><span class="dot"></span>All yours, on this device</div>
+        <div class="avatar">BS</div>
+      </div>
+    </div>
+    <div class="content">
+<div class="page-head"><div class="eyebrow">Quiet, optional, free</div><h1>Your idea library</h1>
+<p class="lead">The tool checks once a month for new ideas. If it can't reach the internet, nothing happens — every idea already on your device keeps working.</p></div>
+<div class="grid g2" style="align-items:start">
+  <div class="card pad">
+    <div class="btn-row" style="justify-content:space-between"><div><h3>Current library</h3>
+      <div class="tiny" style="margin-top:4px">2026.11 · 312 ideas · 26 industries · 6 countries</div></div>
+      <span class="tag" style="color:var(--green);border-color:#BFE3D6">✓ Up to date</span></div>
+    <div class="hr"></div>
+    <div class="timeline">
+      <div class="tl on"><div class="td">1 Dec 2026 · Next</div><h3>Agent-era small services</h3>
+        <p>+14 new ideas: setting up simple AI agents for local shops, monthly care plans, no-code upkeep. Older mobile-era ideas gently move down.</p></div>
+      <div class="tl"><div class="td">1 Nov 2026 · Installed</div><h3>AI-assisted service ideas</h3>
+        <p>+18 ideas using off-the-shelf AI tools with almost no startup cost.</p></div>
+      <div class="tl"><div class="td">1 Oct 2026</div><h3>Local service pack</h3>
+        <p>+11 ideas, 3 retired after platform changes. Nothing was deleted from your disk.</p></div>
+      <div class="tl"><div class="td">Baseline · v1.0</div><h3>312 ideas shipped inside the installer</h3>
+        <p>Frozen copy. Complete and usable forever, even with no internet at all.</p></div>
+    </div>
+  </div>
+  <div>
+    <div class="card pad"><h3>How the monthly swap works</h3>
+      <p class="tiny" style="margin-top:8px;line-height:1.9">On the 1st, a tiny file (a few KB) is downloaded: a handful of <b>new</b> ideas, a few <b>revisions</b>, and occasional <b>retirements</b>. Your local copy is merged in place. There is no server running your ideas — the thinking has always been on your machine.</p>
+      <div class="hr"></div>
+      <div class="kv"><span>Update fails / no Wi-Fi</span><b>Silently skipped</b></div>
+      <div class="kv"><span>Your saved ideas</span><b>Untouched</b></div>
+      <div class="kv"><span>Cost to you</span><b>Static files only</b></div>
+    </div>
+    <div class="card pad" style="margin-top:16px;background:var(--accent-soft);border-color:#F6D3C5">
+      <h3>Why new ideas keep showing up</h3>
+      <p class="tiny" style="margin-top:7px">A business idea has a season. Mobile-internet ideas made sense in one era; AI and agent ideas make sense in the next. The library should follow the world, not freeze at the day you bought it. Fresh ideas float up; saturated ones quietly sink — never vanish.</p></div>
+  </div>
+</div>
+<div class="toast"><span class="dot"></span>Library checked · you're up to date. No action needed.</div></div>
+  </div>
+</div>
+<script>
+document.querySelectorAll('.opt').forEach(function(o){
+  o.addEventListener('click',function(){
+    o.parentElement.querySelectorAll('.opt').forEach(function(x){x.classList.remove('sel')});
+    o.classList.add('sel');
+  });
+});
+document.querySelectorAll('.toggle').forEach(function(t){
+  t.addEventListener('click',function(){t.classList.toggle('on')});
+});
+</script>
+<script src="assets/pricing.js"></script>
+<script src="assets/price-render.js"></script>
+</body></html>

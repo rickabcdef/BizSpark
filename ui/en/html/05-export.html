@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>BizSpark — Export</title>
+<link rel="stylesheet" href="assets/style.css">
+</head><body>
+<div class="shell">
+  <aside class="side">
+    <div class="brand"><div class="brand-mark">B</div><div>BizSpark<small>One idea away</small></div></div>
+    <nav class="nav"><div class="nav-label">Workspace</div><a class="nav-i" href="01-welcome.html"><span class="ico">◈</span>Start</a>
+<a class="nav-i" href="02-quiz.html"><span class="ico">◎</span>Find ideas</a>
+<a class="nav-i" href="03-results.html"><span class="ico">✦</span>Results</a>
+<a class="nav-i" href="04-detail.html"><span class="ico">▤</span>The plan</a>
+<a class="nav-i on" href="05-export.html"><span class="ico">↓</span>Export</a>
+<a class="nav-i" href="06-saved.html"><span class="ico">❑</span>My ideas</a>
+<a class="nav-i" href="08-update.html"><span class="ico">↻</span>Library</a>
+<a class="nav-i" href="07-activate.html"><span class="ico">⚿</span>Activate</a>
+<a class="nav-i" href="09-settings.html"><span class="ico">⚙</span>Settings</a>
+</nav>
+    <div class="side-foot">
+      <div class="badge-line"><span class="dot"></span>One-time purchase · No subscription</div>
+      <div class="side-ver">v1.0.0 · Library 2026.11 · Offline ready</div>
+    </div>
+  </aside>
+  <div class="main">
+    <div class="topbar">
+      <div class="crumb">BizSpark&nbsp;&nbsp;/&nbsp;&nbsp;<b>Export</b></div>
+      <div class="top-right">
+        <div class="chip"><span class="dot"></span>All yours, on this device</div>
+        <div class="avatar">BS</div>
+      </div>
+    </div>
+    <div class="content">
+<div class="card center-card">
+  <div class="big-check">✓</div>
+  <div class="eyebrow">Done, on your computer</div>
+  <h1>Your plan is ready.</h1>
+  <p class="lead" style="margin:10px auto 0">One PDF, one page, no watermark. It's a file on your disk — not a link, not an account, not something that can expire.</p>
+  <div class="file-row"><div class="file-ico">▤</div>
+    <div style="flex:1"><div class="fn">BizSpark-Plan-local-review-desk.pdf</div>
+    <div class="fs">Saved to Documents / BizSpark · 214 KB · 1 page</div></div>
+    <span class="tag" style="color:var(--green)">✓ Saved</span></div>
+  <div class="btn-row" style="justify-content:center">
+    <a class="btn btn-primary" href="#">Open folder</a>
+    <a class="btn btn-ghost" href="03-results.html">Find another idea</a>
+  </div>
+  <div class="hr"></div>
+  <div class="tiny" data-price-slot="export-note"></div>
+</div>
+<div class="card pad" style="max-width:620px;margin:18px auto 0">
+  <div class="grid g2" style="gap:14px">
+    <div><h3>What's inside the PDF</h3><p class="tiny" style="margin-top:6px">Cost breakdown · pricing hint · 7 steps · first-customer channels · 3 pitfalls · local note.</p></div>
+    <div><h3>Optional extras</h3><p class="tiny" style="margin-top:6px">Also export the cost table as CSV for your own spreadsheet. Still local, still yours.</p></div>
+  </div>
+</div></div>
+  </div>
+</div>
+<script>
+document.querySelectorAll('.opt').forEach(function(o){
+  o.addEventListener('click',function(){
+    o.parentElement.querySelectorAll('.opt').forEach(function(x){x.classList.remove('sel')});
+    o.classList.add('sel');
+  });
+});
+document.querySelectorAll('.toggle').forEach(function(t){
+  t.addEventListener('click',function(){t.classList.toggle('on')});
+});
+</script>
+<script src="assets/pricing.js"></script>
+<script src="assets/price-render.js"></script>
+</body></html>

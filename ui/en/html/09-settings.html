@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>BizSpark — Settings</title>
+<link rel="stylesheet" href="assets/style.css">
+</head><body>
+<div class="shell">
+  <aside class="side">
+    <div class="brand"><div class="brand-mark">B</div><div>BizSpark<small>One idea away</small></div></div>
+    <nav class="nav"><div class="nav-label">Workspace</div><a class="nav-i" href="01-welcome.html"><span class="ico">◈</span>Start</a>
+<a class="nav-i" href="02-quiz.html"><span class="ico">◎</span>Find ideas</a>
+<a class="nav-i" href="03-results.html"><span class="ico">✦</span>Results</a>
+<a class="nav-i" href="04-detail.html"><span class="ico">▤</span>The plan</a>
+<a class="nav-i" href="05-export.html"><span class="ico">↓</span>Export</a>
+<a class="nav-i" href="06-saved.html"><span class="ico">❑</span>My ideas</a>
+<a class="nav-i" href="08-update.html"><span class="ico">↻</span>Library</a>
+<a class="nav-i" href="07-activate.html"><span class="ico">⚿</span>Activate</a>
+<a class="nav-i on" href="09-settings.html"><span class="ico">⚙</span>Settings</a>
+</nav>
+    <div class="side-foot">
+      <div class="badge-line"><span class="dot"></span>One-time purchase · No subscription</div>
+      <div class="side-ver">v1.0.0 · Library 2026.11 · Offline ready</div>
+    </div>
+  </aside>
+  <div class="main">
+    <div class="topbar">
+      <div class="crumb">BizSpark&nbsp;&nbsp;/&nbsp;&nbsp;<b>Settings</b></div>
+      <div class="top-right">
+        <div class="chip"><span class="dot"></span>All yours, on this device</div>
+        <div class="avatar">BS</div>
+      </div>
+    </div>
+    <div class="content">
+<div class="page-head"><div class="eyebrow">Six knobs, that's it</div><h1>Settings</h1>
+<p class="lead">Everything here is local. No profile, no password, nothing to sync.</p></div>
+<div class="grid g2" style="align-items:start">
+  <div class="card pad">
+    <div class="set-row"><div><div class="st">Country</div><div class="sd">Sets currency, local channels and the one-line legal note</div></div>
+      <button class="sel-box">🇺🇸 United States ▾</button></div>
+    <div class="set-row"><div><div class="st">Language</div><div class="sd">English in v1.0</div></div>
+      <button class="sel-box">English ▾</button></div>
+    <div class="set-row"><div><div class="st">Where plans are saved</div><div class="sd">Documents / BizSpark</div></div>
+      <button class="btn btn-ghost" style="height:34px;font-size:12px">Change…</button></div>
+    <div class="set-row"><div><div class="st">Monthly library check</div><div class="sd">Optional. Failure is always silent.</div></div><div class="toggle on"></div></div>
+    <div class="set-row"><div><div class="st">Follow system appearance</div><div class="sd">Light / dark</div></div><div class="toggle on"></div></div>
+    <div class="set-row"><div><div class="st">Anonymous crash notes</div><div class="sd">Off by default. No answers, no ideas, no files.</div></div><div class="toggle"></div></div>
+  </div>
+  <div>
+    <div class="card pad"><div class="eyebrow">Privacy, in one sentence</div>
+      <h2 style="font-size:19px;line-height:1.4">Your answers, your saved ideas and your exported plans never leave this device.</h2>
+      <p class="tiny" style="margin-top:12px">The only outbound request is "is there a newer idea file?" once a month. It carries no user data. Turn it off and the tool is 100% offline, forever.</p></div>
+    <div class="card pad" style="margin-top:16px"><h3>About</h3>
+      <div class="kv"><span>Version</span><b>1.0.0</b></div>
+      <div class="kv"><span>Library</span><b>2026.11 (312 ideas)</b></div>
+      <div class="kv"><span>Licence</span><b style="color:var(--green)">One-time · activated</b></div>
+      <div class="kv"><span>Account</span><b>None</b></div>
+      <div class="btn-row" style="margin-top:18px"><button class="btn btn-ghost" style="height:36px;font-size:12px">Check for updates</button>
+      <button class="btn btn-quiet" style="font-size:12px">View licence</button></div></div>
+  </div>
+</div></div>
+  </div>
+</div>
+<script>
+document.querySelectorAll('.opt').forEach(function(o){
+  o.addEventListener('click',function(){
+    o.parentElement.querySelectorAll('.opt').forEach(function(x){x.classList.remove('sel')});
+    o.classList.add('sel');
+  });
+});
+document.querySelectorAll('.toggle').forEach(function(t){
+  t.addEventListener('click',function(){t.classList.toggle('on')});
+});
+</script>
+<script src="assets/pricing.js"></script>
+<script src="assets/price-render.js"></script>
+</body></html>

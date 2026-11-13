@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>BizSpark — 我的点子</title>
+<link rel="stylesheet" href="assets/style.css">
+</head><body>
+<div class="shell">
+  <aside class="side">
+    <div class="brand"><div class="brand-mark">B</div><div>BizSpark<small>一个点子就够了</small></div></div>
+    <nav class="nav"><div class="nav-label">工作区</div><a class="nav-i" href="01-welcome.html"><span class="ico">◈</span>开始</a>
+<a class="nav-i" href="02-quiz.html"><span class="ico">◎</span>找点子</a>
+<a class="nav-i" href="03-results.html"><span class="ico">✦</span>结果</a>
+<a class="nav-i" href="04-detail.html"><span class="ico">▤</span>一页方案</a>
+<a class="nav-i" href="05-export.html"><span class="ico">↓</span>导出</a>
+<a class="nav-i on" href="06-saved.html"><span class="ico">❑</span>我的点子</a>
+<a class="nav-i" href="08-update.html"><span class="ico">↻</span>点子库</a>
+<a class="nav-i" href="07-activate.html"><span class="ico">⚿</span>激活</a>
+<a class="nav-i" href="09-settings.html"><span class="ico">⚙</span>设置</a>
+</nav>
+    <div class="side-foot">
+      <div class="badge-line"><span class="dot"></span>一次买断 · 无订阅</div>
+      <div class="side-ver">v1.0.0 · 点子库 2026.11 · 可离线</div>
+    </div>
+  </aside>
+  <div class="main">
+    <div class="topbar">
+      <div class="crumb">BizSpark&nbsp;&nbsp;/&nbsp;&nbsp;<b>我的点子</b></div>
+      <div class="top-right">
+        <div class="chip"><span class="dot"></span>全部留在这台设备</div>
+        <div class="avatar">BS</div>
+      </div>
+    </div>
+    <div class="content">
+<div class="page-head"><div class="eyebrow">留在这台设备</div><h1>我的点子</h1>
+<p class="lead">本地保存。不上传、不同步、不登录——半年后再打开，它们还在这儿。</p></div>
+<div class="grid" style="gap:12px">
+<div class="card mini"><div class="thumb">✦</div><div class="mt"><h3>街边小店评论代回</h3><p>2026-11-12 保存 · $120 起步 · 94% 匹配</p></div>
+    <a class="btn btn-ghost" style="height:34px;font-size:12px" href="04-detail.html">打开</a></div><div class="card mini"><div class="thumb">▣</div><div class="mt"><h3>AI 辅助商品图精修</h3><p>2026-11-12 保存 · $80 起步 · 89% 匹配</p></div>
+    <a class="btn btn-ghost" style="height:34px;font-size:12px" href="04-detail.html">打开</a></div><div class="card mini"><div class="thumb">◈</div><div class="mt"><h3>周末上门填表与见证</h3><p>2026-11-12 保存 · $260 起步 · 85% 匹配</p></div>
+    <a class="btn btn-ghost" style="height:34px;font-size:12px" href="04-detail.html">打开</a></div>
+</div>
+<div class="hr"></div>
+<div class="btn-row"><a class="btn btn-primary" href="02-quiz.html">找新点子 &nbsp;→</a>
+  <a class="btn btn-ghost" href="#">两个点子对照</a>
+  <a class="btn btn-quiet" href="#">清空已存</a></div>
+<div class="foot-note">💡 第一单做成了？回来把预算调大，再答一遍那 5 道题。还是那个按钮，还是 3 张卡。</div></div>
+  </div>
+</div>
+<script>
+document.querySelectorAll('.opt').forEach(function(o){
+  o.addEventListener('click',function(){
+    o.parentElement.querySelectorAll('.opt').forEach(function(x){x.classList.remove('sel')});
+    o.classList.add('sel');
+  });
+});
+document.querySelectorAll('.toggle').forEach(function(t){
+  t.addEventListener('click',function(){t.classList.toggle('on')});
+});
+</script>
+<script src="assets/pricing.js"></script>
+<script src="assets/price-render.js"></script>
+</body></html>

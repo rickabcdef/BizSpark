@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>BizSpark — 结果</title>
+<link rel="stylesheet" href="assets/style.css">
+</head><body>
+<div class="shell">
+  <aside class="side">
+    <div class="brand"><div class="brand-mark">B</div><div>BizSpark<small>一个点子就够了</small></div></div>
+    <nav class="nav"><div class="nav-label">工作区</div><a class="nav-i" href="01-welcome.html"><span class="ico">◈</span>开始</a>
+<a class="nav-i" href="02-quiz.html"><span class="ico">◎</span>找点子</a>
+<a class="nav-i on" href="03-results.html"><span class="ico">✦</span>结果</a>
+<a class="nav-i" href="04-detail.html"><span class="ico">▤</span>一页方案</a>
+<a class="nav-i" href="05-export.html"><span class="ico">↓</span>导出</a>
+<a class="nav-i" href="06-saved.html"><span class="ico">❑</span>我的点子</a>
+<a class="nav-i" href="08-update.html"><span class="ico">↻</span>点子库</a>
+<a class="nav-i" href="07-activate.html"><span class="ico">⚿</span>激活</a>
+<a class="nav-i" href="09-settings.html"><span class="ico">⚙</span>设置</a>
+</nav>
+    <div class="side-foot">
+      <div class="badge-line"><span class="dot"></span>一次买断 · 无订阅</div>
+      <div class="side-ver">v1.0.0 · 点子库 2026.11 · 可离线</div>
+    </div>
+  </aside>
+  <div class="main">
+    <div class="topbar">
+      <div class="crumb">BizSpark&nbsp;&nbsp;/&nbsp;&nbsp;<b>结果</b></div>
+      <div class="top-right">
+        <div class="chip"><span class="dot"></span>全部留在这台设备</div>
+        <div class="avatar">BS</div>
+      </div>
+    </div>
+    <div class="content">
+<div class="page-head"><div class="eyebrow">40 秒出结果</div>
+<h1>3 个你真能开起来的生意。</h1>
+<p class="lead">按 $500–$2,000、每周不到 10 小时、一台电脑、美国来算。什么都没传出去过。</p></div>
+<div class="grid g3">
+
+<div class="card idea-card">
+  <div class="idea-no">01 / 03 <span class="match">94% 匹配</span></div>
+  <h3>街边小店评论代回</h3><p>用一套固定模板，帮 20 家街边小店回复 Google 和 Yelp 评论。</p>
+  <div class="why"><b>为什么适合你：</b> 钱少、只要一台电脑、按月收钱——正好对上你的预算和时间。</div>
+  <div class="meta-row"><span class="tag">$120 起步</span><span class="tag">每周 &lt;10 小时</span><span class="tag">按月收钱</span></div>
+  <a class="btn btn-primary" href="04-detail.html" style="width:100%">看一页方案 &nbsp;→</a>
+</div>
+<div class="card idea-card">
+  <div class="idea-no">02 / 03 <span class="match">89% 匹配</span></div>
+  <h3>AI 辅助商品图精修</h3><p>给 Etsy、Shopify 小卖家修图改尺寸，24 小时交付。</p>
+  <div class="why"><b>为什么适合你：</b> 用你已经会的 AI 工具，不压货，客户就在卖家群里。</div>
+  <div class="meta-row"><span class="tag">$80 起步</span><span class="tag">线上</span><span class="tag">新趋势</span></div>
+  <a class="btn btn-primary" href="04-detail.html" style="width:100%">看一页方案 &nbsp;→</a>
+</div>
+<div class="card idea-card">
+  <div class="idea-no">03 / 03 <span class="match">85% 匹配</span></div>
+  <h3>周末上门填表与见证</h3><p>上门帮人填表、扫描、签字，按小时预约。</p>
+  <div class="why"><b>为什么适合你：</b> 你有车、又守着固定片区——这是你所在城市毛利最高的一项。</div>
+  <div class="meta-row"><span class="tag">$260 起步</span><span class="tag">本地</span><span class="tag">周末</span></div>
+  <a class="btn btn-primary" href="04-detail.html" style="width:100%">看一页方案 &nbsp;→</a>
+</div>
+</div>
+<div class="hr"></div>
+<div class="btn-row"><a class="btn btn-ghost" href="02-quiz.html">← 改我的答案</a>
+  <a class="btn btn-quiet" href="06-saved.html">三个都存起来</a>
+  <span class="tiny" style="margin-left:auto">过时、已经卷透的点子仍留在库里，但绝不会被推到前面。</span></div>
+<div class="stat"><div><div class="sv">312</div><div class="sl">本地筛过的点子</div></div>
+<div><div class="sv">309</div><div class="sl">被你的钱和时间筛掉</div></div>
+<div><div class="sv">3</div><div class="sl">值得你周一动手</div></div></div></div>
+  </div>
+</div>
+<script>
+document.querySelectorAll('.opt').forEach(function(o){
+  o.addEventListener('click',function(){
+    o.parentElement.querySelectorAll('.opt').forEach(function(x){x.classList.remove('sel')});
+    o.classList.add('sel');
+  });
+});
+document.querySelectorAll('.toggle').forEach(function(t){
+  t.addEventListener('click',function(){t.classList.toggle('on')});
+});
+</script>
+<script src="assets/pricing.js"></script>
+<script src="assets/price-render.js"></script>
+</body></html>

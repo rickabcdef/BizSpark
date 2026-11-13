@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>BizSpark — 找点子</title>
+<link rel="stylesheet" href="assets/style.css">
+</head><body>
+<div class="shell">
+  <aside class="side">
+    <div class="brand"><div class="brand-mark">B</div><div>BizSpark<small>一个点子就够了</small></div></div>
+    <nav class="nav"><div class="nav-label">工作区</div><a class="nav-i" href="01-welcome.html"><span class="ico">◈</span>开始</a>
+<a class="nav-i on" href="02-quiz.html"><span class="ico">◎</span>找点子</a>
+<a class="nav-i" href="03-results.html"><span class="ico">✦</span>结果</a>
+<a class="nav-i" href="04-detail.html"><span class="ico">▤</span>一页方案</a>
+<a class="nav-i" href="05-export.html"><span class="ico">↓</span>导出</a>
+<a class="nav-i" href="06-saved.html"><span class="ico">❑</span>我的点子</a>
+<a class="nav-i" href="08-update.html"><span class="ico">↻</span>点子库</a>
+<a class="nav-i" href="07-activate.html"><span class="ico">⚿</span>激活</a>
+<a class="nav-i" href="09-settings.html"><span class="ico">⚙</span>设置</a>
+</nav>
+    <div class="side-foot">
+      <div class="badge-line"><span class="dot"></span>一次买断 · 无订阅</div>
+      <div class="side-ver">v1.0.0 · 点子库 2026.11 · 可离线</div>
+    </div>
+  </aside>
+  <div class="main">
+    <div class="topbar">
+      <div class="crumb">BizSpark&nbsp;&nbsp;/&nbsp;&nbsp;<b>找点子</b></div>
+      <div class="top-right">
+        <div class="chip"><span class="dot"></span>全部留在这台设备</div>
+        <div class="avatar">BS</div>
+      </div>
+    </div>
+    <div class="content">
+<div class="page-head"><div class="eyebrow">第 2 步 / 共 5 步</div><h1>5 道题。就这些。</h1>
+<p class="lead">不用注册，不用写小作文。一切都留在这台电脑里。</p></div>
+<div class="stepper"><div class="step done"><span class="num">✓</span>关于你</div><div class="step-line done"></div><div class="step on"><span class="num">2</span>钱</div><div class="step-line"></div><div class="step "><span class="num">3</span>时间</div><div class="step-line"></div><div class="step "><span class="num">4</span>手上的资源</div><div class="step-line"></div><div class="step "><span class="num">5</span>好了</div></div>
+<div class="quiz-wrap">
+  <div class="card q-card">
+    <div class="q-count">第 02 题 — 钱</div>
+    <div class="q-title">起步你能拿出多少钱？</div>
+    <div class="muted tiny">选一个万一没做成、你也扛得住的数目。我们只给你看配得上的点子。</div>
+    <div class="opts">
+      <button class="opt"><span class="radio"></span><span class="em">🪙</span><span><span class="ot">几乎不花钱 — $500 以内</span><span class="od">服务类，不压货，不租店</span></span></button>
+      <button class="opt sel"><span class="radio"></span><span class="em">💵</span><span><span class="ot">$500 – $2,000</span><span class="od">一台电脑、几件工具、一点推广费</span></span></button>
+      <button class="opt"><span class="radio"></span><span class="em">💳</span><span><span class="ot">$2,000 – $10,000</span><span class="od">设备、一辆车，或者少量库存</span></span></button>
+      <button class="opt"><span class="radio"></span><span class="em">🏦</span><span><span class="ot">$10,000 以上</span><span class="od">可以租场地、雇人、批量进货</span></span></button>
+    </div>
+    <div class="hr"></div>
+    <div class="btn-row"><a class="btn btn-ghost" href="01-welcome.html">← 返回</a>
+      <a class="btn btn-primary" href="03-results.html">下一题 &nbsp;→</a>
+      <span class="tiny" style="margin-left:auto">大约 40 秒</span></div>
+  </div>
+  <div>
+    <div class="card aside-note"><div class="ico">🔒</div><h3>什么都不离开这台设备</h3>
+      <p>你的答案只在本地用来挑点子，绝不上传。没有账号、没有邮箱、没有追踪。</p></div>
+    <div class="card aside-note" style="margin-top:16px;background:var(--deep);border-color:var(--deep);color:#fff">
+      <div class="ico">✦</div><h3>为什么只给 3 个？</h3>
+      <p style="color:#A8BACB">因为 30 个是作业，3 个真合适的才是决定。</p></div>
+  </div>
+</div></div>
+  </div>
+</div>
+<script>
+document.querySelectorAll('.opt').forEach(function(o){
+  o.addEventListener('click',function(){
+    o.parentElement.querySelectorAll('.opt').forEach(function(x){x.classList.remove('sel')});
+    o.classList.add('sel');
+  });
+});
+document.querySelectorAll('.toggle').forEach(function(t){
+  t.addEventListener('click',function(){t.classList.toggle('on')});
+});
+</script>
+<script src="assets/pricing.js"></script>
+<script src="assets/price-render.js"></script>
+</body></html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>BizSpark — Find ideas</title>
+<link rel="stylesheet" href="assets/style.css">
+</head><body>
+<div class="shell">
+  <aside class="side">
+    <div class="brand"><div class="brand-mark">B</div><div>BizSpark<small>One idea away</small></div></div>
+    <nav class="nav"><div class="nav-label">Workspace</div><a class="nav-i" href="01-welcome.html"><span class="ico">◈</span>Start</a>
+<a class="nav-i on" href="02-quiz.html"><span class="ico">◎</span>Find ideas</a>
+<a class="nav-i" href="03-results.html"><span class="ico">✦</span>Results</a>
+<a class="nav-i" href="04-detail.html"><span class="ico">▤</span>The plan</a>
+<a class="nav-i" href="05-export.html"><span class="ico">↓</span>Export</a>
+<a class="nav-i" href="06-saved.html"><span class="ico">❑</span>My ideas</a>
+<a class="nav-i" href="08-update.html"><span class="ico">↻</span>Library</a>
+<a class="nav-i" href="07-activate.html"><span class="ico">⚿</span>Activate</a>
+<a class="nav-i" href="09-settings.html"><span class="ico">⚙</span>Settings</a>
+</nav>
+    <div class="side-foot">
+      <div class="badge-line"><span class="dot"></span>One-time purchase · No subscription</div>
+      <div class="side-ver">v1.0.0 · Library 2026.11 · Offline ready</div>
+    </div>
+  </aside>
+  <div class="main">
+    <div class="topbar">
+      <div class="crumb">BizSpark&nbsp;&nbsp;/&nbsp;&nbsp;<b>Find ideas</b></div>
+      <div class="top-right">
+        <div class="chip"><span class="dot"></span>All yours, on this device</div>
+        <div class="avatar">BS</div>
+      </div>
+    </div>
+    <div class="content">
+<div class="page-head"><div class="eyebrow">Step 2 of 5</div><h1>Five questions. That's all.</h1>
+<p class="lead">No sign-up, no typing an essay. Everything stays on this computer.</p></div>
+<div class="stepper"><div class="step done"><span class="num">✓</span>About you</div><div class="step-line done"></div><div class="step on"><span class="num">2</span>Money</div><div class="step-line"></div><div class="step "><span class="num">3</span>Time</div><div class="step-line"></div><div class="step "><span class="num">4</span>Resources</div><div class="step-line"></div><div class="step "><span class="num">5</span>Ready</div></div>
+<div class="quiz-wrap">
+  <div class="card q-card">
+    <div class="q-count">Question 02 — Money</div>
+    <div class="q-title">How much can you put in to start?</div>
+    <div class="muted tiny">Pick the amount you'd be OK losing if it doesn't work out. We'll only show ideas that fit.</div>
+    <div class="opts">
+      <button class="opt"><span class="radio"></span><span class="em">🪙</span><span><span class="ot">Almost nothing — under $500</span><span class="od">Service ideas, no stock, no shop</span></span></button>
+      <button class="opt sel"><span class="radio"></span><span class="em">💵</span><span><span class="ot">$500 – $2,000</span><span class="od">A laptop, some tools, a little ads budget</span></span></button>
+      <button class="opt"><span class="radio"></span><span class="em">💳</span><span><span class="ot">$2,000 – $10,000</span><span class="od">Equipment, a van, or a small inventory</span></span></button>
+      <button class="opt"><span class="radio"></span><span class="em">🏦</span><span><span class="ot">$10,000+</span><span class="od">Ready to rent, hire or buy in bulk</span></span></button>
+    </div>
+    <div class="hr"></div>
+    <div class="btn-row"><a class="btn btn-ghost" href="01-welcome.html">← Back</a>
+      <a class="btn btn-primary" href="03-results.html">Next question &nbsp;→</a>
+      <span class="tiny" style="margin-left:auto">Takes about 40 seconds</span></div>
+  </div>
+  <div>
+    <div class="card aside-note"><div class="ico">🔒</div><h3>Nothing leaves this device</h3>
+      <p>Your answers are used locally to pick ideas and are never uploaded. No account, no email, no tracking.</p></div>
+    <div class="card aside-note" style="margin-top:16px;background:var(--deep);border-color:var(--deep);color:#fff">
+      <div class="ico">✦</div><h3>Why only 3 ideas?</h3>
+      <p style="color:#A8BACB">Because 30 ideas is just homework. Three that actually fit you is a decision.</p></div>
+  </div>
+</div></div>
+  </div>
+</div>
+<script>
+document.querySelectorAll('.opt').forEach(function(o){
+  o.addEventListener('click',function(){
+    o.parentElement.querySelectorAll('.opt').forEach(function(x){x.classList.remove('sel')});
+    o.classList.add('sel');
+  });
+});
+document.querySelectorAll('.toggle').forEach(function(t){
+  t.addEventListener('click',function(){t.classList.toggle('on')});
+});
+</script>
+<script src="assets/pricing.js"></script>
+<script src="assets/price-render.js"></script>
+</body></html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>BizSpark — Results</title>
+<link rel="stylesheet" href="assets/style.css">
+</head><body>
+<div class="shell">
+  <aside class="side">
+    <div class="brand"><div class="brand-mark">B</div><div>BizSpark<small>One idea away</small></div></div>
+    <nav class="nav"><div class="nav-label">Workspace</div><a class="nav-i" href="01-welcome.html"><span class="ico">◈</span>Start</a>
+<a class="nav-i" href="02-quiz.html"><span class="ico">◎</span>Find ideas</a>
+<a class="nav-i on" href="03-results.html"><span class="ico">✦</span>Results</a>
+<a class="nav-i" href="04-detail.html"><span class="ico">▤</span>The plan</a>
+<a class="nav-i" href="05-export.html"><span class="ico">↓</span>Export</a>
+<a class="nav-i" href="06-saved.html"><span class="ico">❑</span>My ideas</a>
+<a class="nav-i" href="08-update.html"><span class="ico">↻</span>Library</a>
+<a class="nav-i" href="07-activate.html"><span class="ico">⚿</span>Activate</a>
+<a class="nav-i" href="09-settings.html"><span class="ico">⚙</span>Settings</a>
+</nav>
+    <div class="side-foot">
+      <div class="badge-line"><span class="dot"></span>One-time purchase · No subscription</div>
+      <div class="side-ver">v1.0.0 · Library 2026.11 · Offline ready</div>
+    </div>
+  </aside>
+  <div class="main">
+    <div class="topbar">
+      <div class="crumb">BizSpark&nbsp;&nbsp;/&nbsp;&nbsp;<b>Results</b></div>
+      <div class="top-right">
+        <div class="chip"><span class="dot"></span>All yours, on this device</div>
+        <div class="avatar">BS</div>
+      </div>
+    </div>
+    <div class="content">
+<div class="page-head"><div class="eyebrow">Ready in 40 seconds</div>
+<h1>Three businesses you can actually start.</h1>
+<p class="lead">Based on $500–$2,000, under 10 hours a week, a laptop, and United States. Nothing was sent anywhere.</p></div>
+<div class="grid g3">
+
+<div class="card idea-card">
+  <div class="idea-no">01 / 03 <span class="match">94% MATCH</span></div>
+  <h3>Local shop review-reply desk</h3><p>Help 20 neighbourhood shops answer their Google & Yelp reviews with a fixed template pack.</p>
+  <div class="why"><b>Why this fits you:</b> Low money, laptop only, repeat monthly income — matches your budget and time.</div>
+  <div class="meta-row"><span class="tag">From $120</span><span class="tag">&lt;10 h/wk</span><span class="tag">Monthly</span></div>
+  <a class="btn btn-primary" href="04-detail.html" style="width:100%">See the one-page plan &nbsp;→</a>
+</div>
+<div class="card idea-card">
+  <div class="idea-no">02 / 03 <span class="match">89% MATCH</span></div>
+  <h3>AI-assisted product photo cleanup</h3><p>Fix and resize product photos for small Etsy and Shopify sellers, delivered in 24 hours.</p>
+  <div class="why"><b>Why this fits you:</b> Uses the AI tools you already know, no stock, clients come from seller groups.</div>
+  <div class="meta-row"><span class="tag">From $80</span><span class="tag">Online</span><span class="tag">New wave</span></div>
+  <a class="btn btn-primary" href="04-detail.html" style="width:100%">See the one-page plan &nbsp;→</a>
+</div>
+<div class="card idea-card">
+  <div class="idea-no">03 / 03 <span class="match">85% MATCH</span></div>
+  <h3>Weekend mobile notary & form helper</h3><p>Visit people at home to help with forms, scans and signatures, booked by the hour.</p>
+  <div class="why"><b>Why this fits you:</b> You have a car and a fixed local area — the highest-margin match in your city.</div>
+  <div class="meta-row"><span class="tag">From $260</span><span class="tag">Local</span><span class="tag">Weekend</span></div>
+  <a class="btn btn-primary" href="04-detail.html" style="width:100%">See the one-page plan &nbsp;→</a>
+</div>
+</div>
+<div class="hr"></div>
+<div class="btn-row"><a class="btn btn-ghost" href="02-quiz.html">← Change my answers</a>
+  <a class="btn btn-quiet" href="06-saved.html">Save all three</a>
+  <span class="tiny" style="margin-left:auto">Older, saturated ideas are kept in the library but never pushed to the top.</span></div>
+<div class="stat"><div><div class="sv">312</div><div class="sl">ideas checked locally</div></div>
+<div><div class="sv">309</div><div class="sl">ruled out by your money & time</div></div>
+<div><div class="sv">3</div><div class="sl">worth your Monday</div></div></div></div>
+  </div>
+</div>
+<script>
+document.querySelectorAll('.opt').forEach(function(o){
+  o.addEventListener('click',function(){
+    o.parentElement.querySelectorAll('.opt').forEach(function(x){x.classList.remove('sel')});
+    o.classList.add('sel');
+  });
+});
+document.querySelectorAll('.toggle').forEach(function(t){
+  t.addEventListener('click',function(){t.classList.toggle('on')});
+});
+</script>
+<script src="assets/pricing.js"></script>
+<script src="assets/price-render.js"></script>
+</body></html>

@@ -10,6 +10,10 @@ export BIZSPARK_EDITION=cn
 export BIZSPARK_LOCALE=zh-CN
 export BIZSPARK_HOST_URL="${BIZSPARK_HOST_URL_CN:-https://static.bizspark.example/cn}"
 
+echo "[build-cn] 0/3 价格注入 + 金额门禁（契约 K-11/T-59，六构建目标共用一份配置）"
+bash scripts/inject-pricing.sh "${BIZSPARK_TARGET:-selfcheck-cn-win}"
+bash scripts/check-no-price.sh
+
 echo "[build-cn] 1/3 安装前端依赖（B 的 web 工程）"
 (cd ../web && npm ci --no-audit --no-fund)
 

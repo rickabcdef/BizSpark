@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>BizSpark — 点子库</title>
+<link rel="stylesheet" href="assets/style.css">
+</head><body>
+<div class="shell">
+  <aside class="side">
+    <div class="brand"><div class="brand-mark">B</div><div>BizSpark<small>一个点子就够了</small></div></div>
+    <nav class="nav"><div class="nav-label">工作区</div><a class="nav-i" href="01-welcome.html"><span class="ico">◈</span>开始</a>
+<a class="nav-i" href="02-quiz.html"><span class="ico">◎</span>找点子</a>
+<a class="nav-i" href="03-results.html"><span class="ico">✦</span>结果</a>
+<a class="nav-i" href="04-detail.html"><span class="ico">▤</span>一页方案</a>
+<a class="nav-i" href="05-export.html"><span class="ico">↓</span>导出</a>
+<a class="nav-i" href="06-saved.html"><span class="ico">❑</span>我的点子</a>
+<a class="nav-i on" href="08-update.html"><span class="ico">↻</span>点子库</a>
+<a class="nav-i" href="07-activate.html"><span class="ico">⚿</span>激活</a>
+<a class="nav-i" href="09-settings.html"><span class="ico">⚙</span>设置</a>
+</nav>
+    <div class="side-foot">
+      <div class="badge-line"><span class="dot"></span>一次买断 · 无订阅</div>
+      <div class="side-ver">v1.0.0 · 点子库 2026.11 · 可离线</div>
+    </div>
+  </aside>
+  <div class="main">
+    <div class="topbar">
+      <div class="crumb">BizSpark&nbsp;&nbsp;/&nbsp;&nbsp;<b>点子库</b></div>
+      <div class="top-right">
+        <div class="chip"><span class="dot"></span>全部留在这台设备</div>
+        <div class="avatar">BS</div>
+      </div>
+    </div>
+    <div class="content">
+<div class="page-head"><div class="eyebrow">安静、可选、免费</div><h1>你的点子库</h1>
+<p class="lead">工具每月查一次有没有新点子。连不上就什么都不发生——设备上已有的每一条照常能用。</p></div>
+<div class="grid g2" style="align-items:start">
+  <div class="card pad">
+    <div class="btn-row" style="justify-content:space-between"><div><h3>当前点子库</h3>
+      <div class="tiny" style="margin-top:4px">2026.11 · 312 条点子 · 26 个行业 · 6 个国家</div></div>
+      <span class="tag" style="color:var(--green);border-color:#BFE3D6">✓ 已是最新</span></div>
+    <div class="hr"></div>
+    <div class="timeline">
+      <div class="tl on"><div class="td">2026-12-01 · 下一次</div><h3>智能体时代的小服务</h3>
+        <p>新增 14 条：替本地小店搭简单 AI 智能体、按月维护、零代码照看。移动互联网那批老点子慢慢往下沉。</p></div>
+      <div class="tl"><div class="td">2026-11-01 · 已装</div><h3>AI 辅助服务类点子</h3>
+        <p>新增 18 条，用现成 AI 工具、几乎零起步成本。</p></div>
+      <div class="tl"><div class="td">2026-10-01</div><h3>本地服务包</h3>
+        <p>新增 11 条，平台规则变化后下架 3 条。你硬盘上一条都没被删。</p></div>
+      <div class="tl"><div class="td">内置基线 · v1.0</div><h3>安装包里自带 312 条点子</h3>
+        <p>冻结副本。完整可用、永久可用，完全没网也行。</p></div>
+    </div>
+  </div>
+  <div>
+    <div class="card pad"><h3>每月换挡怎么跑</h3>
+      <p class="tiny" style="margin-top:8px;line-height:1.9">每月 1 号下载一个几 KB 的小文件：几条<b>新增</b>、几条<b>修订</b>、偶尔几条<b>下架</b>。本地直接合并。没有任何服务器替你跑点子——动脑这件事一直在你自己的机器上。</p>
+      <div class="hr"></div>
+      <div class="kv"><span>更新失败 / 没 Wi-Fi</span><b>静默跳过</b></div>
+      <div class="kv"><span>你存的点子</span><b>原样不动</b></div>
+      <div class="kv"><span>你这边成本</span><b>只有几个静态文件</b></div>
+    </div>
+    <div class="card pad" style="margin-top:16px;background:var(--accent-soft);border-color:#F6D3C5">
+      <h3>为什么点子要一直换新</h3>
+      <p class="tiny" style="margin-top:7px">生意点子是有季节的。移动互联网那波在一个年代成立，AI 和智能体这波在下一个年代成立。点子库该跟着世界走，不该冻在你付款那天。新点子浮上来，卷透的慢慢沉下去——但永不消失。</p></div>
+  </div>
+</div>
+<div class="toast"><span class="dot"></span>点子库已检查 · 已是最新，不用管。</div></div>
+  </div>
+</div>
+<script>
+document.querySelectorAll('.opt').forEach(function(o){
+  o.addEventListener('click',function(){
+    o.parentElement.querySelectorAll('.opt').forEach(function(x){x.classList.remove('sel')});
+    o.classList.add('sel');
+  });
+});
+document.querySelectorAll('.toggle').forEach(function(t){
+  t.addEventListener('click',function(){t.classList.toggle('on')});
+});
+</script>
+<script src="assets/pricing.js"></script>
+<script src="assets/price-render.js"></script>
+</body></html>
