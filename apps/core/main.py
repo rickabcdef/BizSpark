@@ -17,6 +17,8 @@ import sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 from engine import diagnose as _diagnose, get_idea as _get_idea  # noqa: E402
+from render.pdf import export_plan as _export_plan  # noqa: E402  E（F06 导出）
+from render.csv import export_csv as _export_csv    # noqa: E402  E（F06 步骤 9）
 
 # 错误码（附录 D，仅内部使用，禁止展示给用户）
 E_BAD_REQUEST = {"code": "E_BAD_REQUEST", "recoverable": True}
@@ -34,26 +36,30 @@ CMD_HANDLERS = {
     # —— C（F03 匹配引擎 / §3.4 详情装配）——
     "diagnose": _diagnose,
     "get_idea": _get_idea,
+    # —— E（F06 本地导出：单页 PDF + 成本表 CSV）——
+    "export_plan": _export_plan,
+    "export_csv": _export_csv,
 }
 
 # §2.4 命令表其余 cmd：保留注册点，等对应负责人实现后挂载（勿删他人名字）
-#   E  export_plan / export_csv（F06 导出）
 #   F  get_state / save_answers / save_idea / list_saved / clear_saved / compare_ideas
 #      get_settings / set_settings / check_library / apply_delta / log_crash
 #      （以及 F09 合并、F07 存档等）
 #   G  activate / license_status / release_seat（F10 授权）
 _NOT_IMPLEMENTED_CMDS = [
     # §2.4 正名
-    "get_state", "save_answers", "export_plan", "export_csv",
+    "get_state", "save_answers",
     "save_idea", "list_saved", "clear_saved", "compare_ideas",
     "get_settings", "set_settings", "check_library", "apply_delta",
     "activate", "license_status", "release_seat", "log_crash",
     # 早期脚手架别名（保留，兼容既有调用方；负责人实现正名后可下线）
-    "quiz_next", "quiz_reset", "assemble_detail", "export_pdf",
-    "saved_list", "saved_save", "merge_delta", "settings_get", "settings_set",
+    "quiz_next", "quiz_reset", "assemble_detail", "saved_list", "saved_save",
+    "merge_delta", "settings_get", "settings_set",
 ]
 for _c in _NOT_IMPLEMENTED_CMDS:
     CMD_HANDLERS.setdefault(_c, _not_implemented)
+# 早期别名 export_pdf / assemble_detail 由 E 正名后接管的兼容挂载（保留别名不破坏既有调用方）
+CMD_HANDLERS["export_pdf"] = _export_plan
 
 
 def handle(raw_line):
