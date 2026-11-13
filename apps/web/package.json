@@ -1,0 +1,23 @@
+{
+  "name": "bizspark-web",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "_comment": "BizSpark Vue3 前端构建配置（负责人：B）。依赖仅在构建期使用；运行时零出网。",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "build:en": "cross-env BIZSPARK_LOCALE=en-US vite build",
+    "build:cn": "cross-env BIZSPARK_LOCALE=zh-CN vite build"
+  },
+  "dependencies": {
+    "vue": "^3.4.0",
+    "vue-router": "^4.3.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.0.0",
+    "cross-env": "^7.0.3",
+    "typescript": "^5.4.0",
+    "vite": "^5.2.0"
+  }
+}
