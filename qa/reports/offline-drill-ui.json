@@ -1,0 +1,38 @@
+{
+  "scenario": "D5 frontend offline drill (socket stubbed sidecar)",
+  "steps": [
+    {
+      "step": "welcome",
+      "ok": true
+    },
+    {
+      "step": "results",
+      "ok": true,
+      "cards": 6
+    },
+    {
+      "step": "detail",
+      "ok": true,
+      "ideaId": "bs-svc-mobile-car-wash-053"
+    },
+    {
+      "step": "export",
+      "ok": true,
+      "pdf": "BizSpark-Plan-bs-svc-mobile-car-wash-053.pdf"
+    },
+    {
+      "step": "saved",
+      "ok": true
+    }
+  ],
+  "pageErrors": [],
+  "consoleErrors": [],
+  "externalRequests": [],
+  "socketBlocked": 0,
+  "exportPdf": "BizSpark-Plan-bs-svc-mobile-car-wash-053.pdf",
+  "status": "PASS",
+  "defects": [
+    "B-09 候选（新发现）：Detail.vue 跳 /export 未携带 ideaId，Export.vue 的 history.state?.ideaId 为空 → 完成页不出文件行（导出静默失败）"
+  ],
+  "failed4xx": []
+}

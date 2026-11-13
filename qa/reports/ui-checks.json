@@ -1,0 +1,147 @@
+{
+  "total": 16,
+  "passed": 14,
+  "failed": [
+    "T-20",
+    "T-37"
+  ],
+  "results": [
+    {
+      "id": "T-01",
+      "ok": true,
+      "detail": "首屏 256ms（红线 1500）· 溢出 0px · 主 CTA 1 个 · 外网请求 0",
+      "metrics": {
+        "ms": 256,
+        "scroll": 0,
+        "primaries": 1
+      }
+    },
+    {
+      "id": "T-03",
+      "ok": true,
+      "detail": "降级页无红色提示（0 处红字）· 无错误字样=true",
+      "metrics": {
+        "red": []
+      }
+    },
+    {
+      "id": "T-04",
+      "ok": true,
+      "detail": "路由 #/quiz · stepper 高亮 1 个 · 第 1 点色 rgb(242, 101, 58)",
+      "metrics": {}
+    },
+    {
+      "id": "T-05",
+      "ok": true,
+      "detail": "自动进题 362ms（0.35s 设计值）· Next 按钮 0 个",
+      "metrics": {
+        "ms": 362
+      }
+    },
+    {
+      "id": "T-06",
+      "ok": true,
+      "detail": "连点 3 次只进一题（QUESTION 03 — TIME → QUESTION 04 — RESOURCES，当前第 4 题）",
+      "metrics": {}
+    },
+    {
+      "id": "T-07",
+      "ok": true,
+      "detail": "选 3 项=3 → Nothing yet 清空=0 → 再选 1=1 · Done 可用=true",
+      "metrics": {}
+    },
+    {
+      "id": "T-08",
+      "ok": true,
+      "detail": "Back 后停在第 1 题，预选项「🇺🇸」",
+      "metrics": {}
+    },
+    {
+      "id": "T-19",
+      "ok": true,
+      "detail": "3 卡 · 等高=true(344/344/344) · 元素序 6 个 · 多余控件 0",
+      "metrics": {
+        "heights": [
+          344,
+          344,
+          344
+        ],
+        "order": [
+          "idea-no",
+          "h3",
+          "p",
+          "why",
+          "meta-row",
+          "btn btn-primary card-cta"
+        ]
+      }
+    },
+    {
+      "id": "T-20",
+      "ok": false,
+      "detail": "复述句「Based on , , and US. Nothing was sent anywhere.」· 缺 [\"$500–$2,000\",\"under 10 hours a week\",\"United States\"]",
+      "metrics": {}
+    },
+    {
+      "id": "T-21",
+      "ok": true,
+      "detail": "4 卡顺序：What it cost | Your first 7 | Where the fi | Three ways p",
+      "metrics": {}
+    },
+    {
+      "id": "T-22",
+      "ok": true,
+      "detail": "滚到底后右侧卡仍在视口（position:sticky, y=24）",
+      "metrics": {}
+    },
+    {
+      "id": "T-24",
+      "ok": true,
+      "detail": "详情页全文禁词命中：[]",
+      "metrics": {}
+    },
+    {
+      "id": "T-37",
+      "ok": false,
+      "detail": "对比三项：[\"title\",\"Startup cost\",\"Hours per week\",\"Payback\"]（多出的项：[\"title\"]）· 禁词 []",
+      "metrics": {
+        "rows": 8,
+        "keys": [
+          "title",
+          "Startup cost",
+          "Hours per week",
+          "Payback"
+        ]
+      }
+    },
+    {
+      "id": "T-46",
+      "ok": true,
+      "detail": "设置 6 行（要求 6）· 多余项 []",
+      "metrics": {}
+    },
+    {
+      "id": "T-47",
+      "ok": true,
+      "detail": "深色模式 body 亮度 0.09（<0.5 为深色）· 外网请求 0",
+      "metrics": {}
+    },
+    {
+      "id": "T-59",
+      "ok": true,
+      "detail": "visible：hero-trust「$39.00  one-time, yours forever」/ hero-foot「Microsoft Store · Mac App Store · $39.00 one-time」/ activate「$39.00 · ONE-TIME」；hidden 无金额=true",
+      "metrics": {
+        "visible": {
+          "trust": "$39.00  one-time, yours forever",
+          "foot": "Microsoft Store · Mac App Store · $39.00 one-time",
+          "eye": "$39.00 · ONE-TIME"
+        },
+        "hidden": {
+          "trust": "One-time purchase  · Yours forever",
+          "foot": "Microsoft Store · Mac App Store · One-time purchase",
+          "hasAmount": false
+        }
+      }
+    }
+  ]
+}

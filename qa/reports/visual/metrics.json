@@ -1,0 +1,148 @@
+{
+  "pages": [
+    {
+      "page": "welcome",
+      "locale": "en-US",
+      "overflowX": 0,
+      "overflowY": 0,
+      "cards": 1,
+      "scrollH": 900
+    },
+    {
+      "page": "quiz",
+      "locale": "en-US",
+      "overflowX": 0,
+      "overflowY": 193,
+      "cards": 3,
+      "scrollH": 1093
+    },
+    {
+      "page": "results",
+      "locale": "en-US",
+      "overflowX": 0,
+      "overflowY": 0,
+      "cards": 3,
+      "scrollH": 900
+    },
+    {
+      "page": "detail",
+      "locale": "en-US",
+      "overflowX": 0,
+      "overflowY": 547,
+      "cards": 5,
+      "scrollH": 1447
+    },
+    {
+      "page": "export",
+      "locale": "en-US",
+      "overflowX": 0,
+      "overflowY": 0,
+      "cards": 2,
+      "scrollH": 900
+    },
+    {
+      "page": "saved",
+      "locale": "en-US",
+      "overflowX": 0,
+      "overflowY": 0,
+      "cards": 3,
+      "scrollH": 900
+    },
+    {
+      "page": "activate",
+      "locale": "en-US",
+      "overflowX": 0,
+      "overflowY": 84,
+      "cards": 3,
+      "scrollH": 984
+    },
+    {
+      "page": "library",
+      "locale": "en-US",
+      "overflowX": 0,
+      "overflowY": 0,
+      "cards": 3,
+      "scrollH": 900
+    },
+    {
+      "page": "settings",
+      "locale": "en-US",
+      "overflowX": 0,
+      "overflowY": 0,
+      "cards": 3,
+      "scrollH": 900
+    },
+    {
+      "page": "welcome",
+      "locale": "zh-CN",
+      "overflowX": 0,
+      "overflowY": 0,
+      "cards": 1,
+      "scrollH": 900
+    },
+    {
+      "page": "quiz",
+      "locale": "zh-CN",
+      "overflowX": 0,
+      "overflowY": 193,
+      "cards": 3,
+      "scrollH": 1093
+    },
+    {
+      "page": "results",
+      "locale": "zh-CN",
+      "overflowX": 0,
+      "overflowY": 0,
+      "cards": 3,
+      "scrollH": 900
+    },
+    {
+      "page": "detail",
+      "locale": "zh-CN",
+      "overflowX": 0,
+      "overflowY": 547,
+      "cards": 5,
+      "scrollH": 1447
+    },
+    {
+      "page": "export",
+      "locale": "zh-CN",
+      "overflowX": 0,
+      "overflowY": 0,
+      "cards": 2,
+      "scrollH": 900
+    },
+    {
+      "page": "saved",
+      "locale": "zh-CN",
+      "overflowX": 0,
+      "overflowY": 0,
+      "cards": 3,
+      "scrollH": 900
+    },
+    {
+      "page": "activate",
+      "locale": "zh-CN",
+      "overflowX": 0,
+      "overflowY": 0,
+      "cards": 3,
+      "scrollH": 900
+    },
+    {
+      "page": "library",
+      "locale": "zh-CN",
+      "overflowX": 0,
+      "overflowY": 0,
+      "cards": 3,
+      "scrollH": 900
+    },
+    {
+      "page": "settings",
+      "locale": "zh-CN",
+      "overflowX": 0,
+      "overflowY": 0,
+      "cards": 3,
+      "scrollH": 900
+    }
+  ]
+}
