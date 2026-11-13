@@ -86,7 +86,7 @@
   "quiz.q5.o3d": "积蓄或收入能撑过慢启动",
   "results.eyebrow": "40 秒出结果",
   "results.h1": "3 个你真能开起来的生意。",
-  "results.recap": "按 {capital}、{hours}、{country} 来算。什么都没传出去过。",
+  "results.recap": "按{capital}、{hours}、{country}来算。什么都没传出去过。",
   "results.why_prefix": "为什么适合你：",
   "results.cta": "看一页方案",
   "results.empty": "还没有匹配的点子。答完那 5 道题，它们就会出现在这里。",

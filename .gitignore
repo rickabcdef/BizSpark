@@ -11,3 +11,6 @@ dist/
 hosting/out/
 hosting/_adds_*.json
 hosting/_revises_*.json
+
+# 开发常驻服务的运行期地址文件
+qa/.dev-url
