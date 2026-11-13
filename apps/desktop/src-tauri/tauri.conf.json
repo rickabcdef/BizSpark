@@ -1,3 +1,35 @@
 {
-  "_comment": "标识符、sidecar、权限、MSIX/签名配置（负责人：A，封装反向约束见 §2.8）"
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "BizSpark",
+  "version": "1.0.0",
+  "identifier": "com.bizspark.desktop",
+  "build": {
+    "beforeDevCommand": "npm run dev",
+    "devUrl": "http://localhost:5173",
+    "beforeBuildCommand": "npm run build",
+    "frontendDist": "../web/dist"
+  },
+  "app": {
+    "windows": [
+      {
+        "title": "BizSpark",
+        "width": 1440,
+        "height": 900,
+        "minWidth": 1024,
+        "minHeight": 720,
+        "center": true,
+        "resizable": true,
+        "theme": null
+      }
+    ],
+    "security": {
+      "csp": null
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": ["msi", "nsis"],
+    "externalBin": ["binaries/bizspark-core"],
+    "_comment": "A-02：窗口 1440x900；sidecar 以 externalBin 方式随包分发（bizspark-core）。封装反向约束见需求文档 §2.8，MSIX/签名配置在 A-09 阶段补充。"
+  }
 }

@@ -1,0 +1,13 @@
+{
+  "$schema": "gen/schemas/desktop-schema.json",
+  "identifier": "default",
+  "description": "BizSpark 最小权限白名单（A 起草，G 审核后冻结，见任务 A-05）",
+  "windows": ["main"],
+  "permissions": [
+    "core:default",
+    "core:window:allow-close",
+    "core:window:allow-minimize",
+    "core:window:allow-set-title",
+    "core:event:default"
+  ]
+}

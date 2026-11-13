@@ -1,3 +1,16 @@
 {
-  "_comment": "Tauri 壳构建配置（负责人：A）"
+  "name": "bizspark-desktop",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "vite ../web",
+    "build": "vite build ../web",
+    "tauri": "tauri",
+    "build:en": "bash scripts/build-en.sh",
+    "build:cn": "bash scripts/build-cn.sh"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "^2.0.0"
+  },
+  "_comment": "A-02/A-08：dev/build 依赖 B 的 web 工程；build:en / build:cn 双构建入口见 §2.7"
 }
