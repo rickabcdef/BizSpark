@@ -1,0 +1,304 @@
+{
+  "task": "H-04 离线演练（飞行模式 + 托管关一整天 + manifest 404/脏 JSON/超大包）",
+  "generated_at": "2026-11-13 14:24:02",
+  "scenarios": [
+    {
+      "id": "D1",
+      "name": "飞行模式全链路 + 重启持久化",
+      "checks": [
+        {
+          "check": "诊断返回 1..3 条",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "check": "详情可开",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "check": "离线导出 PDF",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "check": "离线导出 CSV",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "check": "离线存档",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "check": "设置读写",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "check": "check_library 离线仍报 up_to_date",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "check": "sidecar 全程存活",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "check": "重启后存档仍在",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "check": "重启后诊断结果一致",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "check": "零出网尝试",
+          "ok": true,
+          "detail": "被拦尝试 0 次"
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "D2",
+      "name": "托管关一整天（6 个时间片）",
+      "checks": [
+        {
+          "check": "09:00 check_library 静默报最新",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "check": "09:00 诊断照常",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "check": "11:00 check_library 静默报最新",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "check": "11:00 诊断照常",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "check": "13:00 check_library 静默报最新",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "check": "13:00 诊断照常",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "check": "15:00 check_library 静默报最新",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "check": "15:00 诊断照常",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "check": "18:00 check_library 静默报最新",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "check": "18:00 诊断照常",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "check": "21:00 check_library 静默报最新",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "check": "21:00 诊断照常",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "check": "版本未被拖动",
+          "ok": true,
+          "detail": "2026.12"
+        },
+        {
+          "check": "时间线没被塞失败记录",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "check": "state 无错误标志堆积",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "check": "sidecar 存活",
+          "ok": true,
+          "detail": ""
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "D3a",
+      "name": "manifest 404 → A 把 HTML 错误页当 delta 传进来",
+      "checks": [
+        {
+          "check": "脏包被拒/跳过",
+          "ok": true,
+          "detail": "E_DELTA_INVALID"
+        },
+        {
+          "check": "库版本不动 + 诊断照常 + sidecar 存活",
+          "ok": true
+        }
+      ],
+      "status": "PASS",
+      "expect": "reject",
+      "actual_code": "E_DELTA_INVALID"
+    },
+    {
+      "id": "D3b",
+      "name": "脏 JSON（非对象）",
+      "checks": [
+        {
+          "check": "脏包被拒/跳过",
+          "ok": true,
+          "detail": "E_BAD_REQUEST"
+        },
+        {
+          "check": "库版本不动 + 诊断照常 + sidecar 存活",
+          "ok": true
+        }
+      ],
+      "status": "PASS",
+      "expect": "reject",
+      "actual_code": "E_BAD_REQUEST"
+    },
+    {
+      "id": "D3c",
+      "name": "空对象 delta",
+      "checks": [
+        {
+          "check": "脏包被拒/跳过",
+          "ok": true,
+          "detail": "E_DELTA_INVALID"
+        },
+        {
+          "check": "库版本不动 + 诊断照常 + sidecar 存活",
+          "ok": true
+        }
+      ],
+      "status": "PASS",
+      "expect": "reject",
+      "actual_code": "E_DELTA_INVALID"
+    },
+    {
+      "id": "D3d",
+      "name": "manifest 版本倒退（旧包）",
+      "checks": [
+        {
+          "check": "脏包被拒/跳过",
+          "ok": true,
+          "detail": "idempotent-skip"
+        },
+        {
+          "check": "库版本不动 + 诊断照常 + sidecar 存活",
+          "ok": true
+        }
+      ],
+      "status": "PASS",
+      "expect": "reject",
+      "actual_code": "idempotent-skip"
+    },
+    {
+      "id": "D3e",
+      "name": "超大包 3.2MB / 1200 条",
+      "checks": [
+        {
+          "check": "库版本不动 + 诊断照常 + sidecar 存活",
+          "ok": true
+        }
+      ],
+      "status": "KNOWN-ISSUE",
+      "expect": "known-issue-if-applied",
+      "actual_code": "accepted"
+    },
+    {
+      "id": "D4",
+      "name": "断网一月回来，乱序补包",
+      "checks": [
+        {
+          "check": "乱序到达后版本仍到最新",
+          "ok": true,
+          "detail": "2027.02"
+        },
+        {
+          "check": "重放不回退版本",
+          "ok": true,
+          "detail": "2027.02"
+        },
+        {
+          "check": "版本单调前进",
+          "ok": true,
+          "detail": "2026.12 -> 2027.02"
+        },
+        {
+          "check": "新包记一条、跳过的旧包不记",
+          "ok": true,
+          "detail": "1 -> 2"
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "D5",
+      "name": "前端离线零阻塞（socket 桩 + 真前端全链路）",
+      "status": "PASS",
+      "stdout": "D5 前端离线演练：PASS  (steps=5, blocked=0, external=0, pdf=BizSpark-Plan-bs-svc-mobile-car-wash-053.pdf)",
+      "stderr": "",
+      "detail": [
+        {
+          "step": "welcome",
+          "ok": true
+        },
+        {
+          "step": "results",
+          "ok": true,
+          "cards": 6
+        },
+        {
+          "step": "detail",
+          "ok": true,
+          "ideaId": "bs-svc-mobile-car-wash-053"
+        },
+        {
+          "step": "export",
+          "ok": true,
+          "pdf": "BizSpark-Plan-bs-svc-mobile-car-wash-053.pdf"
+        },
+        {
+          "step": "saved",
+          "ok": true
+        }
+      ]
+    }
+  ],
+  "known_issues": [
+    "D3e"
+  ],
+  "status": "PASS_WITH_KNOWN_ISSUES",
+  "elapsed_s": 32.9
+}

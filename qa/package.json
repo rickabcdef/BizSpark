@@ -1,0 +1,14 @@
+{
+  "name": "bizspark-qa",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "_comment": "QA 工具链独立依赖（Playwright 驱动系统 Edge，不下载浏览器）。不并入 apps/web，避免改动 B 的工程。",
+  "scripts": {
+    "ui": "node e2e/ui_checks.mjs",
+    "shots": "node visual/screenshots.mjs"
+  },
+  "devDependencies": {
+    "playwright": "^1.47.0"
+  }
+}

@@ -1,0 +1,731 @@
+{
+  "total": 64,
+  "groups": {
+    "启动与问卷": [
+      "T-01",
+      "T-02",
+      "T-03",
+      "T-04",
+      "T-05",
+      "T-06",
+      "T-07",
+      "T-08",
+      "T-09"
+    ],
+    "引擎": [
+      "T-10",
+      "T-11",
+      "T-12",
+      "T-13",
+      "T-14",
+      "T-15",
+      "T-16",
+      "T-17",
+      "T-18"
+    ],
+    "结果与详情": [
+      "T-19",
+      "T-20",
+      "T-21",
+      "T-22",
+      "T-23",
+      "T-24",
+      "T-31",
+      "T-32"
+    ],
+    "导出": [
+      "T-25",
+      "T-26",
+      "T-27",
+      "T-33",
+      "T-34"
+    ],
+    "离线/宕机/隐私": [
+      "T-28",
+      "T-29",
+      "T-30-1",
+      "T-30-2",
+      "T-30-3",
+      "T-30-4",
+      "T-30-5",
+      "T-30-6",
+      "T-40"
+    ],
+    "存档/设置": [
+      "T-35",
+      "T-36",
+      "T-37",
+      "T-38",
+      "T-39",
+      "T-46",
+      "T-47"
+    ],
+    "授权": [
+      "T-41",
+      "T-42",
+      "T-43",
+      "T-44",
+      "T-45"
+    ],
+    "更新与双版": [
+      "T-48"
+    ],
+    "封装上架": [
+      "T-49",
+      "T-50",
+      "T-51",
+      "T-52",
+      "T-53",
+      "T-54",
+      "T-55",
+      "T-56",
+      "T-57",
+      "T-58"
+    ],
+    "价格配置": [
+      "T-59"
+    ]
+  },
+  "cases": [
+    {
+      "id": "T-01",
+      "name": "全新安装首屏",
+      "precondition": "全新安装",
+      "steps": "双击图标",
+      "expected": "≤1.5s 出首屏；1440×900 零滚动；仅 1 个橘色主 CTA",
+      "owner": "A/B",
+      "priority": "P0",
+      "kind": "ui"
+    },
+    {
+      "id": "T-02",
+      "name": "sidecar 崩溃自愈",
+      "precondition": "无",
+      "steps": "强杀 sidecar 后启动",
+      "expected": "自动重启 1 次；首屏不阻塞、不弹窗",
+      "owner": "A",
+      "priority": "P0",
+      "kind": "native"
+    },
+    {
+      "id": "T-03",
+      "name": "sidecar 两次失败降级",
+      "precondition": "sidecar 两次失败",
+      "steps": "启动",
+      "expected": "进入「仅浏览已存点子」静默降级，无任何红色提示",
+      "owner": "A/F",
+      "priority": "P0",
+      "kind": "ui"
+    },
+    {
+      "id": "T-04",
+      "name": "首屏进 Q1",
+      "precondition": "首屏",
+      "steps": "点 `Find my 3 ideas`",
+      "expected": "进 Q1，stepper 第 1 点橘",
+      "owner": "B",
+      "priority": "P0",
+      "kind": "ui"
+    },
+    {
+      "id": "T-05",
+      "name": "Q2 自动进题",
+      "precondition": "Q2",
+      "steps": "点 Q2 第 2 档（500–2,000）",
+      "expected": "0.35s 自动进 Q3；不出现 Next 按钮",
+      "owner": "B",
+      "priority": "P0",
+      "kind": "ui"
+    },
+    {
+      "id": "T-06",
+      "name": "连点去重",
+      "precondition": "Q3/Q4",
+      "steps": "连点 3 次同一选项",
+      "expected": "选中态稳定、不重复进页",
+      "owner": "B",
+      "priority": "P0",
+      "kind": "ui"
+    },
+    {
+      "id": "T-07",
+      "name": "Q4 多选与清空",
+      "precondition": "Q4",
+      "steps": "选 3 项 → 点 `Nothing yet` → 再选 1 项",
+      "expected": "清空逻辑正确；`Done` 可用",
+      "owner": "B",
+      "priority": "P0",
+      "kind": "ui"
+    },
+    {
+      "id": "T-08",
+      "name": "Back 带预选",
+      "precondition": "Q5 完成",
+      "steps": "点 `← Back` 两次后重来",
+      "expected": "答案全部保留预选",
+      "owner": "B/F",
+      "priority": "P0",
+      "kind": "ui"
+    },
+    {
+      "id": "T-09",
+      "name": "非法答案静默回退",
+      "precondition": "构造非法 QuizAnswers",
+      "steps": "发 `diagnose`",
+      "expected": "静默回退到合法值，不报错、不弹窗",
+      "owner": "C",
+      "priority": "P1",
+      "kind": "auto"
+    },
+    {
+      "id": "T-10",
+      "name": "资金硬过滤不向下兼容",
+      "precondition": "真库 312 条",
+      "steps": "`<500 + <10 + no_impact`",
+      "expected": "只返回 capital_tier=<500 且 hours=<10 的条目；资金不向下兼容",
+      "owner": "C",
+      "priority": "P0",
+      "kind": "auto"
+    },
+    {
+      "id": "T-11",
+      "name": "legal_blocks 剔除",
+      "precondition": "某条 legal_blocks=[\"US\"]",
+      "steps": "选 US 诊断",
+      "expected": "该条被剔除，不出现在结果",
+      "owner": "C",
+      "priority": "P0",
+      "kind": "auto"
+    },
+    {
+      "id": "T-12",
+      "name": "趋势权重恰 5%",
+      "precondition": "固定答案",
+      "steps": "查 score.py 权重",
+      "expected": "趋势新鲜度恰为 5%，其余 7 维合计 95%",
+      "owner": "C",
+      "priority": "P0",
+      "kind": "auto"
+    },
+    {
+      "id": "T-13",
+      "name": "换 wave 不越权进 Top3",
+      "precondition": "固定库",
+      "steps": "把某条 wave 改成 bi-agent 后重算",
+      "expected": "排名变化幅度符合 5% 权重，不会因换标签直接进 Top3",
+      "owner": "C",
+      "priority": "P0",
+      "kind": "auto"
+    },
+    {
+      "id": "T-14",
+      "name": "saturated 永不进 Top3",
+      "precondition": "saturated 条目",
+      "steps": "诊断",
+      "expected": "永不进 Top3；仍在库文件中",
+      "owner": "C/D",
+      "priority": "P0",
+      "kind": "auto"
+    },
+    {
+      "id": "T-15",
+      "name": "同答案 10 次一致",
+      "precondition": "同一答案",
+      "steps": "重跑 10 次",
+      "expected": "结果完全一致（含 tiebreak）",
+      "owner": "C",
+      "priority": "P0",
+      "kind": "auto"
+    },
+    {
+      "id": "T-16",
+      "name": "Why 说人话",
+      "precondition": "结果",
+      "steps": "检查 why",
+      "expected": "含答案具体词；不含 algorithm/AI/score/recommended by",
+      "owner": "C",
+      "priority": "P0",
+      "kind": "auto"
+    },
+    {
+      "id": "T-17",
+      "name": "输出克制",
+      "precondition": "结果",
+      "steps": "检查长度",
+      "expected": "ideas.length ∈1–3；match_pct ∈60–99 整数",
+      "owner": "C",
+      "priority": "P0",
+      "kind": "auto"
+    },
+    {
+      "id": "T-18",
+      "name": "不足 3 条降级",
+      "precondition": "构造仅 2 条可用",
+      "steps": "诊断",
+      "expected": "放宽时间档一次；输出 2 条 + degraded=true + 温和 note；无空白页",
+      "owner": "C",
+      "priority": "P0",
+      "kind": "auto"
+    },
+    {
+      "id": "T-19",
+      "name": "结果页版式",
+      "precondition": "正常结果",
+      "steps": "比对 en/ui/03-results.png",
+      "expected": "3 卡等高、7 元素顺序一致、无新增控件",
+      "owner": "B/H",
+      "priority": "P0",
+      "kind": "ui"
+    },
+    {
+      "id": "T-20",
+      "name": "答案复述句",
+      "precondition": "正常结果",
+      "steps": "读顶部复述句",
+      "expected": "与实际答案一致（金额/小时/资源/国家全名）",
+      "owner": "B",
+      "priority": "P0",
+      "kind": "ui"
+    },
+    {
+      "id": "T-21",
+      "name": "详情 4 卡顺序",
+      "precondition": "点进详情",
+      "steps": "数模块",
+      "expected": "4 个内容卡齐全、顺序与 04-detail.html DOM 一致，无新增可见模块",
+      "owner": "B/E",
+      "priority": "P0",
+      "kind": "ui"
+    },
+    {
+      "id": "T-22",
+      "name": "右侧卡 sticky",
+      "precondition": "详情",
+      "steps": "滚动到页底",
+      "expected": "右侧 PaperPreview 卡始终可见",
+      "owner": "B",
+      "priority": "P0",
+      "kind": "ui"
+    },
+    {
+      "id": "T-23",
+      "name": "SG 本地渠道",
+      "precondition": "切 SG 国家",
+      "steps": "看 first_customers",
+      "expected": "出现 Facebook / WhatsApp / Google Maps 本地渠道，非 social media",
+      "owner": "D/E",
+      "priority": "P0",
+      "kind": "auto"
+    },
+    {
+      "id": "T-24",
+      "name": "详情不露后台词",
+      "precondition": "详情",
+      "steps": "全文搜索",
+      "expected": "不含 wave/maturity/version/score/algorithm",
+      "owner": "B/H",
+      "priority": "P0",
+      "kind": "ui"
+    },
+    {
+      "id": "T-31",
+      "name": "诊断超时用缓存",
+      "precondition": "diagnose 超时 1.2s",
+      "steps": "进结果页",
+      "expected": "显示 last_result 缓存；无缓存则骨架 ≤1s 后重试一次",
+      "owner": "B/F",
+      "priority": "P1",
+      "kind": "auto"
+    },
+    {
+      "id": "T-32",
+      "name": "脏字段兜底",
+      "precondition": "缺第 3 条 pitfall",
+      "steps": "进详情",
+      "expected": "兜底句补齐，页面无 undefined、无溢出",
+      "owner": "E",
+      "priority": "P1",
+      "kind": "auto"
+    },
+    {
+      "id": "T-25",
+      "name": "另存为默认目录",
+      "precondition": "详情",
+      "steps": "点 `Export my plan`",
+      "expected": "弹系统另存为，默认 $DOCUMENTS/BizSpark/、默认文件名正确",
+      "owner": "A/E",
+      "priority": "P0",
+      "kind": "native"
+    },
+    {
+      "id": "T-26",
+      "name": "PDF 单页内容",
+      "precondition": "导出完成",
+      "steps": "pdfinfo / pdftotext",
+      "expected": "恰好 1 页；含 7 步与成本合计；无 URL/水印/二维码",
+      "owner": "E/H",
+      "priority": "P0",
+      "kind": "auto"
+    },
+    {
+      "id": "T-27",
+      "name": "导出耗时",
+      "precondition": "导出",
+      "steps": "计时",
+      "expected": "≤2s；返回 pages:1",
+      "owner": "E",
+      "priority": "P0",
+      "kind": "auto"
+    },
+    {
+      "id": "T-33",
+      "name": "飞行模式导出",
+      "precondition": "飞行模式",
+      "steps": "完整导出",
+      "expected": "成功；抓包零出网",
+      "owner": "E/H",
+      "priority": "P0",
+      "kind": "auto"
+    },
+    {
+      "id": "T-34",
+      "name": "只读目录提示",
+      "precondition": "目录设为只读",
+      "steps": "导出",
+      "expected": "仅提示 `Choose another folder`，重弹另存为；步骤不丢",
+      "owner": "A/E",
+      "priority": "P1",
+      "kind": "auto"
+    },
+    {
+      "id": "T-28",
+      "name": "核心链路零出网",
+      "precondition": "全新安装 + 抓包",
+      "steps": "跑完整主链路",
+      "expected": "核心链路出网请求 = 0",
+      "owner": "H/A",
+      "priority": "P0",
+      "kind": "auto"
+    },
+    {
+      "id": "T-29",
+      "name": "飞行模式全链路",
+      "precondition": "飞行模式",
+      "steps": "答题→3 条→PDF→关→重启→看存档",
+      "expected": "全功能可用，存档仍在",
+      "owner": "F/H",
+      "priority": "P0",
+      "kind": "auto"
+    },
+    {
+      "id": "T-30-1",
+      "name": "断网启动",
+      "precondition": "拔网线",
+      "steps": "启动",
+      "expected": "无任何变化、无弹窗",
+      "owner": "A/F",
+      "priority": "P0",
+      "kind": "auto"
+    },
+    {
+      "id": "T-30-2",
+      "name": "托管关一整天",
+      "precondition": "托管关一整天",
+      "steps": "启动 + 用一遍",
+      "expected": "无任何变化",
+      "owner": "A/F",
+      "priority": "P0",
+      "kind": "auto"
+    },
+    {
+      "id": "T-30-3",
+      "name": "manifest 404",
+      "precondition": "manifest 返回 404",
+      "steps": "启动",
+      "expected": "静默跳过",
+      "owner": "A",
+      "priority": "P0",
+      "kind": "auto"
+    },
+    {
+      "id": "T-30-4",
+      "name": "manifest 脏 JSON",
+      "precondition": "manifest 脏 JSON",
+      "steps": "启动",
+      "expected": "静默跳过",
+      "owner": "A",
+      "priority": "P0",
+      "kind": "auto"
+    },
+    {
+      "id": "T-30-5",
+      "name": "delta 超大/非法",
+      "precondition": "delta 超 200KB / 字段非法",
+      "steps": "启动",
+      "expected": "静默跳过，不落盘",
+      "owner": "A/F",
+      "priority": "P0",
+      "kind": "auto"
+    },
+    {
+      "id": "T-30-6",
+      "name": "断网一月补合并",
+      "precondition": "断网一个月后恢复",
+      "steps": "启动",
+      "expected": "按 release 顺序一次性合并缺失 delta，用户无感",
+      "owner": "F",
+      "priority": "P1",
+      "kind": "auto"
+    },
+    {
+      "id": "T-40",
+      "name": "合并失败回滚",
+      "precondition": "构造合并失败 delta",
+      "steps": "触发 apply_delta",
+      "expected": "自动回滚到备份，版本号不变，用户无感；retire 条目磁盘仍在",
+      "owner": "F/D",
+      "priority": "P0",
+      "kind": "auto"
+    },
+    {
+      "id": "T-35",
+      "name": "state 损坏重建",
+      "precondition": "人为损坏 state.json",
+      "steps": "启动",
+      "expected": "静默重建空存档，其他目录不动",
+      "owner": "F",
+      "priority": "P0",
+      "kind": "auto"
+    },
+    {
+      "id": "T-36",
+      "name": "存档去重与倒序",
+      "precondition": "存 3 条，重复存同一条",
+      "steps": "`list_saved`",
+      "expected": "去重；按 saved_at 倒序",
+      "owner": "F",
+      "priority": "P0",
+      "kind": "auto"
+    },
+    {
+      "id": "T-37",
+      "name": "对比只三项",
+      "precondition": "选 2 条对比",
+      "steps": "`Compare two ideas`",
+      "expected": "只显示成本/时间/回本三项，无评分无权重",
+      "owner": "B/F",
+      "priority": "P1",
+      "kind": "ui"
+    },
+    {
+      "id": "T-38",
+      "name": "工作库回退链",
+      "precondition": "删除 current.json + 破坏工作库",
+      "steps": "诊断",
+      "expected": "回退 baseline 只读副本；再破坏则用 fallback_ideas.json",
+      "owner": "C/F",
+      "priority": "P0",
+      "kind": "auto"
+    },
+    {
+      "id": "T-39",
+      "name": "库校验全绿",
+      "precondition": "CI 跑 validate.py",
+      "steps": "检查 312 条",
+      "expected": "V-01…V-12 全绿；V-07/V-08 无警告",
+      "owner": "D/H",
+      "priority": "P0",
+      "kind": "auto"
+    },
+    {
+      "id": "T-41",
+      "name": "首次激活",
+      "precondition": "分销版首次",
+      "steps": "输入正确码激活",
+      "expected": "成功；license.dat 权限 600；设备位 1/3",
+      "owner": "G",
+      "priority": "P0",
+      "kind": "auto"
+    },
+    {
+      "id": "T-42",
+      "name": "Store 包无授权路径",
+      "precondition": "Store 构建产物",
+      "steps": "检索包内",
+      "expected": "无 activate / license / updater 相关代码路径",
+      "owner": "A/G",
+      "priority": "P0",
+      "kind": "auto"
+    },
+    {
+      "id": "T-43",
+      "name": "同机重复激活",
+      "precondition": "同设备重复激活",
+      "steps": "再输同一码",
+      "expected": "幂等成功，不占第 2 个位",
+      "owner": "G",
+      "priority": "P0",
+      "kind": "auto"
+    },
+    {
+      "id": "T-44",
+      "name": "第 4 台温和引导",
+      "precondition": "已占 3 台",
+      "steps": "第 4 台激活",
+      "expected": "温和引导 `Release a seat`，无「授权失败」字样",
+      "owner": "G",
+      "priority": "P0",
+      "kind": "auto"
+    },
+    {
+      "id": "T-45",
+      "name": "激活后拔网可用",
+      "precondition": "激活后拔网重启",
+      "steps": "用全部功能 + 抓包",
+      "expected": "100% 可用；零出网、无心跳",
+      "owner": "G/H",
+      "priority": "P0",
+      "kind": "auto"
+    },
+    {
+      "id": "T-46",
+      "name": "设置恰好 6 行",
+      "precondition": "设置页",
+      "steps": "数行数",
+      "expected": "恰好 6 行；无账号/通知/主题商店",
+      "owner": "B/F",
+      "priority": "P0",
+      "kind": "ui"
+    },
+    {
+      "id": "T-47",
+      "name": "关检查 + 深浅色",
+      "precondition": "关月度检查 + 切系统深浅色",
+      "steps": "观察",
+      "expected": "抓包零出网；界面跟随不闪白",
+      "owner": "B/F/H",
+      "priority": "P1",
+      "kind": "ui"
+    },
+    {
+      "id": "T-48",
+      "name": "新版本提示不阻断",
+      "precondition": "分销版新版本可用",
+      "steps": "启动",
+      "expected": "仅一句 `next launch` 提示，不强制、不阻断",
+      "owner": "A",
+      "priority": "P1",
+      "kind": "native"
+    },
+    {
+      "id": "T-49",
+      "name": "MSIX 卸载留 PDF",
+      "precondition": "MSIX 本地安装",
+      "steps": "安装→导出 PDF 到 Documents→卸载→看文件",
+      "expected": "runFullTrust 生效；卸载后 PDF 仍在",
+      "owner": "A/E",
+      "priority": "P0",
+      "kind": "native"
+    },
+    {
+      "id": "T-50",
+      "name": "MAS 沙盒落点",
+      "precondition": "MAS 沙盒版",
+      "steps": "查 appDataDir 实际落点 + 尝试写容器外",
+      "expected": "落在 ~/Library/Containers/...；容器外写入被拦且不弹错",
+      "owner": "A/F",
+      "priority": "P0",
+      "kind": "native"
+    },
+    {
+      "id": "T-51",
+      "name": "MAS 沙盒导出",
+      "precondition": "MAS 沙盒版",
+      "steps": "点导出",
+      "expected": "弹系统另存为，选完目录后 PDF 成功写出",
+      "owner": "A/E",
+      "priority": "P0",
+      "kind": "native"
+    },
+    {
+      "id": "T-52",
+      "name": "MAS 签名与 entitlements",
+      "precondition": "MAS 包",
+      "steps": "codesign -dv 检查主 App 与 helper",
+      "expected": "helper 带 app-sandbox + inherit，签名有效",
+      "owner": "A/G",
+      "priority": "P0",
+      "kind": "native"
+    },
+    {
+      "id": "T-53",
+      "name": "包内无可执行内容",
+      "precondition": "全包扫描",
+      "steps": "检索「下载代码 / eval / 外部脚本加载 / delta 内可执行内容」",
+      "expected": "零命中；delta 仅 JSON/CSV 数据",
+      "owner": "D/H",
+      "priority": "P0",
+      "kind": "auto"
+    },
+    {
+      "id": "T-54",
+      "name": "分销 dmg Gatekeeper",
+      "precondition": "分销 Mac .dmg",
+      "steps": "全新机器首次双击",
+      "expected": "Gatekeeper 无「已损坏/未知开发者」；notary 票据已 staple",
+      "owner": "A/H",
+      "priority": "P0",
+      "kind": "native"
+    },
+    {
+      "id": "T-55",
+      "name": "Store 包零命中",
+      "precondition": "Store 两个包",
+      "steps": "检索包内 activate / license / updater",
+      "expected": "零命中（编译期已裁）",
+      "owner": "A/G",
+      "priority": "P0",
+      "kind": "auto"
+    },
+    {
+      "id": "T-56",
+      "name": "三产线产物不混",
+      "precondition": "三产线产物",
+      "steps": "核证书族与文件名",
+      "expected": "MAS 包不在分销目录、Developer ID 包不提交商店，命名清晰",
+      "owner": "A/H",
+      "priority": "P0",
+      "kind": "native"
+    },
+    {
+      "id": "T-57",
+      "name": "断网安装全功能",
+      "precondition": "断网安装",
+      "steps": "装完拔网跑完整主链路",
+      "expected": "全功能可用、零出网",
+      "owner": "H",
+      "priority": "P0",
+      "kind": "native"
+    },
+    {
+      "id": "T-58",
+      "name": "提审材料齐备",
+      "precondition": "提审材料",
+      "steps": "逐项核对",
+      "expected": "图标变体 / 四段版本号 / 隐私政策 URL / 受限功能说明 / 5 条商品页文案齐备",
+      "owner": "H/G",
+      "priority": "P0",
+      "kind": "auto"
+    },
+    {
+      "id": "T-59",
+      "name": "全项目零金额 + 价格槽回归",
+      "precondition": "全量交付物",
+      "steps": "① 全项目扫商品售价金额 ② 改 display_mode=visible 且填 amount 后重跑两版 9 屏 ③ 改回 hidden",
+      "expected": "① 零命中（商机内容金额不计）② 4 个价格槽按配置渲染出金额、无硬编码残留 ③ 回到纯功能文案；截图与 UI 稿版式一致",
+      "owner": "A/B/H",
+      "priority": "P0",
+      "kind": "auto"
+    }
+  ]
+}
