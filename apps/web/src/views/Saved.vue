@@ -73,15 +73,15 @@ async function reopen(id: string): Promise<void> {
       <div class="grid g2">
         <div>
           <h3>{{ String(compare.left.title ?? "") }}</h3>
-          <!-- D-06 修复（PM）：title 已作标题展示，不作为数据行重复露出（T-37：恰好三项） -->
+          <!-- D-06 + 中文化（PM）：title 不作为数据行；行名走 locales（稳定键 cost/hours/payback） -->
           <template v-for="(v, k) in compare.left" :key="String(k)">
-            <KvRow v-if="k !== 'title'" :k="String(k)" :v="String(v)" />
+            <KvRow v-if="k !== 'title'" :k="t('saved.row_' + String(k))" :v="String(v)" />
           </template>
         </div>
         <div>
           <h3>{{ String(compare.right.title ?? "") }}</h3>
           <template v-for="(v, k) in compare.right" :key="String(k)">
-            <KvRow v-if="k !== 'title'" :k="String(k)" :v="String(v)" />
+            <KvRow v-if="k !== 'title'" :k="t('saved.row_' + String(k))" :v="String(v)" />
           </template>
         </div>
       </div>

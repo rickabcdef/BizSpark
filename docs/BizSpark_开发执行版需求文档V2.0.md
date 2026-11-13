@@ -394,6 +394,12 @@ bizspark/
 - 不译白名单：`BizSpark`、`Microsoft Store`、`Mac App Store`、`PDF`、`CSV`、`AI`、`Google Maps`、`Yelp`、`Etsy`、`Shopify`、`Nextdoor`、激活码样例、文件名、版本号。
 - **禁止**在 Vue 组件里写死任何界面字符串；**禁止**新增 `locale.switch` 之类键。
 
+> **中文包三层契约修订（PM，2026-11-13，老板需求：中文版不得大面积英文）**：
+> 1. **界面层**：全部走 `zh-CN.json`（含问卷国家名、对比页行名、结果页国名——此前 Quiz.vue Q1 写死英文，已收编 locales）。
+> 2. **引擎层**：sidecar 读 `BIZSPARK_LOCALE` 环境变量（A 壳透传 / build-cn.sh 导出）；`engine/zhpack.py` 提供中文 why 模板池、答案标签、结果卡标签、回本提示、降级提示与 PDF 卡片标题的中文镜像；缺省 en，行为与原实现一致。
+> 3. **内容层**：`apps/core/data/zh_v1.json`（315 条 = 312 商机 + 3 fallback，键 = id），可见字段（标题/简介/7 步/3 坑/渠道/成本项标签/定价/合规）中文覆盖，金额数字逐条不动；文件缺失/id 缺项/数量不齐一律回退英文，绝不崩。
+> 校验：V-10 键一致不变；zh 内容包金额与 baseline 逐条相等（合并脚本断言）；en 包行为零变化（H 全量回归守护）。
+
 ### 3.7 静态托管文件（D）
 
 ```json

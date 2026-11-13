@@ -85,7 +85,13 @@ def _fmt(amount, currency, fx):
 
 
 def assemble(idea, country=None):
-    """把一条 Idea（§3.2）装配成 IdeaDetail（§3.4）。country 为空则不套覆盖。"""
+    """把一条 Idea（§3.2）装配成 IdeaDetail（§3.4）。country 为空则不套覆盖。
+
+    PM 2026-11-13：zh 包先做内容覆盖（标题/简介/步骤/坑点/渠道/成本项标签），
+    金额数值与派生口径不变；缺项回退英文。
+    """
+    from . import zhpack  # 局部导入避免环
+    idea = zhpack.overlay(idea)
     detail = {k: (list(v) if isinstance(v, list) else dict(v) if isinstance(v, dict) else v)
               for k, v in idea.items()}
 
@@ -102,7 +108,8 @@ def assemble(idea, country=None):
     detail["_override_applied"] = applied
 
     # 派生字段 1：cost_total（USD 口径合计）
-    costs = detail.get("cost_breakdown") or []
+    costs = zhpack.apply_cost_labels(idea, detail.get("cost_breakdown") or [])
+    detail["cost_breakdown"] = costs
     amounts = [c.get("amount") for c in costs
                if isinstance(c, dict) and isinstance(c.get("amount"), (int, float))]
     cost_total = float(sum(amounts)) if amounts else float(detail.get("min_capital") or 0)
@@ -121,12 +128,16 @@ def assemble(idea, country=None):
     detail["costs"] = detail["cost_rows"]
     detail["total_to_first_invoice"] = _fmt(cost_total, currency, fx)
 
-    # 派生字段 3：payback_hint（pricing_hint + payback_days 拼一句）
+    # 派生字段 3：payback_hint（pricing_hint + payback_days 拼一句；zh 包走中文句式）
     hint = detail.get("pricing_hint") if isinstance(detail.get("pricing_hint"), str) else ""
     days = detail.get("payback_days")
-    days_part = "most founders cover costs within {} days".format(int(days)) if isinstance(days, (int, float)) \
-        else "costs are typically covered early"
-    detail["payback_hint"] = "{} — {}".format(hint, days_part) if hint else days_part.capitalize() + "."
+    if zhpack.is_zh():
+        detail["payback_hint"] = (zhpack.PAYBACK_HINT_ZH.format(hint=hint, days=int(days))
+                                  if isinstance(days, (int, float)) else hint or zhpack.PAYBACK_HINT_ZH_NODAYS)
+    else:
+        days_part = "most founders cover costs within {} days".format(int(days)) if isinstance(days, (int, float)) \
+            else "costs are typically covered early"
+        detail["payback_hint"] = "{} — {}".format(hint, days_part) if hint else days_part.capitalize() + "."
 
     # B 兼容别名：channels（Detail.vue 渠道卡消费），契约字段仍是 first_customers
     detail["channels"] = detail.get("first_customers") or []

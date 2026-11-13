@@ -14,7 +14,6 @@
   "side.badge": "One-time purchase · No subscription",
   "side.ver": "v1.0.0 · Library 2026.11 · Offline ready",
   "side.chip": "All yours, on this device",
-
   "welcome.link_how": "How it works",
   "welcome.link_get": "What you get",
   "welcome.link_privacy": "Privacy",
@@ -32,7 +31,6 @@
   "welcome.mock_tag2": "< 10 h / week",
   "welcome.mock_tag3": "Online",
   "welcome.foot": "Built for people who want to start small and start today.",
-
   "quiz.eyebrow": "Step 2 of 5",
   "quiz.h1": "Five questions. That's all.",
   "quiz.lead": "No sign-up, no typing an essay. Everything stays on this computer.",
@@ -86,7 +84,6 @@
   "quiz.q5.o2d": "Budgeted, capped, recoverable",
   "quiz.q5.o3": "I can absorb a bigger bet",
   "quiz.q5.o3d": "Savings or income can cover a slow start",
-
   "results.eyebrow": "Ready in 40 seconds",
   "results.h1": "Three businesses you can actually start.",
   "results.recap": "Based on {capital}, {hours}, and {country}. Nothing was sent anywhere.",
@@ -107,7 +104,6 @@
   "results.ans_h1": "under 10 hours a week",
   "results.ans_h2": "10–25 hours a week",
   "results.ans_h3": "full-time",
-
   "detail.eyebrow": "Idea {rank} / {total} · {match}% match",
   "detail.loading": "Loading…",
   "detail.costs_h": "What it costs to start",
@@ -120,7 +116,6 @@
   "detail.cta_export": "Export my plan",
   "detail.cta_back": "Back to 3 ideas",
   "detail.privacy": "Nothing is uploaded. Ever.",
-
   "export.eyebrow": "Done, on your computer",
   "export.h1": "Your plan is ready.",
   "export.lead": "One PDF, one page, no watermark. It's a file on your disk — not a link, not an account, not something that can expire.",
@@ -132,7 +127,6 @@
   "export.inside_p": "Cost breakdown · pricing hint · 7 steps · first-customer channels · 3 pitfalls · local note.",
   "export.extras_h": "Optional extras",
   "export.extras_p": "Also export the cost table as CSV for your own spreadsheet. Still local, still yours.",
-
   "saved.eyebrow": "On this device",
   "saved.h1": "My ideas",
   "saved.lead": "Saved locally. No cloud, no sync, no login — open the app six months later and they're still here.",
@@ -146,7 +140,6 @@
   "saved.confirm_p": "Your saved ideas will be removed from this device. Nothing is deleted from the idea library — you can always find them again.",
   "saved.confirm_yes": "Clear list",
   "saved.confirm_no": "Keep them",
-
   "library.eyebrow": "Quiet, optional, free",
   "library.h1": "Your idea library",
   "library.lead": "The tool checks once a month for new ideas. If it can't reach the internet, nothing happens — every idea already on your device keeps working.",
@@ -172,7 +165,6 @@
   "library.why_h": "Why new ideas keep showing up",
   "library.why_p": "A business idea has a season. Mobile-internet ideas made sense in one era; AI and agent ideas make sense in the next. The library should follow the world, not freeze at the day you bought it. Fresh ideas float up; saturated ones quietly sink — never vanish.",
   "library.toast": "Library checked · you're up to date. No action needed.",
-
   "activate.eyebrow": "For copies bought outside the stores",
   "activate.h1": "Activate once. Use offline.",
   "activate.lead": "Store downloads are already activated — you'll never see this screen. This page is only for copies bought on other software marketplaces.",
@@ -194,7 +186,6 @@
   "activate.f5": "Library updates are free & optional",
   "activate.why_h": "Why a code at all?",
   "activate.why_p": "An installer file can be copied. The code simply proves this copy was paid for. It is not about trust in you — it's about a file that can be forwarded.",
-
   "settings.eyebrow": "Six knobs, that's it",
   "settings.h1": "Settings",
   "settings.lead": "Everything here is local. No profile, no password, nothing to sync.",
@@ -222,7 +213,6 @@
   "settings.lic_none": "Not activated",
   "settings.check_updates": "Check for updates",
   "settings.view_licence": "View licence",
-
   "price.model_one_time": "one-time",
   "price.model_monthly": "per month",
   "price.model_yearly": "per year",
@@ -234,5 +224,20 @@
   "price.export_note_hidden": "No subscription. No auto-renew. Buy once, use it as long as you like — even with the internet off.",
   "price.export_note_visible_once": "No subscription. No auto-renew. Buy once at {amount}, use it as long as you like — even with the internet off.",
   "price.export_note_visible_sub": "{amount} {model}, cancel anytime. Your exported plans stay yours — even offline.",
-  "price.activate_eyebrow_hidden": "One-time purchase"
+  "price.activate_eyebrow_hidden": "One-time purchase",
+  "quiz.q1.o_us": "United States",
+  "quiz.q1.o_ca": "Canada",
+  "quiz.q1.o_uk": "United Kingdom",
+  "quiz.q1.o_au": "Australia",
+  "quiz.q1.o_sg": "Singapore",
+  "quiz.q1.o_ph": "Philippines",
+  "results.country_us": "United States",
+  "results.country_ca": "Canada",
+  "results.country_uk": "United Kingdom",
+  "results.country_au": "Australia",
+  "results.country_sg": "Singapore",
+  "results.country_ph": "Philippines",
+  "saved.row_cost": "Startup cost",
+  "saved.row_hours": "Hours per week",
+  "saved.row_payback": "Payback"
 }

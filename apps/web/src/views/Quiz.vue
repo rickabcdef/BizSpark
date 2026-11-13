@@ -20,12 +20,12 @@ interface Opt { value: string; icon: string; title: string; desc?: string }
 interface Q { key: string; step: number; titleKey: string; hintKey: string; multi: boolean; opts: Opt[] }
 const QUIZ: Q[] = [
   { key: "country", step: 1, titleKey: "quiz.q1.title", hintKey: "quiz.q1.hint", multi: false, opts: [
-    { value: "US", icon: "🇺🇸", title: "United States", desc: "USD" },
-    { value: "CA", icon: "🇨🇦", title: "Canada", desc: "CAD" },
-    { value: "UK", icon: "🇬🇧", title: "United Kingdom", desc: "GBP" },
-    { value: "AU", icon: "🇦🇺", title: "Australia", desc: "AUD" },
-    { value: "SG", icon: "🇸🇬", title: "Singapore", desc: "SGD" },
-    { value: "PH", icon: "🇵🇭", title: "Philippines", desc: "PHP" },
+    { value: "US", icon: "🇺🇸", title: "quiz.q1.o_us", desc: "USD" },
+    { value: "CA", icon: "🇨🇦", title: "quiz.q1.o_ca", desc: "CAD" },
+    { value: "UK", icon: "🇬🇧", title: "quiz.q1.o_uk", desc: "GBP" },
+    { value: "AU", icon: "🇦🇺", title: "quiz.q1.o_au", desc: "AUD" },
+    { value: "SG", icon: "🇸🇬", title: "quiz.q1.o_sg", desc: "SGD" },
+    { value: "PH", icon: "🇵🇭", title: "quiz.q1.o_ph", desc: "PHP" },
   ] },
   { key: "capital", step: 2, titleKey: "quiz.q2.title", hintKey: "quiz.q2.hint", multi: false, opts: [
     { value: "<500", icon: "🪙", title: "quiz.q2.o1", desc: "quiz.q2.o1d" },

@@ -16,6 +16,7 @@ from .filter import hard_filter, relax_hours
 from . import score as score_mod
 from .score import SEEN_FACTOR, match_pct
 from .why import build_why, build_tags
+from . import zhpack
 from . import detail as detail_mod
 
 DEGRADE_NOTE = "Try a slightly bigger budget next time."
@@ -94,13 +95,17 @@ def _dim_scores(idea, answers):
 
 
 def _to_card(idea, total, answers):
-    """§3.3 卡片对象 + B 兼容别名 summary（Results.vue 消费）。"""
+    """§3.3 卡片对象 + B 兼容别名 summary（Results.vue 消费）。
+
+    PM 2026-11-13：zh 包对标题/简介做内容覆盖（zhpack，缺项回退英文）。
+    """
+    shown = zhpack.overlay(idea)
     return {
         "rank": 0,  # 输出前回填
-        "id": idea.get("id"),
-        "title": idea.get("title"),
-        "one_liner": idea.get("one_liner"),
-        "summary": idea.get("one_liner"),  # B 兼容别名（契约字段仍是 one_liner）
+        "id": shown.get("id"),
+        "title": shown.get("title"),
+        "one_liner": shown.get("one_liner"),
+        "summary": shown.get("one_liner"),  # B 兼容别名（契约字段仍是 one_liner）
         "match_pct": match_pct(total),
         "why": build_why(idea, answers, _dim_scores(idea, answers)),
         "tags": build_tags(idea),
@@ -132,7 +137,7 @@ def diagnose(payload, library=None):
 
     if len(kept) < 3:
         degraded = True
-        degrade_note = DEGRADE_NOTE
+        degrade_note = zhpack.DEGRADE_NOTE_ZH if zhpack.is_zh() else DEGRADE_NOTE
     if not kept:
         # 最后兜底：绝不返回空数组——对全部 active 条目绕过硬过滤打分取优
         kept = [(i, i.get("maturity") == "saturated") for i in ideas if i.get("status", "active") == "active"]

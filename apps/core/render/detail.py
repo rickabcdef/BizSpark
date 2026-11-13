@@ -71,36 +71,65 @@ def sanitize(detail):
     return d
 
 
+def _zh():
+    """PM 2026-11-13：zh 包 PDF 文案中文镜像（en 缺省不变）。"""
+    try:
+        from engine import zhpack
+        return zhpack.is_zh()
+    except ImportError:
+        return False
+
+
 def build_cards(detail):
     """E-02：4 个内容卡渲染数据，顺序照 04-detail.html DOM，写死不加第五张卡。
 
     返回 [{key, title, kind, rows/items}]；定价与合规字段不进 cards（F05 口径澄清）。
+    zh 包卡片标题走中文（PM 2026-11-13）。
     """
     d = sanitize(detail)
-    cards = [
-        {"key": "costs", "title": "What it costs to start", "kind": "kv",
-         "rows": [{"item": _clip(r.get("item"), MAX_LINE), "amount": _s(r.get("amount"), "-")}
-                  for r in d["cost_rows"]],
-         "total_label": "Total to first invoice",
-         "total_value": d["total_to_first_invoice"]},
-        {"key": "steps", "title": "Your first 7 steps", "kind": "ol",
-         "items": d["steps"]},
-        {"key": "channels", "title": "Where the first customers come from", "kind": "pills",
-         "items": d["first_customers"]},
-        {"key": "pitfalls", "title": "Three ways people get this wrong", "kind": "warn",
-         "items": d["pitfalls"]},
-    ]
+    if _zh():
+        cards = [
+            {"key": "costs", "title": "起步要花多少钱", "kind": "kv",
+             "rows": [{"item": _clip(r.get("item"), MAX_LINE), "amount": _s(r.get("amount"), "-")}
+                      for r in d["cost_rows"]],
+             "total_label": "开出第一张账单前的总投入",
+             "total_value": d["total_to_first_invoice"]},
+            {"key": "steps", "title": "最前面的 7 步", "kind": "ol",
+             "items": d["steps"]},
+            {"key": "channels", "title": "第一批客户从哪里来", "kind": "pills",
+             "items": d["first_customers"]},
+            {"key": "pitfalls", "title": "最容易做错的三个地方", "kind": "warn",
+             "items": d["pitfalls"]},
+        ]
+    else:
+        cards = [
+            {"key": "costs", "title": "What it costs to start", "kind": "kv",
+             "rows": [{"item": _clip(r.get("item"), MAX_LINE), "amount": _s(r.get("amount"), "-")}
+                      for r in d["cost_rows"]],
+             "total_label": "Total to first invoice",
+             "total_value": d["total_to_first_invoice"]},
+            {"key": "steps", "title": "Your first 7 steps", "kind": "ol",
+             "items": d["steps"]},
+            {"key": "channels", "title": "Where the first customers come from", "kind": "pills",
+             "items": d["first_customers"]},
+            {"key": "pitfalls", "title": "Three ways people get this wrong", "kind": "warn",
+             "items": d["pitfalls"]},
+        ]
     assert [c["key"] for c in cards] == list(CARD_ORDER), "card order is frozen by F05"
     return cards
 
 
 def payback_line(detail):
     """PDF 第 5 块 `Pricing & payback` 一行（C 已派生 payback_hint，这里只清洗截断）。"""
+    if _zh():
+        return _clip(detail.get("payback_hint"), MAX_TEXT) or "定价与回本：按本地数字估算。"
     return _clip(detail.get("payback_hint"), MAX_TEXT) or "Pricing and payback: see your local numbers."
 
 
 def local_note(detail):
     """PDF 第 8 块 `Local note` 一句（compliance_note；脏数据兜底句，页面无 undefined）。"""
+    if _zh():
+        return _clip(detail.get("compliance_note"), MAX_TEXT) or "开工前请先确认你所在城市与国家的规定。"
     return _clip(detail.get("compliance_note"), MAX_TEXT) or \
         "Check your city and country rules before you start."
 
@@ -108,18 +137,19 @@ def local_note(detail):
 def build_pdf_view(detail):
     """E-03 输入：把 IdeaDetail 整理成 PDF 9 块固定顺序所需的数据（与详情页一致）。"""
     d = sanitize(detail)
+    zh = _zh()
     return {
-        "eyebrow": "BizSpark · One-page plan",
+        "eyebrow": "BizSpark · 一页方案" if zh else "BizSpark · One-page plan",
         "title": d["title"],
         "one_liner": d["one_liner"],
         "cost_rows": [{"item": _clip(r.get("item"), MAX_LINE), "amount": _s(r.get("amount"), "-")}
                       for r in d["cost_rows"]],
-        "cost_total_label": "Total to first invoice",
+        "cost_total_label": "开出第一张账单前的总投入" if zh else "Total to first invoice",
         "cost_total": d["total_to_first_invoice"],
         "steps": d["steps"],
         "pricing_payback": payback_line(d),
         "first_customers": d["first_customers"],
         "pitfalls": d["pitfalls"],
         "local_note": local_note(d),
-        "footer": "BizSpark · one-time purchase · generated on this device",
+        "footer": "BizSpark · 一次买断 · 本机生成" if _zh() else "BizSpark · one-time purchase · generated on this device",
     }

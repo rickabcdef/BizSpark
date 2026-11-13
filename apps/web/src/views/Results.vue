@@ -29,9 +29,10 @@ const CAP_LABEL: Record<string, string> = {
 };
 const HOURS_LABEL: Record<string, string> = { "<10": "results.ans_h1", "10-25": "results.ans_h2", full: "results.ans_h3" };
 
-// 国家码 → 英文全名（T-20 复述句要求国家全名展示；枚举与 engine/quiz.py COUNTRIES 一致）
-const COUNTRY_NAME: Record<string, string> = {
-  US: "United States", CA: "Canada", UK: "United Kingdom", AU: "Australia", SG: "Singapore", PH: "Philippines",
+// 国家码 → locales 键（复述句展示国名；T-20 en 断言 "United States"，zh 显示「美国」）
+const COUNTRY_KEY: Record<string, string> = {
+  US: "results.country_us", CA: "results.country_ca", UK: "results.country_uk",
+  AU: "results.country_au", SG: "results.country_sg", PH: "results.country_ph",
 };
 
 const recap = computed(() => {
@@ -39,7 +40,7 @@ const recap = computed(() => {
   const cap = CAP_LABEL[String(a.capital)] ? t(CAP_LABEL[String(a.capital)]) : "";
   const hrs = HOURS_LABEL[String(a.hours)] ? t(HOURS_LABEL[String(a.hours)]) : "";
   const code = String(a.country || "US");
-  const country = COUNTRY_NAME[code] || code;
+  const country = COUNTRY_KEY[code] ? t(COUNTRY_KEY[code]) : code;
   return t("results.recap", { capital: cap, hours: hrs, country });
 });
 

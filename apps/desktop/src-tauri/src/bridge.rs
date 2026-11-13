@@ -80,6 +80,13 @@ pub fn spawn_sidecar(app: AppHandle) -> Result<(), String> {
         .stdin(Stdio::piped())
         .stdout(Stdio::piped())
         .stderr(Stdio::null())
+        // PM 2026-11-13（中文包）：把构建目标 locale 传给 sidecar——
+        // 引擎文案（why/tags/回本提示/PDF 标题）与内容覆盖 zh_v1.json 按此切换；
+        // A-08 双构建：build-mode.txt 第 1 行 target 以 "cn" 开头即 zh-CN
+        .env("BIZSPARK_LOCALE", {
+            let loc = std::env::var("BIZSPARK_LOCALE").unwrap_or_default();
+            if loc.is_empty() { "en-US".to_string() } else { loc }
+        })
         .spawn()
         .map_err(|e| format!("sidecar spawn failed: {}", e))?;
 

@@ -325,7 +325,11 @@ def _cost_label(idea):
 
 
 def compare_ideas(payload):
-    """F07 步骤 4/5：只返三项（起步成本 / 每周时间 / 回本天数）+ 标题，不返评分/权重。"""
+    """F07 步骤 4/5：只返三项（起步成本 / 每周时间 / 回本天数）+ 标题，不返评分/权重。
+
+    PM 2026-11-13：键改为稳定 id（cost/hours/payback），展示文案由前端 locales 负责
+    （中文包对比页不再露出英文行名）；title 仍是标题数据（前端已过滤不进行）。
+    """
     ids = payload.get("ids") if isinstance(payload, dict) else None
     if not isinstance(ids, list) or len(ids) < 2:
         return None, {"code": "E_BAD_REQUEST", "message": "ids needs 2 items", "recoverable": True}
@@ -336,9 +340,9 @@ def compare_ideas(payload):
             return None, {"code": "E_IDEA_NOT_FOUND", "message": str(idea_id), "recoverable": True}
         sides[side] = {
             "title": idea.get("title") or idea_id,
-            "Startup cost": _cost_label(idea),
-            "Hours per week": _hours_label(idea),
-            "Payback": _payback_label(idea),
+            "cost": _cost_label(idea),
+            "hours": _hours_label(idea),
+            "payback": _payback_label(idea),
         }
     return sides, None
 

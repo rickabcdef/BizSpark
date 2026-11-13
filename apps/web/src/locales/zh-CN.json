@@ -14,7 +14,6 @@
   "side.badge": "一次买断 · 无订阅",
   "side.ver": "v1.0.0 · 点子库 2026.11 · 可离线",
   "side.chip": "全部留在这台设备",
-
   "welcome.link_how": "怎么用",
   "welcome.link_get": "你会拿到什么",
   "welcome.link_privacy": "隐私",
@@ -32,7 +31,6 @@
   "welcome.mock_tag2": "每周 <10 小时",
   "welcome.mock_tag3": "按月收钱",
   "welcome.foot": "给想从小处着手、今天就动手的人。",
-
   "quiz.eyebrow": "第 2 步 / 共 5 步",
   "quiz.h1": "5 道题。就这些。",
   "quiz.lead": "不用注册，不用写小作文。一切都留在这台电脑里。",
@@ -86,7 +84,6 @@
   "quiz.q5.o2d": "有预算、有上限、亏得起",
   "quiz.q5.o3": "能扛更大的投入",
   "quiz.q5.o3d": "积蓄或收入能撑过慢启动",
-
   "results.eyebrow": "40 秒出结果",
   "results.h1": "3 个你真能开起来的生意。",
   "results.recap": "按 {capital}、{hours}、{country} 来算。什么都没传出去过。",
@@ -107,7 +104,6 @@
   "results.ans_h1": "每周不到 10 小时",
   "results.ans_h2": "每周 10–25 小时",
   "results.ans_h3": "全职投入",
-
   "detail.eyebrow": "点子 {rank} / {total} · {match}% 匹配",
   "detail.loading": "载入中…",
   "detail.costs_h": "起步要花多少钱",
@@ -120,7 +116,6 @@
   "detail.cta_export": "导出我的方案",
   "detail.cta_back": "回到 3 个点子",
   "detail.privacy": "什么都不会上传。永远。",
-
   "export.eyebrow": "好了，就在你电脑里",
   "export.h1": "你的方案好了。",
   "export.lead": "一张 PDF，一页，无水印。它是你硬盘上的一个文件——不是链接、不是账号、也不是会过期的东西。",
@@ -132,7 +127,6 @@
   "export.inside_p": "成本拆解 · 定价建议 · 7 步 · 第一批客户渠道 · 3 个坑 · 本地合规一句。",
   "export.extras_h": "可选附带",
   "export.extras_p": "也可以把成本表另存成 CSV，丢进你自己的表格。依然本地，依然归你。",
-
   "saved.eyebrow": "留在这台设备",
   "saved.h1": "我的点子",
   "saved.lead": "本地保存。不上传、不同步、不登录——半年后再打开，它们还在这儿。",
@@ -146,7 +140,6 @@
   "saved.confirm_p": "已存的点子会从这台设备上移除。点子库不会删任何东西——随时都能再找回来。",
   "saved.confirm_yes": "清空",
   "saved.confirm_no": "先留着",
-
   "library.eyebrow": "安静、可选、免费",
   "library.h1": "你的点子库",
   "library.lead": "工具每月查一次有没有新点子。连不上就什么都不发生——设备上已有的每一条照常能用。",
@@ -172,7 +165,6 @@
   "library.why_h": "为什么点子要一直换新",
   "library.why_p": "生意点子是有季节的。移动互联网那波在一个年代成立，AI 和智能体这波在下一个年代成立。点子库该跟着世界走，不该冻在你付款那天。新点子浮上来，卷透的慢慢沉下去——但永不消失。",
   "library.toast": "点子库已检查 · 已是最新，不用管。",
-
   "activate.eyebrow": "给在商店之外购买的版本",
   "activate.h1": "激活一次，之后离线用。",
   "activate.lead": "商店下载的版本已经激活过，你根本不会看到这一页。这页只给在其他软件平台买的副本用。",
@@ -194,7 +186,6 @@
   "activate.f5": "点子库更新免费且可选",
   "activate.why_h": "为什么还要一个码？",
   "activate.why_p": "安装包文件是可以被复制转发的。这个码只用来证明这份副本付过钱。不是不信任你，是文件本身能被转发。",
-
   "settings.eyebrow": "就 6 个旋钮，没了",
   "settings.h1": "设置",
   "settings.lead": "这里每一项都是本地的。没有资料、没有密码、没有同步。",
@@ -222,7 +213,6 @@
   "settings.lic_none": "未激活",
   "settings.check_updates": "检查更新",
   "settings.view_licence": "查看授权",
-
   "price.model_one_time": "一次买断",
   "price.model_monthly": "按月",
   "price.model_yearly": "按年",
@@ -234,5 +224,20 @@
   "price.export_note_hidden": "无订阅、不自动续费。买一次，想用多久用多久——就算断网也一样。",
   "price.export_note_visible_once": "无订阅、不自动续费。{amount} 买一次，想用多久用多久——就算断网也一样。",
   "price.export_note_visible_sub": "{amount} {model}，随时可取消；已导出的方案一直归你，断网也能用。",
-  "price.activate_eyebrow_hidden": "一次买断"
+  "price.activate_eyebrow_hidden": "一次买断",
+  "quiz.q1.o_us": "美国",
+  "quiz.q1.o_ca": "加拿大",
+  "quiz.q1.o_uk": "英国",
+  "quiz.q1.o_au": "澳大利亚",
+  "quiz.q1.o_sg": "新加坡",
+  "quiz.q1.o_ph": "菲律宾",
+  "results.country_us": "美国",
+  "results.country_ca": "加拿大",
+  "results.country_uk": "英国",
+  "results.country_au": "澳大利亚",
+  "results.country_sg": "新加坡",
+  "results.country_ph": "菲律宾",
+  "saved.row_cost": "起步成本",
+  "saved.row_hours": "每周时间",
+  "saved.row_payback": "回本时间"
 }

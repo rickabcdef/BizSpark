@@ -148,7 +148,8 @@ class TestStateHandlers(StateTestBase):
         data, err = store.compare_ideas({"ids": [i["id"] for i in ideas]})
         self.assertIsNone(err)
         keys = set(data["left"].keys()) - {"title"}
-        self.assertEqual(keys, {"Startup cost", "Hours per week", "Payback"})
+        # PM 2026-11-13（中文包契约修订）：键改为稳定 id，展示文案由前端 locales 负责
+        self.assertEqual(keys, {"cost", "hours", "payback"})
 
     def test_compare_needs_two(self):
         data, err = store.compare_ideas({"ids": [store.load_ideas()[0]["id"]]})
