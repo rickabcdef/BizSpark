@@ -1,0 +1,112 @@
+{
+ "alg": "ed25519+sha256-8",
+ "codes": [
+  {
+   "h": "042269d0ba9315e9",
+   "s": "RVR6B",
+   "sig": "9fa1fac7102c6c73e3736d01e2bade6445fb7e1d979498e9d94366f419586f88a24747e5879ed7a05d7e27842009e89274ef7853665251da228d85b442b3f90e"
+  },
+  {
+   "h": "077681acbacd0819",
+   "s": "NSL5K",
+   "sig": "61a7d0e969b152e3a241c1d3cca08eacbecd139fa6f99e16066aa4208629212d3f0b9de774403d24bf48e2e3fee39169df90e27854a11912f0d661fe0410600d"
+  },
+  {
+   "h": "0f1daab33245f086",
+   "s": "9BSMB",
+   "sig": "20bdfc6d21f89092b42cd67c24f01dca7d62c51fbe36e1ef199c615f82abbf85545e6ec6b5ca106af3587a218b86ef03d0d329405c51e79c87bcb0aeed73ad0e"
+  },
+  {
+   "h": "214136c1db16bc22",
+   "s": "FLSBQ",
+   "sig": "cc7bc2ae30ae82263f48bfcebbdd8e84a04c2d956f6c415bb74032c8dc3306f5a3dac224cb1ce5cee75bf0b16f3281062ff2477720a5abf1023352b091647e0f"
+  },
+  {
+   "h": "231b36e350705945",
+   "s": "LWHGQ",
+   "sig": "6b2d22fff57995e5f6f48794f99d62d839f5151073e804bc46546fa066d139e9c2ba9aaf311dffc59b3fe64295bc129caf4fb8b48fad9348d38acc214569d403"
+  },
+  {
+   "h": "25b6dc1bcdc04abe",
+   "s": "3A2D7",
+   "sig": "351e8cdcae4cd88d762ceb664c950a679dccf73b9a3f51a6dc2e323040cf8bebcbb19c656c291c99ccae5662c961ad1efba11714ea76e1739c7fe6db82f5a90b"
+  },
+  {
+   "h": "2fa11319a191cb0b",
+   "s": "JM67Y",
+   "sig": "5d408454c0f1d355e51bd435c2afc378e09f3a4b42f5a070e74a1984bcbc154dc2b14d38d39dc40464229c716c1dfef8d5f43413588290abcbfe6f6bf099750e"
+  },
+  {
+   "h": "5a37d8af2e6e6aa7",
+   "s": "NRAKF",
+   "sig": "97a7632ec2fd7195f89ea26b5cc2fe4fef884b029d6671e1a9eb43d97c5dd6136329f634d806dc0a255514d6daeca826325936511e673f935c0cd96fd660d307"
+  },
+  {
+   "h": "68c09e922a84620f",
+   "s": "HVQUA",
+   "sig": "31258bfc74d70a3da123c31a1fd762898e01a2ec0898b939a2bee8eaa0247f97b23624f24b5df84200ab6f2abc2140ef4a0a7498564013ff4933306d2961610d"
+  },
+  {
+   "h": "821437f31482169a",
+   "s": "5E9PQ",
+   "sig": "23292c0bcc9bd10390749cb731b76a96e8fbcd11ebe9642426a7ed09cd069597d2672c074a854b48880ea2f875194231ab97ee472e34528cb7c4183b9dafe108"
+  },
+  {
+   "h": "849fc8fa606efa57",
+   "s": "RP2PQ",
+   "sig": "935df460eb67507bec47036e334e65cffe0687532a59a20e85626bc708fbfc03f2621f88d5680e308c16c84b0be92d947c79323c38089c5e0544ca796101d709"
+  },
+  {
+   "h": "8622bbc15ee309de",
+   "s": "47LJF",
+   "sig": "cdf0798f716e50ca604bd51dc605f059084cc9484d2aad0306d394ef6be6bd09206e781aae573e66ba5a7df6a6e016d5b98fda2fdf18cec39202e44861ff200b"
+  },
+  {
+   "h": "8e667f3db04e5baa",
+   "s": "2EWL6",
+   "sig": "a900e19a2b6a0da065409e6017e7192e4a91aee7a3bb5c7acb2e401aa932af423f27c018457be2fe7d7511e30766fb3a907f3575ac0d8dc77a175c6a84f25107"
+  },
+  {
+   "h": "acf6b530fd506c21",
+   "s": "33AJX",
+   "sig": "31a951d08b619e37b4ad37c2e740a57b27a40e285fdafbeaccbd3d804126e8f1c895c3983a4ab4a6ad6198327dc60fe6e59691ed2ce5a0ed3abbc5aaee545106"
+  },
+  {
+   "h": "d73bbcb7d0d66399",
+   "s": "C5MJ2",
+   "sig": "1f619f2566080999dc1acb55f8c17e90d24000700464c63940a6b4f886a0fce076328ef1b3315e79cfdc0ab4588e6339afc790a3ff2125c3bf1a44e1cefbb305"
+  },
+  {
+   "h": "d7cae8fb1f239a08",
+   "s": "Q8ZYG",
+   "sig": "2c4cc9fac4067eb94259612d49eff1a0489d59a2f9507b772007d031106ffcfc1f25232ea44f50a078e0adff72d9381dd958830d74c1aa18e6a06d141ce8b50a"
+  },
+  {
+   "h": "d99505f4ddb7895a",
+   "s": "5YU3W",
+   "sig": "1d50ddeaa92c8f4bdd5dcff9df7b573796f4a485791852b58dd98697c61e16852ce2474a1fd8915e3b55d6612ccfad9508723cb77966a7e19ae82ff8a5424e0b"
+  },
+  {
+   "h": "e3964b49c231b1db",
+   "s": "DG7ZW",
+   "sig": "dbcdb8a5d11d5ad37c0568315a542bff7a1d34a89a1f6cc8f59b1f08ae2d586279541d7849c68f6b3bb00cc7c98e8ec42dc2c9f1fe54f0407f83dc8153f7150c"
+  },
+  {
+   "h": "e500ef64b9e0a6d2",
+   "s": "72WW8",
+   "sig": "2c360132d4ed8833feb5fd33bfb81e1054ae08324b0bed89d0d1e437441d5aaba1318f311e1dd0a84016fceffd455fbba12344b8293d1f3e3ded20aa413fc403"
+  },
+  {
+   "h": "e7e23c03f3f4618c",
+   "s": "JHRFY",
+   "sig": "96a63bd11083fcc95d18f52ec707070cc02960b6b862b96fe35ecf11eb544ee36d1835acccbf24cf13db47759114e5fcba9fa82a456375a0d843b8a0a3ea8409"
+  }
+ ],
+ "count": 20,
+ "demo": true,
+ "issued_at": "2026-11-13T05:29:22Z",
+ "pool_id": "2026-11-dev",
+ "seats_max": 3,
+ "sig": "e55985dd8b65ad499f8be89a3745e66cb3463df35d0a11121833ef71b9ce4dc9756d31a2cbceddc50e31409945a2e3d87405748d7ad946ed73a1c46eee026108",
+ "v": 1
+}

@@ -24,6 +24,13 @@ from state import store as _store                  # noqa: E402
 from state import merge as _merge                  # noqa: E402
 from state import settings as _settings            # noqa: E402
 
+# G（F10 授权激活，仅分销版）。Store 构建里 apps/core/license/ 被整目录裁掉（P-08 / T-42），
+# 这里的导入会失败 → 三个授权 cmd 保持"不存在"，界面上也永不出现激活页。
+try:
+    from license import activate as _license       # noqa: E402
+except Exception:                                  # ImportError/裁剪后残留半截文件
+    _license = None
+
 # 错误码（附录 D，仅内部使用，禁止展示给用户）
 E_BAD_REQUEST = {"code": "E_BAD_REQUEST", "recoverable": True}
 SIDECAR_VERSION = "1.0.0"
@@ -88,11 +95,32 @@ def _with_export_dir(inner):
 CMD_HANDLERS["diagnose"] = _with_last_result(_diagnose)
 CMD_HANDLERS["export_plan"] = _with_export_dir(_export_plan)
 
+
+# G-04：`get_state.license_state` 由"文件存在即激活"升级为**真实验签结果**
+# （activated / unseated / invalid / none）。只补充这一个字段，F 的其它字段与逻辑一字不动；
+# 验签模块被裁掉（Store 版）或异常时，保留 F 的原值。
+def _with_license_state(inner):
+    def handler(payload):
+        data, err = inner(payload)
+        if err is None and isinstance(data, dict):
+            try:
+                data["license_state"] = _license.license_state()
+            except Exception:
+                pass
+        return data, err
+    return handler
+
+
+if _license is not None:
+    # —— G（F10 授权：激活 / 状态 / 释放席位）——
+    CMD_HANDLERS["activate"] = _license.activate
+    CMD_HANDLERS["license_status"] = _license.license_status
+    CMD_HANDLERS["release_seat"] = _license.release_seat
+    CMD_HANDLERS["get_state"] = _with_license_state(_store.get_state)
+
 # §2.4 命令表其余 cmd：保留注册点，等对应负责人实现后挂载（勿删他人名字）
-#   G  activate / license_status / release_seat（F10 授权）
+#   G  activate / license_status / release_seat → 已由 G 接管（见上方 _license 挂载块）
 _NOT_IMPLEMENTED_CMDS = [
-    # §2.4 正名（待 G）
-    "activate", "license_status", "release_seat",
     # 早期脚手架别名（保留，兼容既有调用方；负责人实现正名后可下线）
     "quiz_next", "quiz_reset", "assemble_detail",
 ]
