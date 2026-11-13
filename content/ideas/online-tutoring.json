@@ -1,0 +1,1466 @@
+{
+ "industry": "online-tutoring",
+ "count": 12,
+ "ideas": [
+  {
+   "id": "bs-onl-online-tutoring-151",
+   "title": "Evening online tutoring for school subjects",
+   "one_liner": "Parents pay per session for one-on-one evening tutoring in maths, English or coding basics over video call.",
+   "min_capital": 2850,
+   "capital_tier": "2k-10k",
+   "hours_per_week": "<10",
+   "countries": [
+    "US",
+    "UK",
+    "AU",
+    "SG"
+   ],
+   "online_or_offline": "online",
+   "legal_blocks": [],
+   "skills_needed": [
+    "basic_english"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "low",
+   "payback_days": 7,
+   "recurring": true,
+   "channel_ids": [
+    "facebook",
+    "referral",
+    "local-groups",
+    "nextdoor"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Whiteboard app subscription",
+     "amount": 855
+    },
+    {
+     "item": "Curriculum worksheets printing",
+     "amount": 855
+    },
+    {
+     "item": "Parent-group ad boosts",
+     "amount": 1140
+    }
+   ],
+   "steps": [
+    "Pick the one subject you know cold",
+    "Prepare 5 lesson worksheets",
+    "Offer one free trial lesson in parent groups",
+    "Offer $25 per 45-minute session for the first month",
+    "Set fixed weekday evening slots",
+    "Send a 3-line progress note after each session",
+    "Ask parents for term-time rebooking"
+   ],
+   "pricing_hint": "$25 per 45-minute session",
+   "first_customers": [
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts"
+   ],
+   "pitfalls": [
+    "Get a parent contact for minors",
+    "Never tutor beyond your curriculum comfort",
+    "Keep sessions under 45 minutes for focus"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "digital-product",
+   "trend_tags": [
+    "education",
+    "recurring"
+   ],
+   "first_seen": "2025-07",
+   "maturity": "growing",
+   "version": 1,
+   "updated_at": "2026-08-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Thumbtack local leads",
+      "Chamber of commerce newsletter",
+      "Google Maps 4-star shops with unanswered reviews"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Nextdoor UK street posts",
+      "Local parish newsletter ads",
+      "Google Maps high-street shops"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Local Facebook community groups",
+      "Council newsletter sponsorships",
+      "Google Maps suburban strip shops"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "Facebook neighbourhood groups for HDB estates",
+      "WhatsApp business contact lists",
+      "Google Maps shop clusters in heartland malls"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-onl-online-tutoring-152",
+   "title": "Evening online tutoring for school subjects",
+   "one_liner": "Parents pay per session for one-on-one evening tutoring in maths, English or coding basics over video call.",
+   "min_capital": 275,
+   "capital_tier": "<500",
+   "hours_per_week": "<10",
+   "countries": [
+    "UK",
+    "CA",
+    "AU",
+    "PH"
+   ],
+   "online_or_offline": "online",
+   "legal_blocks": [],
+   "skills_needed": [
+    "basic_english"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "low",
+   "payback_days": 14,
+   "recurring": true,
+   "channel_ids": [
+    "facebook",
+    "referral",
+    "local-groups",
+    "nextdoor"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Whiteboard app subscription",
+     "amount": 82
+    },
+    {
+     "item": "Curriculum worksheets printing",
+     "amount": 82
+    },
+    {
+     "item": "Parent-group ad boosts",
+     "amount": 111
+    }
+   ],
+   "steps": [
+    "Pick the one subject you know cold",
+    "Prepare 10 lesson worksheets",
+    "Offer one free trial lesson in parent groups",
+    "Offer $90 for a 4-session month for the first month",
+    "Set fixed weekday evening slots",
+    "Send a 3-line progress note after each session",
+    "Ask parents for term-time rebooking"
+   ],
+   "pricing_hint": "$90 for a 4-session month",
+   "first_customers": [
+    "Local parish newsletter ads",
+    "Google Maps high-street shops",
+    "Facebook local community groups",
+    "Nextdoor UK street posts"
+   ],
+   "pitfalls": [
+    "Get a parent contact for minors",
+    "Never tutor beyond your curriculum comfort",
+    "Keep sessions under 45 minutes for focus"
+   ],
+   "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+   "wave": "digital-product",
+   "trend_tags": [
+    "education",
+    "recurring"
+   ],
+   "first_seen": "2024-08",
+   "maturity": "growing",
+   "version": 1,
+   "updated_at": "2026-09-01",
+   "status": "active",
+   "overrides": {
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Local parish newsletter ads",
+      "Google Maps high-street shops",
+      "Facebook local community groups"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Chamber of commerce directory",
+      "Google Maps shops on main streets",
+      "Nextdoor Canada community posts"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Council newsletter sponsorships",
+      "Google Maps suburban strip shops",
+      "Nextdoor Australia neighbourhood posts"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Viber neighbourhood groups",
+      "Facebook Marketplace local groups",
+      "Barangay community referrals"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-onl-online-tutoring-153",
+   "title": "Evening online tutoring for school subjects",
+   "one_liner": "Parents pay per session for one-on-one evening tutoring in maths, English or coding basics over video call.",
+   "min_capital": 375,
+   "capital_tier": "<500",
+   "hours_per_week": "10-25",
+   "countries": [
+    "UK",
+    "CA",
+    "AU",
+    "SG"
+   ],
+   "online_or_offline": "online",
+   "legal_blocks": [],
+   "skills_needed": [
+    "basic_english"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "low",
+   "payback_days": 21,
+   "recurring": true,
+   "channel_ids": [
+    "facebook",
+    "referral",
+    "local-groups",
+    "nextdoor"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Whiteboard app subscription",
+     "amount": 112
+    },
+    {
+     "item": "Curriculum worksheets printing",
+     "amount": 112
+    },
+    {
+     "item": "Parent-group ad boosts",
+     "amount": 151
+    }
+   ],
+   "steps": [
+    "Pick the one subject you know cold",
+    "Prepare 15 lesson worksheets",
+    "Offer one free trial lesson in parent groups",
+    "Offer $140/month twice weekly for the first month",
+    "Set fixed weekday evening slots",
+    "Send a 3-line progress note after each session",
+    "Ask parents for term-time rebooking"
+   ],
+   "pricing_hint": "$140/month twice weekly",
+   "first_customers": [
+    "Google Maps high-street shops",
+    "Facebook local community groups",
+    "Nextdoor UK street posts",
+    "Local parish newsletter ads"
+   ],
+   "pitfalls": [
+    "Get a parent contact for minors",
+    "Never tutor beyond your curriculum comfort",
+    "Keep sessions under 45 minutes for focus"
+   ],
+   "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+   "wave": "digital-product",
+   "trend_tags": [
+    "education",
+    "recurring"
+   ],
+   "first_seen": "2024-09",
+   "maturity": "mature",
+   "version": 1,
+   "updated_at": "2026-10-01",
+   "status": "active",
+   "overrides": {
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Google Maps high-street shops",
+      "Facebook local community groups",
+      "Nextdoor UK street posts"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Google Maps shops on main streets",
+      "Nextdoor Canada community posts",
+      "Local Facebook buy-and-sell groups"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Google Maps suburban strip shops",
+      "Nextdoor Australia neighbourhood posts",
+      "Local Facebook community groups"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "Google Maps shop clusters in heartland malls",
+      "Facebook neighbourhood groups for HDB estates",
+      "WhatsApp business contact lists"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-onl-online-tutoring-154",
+   "title": "Evening online tutoring for school subjects",
+   "one_liner": "Parents pay per session for one-on-one evening tutoring in maths, English or coding basics over video call.",
+   "min_capital": 3140,
+   "capital_tier": "2k-10k",
+   "hours_per_week": "<10",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU",
+    "SG"
+   ],
+   "online_or_offline": "online",
+   "legal_blocks": [],
+   "skills_needed": [
+    "basic_english"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "low",
+   "payback_days": 7,
+   "recurring": true,
+   "channel_ids": [
+    "facebook",
+    "referral",
+    "local-groups",
+    "nextdoor"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Whiteboard app subscription",
+     "amount": 942
+    },
+    {
+     "item": "Curriculum worksheets printing",
+     "amount": 942
+    },
+    {
+     "item": "Parent-group ad boosts",
+     "amount": 1256
+    }
+   ],
+   "steps": [
+    "Pick the one subject you know cold",
+    "Prepare 20 lesson worksheets",
+    "Offer one free trial lesson in parent groups",
+    "Offer $25 per 45-minute session for the first month",
+    "Set fixed weekday evening slots",
+    "Send a 3-line progress note after each session",
+    "Ask parents for term-time rebooking"
+   ],
+   "pricing_hint": "$25 per 45-minute session",
+   "first_customers": [
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews"
+   ],
+   "pitfalls": [
+    "Get a parent contact for minors",
+    "Never tutor beyond your curriculum comfort",
+    "Keep sessions under 45 minutes for focus"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "digital-product",
+   "trend_tags": [
+    "education",
+    "recurring"
+   ],
+   "first_seen": "2025-10",
+   "maturity": "emerging",
+   "version": 1,
+   "updated_at": "2026-11-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Nextdoor neighbourhood posts",
+      "Thumbtack local leads",
+      "Chamber of commerce newsletter"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Facebook local community groups",
+      "Nextdoor UK street posts",
+      "Local parish newsletter ads"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Nextdoor Canada community posts",
+      "Local Facebook buy-and-sell groups",
+      "Chamber of commerce directory"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Nextdoor Australia neighbourhood posts",
+      "Local Facebook community groups",
+      "Council newsletter sponsorships"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "Facebook neighbourhood groups for HDB estates",
+      "WhatsApp business contact lists",
+      "Google Maps shop clusters in heartland malls"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-onl-online-tutoring-155",
+   "title": "Evening online tutoring for school subjects",
+   "one_liner": "Parents pay per session for one-on-one evening tutoring in maths, English or coding basics over video call.",
+   "min_capital": 120,
+   "capital_tier": "<500",
+   "hours_per_week": "10-25",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU",
+    "SG",
+    "PH"
+   ],
+   "online_or_offline": "online",
+   "legal_blocks": [],
+   "skills_needed": [
+    "basic_english"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "low",
+   "payback_days": 14,
+   "recurring": true,
+   "channel_ids": [
+    "facebook",
+    "referral",
+    "local-groups",
+    "nextdoor"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Whiteboard app subscription",
+     "amount": 36
+    },
+    {
+     "item": "Curriculum worksheets printing",
+     "amount": 36
+    },
+    {
+     "item": "Parent-group ad boosts",
+     "amount": 48
+    }
+   ],
+   "steps": [
+    "Pick the one subject you know cold",
+    "Prepare 25 lesson worksheets",
+    "Offer one free trial lesson in parent groups",
+    "Offer $90 for a 4-session month for the first month",
+    "Set fixed weekday evening slots",
+    "Send a 3-line progress note after each session",
+    "Ask parents for term-time rebooking"
+   ],
+   "pricing_hint": "$90 for a 4-session month",
+   "first_customers": [
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts"
+   ],
+   "pitfalls": [
+    "Get a parent contact for minors",
+    "Never tutor beyond your curriculum comfort",
+    "Keep sessions under 45 minutes for focus"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "digital-product",
+   "trend_tags": [
+    "education",
+    "recurring"
+   ],
+   "first_seen": "2024-11",
+   "maturity": "growing",
+   "version": 1,
+   "updated_at": "2026-01-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Thumbtack local leads",
+      "Chamber of commerce newsletter",
+      "Google Maps 4-star shops with unanswered reviews"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Nextdoor UK street posts",
+      "Local parish newsletter ads",
+      "Google Maps high-street shops"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Local Facebook buy-and-sell groups",
+      "Chamber of commerce directory",
+      "Google Maps shops on main streets"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Local Facebook community groups",
+      "Council newsletter sponsorships",
+      "Google Maps suburban strip shops"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "WhatsApp business contact lists",
+      "Google Maps shop clusters in heartland malls",
+      "Facebook neighbourhood groups for HDB estates"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Google Maps shops along main roads",
+      "Viber neighbourhood groups",
+      "Facebook Marketplace local groups"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-onl-online-tutoring-156",
+   "title": "Evening online tutoring for school subjects",
+   "one_liner": "Parents pay per session for one-on-one evening tutoring in maths, English or coding basics over video call.",
+   "min_capital": 1755,
+   "capital_tier": "500-2k",
+   "hours_per_week": "10-25",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU",
+    "SG",
+    "PH"
+   ],
+   "online_or_offline": "online",
+   "legal_blocks": [],
+   "skills_needed": [
+    "basic_english"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "low",
+   "payback_days": 21,
+   "recurring": true,
+   "channel_ids": [
+    "facebook",
+    "referral",
+    "local-groups",
+    "nextdoor"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Whiteboard app subscription",
+     "amount": 526
+    },
+    {
+     "item": "Curriculum worksheets printing",
+     "amount": 526
+    },
+    {
+     "item": "Parent-group ad boosts",
+     "amount": 703
+    }
+   ],
+   "steps": [
+    "Pick the one subject you know cold",
+    "Prepare 30 lesson worksheets",
+    "Offer one free trial lesson in parent groups",
+    "Offer $140/month twice weekly for the first month",
+    "Set fixed weekday evening slots",
+    "Send a 3-line progress note after each session",
+    "Ask parents for term-time rebooking"
+   ],
+   "pricing_hint": "$140/month twice weekly",
+   "first_customers": [
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads"
+   ],
+   "pitfalls": [
+    "Get a parent contact for minors",
+    "Never tutor beyond your curriculum comfort",
+    "Keep sessions under 45 minutes for focus"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "digital-product",
+   "trend_tags": [
+    "education",
+    "recurring"
+   ],
+   "first_seen": "2024-12",
+   "maturity": "emerging",
+   "version": 1,
+   "updated_at": "2026-02-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Chamber of commerce newsletter",
+      "Google Maps 4-star shops with unanswered reviews",
+      "Nextdoor neighbourhood posts"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Local parish newsletter ads",
+      "Google Maps high-street shops",
+      "Facebook local community groups"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Chamber of commerce directory",
+      "Google Maps shops on main streets",
+      "Nextdoor Canada community posts"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Council newsletter sponsorships",
+      "Google Maps suburban strip shops",
+      "Nextdoor Australia neighbourhood posts"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "Google Maps shop clusters in heartland malls",
+      "Facebook neighbourhood groups for HDB estates",
+      "WhatsApp business contact lists"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Viber neighbourhood groups",
+      "Facebook Marketplace local groups",
+      "Barangay community referrals"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-onl-online-tutoring-157",
+   "title": "Evening online tutoring for school subjects",
+   "one_liner": "Parents pay per session for one-on-one evening tutoring in maths, English or coding basics over video call.",
+   "min_capital": 310,
+   "capital_tier": "<500",
+   "hours_per_week": "<10",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "SG",
+    "PH"
+   ],
+   "online_or_offline": "hybrid",
+   "legal_blocks": [],
+   "skills_needed": [
+    "basic_english"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "low",
+   "payback_days": 7,
+   "recurring": true,
+   "channel_ids": [
+    "facebook",
+    "referral",
+    "local-groups",
+    "nextdoor"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Whiteboard app subscription",
+     "amount": 93
+    },
+    {
+     "item": "Curriculum worksheets printing",
+     "amount": 93
+    },
+    {
+     "item": "Parent-group ad boosts",
+     "amount": 124
+    }
+   ],
+   "steps": [
+    "Pick the one subject you know cold",
+    "Prepare 5 lesson worksheets",
+    "Offer one free trial lesson in parent groups",
+    "Offer $25 per 45-minute session for the first month",
+    "Set fixed weekday evening slots",
+    "Send a 3-line progress note after each session",
+    "Ask parents for term-time rebooking"
+   ],
+   "pricing_hint": "$25 per 45-minute session",
+   "first_customers": [
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter"
+   ],
+   "pitfalls": [
+    "Get a parent contact for minors",
+    "Never tutor beyond your curriculum comfort",
+    "Keep sessions under 45 minutes for focus"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "digital-product",
+   "trend_tags": [
+    "education",
+    "recurring"
+   ],
+   "first_seen": "2025-01",
+   "maturity": "mature",
+   "version": 1,
+   "updated_at": "2026-03-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Google Maps 4-star shops with unanswered reviews",
+      "Nextdoor neighbourhood posts",
+      "Thumbtack local leads"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Google Maps high-street shops",
+      "Facebook local community groups",
+      "Nextdoor UK street posts"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Google Maps shops on main streets",
+      "Nextdoor Canada community posts",
+      "Local Facebook buy-and-sell groups"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "Facebook neighbourhood groups for HDB estates",
+      "WhatsApp business contact lists",
+      "Google Maps shop clusters in heartland malls"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Facebook Marketplace local groups",
+      "Barangay community referrals",
+      "Google Maps shops along main roads"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-onl-online-tutoring-158",
+   "title": "Evening online tutoring for school subjects",
+   "one_liner": "Parents pay per session for one-on-one evening tutoring in maths, English or coding basics over video call.",
+   "min_capital": 570,
+   "capital_tier": "500-2k",
+   "hours_per_week": "10-25",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU"
+   ],
+   "online_or_offline": "online",
+   "legal_blocks": [],
+   "skills_needed": [
+    "basic_english"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "low",
+   "payback_days": 14,
+   "recurring": true,
+   "channel_ids": [
+    "facebook",
+    "referral",
+    "local-groups",
+    "nextdoor"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Whiteboard app subscription",
+     "amount": 171
+    },
+    {
+     "item": "Curriculum worksheets printing",
+     "amount": 171
+    },
+    {
+     "item": "Parent-group ad boosts",
+     "amount": 228
+    }
+   ],
+   "steps": [
+    "Pick the one subject you know cold",
+    "Prepare 10 lesson worksheets",
+    "Offer one free trial lesson in parent groups",
+    "Offer $90 for a 4-session month for the first month",
+    "Set fixed weekday evening slots",
+    "Send a 3-line progress note after each session",
+    "Ask parents for term-time rebooking"
+   ],
+   "pricing_hint": "$90 for a 4-session month",
+   "first_customers": [
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews"
+   ],
+   "pitfalls": [
+    "Get a parent contact for minors",
+    "Never tutor beyond your curriculum comfort",
+    "Keep sessions under 45 minutes for focus"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "digital-product",
+   "trend_tags": [
+    "education",
+    "recurring"
+   ],
+   "first_seen": "2024-02",
+   "maturity": "growing",
+   "version": 1,
+   "updated_at": "2026-04-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Nextdoor neighbourhood posts",
+      "Thumbtack local leads",
+      "Chamber of commerce newsletter"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Facebook local community groups",
+      "Nextdoor UK street posts",
+      "Local parish newsletter ads"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Nextdoor Canada community posts",
+      "Local Facebook buy-and-sell groups",
+      "Chamber of commerce directory"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Nextdoor Australia neighbourhood posts",
+      "Local Facebook community groups",
+      "Council newsletter sponsorships"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-onl-online-tutoring-159",
+   "title": "Evening online tutoring for school subjects",
+   "one_liner": "Parents pay per session for one-on-one evening tutoring in maths, English or coding basics over video call.",
+   "min_capital": 665,
+   "capital_tier": "500-2k",
+   "hours_per_week": "full",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU",
+    "SG"
+   ],
+   "online_or_offline": "online",
+   "legal_blocks": [],
+   "skills_needed": [
+    "basic_english"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "low",
+   "payback_days": 21,
+   "recurring": true,
+   "channel_ids": [
+    "facebook",
+    "referral",
+    "local-groups",
+    "nextdoor"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Whiteboard app subscription",
+     "amount": 200
+    },
+    {
+     "item": "Curriculum worksheets printing",
+     "amount": 200
+    },
+    {
+     "item": "Parent-group ad boosts",
+     "amount": 265
+    }
+   ],
+   "steps": [
+    "Pick the one subject you know cold",
+    "Prepare 15 lesson worksheets",
+    "Offer one free trial lesson in parent groups",
+    "Offer $140/month twice weekly for the first month",
+    "Set fixed weekday evening slots",
+    "Send a 3-line progress note after each session",
+    "Ask parents for term-time rebooking"
+   ],
+   "pricing_hint": "$140/month twice weekly",
+   "first_customers": [
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts"
+   ],
+   "pitfalls": [
+    "Get a parent contact for minors",
+    "Never tutor beyond your curriculum comfort",
+    "Keep sessions under 45 minutes for focus"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "digital-product",
+   "trend_tags": [
+    "education",
+    "recurring"
+   ],
+   "first_seen": "2024-03",
+   "maturity": "saturated",
+   "version": 1,
+   "updated_at": "2026-05-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Thumbtack local leads",
+      "Chamber of commerce newsletter",
+      "Google Maps 4-star shops with unanswered reviews"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Nextdoor UK street posts",
+      "Local parish newsletter ads",
+      "Google Maps high-street shops"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Local Facebook buy-and-sell groups",
+      "Chamber of commerce directory",
+      "Google Maps shops on main streets"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Local Facebook community groups",
+      "Council newsletter sponsorships",
+      "Google Maps suburban strip shops"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "Google Maps shop clusters in heartland malls",
+      "Facebook neighbourhood groups for HDB estates",
+      "WhatsApp business contact lists"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-onl-online-tutoring-160",
+   "title": "Evening online tutoring for school subjects",
+   "one_liner": "Parents pay per session for one-on-one evening tutoring in maths, English or coding basics over video call.",
+   "min_capital": 765,
+   "capital_tier": "500-2k",
+   "hours_per_week": "<10",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU",
+    "SG"
+   ],
+   "online_or_offline": "hybrid",
+   "legal_blocks": [],
+   "skills_needed": [
+    "basic_english"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "low",
+   "payback_days": 7,
+   "recurring": true,
+   "channel_ids": [
+    "facebook",
+    "referral",
+    "local-groups",
+    "nextdoor"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Whiteboard app subscription",
+     "amount": 230
+    },
+    {
+     "item": "Curriculum worksheets printing",
+     "amount": 230
+    },
+    {
+     "item": "Parent-group ad boosts",
+     "amount": 305
+    }
+   ],
+   "steps": [
+    "Pick the one subject you know cold",
+    "Prepare 20 lesson worksheets",
+    "Offer one free trial lesson in parent groups",
+    "Offer $25 per 45-minute session for the first month",
+    "Set fixed weekday evening slots",
+    "Send a 3-line progress note after each session",
+    "Ask parents for term-time rebooking"
+   ],
+   "pricing_hint": "$25 per 45-minute session",
+   "first_customers": [
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads"
+   ],
+   "pitfalls": [
+    "Get a parent contact for minors",
+    "Never tutor beyond your curriculum comfort",
+    "Keep sessions under 45 minutes for focus"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "digital-product",
+   "trend_tags": [
+    "education",
+    "recurring"
+   ],
+   "first_seen": "2025-04",
+   "maturity": "growing",
+   "version": 1,
+   "updated_at": "2026-06-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Chamber of commerce newsletter",
+      "Google Maps 4-star shops with unanswered reviews",
+      "Nextdoor neighbourhood posts"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Local parish newsletter ads",
+      "Google Maps high-street shops",
+      "Facebook local community groups"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Chamber of commerce directory",
+      "Google Maps shops on main streets",
+      "Nextdoor Canada community posts"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Council newsletter sponsorships",
+      "Google Maps suburban strip shops",
+      "Nextdoor Australia neighbourhood posts"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "Facebook neighbourhood groups for HDB estates",
+      "WhatsApp business contact lists",
+      "Google Maps shop clusters in heartland malls"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-onl-online-tutoring-161",
+   "title": "Evening online tutoring for school subjects",
+   "one_liner": "Parents pay per session for one-on-one evening tutoring in maths, English or coding basics over video call.",
+   "min_capital": 250,
+   "capital_tier": "<500",
+   "hours_per_week": "<10",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU"
+   ],
+   "online_or_offline": "online",
+   "legal_blocks": [],
+   "skills_needed": [
+    "basic_english"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "low",
+   "payback_days": 14,
+   "recurring": true,
+   "channel_ids": [
+    "facebook",
+    "referral",
+    "local-groups",
+    "nextdoor"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Whiteboard app subscription",
+     "amount": 75
+    },
+    {
+     "item": "Curriculum worksheets printing",
+     "amount": 75
+    },
+    {
+     "item": "Parent-group ad boosts",
+     "amount": 100
+    }
+   ],
+   "steps": [
+    "Pick the one subject you know cold",
+    "Prepare 25 lesson worksheets",
+    "Offer one free trial lesson in parent groups",
+    "Offer $90 for a 4-session month for the first month",
+    "Set fixed weekday evening slots",
+    "Send a 3-line progress note after each session",
+    "Ask parents for term-time rebooking"
+   ],
+   "pricing_hint": "$90 for a 4-session month",
+   "first_customers": [
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter"
+   ],
+   "pitfalls": [
+    "Get a parent contact for minors",
+    "Never tutor beyond your curriculum comfort",
+    "Keep sessions under 45 minutes for focus"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "digital-product",
+   "trend_tags": [
+    "education",
+    "recurring"
+   ],
+   "first_seen": "2024-05",
+   "maturity": "mature",
+   "version": 1,
+   "updated_at": "2026-07-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Google Maps 4-star shops with unanswered reviews",
+      "Nextdoor neighbourhood posts",
+      "Thumbtack local leads"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Google Maps high-street shops",
+      "Facebook local community groups",
+      "Nextdoor UK street posts"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Google Maps shops on main streets",
+      "Nextdoor Canada community posts",
+      "Local Facebook buy-and-sell groups"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Google Maps suburban strip shops",
+      "Nextdoor Australia neighbourhood posts",
+      "Local Facebook community groups"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-onl-online-tutoring-162",
+   "title": "Evening online tutoring for school subjects",
+   "one_liner": "Parents pay per session for one-on-one evening tutoring in maths, English or coding basics over video call.",
+   "min_capital": 955,
+   "capital_tier": "500-2k",
+   "hours_per_week": "<10",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "PH"
+   ],
+   "online_or_offline": "online",
+   "legal_blocks": [],
+   "skills_needed": [
+    "basic_english"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "low",
+   "payback_days": 21,
+   "recurring": true,
+   "channel_ids": [
+    "facebook",
+    "referral",
+    "local-groups",
+    "nextdoor"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Whiteboard app subscription",
+     "amount": 286
+    },
+    {
+     "item": "Curriculum worksheets printing",
+     "amount": 286
+    },
+    {
+     "item": "Parent-group ad boosts",
+     "amount": 383
+    }
+   ],
+   "steps": [
+    "Pick the one subject you know cold",
+    "Prepare 30 lesson worksheets",
+    "Offer one free trial lesson in parent groups",
+    "Offer $140/month twice weekly for the first month",
+    "Set fixed weekday evening slots",
+    "Send a 3-line progress note after each session",
+    "Ask parents for term-time rebooking"
+   ],
+   "pricing_hint": "$140/month twice weekly",
+   "first_customers": [
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews"
+   ],
+   "pitfalls": [
+    "Get a parent contact for minors",
+    "Never tutor beyond your curriculum comfort",
+    "Keep sessions under 45 minutes for focus"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "digital-product",
+   "trend_tags": [
+    "education",
+    "recurring"
+   ],
+   "first_seen": "2024-06",
+   "maturity": "mature",
+   "version": 1,
+   "updated_at": "2026-08-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Nextdoor neighbourhood posts",
+      "Thumbtack local leads",
+      "Chamber of commerce newsletter"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Facebook local community groups",
+      "Nextdoor UK street posts",
+      "Local parish newsletter ads"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Nextdoor Canada community posts",
+      "Local Facebook buy-and-sell groups",
+      "Chamber of commerce directory"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Barangay community referrals",
+      "Google Maps shops along main roads",
+      "Viber neighbourhood groups"
+     ]
+    }
+   }
+  }
+ ]
+}

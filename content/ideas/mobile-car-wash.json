@@ -1,0 +1,1313 @@
+{
+ "industry": "mobile-car-wash",
+ "count": 11,
+ "ideas": [
+  {
+   "id": "bs-svc-mobile-car-wash-045",
+   "title": "Mobile car wash at home or office (old town)",
+   "one_liner": "Car owners pay you to wash and vacuum their vehicle in the driveway while they work or rest.",
+   "min_capital": 650,
+   "capital_tier": "500-2k",
+   "hours_per_week": "full",
+   "countries": [
+    "US",
+    "UK"
+   ],
+   "online_or_offline": "offline",
+   "legal_blocks": [],
+   "skills_needed": [
+    "none"
+   ],
+   "assets_needed": [
+    "car"
+   ],
+   "risk_level": "low",
+   "payback_days": 30,
+   "recurring": true,
+   "channel_ids": [
+    "nextdoor",
+    "facebook",
+    "referral",
+    "walk-in"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Pressure washer entry model",
+     "amount": 292
+    },
+    {
+     "item": "Buckets, soaps and microfibre cloths",
+     "amount": 162
+    },
+    {
+     "item": "Water tank and pump",
+     "amount": 196
+    }
+   ],
+   "steps": [
+    "Wash your own car and shoot photos",
+    "Flyer 15 driveways on one street",
+    "Offer $99/month twice-a-month plan for the first wash",
+    "Park the flyer on windshields politely",
+    "Book two cars per morning slot",
+    "Text before-and-after photos to the owner",
+    "Offer a twice-a-month plan to each client"
+   ],
+   "pricing_hint": "$99/month twice-a-month plan",
+   "first_customers": [
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter"
+   ],
+   "pitfalls": [
+    "Check council water-use rules first",
+    "Never wash on hot paint in direct sun",
+    "Photograph existing damage before starting"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "local-service",
+   "trend_tags": [
+    "local-service",
+    "recurring"
+   ],
+   "first_seen": "2024-09",
+   "maturity": "emerging",
+   "version": 1,
+   "updated_at": "2026-01-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Google Maps 4-star shops with unanswered reviews",
+      "Nextdoor neighbourhood posts",
+      "Thumbtack local leads"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Google Maps high-street shops",
+      "Facebook local community groups",
+      "Nextdoor UK street posts"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-svc-mobile-car-wash-046",
+   "title": "Mobile car wash at home or office (hillside)",
+   "one_liner": "Car owners pay you to wash and vacuum their vehicle in the driveway while they work or rest.",
+   "min_capital": 745,
+   "capital_tier": "500-2k",
+   "hours_per_week": "full",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU",
+    "SG",
+    "PH"
+   ],
+   "online_or_offline": "offline",
+   "legal_blocks": [],
+   "skills_needed": [
+    "none"
+   ],
+   "assets_needed": [
+    "car"
+   ],
+   "risk_level": "low",
+   "payback_days": 14,
+   "recurring": true,
+   "channel_ids": [
+    "nextdoor",
+    "facebook",
+    "referral",
+    "walk-in"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Pressure washer entry model",
+     "amount": 335
+    },
+    {
+     "item": "Buckets, soaps and microfibre cloths",
+     "amount": 186
+    },
+    {
+     "item": "Water tank and pump",
+     "amount": 224
+    }
+   ],
+   "steps": [
+    "Wash your own car and shoot photos",
+    "Flyer 20 driveways on one street",
+    "Offer $35 outside wash and vacuum for the first wash",
+    "Park the flyer on windshields politely",
+    "Book two cars per morning slot",
+    "Text before-and-after photos to the owner",
+    "Offer a twice-a-month plan to each client"
+   ],
+   "pricing_hint": "$35 outside wash and vacuum",
+   "first_customers": [
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews"
+   ],
+   "pitfalls": [
+    "Check council water-use rules first",
+    "Never wash on hot paint in direct sun",
+    "Photograph existing damage before starting"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "local-service",
+   "trend_tags": [
+    "local-service",
+    "recurring"
+   ],
+   "first_seen": "2025-10",
+   "maturity": "mature",
+   "version": 1,
+   "updated_at": "2026-02-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Nextdoor neighbourhood posts",
+      "Thumbtack local leads",
+      "Chamber of commerce newsletter"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Facebook local community groups",
+      "Nextdoor UK street posts",
+      "Local parish newsletter ads"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Nextdoor Canada community posts",
+      "Local Facebook buy-and-sell groups",
+      "Chamber of commerce directory"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Nextdoor Australia neighbourhood posts",
+      "Local Facebook community groups",
+      "Council newsletter sponsorships"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "Facebook neighbourhood groups for HDB estates",
+      "WhatsApp business contact lists",
+      "Google Maps shop clusters in heartland malls"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Barangay community referrals",
+      "Google Maps shops along main roads",
+      "Viber neighbourhood groups"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-svc-mobile-car-wash-047",
+   "title": "Mobile car wash at home or office (central)",
+   "one_liner": "Car owners pay you to wash and vacuum their vehicle in the driveway while they work or rest.",
+   "min_capital": 6560,
+   "capital_tier": "2k-10k",
+   "hours_per_week": "10-25",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU"
+   ],
+   "online_or_offline": "offline",
+   "legal_blocks": [],
+   "skills_needed": [
+    "none"
+   ],
+   "assets_needed": [
+    "car"
+   ],
+   "risk_level": "low",
+   "payback_days": 21,
+   "recurring": true,
+   "channel_ids": [
+    "nextdoor",
+    "facebook",
+    "referral",
+    "walk-in"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Pressure washer entry model",
+     "amount": 2952
+    },
+    {
+     "item": "Buckets, soaps and microfibre cloths",
+     "amount": 1640
+    },
+    {
+     "item": "Water tank and pump",
+     "amount": 1968
+    }
+   ],
+   "steps": [
+    "Wash your own car and shoot photos",
+    "Flyer 25 driveways on one street",
+    "Offer $60 inside and out for the first wash",
+    "Park the flyer on windshields politely",
+    "Book two cars per morning slot",
+    "Text before-and-after photos to the owner",
+    "Offer a twice-a-month plan to each client"
+   ],
+   "pricing_hint": "$60 inside and out",
+   "first_customers": [
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts"
+   ],
+   "pitfalls": [
+    "Check council water-use rules first",
+    "Never wash on hot paint in direct sun",
+    "Photograph existing damage before starting"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "local-service",
+   "trend_tags": [
+    "local-service",
+    "recurring"
+   ],
+   "first_seen": "2024-11",
+   "maturity": "growing",
+   "version": 1,
+   "updated_at": "2026-03-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Thumbtack local leads",
+      "Chamber of commerce newsletter",
+      "Google Maps 4-star shops with unanswered reviews"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Nextdoor UK street posts",
+      "Local parish newsletter ads",
+      "Google Maps high-street shops"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Local Facebook buy-and-sell groups",
+      "Chamber of commerce directory",
+      "Google Maps shops on main streets"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Local Facebook community groups",
+      "Council newsletter sponsorships",
+      "Google Maps suburban strip shops"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-svc-mobile-car-wash-048",
+   "title": "Mobile car wash at home or office (bayside)",
+   "one_liner": "Car owners pay you to wash and vacuum their vehicle in the driveway while they work or rest.",
+   "min_capital": 940,
+   "capital_tier": "500-2k",
+   "hours_per_week": "<10",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU",
+    "SG"
+   ],
+   "online_or_offline": "offline",
+   "legal_blocks": [
+    "SG"
+   ],
+   "skills_needed": [
+    "none"
+   ],
+   "assets_needed": [
+    "car"
+   ],
+   "risk_level": "low",
+   "payback_days": 30,
+   "recurring": true,
+   "channel_ids": [
+    "nextdoor",
+    "facebook",
+    "referral",
+    "walk-in"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Pressure washer entry model",
+     "amount": 423
+    },
+    {
+     "item": "Buckets, soaps and microfibre cloths",
+     "amount": 235
+    },
+    {
+     "item": "Water tank and pump",
+     "amount": 282
+    }
+   ],
+   "steps": [
+    "Wash your own car and shoot photos",
+    "Flyer 30 driveways on one street",
+    "Offer $99/month twice-a-month plan for the first wash",
+    "Park the flyer on windshields politely",
+    "Book two cars per morning slot",
+    "Text before-and-after photos to the owner",
+    "Offer a twice-a-month plan to each client"
+   ],
+   "pricing_hint": "$99/month twice-a-month plan",
+   "first_customers": [
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads"
+   ],
+   "pitfalls": [
+    "Check council water-use rules first",
+    "Never wash on hot paint in direct sun",
+    "Photograph existing damage before starting"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "local-service",
+   "trend_tags": [
+    "local-service",
+    "recurring"
+   ],
+   "first_seen": "2024-12",
+   "maturity": "mature",
+   "version": 1,
+   "updated_at": "2026-04-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Chamber of commerce newsletter",
+      "Google Maps 4-star shops with unanswered reviews",
+      "Nextdoor neighbourhood posts"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Local parish newsletter ads",
+      "Google Maps high-street shops",
+      "Facebook local community groups"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Chamber of commerce directory",
+      "Google Maps shops on main streets",
+      "Nextdoor Canada community posts"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Council newsletter sponsorships",
+      "Google Maps suburban strip shops",
+      "Nextdoor Australia neighbourhood posts"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "Google Maps shop clusters in heartland malls",
+      "Facebook neighbourhood groups for HDB estates",
+      "WhatsApp business contact lists"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-svc-mobile-car-wash-049",
+   "title": "Mobile car wash at home or office (market)",
+   "one_liner": "Car owners pay you to wash and vacuum their vehicle in the driveway while they work or rest.",
+   "min_capital": 185,
+   "capital_tier": "<500",
+   "hours_per_week": "10-25",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU",
+    "SG",
+    "PH"
+   ],
+   "online_or_offline": "hybrid",
+   "legal_blocks": [],
+   "skills_needed": [
+    "none"
+   ],
+   "assets_needed": [
+    "car"
+   ],
+   "risk_level": "low",
+   "payback_days": 14,
+   "recurring": true,
+   "channel_ids": [
+    "nextdoor",
+    "facebook",
+    "referral",
+    "walk-in"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Pressure washer entry model",
+     "amount": 83
+    },
+    {
+     "item": "Buckets, soaps and microfibre cloths",
+     "amount": 46
+    },
+    {
+     "item": "Water tank and pump",
+     "amount": 56
+    }
+   ],
+   "steps": [
+    "Wash your own car and shoot photos",
+    "Flyer 5 driveways on one street",
+    "Offer $35 outside wash and vacuum for the first wash",
+    "Park the flyer on windshields politely",
+    "Book two cars per morning slot",
+    "Text before-and-after photos to the owner",
+    "Offer a twice-a-month plan to each client"
+   ],
+   "pricing_hint": "$35 outside wash and vacuum",
+   "first_customers": [
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter"
+   ],
+   "pitfalls": [
+    "Check council water-use rules first",
+    "Never wash on hot paint in direct sun",
+    "Photograph existing damage before starting"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "local-service",
+   "trend_tags": [
+    "local-service",
+    "recurring"
+   ],
+   "first_seen": "2025-01",
+   "maturity": "growing",
+   "version": 1,
+   "updated_at": "2026-05-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Google Maps 4-star shops with unanswered reviews",
+      "Nextdoor neighbourhood posts",
+      "Thumbtack local leads"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Google Maps high-street shops",
+      "Facebook local community groups",
+      "Nextdoor UK street posts"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Google Maps shops on main streets",
+      "Nextdoor Canada community posts",
+      "Local Facebook buy-and-sell groups"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Google Maps suburban strip shops",
+      "Nextdoor Australia neighbourhood posts",
+      "Local Facebook community groups"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "Facebook neighbourhood groups for HDB estates",
+      "WhatsApp business contact lists",
+      "Google Maps shop clusters in heartland malls"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Facebook Marketplace local groups",
+      "Barangay community referrals",
+      "Google Maps shops along main roads"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-svc-mobile-car-wash-050",
+   "title": "Mobile car wash at home or office(lakeside)",
+   "one_liner": "Car owners pay you to wash and vacuum their vehicle in the driveway while they work or rest.",
+   "min_capital": 285,
+   "capital_tier": "<500",
+   "hours_per_week": "10-25",
+   "countries": [
+    "US",
+    "UK",
+    "AU",
+    "SG"
+   ],
+   "online_or_offline": "offline",
+   "legal_blocks": [],
+   "skills_needed": [
+    "none"
+   ],
+   "assets_needed": [
+    "car"
+   ],
+   "risk_level": "low",
+   "payback_days": 21,
+   "recurring": true,
+   "channel_ids": [
+    "nextdoor",
+    "facebook",
+    "referral",
+    "walk-in"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Pressure washer entry model",
+     "amount": 128
+    },
+    {
+     "item": "Buckets, soaps and microfibre cloths",
+     "amount": 71
+    },
+    {
+     "item": "Water tank and pump",
+     "amount": 86
+    }
+   ],
+   "steps": [
+    "Wash your own car and shoot photos",
+    "Flyer 10 driveways on one street",
+    "Offer $60 inside and out for the first wash",
+    "Park the flyer on windshields politely",
+    "Book two cars per morning slot",
+    "Text before-and-after photos to the owner",
+    "Offer a twice-a-month plan to each client"
+   ],
+   "pricing_hint": "$60 inside and out",
+   "first_customers": [
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews"
+   ],
+   "pitfalls": [
+    "Check council water-use rules first",
+    "Never wash on hot paint in direct sun",
+    "Photograph existing damage before starting"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "local-service",
+   "trend_tags": [
+    "local-service",
+    "recurring"
+   ],
+   "first_seen": "2024-02",
+   "maturity": "mature",
+   "version": 1,
+   "updated_at": "2026-06-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Nextdoor neighbourhood posts",
+      "Thumbtack local leads",
+      "Chamber of commerce newsletter"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Facebook local community groups",
+      "Nextdoor UK street posts",
+      "Local parish newsletter ads"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Nextdoor Australia neighbourhood posts",
+      "Local Facebook community groups",
+      "Council newsletter sponsorships"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "WhatsApp business contact lists",
+      "Google Maps shop clusters in heartland malls",
+      "Facebook neighbourhood groups for HDB estates"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-svc-mobile-car-wash-051",
+   "title": "Mobile car wash at home or office",
+   "one_liner": "Car owners pay you to wash and vacuum their vehicle in the driveway while they work or rest.",
+   "min_capital": 380,
+   "capital_tier": "<500",
+   "hours_per_week": "full",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU",
+    "SG"
+   ],
+   "online_or_offline": "hybrid",
+   "legal_blocks": [],
+   "skills_needed": [
+    "none"
+   ],
+   "assets_needed": [
+    "car"
+   ],
+   "risk_level": "low",
+   "payback_days": 30,
+   "recurring": true,
+   "channel_ids": [
+    "nextdoor",
+    "facebook",
+    "referral",
+    "walk-in"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Pressure washer entry model",
+     "amount": 171
+    },
+    {
+     "item": "Buckets, soaps and microfibre cloths",
+     "amount": 95
+    },
+    {
+     "item": "Water tank and pump",
+     "amount": 114
+    }
+   ],
+   "steps": [
+    "Wash your own car and shoot photos",
+    "Flyer 15 driveways on one street",
+    "Offer $99/month twice-a-month plan for the first wash",
+    "Park the flyer on windshields politely",
+    "Book two cars per morning slot",
+    "Text before-and-after photos to the owner",
+    "Offer a twice-a-month plan to each client"
+   ],
+   "pricing_hint": "$99/month twice-a-month plan",
+   "first_customers": [
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts"
+   ],
+   "pitfalls": [
+    "Check council water-use rules first",
+    "Never wash on hot paint in direct sun",
+    "Photograph existing damage before starting"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "local-service",
+   "trend_tags": [
+    "local-service",
+    "recurring"
+   ],
+   "first_seen": "2024-03",
+   "maturity": "mature",
+   "version": 1,
+   "updated_at": "2026-07-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Thumbtack local leads",
+      "Chamber of commerce newsletter",
+      "Google Maps 4-star shops with unanswered reviews"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Nextdoor UK street posts",
+      "Local parish newsletter ads",
+      "Google Maps high-street shops"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Local Facebook buy-and-sell groups",
+      "Chamber of commerce directory",
+      "Google Maps shops on main streets"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Local Facebook community groups",
+      "Council newsletter sponsorships",
+      "Google Maps suburban strip shops"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "Google Maps shop clusters in heartland malls",
+      "Facebook neighbourhood groups for HDB estates",
+      "WhatsApp business contact lists"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-svc-mobile-car-wash-052",
+   "title": "Mobile car wash at home or office (north)",
+   "one_liner": "Car owners pay you to wash and vacuum their vehicle in the driveway while they work or rest.",
+   "min_capital": 1325,
+   "capital_tier": "500-2k",
+   "hours_per_week": "10-25",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "PH"
+   ],
+   "online_or_offline": "offline",
+   "legal_blocks": [],
+   "skills_needed": [
+    "none"
+   ],
+   "assets_needed": [
+    "car"
+   ],
+   "risk_level": "low",
+   "payback_days": 14,
+   "recurring": true,
+   "channel_ids": [
+    "nextdoor",
+    "facebook",
+    "referral",
+    "walk-in"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Pressure washer entry model",
+     "amount": 596
+    },
+    {
+     "item": "Buckets, soaps and microfibre cloths",
+     "amount": 331
+    },
+    {
+     "item": "Water tank and pump",
+     "amount": 398
+    }
+   ],
+   "steps": [
+    "Wash your own car and shoot photos",
+    "Flyer 20 driveways on one street",
+    "Offer $35 outside wash and vacuum for the first wash",
+    "Park the flyer on windshields politely",
+    "Book two cars per morning slot",
+    "Text before-and-after photos to the owner",
+    "Offer a twice-a-month plan to each client"
+   ],
+   "pricing_hint": "$35 outside wash and vacuum",
+   "first_customers": [
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads"
+   ],
+   "pitfalls": [
+    "Check council water-use rules first",
+    "Never wash on hot paint in direct sun",
+    "Photograph existing damage before starting"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "local-service",
+   "trend_tags": [
+    "local-service",
+    "recurring"
+   ],
+   "first_seen": "2025-04",
+   "maturity": "saturated",
+   "version": 1,
+   "updated_at": "2026-08-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Chamber of commerce newsletter",
+      "Google Maps 4-star shops with unanswered reviews",
+      "Nextdoor neighbourhood posts"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Local parish newsletter ads",
+      "Google Maps high-street shops",
+      "Facebook local community groups"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Chamber of commerce directory",
+      "Google Maps shops on main streets",
+      "Nextdoor Canada community posts"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Viber neighbourhood groups",
+      "Facebook Marketplace local groups",
+      "Barangay community referrals"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-svc-mobile-car-wash-053",
+   "title": "Mobile car wash at home or office (east)",
+   "one_liner": "Car owners pay you to wash and vacuum their vehicle in the driveway while they work or rest.",
+   "min_capital": 125,
+   "capital_tier": "<500",
+   "hours_per_week": "<10",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU"
+   ],
+   "online_or_offline": "offline",
+   "legal_blocks": [],
+   "skills_needed": [
+    "none"
+   ],
+   "assets_needed": [
+    "car"
+   ],
+   "risk_level": "low",
+   "payback_days": 21,
+   "recurring": true,
+   "channel_ids": [
+    "nextdoor",
+    "facebook",
+    "referral",
+    "walk-in"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Pressure washer entry model",
+     "amount": 56
+    },
+    {
+     "item": "Buckets, soaps and microfibre cloths",
+     "amount": 31
+    },
+    {
+     "item": "Water tank and pump",
+     "amount": 38
+    }
+   ],
+   "steps": [
+    "Wash your own car and shoot photos",
+    "Flyer 25 driveways on one street",
+    "Offer $60 inside and out for the first wash",
+    "Park the flyer on windshields politely",
+    "Book two cars per morning slot",
+    "Text before-and-after photos to the owner",
+    "Offer a twice-a-month plan to each client"
+   ],
+   "pricing_hint": "$60 inside and out",
+   "first_customers": [
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter"
+   ],
+   "pitfalls": [
+    "Check council water-use rules first",
+    "Never wash on hot paint in direct sun",
+    "Photograph existing damage before starting"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "local-service",
+   "trend_tags": [
+    "local-service",
+    "recurring"
+   ],
+   "first_seen": "2024-05",
+   "maturity": "growing",
+   "version": 1,
+   "updated_at": "2026-09-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Google Maps 4-star shops with unanswered reviews",
+      "Nextdoor neighbourhood posts",
+      "Thumbtack local leads"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Google Maps high-street shops",
+      "Facebook local community groups",
+      "Nextdoor UK street posts"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Google Maps shops on main streets",
+      "Nextdoor Canada community posts",
+      "Local Facebook buy-and-sell groups"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Google Maps suburban strip shops",
+      "Nextdoor Australia neighbourhood posts",
+      "Local Facebook community groups"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-svc-mobile-car-wash-054",
+   "title": "Mobile car wash at home or office (riverside)",
+   "one_liner": "Car owners pay you to wash and vacuum their vehicle in the driveway while they work or rest.",
+   "min_capital": 220,
+   "capital_tier": "<500",
+   "hours_per_week": "<10",
+   "countries": [
+    "US",
+    "UK",
+    "AU",
+    "PH"
+   ],
+   "online_or_offline": "hybrid",
+   "legal_blocks": [],
+   "skills_needed": [
+    "none"
+   ],
+   "assets_needed": [
+    "car"
+   ],
+   "risk_level": "low",
+   "payback_days": 30,
+   "recurring": true,
+   "channel_ids": [
+    "nextdoor",
+    "facebook",
+    "referral",
+    "walk-in"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Pressure washer entry model",
+     "amount": 99
+    },
+    {
+     "item": "Buckets, soaps and microfibre cloths",
+     "amount": 55
+    },
+    {
+     "item": "Water tank and pump",
+     "amount": 66
+    }
+   ],
+   "steps": [
+    "Wash your own car and shoot photos",
+    "Flyer 30 driveways on one street",
+    "Offer $99/month twice-a-month plan for the first wash",
+    "Park the flyer on windshields politely",
+    "Book two cars per morning slot",
+    "Text before-and-after photos to the owner",
+    "Offer a twice-a-month plan to each client"
+   ],
+   "pricing_hint": "$99/month twice-a-month plan",
+   "first_customers": [
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews"
+   ],
+   "pitfalls": [
+    "Check council water-use rules first",
+    "Never wash on hot paint in direct sun",
+    "Photograph existing damage before starting"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "local-service",
+   "trend_tags": [
+    "local-service",
+    "recurring"
+   ],
+   "first_seen": "2024-06",
+   "maturity": "saturated",
+   "version": 1,
+   "updated_at": "2026-10-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Nextdoor neighbourhood posts",
+      "Thumbtack local leads",
+      "Chamber of commerce newsletter"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Facebook local community groups",
+      "Nextdoor UK street posts",
+      "Local parish newsletter ads"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Nextdoor Australia neighbourhood posts",
+      "Local Facebook community groups",
+      "Council newsletter sponsorships"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Barangay community referrals",
+      "Google Maps shops along main roads",
+      "Viber neighbourhood groups"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-svc-mobile-car-wash-055",
+   "title": "Mobile car wash at home or office (old town)",
+   "one_liner": "Car owners pay you to wash and vacuum their vehicle in the driveway while they work or rest.",
+   "min_capital": 320,
+   "capital_tier": "<500",
+   "hours_per_week": "full",
+   "countries": [
+    "US",
+    "CA",
+    "AU",
+    "SG"
+   ],
+   "online_or_offline": "offline",
+   "legal_blocks": [],
+   "skills_needed": [
+    "none"
+   ],
+   "assets_needed": [
+    "car"
+   ],
+   "risk_level": "low",
+   "payback_days": 14,
+   "recurring": true,
+   "channel_ids": [
+    "nextdoor",
+    "facebook",
+    "referral",
+    "walk-in"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Pressure washer entry model",
+     "amount": 144
+    },
+    {
+     "item": "Buckets, soaps and microfibre cloths",
+     "amount": 80
+    },
+    {
+     "item": "Water tank and pump",
+     "amount": 96
+    }
+   ],
+   "steps": [
+    "Wash your own car and shoot photos",
+    "Flyer 5 driveways on one street",
+    "Offer $35 outside wash and vacuum for the first wash",
+    "Park the flyer on windshields politely",
+    "Book two cars per morning slot",
+    "Text before-and-after photos to the owner",
+    "Offer a twice-a-month plan to each client"
+   ],
+   "pricing_hint": "$35 outside wash and vacuum",
+   "first_customers": [
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts"
+   ],
+   "pitfalls": [
+    "Check council water-use rules first",
+    "Never wash on hot paint in direct sun",
+    "Photograph existing damage before starting"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "local-service",
+   "trend_tags": [
+    "local-service",
+    "recurring"
+   ],
+   "first_seen": "2025-07",
+   "maturity": "mature",
+   "version": 1,
+   "updated_at": "2026-11-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Thumbtack local leads",
+      "Chamber of commerce newsletter",
+      "Google Maps 4-star shops with unanswered reviews"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Local Facebook buy-and-sell groups",
+      "Chamber of commerce directory",
+      "Google Maps shops on main streets"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Local Facebook community groups",
+      "Council newsletter sponsorships",
+      "Google Maps suburban strip shops"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "Facebook neighbourhood groups for HDB estates",
+      "WhatsApp business contact lists",
+      "Google Maps shop clusters in heartland malls"
+     ]
+    }
+   }
+  }
+ ]
+}

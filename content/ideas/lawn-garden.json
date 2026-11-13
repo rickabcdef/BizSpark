@@ -1,0 +1,1436 @@
+{
+ "industry": "lawn-garden",
+ "count": 11,
+ "ideas": [
+  {
+   "id": "bs-svc-lawn-garden-034",
+   "title": "Lawn mowing and garden tidy rounds (riverside)",
+   "one_liner": "Homeowners without time pay for a standing fortnightly mow and seasonal garden tidy-up.",
+   "min_capital": 5300,
+   "capital_tier": "2k-10k",
+   "hours_per_week": "full",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU",
+    "SG"
+   ],
+   "online_or_offline": "offline",
+   "legal_blocks": [],
+   "skills_needed": [
+    "none",
+    "handyman"
+   ],
+   "assets_needed": [
+    "car"
+   ],
+   "risk_level": "medium",
+   "payback_days": 14,
+   "recurring": true,
+   "channel_ids": [
+    "nextdoor",
+    "walk-in",
+    "referral",
+    "facebook"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Mower servicing and blades",
+     "amount": 1855
+    },
+    {
+     "item": "Trimmer line and fuel",
+     "amount": 1325
+    },
+    {
+     "item": "Door-to-door flyers",
+     "amount": 1060
+    },
+    {
+     "item": "Work gloves and safety gear",
+     "amount": 1060
+    }
+   ],
+   "steps": [
+    "Map 20 overgrown lawns on your street",
+    "Print a one-page rate card",
+    "Door-knock with the rate card on Saturday",
+    "Book mows into a fixed fortnightly route",
+    "Offer $45 per standard mow to first five lawns",
+    "Photograph each finished lawn for the folder",
+    "Add garden tidies to regular clients"
+   ],
+   "pricing_hint": "$45 per standard mow",
+   "first_customers": [
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews"
+   ],
+   "pitfalls": [
+    "Never mow wet lawns after rain",
+    "Confirm property lines before edging",
+    "Wear eye protection when trimming"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "local-service",
+   "trend_tags": [
+    "local-service",
+    "recurring"
+   ],
+   "first_seen": "2025-10",
+   "maturity": "mature",
+   "version": 1,
+   "updated_at": "2026-01-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Nextdoor neighbourhood posts",
+      "Thumbtack local leads",
+      "Chamber of commerce newsletter"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Facebook local community groups",
+      "Nextdoor UK street posts",
+      "Local parish newsletter ads"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Nextdoor Canada community posts",
+      "Local Facebook buy-and-sell groups",
+      "Chamber of commerce directory"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Nextdoor Australia neighbourhood posts",
+      "Local Facebook community groups",
+      "Council newsletter sponsorships"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "Facebook neighbourhood groups for HDB estates",
+      "WhatsApp business contact lists",
+      "Google Maps shop clusters in heartland malls"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-svc-lawn-garden-035",
+   "title": "Lawn mowing and garden tidy rounds (old town)",
+   "one_liner": "Homeowners without time pay for a standing fortnightly mow and seasonal garden tidy-up.",
+   "min_capital": 1060,
+   "capital_tier": "500-2k",
+   "hours_per_week": "full",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU",
+    "SG",
+    "PH"
+   ],
+   "online_or_offline": "offline",
+   "legal_blocks": [],
+   "skills_needed": [
+    "none",
+    "handyman"
+   ],
+   "assets_needed": [
+    "car"
+   ],
+   "risk_level": "medium",
+   "payback_days": 21,
+   "recurring": true,
+   "channel_ids": [
+    "nextdoor",
+    "walk-in",
+    "referral",
+    "facebook"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Mower servicing and blades",
+     "amount": 371
+    },
+    {
+     "item": "Trimmer line and fuel",
+     "amount": 265
+    },
+    {
+     "item": "Door-to-door flyers",
+     "amount": 212
+    },
+    {
+     "item": "Work gloves and safety gear",
+     "amount": 212
+    }
+   ],
+   "steps": [
+    "Map 25 overgrown lawns on your street",
+    "Print a one-page rate card",
+    "Door-knock with the rate card on Saturday",
+    "Book mows into a fixed fortnightly route",
+    "Offer $160/month for fortnightly rounds to first five lawns",
+    "Photograph each finished lawn for the folder",
+    "Add garden tidies to regular clients"
+   ],
+   "pricing_hint": "$160/month for fortnightly rounds",
+   "first_customers": [
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts"
+   ],
+   "pitfalls": [
+    "Never mow wet lawns after rain",
+    "Confirm property lines before edging",
+    "Wear eye protection when trimming"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "local-service",
+   "trend_tags": [
+    "local-service",
+    "recurring"
+   ],
+   "first_seen": "2024-11",
+   "maturity": "growing",
+   "version": 1,
+   "updated_at": "2026-02-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Thumbtack local leads",
+      "Chamber of commerce newsletter",
+      "Google Maps 4-star shops with unanswered reviews"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Nextdoor UK street posts",
+      "Local parish newsletter ads",
+      "Google Maps high-street shops"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Local Facebook buy-and-sell groups",
+      "Chamber of commerce directory",
+      "Google Maps shops on main streets"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Local Facebook community groups",
+      "Council newsletter sponsorships",
+      "Google Maps suburban strip shops"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "WhatsApp business contact lists",
+      "Google Maps shop clusters in heartland malls",
+      "Facebook neighbourhood groups for HDB estates"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Google Maps shops along main roads",
+      "Viber neighbourhood groups",
+      "Facebook Marketplace local groups"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-svc-lawn-garden-036",
+   "title": "Lawn mowing and garden tidy rounds (hillside)",
+   "one_liner": "Homeowners without time pay for a standing fortnightly mow and seasonal garden tidy-up.",
+   "min_capital": 275,
+   "capital_tier": "<500",
+   "hours_per_week": "10-25",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU",
+    "SG",
+    "PH"
+   ],
+   "online_or_offline": "offline",
+   "legal_blocks": [],
+   "skills_needed": [
+    "none",
+    "handyman"
+   ],
+   "assets_needed": [
+    "car"
+   ],
+   "risk_level": "medium",
+   "payback_days": 30,
+   "recurring": true,
+   "channel_ids": [
+    "nextdoor",
+    "walk-in",
+    "referral",
+    "facebook"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Mower servicing and blades",
+     "amount": 96
+    },
+    {
+     "item": "Trimmer line and fuel",
+     "amount": 69
+    },
+    {
+     "item": "Door-to-door flyers",
+     "amount": 55
+    },
+    {
+     "item": "Work gloves and safety gear",
+     "amount": 55
+    }
+   ],
+   "steps": [
+    "Map 30 overgrown lawns on your street",
+    "Print a one-page rate card",
+    "Door-knock with the rate card on Saturday",
+    "Book mows into a fixed fortnightly route",
+    "Offer $120 garden tidy, one-off to first five lawns",
+    "Photograph each finished lawn for the folder",
+    "Add garden tidies to regular clients"
+   ],
+   "pricing_hint": "$120 garden tidy, one-off",
+   "first_customers": [
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads"
+   ],
+   "pitfalls": [
+    "Never mow wet lawns after rain",
+    "Confirm property lines before edging",
+    "Wear eye protection when trimming"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "local-service",
+   "trend_tags": [
+    "local-service",
+    "recurring"
+   ],
+   "first_seen": "2024-12",
+   "maturity": "growing",
+   "version": 1,
+   "updated_at": "2026-03-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Chamber of commerce newsletter",
+      "Google Maps 4-star shops with unanswered reviews",
+      "Nextdoor neighbourhood posts"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Local parish newsletter ads",
+      "Google Maps high-street shops",
+      "Facebook local community groups"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Chamber of commerce directory",
+      "Google Maps shops on main streets",
+      "Nextdoor Canada community posts"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Council newsletter sponsorships",
+      "Google Maps suburban strip shops",
+      "Nextdoor Australia neighbourhood posts"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "Google Maps shop clusters in heartland malls",
+      "Facebook neighbourhood groups for HDB estates",
+      "WhatsApp business contact lists"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Viber neighbourhood groups",
+      "Facebook Marketplace local groups",
+      "Barangay community referrals"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-svc-lawn-garden-037",
+   "title": "Lawn mowing and garden tidy rounds (central)",
+   "one_liner": "Homeowners without time pay for a standing fortnightly mow and seasonal garden tidy-up.",
+   "min_capital": 1250,
+   "capital_tier": "500-2k",
+   "hours_per_week": "10-25",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU",
+    "SG",
+    "PH"
+   ],
+   "online_or_offline": "offline",
+   "legal_blocks": [],
+   "skills_needed": [
+    "none",
+    "handyman"
+   ],
+   "assets_needed": [
+    "car"
+   ],
+   "risk_level": "medium",
+   "payback_days": 14,
+   "recurring": true,
+   "channel_ids": [
+    "nextdoor",
+    "walk-in",
+    "referral",
+    "facebook"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Mower servicing and blades",
+     "amount": 438
+    },
+    {
+     "item": "Trimmer line and fuel",
+     "amount": 312
+    },
+    {
+     "item": "Door-to-door flyers",
+     "amount": 250
+    },
+    {
+     "item": "Work gloves and safety gear",
+     "amount": 250
+    }
+   ],
+   "steps": [
+    "Map 5 overgrown lawns on your street",
+    "Print a one-page rate card",
+    "Door-knock with the rate card on Saturday",
+    "Book mows into a fixed fortnightly route",
+    "Offer $45 per standard mow to first five lawns",
+    "Photograph each finished lawn for the folder",
+    "Add garden tidies to regular clients"
+   ],
+   "pricing_hint": "$45 per standard mow",
+   "first_customers": [
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter"
+   ],
+   "pitfalls": [
+    "Never mow wet lawns after rain",
+    "Confirm property lines before edging",
+    "Wear eye protection when trimming"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "local-service",
+   "trend_tags": [
+    "local-service",
+    "recurring"
+   ],
+   "first_seen": "2025-01",
+   "maturity": "saturated",
+   "version": 1,
+   "updated_at": "2026-04-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Google Maps 4-star shops with unanswered reviews",
+      "Nextdoor neighbourhood posts",
+      "Thumbtack local leads"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Google Maps high-street shops",
+      "Facebook local community groups",
+      "Nextdoor UK street posts"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Google Maps shops on main streets",
+      "Nextdoor Canada community posts",
+      "Local Facebook buy-and-sell groups"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Google Maps suburban strip shops",
+      "Nextdoor Australia neighbourhood posts",
+      "Local Facebook community groups"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "Facebook neighbourhood groups for HDB estates",
+      "WhatsApp business contact lists",
+      "Google Maps shop clusters in heartland malls"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Facebook Marketplace local groups",
+      "Barangay community referrals",
+      "Google Maps shops along main roads"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-svc-lawn-garden-038",
+   "title": "Lawn mowing and garden tidy rounds (bayside)",
+   "one_liner": "Homeowners without time pay for a standing fortnightly mow and seasonal garden tidy-up.",
+   "min_capital": 470,
+   "capital_tier": "<500",
+   "hours_per_week": "<10",
+   "countries": [
+    "US",
+    "UK",
+    "AU",
+    "SG",
+    "PH"
+   ],
+   "online_or_offline": "hybrid",
+   "legal_blocks": [],
+   "skills_needed": [
+    "none",
+    "handyman"
+   ],
+   "assets_needed": [
+    "car"
+   ],
+   "risk_level": "medium",
+   "payback_days": 21,
+   "recurring": true,
+   "channel_ids": [
+    "nextdoor",
+    "walk-in",
+    "referral",
+    "facebook"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Mower servicing and blades",
+     "amount": 164
+    },
+    {
+     "item": "Trimmer line and fuel",
+     "amount": 118
+    },
+    {
+     "item": "Door-to-door flyers",
+     "amount": 94
+    },
+    {
+     "item": "Work gloves and safety gear",
+     "amount": 94
+    }
+   ],
+   "steps": [
+    "Map 10 overgrown lawns on your street",
+    "Print a one-page rate card",
+    "Door-knock with the rate card on Saturday",
+    "Book mows into a fixed fortnightly route",
+    "Offer $160/month for fortnightly rounds to first five lawns",
+    "Photograph each finished lawn for the folder",
+    "Add garden tidies to regular clients"
+   ],
+   "pricing_hint": "$160/month for fortnightly rounds",
+   "first_customers": [
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews"
+   ],
+   "pitfalls": [
+    "Never mow wet lawns after rain",
+    "Confirm property lines before edging",
+    "Wear eye protection when trimming"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "local-service",
+   "trend_tags": [
+    "local-service",
+    "recurring"
+   ],
+   "first_seen": "2024-02",
+   "maturity": "mature",
+   "version": 1,
+   "updated_at": "2026-05-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Nextdoor neighbourhood posts",
+      "Thumbtack local leads",
+      "Chamber of commerce newsletter"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Facebook local community groups",
+      "Nextdoor UK street posts",
+      "Local parish newsletter ads"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Nextdoor Australia neighbourhood posts",
+      "Local Facebook community groups",
+      "Council newsletter sponsorships"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "WhatsApp business contact lists",
+      "Google Maps shop clusters in heartland malls",
+      "Facebook neighbourhood groups for HDB estates"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Barangay community referrals",
+      "Google Maps shops along main roads",
+      "Viber neighbourhood groups"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-svc-lawn-garden-039",
+   "title": "Lawn mowing and garden tidy rounds (market)",
+   "one_liner": "Homeowners without time pay for a standing fortnightly mow and seasonal garden tidy-up.",
+   "min_capital": 115,
+   "capital_tier": "<500",
+   "hours_per_week": "full",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "PH"
+   ],
+   "online_or_offline": "offline",
+   "legal_blocks": [],
+   "skills_needed": [
+    "none",
+    "handyman"
+   ],
+   "assets_needed": [
+    "car"
+   ],
+   "risk_level": "medium",
+   "payback_days": 30,
+   "recurring": true,
+   "channel_ids": [
+    "nextdoor",
+    "walk-in",
+    "referral",
+    "facebook"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Mower servicing and blades",
+     "amount": 40
+    },
+    {
+     "item": "Trimmer line and fuel",
+     "amount": 29
+    },
+    {
+     "item": "Door-to-door flyers",
+     "amount": 23
+    },
+    {
+     "item": "Work gloves and safety gear",
+     "amount": 23
+    }
+   ],
+   "steps": [
+    "Map 15 overgrown lawns on your street",
+    "Print a one-page rate card",
+    "Door-knock with the rate card on Saturday",
+    "Book mows into a fixed fortnightly route",
+    "Offer $120 garden tidy, one-off to first five lawns",
+    "Photograph each finished lawn for the folder",
+    "Add garden tidies to regular clients"
+   ],
+   "pricing_hint": "$120 garden tidy, one-off",
+   "first_customers": [
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts"
+   ],
+   "pitfalls": [
+    "Never mow wet lawns after rain",
+    "Confirm property lines before edging",
+    "Wear eye protection when trimming"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "local-service",
+   "trend_tags": [
+    "local-service",
+    "recurring"
+   ],
+   "first_seen": "2024-03",
+   "maturity": "emerging",
+   "version": 1,
+   "updated_at": "2026-06-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Thumbtack local leads",
+      "Chamber of commerce newsletter",
+      "Google Maps 4-star shops with unanswered reviews"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Nextdoor UK street posts",
+      "Local parish newsletter ads",
+      "Google Maps high-street shops"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Local Facebook buy-and-sell groups",
+      "Chamber of commerce directory",
+      "Google Maps shops on main streets"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Google Maps shops along main roads",
+      "Viber neighbourhood groups",
+      "Facebook Marketplace local groups"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-svc-lawn-garden-040",
+   "title": "Lawn mowing and garden tidy rounds(lakeside)",
+   "one_liner": "Homeowners without time pay for a standing fortnightly mow and seasonal garden tidy-up.",
+   "min_capital": 215,
+   "capital_tier": "<500",
+   "hours_per_week": "full",
+   "countries": [
+    "US",
+    "UK",
+    "AU",
+    "PH"
+   ],
+   "online_or_offline": "offline",
+   "legal_blocks": [],
+   "skills_needed": [
+    "none",
+    "handyman"
+   ],
+   "assets_needed": [
+    "car"
+   ],
+   "risk_level": "medium",
+   "payback_days": 14,
+   "recurring": true,
+   "channel_ids": [
+    "nextdoor",
+    "walk-in",
+    "referral",
+    "facebook"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Mower servicing and blades",
+     "amount": 75
+    },
+    {
+     "item": "Trimmer line and fuel",
+     "amount": 54
+    },
+    {
+     "item": "Door-to-door flyers",
+     "amount": 43
+    },
+    {
+     "item": "Work gloves and safety gear",
+     "amount": 43
+    }
+   ],
+   "steps": [
+    "Map 20 overgrown lawns on your street",
+    "Print a one-page rate card",
+    "Door-knock with the rate card on Saturday",
+    "Book mows into a fixed fortnightly route",
+    "Offer $45 per standard mow to first five lawns",
+    "Photograph each finished lawn for the folder",
+    "Add garden tidies to regular clients"
+   ],
+   "pricing_hint": "$45 per standard mow",
+   "first_customers": [
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads"
+   ],
+   "pitfalls": [
+    "Never mow wet lawns after rain",
+    "Confirm property lines before edging",
+    "Wear eye protection when trimming"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "local-service",
+   "trend_tags": [
+    "local-service",
+    "recurring"
+   ],
+   "first_seen": "2025-04",
+   "maturity": "mature",
+   "version": 1,
+   "updated_at": "2026-07-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Chamber of commerce newsletter",
+      "Google Maps 4-star shops with unanswered reviews",
+      "Nextdoor neighbourhood posts"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Local parish newsletter ads",
+      "Google Maps high-street shops",
+      "Facebook local community groups"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Council newsletter sponsorships",
+      "Google Maps suburban strip shops",
+      "Nextdoor Australia neighbourhood posts"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Viber neighbourhood groups",
+      "Facebook Marketplace local groups",
+      "Barangay community referrals"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-svc-lawn-garden-041",
+   "title": "Lawn mowing and garden tidy rounds",
+   "one_liner": "Homeowners without time pay for a standing fortnightly mow and seasonal garden tidy-up.",
+   "min_capital": 1640,
+   "capital_tier": "500-2k",
+   "hours_per_week": "<10",
+   "countries": [
+    "US",
+    "UK",
+    "AU",
+    "PH"
+   ],
+   "online_or_offline": "offline",
+   "legal_blocks": [],
+   "skills_needed": [
+    "none",
+    "handyman"
+   ],
+   "assets_needed": [
+    "car"
+   ],
+   "risk_level": "medium",
+   "payback_days": 21,
+   "recurring": true,
+   "channel_ids": [
+    "nextdoor",
+    "walk-in",
+    "referral",
+    "facebook"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Mower servicing and blades",
+     "amount": 574
+    },
+    {
+     "item": "Trimmer line and fuel",
+     "amount": 410
+    },
+    {
+     "item": "Door-to-door flyers",
+     "amount": 328
+    },
+    {
+     "item": "Work gloves and safety gear",
+     "amount": 328
+    }
+   ],
+   "steps": [
+    "Map 25 overgrown lawns on your street",
+    "Print a one-page rate card",
+    "Door-knock with the rate card on Saturday",
+    "Book mows into a fixed fortnightly route",
+    "Offer $160/month for fortnightly rounds to first five lawns",
+    "Photograph each finished lawn for the folder",
+    "Add garden tidies to regular clients"
+   ],
+   "pricing_hint": "$160/month for fortnightly rounds",
+   "first_customers": [
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter"
+   ],
+   "pitfalls": [
+    "Never mow wet lawns after rain",
+    "Confirm property lines before edging",
+    "Wear eye protection when trimming"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "local-service",
+   "trend_tags": [
+    "local-service",
+    "recurring"
+   ],
+   "first_seen": "2024-05",
+   "maturity": "mature",
+   "version": 1,
+   "updated_at": "2026-08-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Google Maps 4-star shops with unanswered reviews",
+      "Nextdoor neighbourhood posts",
+      "Thumbtack local leads"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Google Maps high-street shops",
+      "Facebook local community groups",
+      "Nextdoor UK street posts"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Google Maps suburban strip shops",
+      "Nextdoor Australia neighbourhood posts",
+      "Local Facebook community groups"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Facebook Marketplace local groups",
+      "Barangay community referrals",
+      "Google Maps shops along main roads"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-svc-lawn-garden-042",
+   "title": "Lawn mowing and garden tidy rounds (north)",
+   "one_liner": "Homeowners without time pay for a standing fortnightly mow and seasonal garden tidy-up.",
+   "min_capital": 405,
+   "capital_tier": "<500",
+   "hours_per_week": "10-25",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU",
+    "SG"
+   ],
+   "online_or_offline": "hybrid",
+   "legal_blocks": [],
+   "skills_needed": [
+    "none",
+    "handyman"
+   ],
+   "assets_needed": [
+    "car"
+   ],
+   "risk_level": "medium",
+   "payback_days": 30,
+   "recurring": true,
+   "channel_ids": [
+    "nextdoor",
+    "walk-in",
+    "referral",
+    "facebook"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Mower servicing and blades",
+     "amount": 142
+    },
+    {
+     "item": "Trimmer line and fuel",
+     "amount": 101
+    },
+    {
+     "item": "Door-to-door flyers",
+     "amount": 81
+    },
+    {
+     "item": "Work gloves and safety gear",
+     "amount": 81
+    }
+   ],
+   "steps": [
+    "Map 30 overgrown lawns on your street",
+    "Print a one-page rate card",
+    "Door-knock with the rate card on Saturday",
+    "Book mows into a fixed fortnightly route",
+    "Offer $120 garden tidy, one-off to first five lawns",
+    "Photograph each finished lawn for the folder",
+    "Add garden tidies to regular clients"
+   ],
+   "pricing_hint": "$120 garden tidy, one-off",
+   "first_customers": [
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews"
+   ],
+   "pitfalls": [
+    "Never mow wet lawns after rain",
+    "Confirm property lines before edging",
+    "Wear eye protection when trimming"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "local-service",
+   "trend_tags": [
+    "local-service",
+    "recurring"
+   ],
+   "first_seen": "2024-06",
+   "maturity": "growing",
+   "version": 1,
+   "updated_at": "2026-09-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Nextdoor neighbourhood posts",
+      "Thumbtack local leads",
+      "Chamber of commerce newsletter"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Facebook local community groups",
+      "Nextdoor UK street posts",
+      "Local parish newsletter ads"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Nextdoor Canada community posts",
+      "Local Facebook buy-and-sell groups",
+      "Chamber of commerce directory"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Nextdoor Australia neighbourhood posts",
+      "Local Facebook community groups",
+      "Council newsletter sponsorships"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "Google Maps shop clusters in heartland malls",
+      "Facebook neighbourhood groups for HDB estates",
+      "WhatsApp business contact lists"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-svc-lawn-garden-043",
+   "title": "Lawn mowing and garden tidy rounds (east)",
+   "one_liner": "Homeowners without time pay for a standing fortnightly mow and seasonal garden tidy-up.",
+   "min_capital": 1835,
+   "capital_tier": "500-2k",
+   "hours_per_week": "<10",
+   "countries": [
+    "US",
+    "UK",
+    "AU",
+    "PH"
+   ],
+   "online_or_offline": "hybrid",
+   "legal_blocks": [],
+   "skills_needed": [
+    "none",
+    "handyman"
+   ],
+   "assets_needed": [
+    "car"
+   ],
+   "risk_level": "medium",
+   "payback_days": 14,
+   "recurring": true,
+   "channel_ids": [
+    "nextdoor",
+    "walk-in",
+    "referral",
+    "facebook"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Mower servicing and blades",
+     "amount": 642
+    },
+    {
+     "item": "Trimmer line and fuel",
+     "amount": 459
+    },
+    {
+     "item": "Door-to-door flyers",
+     "amount": 367
+    },
+    {
+     "item": "Work gloves and safety gear",
+     "amount": 367
+    }
+   ],
+   "steps": [
+    "Map 5 overgrown lawns on your street",
+    "Print a one-page rate card",
+    "Door-knock with the rate card on Saturday",
+    "Book mows into a fixed fortnightly route",
+    "Offer $45 per standard mow to first five lawns",
+    "Photograph each finished lawn for the folder",
+    "Add garden tidies to regular clients"
+   ],
+   "pricing_hint": "$45 per standard mow",
+   "first_customers": [
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts"
+   ],
+   "pitfalls": [
+    "Never mow wet lawns after rain",
+    "Confirm property lines before edging",
+    "Wear eye protection when trimming"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "local-service",
+   "trend_tags": [
+    "local-service",
+    "recurring"
+   ],
+   "first_seen": "2025-07",
+   "maturity": "saturated",
+   "version": 1,
+   "updated_at": "2026-10-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Thumbtack local leads",
+      "Chamber of commerce newsletter",
+      "Google Maps 4-star shops with unanswered reviews"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Nextdoor UK street posts",
+      "Local parish newsletter ads",
+      "Google Maps high-street shops"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Local Facebook community groups",
+      "Council newsletter sponsorships",
+      "Google Maps suburban strip shops"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Google Maps shops along main roads",
+      "Viber neighbourhood groups",
+      "Facebook Marketplace local groups"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-svc-lawn-garden-044",
+   "title": "Lawn mowing and garden tidy rounds (riverside)",
+   "one_liner": "Homeowners without time pay for a standing fortnightly mow and seasonal garden tidy-up.",
+   "min_capital": 150,
+   "capital_tier": "<500",
+   "hours_per_week": "10-25",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU",
+    "SG",
+    "PH"
+   ],
+   "online_or_offline": "offline",
+   "legal_blocks": [],
+   "skills_needed": [
+    "none",
+    "handyman"
+   ],
+   "assets_needed": [
+    "car"
+   ],
+   "risk_level": "medium",
+   "payback_days": 21,
+   "recurring": true,
+   "channel_ids": [
+    "nextdoor",
+    "walk-in",
+    "referral",
+    "facebook"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Mower servicing and blades",
+     "amount": 52
+    },
+    {
+     "item": "Trimmer line and fuel",
+     "amount": 38
+    },
+    {
+     "item": "Door-to-door flyers",
+     "amount": 30
+    },
+    {
+     "item": "Work gloves and safety gear",
+     "amount": 30
+    }
+   ],
+   "steps": [
+    "Map 10 overgrown lawns on your street",
+    "Print a one-page rate card",
+    "Door-knock with the rate card on Saturday",
+    "Book mows into a fixed fortnightly route",
+    "Offer $160/month for fortnightly rounds to first five lawns",
+    "Photograph each finished lawn for the folder",
+    "Add garden tidies to regular clients"
+   ],
+   "pricing_hint": "$160/month for fortnightly rounds",
+   "first_customers": [
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads"
+   ],
+   "pitfalls": [
+    "Never mow wet lawns after rain",
+    "Confirm property lines before edging",
+    "Wear eye protection when trimming"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "local-service",
+   "trend_tags": [
+    "local-service",
+    "recurring"
+   ],
+   "first_seen": "2024-08",
+   "maturity": "mature",
+   "version": 1,
+   "updated_at": "2026-11-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Chamber of commerce newsletter",
+      "Google Maps 4-star shops with unanswered reviews",
+      "Nextdoor neighbourhood posts"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Local parish newsletter ads",
+      "Google Maps high-street shops",
+      "Facebook local community groups"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Chamber of commerce directory",
+      "Google Maps shops on main streets",
+      "Nextdoor Canada community posts"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Council newsletter sponsorships",
+      "Google Maps suburban strip shops",
+      "Nextdoor Australia neighbourhood posts"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "WhatsApp business contact lists",
+      "Google Maps shop clusters in heartland malls",
+      "Facebook neighbourhood groups for HDB estates"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Viber neighbourhood groups",
+      "Facebook Marketplace local groups",
+      "Barangay community referrals"
+     ]
+    }
+   }
+  }
+ ]
+}

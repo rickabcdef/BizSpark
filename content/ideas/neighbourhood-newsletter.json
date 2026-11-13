@@ -1,0 +1,1422 @@
+{
+ "industry": "neighbourhood-newsletter",
+ "count": 11,
+ "ideas": [
+  {
+   "id": "bs-cnt-nbhd-newsletter-230",
+   "title": "Sponsored neighbourhood email newsletter",
+   "one_liner": "Local businesses pay for sponsor slots in a weekly neighbourhood email that residents actually open.",
+   "min_capital": 195,
+   "capital_tier": "<500",
+   "hours_per_week": "10-25",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "SG"
+   ],
+   "online_or_offline": "online",
+   "legal_blocks": [],
+   "skills_needed": [
+    "writing",
+    "basic_english"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "medium",
+   "payback_days": 60,
+   "recurring": true,
+   "channel_ids": [
+    "facebook",
+    "nextdoor",
+    "walk-in",
+    "chamber"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Email tool subscription",
+     "amount": 68
+    },
+    {
+     "item": "Domain and landing page",
+     "amount": 49
+    },
+    {
+     "item": "Launch flyers for subscriber drives",
+     "amount": 78
+    }
+   ],
+   "steps": [
+    "Collect 10 emails door-to-door this week",
+    "Write the first 3 issues in advance",
+    "Offer $200/month exclusive sponsor to the hardware store",
+    "Send every Thursday at 7 am",
+    "Report open rates to sponsors monthly",
+    "Add a what's-on section for free value",
+    "Trade subscriber drives with sponsors"
+   ],
+   "pricing_hint": "$200/month exclusive sponsor",
+   "first_customers": [
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews"
+   ],
+   "pitfalls": [
+    "Never spam — confirm double opt-in",
+    "Keep 70% content, 30% ads",
+    "Check local advertising rules for raffles"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "local-service",
+   "trend_tags": [
+    "local-media",
+    "recurring"
+   ],
+   "first_seen": "2024-02",
+   "maturity": "emerging",
+   "version": 1,
+   "updated_at": "2026-10-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Nextdoor neighbourhood posts",
+      "Thumbtack local leads",
+      "Chamber of commerce newsletter"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Facebook local community groups",
+      "Nextdoor UK street posts",
+      "Local parish newsletter ads"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Nextdoor Canada community posts",
+      "Local Facebook buy-and-sell groups",
+      "Chamber of commerce directory"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "WhatsApp business contact lists",
+      "Google Maps shop clusters in heartland malls",
+      "Facebook neighbourhood groups for HDB estates"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-cnt-nbhd-newsletter-231",
+   "title": "Sponsored neighbourhood email newsletter",
+   "one_liner": "Local businesses pay for sponsor slots in a weekly neighbourhood email that residents actually open.",
+   "min_capital": 3710,
+   "capital_tier": "2k-10k",
+   "hours_per_week": "<10",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU",
+    "SG",
+    "PH"
+   ],
+   "online_or_offline": "online",
+   "legal_blocks": [],
+   "skills_needed": [
+    "writing",
+    "basic_english"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "medium",
+   "payback_days": 90,
+   "recurring": true,
+   "channel_ids": [
+    "facebook",
+    "nextdoor",
+    "walk-in",
+    "chamber"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Email tool subscription",
+     "amount": 1298
+    },
+    {
+     "item": "Domain and landing page",
+     "amount": 928
+    },
+    {
+     "item": "Launch flyers for subscriber drives",
+     "amount": 1484
+    }
+   ],
+   "steps": [
+    "Collect 15 emails door-to-door this week",
+    "Write the first 3 issues in advance",
+    "Offer $25 classified listing to the hardware store",
+    "Send every Thursday at 7 am",
+    "Report open rates to sponsors monthly",
+    "Add a what's-on section for free value",
+    "Trade subscriber drives with sponsors"
+   ],
+   "pricing_hint": "$25 classified listing",
+   "first_customers": [
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts"
+   ],
+   "pitfalls": [
+    "Never spam — confirm double opt-in",
+    "Keep 70% content, 30% ads",
+    "Check local advertising rules for raffles"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "local-service",
+   "trend_tags": [
+    "local-media",
+    "recurring"
+   ],
+   "first_seen": "2024-03",
+   "maturity": "growing",
+   "version": 1,
+   "updated_at": "2026-11-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Thumbtack local leads",
+      "Chamber of commerce newsletter",
+      "Google Maps 4-star shops with unanswered reviews"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Nextdoor UK street posts",
+      "Local parish newsletter ads",
+      "Google Maps high-street shops"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Local Facebook buy-and-sell groups",
+      "Chamber of commerce directory",
+      "Google Maps shops on main streets"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Local Facebook community groups",
+      "Council newsletter sponsorships",
+      "Google Maps suburban strip shops"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "Google Maps shop clusters in heartland malls",
+      "Facebook neighbourhood groups for HDB estates",
+      "WhatsApp business contact lists"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Google Maps shops along main roads",
+      "Viber neighbourhood groups",
+      "Facebook Marketplace local groups"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-cnt-nbhd-newsletter-232",
+   "title": "Sponsored neighbourhood email newsletter (north)",
+   "one_liner": "Local businesses pay for sponsor slots in a weekly neighbourhood email that residents actually open.",
+   "min_capital": 385,
+   "capital_tier": "<500",
+   "hours_per_week": "<10",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU",
+    "SG",
+    "PH"
+   ],
+   "online_or_offline": "online",
+   "legal_blocks": [],
+   "skills_needed": [
+    "writing",
+    "basic_english"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "medium",
+   "payback_days": 45,
+   "recurring": true,
+   "channel_ids": [
+    "facebook",
+    "nextdoor",
+    "walk-in",
+    "chamber"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Email tool subscription",
+     "amount": 135
+    },
+    {
+     "item": "Domain and landing page",
+     "amount": 96
+    },
+    {
+     "item": "Launch flyers for subscriber drives",
+     "amount": 154
+    }
+   ],
+   "steps": [
+    "Collect 20 emails door-to-door this week",
+    "Write the first 3 issues in advance",
+    "Offer $60 per weekly sponsor slot to the hardware store",
+    "Send every Thursday at 7 am",
+    "Report open rates to sponsors monthly",
+    "Add a what's-on section for free value",
+    "Trade subscriber drives with sponsors"
+   ],
+   "pricing_hint": "$60 per weekly sponsor slot",
+   "first_customers": [
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads"
+   ],
+   "pitfalls": [
+    "Never spam — confirm double opt-in",
+    "Keep 70% content, 30% ads",
+    "Check local advertising rules for raffles"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "local-service",
+   "trend_tags": [
+    "local-media",
+    "recurring"
+   ],
+   "first_seen": "2025-04",
+   "maturity": "growing",
+   "version": 1,
+   "updated_at": "2026-01-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Chamber of commerce newsletter",
+      "Google Maps 4-star shops with unanswered reviews",
+      "Nextdoor neighbourhood posts"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Local parish newsletter ads",
+      "Google Maps high-street shops",
+      "Facebook local community groups"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Chamber of commerce directory",
+      "Google Maps shops on main streets",
+      "Nextdoor Canada community posts"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Council newsletter sponsorships",
+      "Google Maps suburban strip shops",
+      "Nextdoor Australia neighbourhood posts"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "Facebook neighbourhood groups for HDB estates",
+      "WhatsApp business contact lists",
+      "Google Maps shop clusters in heartland malls"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Viber neighbourhood groups",
+      "Facebook Marketplace local groups",
+      "Barangay community referrals"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-cnt-nbhd-newsletter-233",
+   "title": "Sponsored neighbourhood email newsletter (east)",
+   "one_liner": "Local businesses pay for sponsor slots in a weekly neighbourhood email that residents actually open.",
+   "min_capital": 3905,
+   "capital_tier": "2k-10k",
+   "hours_per_week": "10-25",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU",
+    "SG",
+    "PH"
+   ],
+   "online_or_offline": "hybrid",
+   "legal_blocks": [],
+   "skills_needed": [
+    "writing",
+    "basic_english"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "medium",
+   "payback_days": 60,
+   "recurring": true,
+   "channel_ids": [
+    "facebook",
+    "nextdoor",
+    "walk-in",
+    "chamber"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Email tool subscription",
+     "amount": 1367
+    },
+    {
+     "item": "Domain and landing page",
+     "amount": 976
+    },
+    {
+     "item": "Launch flyers for subscriber drives",
+     "amount": 1562
+    }
+   ],
+   "steps": [
+    "Collect 25 emails door-to-door this week",
+    "Write the first 3 issues in advance",
+    "Offer $200/month exclusive sponsor to the hardware store",
+    "Send every Thursday at 7 am",
+    "Report open rates to sponsors monthly",
+    "Add a what's-on section for free value",
+    "Trade subscriber drives with sponsors"
+   ],
+   "pricing_hint": "$200/month exclusive sponsor",
+   "first_customers": [
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter"
+   ],
+   "pitfalls": [
+    "Never spam — confirm double opt-in",
+    "Keep 70% content, 30% ads",
+    "Check local advertising rules for raffles"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "local-service",
+   "trend_tags": [
+    "local-media",
+    "recurring"
+   ],
+   "first_seen": "2024-05",
+   "maturity": "mature",
+   "version": 1,
+   "updated_at": "2026-02-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Google Maps 4-star shops with unanswered reviews",
+      "Nextdoor neighbourhood posts",
+      "Thumbtack local leads"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Google Maps high-street shops",
+      "Facebook local community groups",
+      "Nextdoor UK street posts"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Google Maps shops on main streets",
+      "Nextdoor Canada community posts",
+      "Local Facebook buy-and-sell groups"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Google Maps suburban strip shops",
+      "Nextdoor Australia neighbourhood posts",
+      "Local Facebook community groups"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "WhatsApp business contact lists",
+      "Google Maps shop clusters in heartland malls",
+      "Facebook neighbourhood groups for HDB estates"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Facebook Marketplace local groups",
+      "Barangay community referrals",
+      "Google Maps shops along main roads"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-cnt-nbhd-newsletter-234",
+   "title": "Sponsored neighbourhood email newsletter",
+   "one_liner": "Local businesses pay for sponsor slots in a weekly neighbourhood email that residents actually open.",
+   "min_capital": 130,
+   "capital_tier": "<500",
+   "hours_per_week": "10-25",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU",
+    "SG",
+    "PH"
+   ],
+   "online_or_offline": "online",
+   "legal_blocks": [],
+   "skills_needed": [
+    "writing",
+    "basic_english"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "medium",
+   "payback_days": 90,
+   "recurring": true,
+   "channel_ids": [
+    "facebook",
+    "nextdoor",
+    "walk-in",
+    "chamber"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Email tool subscription",
+     "amount": 46
+    },
+    {
+     "item": "Domain and landing page",
+     "amount": 32
+    },
+    {
+     "item": "Launch flyers for subscriber drives",
+     "amount": 52
+    }
+   ],
+   "steps": [
+    "Collect 30 emails door-to-door this week",
+    "Write the first 3 issues in advance",
+    "Offer $25 classified listing to the hardware store",
+    "Send every Thursday at 7 am",
+    "Report open rates to sponsors monthly",
+    "Add a what's-on section for free value",
+    "Trade subscriber drives with sponsors"
+   ],
+   "pricing_hint": "$25 classified listing",
+   "first_customers": [
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews"
+   ],
+   "pitfalls": [
+    "Never spam — confirm double opt-in",
+    "Keep 70% content, 30% ads",
+    "Check local advertising rules for raffles"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "local-service",
+   "trend_tags": [
+    "local-media",
+    "recurring"
+   ],
+   "first_seen": "2024-06",
+   "maturity": "mature",
+   "version": 1,
+   "updated_at": "2026-03-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Nextdoor neighbourhood posts",
+      "Thumbtack local leads",
+      "Chamber of commerce newsletter"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Facebook local community groups",
+      "Nextdoor UK street posts",
+      "Local parish newsletter ads"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Nextdoor Canada community posts",
+      "Local Facebook buy-and-sell groups",
+      "Chamber of commerce directory"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Nextdoor Australia neighbourhood posts",
+      "Local Facebook community groups",
+      "Council newsletter sponsorships"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "Google Maps shop clusters in heartland malls",
+      "Facebook neighbourhood groups for HDB estates",
+      "WhatsApp business contact lists"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Barangay community referrals",
+      "Google Maps shops along main roads",
+      "Viber neighbourhood groups"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-cnt-nbhd-newsletter-235",
+   "title": "Sponsored neighbourhood email newsletter",
+   "one_liner": "Local businesses pay for sponsor slots in a weekly neighbourhood email that residents actually open.",
+   "min_capital": 1140,
+   "capital_tier": "500-2k",
+   "hours_per_week": "full",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU",
+    "PH"
+   ],
+   "online_or_offline": "online",
+   "legal_blocks": [],
+   "skills_needed": [
+    "writing",
+    "basic_english"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "medium",
+   "payback_days": 45,
+   "recurring": true,
+   "channel_ids": [
+    "facebook",
+    "nextdoor",
+    "walk-in",
+    "chamber"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Email tool subscription",
+     "amount": 399
+    },
+    {
+     "item": "Domain and landing page",
+     "amount": 285
+    },
+    {
+     "item": "Launch flyers for subscriber drives",
+     "amount": 456
+    }
+   ],
+   "steps": [
+    "Collect 5 emails door-to-door this week",
+    "Write the first 3 issues in advance",
+    "Offer $60 per weekly sponsor slot to the hardware store",
+    "Send every Thursday at 7 am",
+    "Report open rates to sponsors monthly",
+    "Add a what's-on section for free value",
+    "Trade subscriber drives with sponsors"
+   ],
+   "pricing_hint": "$60 per weekly sponsor slot",
+   "first_customers": [
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts"
+   ],
+   "pitfalls": [
+    "Never spam — confirm double opt-in",
+    "Keep 70% content, 30% ads",
+    "Check local advertising rules for raffles"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "local-service",
+   "trend_tags": [
+    "local-media",
+    "recurring"
+   ],
+   "first_seen": "2025-07",
+   "maturity": "mature",
+   "version": 1,
+   "updated_at": "2026-04-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Thumbtack local leads",
+      "Chamber of commerce newsletter",
+      "Google Maps 4-star shops with unanswered reviews"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Nextdoor UK street posts",
+      "Local parish newsletter ads",
+      "Google Maps high-street shops"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Local Facebook buy-and-sell groups",
+      "Chamber of commerce directory",
+      "Google Maps shops on main streets"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Local Facebook community groups",
+      "Council newsletter sponsorships",
+      "Google Maps suburban strip shops"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Google Maps shops along main roads",
+      "Viber neighbourhood groups",
+      "Facebook Marketplace local groups"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-cnt-nbhd-newsletter-236",
+   "title": "Sponsored neighbourhood email newsletter",
+   "one_liner": "Local businesses pay for sponsor slots in a weekly neighbourhood email that residents actually open.",
+   "min_capital": 1235,
+   "capital_tier": "500-2k",
+   "hours_per_week": "<10",
+   "countries": [
+    "US",
+    "UK",
+    "AU",
+    "PH"
+   ],
+   "online_or_offline": "online",
+   "legal_blocks": [],
+   "skills_needed": [
+    "writing",
+    "basic_english"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "medium",
+   "payback_days": 60,
+   "recurring": true,
+   "channel_ids": [
+    "facebook",
+    "nextdoor",
+    "walk-in",
+    "chamber"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Email tool subscription",
+     "amount": 432
+    },
+    {
+     "item": "Domain and landing page",
+     "amount": 309
+    },
+    {
+     "item": "Launch flyers for subscriber drives",
+     "amount": 494
+    }
+   ],
+   "steps": [
+    "Collect 10 emails door-to-door this week",
+    "Write the first 3 issues in advance",
+    "Offer $200/month exclusive sponsor to the hardware store",
+    "Send every Thursday at 7 am",
+    "Report open rates to sponsors monthly",
+    "Add a what's-on section for free value",
+    "Trade subscriber drives with sponsors"
+   ],
+   "pricing_hint": "$200/month exclusive sponsor",
+   "first_customers": [
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads"
+   ],
+   "pitfalls": [
+    "Never spam — confirm double opt-in",
+    "Keep 70% content, 30% ads",
+    "Check local advertising rules for raffles"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "local-service",
+   "trend_tags": [
+    "local-media",
+    "recurring"
+   ],
+   "first_seen": "2024-08",
+   "maturity": "emerging",
+   "version": 1,
+   "updated_at": "2026-05-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Chamber of commerce newsletter",
+      "Google Maps 4-star shops with unanswered reviews",
+      "Nextdoor neighbourhood posts"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Local parish newsletter ads",
+      "Google Maps high-street shops",
+      "Facebook local community groups"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Council newsletter sponsorships",
+      "Google Maps suburban strip shops",
+      "Nextdoor Australia neighbourhood posts"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Viber neighbourhood groups",
+      "Facebook Marketplace local groups",
+      "Barangay community referrals"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-cnt-nbhd-newsletter-237",
+   "title": "Sponsored neighbourhood email newsletter",
+   "one_liner": "Local businesses pay for sponsor slots in a weekly neighbourhood email that residents actually open.",
+   "min_capital": 1330,
+   "capital_tier": "500-2k",
+   "hours_per_week": "full",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU",
+    "SG",
+    "PH"
+   ],
+   "online_or_offline": "online",
+   "legal_blocks": [],
+   "skills_needed": [
+    "writing",
+    "basic_english"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "medium",
+   "payback_days": 90,
+   "recurring": true,
+   "channel_ids": [
+    "facebook",
+    "nextdoor",
+    "walk-in",
+    "chamber"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Email tool subscription",
+     "amount": 465
+    },
+    {
+     "item": "Domain and landing page",
+     "amount": 332
+    },
+    {
+     "item": "Launch flyers for subscriber drives",
+     "amount": 533
+    }
+   ],
+   "steps": [
+    "Collect 15 emails door-to-door this week",
+    "Write the first 3 issues in advance",
+    "Offer $25 classified listing to the hardware store",
+    "Send every Thursday at 7 am",
+    "Report open rates to sponsors monthly",
+    "Add a what's-on section for free value",
+    "Trade subscriber drives with sponsors"
+   ],
+   "pricing_hint": "$25 classified listing",
+   "first_customers": [
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter"
+   ],
+   "pitfalls": [
+    "Never spam — confirm double opt-in",
+    "Keep 70% content, 30% ads",
+    "Check local advertising rules for raffles"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "local-service",
+   "trend_tags": [
+    "local-media",
+    "recurring"
+   ],
+   "first_seen": "2024-09",
+   "maturity": "growing",
+   "version": 1,
+   "updated_at": "2026-06-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Google Maps 4-star shops with unanswered reviews",
+      "Nextdoor neighbourhood posts",
+      "Thumbtack local leads"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Google Maps high-street shops",
+      "Facebook local community groups",
+      "Nextdoor UK street posts"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Google Maps shops on main streets",
+      "Nextdoor Canada community posts",
+      "Local Facebook buy-and-sell groups"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Google Maps suburban strip shops",
+      "Nextdoor Australia neighbourhood posts",
+      "Local Facebook community groups"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "Google Maps shop clusters in heartland malls",
+      "Facebook neighbourhood groups for HDB estates",
+      "WhatsApp business contact lists"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Facebook Marketplace local groups",
+      "Barangay community referrals",
+      "Google Maps shops along main roads"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-cnt-nbhd-newsletter-238",
+   "title": "Sponsored neighbourhood email newsletter",
+   "one_liner": "Local businesses pay for sponsor slots in a weekly neighbourhood email that residents actually open.",
+   "min_capital": 1430,
+   "capital_tier": "500-2k",
+   "hours_per_week": "<10",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU",
+    "PH"
+   ],
+   "online_or_offline": "online",
+   "legal_blocks": [],
+   "skills_needed": [
+    "writing",
+    "basic_english"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "medium",
+   "payback_days": 45,
+   "recurring": true,
+   "channel_ids": [
+    "facebook",
+    "nextdoor",
+    "walk-in",
+    "chamber"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Email tool subscription",
+     "amount": 500
+    },
+    {
+     "item": "Domain and landing page",
+     "amount": 358
+    },
+    {
+     "item": "Launch flyers for subscriber drives",
+     "amount": 572
+    }
+   ],
+   "steps": [
+    "Collect 20 emails door-to-door this week",
+    "Write the first 3 issues in advance",
+    "Offer $60 per weekly sponsor slot to the hardware store",
+    "Send every Thursday at 7 am",
+    "Report open rates to sponsors monthly",
+    "Add a what's-on section for free value",
+    "Trade subscriber drives with sponsors"
+   ],
+   "pricing_hint": "$60 per weekly sponsor slot",
+   "first_customers": [
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews"
+   ],
+   "pitfalls": [
+    "Never spam — confirm double opt-in",
+    "Keep 70% content, 30% ads",
+    "Check local advertising rules for raffles"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "local-service",
+   "trend_tags": [
+    "local-media",
+    "recurring"
+   ],
+   "first_seen": "2025-10",
+   "maturity": "growing",
+   "version": 1,
+   "updated_at": "2026-07-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Nextdoor neighbourhood posts",
+      "Thumbtack local leads",
+      "Chamber of commerce newsletter"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Facebook local community groups",
+      "Nextdoor UK street posts",
+      "Local parish newsletter ads"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Nextdoor Canada community posts",
+      "Local Facebook buy-and-sell groups",
+      "Chamber of commerce directory"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Nextdoor Australia neighbourhood posts",
+      "Local Facebook community groups",
+      "Council newsletter sponsorships"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Barangay community referrals",
+      "Google Maps shops along main roads",
+      "Viber neighbourhood groups"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-cnt-nbhd-newsletter-239",
+   "title": "Sponsored neighbourhood email newsletter",
+   "one_liner": "Local businesses pay for sponsor slots in a weekly neighbourhood email that residents actually open.",
+   "min_capital": 4485,
+   "capital_tier": "2k-10k",
+   "hours_per_week": "<10",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU",
+    "SG",
+    "PH"
+   ],
+   "online_or_offline": "hybrid",
+   "legal_blocks": [],
+   "skills_needed": [
+    "writing",
+    "basic_english"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "medium",
+   "payback_days": 60,
+   "recurring": true,
+   "channel_ids": [
+    "facebook",
+    "nextdoor",
+    "walk-in",
+    "chamber"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Email tool subscription",
+     "amount": 1570
+    },
+    {
+     "item": "Domain and landing page",
+     "amount": 1121
+    },
+    {
+     "item": "Launch flyers for subscriber drives",
+     "amount": 1794
+    }
+   ],
+   "steps": [
+    "Collect 25 emails door-to-door this week",
+    "Write the first 3 issues in advance",
+    "Offer $200/month exclusive sponsor to the hardware store",
+    "Send every Thursday at 7 am",
+    "Report open rates to sponsors monthly",
+    "Add a what's-on section for free value",
+    "Trade subscriber drives with sponsors"
+   ],
+   "pricing_hint": "$200/month exclusive sponsor",
+   "first_customers": [
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts"
+   ],
+   "pitfalls": [
+    "Never spam — confirm double opt-in",
+    "Keep 70% content, 30% ads",
+    "Check local advertising rules for raffles"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "local-service",
+   "trend_tags": [
+    "local-media",
+    "recurring"
+   ],
+   "first_seen": "2024-11",
+   "maturity": "growing",
+   "version": 1,
+   "updated_at": "2026-08-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Thumbtack local leads",
+      "Chamber of commerce newsletter",
+      "Google Maps 4-star shops with unanswered reviews"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Nextdoor UK street posts",
+      "Local parish newsletter ads",
+      "Google Maps high-street shops"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Local Facebook buy-and-sell groups",
+      "Chamber of commerce directory",
+      "Google Maps shops on main streets"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Local Facebook community groups",
+      "Council newsletter sponsorships",
+      "Google Maps suburban strip shops"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "WhatsApp business contact lists",
+      "Google Maps shop clusters in heartland malls",
+      "Facebook neighbourhood groups for HDB estates"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Google Maps shops along main roads",
+      "Viber neighbourhood groups",
+      "Facebook Marketplace local groups"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-cnt-nbhd-newsletter-240",
+   "title": "Sponsored neighbourhood email newsletter",
+   "one_liner": "Local businesses pay for sponsor slots in a weekly neighbourhood email that residents actually open.",
+   "min_capital": 1625,
+   "capital_tier": "500-2k",
+   "hours_per_week": "<10",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "PH"
+   ],
+   "online_or_offline": "online",
+   "legal_blocks": [],
+   "skills_needed": [
+    "writing",
+    "basic_english"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "medium",
+   "payback_days": 90,
+   "recurring": true,
+   "channel_ids": [
+    "facebook",
+    "nextdoor",
+    "walk-in",
+    "chamber"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Email tool subscription",
+     "amount": 569
+    },
+    {
+     "item": "Domain and landing page",
+     "amount": 406
+    },
+    {
+     "item": "Launch flyers for subscriber drives",
+     "amount": 650
+    }
+   ],
+   "steps": [
+    "Collect 30 emails door-to-door this week",
+    "Write the first 3 issues in advance",
+    "Offer $25 classified listing to the hardware store",
+    "Send every Thursday at 7 am",
+    "Report open rates to sponsors monthly",
+    "Add a what's-on section for free value",
+    "Trade subscriber drives with sponsors"
+   ],
+   "pricing_hint": "$25 classified listing",
+   "first_customers": [
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads"
+   ],
+   "pitfalls": [
+    "Never spam — confirm double opt-in",
+    "Keep 70% content, 30% ads",
+    "Check local advertising rules for raffles"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "local-service",
+   "trend_tags": [
+    "local-media",
+    "recurring"
+   ],
+   "first_seen": "2024-12",
+   "maturity": "saturated",
+   "version": 1,
+   "updated_at": "2026-09-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Chamber of commerce newsletter",
+      "Google Maps 4-star shops with unanswered reviews",
+      "Nextdoor neighbourhood posts"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Local parish newsletter ads",
+      "Google Maps high-street shops",
+      "Facebook local community groups"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Chamber of commerce directory",
+      "Google Maps shops on main streets",
+      "Nextdoor Canada community posts"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Viber neighbourhood groups",
+      "Facebook Marketplace local groups",
+      "Barangay community referrals"
+     ]
+    }
+   }
+  }
+ ]
+}

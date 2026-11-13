@@ -1,0 +1,1402 @@
+{
+ "industry": "quote-templates",
+ "count": 11,
+ "ideas": [
+  {
+   "id": "bs-b2b-quote-templates-197",
+   "title": "Quote and proposal templates for trades",
+   "one_liner": "Tradespeople pay once for a professional quote template pack they can fill on their phone in five minutes.",
+   "min_capital": 7310,
+   "capital_tier": "2k-10k",
+   "hours_per_week": "<10",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "SG",
+    "PH"
+   ],
+   "online_or_offline": "online",
+   "legal_blocks": [],
+   "skills_needed": [
+    "writing",
+    "design"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "low",
+   "payback_days": 21,
+   "recurring": false,
+   "channel_ids": [
+    "referral",
+    "facebook",
+    "walk-in",
+    "local-groups"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Template design tool subscription",
+     "amount": 2924
+    },
+    {
+     "item": "Trade fair booth share",
+     "amount": 2193
+    },
+    {
+     "item": "Printed samples and mockups",
+     "amount": 2193
+    }
+   ],
+   "steps": [
+    "Interview 25 trades about their quotes",
+    "Build one fill-on-phone template",
+    "Give it free to one plumber for feedback",
+    "Offer $149 with 2 revisions in trade Facebook groups",
+    "Record a 3-minute how-to video",
+    "Deliver editable files plus PDF",
+    "Offer trade-specific variants as upsells"
+   ],
+   "pricing_hint": "$149 with 2 revisions",
+   "first_customers": [
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter"
+   ],
+   "pitfalls": [
+    "Use their real job names in samples",
+    "Keep fields printable on A4",
+    "Never copy another company's template"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "digital-product",
+   "trend_tags": [
+    "b2b",
+    "templates"
+   ],
+   "first_seen": "2024-05",
+   "maturity": "growing",
+   "version": 1,
+   "updated_at": "2026-10-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Google Maps 4-star shops with unanswered reviews",
+      "Nextdoor neighbourhood posts",
+      "Thumbtack local leads"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Google Maps high-street shops",
+      "Facebook local community groups",
+      "Nextdoor UK street posts"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Google Maps shops on main streets",
+      "Nextdoor Canada community posts",
+      "Local Facebook buy-and-sell groups"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "WhatsApp business contact lists",
+      "Google Maps shop clusters in heartland malls",
+      "Facebook neighbourhood groups for HDB estates"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Facebook Marketplace local groups",
+      "Barangay community referrals",
+      "Google Maps shops along main roads"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-b2b-quote-templates-198",
+   "title": "Quote and proposal templates for trades",
+   "one_liner": "Tradespeople pay once for a professional quote template pack they can fill on their phone in five minutes.",
+   "min_capital": 240,
+   "capital_tier": "<500",
+   "hours_per_week": "<10",
+   "countries": [
+    "US",
+    "UK",
+    "AU",
+    "PH"
+   ],
+   "online_or_offline": "online",
+   "legal_blocks": [],
+   "skills_needed": [
+    "writing",
+    "design"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "low",
+   "payback_days": 30,
+   "recurring": false,
+   "channel_ids": [
+    "referral",
+    "facebook",
+    "walk-in",
+    "local-groups"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Template design tool subscription",
+     "amount": 96
+    },
+    {
+     "item": "Trade fair booth share",
+     "amount": 72
+    },
+    {
+     "item": "Printed samples and mockups",
+     "amount": 72
+    }
+   ],
+   "steps": [
+    "Interview 30 trades about their quotes",
+    "Build one fill-on-phone template",
+    "Give it free to one plumber for feedback",
+    "Offer $25 per extra trade variant in trade Facebook groups",
+    "Record a 3-minute how-to video",
+    "Deliver editable files plus PDF",
+    "Offer trade-specific variants as upsells"
+   ],
+   "pricing_hint": "$25 per extra trade variant",
+   "first_customers": [
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews"
+   ],
+   "pitfalls": [
+    "Use their real job names in samples",
+    "Keep fields printable on A4",
+    "Never copy another company's template"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "digital-product",
+   "trend_tags": [
+    "b2b",
+    "templates"
+   ],
+   "first_seen": "2024-06",
+   "maturity": "mature",
+   "version": 1,
+   "updated_at": "2026-11-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Nextdoor neighbourhood posts",
+      "Thumbtack local leads",
+      "Chamber of commerce newsletter"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Facebook local community groups",
+      "Nextdoor UK street posts",
+      "Local parish newsletter ads"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Nextdoor Australia neighbourhood posts",
+      "Local Facebook community groups",
+      "Council newsletter sponsorships"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Barangay community referrals",
+      "Google Maps shops along main roads",
+      "Viber neighbourhood groups"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-b2b-quote-templates-199",
+   "title": "Quote and proposal templates for trades (market)",
+   "one_liner": "Tradespeople pay once for a professional quote template pack they can fill on their phone in five minutes.",
+   "min_capital": 14705,
+   "capital_tier": "10k+",
+   "hours_per_week": "<10",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU",
+    "SG",
+    "PH"
+   ],
+   "online_or_offline": "online",
+   "legal_blocks": [],
+   "skills_needed": [
+    "writing",
+    "design"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "low",
+   "payback_days": 14,
+   "recurring": false,
+   "channel_ids": [
+    "referral",
+    "facebook",
+    "walk-in",
+    "local-groups"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Template design tool subscription",
+     "amount": 5882
+    },
+    {
+     "item": "Trade fair booth share",
+     "amount": 4412
+    },
+    {
+     "item": "Printed samples and mockups",
+     "amount": 4411
+    }
+   ],
+   "steps": [
+    "Interview 5 trades about their quotes",
+    "Build one fill-on-phone template",
+    "Give it free to one plumber for feedback",
+    "Offer $89 one-off template pack in trade Facebook groups",
+    "Record a 3-minute how-to video",
+    "Deliver editable files plus PDF",
+    "Offer trade-specific variants as upsells"
+   ],
+   "pricing_hint": "$89 one-off template pack",
+   "first_customers": [
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts"
+   ],
+   "pitfalls": [
+    "Use their real job names in samples",
+    "Keep fields printable on A4",
+    "Never copy another company's template"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "digital-product",
+   "trend_tags": [
+    "b2b",
+    "templates"
+   ],
+   "first_seen": "2025-07",
+   "maturity": "saturated",
+   "version": 1,
+   "updated_at": "2026-01-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Thumbtack local leads",
+      "Chamber of commerce newsletter",
+      "Google Maps 4-star shops with unanswered reviews"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Nextdoor UK street posts",
+      "Local parish newsletter ads",
+      "Google Maps high-street shops"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Local Facebook buy-and-sell groups",
+      "Chamber of commerce directory",
+      "Google Maps shops on main streets"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Local Facebook community groups",
+      "Council newsletter sponsorships",
+      "Google Maps suburban strip shops"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "Facebook neighbourhood groups for HDB estates",
+      "WhatsApp business contact lists",
+      "Google Maps shop clusters in heartland malls"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Google Maps shops along main roads",
+      "Viber neighbourhood groups",
+      "Facebook Marketplace local groups"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-b2b-quote-templates-200",
+   "title": "Quote and proposal templates for trades",
+   "one_liner": "Tradespeople pay once for a professional quote template pack they can fill on their phone in five minutes.",
+   "min_capital": 14805,
+   "capital_tier": "10k+",
+   "hours_per_week": "10-25",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU",
+    "SG"
+   ],
+   "online_or_offline": "hybrid",
+   "legal_blocks": [],
+   "skills_needed": [
+    "writing",
+    "design"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "low",
+   "payback_days": 21,
+   "recurring": false,
+   "channel_ids": [
+    "referral",
+    "facebook",
+    "walk-in",
+    "local-groups"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Template design tool subscription",
+     "amount": 5922
+    },
+    {
+     "item": "Trade fair booth share",
+     "amount": 4442
+    },
+    {
+     "item": "Printed samples and mockups",
+     "amount": 4441
+    }
+   ],
+   "steps": [
+    "Interview 10 trades about their quotes",
+    "Build one fill-on-phone template",
+    "Give it free to one plumber for feedback",
+    "Offer $149 with 2 revisions in trade Facebook groups",
+    "Record a 3-minute how-to video",
+    "Deliver editable files plus PDF",
+    "Offer trade-specific variants as upsells"
+   ],
+   "pricing_hint": "$149 with 2 revisions",
+   "first_customers": [
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads"
+   ],
+   "pitfalls": [
+    "Use their real job names in samples",
+    "Keep fields printable on A4",
+    "Never copy another company's template"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "digital-product",
+   "trend_tags": [
+    "b2b",
+    "templates"
+   ],
+   "first_seen": "2024-08",
+   "maturity": "emerging",
+   "version": 1,
+   "updated_at": "2026-02-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Chamber of commerce newsletter",
+      "Google Maps 4-star shops with unanswered reviews",
+      "Nextdoor neighbourhood posts"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Local parish newsletter ads",
+      "Google Maps high-street shops",
+      "Facebook local community groups"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Chamber of commerce directory",
+      "Google Maps shops on main streets",
+      "Nextdoor Canada community posts"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Council newsletter sponsorships",
+      "Google Maps suburban strip shops",
+      "Nextdoor Australia neighbourhood posts"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "WhatsApp business contact lists",
+      "Google Maps shop clusters in heartland malls",
+      "Facebook neighbourhood groups for HDB estates"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-b2b-quote-templates-201",
+   "title": "Quote and proposal templates for trades",
+   "one_liner": "Tradespeople pay once for a professional quote template pack they can fill on their phone in five minutes.",
+   "min_capital": 600,
+   "capital_tier": "500-2k",
+   "hours_per_week": "<10",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU",
+    "SG"
+   ],
+   "online_or_offline": "online",
+   "legal_blocks": [],
+   "skills_needed": [
+    "writing",
+    "design"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "low",
+   "payback_days": 30,
+   "recurring": false,
+   "channel_ids": [
+    "referral",
+    "facebook",
+    "walk-in",
+    "local-groups"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Template design tool subscription",
+     "amount": 240
+    },
+    {
+     "item": "Trade fair booth share",
+     "amount": 180
+    },
+    {
+     "item": "Printed samples and mockups",
+     "amount": 180
+    }
+   ],
+   "steps": [
+    "Interview 15 trades about their quotes",
+    "Build one fill-on-phone template",
+    "Give it free to one plumber for feedback",
+    "Offer $25 per extra trade variant in trade Facebook groups",
+    "Record a 3-minute how-to video",
+    "Deliver editable files plus PDF",
+    "Offer trade-specific variants as upsells"
+   ],
+   "pricing_hint": "$25 per extra trade variant",
+   "first_customers": [
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter"
+   ],
+   "pitfalls": [
+    "Use their real job names in samples",
+    "Keep fields printable on A4",
+    "Never copy another company's template"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "digital-product",
+   "trend_tags": [
+    "b2b",
+    "templates"
+   ],
+   "first_seen": "2024-09",
+   "maturity": "growing",
+   "version": 1,
+   "updated_at": "2026-03-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Google Maps 4-star shops with unanswered reviews",
+      "Nextdoor neighbourhood posts",
+      "Thumbtack local leads"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Google Maps high-street shops",
+      "Facebook local community groups",
+      "Nextdoor UK street posts"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Google Maps shops on main streets",
+      "Nextdoor Canada community posts",
+      "Local Facebook buy-and-sell groups"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Google Maps suburban strip shops",
+      "Nextdoor Australia neighbourhood posts",
+      "Local Facebook community groups"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "Google Maps shop clusters in heartland malls",
+      "Facebook neighbourhood groups for HDB estates",
+      "WhatsApp business contact lists"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-b2b-quote-templates-202",
+   "title": "Quote and proposal templates for trades (north)",
+   "one_liner": "Tradespeople pay once for a professional quote template pack they can fill on their phone in five minutes.",
+   "min_capital": 695,
+   "capital_tier": "500-2k",
+   "hours_per_week": "full",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU",
+    "SG",
+    "PH"
+   ],
+   "online_or_offline": "online",
+   "legal_blocks": [],
+   "skills_needed": [
+    "writing",
+    "design"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "low",
+   "payback_days": 14,
+   "recurring": false,
+   "channel_ids": [
+    "referral",
+    "facebook",
+    "walk-in",
+    "local-groups"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Template design tool subscription",
+     "amount": 278
+    },
+    {
+     "item": "Trade fair booth share",
+     "amount": 208
+    },
+    {
+     "item": "Printed samples and mockups",
+     "amount": 209
+    }
+   ],
+   "steps": [
+    "Interview 20 trades about their quotes",
+    "Build one fill-on-phone template",
+    "Give it free to one plumber for feedback",
+    "Offer $89 one-off template pack in trade Facebook groups",
+    "Record a 3-minute how-to video",
+    "Deliver editable files plus PDF",
+    "Offer trade-specific variants as upsells"
+   ],
+   "pricing_hint": "$89 one-off template pack",
+   "first_customers": [
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews"
+   ],
+   "pitfalls": [
+    "Use their real job names in samples",
+    "Keep fields printable on A4",
+    "Never copy another company's template"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "digital-product",
+   "trend_tags": [
+    "b2b",
+    "templates"
+   ],
+   "first_seen": "2025-10",
+   "maturity": "mature",
+   "version": 1,
+   "updated_at": "2026-04-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Nextdoor neighbourhood posts",
+      "Thumbtack local leads",
+      "Chamber of commerce newsletter"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Facebook local community groups",
+      "Nextdoor UK street posts",
+      "Local parish newsletter ads"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Nextdoor Canada community posts",
+      "Local Facebook buy-and-sell groups",
+      "Chamber of commerce directory"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Nextdoor Australia neighbourhood posts",
+      "Local Facebook community groups",
+      "Council newsletter sponsorships"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "Facebook neighbourhood groups for HDB estates",
+      "WhatsApp business contact lists",
+      "Google Maps shop clusters in heartland malls"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Barangay community referrals",
+      "Google Maps shops along main roads",
+      "Viber neighbourhood groups"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-b2b-quote-templates-203",
+   "title": "Quote and proposal templates for trades (east)",
+   "one_liner": "Tradespeople pay once for a professional quote template pack they can fill on their phone in five minutes.",
+   "min_capital": 15095,
+   "capital_tier": "10k+",
+   "hours_per_week": "10-25",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU",
+    "SG",
+    "PH"
+   ],
+   "online_or_offline": "online",
+   "legal_blocks": [],
+   "skills_needed": [
+    "writing",
+    "design"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "low",
+   "payback_days": 21,
+   "recurring": false,
+   "channel_ids": [
+    "referral",
+    "facebook",
+    "walk-in",
+    "local-groups"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Template design tool subscription",
+     "amount": 6038
+    },
+    {
+     "item": "Trade fair booth share",
+     "amount": 4528
+    },
+    {
+     "item": "Printed samples and mockups",
+     "amount": 4529
+    }
+   ],
+   "steps": [
+    "Interview 25 trades about their quotes",
+    "Build one fill-on-phone template",
+    "Give it free to one plumber for feedback",
+    "Offer $149 with 2 revisions in trade Facebook groups",
+    "Record a 3-minute how-to video",
+    "Deliver editable files plus PDF",
+    "Offer trade-specific variants as upsells"
+   ],
+   "pricing_hint": "$149 with 2 revisions",
+   "first_customers": [
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts"
+   ],
+   "pitfalls": [
+    "Use their real job names in samples",
+    "Keep fields printable on A4",
+    "Never copy another company's template"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "digital-product",
+   "trend_tags": [
+    "b2b",
+    "templates"
+   ],
+   "first_seen": "2024-11",
+   "maturity": "mature",
+   "version": 1,
+   "updated_at": "2026-05-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Thumbtack local leads",
+      "Chamber of commerce newsletter",
+      "Google Maps 4-star shops with unanswered reviews"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Nextdoor UK street posts",
+      "Local parish newsletter ads",
+      "Google Maps high-street shops"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Local Facebook buy-and-sell groups",
+      "Chamber of commerce directory",
+      "Google Maps shops on main streets"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Local Facebook community groups",
+      "Council newsletter sponsorships",
+      "Google Maps suburban strip shops"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "WhatsApp business contact lists",
+      "Google Maps shop clusters in heartland malls",
+      "Facebook neighbourhood groups for HDB estates"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Google Maps shops along main roads",
+      "Viber neighbourhood groups",
+      "Facebook Marketplace local groups"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-b2b-quote-templates-204",
+   "title": "Quote and proposal templates for trades",
+   "one_liner": "Tradespeople pay once for a professional quote template pack they can fill on their phone in five minutes.",
+   "min_capital": 370,
+   "capital_tier": "<500",
+   "hours_per_week": "full",
+   "countries": [
+    "US",
+    "UK",
+    "SG"
+   ],
+   "online_or_offline": "offline",
+   "legal_blocks": [],
+   "skills_needed": [
+    "writing",
+    "design"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "low",
+   "payback_days": 30,
+   "recurring": false,
+   "channel_ids": [
+    "referral",
+    "facebook",
+    "walk-in",
+    "local-groups"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Template design tool subscription",
+     "amount": 148
+    },
+    {
+     "item": "Trade fair booth share",
+     "amount": 111
+    },
+    {
+     "item": "Printed samples and mockups",
+     "amount": 111
+    }
+   ],
+   "steps": [
+    "Interview 30 trades about their quotes",
+    "Build one fill-on-phone template",
+    "Give it free to one plumber for feedback",
+    "Offer $25 per extra trade variant in trade Facebook groups",
+    "Record a 3-minute how-to video",
+    "Deliver editable files plus PDF",
+    "Offer trade-specific variants as upsells"
+   ],
+   "pricing_hint": "$25 per extra trade variant",
+   "first_customers": [
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads"
+   ],
+   "pitfalls": [
+    "Use their real job names in samples",
+    "Keep fields printable on A4",
+    "Never copy another company's template"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "digital-product",
+   "trend_tags": [
+    "b2b",
+    "templates"
+   ],
+   "first_seen": "2024-12",
+   "maturity": "growing",
+   "version": 1,
+   "updated_at": "2026-06-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Chamber of commerce newsletter",
+      "Google Maps 4-star shops with unanswered reviews",
+      "Nextdoor neighbourhood posts"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Local parish newsletter ads",
+      "Google Maps high-street shops",
+      "Facebook local community groups"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "Google Maps shop clusters in heartland malls",
+      "Facebook neighbourhood groups for HDB estates",
+      "WhatsApp business contact lists"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-b2b-quote-templates-205",
+   "title": "Quote and proposal templates for trades",
+   "one_liner": "Tradespeople pay once for a professional quote template pack they can fill on their phone in five minutes.",
+   "min_capital": 990,
+   "capital_tier": "500-2k",
+   "hours_per_week": "10-25",
+   "countries": [
+    "US",
+    "UK",
+    "AU",
+    "SG",
+    "PH"
+   ],
+   "online_or_offline": "hybrid",
+   "legal_blocks": [],
+   "skills_needed": [
+    "writing",
+    "design"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "low",
+   "payback_days": 14,
+   "recurring": false,
+   "channel_ids": [
+    "referral",
+    "facebook",
+    "walk-in",
+    "local-groups"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Template design tool subscription",
+     "amount": 396
+    },
+    {
+     "item": "Trade fair booth share",
+     "amount": 297
+    },
+    {
+     "item": "Printed samples and mockups",
+     "amount": 297
+    }
+   ],
+   "steps": [
+    "Interview 5 trades about their quotes",
+    "Build one fill-on-phone template",
+    "Give it free to one plumber for feedback",
+    "Offer $89 one-off template pack in trade Facebook groups",
+    "Record a 3-minute how-to video",
+    "Deliver editable files plus PDF",
+    "Offer trade-specific variants as upsells"
+   ],
+   "pricing_hint": "$89 one-off template pack",
+   "first_customers": [
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter"
+   ],
+   "pitfalls": [
+    "Use their real job names in samples",
+    "Keep fields printable on A4",
+    "Never copy another company's template"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "digital-product",
+   "trend_tags": [
+    "b2b",
+    "templates"
+   ],
+   "first_seen": "2025-01",
+   "maturity": "emerging",
+   "version": 1,
+   "updated_at": "2026-07-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Google Maps 4-star shops with unanswered reviews",
+      "Nextdoor neighbourhood posts",
+      "Thumbtack local leads"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Google Maps high-street shops",
+      "Facebook local community groups",
+      "Nextdoor UK street posts"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Google Maps suburban strip shops",
+      "Nextdoor Australia neighbourhood posts",
+      "Local Facebook community groups"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "Facebook neighbourhood groups for HDB estates",
+      "WhatsApp business contact lists",
+      "Google Maps shop clusters in heartland malls"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Facebook Marketplace local groups",
+      "Barangay community referrals",
+      "Google Maps shops along main roads"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-b2b-quote-templates-206",
+   "title": "Quote and proposal templates for trades",
+   "one_liner": "Tradespeople pay once for a professional quote template pack they can fill on their phone in five minutes.",
+   "min_capital": 8185,
+   "capital_tier": "2k-10k",
+   "hours_per_week": "10-25",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU",
+    "SG"
+   ],
+   "online_or_offline": "online",
+   "legal_blocks": [],
+   "skills_needed": [
+    "writing",
+    "design"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "low",
+   "payback_days": 21,
+   "recurring": false,
+   "channel_ids": [
+    "referral",
+    "facebook",
+    "walk-in",
+    "local-groups"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Template design tool subscription",
+     "amount": 3274
+    },
+    {
+     "item": "Trade fair booth share",
+     "amount": 2456
+    },
+    {
+     "item": "Printed samples and mockups",
+     "amount": 2455
+    }
+   ],
+   "steps": [
+    "Interview 10 trades about their quotes",
+    "Build one fill-on-phone template",
+    "Give it free to one plumber for feedback",
+    "Offer $149 with 2 revisions in trade Facebook groups",
+    "Record a 3-minute how-to video",
+    "Deliver editable files plus PDF",
+    "Offer trade-specific variants as upsells"
+   ],
+   "pricing_hint": "$149 with 2 revisions",
+   "first_customers": [
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews"
+   ],
+   "pitfalls": [
+    "Use their real job names in samples",
+    "Keep fields printable on A4",
+    "Never copy another company's template"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "digital-product",
+   "trend_tags": [
+    "b2b",
+    "templates"
+   ],
+   "first_seen": "2024-02",
+   "maturity": "mature",
+   "version": 1,
+   "updated_at": "2026-08-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Nextdoor neighbourhood posts",
+      "Thumbtack local leads",
+      "Chamber of commerce newsletter"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Facebook local community groups",
+      "Nextdoor UK street posts",
+      "Local parish newsletter ads"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Nextdoor Canada community posts",
+      "Local Facebook buy-and-sell groups",
+      "Chamber of commerce directory"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Nextdoor Australia neighbourhood posts",
+      "Local Facebook community groups",
+      "Council newsletter sponsorships"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "WhatsApp business contact lists",
+      "Google Maps shop clusters in heartland malls",
+      "Facebook neighbourhood groups for HDB estates"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-b2b-quote-templates-207",
+   "title": "Quote and proposal templates for trades",
+   "one_liner": "Tradespeople pay once for a professional quote template pack they can fill on their phone in five minutes.",
+   "min_capital": 8280,
+   "capital_tier": "2k-10k",
+   "hours_per_week": "<10",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU",
+    "SG",
+    "PH"
+   ],
+   "online_or_offline": "online",
+   "legal_blocks": [],
+   "skills_needed": [
+    "writing",
+    "design"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "low",
+   "payback_days": 30,
+   "recurring": false,
+   "channel_ids": [
+    "referral",
+    "facebook",
+    "walk-in",
+    "local-groups"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Template design tool subscription",
+     "amount": 3312
+    },
+    {
+     "item": "Trade fair booth share",
+     "amount": 2484
+    },
+    {
+     "item": "Printed samples and mockups",
+     "amount": 2484
+    }
+   ],
+   "steps": [
+    "Interview 15 trades about their quotes",
+    "Build one fill-on-phone template",
+    "Give it free to one plumber for feedback",
+    "Offer $25 per extra trade variant in trade Facebook groups",
+    "Record a 3-minute how-to video",
+    "Deliver editable files plus PDF",
+    "Offer trade-specific variants as upsells"
+   ],
+   "pricing_hint": "$25 per extra trade variant",
+   "first_customers": [
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts"
+   ],
+   "pitfalls": [
+    "Use their real job names in samples",
+    "Keep fields printable on A4",
+    "Never copy another company's template"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "digital-product",
+   "trend_tags": [
+    "b2b",
+    "templates"
+   ],
+   "first_seen": "2024-03",
+   "maturity": "growing",
+   "version": 1,
+   "updated_at": "2026-09-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Thumbtack local leads",
+      "Chamber of commerce newsletter",
+      "Google Maps 4-star shops with unanswered reviews"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Nextdoor UK street posts",
+      "Local parish newsletter ads",
+      "Google Maps high-street shops"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Local Facebook buy-and-sell groups",
+      "Chamber of commerce directory",
+      "Google Maps shops on main streets"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Local Facebook community groups",
+      "Council newsletter sponsorships",
+      "Google Maps suburban strip shops"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "Google Maps shop clusters in heartland malls",
+      "Facebook neighbourhood groups for HDB estates",
+      "WhatsApp business contact lists"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Google Maps shops along main roads",
+      "Viber neighbourhood groups",
+      "Facebook Marketplace local groups"
+     ]
+    }
+   }
+  }
+ ]
+}

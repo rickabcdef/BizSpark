@@ -1,0 +1,1478 @@
+{
+ "industry": "transcription-local",
+ "count": 12,
+ "ideas": [
+  {
+   "id": "bs-onl-transcription-local-139",
+   "title": "Meeting and podcast transcription (market)",
+   "one_liner": "Local podcasters and small firms pay per audio hour for clean, timestamped meeting and show transcripts.",
+   "min_capital": 1485,
+   "capital_tier": "500-2k",
+   "hours_per_week": "<10",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU",
+    "PH"
+   ],
+   "online_or_offline": "hybrid",
+   "legal_blocks": [],
+   "skills_needed": [
+    "writing",
+    "basic_english"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "low",
+   "payback_days": 14,
+   "recurring": true,
+   "channel_ids": [
+    "facebook",
+    "referral",
+    "local-groups",
+    "google-maps"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Transcription tool subscription",
+     "amount": 668
+    },
+    {
+     "item": "Foot pedal and headphones",
+     "amount": 446
+    },
+    {
+     "item": "Sample work distribution ads",
+     "amount": 371
+    }
+   ],
+   "steps": [
+    "Transcribe one public podcast episode",
+    "Send it free to that show's host",
+    "Message 5 local podcasts and agencies",
+    "Offer $25 per audio hour for the first episode",
+    "Deliver timestamps and speaker labels",
+    "Offer monthly bundles to regulars",
+    "Ask hosts for a show-notes credit"
+   ],
+   "pricing_hint": "$25 per audio hour",
+   "first_customers": [
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts"
+   ],
+   "pitfalls": [
+    "Charge per audio minute, not wall clock",
+    "Check names and jargon twice",
+    "Delete client audio after delivery"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "mobile-internet",
+   "trend_tags": [
+    "audio",
+    "remote"
+   ],
+   "first_seen": "2025-07",
+   "maturity": "growing",
+   "version": 1,
+   "updated_at": "2026-07-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Thumbtack local leads",
+      "Chamber of commerce newsletter",
+      "Google Maps 4-star shops with unanswered reviews"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Nextdoor UK street posts",
+      "Local parish newsletter ads",
+      "Google Maps high-street shops"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Local Facebook buy-and-sell groups",
+      "Chamber of commerce directory",
+      "Google Maps shops on main streets"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Local Facebook community groups",
+      "Council newsletter sponsorships",
+      "Google Maps suburban strip shops"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Google Maps shops along main roads",
+      "Viber neighbourhood groups",
+      "Facebook Marketplace local groups"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-onl-transcription-local-140",
+   "title": "Meeting and podcast transcription(lakeside)",
+   "one_liner": "Local podcasters and small firms pay per audio hour for clean, timestamped meeting and show transcripts.",
+   "min_capital": 465,
+   "capital_tier": "<500",
+   "hours_per_week": "<10",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU",
+    "SG",
+    "PH"
+   ],
+   "online_or_offline": "online",
+   "legal_blocks": [],
+   "skills_needed": [
+    "writing",
+    "basic_english"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "low",
+   "payback_days": 21,
+   "recurring": true,
+   "channel_ids": [
+    "facebook",
+    "referral",
+    "local-groups",
+    "google-maps"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Transcription tool subscription",
+     "amount": 209
+    },
+    {
+     "item": "Foot pedal and headphones",
+     "amount": 140
+    },
+    {
+     "item": "Sample work distribution ads",
+     "amount": 116
+    }
+   ],
+   "steps": [
+    "Transcribe one public podcast episode",
+    "Send it free to that show's host",
+    "Message 10 local podcasts and agencies",
+    "Offer $80 four-episode bundle for the first episode",
+    "Deliver timestamps and speaker labels",
+    "Offer monthly bundles to regulars",
+    "Ask hosts for a show-notes credit"
+   ],
+   "pricing_hint": "$80 four-episode bundle",
+   "first_customers": [
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads"
+   ],
+   "pitfalls": [
+    "Charge per audio minute, not wall clock",
+    "Check names and jargon twice",
+    "Delete client audio after delivery"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "mobile-internet",
+   "trend_tags": [
+    "audio",
+    "remote"
+   ],
+   "first_seen": "2024-08",
+   "maturity": "growing",
+   "version": 1,
+   "updated_at": "2026-08-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Chamber of commerce newsletter",
+      "Google Maps 4-star shops with unanswered reviews",
+      "Nextdoor neighbourhood posts"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Local parish newsletter ads",
+      "Google Maps high-street shops",
+      "Facebook local community groups"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Chamber of commerce directory",
+      "Google Maps shops on main streets",
+      "Nextdoor Canada community posts"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Council newsletter sponsorships",
+      "Google Maps suburban strip shops",
+      "Nextdoor Australia neighbourhood posts"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "WhatsApp business contact lists",
+      "Google Maps shop clusters in heartland malls",
+      "Facebook neighbourhood groups for HDB estates"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Viber neighbourhood groups",
+      "Facebook Marketplace local groups",
+      "Barangay community referrals"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-onl-transcription-local-141",
+   "title": "Meeting and podcast transcription",
+   "one_liner": "Local podcasters and small firms pay per audio hour for clean, timestamped meeting and show transcripts.",
+   "min_capital": 8780,
+   "capital_tier": "2k-10k",
+   "hours_per_week": "<10",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "SG",
+    "PH"
+   ],
+   "online_or_offline": "online",
+   "legal_blocks": [],
+   "skills_needed": [
+    "writing",
+    "basic_english"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "low",
+   "payback_days": 30,
+   "recurring": true,
+   "channel_ids": [
+    "facebook",
+    "referral",
+    "local-groups",
+    "google-maps"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Transcription tool subscription",
+     "amount": 3951
+    },
+    {
+     "item": "Foot pedal and headphones",
+     "amount": 2634
+    },
+    {
+     "item": "Sample work distribution ads",
+     "amount": 2195
+    }
+   ],
+   "steps": [
+    "Transcribe one public podcast episode",
+    "Send it free to that show's host",
+    "Message 15 local podcasts and agencies",
+    "Offer $18/hour raw, $30 cleaned for the first episode",
+    "Deliver timestamps and speaker labels",
+    "Offer monthly bundles to regulars",
+    "Ask hosts for a show-notes credit"
+   ],
+   "pricing_hint": "$18/hour raw, $30 cleaned",
+   "first_customers": [
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter"
+   ],
+   "pitfalls": [
+    "Charge per audio minute, not wall clock",
+    "Check names and jargon twice",
+    "Delete client audio after delivery"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "mobile-internet",
+   "trend_tags": [
+    "audio",
+    "remote"
+   ],
+   "first_seen": "2024-09",
+   "maturity": "growing",
+   "version": 1,
+   "updated_at": "2026-09-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Google Maps 4-star shops with unanswered reviews",
+      "Nextdoor neighbourhood posts",
+      "Thumbtack local leads"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Google Maps high-street shops",
+      "Facebook local community groups",
+      "Nextdoor UK street posts"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Google Maps shops on main streets",
+      "Nextdoor Canada community posts",
+      "Local Facebook buy-and-sell groups"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "Google Maps shop clusters in heartland malls",
+      "Facebook neighbourhood groups for HDB estates",
+      "WhatsApp business contact lists"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Facebook Marketplace local groups",
+      "Barangay community referrals",
+      "Google Maps shops along main roads"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-onl-transcription-local-142",
+   "title": "Meeting and podcast transcription (north)",
+   "one_liner": "Local podcasters and small firms pay per audio hour for clean, timestamped meeting and show transcripts.",
+   "min_capital": 205,
+   "capital_tier": "<500",
+   "hours_per_week": "<10",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU"
+   ],
+   "online_or_offline": "online",
+   "legal_blocks": [],
+   "skills_needed": [
+    "writing",
+    "basic_english"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "low",
+   "payback_days": 14,
+   "recurring": true,
+   "channel_ids": [
+    "facebook",
+    "referral",
+    "local-groups",
+    "google-maps"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Transcription tool subscription",
+     "amount": 92
+    },
+    {
+     "item": "Foot pedal and headphones",
+     "amount": 62
+    },
+    {
+     "item": "Sample work distribution ads",
+     "amount": 51
+    }
+   ],
+   "steps": [
+    "Transcribe one public podcast episode",
+    "Send it free to that show's host",
+    "Message 20 local podcasts and agencies",
+    "Offer $25 per audio hour for the first episode",
+    "Deliver timestamps and speaker labels",
+    "Offer monthly bundles to regulars",
+    "Ask hosts for a show-notes credit"
+   ],
+   "pricing_hint": "$25 per audio hour",
+   "first_customers": [
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews"
+   ],
+   "pitfalls": [
+    "Charge per audio minute, not wall clock",
+    "Check names and jargon twice",
+    "Delete client audio after delivery"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "mobile-internet",
+   "trend_tags": [
+    "audio",
+    "remote"
+   ],
+   "first_seen": "2025-10",
+   "maturity": "saturated",
+   "version": 1,
+   "updated_at": "2026-10-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Nextdoor neighbourhood posts",
+      "Thumbtack local leads",
+      "Chamber of commerce newsletter"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Facebook local community groups",
+      "Nextdoor UK street posts",
+      "Local parish newsletter ads"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Nextdoor Canada community posts",
+      "Local Facebook buy-and-sell groups",
+      "Chamber of commerce directory"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Nextdoor Australia neighbourhood posts",
+      "Local Facebook community groups",
+      "Council newsletter sponsorships"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-onl-transcription-local-143",
+   "title": "Meeting and podcast transcription (east)",
+   "one_liner": "Local podcasters and small firms pay per audio hour for clean, timestamped meeting and show transcripts.",
+   "min_capital": 1875,
+   "capital_tier": "500-2k",
+   "hours_per_week": "10-25",
+   "countries": [
+    "US",
+    "SG"
+   ],
+   "online_or_offline": "online",
+   "legal_blocks": [],
+   "skills_needed": [
+    "writing",
+    "basic_english"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "low",
+   "payback_days": 21,
+   "recurring": true,
+   "channel_ids": [
+    "facebook",
+    "referral",
+    "local-groups",
+    "google-maps"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Transcription tool subscription",
+     "amount": 844
+    },
+    {
+     "item": "Foot pedal and headphones",
+     "amount": 562
+    },
+    {
+     "item": "Sample work distribution ads",
+     "amount": 469
+    }
+   ],
+   "steps": [
+    "Transcribe one public podcast episode",
+    "Send it free to that show's host",
+    "Message 25 local podcasts and agencies",
+    "Offer $80 four-episode bundle for the first episode",
+    "Deliver timestamps and speaker labels",
+    "Offer monthly bundles to regulars",
+    "Ask hosts for a show-notes credit"
+   ],
+   "pricing_hint": "$80 four-episode bundle",
+   "first_customers": [
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts"
+   ],
+   "pitfalls": [
+    "Charge per audio minute, not wall clock",
+    "Check names and jargon twice",
+    "Delete client audio after delivery"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "mobile-internet",
+   "trend_tags": [
+    "audio",
+    "remote"
+   ],
+   "first_seen": "2024-11",
+   "maturity": "mature",
+   "version": 1,
+   "updated_at": "2026-11-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Thumbtack local leads",
+      "Chamber of commerce newsletter",
+      "Google Maps 4-star shops with unanswered reviews"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "WhatsApp business contact lists",
+      "Google Maps shop clusters in heartland malls",
+      "Facebook neighbourhood groups for HDB estates"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-onl-transcription-local-144",
+   "title": "Meeting and podcast transcription (riverside)",
+   "one_liner": "Local podcasters and small firms pay per audio hour for clean, timestamped meeting and show transcripts.",
+   "min_capital": 2170,
+   "capital_tier": "2k-10k",
+   "hours_per_week": "10-25",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU",
+    "SG"
+   ],
+   "online_or_offline": "online",
+   "legal_blocks": [],
+   "skills_needed": [
+    "writing",
+    "basic_english"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "low",
+   "payback_days": 30,
+   "recurring": true,
+   "channel_ids": [
+    "facebook",
+    "referral",
+    "local-groups",
+    "google-maps"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Transcription tool subscription",
+     "amount": 976
+    },
+    {
+     "item": "Foot pedal and headphones",
+     "amount": 651
+    },
+    {
+     "item": "Sample work distribution ads",
+     "amount": 543
+    }
+   ],
+   "steps": [
+    "Transcribe one public podcast episode",
+    "Send it free to that show's host",
+    "Message 30 local podcasts and agencies",
+    "Offer $18/hour raw, $30 cleaned for the first episode",
+    "Deliver timestamps and speaker labels",
+    "Offer monthly bundles to regulars",
+    "Ask hosts for a show-notes credit"
+   ],
+   "pricing_hint": "$18/hour raw, $30 cleaned",
+   "first_customers": [
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads"
+   ],
+   "pitfalls": [
+    "Charge per audio minute, not wall clock",
+    "Check names and jargon twice",
+    "Delete client audio after delivery"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "mobile-internet",
+   "trend_tags": [
+    "audio",
+    "remote"
+   ],
+   "first_seen": "2024-12",
+   "maturity": "mature",
+   "version": 1,
+   "updated_at": "2026-01-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Chamber of commerce newsletter",
+      "Google Maps 4-star shops with unanswered reviews",
+      "Nextdoor neighbourhood posts"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Local parish newsletter ads",
+      "Google Maps high-street shops",
+      "Facebook local community groups"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Chamber of commerce directory",
+      "Google Maps shops on main streets",
+      "Nextdoor Canada community posts"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Council newsletter sponsorships",
+      "Google Maps suburban strip shops",
+      "Nextdoor Australia neighbourhood posts"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "Google Maps shop clusters in heartland malls",
+      "Facebook neighbourhood groups for HDB estates",
+      "WhatsApp business contact lists"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-onl-transcription-local-145",
+   "title": "Meeting and podcast transcription (old town)",
+   "one_liner": "Local podcasters and small firms pay per audio hour for clean, timestamped meeting and show transcripts.",
+   "min_capital": 690,
+   "capital_tier": "500-2k",
+   "hours_per_week": "<10",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU"
+   ],
+   "online_or_offline": "online",
+   "legal_blocks": [],
+   "skills_needed": [
+    "writing",
+    "basic_english"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "low",
+   "payback_days": 14,
+   "recurring": true,
+   "channel_ids": [
+    "facebook",
+    "referral",
+    "local-groups",
+    "google-maps"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Transcription tool subscription",
+     "amount": 310
+    },
+    {
+     "item": "Foot pedal and headphones",
+     "amount": 207
+    },
+    {
+     "item": "Sample work distribution ads",
+     "amount": 173
+    }
+   ],
+   "steps": [
+    "Transcribe one public podcast episode",
+    "Send it free to that show's host",
+    "Message 5 local podcasts and agencies",
+    "Offer $25 per audio hour for the first episode",
+    "Deliver timestamps and speaker labels",
+    "Offer monthly bundles to regulars",
+    "Ask hosts for a show-notes credit"
+   ],
+   "pricing_hint": "$25 per audio hour",
+   "first_customers": [
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter"
+   ],
+   "pitfalls": [
+    "Charge per audio minute, not wall clock",
+    "Check names and jargon twice",
+    "Delete client audio after delivery"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "mobile-internet",
+   "trend_tags": [
+    "audio",
+    "remote"
+   ],
+   "first_seen": "2025-01",
+   "maturity": "growing",
+   "version": 1,
+   "updated_at": "2026-02-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Google Maps 4-star shops with unanswered reviews",
+      "Nextdoor neighbourhood posts",
+      "Thumbtack local leads"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Google Maps high-street shops",
+      "Facebook local community groups",
+      "Nextdoor UK street posts"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Google Maps shops on main streets",
+      "Nextdoor Canada community posts",
+      "Local Facebook buy-and-sell groups"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Google Maps suburban strip shops",
+      "Nextdoor Australia neighbourhood posts",
+      "Local Facebook community groups"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-onl-transcription-local-146",
+   "title": "Meeting and podcast transcription (hillside)",
+   "one_liner": "Local podcasters and small firms pay per audio hour for clean, timestamped meeting and show transcripts.",
+   "min_capital": 145,
+   "capital_tier": "<500",
+   "hours_per_week": "10-25",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "SG",
+    "PH"
+   ],
+   "online_or_offline": "online",
+   "legal_blocks": [],
+   "skills_needed": [
+    "writing",
+    "basic_english"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "low",
+   "payback_days": 21,
+   "recurring": true,
+   "channel_ids": [
+    "facebook",
+    "referral",
+    "local-groups",
+    "google-maps"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Transcription tool subscription",
+     "amount": 65
+    },
+    {
+     "item": "Foot pedal and headphones",
+     "amount": 44
+    },
+    {
+     "item": "Sample work distribution ads",
+     "amount": 36
+    }
+   ],
+   "steps": [
+    "Transcribe one public podcast episode",
+    "Send it free to that show's host",
+    "Message 10 local podcasts and agencies",
+    "Offer $80 four-episode bundle for the first episode",
+    "Deliver timestamps and speaker labels",
+    "Offer monthly bundles to regulars",
+    "Ask hosts for a show-notes credit"
+   ],
+   "pricing_hint": "$80 four-episode bundle",
+   "first_customers": [
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews"
+   ],
+   "pitfalls": [
+    "Charge per audio minute, not wall clock",
+    "Check names and jargon twice",
+    "Delete client audio after delivery"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "mobile-internet",
+   "trend_tags": [
+    "audio",
+    "remote"
+   ],
+   "first_seen": "2024-02",
+   "maturity": "mature",
+   "version": 1,
+   "updated_at": "2026-03-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Nextdoor neighbourhood posts",
+      "Thumbtack local leads",
+      "Chamber of commerce newsletter"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Facebook local community groups",
+      "Nextdoor UK street posts",
+      "Local parish newsletter ads"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Nextdoor Canada community posts",
+      "Local Facebook buy-and-sell groups",
+      "Chamber of commerce directory"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "WhatsApp business contact lists",
+      "Google Maps shop clusters in heartland malls",
+      "Facebook neighbourhood groups for HDB estates"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Barangay community referrals",
+      "Google Maps shops along main roads",
+      "Viber neighbourhood groups"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-onl-transcription-local-147",
+   "title": "Meeting and podcast transcription (central)",
+   "one_liner": "Local podcasters and small firms pay per audio hour for clean, timestamped meeting and show transcripts.",
+   "min_capital": 880,
+   "capital_tier": "500-2k",
+   "hours_per_week": "<10",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU",
+    "SG",
+    "PH"
+   ],
+   "online_or_offline": "online",
+   "legal_blocks": [],
+   "skills_needed": [
+    "writing",
+    "basic_english"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "low",
+   "payback_days": 30,
+   "recurring": true,
+   "channel_ids": [
+    "facebook",
+    "referral",
+    "local-groups",
+    "google-maps"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Transcription tool subscription",
+     "amount": 396
+    },
+    {
+     "item": "Foot pedal and headphones",
+     "amount": 264
+    },
+    {
+     "item": "Sample work distribution ads",
+     "amount": 220
+    }
+   ],
+   "steps": [
+    "Transcribe one public podcast episode",
+    "Send it free to that show's host",
+    "Message 15 local podcasts and agencies",
+    "Offer $18/hour raw, $30 cleaned for the first episode",
+    "Deliver timestamps and speaker labels",
+    "Offer monthly bundles to regulars",
+    "Ask hosts for a show-notes credit"
+   ],
+   "pricing_hint": "$18/hour raw, $30 cleaned",
+   "first_customers": [
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts"
+   ],
+   "pitfalls": [
+    "Charge per audio minute, not wall clock",
+    "Check names and jargon twice",
+    "Delete client audio after delivery"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "mobile-internet",
+   "trend_tags": [
+    "audio",
+    "remote"
+   ],
+   "first_seen": "2024-03",
+   "maturity": "emerging",
+   "version": 1,
+   "updated_at": "2026-04-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Thumbtack local leads",
+      "Chamber of commerce newsletter",
+      "Google Maps 4-star shops with unanswered reviews"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Nextdoor UK street posts",
+      "Local parish newsletter ads",
+      "Google Maps high-street shops"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Local Facebook buy-and-sell groups",
+      "Chamber of commerce directory",
+      "Google Maps shops on main streets"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Local Facebook community groups",
+      "Council newsletter sponsorships",
+      "Google Maps suburban strip shops"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "Google Maps shop clusters in heartland malls",
+      "Facebook neighbourhood groups for HDB estates",
+      "WhatsApp business contact lists"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Google Maps shops along main roads",
+      "Viber neighbourhood groups",
+      "Facebook Marketplace local groups"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-onl-transcription-local-148",
+   "title": "Meeting and podcast transcription (bayside)",
+   "one_liner": "Local podcasters and small firms pay per audio hour for clean, timestamped meeting and show transcripts.",
+   "min_capital": 980,
+   "capital_tier": "500-2k",
+   "hours_per_week": "<10",
+   "countries": [
+    "US",
+    "UK",
+    "CA"
+   ],
+   "online_or_offline": "online",
+   "legal_blocks": [],
+   "skills_needed": [
+    "writing",
+    "basic_english"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "low",
+   "payback_days": 14,
+   "recurring": true,
+   "channel_ids": [
+    "facebook",
+    "referral",
+    "local-groups",
+    "google-maps"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Transcription tool subscription",
+     "amount": 441
+    },
+    {
+     "item": "Foot pedal and headphones",
+     "amount": 294
+    },
+    {
+     "item": "Sample work distribution ads",
+     "amount": 245
+    }
+   ],
+   "steps": [
+    "Transcribe one public podcast episode",
+    "Send it free to that show's host",
+    "Message 20 local podcasts and agencies",
+    "Offer $25 per audio hour for the first episode",
+    "Deliver timestamps and speaker labels",
+    "Offer monthly bundles to regulars",
+    "Ask hosts for a show-notes credit"
+   ],
+   "pricing_hint": "$25 per audio hour",
+   "first_customers": [
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads"
+   ],
+   "pitfalls": [
+    "Charge per audio minute, not wall clock",
+    "Check names and jargon twice",
+    "Delete client audio after delivery"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "mobile-internet",
+   "trend_tags": [
+    "audio",
+    "remote"
+   ],
+   "first_seen": "2025-04",
+   "maturity": "mature",
+   "version": 1,
+   "updated_at": "2026-05-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Chamber of commerce newsletter",
+      "Google Maps 4-star shops with unanswered reviews",
+      "Nextdoor neighbourhood posts"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Local parish newsletter ads",
+      "Google Maps high-street shops",
+      "Facebook local community groups"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Chamber of commerce directory",
+      "Google Maps shops on main streets",
+      "Nextdoor Canada community posts"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-onl-transcription-local-149",
+   "title": "Meeting and podcast transcription (market)",
+   "one_liner": "Local podcasters and small firms pay per audio hour for clean, timestamped meeting and show transcripts.",
+   "min_capital": 435,
+   "capital_tier": "<500",
+   "hours_per_week": "10-25",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU",
+    "SG",
+    "PH"
+   ],
+   "online_or_offline": "hybrid",
+   "legal_blocks": [],
+   "skills_needed": [
+    "writing",
+    "basic_english"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "low",
+   "payback_days": 21,
+   "recurring": true,
+   "channel_ids": [
+    "facebook",
+    "referral",
+    "local-groups",
+    "google-maps"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Transcription tool subscription",
+     "amount": 196
+    },
+    {
+     "item": "Foot pedal and headphones",
+     "amount": 130
+    },
+    {
+     "item": "Sample work distribution ads",
+     "amount": 109
+    }
+   ],
+   "steps": [
+    "Transcribe one public podcast episode",
+    "Send it free to that show's host",
+    "Message 25 local podcasts and agencies",
+    "Offer $80 four-episode bundle for the first episode",
+    "Deliver timestamps and speaker labels",
+    "Offer monthly bundles to regulars",
+    "Ask hosts for a show-notes credit"
+   ],
+   "pricing_hint": "$80 four-episode bundle",
+   "first_customers": [
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter"
+   ],
+   "pitfalls": [
+    "Charge per audio minute, not wall clock",
+    "Check names and jargon twice",
+    "Delete client audio after delivery"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "mobile-internet",
+   "trend_tags": [
+    "audio",
+    "remote"
+   ],
+   "first_seen": "2024-05",
+   "maturity": "growing",
+   "version": 1,
+   "updated_at": "2026-06-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Google Maps 4-star shops with unanswered reviews",
+      "Nextdoor neighbourhood posts",
+      "Thumbtack local leads"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Google Maps high-street shops",
+      "Facebook local community groups",
+      "Nextdoor UK street posts"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Google Maps shops on main streets",
+      "Nextdoor Canada community posts",
+      "Local Facebook buy-and-sell groups"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Google Maps suburban strip shops",
+      "Nextdoor Australia neighbourhood posts",
+      "Local Facebook community groups"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "WhatsApp business contact lists",
+      "Google Maps shop clusters in heartland malls",
+      "Facebook neighbourhood groups for HDB estates"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Facebook Marketplace local groups",
+      "Barangay community referrals",
+      "Google Maps shops along main roads"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-onl-transcription-local-150",
+   "title": "Meeting and podcast transcription(lakeside)",
+   "one_liner": "Local podcasters and small firms pay per audio hour for clean, timestamped meeting and show transcripts.",
+   "min_capital": 85,
+   "capital_tier": "<500",
+   "hours_per_week": "full",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU",
+    "SG"
+   ],
+   "online_or_offline": "online",
+   "legal_blocks": [],
+   "skills_needed": [
+    "writing",
+    "basic_english"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "low",
+   "payback_days": 30,
+   "recurring": true,
+   "channel_ids": [
+    "facebook",
+    "referral",
+    "local-groups",
+    "google-maps"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Transcription tool subscription",
+     "amount": 38
+    },
+    {
+     "item": "Foot pedal and headphones",
+     "amount": 26
+    },
+    {
+     "item": "Sample work distribution ads",
+     "amount": 21
+    }
+   ],
+   "steps": [
+    "Transcribe one public podcast episode",
+    "Send it free to that show's host",
+    "Message 30 local podcasts and agencies",
+    "Offer $18/hour raw, $30 cleaned for the first episode",
+    "Deliver timestamps and speaker labels",
+    "Offer monthly bundles to regulars",
+    "Ask hosts for a show-notes credit"
+   ],
+   "pricing_hint": "$18/hour raw, $30 cleaned",
+   "first_customers": [
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews"
+   ],
+   "pitfalls": [
+    "Charge per audio minute, not wall clock",
+    "Check names and jargon twice",
+    "Delete client audio after delivery"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "mobile-internet",
+   "trend_tags": [
+    "audio",
+    "remote"
+   ],
+   "first_seen": "2024-06",
+   "maturity": "emerging",
+   "version": 1,
+   "updated_at": "2026-07-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Nextdoor neighbourhood posts",
+      "Thumbtack local leads",
+      "Chamber of commerce newsletter"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Facebook local community groups",
+      "Nextdoor UK street posts",
+      "Local parish newsletter ads"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Nextdoor Canada community posts",
+      "Local Facebook buy-and-sell groups",
+      "Chamber of commerce directory"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Nextdoor Australia neighbourhood posts",
+      "Local Facebook community groups",
+      "Council newsletter sponsorships"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "Google Maps shop clusters in heartland malls",
+      "Facebook neighbourhood groups for HDB estates",
+      "WhatsApp business contact lists"
+     ]
+    }
+   }
+  }
+ ]
+}

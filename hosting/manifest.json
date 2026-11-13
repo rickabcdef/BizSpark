@@ -1,1 +1,9 @@
-{}
+{
+ "latest": "2026-12",
+ "files": [
+  "delta_2026-12.json"
+ ],
+ "size_kb": 52,
+ "min_client": "1.0.0",
+ "published_at": "2026-12-01"
+}

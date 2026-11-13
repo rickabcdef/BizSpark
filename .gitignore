@@ -6,3 +6,8 @@ node_modules/
 __pycache__/
 .env
 dist/
+
+# D: 发布 staging 产物不入库
+hosting/out/
+hosting/_adds_*.json
+hosting/_revises_*.json

@@ -1,0 +1,33 @@
+# D-02：V-01…V-12 校验（CI 必跑，失败阻断构建）
+# 位置说明：.github/workflows 属 A 的目录，本文件为 D 新增（不修改 A 的任何文件）；
+# 若与 A 的 CI 骨架冲突，以 A 的 W1 CI 骨架合并时协调（contract PR）。
+name: validate-library
+
+on:
+  push:
+    paths:
+      - "apps/core/data/**"
+      - "content/**"
+      - "hosting/**"
+      - "apps/web/src/locales/**"
+      - "apps/core/library/**"
+  pull_request:
+    paths:
+      - "apps/core/data/**"
+      - "content/**"
+      - "hosting/**"
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Run V-01…V-12 validation
+        run: python apps/core/library/validate.py
+      - name: Run engine unit tests (C-11)
+        run: |
+          cd apps/core
+          python -m unittest discover tests

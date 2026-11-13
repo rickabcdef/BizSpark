@@ -1,0 +1,1364 @@
+{
+ "industry": "inbox-tidy",
+ "count": 11,
+ "ideas": [
+  {
+   "id": "bs-b2b-inbox-tidy-208",
+   "title": "Inbox triage for owner-led businesses (bayside)",
+   "one_liner": "Owner-led businesses pay monthly to have inboxes triaged to three folders with a daily action list.",
+   "min_capital": 15580,
+   "capital_tier": "10k+",
+   "hours_per_week": "full",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU",
+    "SG"
+   ],
+   "online_or_offline": "online",
+   "legal_blocks": [
+    "SG"
+   ],
+   "skills_needed": [
+    "writing",
+    "basic_english"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "medium",
+   "payback_days": 21,
+   "recurring": true,
+   "channel_ids": [
+    "chamber",
+    "referral",
+    "facebook",
+    "local-groups"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Email tool subscriptions",
+     "amount": 5453
+    },
+    {
+     "item": "SOP documentation design",
+     "amount": 3895
+    },
+    {
+     "item": "Security audit by a professional",
+     "amount": 6232
+    }
+   ],
+   "steps": [
+    "Triage a friend's inbox free for 3 days",
+    "Write your 4-folder triage SOP",
+    "Offer $190/month, one inbox to chamber members",
+    "Get read-only or delegated access",
+    "Deliver a daily 10-item action list",
+    "Flag money and legal mails within the hour",
+    "Report weekly response-time stats"
+   ],
+   "pricing_hint": "$190/month, one inbox",
+   "first_customers": [
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads"
+   ],
+   "pitfalls": [
+    "Never reply as the owner without approval",
+    "Use 2FA and a password manager",
+    "Keep a written confidentiality agreement"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "digital-product",
+   "trend_tags": [
+    "b2b",
+    "productivity"
+   ],
+   "first_seen": "2025-04",
+   "maturity": "mature",
+   "version": 1,
+   "updated_at": "2026-10-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Chamber of commerce newsletter",
+      "Google Maps 4-star shops with unanswered reviews",
+      "Nextdoor neighbourhood posts"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Local parish newsletter ads",
+      "Google Maps high-street shops",
+      "Facebook local community groups"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Chamber of commerce directory",
+      "Google Maps shops on main streets",
+      "Nextdoor Canada community posts"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Council newsletter sponsorships",
+      "Google Maps suburban strip shops",
+      "Nextdoor Australia neighbourhood posts"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "Facebook neighbourhood groups for HDB estates",
+      "WhatsApp business contact lists",
+      "Google Maps shop clusters in heartland malls"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-b2b-inbox-tidy-209",
+   "title": "Inbox triage for owner-led businesses (market)",
+   "one_liner": "Owner-led businesses pay monthly to have inboxes triaged to three folders with a daily action list.",
+   "min_capital": 15675,
+   "capital_tier": "10k+",
+   "hours_per_week": "<10",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU",
+    "PH"
+   ],
+   "online_or_offline": "online",
+   "legal_blocks": [],
+   "skills_needed": [
+    "writing",
+    "basic_english"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "medium",
+   "payback_days": 30,
+   "recurring": true,
+   "channel_ids": [
+    "chamber",
+    "referral",
+    "facebook",
+    "local-groups"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Email tool subscriptions",
+     "amount": 5486
+    },
+    {
+     "item": "SOP documentation design",
+     "amount": 3919
+    },
+    {
+     "item": "Security audit by a professional",
+     "amount": 6270
+    }
+   ],
+   "steps": [
+    "Triage a friend's inbox free for 3 days",
+    "Write your 4-folder triage SOP",
+    "Offer $290/month inbox plus calendar to chamber members",
+    "Get read-only or delegated access",
+    "Deliver a daily 10-item action list",
+    "Flag money and legal mails within the hour",
+    "Report weekly response-time stats"
+   ],
+   "pricing_hint": "$290/month inbox plus calendar",
+   "first_customers": [
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter"
+   ],
+   "pitfalls": [
+    "Never reply as the owner without approval",
+    "Use 2FA and a password manager",
+    "Keep a written confidentiality agreement"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "digital-product",
+   "trend_tags": [
+    "b2b",
+    "productivity"
+   ],
+   "first_seen": "2024-05",
+   "maturity": "mature",
+   "version": 1,
+   "updated_at": "2026-11-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Google Maps 4-star shops with unanswered reviews",
+      "Nextdoor neighbourhood posts",
+      "Thumbtack local leads"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Google Maps high-street shops",
+      "Facebook local community groups",
+      "Nextdoor UK street posts"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Google Maps shops on main streets",
+      "Nextdoor Canada community posts",
+      "Local Facebook buy-and-sell groups"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Google Maps suburban strip shops",
+      "Nextdoor Australia neighbourhood posts",
+      "Local Facebook community groups"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Facebook Marketplace local groups",
+      "Barangay community referrals",
+      "Google Maps shops along main roads"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-b2b-inbox-tidy-210",
+   "title": "Inbox triage for owner-led businesses(lakeside)",
+   "one_liner": "Owner-led businesses pay monthly to have inboxes triaged to three folders with a daily action list.",
+   "min_capital": 55,
+   "capital_tier": "<500",
+   "hours_per_week": "10-25",
+   "countries": [
+    "US",
+    "UK",
+    "AU"
+   ],
+   "online_or_offline": "online",
+   "legal_blocks": [],
+   "skills_needed": [
+    "writing",
+    "basic_english"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "medium",
+   "payback_days": 45,
+   "recurring": true,
+   "channel_ids": [
+    "chamber",
+    "referral",
+    "facebook",
+    "local-groups"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Email tool subscriptions",
+     "amount": 19
+    },
+    {
+     "item": "SOP documentation design",
+     "amount": 14
+    },
+    {
+     "item": "Security audit by a professional",
+     "amount": 22
+    }
+   ],
+   "steps": [
+    "Triage a friend's inbox free for 3 days",
+    "Write your 4-folder triage SOP",
+    "Offer $45 emergency cleanup day to chamber members",
+    "Get read-only or delegated access",
+    "Deliver a daily 10-item action list",
+    "Flag money and legal mails within the hour",
+    "Report weekly response-time stats"
+   ],
+   "pricing_hint": "$45 emergency cleanup day",
+   "first_customers": [
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews"
+   ],
+   "pitfalls": [
+    "Never reply as the owner without approval",
+    "Use 2FA and a password manager",
+    "Keep a written confidentiality agreement"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "digital-product",
+   "trend_tags": [
+    "b2b",
+    "productivity"
+   ],
+   "first_seen": "2024-06",
+   "maturity": "mature",
+   "version": 1,
+   "updated_at": "2026-01-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Nextdoor neighbourhood posts",
+      "Thumbtack local leads",
+      "Chamber of commerce newsletter"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Facebook local community groups",
+      "Nextdoor UK street posts",
+      "Local parish newsletter ads"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Nextdoor Australia neighbourhood posts",
+      "Local Facebook community groups",
+      "Council newsletter sponsorships"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-b2b-inbox-tidy-211",
+   "title": "Inbox triage for owner-led businesses",
+   "one_liner": "Owner-led businesses pay monthly to have inboxes triaged to three folders with a daily action list.",
+   "min_capital": 1570,
+   "capital_tier": "500-2k",
+   "hours_per_week": "10-25",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU",
+    "SG",
+    "PH"
+   ],
+   "online_or_offline": "online",
+   "legal_blocks": [],
+   "skills_needed": [
+    "writing",
+    "basic_english"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "medium",
+   "payback_days": 21,
+   "recurring": true,
+   "channel_ids": [
+    "chamber",
+    "referral",
+    "facebook",
+    "local-groups"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Email tool subscriptions",
+     "amount": 550
+    },
+    {
+     "item": "SOP documentation design",
+     "amount": 392
+    },
+    {
+     "item": "Security audit by a professional",
+     "amount": 628
+    }
+   ],
+   "steps": [
+    "Triage a friend's inbox free for 3 days",
+    "Write your 4-folder triage SOP",
+    "Offer $190/month, one inbox to chamber members",
+    "Get read-only or delegated access",
+    "Deliver a daily 10-item action list",
+    "Flag money and legal mails within the hour",
+    "Report weekly response-time stats"
+   ],
+   "pricing_hint": "$190/month, one inbox",
+   "first_customers": [
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts"
+   ],
+   "pitfalls": [
+    "Never reply as the owner without approval",
+    "Use 2FA and a password manager",
+    "Keep a written confidentiality agreement"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "digital-product",
+   "trend_tags": [
+    "b2b",
+    "productivity"
+   ],
+   "first_seen": "2025-07",
+   "maturity": "growing",
+   "version": 1,
+   "updated_at": "2026-02-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Thumbtack local leads",
+      "Chamber of commerce newsletter",
+      "Google Maps 4-star shops with unanswered reviews"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Nextdoor UK street posts",
+      "Local parish newsletter ads",
+      "Google Maps high-street shops"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Local Facebook buy-and-sell groups",
+      "Chamber of commerce directory",
+      "Google Maps shops on main streets"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Local Facebook community groups",
+      "Council newsletter sponsorships",
+      "Google Maps suburban strip shops"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "Facebook neighbourhood groups for HDB estates",
+      "WhatsApp business contact lists",
+      "Google Maps shop clusters in heartland malls"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Google Maps shops along main roads",
+      "Viber neighbourhood groups",
+      "Facebook Marketplace local groups"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-b2b-inbox-tidy-212",
+   "title": "Inbox triage for owner-led businesses (north)",
+   "one_liner": "Owner-led businesses pay monthly to have inboxes triaged to three folders with a daily action list.",
+   "min_capital": 1665,
+   "capital_tier": "500-2k",
+   "hours_per_week": "<10",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU",
+    "SG",
+    "PH"
+   ],
+   "online_or_offline": "hybrid",
+   "legal_blocks": [],
+   "skills_needed": [
+    "writing",
+    "basic_english"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "medium",
+   "payback_days": 30,
+   "recurring": true,
+   "channel_ids": [
+    "chamber",
+    "referral",
+    "facebook",
+    "local-groups"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Email tool subscriptions",
+     "amount": 583
+    },
+    {
+     "item": "SOP documentation design",
+     "amount": 416
+    },
+    {
+     "item": "Security audit by a professional",
+     "amount": 666
+    }
+   ],
+   "steps": [
+    "Triage a friend's inbox free for 3 days",
+    "Write your 4-folder triage SOP",
+    "Offer $290/month inbox plus calendar to chamber members",
+    "Get read-only or delegated access",
+    "Deliver a daily 10-item action list",
+    "Flag money and legal mails within the hour",
+    "Report weekly response-time stats"
+   ],
+   "pricing_hint": "$290/month inbox plus calendar",
+   "first_customers": [
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads"
+   ],
+   "pitfalls": [
+    "Never reply as the owner without approval",
+    "Use 2FA and a password manager",
+    "Keep a written confidentiality agreement"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "digital-product",
+   "trend_tags": [
+    "b2b",
+    "productivity"
+   ],
+   "first_seen": "2024-08",
+   "maturity": "growing",
+   "version": 1,
+   "updated_at": "2026-03-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Chamber of commerce newsletter",
+      "Google Maps 4-star shops with unanswered reviews",
+      "Nextdoor neighbourhood posts"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Local parish newsletter ads",
+      "Google Maps high-street shops",
+      "Facebook local community groups"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Chamber of commerce directory",
+      "Google Maps shops on main streets",
+      "Nextdoor Canada community posts"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Council newsletter sponsorships",
+      "Google Maps suburban strip shops",
+      "Nextdoor Australia neighbourhood posts"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "WhatsApp business contact lists",
+      "Google Maps shop clusters in heartland malls",
+      "Facebook neighbourhood groups for HDB estates"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Viber neighbourhood groups",
+      "Facebook Marketplace local groups",
+      "Barangay community referrals"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-b2b-inbox-tidy-213",
+   "title": "Inbox triage for owner-led businesses (east)",
+   "one_liner": "Owner-led businesses pay monthly to have inboxes triaged to three folders with a daily action list.",
+   "min_capital": 1765,
+   "capital_tier": "500-2k",
+   "hours_per_week": "<10",
+   "countries": [
+    "US",
+    "CA",
+    "AU",
+    "SG",
+    "PH"
+   ],
+   "online_or_offline": "offline",
+   "legal_blocks": [],
+   "skills_needed": [
+    "writing",
+    "basic_english"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "medium",
+   "payback_days": 45,
+   "recurring": true,
+   "channel_ids": [
+    "chamber",
+    "referral",
+    "facebook",
+    "local-groups"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Email tool subscriptions",
+     "amount": 618
+    },
+    {
+     "item": "SOP documentation design",
+     "amount": 441
+    },
+    {
+     "item": "Security audit by a professional",
+     "amount": 706
+    }
+   ],
+   "steps": [
+    "Triage a friend's inbox free for 3 days",
+    "Write your 4-folder triage SOP",
+    "Offer $45 emergency cleanup day to chamber members",
+    "Get read-only or delegated access",
+    "Deliver a daily 10-item action list",
+    "Flag money and legal mails within the hour",
+    "Report weekly response-time stats"
+   ],
+   "pricing_hint": "$45 emergency cleanup day",
+   "first_customers": [
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter"
+   ],
+   "pitfalls": [
+    "Never reply as the owner without approval",
+    "Use 2FA and a password manager",
+    "Keep a written confidentiality agreement"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "digital-product",
+   "trend_tags": [
+    "b2b",
+    "productivity"
+   ],
+   "first_seen": "2024-09",
+   "maturity": "growing",
+   "version": 1,
+   "updated_at": "2026-04-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Google Maps 4-star shops with unanswered reviews",
+      "Nextdoor neighbourhood posts",
+      "Thumbtack local leads"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Google Maps shops on main streets",
+      "Nextdoor Canada community posts",
+      "Local Facebook buy-and-sell groups"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Google Maps suburban strip shops",
+      "Nextdoor Australia neighbourhood posts",
+      "Local Facebook community groups"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "Google Maps shop clusters in heartland malls",
+      "Facebook neighbourhood groups for HDB estates",
+      "WhatsApp business contact lists"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Facebook Marketplace local groups",
+      "Barangay community referrals",
+      "Google Maps shops along main roads"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-b2b-inbox-tidy-214",
+   "title": "Inbox triage for owner-led businesses",
+   "one_liner": "Owner-led businesses pay monthly to have inboxes triaged to three folders with a daily action list.",
+   "min_capital": 8960,
+   "capital_tier": "2k-10k",
+   "hours_per_week": "10-25",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU"
+   ],
+   "online_or_offline": "online",
+   "legal_blocks": [],
+   "skills_needed": [
+    "writing",
+    "basic_english"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "medium",
+   "payback_days": 21,
+   "recurring": true,
+   "channel_ids": [
+    "chamber",
+    "referral",
+    "facebook",
+    "local-groups"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Email tool subscriptions",
+     "amount": 3136
+    },
+    {
+     "item": "SOP documentation design",
+     "amount": 2240
+    },
+    {
+     "item": "Security audit by a professional",
+     "amount": 3584
+    }
+   ],
+   "steps": [
+    "Triage a friend's inbox free for 3 days",
+    "Write your 4-folder triage SOP",
+    "Offer $190/month, one inbox to chamber members",
+    "Get read-only or delegated access",
+    "Deliver a daily 10-item action list",
+    "Flag money and legal mails within the hour",
+    "Report weekly response-time stats"
+   ],
+   "pricing_hint": "$190/month, one inbox",
+   "first_customers": [
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews"
+   ],
+   "pitfalls": [
+    "Never reply as the owner without approval",
+    "Use 2FA and a password manager",
+    "Keep a written confidentiality agreement"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "digital-product",
+   "trend_tags": [
+    "b2b",
+    "productivity"
+   ],
+   "first_seen": "2025-10",
+   "maturity": "emerging",
+   "version": 1,
+   "updated_at": "2026-05-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Nextdoor neighbourhood posts",
+      "Thumbtack local leads",
+      "Chamber of commerce newsletter"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Facebook local community groups",
+      "Nextdoor UK street posts",
+      "Local parish newsletter ads"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Nextdoor Canada community posts",
+      "Local Facebook buy-and-sell groups",
+      "Chamber of commerce directory"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Nextdoor Australia neighbourhood posts",
+      "Local Facebook community groups",
+      "Council newsletter sponsorships"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-b2b-inbox-tidy-215",
+   "title": "Inbox triage for owner-led businesses (old town)",
+   "one_liner": "Owner-led businesses pay monthly to have inboxes triaged to three folders with a daily action list.",
+   "min_capital": 90,
+   "capital_tier": "<500",
+   "hours_per_week": "<10",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU",
+    "SG"
+   ],
+   "online_or_offline": "online",
+   "legal_blocks": [],
+   "skills_needed": [
+    "writing",
+    "basic_english"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "medium",
+   "payback_days": 30,
+   "recurring": true,
+   "channel_ids": [
+    "chamber",
+    "referral",
+    "facebook",
+    "local-groups"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Email tool subscriptions",
+     "amount": 31
+    },
+    {
+     "item": "SOP documentation design",
+     "amount": 22
+    },
+    {
+     "item": "Security audit by a professional",
+     "amount": 37
+    }
+   ],
+   "steps": [
+    "Triage a friend's inbox free for 3 days",
+    "Write your 4-folder triage SOP",
+    "Offer $290/month inbox plus calendar to chamber members",
+    "Get read-only or delegated access",
+    "Deliver a daily 10-item action list",
+    "Flag money and legal mails within the hour",
+    "Report weekly response-time stats"
+   ],
+   "pricing_hint": "$290/month inbox plus calendar",
+   "first_customers": [
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts"
+   ],
+   "pitfalls": [
+    "Never reply as the owner without approval",
+    "Use 2FA and a password manager",
+    "Keep a written confidentiality agreement"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "digital-product",
+   "trend_tags": [
+    "b2b",
+    "productivity"
+   ],
+   "first_seen": "2024-11",
+   "maturity": "saturated",
+   "version": 1,
+   "updated_at": "2026-06-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Thumbtack local leads",
+      "Chamber of commerce newsletter",
+      "Google Maps 4-star shops with unanswered reviews"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Nextdoor UK street posts",
+      "Local parish newsletter ads",
+      "Google Maps high-street shops"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Local Facebook buy-and-sell groups",
+      "Chamber of commerce directory",
+      "Google Maps shops on main streets"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Local Facebook community groups",
+      "Council newsletter sponsorships",
+      "Google Maps suburban strip shops"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "WhatsApp business contact lists",
+      "Google Maps shop clusters in heartland malls",
+      "Facebook neighbourhood groups for HDB estates"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-b2b-inbox-tidy-216",
+   "title": "Inbox triage for owner-led businesses (hillside)",
+   "one_liner": "Owner-led businesses pay monthly to have inboxes triaged to three folders with a daily action list.",
+   "min_capital": 2255,
+   "capital_tier": "2k-10k",
+   "hours_per_week": "10-25",
+   "countries": [
+    "US",
+    "UK",
+    "AU",
+    "PH"
+   ],
+   "online_or_offline": "online",
+   "legal_blocks": [],
+   "skills_needed": [
+    "writing",
+    "basic_english"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "medium",
+   "payback_days": 45,
+   "recurring": true,
+   "channel_ids": [
+    "chamber",
+    "referral",
+    "facebook",
+    "local-groups"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Email tool subscriptions",
+     "amount": 789
+    },
+    {
+     "item": "SOP documentation design",
+     "amount": 564
+    },
+    {
+     "item": "Security audit by a professional",
+     "amount": 902
+    }
+   ],
+   "steps": [
+    "Triage a friend's inbox free for 3 days",
+    "Write your 4-folder triage SOP",
+    "Offer $45 emergency cleanup day to chamber members",
+    "Get read-only or delegated access",
+    "Deliver a daily 10-item action list",
+    "Flag money and legal mails within the hour",
+    "Report weekly response-time stats"
+   ],
+   "pricing_hint": "$45 emergency cleanup day",
+   "first_customers": [
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads"
+   ],
+   "pitfalls": [
+    "Never reply as the owner without approval",
+    "Use 2FA and a password manager",
+    "Keep a written confidentiality agreement"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "digital-product",
+   "trend_tags": [
+    "b2b",
+    "productivity"
+   ],
+   "first_seen": "2024-12",
+   "maturity": "mature",
+   "version": 1,
+   "updated_at": "2026-07-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Chamber of commerce newsletter",
+      "Google Maps 4-star shops with unanswered reviews",
+      "Nextdoor neighbourhood posts"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Local parish newsletter ads",
+      "Google Maps high-street shops",
+      "Facebook local community groups"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Council newsletter sponsorships",
+      "Google Maps suburban strip shops",
+      "Nextdoor Australia neighbourhood posts"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Viber neighbourhood groups",
+      "Facebook Marketplace local groups",
+      "Barangay community referrals"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-b2b-inbox-tidy-217",
+   "title": "Inbox triage for owner-led businesses (central)",
+   "one_liner": "Owner-led businesses pay monthly to have inboxes triaged to three folders with a daily action list.",
+   "min_capital": 770,
+   "capital_tier": "500-2k",
+   "hours_per_week": "<10",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU",
+    "PH"
+   ],
+   "online_or_offline": "hybrid",
+   "legal_blocks": [],
+   "skills_needed": [
+    "writing",
+    "basic_english"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "medium",
+   "payback_days": 21,
+   "recurring": true,
+   "channel_ids": [
+    "chamber",
+    "referral",
+    "facebook",
+    "local-groups"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Email tool subscriptions",
+     "amount": 270
+    },
+    {
+     "item": "SOP documentation design",
+     "amount": 192
+    },
+    {
+     "item": "Security audit by a professional",
+     "amount": 308
+    }
+   ],
+   "steps": [
+    "Triage a friend's inbox free for 3 days",
+    "Write your 4-folder triage SOP",
+    "Offer $190/month, one inbox to chamber members",
+    "Get read-only or delegated access",
+    "Deliver a daily 10-item action list",
+    "Flag money and legal mails within the hour",
+    "Report weekly response-time stats"
+   ],
+   "pricing_hint": "$190/month, one inbox",
+   "first_customers": [
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter"
+   ],
+   "pitfalls": [
+    "Never reply as the owner without approval",
+    "Use 2FA and a password manager",
+    "Keep a written confidentiality agreement"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "digital-product",
+   "trend_tags": [
+    "b2b",
+    "productivity"
+   ],
+   "first_seen": "2025-01",
+   "maturity": "emerging",
+   "version": 1,
+   "updated_at": "2026-08-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Google Maps 4-star shops with unanswered reviews",
+      "Nextdoor neighbourhood posts",
+      "Thumbtack local leads"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Google Maps high-street shops",
+      "Facebook local community groups",
+      "Nextdoor UK street posts"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Google Maps shops on main streets",
+      "Nextdoor Canada community posts",
+      "Local Facebook buy-and-sell groups"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Google Maps suburban strip shops",
+      "Nextdoor Australia neighbourhood posts",
+      "Local Facebook community groups"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Facebook Marketplace local groups",
+      "Barangay community referrals",
+      "Google Maps shops along main roads"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-b2b-inbox-tidy-218",
+   "title": "Inbox triage for owner-led businesses (bayside)",
+   "one_liner": "Owner-led businesses pay monthly to have inboxes triaged to three folders with a daily action list.",
+   "min_capital": 2450,
+   "capital_tier": "2k-10k",
+   "hours_per_week": "full",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "SG"
+   ],
+   "online_or_offline": "online",
+   "legal_blocks": [],
+   "skills_needed": [
+    "writing",
+    "basic_english"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "medium",
+   "payback_days": 30,
+   "recurring": true,
+   "channel_ids": [
+    "chamber",
+    "referral",
+    "facebook",
+    "local-groups"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Email tool subscriptions",
+     "amount": 858
+    },
+    {
+     "item": "SOP documentation design",
+     "amount": 612
+    },
+    {
+     "item": "Security audit by a professional",
+     "amount": 980
+    }
+   ],
+   "steps": [
+    "Triage a friend's inbox free for 3 days",
+    "Write your 4-folder triage SOP",
+    "Offer $290/month inbox plus calendar to chamber members",
+    "Get read-only or delegated access",
+    "Deliver a daily 10-item action list",
+    "Flag money and legal mails within the hour",
+    "Report weekly response-time stats"
+   ],
+   "pricing_hint": "$290/month inbox plus calendar",
+   "first_customers": [
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews"
+   ],
+   "pitfalls": [
+    "Never reply as the owner without approval",
+    "Use 2FA and a password manager",
+    "Keep a written confidentiality agreement"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "digital-product",
+   "trend_tags": [
+    "b2b",
+    "productivity"
+   ],
+   "first_seen": "2024-02",
+   "maturity": "growing",
+   "version": 1,
+   "updated_at": "2026-09-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Nextdoor neighbourhood posts",
+      "Thumbtack local leads",
+      "Chamber of commerce newsletter"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Facebook local community groups",
+      "Nextdoor UK street posts",
+      "Local parish newsletter ads"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Nextdoor Canada community posts",
+      "Local Facebook buy-and-sell groups",
+      "Chamber of commerce directory"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "WhatsApp business contact lists",
+      "Google Maps shop clusters in heartland malls",
+      "Facebook neighbourhood groups for HDB estates"
+     ]
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,1391 @@
+{
+ "industry": "errand-runner",
+ "count": 11,
+ "ideas": [
+  {
+   "id": "bs-svc-errand-runner-056",
+   "title": "Senior errand and grocery runner (hillside)",
+   "one_liner": "Seniors and busy families pay a small standing fee for grocery pickups, pharmacy runs and post drops.",
+   "min_capital": 1715,
+   "capital_tier": "500-2k",
+   "hours_per_week": "full",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU",
+    "SG",
+    "PH"
+   ],
+   "online_or_offline": "offline",
+   "legal_blocks": [],
+   "skills_needed": [
+    "none"
+   ],
+   "assets_needed": [
+    "car"
+   ],
+   "risk_level": "low",
+   "payback_days": 14,
+   "recurring": true,
+   "channel_ids": [
+    "nextdoor",
+    "facebook",
+    "chamber",
+    "referral"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Printed service cards for seniors",
+     "amount": 514
+    },
+    {
+     "item": "Insulated shopping bags",
+     "amount": 600
+    },
+    {
+     "item": "Fuel card top-up",
+     "amount": 601
+    }
+   ],
+   "steps": [
+    "Visit the 10 senior homes near you",
+    "Leave service cards at community centres",
+    "Offer $60 for a weekly 4-errand bundle, first errand free",
+    "Set fixed Tuesday and Friday run days",
+    "Text receipts for every purchase",
+    "Bundle same-day errands by area",
+    "Ask adult children to prepaid-book monthly"
+   ],
+   "pricing_hint": "$60 for a weekly 4-errand bundle",
+   "first_customers": [
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads"
+   ],
+   "pitfalls": [
+    "Get shopping lists in writing",
+    "Never handle cash without receipts",
+    "Confirm mobility needs before entering homes"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "local-service",
+   "trend_tags": [
+    "local-service",
+    "aging"
+   ],
+   "first_seen": "2024-08",
+   "maturity": "growing",
+   "version": 1,
+   "updated_at": "2026-01-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Chamber of commerce newsletter",
+      "Google Maps 4-star shops with unanswered reviews",
+      "Nextdoor neighbourhood posts"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Local parish newsletter ads",
+      "Google Maps high-street shops",
+      "Facebook local community groups"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Chamber of commerce directory",
+      "Google Maps shops on main streets",
+      "Nextdoor Canada community posts"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Council newsletter sponsorships",
+      "Google Maps suburban strip shops",
+      "Nextdoor Australia neighbourhood posts"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "WhatsApp business contact lists",
+      "Google Maps shop clusters in heartland malls",
+      "Facebook neighbourhood groups for HDB estates"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Viber neighbourhood groups",
+      "Facebook Marketplace local groups",
+      "Barangay community referrals"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-svc-errand-runner-057",
+   "title": "Senior errand and grocery runner (central)",
+   "one_liner": "Seniors and busy families pay a small standing fee for grocery pickups, pharmacy runs and post drops.",
+   "min_capital": 1810,
+   "capital_tier": "500-2k",
+   "hours_per_week": "10-25",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU"
+   ],
+   "online_or_offline": "offline",
+   "legal_blocks": [],
+   "skills_needed": [
+    "none"
+   ],
+   "assets_needed": [
+    "car"
+   ],
+   "risk_level": "low",
+   "payback_days": 21,
+   "recurring": true,
+   "channel_ids": [
+    "nextdoor",
+    "facebook",
+    "chamber",
+    "referral"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Printed service cards for seniors",
+     "amount": 543
+    },
+    {
+     "item": "Insulated shopping bags",
+     "amount": 634
+    },
+    {
+     "item": "Fuel card top-up",
+     "amount": 633
+    }
+   ],
+   "steps": [
+    "Visit the 15 senior homes near you",
+    "Leave service cards at community centres",
+    "Offer $25/hour for shopping trips, first errand free",
+    "Set fixed Tuesday and Friday run days",
+    "Text receipts for every purchase",
+    "Bundle same-day errands by area",
+    "Ask adult children to prepaid-book monthly"
+   ],
+   "pricing_hint": "$25/hour for shopping trips",
+   "first_customers": [
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter"
+   ],
+   "pitfalls": [
+    "Get shopping lists in writing",
+    "Never handle cash without receipts",
+    "Confirm mobility needs before entering homes"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "local-service",
+   "trend_tags": [
+    "local-service",
+    "aging"
+   ],
+   "first_seen": "2024-09",
+   "maturity": "growing",
+   "version": 1,
+   "updated_at": "2026-02-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Google Maps 4-star shops with unanswered reviews",
+      "Nextdoor neighbourhood posts",
+      "Thumbtack local leads"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Google Maps high-street shops",
+      "Facebook local community groups",
+      "Nextdoor UK street posts"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Google Maps shops on main streets",
+      "Nextdoor Canada community posts",
+      "Local Facebook buy-and-sell groups"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Google Maps suburban strip shops",
+      "Nextdoor Australia neighbourhood posts",
+      "Local Facebook community groups"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-svc-errand-runner-058",
+   "title": "Senior errand and grocery runner (bayside)",
+   "one_liner": "Seniors and busy families pay a small standing fee for grocery pickups, pharmacy runs and post drops.",
+   "min_capital": 7630,
+   "capital_tier": "2k-10k",
+   "hours_per_week": "<10",
+   "countries": [
+    "US",
+    "UK",
+    "AU"
+   ],
+   "online_or_offline": "hybrid",
+   "legal_blocks": [],
+   "skills_needed": [
+    "none"
+   ],
+   "assets_needed": [
+    "car"
+   ],
+   "risk_level": "low",
+   "payback_days": 7,
+   "recurring": true,
+   "channel_ids": [
+    "nextdoor",
+    "facebook",
+    "chamber",
+    "referral"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Printed service cards for seniors",
+     "amount": 2289
+    },
+    {
+     "item": "Insulated shopping bags",
+     "amount": 2670
+    },
+    {
+     "item": "Fuel card top-up",
+     "amount": 2671
+    }
+   ],
+   "steps": [
+    "Visit the 20 senior homes near you",
+    "Leave service cards at community centres",
+    "Offer $15 per errand within 5 km, first errand free",
+    "Set fixed Tuesday and Friday run days",
+    "Text receipts for every purchase",
+    "Bundle same-day errands by area",
+    "Ask adult children to prepaid-book monthly"
+   ],
+   "pricing_hint": "$15 per errand within 5 km",
+   "first_customers": [
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews"
+   ],
+   "pitfalls": [
+    "Get shopping lists in writing",
+    "Never handle cash without receipts",
+    "Confirm mobility needs before entering homes"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "local-service",
+   "trend_tags": [
+    "local-service",
+    "aging"
+   ],
+   "first_seen": "2025-10",
+   "maturity": "mature",
+   "version": 1,
+   "updated_at": "2026-03-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Nextdoor neighbourhood posts",
+      "Thumbtack local leads",
+      "Chamber of commerce newsletter"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Facebook local community groups",
+      "Nextdoor UK street posts",
+      "Local parish newsletter ads"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Nextdoor Australia neighbourhood posts",
+      "Local Facebook community groups",
+      "Council newsletter sponsorships"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-svc-errand-runner-059",
+   "title": "Senior errand and grocery runner (market)",
+   "one_liner": "Seniors and busy families pay a small standing fee for grocery pickups, pharmacy runs and post drops.",
+   "min_capital": 255,
+   "capital_tier": "<500",
+   "hours_per_week": "<10",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU",
+    "SG",
+    "PH"
+   ],
+   "online_or_offline": "offline",
+   "legal_blocks": [],
+   "skills_needed": [
+    "none"
+   ],
+   "assets_needed": [
+    "car"
+   ],
+   "risk_level": "low",
+   "payback_days": 14,
+   "recurring": true,
+   "channel_ids": [
+    "nextdoor",
+    "facebook",
+    "chamber",
+    "referral"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Printed service cards for seniors",
+     "amount": 76
+    },
+    {
+     "item": "Insulated shopping bags",
+     "amount": 89
+    },
+    {
+     "item": "Fuel card top-up",
+     "amount": 90
+    }
+   ],
+   "steps": [
+    "Visit the 25 senior homes near you",
+    "Leave service cards at community centres",
+    "Offer $60 for a weekly 4-errand bundle, first errand free",
+    "Set fixed Tuesday and Friday run days",
+    "Text receipts for every purchase",
+    "Bundle same-day errands by area",
+    "Ask adult children to prepaid-book monthly"
+   ],
+   "pricing_hint": "$60 for a weekly 4-errand bundle",
+   "first_customers": [
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts"
+   ],
+   "pitfalls": [
+    "Get shopping lists in writing",
+    "Never handle cash without receipts",
+    "Confirm mobility needs before entering homes"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "local-service",
+   "trend_tags": [
+    "local-service",
+    "aging"
+   ],
+   "first_seen": "2024-11",
+   "maturity": "mature",
+   "version": 1,
+   "updated_at": "2026-04-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Thumbtack local leads",
+      "Chamber of commerce newsletter",
+      "Google Maps 4-star shops with unanswered reviews"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Nextdoor UK street posts",
+      "Local parish newsletter ads",
+      "Google Maps high-street shops"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Local Facebook buy-and-sell groups",
+      "Chamber of commerce directory",
+      "Google Maps shops on main streets"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Local Facebook community groups",
+      "Council newsletter sponsorships",
+      "Google Maps suburban strip shops"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "WhatsApp business contact lists",
+      "Google Maps shop clusters in heartland malls",
+      "Facebook neighbourhood groups for HDB estates"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Google Maps shops along main roads",
+      "Viber neighbourhood groups",
+      "Facebook Marketplace local groups"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-svc-errand-runner-060",
+   "title": "Senior errand and grocery runner(lakeside)",
+   "one_liner": "Seniors and busy families pay a small standing fee for grocery pickups, pharmacy runs and post drops.",
+   "min_capital": 355,
+   "capital_tier": "<500",
+   "hours_per_week": "full",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU",
+    "SG",
+    "PH"
+   ],
+   "online_or_offline": "offline",
+   "legal_blocks": [],
+   "skills_needed": [
+    "none"
+   ],
+   "assets_needed": [
+    "car"
+   ],
+   "risk_level": "low",
+   "payback_days": 21,
+   "recurring": true,
+   "channel_ids": [
+    "nextdoor",
+    "facebook",
+    "chamber",
+    "referral"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Printed service cards for seniors",
+     "amount": 106
+    },
+    {
+     "item": "Insulated shopping bags",
+     "amount": 124
+    },
+    {
+     "item": "Fuel card top-up",
+     "amount": 125
+    }
+   ],
+   "steps": [
+    "Visit the 30 senior homes near you",
+    "Leave service cards at community centres",
+    "Offer $25/hour for shopping trips, first errand free",
+    "Set fixed Tuesday and Friday run days",
+    "Text receipts for every purchase",
+    "Bundle same-day errands by area",
+    "Ask adult children to prepaid-book monthly"
+   ],
+   "pricing_hint": "$25/hour for shopping trips",
+   "first_customers": [
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads"
+   ],
+   "pitfalls": [
+    "Get shopping lists in writing",
+    "Never handle cash without receipts",
+    "Confirm mobility needs before entering homes"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "local-service",
+   "trend_tags": [
+    "local-service",
+    "aging"
+   ],
+   "first_seen": "2024-12",
+   "maturity": "saturated",
+   "version": 1,
+   "updated_at": "2026-05-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Chamber of commerce newsletter",
+      "Google Maps 4-star shops with unanswered reviews",
+      "Nextdoor neighbourhood posts"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Local parish newsletter ads",
+      "Google Maps high-street shops",
+      "Facebook local community groups"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Chamber of commerce directory",
+      "Google Maps shops on main streets",
+      "Nextdoor Canada community posts"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Council newsletter sponsorships",
+      "Google Maps suburban strip shops",
+      "Nextdoor Australia neighbourhood posts"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "Google Maps shop clusters in heartland malls",
+      "Facebook neighbourhood groups for HDB estates",
+      "WhatsApp business contact lists"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Viber neighbourhood groups",
+      "Facebook Marketplace local groups",
+      "Barangay community referrals"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-svc-errand-runner-061",
+   "title": "Senior errand and grocery runner",
+   "one_liner": "Seniors and busy families pay a small standing fee for grocery pickups, pharmacy runs and post drops.",
+   "min_capital": 820,
+   "capital_tier": "500-2k",
+   "hours_per_week": "10-25",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU",
+    "PH"
+   ],
+   "online_or_offline": "offline",
+   "legal_blocks": [],
+   "skills_needed": [
+    "none"
+   ],
+   "assets_needed": [
+    "car"
+   ],
+   "risk_level": "low",
+   "payback_days": 7,
+   "recurring": true,
+   "channel_ids": [
+    "nextdoor",
+    "facebook",
+    "chamber",
+    "referral"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Printed service cards for seniors",
+     "amount": 246
+    },
+    {
+     "item": "Insulated shopping bags",
+     "amount": 287
+    },
+    {
+     "item": "Fuel card top-up",
+     "amount": 287
+    }
+   ],
+   "steps": [
+    "Visit the 5 senior homes near you",
+    "Leave service cards at community centres",
+    "Offer $15 per errand within 5 km, first errand free",
+    "Set fixed Tuesday and Friday run days",
+    "Text receipts for every purchase",
+    "Bundle same-day errands by area",
+    "Ask adult children to prepaid-book monthly"
+   ],
+   "pricing_hint": "$15 per errand within 5 km",
+   "first_customers": [
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter"
+   ],
+   "pitfalls": [
+    "Get shopping lists in writing",
+    "Never handle cash without receipts",
+    "Confirm mobility needs before entering homes"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "local-service",
+   "trend_tags": [
+    "local-service",
+    "aging"
+   ],
+   "first_seen": "2025-01",
+   "maturity": "mature",
+   "version": 1,
+   "updated_at": "2026-06-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Google Maps 4-star shops with unanswered reviews",
+      "Nextdoor neighbourhood posts",
+      "Thumbtack local leads"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Google Maps high-street shops",
+      "Facebook local community groups",
+      "Nextdoor UK street posts"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Google Maps shops on main streets",
+      "Nextdoor Canada community posts",
+      "Local Facebook buy-and-sell groups"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Google Maps suburban strip shops",
+      "Nextdoor Australia neighbourhood posts",
+      "Local Facebook community groups"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Facebook Marketplace local groups",
+      "Barangay community referrals",
+      "Google Maps shops along main roads"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-svc-errand-runner-062",
+   "title": "Senior errand and grocery runner (north)",
+   "one_liner": "Seniors and busy families pay a small standing fee for grocery pickups, pharmacy runs and post drops.",
+   "min_capital": 95,
+   "capital_tier": "<500",
+   "hours_per_week": "full",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU",
+    "PH"
+   ],
+   "online_or_offline": "offline",
+   "legal_blocks": [],
+   "skills_needed": [
+    "none"
+   ],
+   "assets_needed": [
+    "car"
+   ],
+   "risk_level": "low",
+   "payback_days": 14,
+   "recurring": true,
+   "channel_ids": [
+    "nextdoor",
+    "facebook",
+    "chamber",
+    "referral"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Printed service cards for seniors",
+     "amount": 28
+    },
+    {
+     "item": "Insulated shopping bags",
+     "amount": 33
+    },
+    {
+     "item": "Fuel card top-up",
+     "amount": 34
+    }
+   ],
+   "steps": [
+    "Visit the 10 senior homes near you",
+    "Leave service cards at community centres",
+    "Offer $60 for a weekly 4-errand bundle, first errand free",
+    "Set fixed Tuesday and Friday run days",
+    "Text receipts for every purchase",
+    "Bundle same-day errands by area",
+    "Ask adult children to prepaid-book monthly"
+   ],
+   "pricing_hint": "$60 for a weekly 4-errand bundle",
+   "first_customers": [
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews"
+   ],
+   "pitfalls": [
+    "Get shopping lists in writing",
+    "Never handle cash without receipts",
+    "Confirm mobility needs before entering homes"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "local-service",
+   "trend_tags": [
+    "local-service",
+    "aging"
+   ],
+   "first_seen": "2024-02",
+   "maturity": "saturated",
+   "version": 1,
+   "updated_at": "2026-07-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Nextdoor neighbourhood posts",
+      "Thumbtack local leads",
+      "Chamber of commerce newsletter"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Facebook local community groups",
+      "Nextdoor UK street posts",
+      "Local parish newsletter ads"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Nextdoor Canada community posts",
+      "Local Facebook buy-and-sell groups",
+      "Chamber of commerce directory"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Nextdoor Australia neighbourhood posts",
+      "Local Facebook community groups",
+      "Council newsletter sponsorships"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Barangay community referrals",
+      "Google Maps shops along main roads",
+      "Viber neighbourhood groups"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-svc-errand-runner-063",
+   "title": "Senior errand and grocery runner (east)",
+   "one_liner": "Seniors and busy families pay a small standing fee for grocery pickups, pharmacy runs and post drops.",
+   "min_capital": 1015,
+   "capital_tier": "500-2k",
+   "hours_per_week": "<10",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU",
+    "PH"
+   ],
+   "online_or_offline": "offline",
+   "legal_blocks": [],
+   "skills_needed": [
+    "none"
+   ],
+   "assets_needed": [
+    "car"
+   ],
+   "risk_level": "low",
+   "payback_days": 21,
+   "recurring": true,
+   "channel_ids": [
+    "nextdoor",
+    "facebook",
+    "chamber",
+    "referral"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Printed service cards for seniors",
+     "amount": 304
+    },
+    {
+     "item": "Insulated shopping bags",
+     "amount": 355
+    },
+    {
+     "item": "Fuel card top-up",
+     "amount": 356
+    }
+   ],
+   "steps": [
+    "Visit the 15 senior homes near you",
+    "Leave service cards at community centres",
+    "Offer $25/hour for shopping trips, first errand free",
+    "Set fixed Tuesday and Friday run days",
+    "Text receipts for every purchase",
+    "Bundle same-day errands by area",
+    "Ask adult children to prepaid-book monthly"
+   ],
+   "pricing_hint": "$25/hour for shopping trips",
+   "first_customers": [
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts"
+   ],
+   "pitfalls": [
+    "Get shopping lists in writing",
+    "Never handle cash without receipts",
+    "Confirm mobility needs before entering homes"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "local-service",
+   "trend_tags": [
+    "local-service",
+    "aging"
+   ],
+   "first_seen": "2024-03",
+   "maturity": "emerging",
+   "version": 1,
+   "updated_at": "2026-08-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Thumbtack local leads",
+      "Chamber of commerce newsletter",
+      "Google Maps 4-star shops with unanswered reviews"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Nextdoor UK street posts",
+      "Local parish newsletter ads",
+      "Google Maps high-street shops"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Local Facebook buy-and-sell groups",
+      "Chamber of commerce directory",
+      "Google Maps shops on main streets"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Local Facebook community groups",
+      "Council newsletter sponsorships",
+      "Google Maps suburban strip shops"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Google Maps shops along main roads",
+      "Viber neighbourhood groups",
+      "Facebook Marketplace local groups"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-svc-errand-runner-064",
+   "title": "Senior errand and grocery runner (riverside)",
+   "one_liner": "Seniors and busy families pay a small standing fee for grocery pickups, pharmacy runs and post drops.",
+   "min_capital": 290,
+   "capital_tier": "<500",
+   "hours_per_week": "10-25",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU",
+    "PH"
+   ],
+   "online_or_offline": "hybrid",
+   "legal_blocks": [],
+   "skills_needed": [
+    "none"
+   ],
+   "assets_needed": [
+    "car"
+   ],
+   "risk_level": "low",
+   "payback_days": 7,
+   "recurring": true,
+   "channel_ids": [
+    "nextdoor",
+    "facebook",
+    "chamber",
+    "referral"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Printed service cards for seniors",
+     "amount": 87
+    },
+    {
+     "item": "Insulated shopping bags",
+     "amount": 102
+    },
+    {
+     "item": "Fuel card top-up",
+     "amount": 101
+    }
+   ],
+   "steps": [
+    "Visit the 20 senior homes near you",
+    "Leave service cards at community centres",
+    "Offer $15 per errand within 5 km, first errand free",
+    "Set fixed Tuesday and Friday run days",
+    "Text receipts for every purchase",
+    "Bundle same-day errands by area",
+    "Ask adult children to prepaid-book monthly"
+   ],
+   "pricing_hint": "$15 per errand within 5 km",
+   "first_customers": [
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads"
+   ],
+   "pitfalls": [
+    "Get shopping lists in writing",
+    "Never handle cash without receipts",
+    "Confirm mobility needs before entering homes"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "local-service",
+   "trend_tags": [
+    "local-service",
+    "aging"
+   ],
+   "first_seen": "2025-04",
+   "maturity": "growing",
+   "version": 1,
+   "updated_at": "2026-09-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Chamber of commerce newsletter",
+      "Google Maps 4-star shops with unanswered reviews",
+      "Nextdoor neighbourhood posts"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Local parish newsletter ads",
+      "Google Maps high-street shops",
+      "Facebook local community groups"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Chamber of commerce directory",
+      "Google Maps shops on main streets",
+      "Nextdoor Canada community posts"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Council newsletter sponsorships",
+      "Google Maps suburban strip shops",
+      "Nextdoor Australia neighbourhood posts"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Viber neighbourhood groups",
+      "Facebook Marketplace local groups",
+      "Barangay community referrals"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-svc-errand-runner-065",
+   "title": "Senior errand and grocery runner (old town)",
+   "one_liner": "Seniors and busy families pay a small standing fee for grocery pickups, pharmacy runs and post drops.",
+   "min_capital": 390,
+   "capital_tier": "<500",
+   "hours_per_week": "10-25",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU",
+    "SG",
+    "PH"
+   ],
+   "online_or_offline": "offline",
+   "legal_blocks": [],
+   "skills_needed": [
+    "none"
+   ],
+   "assets_needed": [
+    "car"
+   ],
+   "risk_level": "low",
+   "payback_days": 14,
+   "recurring": true,
+   "channel_ids": [
+    "nextdoor",
+    "facebook",
+    "chamber",
+    "referral"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Printed service cards for seniors",
+     "amount": 117
+    },
+    {
+     "item": "Insulated shopping bags",
+     "amount": 136
+    },
+    {
+     "item": "Fuel card top-up",
+     "amount": 137
+    }
+   ],
+   "steps": [
+    "Visit the 25 senior homes near you",
+    "Leave service cards at community centres",
+    "Offer $60 for a weekly 4-errand bundle, first errand free",
+    "Set fixed Tuesday and Friday run days",
+    "Text receipts for every purchase",
+    "Bundle same-day errands by area",
+    "Ask adult children to prepaid-book monthly"
+   ],
+   "pricing_hint": "$60 for a weekly 4-errand bundle",
+   "first_customers": [
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter"
+   ],
+   "pitfalls": [
+    "Get shopping lists in writing",
+    "Never handle cash without receipts",
+    "Confirm mobility needs before entering homes"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "local-service",
+   "trend_tags": [
+    "local-service",
+    "aging"
+   ],
+   "first_seen": "2024-05",
+   "maturity": "mature",
+   "version": 1,
+   "updated_at": "2026-10-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Google Maps 4-star shops with unanswered reviews",
+      "Nextdoor neighbourhood posts",
+      "Thumbtack local leads"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Google Maps high-street shops",
+      "Facebook local community groups",
+      "Nextdoor UK street posts"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Google Maps shops on main streets",
+      "Nextdoor Canada community posts",
+      "Local Facebook buy-and-sell groups"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Google Maps suburban strip shops",
+      "Nextdoor Australia neighbourhood posts",
+      "Local Facebook community groups"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "WhatsApp business contact lists",
+      "Google Maps shop clusters in heartland malls",
+      "Facebook neighbourhood groups for HDB estates"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Facebook Marketplace local groups",
+      "Barangay community referrals",
+      "Google Maps shops along main roads"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-svc-errand-runner-066",
+   "title": "Senior errand and grocery runner (hillside)",
+   "one_liner": "Seniors and busy families pay a small standing fee for grocery pickups, pharmacy runs and post drops.",
+   "min_capital": 35,
+   "capital_tier": "<500",
+   "hours_per_week": "full",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU",
+    "PH"
+   ],
+   "online_or_offline": "hybrid",
+   "legal_blocks": [],
+   "skills_needed": [
+    "none"
+   ],
+   "assets_needed": [
+    "car"
+   ],
+   "risk_level": "low",
+   "payback_days": 21,
+   "recurring": true,
+   "channel_ids": [
+    "nextdoor",
+    "facebook",
+    "chamber",
+    "referral"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Printed service cards for seniors",
+     "amount": 10
+    },
+    {
+     "item": "Insulated shopping bags",
+     "amount": 12
+    },
+    {
+     "item": "Fuel card top-up",
+     "amount": 13
+    }
+   ],
+   "steps": [
+    "Visit the 30 senior homes near you",
+    "Leave service cards at community centres",
+    "Offer $25/hour for shopping trips, first errand free",
+    "Set fixed Tuesday and Friday run days",
+    "Text receipts for every purchase",
+    "Bundle same-day errands by area",
+    "Ask adult children to prepaid-book monthly"
+   ],
+   "pricing_hint": "$25/hour for shopping trips",
+   "first_customers": [
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews"
+   ],
+   "pitfalls": [
+    "Get shopping lists in writing",
+    "Never handle cash without receipts",
+    "Confirm mobility needs before entering homes"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "local-service",
+   "trend_tags": [
+    "local-service",
+    "aging"
+   ],
+   "first_seen": "2024-06",
+   "maturity": "mature",
+   "version": 1,
+   "updated_at": "2026-11-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Nextdoor neighbourhood posts",
+      "Thumbtack local leads",
+      "Chamber of commerce newsletter"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Facebook local community groups",
+      "Nextdoor UK street posts",
+      "Local parish newsletter ads"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Nextdoor Canada community posts",
+      "Local Facebook buy-and-sell groups",
+      "Chamber of commerce directory"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Nextdoor Australia neighbourhood posts",
+      "Local Facebook community groups",
+      "Council newsletter sponsorships"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Barangay community referrals",
+      "Google Maps shops along main roads",
+      "Viber neighbourhood groups"
+     ]
+    }
+   }
+  }
+ ]
+}

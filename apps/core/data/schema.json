@@ -1,1 +1,287 @@
-{}
+{
+ "_comment": "BizSpark Idea 契约 §3.2（V2.0，D-01 与 C 冻结）。机器可读；validate.py 按此校验。",
+ "contract": "BizSpark Idea §3.2",
+ "doc_version": "V2.0",
+ "frozen_with": "C(engine)",
+ "frozen_at": "2026-11-13",
+ "id_pattern": "^[a-z]{2}-[a-z]{2,4}-[a-z0-9-]{1,20}-\\d{3}$",
+ "enums": {
+  "capital_tier": [
+   "<500",
+   "500-2k",
+   "2k-10k",
+   "10k+"
+  ],
+  "hours_per_week": [
+   "<10",
+   "10-25",
+   "full"
+  ],
+  "countries": [
+   "US",
+   "CA",
+   "UK",
+   "AU",
+   "SG",
+   "PH"
+  ],
+  "online_or_offline": [
+   "online",
+   "offline",
+   "hybrid"
+  ],
+  "skills_needed": [
+   "writing",
+   "basic_english",
+   "design",
+   "coding",
+   "sales",
+   "driving",
+   "cooking",
+   "handyman",
+   "none"
+  ],
+  "assets_needed": [
+   "car",
+   "kitchen",
+   "laptop",
+   "design",
+   "coding",
+   "spare_room",
+   "local_network",
+   "none"
+  ],
+  "risk_level": [
+   "low",
+   "medium",
+   "high"
+  ],
+  "wave": [
+   "mobile-internet",
+   "ai-llm",
+   "ai-agent",
+   "bi-agent",
+   "local-service",
+   "digital-product"
+  ],
+  "maturity": [
+   "emerging",
+   "growing",
+   "mature",
+   "saturated"
+  ],
+  "status": [
+   "active",
+   "retired"
+  ],
+  "channel_ids": [
+   "google-maps",
+   "nextdoor",
+   "thumbtack",
+   "etsy",
+   "shopify",
+   "facebook",
+   "whatsapp",
+   "walk-in",
+   "chamber",
+   "referral",
+   "local-groups"
+  ]
+ },
+ "fields": {
+  "id": {
+   "type": "string",
+   "required": true,
+   "unique": true
+  },
+  "title": {
+   "type": "string",
+   "required": true,
+   "max_len": 48,
+   "note": "英文动词/名词短语，不含 emoji"
+  },
+  "one_liner": {
+   "type": "string",
+   "required": true,
+   "max_len": 110,
+   "note": "说清谁付钱"
+  },
+  "min_capital": {
+   "type": "number",
+   "required": true,
+   "min": 0,
+   "currency": "USD"
+  },
+  "capital_tier": {
+   "type": "string",
+   "required": true,
+   "enum_ref": "capital_tier"
+  },
+  "hours_per_week": {
+   "type": "string",
+   "required": true,
+   "enum_ref": "hours_per_week"
+  },
+  "countries": {
+   "type": "array[string]",
+   "required": true,
+   "min_items": 1,
+   "enum_ref": "countries"
+  },
+  "online_or_offline": {
+   "type": "string",
+   "required": true,
+   "enum_ref": "online_or_offline"
+  },
+  "legal_blocks": {
+   "type": "array[string]",
+   "required": true,
+   "enum_ref": "countries",
+   "default": []
+  },
+  "skills_needed": {
+   "type": "array[string]",
+   "required": true,
+   "enum_ref": "skills_needed",
+   "can_be_empty": true
+  },
+  "assets_needed": {
+   "type": "array[string]",
+   "required": true,
+   "enum_ref": "assets_needed"
+  },
+  "risk_level": {
+   "type": "string",
+   "required": true,
+   "enum_ref": "risk_level"
+  },
+  "payback_days": {
+   "type": "number",
+   "required": true,
+   "min": 1,
+   "max": 365
+  },
+  "recurring": {
+   "type": "boolean",
+   "required": true
+  },
+  "channel_ids": {
+   "type": "array[string]",
+   "required": true,
+   "enum_ref": "channel_ids"
+  },
+  "cost_breakdown": {
+   "type": "array[object]",
+   "required": true,
+   "min_items": 2,
+   "item": {
+    "item": "string",
+    "amount": "number"
+   },
+   "rule": "amount 合计 ≈ min_capital（±15%，V-04）"
+  },
+  "steps": {
+   "type": "array[string]",
+   "required": true,
+   "exact_items": 7,
+   "max_item_len": 60,
+   "rule": "动词开头；steps[0] 必须是明天早上能做的具体动作"
+  },
+  "pricing_hint": {
+   "type": "string",
+   "required": true,
+   "rule": "含具体数字"
+  },
+  "first_customers": {
+   "type": "array[string]",
+   "required": true,
+   "min_items": 3,
+   "rule": "具体渠道名，禁止 social media / online promotion / 广告（V-09）"
+  },
+  "pitfalls": {
+   "type": "array[string]",
+   "required": true,
+   "exact_items": 3
+  },
+  "compliance_note": {
+   "type": "string",
+   "required": true,
+   "max_len": 140,
+   "rule": "仅一句提醒，不是法律意见"
+  },
+  "wave": {
+   "type": "string",
+   "required": true,
+   "enum_ref": "wave"
+  },
+  "trend_tags": {
+   "type": "array[string]",
+   "required": true,
+   "max_items": 5
+  },
+  "first_seen": {
+   "type": "string",
+   "required": true,
+   "format": "YYYY-MM"
+  },
+  "maturity": {
+   "type": "string",
+   "required": true,
+   "enum_ref": "maturity"
+  },
+  "version": {
+   "type": "number",
+   "required": true,
+   "min": 1,
+   "rule": "每次 revise +1"
+  },
+  "updated_at": {
+   "type": "string",
+   "required": true,
+   "format": "YYYY-MM-DD"
+  },
+  "status": {
+   "type": "string",
+   "required": true,
+   "enum_ref": "status"
+  },
+  "overrides": {
+   "type": "object",
+   "required": false,
+   "note": "CountryOverride：按国家挂变体，覆盖存在即用，缺失回退主条目",
+   "fields": {
+    "currency": "string",
+    "first_customers": "array[string]",
+    "compliance_note": "string"
+   }
+  }
+ },
+ "derived_for_detail": {
+  "cost_total": "number(USD)",
+  "cost_rows": "array[{item,amount formatted by currency}]",
+  "payback_hint": "string from pricing_hint + payback_days"
+ },
+ "delta_revise_whitelist": [
+  "maturity",
+  "version",
+  "updated_at",
+  "first_customers",
+  "pricing_hint",
+  "cost_breakdown",
+  "status",
+  "compliance_note",
+  "pitfalls",
+  "channel_ids"
+ ],
+ "distribution_targets": {
+  "svc": 0.28,
+  "onl": 0.24,
+  "b2b": 0.18,
+  "cnt": 0.14,
+  "hnd": 0.1,
+  "agt": 0.06,
+  "capital_<500": 0.4,
+  "ai_waves_max": 0.12,
+  "saturated_max": 0.2
+ }
+}

@@ -1,0 +1,1534 @@
+{
+ "industry": "ebook-formatting",
+ "count": 13,
+ "ideas": [
+  {
+   "id": "bs-onl-ebook-formatting-114",
+   "title": "Ebook formatting for self-publishers (riverside)",
+   "one_liner": "Self-published authors pay per title to get manuscripts converted to clean EPUB and print-ready PDF.",
+   "min_capital": 190,
+   "capital_tier": "<500",
+   "hours_per_week": "<10",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU"
+   ],
+   "online_or_offline": "online",
+   "legal_blocks": [],
+   "skills_needed": [
+    "writing",
+    "basic_english"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "low",
+   "payback_days": 30,
+   "recurring": false,
+   "channel_ids": [
+    "facebook",
+    "referral",
+    "local-groups",
+    "etsy"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Formatting software licence",
+     "amount": 86
+    },
+    {
+     "item": "Self-publishing group ads",
+     "amount": 57
+    },
+    {
+     "item": "Sample fonts and licences",
+     "amount": 47
+    }
+   ],
+   "steps": [
+    "Format one public-domain book end to end",
+    "Join 30 self-publishing groups",
+    "Offer $39 picture books for the first two authors",
+    "Fix tables of contents and page breaks by hand",
+    "Deliver EPUB plus print PDF",
+    "Ask for a review in the author group",
+    "Batch similar genres for speed"
+   ],
+   "pricing_hint": "$39 picture books",
+   "first_customers": [
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews"
+   ],
+   "pitfalls": [
+    "Check image licences before embedding",
+    "Validate EPUB in two readers",
+    "Never accept handwriting scans without notes"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "digital-product",
+   "trend_tags": [
+    "publishing",
+    "digital-product"
+   ],
+   "first_seen": "2024-06",
+   "maturity": "emerging",
+   "version": 1,
+   "updated_at": "2026-04-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Nextdoor neighbourhood posts",
+      "Thumbtack local leads",
+      "Chamber of commerce newsletter"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Facebook local community groups",
+      "Nextdoor UK street posts",
+      "Local parish newsletter ads"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Nextdoor Canada community posts",
+      "Local Facebook buy-and-sell groups",
+      "Chamber of commerce directory"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Nextdoor Australia neighbourhood posts",
+      "Local Facebook community groups",
+      "Council newsletter sponsorships"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-onl-ebook-formatting-115",
+   "title": "Ebook formatting for self-publishers (old town)",
+   "one_liner": "Self-published authors pay per title to get manuscripts converted to clean EPUB and print-ready PDF.",
+   "min_capital": 6260,
+   "capital_tier": "2k-10k",
+   "hours_per_week": "<10",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "SG"
+   ],
+   "online_or_offline": "hybrid",
+   "legal_blocks": [],
+   "skills_needed": [
+    "writing",
+    "basic_english"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "low",
+   "payback_days": 14,
+   "recurring": false,
+   "channel_ids": [
+    "facebook",
+    "referral",
+    "local-groups",
+    "etsy"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Formatting software licence",
+     "amount": 2817
+    },
+    {
+     "item": "Self-publishing group ads",
+     "amount": 1878
+    },
+    {
+     "item": "Sample fonts and licences",
+     "amount": 1565
+    }
+   ],
+   "steps": [
+    "Format one public-domain book end to end",
+    "Join 5 self-publishing groups",
+    "Offer $60 per ebook, 2 formats for the first two authors",
+    "Fix tables of contents and page breaks by hand",
+    "Deliver EPUB plus print PDF",
+    "Ask for a review in the author group",
+    "Batch similar genres for speed"
+   ],
+   "pricing_hint": "$60 per ebook, 2 formats",
+   "first_customers": [
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts"
+   ],
+   "pitfalls": [
+    "Check image licences before embedding",
+    "Validate EPUB in two readers",
+    "Never accept handwriting scans without notes"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "digital-product",
+   "trend_tags": [
+    "publishing",
+    "digital-product"
+   ],
+   "first_seen": "2025-07",
+   "maturity": "emerging",
+   "version": 1,
+   "updated_at": "2026-05-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Thumbtack local leads",
+      "Chamber of commerce newsletter",
+      "Google Maps 4-star shops with unanswered reviews"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Nextdoor UK street posts",
+      "Local parish newsletter ads",
+      "Google Maps high-street shops"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Local Facebook buy-and-sell groups",
+      "Chamber of commerce directory",
+      "Google Maps shops on main streets"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "Facebook neighbourhood groups for HDB estates",
+      "WhatsApp business contact lists",
+      "Google Maps shop clusters in heartland malls"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-onl-ebook-formatting-116",
+   "title": "Ebook formatting for self-publishers (hillside)",
+   "one_liner": "Self-published authors pay per title to get manuscripts converted to clean EPUB and print-ready PDF.",
+   "min_capital": 635,
+   "capital_tier": "500-2k",
+   "hours_per_week": "<10",
+   "countries": [
+    "US",
+    "CA",
+    "AU"
+   ],
+   "online_or_offline": "online",
+   "legal_blocks": [],
+   "skills_needed": [
+    "writing",
+    "basic_english"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "low",
+   "payback_days": 21,
+   "recurring": false,
+   "channel_ids": [
+    "facebook",
+    "referral",
+    "local-groups",
+    "etsy"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Formatting software licence",
+     "amount": 286
+    },
+    {
+     "item": "Self-publishing group ads",
+     "amount": 190
+    },
+    {
+     "item": "Sample fonts and licences",
+     "amount": 159
+    }
+   ],
+   "steps": [
+    "Format one public-domain book end to end",
+    "Join 10 self-publishing groups",
+    "Offer $110 with cover layout for the first two authors",
+    "Fix tables of contents and page breaks by hand",
+    "Deliver EPUB plus print PDF",
+    "Ask for a review in the author group",
+    "Batch similar genres for speed"
+   ],
+   "pricing_hint": "$110 with cover layout",
+   "first_customers": [
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads"
+   ],
+   "pitfalls": [
+    "Check image licences before embedding",
+    "Validate EPUB in two readers",
+    "Never accept handwriting scans without notes"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "digital-product",
+   "trend_tags": [
+    "publishing",
+    "digital-product"
+   ],
+   "first_seen": "2024-08",
+   "maturity": "growing",
+   "version": 1,
+   "updated_at": "2026-06-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Chamber of commerce newsletter",
+      "Google Maps 4-star shops with unanswered reviews",
+      "Nextdoor neighbourhood posts"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Chamber of commerce directory",
+      "Google Maps shops on main streets",
+      "Nextdoor Canada community posts"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Council newsletter sponsorships",
+      "Google Maps suburban strip shops",
+      "Nextdoor Australia neighbourhood posts"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-onl-ebook-formatting-117",
+   "title": "Ebook formatting for self-publishers (central)",
+   "one_liner": "Self-published authors pay per title to get manuscripts converted to clean EPUB and print-ready PDF.",
+   "min_capital": 730,
+   "capital_tier": "500-2k",
+   "hours_per_week": "<10",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU",
+    "SG"
+   ],
+   "online_or_offline": "online",
+   "legal_blocks": [],
+   "skills_needed": [
+    "writing",
+    "basic_english"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "low",
+   "payback_days": 30,
+   "recurring": false,
+   "channel_ids": [
+    "facebook",
+    "referral",
+    "local-groups",
+    "etsy"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Formatting software licence",
+     "amount": 328
+    },
+    {
+     "item": "Self-publishing group ads",
+     "amount": 219
+    },
+    {
+     "item": "Sample fonts and licences",
+     "amount": 183
+    }
+   ],
+   "steps": [
+    "Format one public-domain book end to end",
+    "Join 15 self-publishing groups",
+    "Offer $39 picture books for the first two authors",
+    "Fix tables of contents and page breaks by hand",
+    "Deliver EPUB plus print PDF",
+    "Ask for a review in the author group",
+    "Batch similar genres for speed"
+   ],
+   "pricing_hint": "$39 picture books",
+   "first_customers": [
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter"
+   ],
+   "pitfalls": [
+    "Check image licences before embedding",
+    "Validate EPUB in two readers",
+    "Never accept handwriting scans without notes"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "digital-product",
+   "trend_tags": [
+    "publishing",
+    "digital-product"
+   ],
+   "first_seen": "2024-09",
+   "maturity": "growing",
+   "version": 1,
+   "updated_at": "2026-07-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Google Maps 4-star shops with unanswered reviews",
+      "Nextdoor neighbourhood posts",
+      "Thumbtack local leads"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Google Maps high-street shops",
+      "Facebook local community groups",
+      "Nextdoor UK street posts"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Google Maps shops on main streets",
+      "Nextdoor Canada community posts",
+      "Local Facebook buy-and-sell groups"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Google Maps suburban strip shops",
+      "Nextdoor Australia neighbourhood posts",
+      "Local Facebook community groups"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "Google Maps shop clusters in heartland malls",
+      "Facebook neighbourhood groups for HDB estates",
+      "WhatsApp business contact lists"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-onl-ebook-formatting-118",
+   "title": "Ebook formatting for self-publishers (bayside)",
+   "one_liner": "Self-published authors pay per title to get manuscripts converted to clean EPUB and print-ready PDF.",
+   "min_capital": 830,
+   "capital_tier": "500-2k",
+   "hours_per_week": "10-25",
+   "countries": [
+    "US",
+    "UK",
+    "AU"
+   ],
+   "online_or_offline": "online",
+   "legal_blocks": [],
+   "skills_needed": [
+    "writing",
+    "basic_english"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "low",
+   "payback_days": 14,
+   "recurring": false,
+   "channel_ids": [
+    "facebook",
+    "referral",
+    "local-groups",
+    "etsy"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Formatting software licence",
+     "amount": 374
+    },
+    {
+     "item": "Self-publishing group ads",
+     "amount": 249
+    },
+    {
+     "item": "Sample fonts and licences",
+     "amount": 207
+    }
+   ],
+   "steps": [
+    "Format one public-domain book end to end",
+    "Join 20 self-publishing groups",
+    "Offer $60 per ebook, 2 formats for the first two authors",
+    "Fix tables of contents and page breaks by hand",
+    "Deliver EPUB plus print PDF",
+    "Ask for a review in the author group",
+    "Batch similar genres for speed"
+   ],
+   "pricing_hint": "$60 per ebook, 2 formats",
+   "first_customers": [
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews"
+   ],
+   "pitfalls": [
+    "Check image licences before embedding",
+    "Validate EPUB in two readers",
+    "Never accept handwriting scans without notes"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "digital-product",
+   "trend_tags": [
+    "publishing",
+    "digital-product"
+   ],
+   "first_seen": "2025-10",
+   "maturity": "mature",
+   "version": 1,
+   "updated_at": "2026-08-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Nextdoor neighbourhood posts",
+      "Thumbtack local leads",
+      "Chamber of commerce newsletter"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Facebook local community groups",
+      "Nextdoor UK street posts",
+      "Local parish newsletter ads"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Nextdoor Australia neighbourhood posts",
+      "Local Facebook community groups",
+      "Council newsletter sponsorships"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-onl-ebook-formatting-119",
+   "title": "Ebook formatting for self-publishers (market)",
+   "one_liner": "Self-published authors pay per title to get manuscripts converted to clean EPUB and print-ready PDF.",
+   "min_capital": 925,
+   "capital_tier": "500-2k",
+   "hours_per_week": "<10",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU",
+    "PH"
+   ],
+   "online_or_offline": "online",
+   "legal_blocks": [],
+   "skills_needed": [
+    "writing",
+    "basic_english"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "low",
+   "payback_days": 21,
+   "recurring": false,
+   "channel_ids": [
+    "facebook",
+    "referral",
+    "local-groups",
+    "etsy"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Formatting software licence",
+     "amount": 416
+    },
+    {
+     "item": "Self-publishing group ads",
+     "amount": 278
+    },
+    {
+     "item": "Sample fonts and licences",
+     "amount": 231
+    }
+   ],
+   "steps": [
+    "Format one public-domain book end to end",
+    "Join 25 self-publishing groups",
+    "Offer $110 with cover layout for the first two authors",
+    "Fix tables of contents and page breaks by hand",
+    "Deliver EPUB plus print PDF",
+    "Ask for a review in the author group",
+    "Batch similar genres for speed"
+   ],
+   "pricing_hint": "$110 with cover layout",
+   "first_customers": [
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts"
+   ],
+   "pitfalls": [
+    "Check image licences before embedding",
+    "Validate EPUB in two readers",
+    "Never accept handwriting scans without notes"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "digital-product",
+   "trend_tags": [
+    "publishing",
+    "digital-product"
+   ],
+   "first_seen": "2024-11",
+   "maturity": "saturated",
+   "version": 1,
+   "updated_at": "2026-09-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Thumbtack local leads",
+      "Chamber of commerce newsletter",
+      "Google Maps 4-star shops with unanswered reviews"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Nextdoor UK street posts",
+      "Local parish newsletter ads",
+      "Google Maps high-street shops"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Local Facebook buy-and-sell groups",
+      "Chamber of commerce directory",
+      "Google Maps shops on main streets"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Local Facebook community groups",
+      "Council newsletter sponsorships",
+      "Google Maps suburban strip shops"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Google Maps shops along main roads",
+      "Viber neighbourhood groups",
+      "Facebook Marketplace local groups"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-onl-ebook-formatting-120",
+   "title": "Ebook formatting for self-publishers(lakeside)",
+   "one_liner": "Self-published authors pay per title to get manuscripts converted to clean EPUB and print-ready PDF.",
+   "min_capital": 325,
+   "capital_tier": "<500",
+   "hours_per_week": "10-25",
+   "countries": [
+    "US",
+    "CA",
+    "AU",
+    "SG",
+    "PH"
+   ],
+   "online_or_offline": "online",
+   "legal_blocks": [],
+   "skills_needed": [
+    "writing",
+    "basic_english"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "low",
+   "payback_days": 30,
+   "recurring": false,
+   "channel_ids": [
+    "facebook",
+    "referral",
+    "local-groups",
+    "etsy"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Formatting software licence",
+     "amount": 146
+    },
+    {
+     "item": "Self-publishing group ads",
+     "amount": 98
+    },
+    {
+     "item": "Sample fonts and licences",
+     "amount": 81
+    }
+   ],
+   "steps": [
+    "Format one public-domain book end to end",
+    "Join 30 self-publishing groups",
+    "Offer $39 picture books for the first two authors",
+    "Fix tables of contents and page breaks by hand",
+    "Deliver EPUB plus print PDF",
+    "Ask for a review in the author group",
+    "Batch similar genres for speed"
+   ],
+   "pricing_hint": "$39 picture books",
+   "first_customers": [
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads"
+   ],
+   "pitfalls": [
+    "Check image licences before embedding",
+    "Validate EPUB in two readers",
+    "Never accept handwriting scans without notes"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "digital-product",
+   "trend_tags": [
+    "publishing",
+    "digital-product"
+   ],
+   "first_seen": "2024-12",
+   "maturity": "growing",
+   "version": 1,
+   "updated_at": "2026-10-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Chamber of commerce newsletter",
+      "Google Maps 4-star shops with unanswered reviews",
+      "Nextdoor neighbourhood posts"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Chamber of commerce directory",
+      "Google Maps shops on main streets",
+      "Nextdoor Canada community posts"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Council newsletter sponsorships",
+      "Google Maps suburban strip shops",
+      "Nextdoor Australia neighbourhood posts"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "Google Maps shop clusters in heartland malls",
+      "Facebook neighbourhood groups for HDB estates",
+      "WhatsApp business contact lists"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Viber neighbourhood groups",
+      "Facebook Marketplace local groups",
+      "Barangay community referrals"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-onl-ebook-formatting-121",
+   "title": "Ebook formatting for self-publishers",
+   "one_liner": "Self-published authors pay per title to get manuscripts converted to clean EPUB and print-ready PDF.",
+   "min_capital": 1120,
+   "capital_tier": "500-2k",
+   "hours_per_week": "<10",
+   "countries": [
+    "UK",
+    "CA",
+    "AU",
+    "SG",
+    "PH"
+   ],
+   "online_or_offline": "online",
+   "legal_blocks": [],
+   "skills_needed": [
+    "writing",
+    "basic_english"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "low",
+   "payback_days": 14,
+   "recurring": false,
+   "channel_ids": [
+    "facebook",
+    "referral",
+    "local-groups",
+    "etsy"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Formatting software licence",
+     "amount": 504
+    },
+    {
+     "item": "Self-publishing group ads",
+     "amount": 336
+    },
+    {
+     "item": "Sample fonts and licences",
+     "amount": 280
+    }
+   ],
+   "steps": [
+    "Format one public-domain book end to end",
+    "Join 5 self-publishing groups",
+    "Offer $60 per ebook, 2 formats for the first two authors",
+    "Fix tables of contents and page breaks by hand",
+    "Deliver EPUB plus print PDF",
+    "Ask for a review in the author group",
+    "Batch similar genres for speed"
+   ],
+   "pricing_hint": "$60 per ebook, 2 formats",
+   "first_customers": [
+    "Google Maps high-street shops",
+    "Facebook local community groups",
+    "Nextdoor UK street posts",
+    "Local parish newsletter ads"
+   ],
+   "pitfalls": [
+    "Check image licences before embedding",
+    "Validate EPUB in two readers",
+    "Never accept handwriting scans without notes"
+   ],
+   "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+   "wave": "digital-product",
+   "trend_tags": [
+    "publishing",
+    "digital-product"
+   ],
+   "first_seen": "2025-01",
+   "maturity": "growing",
+   "version": 1,
+   "updated_at": "2026-11-01",
+   "status": "active",
+   "overrides": {
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Google Maps high-street shops",
+      "Facebook local community groups",
+      "Nextdoor UK street posts"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Google Maps shops on main streets",
+      "Nextdoor Canada community posts",
+      "Local Facebook buy-and-sell groups"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Google Maps suburban strip shops",
+      "Nextdoor Australia neighbourhood posts",
+      "Local Facebook community groups"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "Facebook neighbourhood groups for HDB estates",
+      "WhatsApp business contact lists",
+      "Google Maps shop clusters in heartland malls"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Facebook Marketplace local groups",
+      "Barangay community referrals",
+      "Google Maps shops along main roads"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-onl-ebook-formatting-122",
+   "title": "Ebook formatting for self-publishers (north)",
+   "one_liner": "Self-published authors pay per title to get manuscripts converted to clean EPUB and print-ready PDF.",
+   "min_capital": 65,
+   "capital_tier": "<500",
+   "hours_per_week": "10-25",
+   "countries": [
+    "US",
+    "UK",
+    "AU",
+    "SG"
+   ],
+   "online_or_offline": "online",
+   "legal_blocks": [],
+   "skills_needed": [
+    "writing",
+    "basic_english"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "low",
+   "payback_days": 21,
+   "recurring": false,
+   "channel_ids": [
+    "facebook",
+    "referral",
+    "local-groups",
+    "etsy"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Formatting software licence",
+     "amount": 29
+    },
+    {
+     "item": "Self-publishing group ads",
+     "amount": 20
+    },
+    {
+     "item": "Sample fonts and licences",
+     "amount": 16
+    }
+   ],
+   "steps": [
+    "Format one public-domain book end to end",
+    "Join 10 self-publishing groups",
+    "Offer $110 with cover layout for the first two authors",
+    "Fix tables of contents and page breaks by hand",
+    "Deliver EPUB plus print PDF",
+    "Ask for a review in the author group",
+    "Batch similar genres for speed"
+   ],
+   "pricing_hint": "$110 with cover layout",
+   "first_customers": [
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews"
+   ],
+   "pitfalls": [
+    "Check image licences before embedding",
+    "Validate EPUB in two readers",
+    "Never accept handwriting scans without notes"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "digital-product",
+   "trend_tags": [
+    "publishing",
+    "digital-product"
+   ],
+   "first_seen": "2024-02",
+   "maturity": "mature",
+   "version": 1,
+   "updated_at": "2026-01-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Nextdoor neighbourhood posts",
+      "Thumbtack local leads",
+      "Chamber of commerce newsletter"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Facebook local community groups",
+      "Nextdoor UK street posts",
+      "Local parish newsletter ads"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Nextdoor Australia neighbourhood posts",
+      "Local Facebook community groups",
+      "Council newsletter sponsorships"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "WhatsApp business contact lists",
+      "Google Maps shop clusters in heartland malls",
+      "Facebook neighbourhood groups for HDB estates"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-onl-ebook-formatting-123",
+   "title": "Ebook formatting for self-publishers (east)",
+   "one_liner": "Self-published authors pay per title to get manuscripts converted to clean EPUB and print-ready PDF.",
+   "min_capital": 165,
+   "capital_tier": "<500",
+   "hours_per_week": "full",
+   "countries": [
+    "CA",
+    "AU",
+    "SG",
+    "PH"
+   ],
+   "online_or_offline": "online",
+   "legal_blocks": [],
+   "skills_needed": [
+    "writing",
+    "basic_english"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "low",
+   "payback_days": 30,
+   "recurring": false,
+   "channel_ids": [
+    "facebook",
+    "referral",
+    "local-groups",
+    "etsy"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Formatting software licence",
+     "amount": 74
+    },
+    {
+     "item": "Self-publishing group ads",
+     "amount": 50
+    },
+    {
+     "item": "Sample fonts and licences",
+     "amount": 41
+    }
+   ],
+   "steps": [
+    "Format one public-domain book end to end",
+    "Join 15 self-publishing groups",
+    "Offer $39 picture books for the first two authors",
+    "Fix tables of contents and page breaks by hand",
+    "Deliver EPUB plus print PDF",
+    "Ask for a review in the author group",
+    "Batch similar genres for speed"
+   ],
+   "pricing_hint": "$39 picture books",
+   "first_customers": [
+    "Local Facebook buy-and-sell groups",
+    "Chamber of commerce directory",
+    "Google Maps shops on main streets",
+    "Nextdoor Canada community posts"
+   ],
+   "pitfalls": [
+    "Check image licences before embedding",
+    "Validate EPUB in two readers",
+    "Never accept handwriting scans without notes"
+   ],
+   "compliance_note": "CA: register the business name provincially before invoicing.",
+   "wave": "digital-product",
+   "trend_tags": [
+    "publishing",
+    "digital-product"
+   ],
+   "first_seen": "2024-03",
+   "maturity": "emerging",
+   "version": 1,
+   "updated_at": "2026-02-01",
+   "status": "active",
+   "overrides": {
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Local Facebook buy-and-sell groups",
+      "Chamber of commerce directory",
+      "Google Maps shops on main streets"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Local Facebook community groups",
+      "Council newsletter sponsorships",
+      "Google Maps suburban strip shops"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "Google Maps shop clusters in heartland malls",
+      "Facebook neighbourhood groups for HDB estates",
+      "WhatsApp business contact lists"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Google Maps shops along main roads",
+      "Viber neighbourhood groups",
+      "Facebook Marketplace local groups"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-onl-ebook-formatting-124",
+   "title": "Ebook formatting for self-publishers (riverside)",
+   "one_liner": "Self-published authors pay per title to get manuscripts converted to clean EPUB and print-ready PDF.",
+   "min_capital": 7130,
+   "capital_tier": "2k-10k",
+   "hours_per_week": "<10",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU"
+   ],
+   "online_or_offline": "online",
+   "legal_blocks": [],
+   "skills_needed": [
+    "writing",
+    "basic_english"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "low",
+   "payback_days": 14,
+   "recurring": false,
+   "channel_ids": [
+    "facebook",
+    "referral",
+    "local-groups",
+    "etsy"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Formatting software licence",
+     "amount": 3208
+    },
+    {
+     "item": "Self-publishing group ads",
+     "amount": 2139
+    },
+    {
+     "item": "Sample fonts and licences",
+     "amount": 1783
+    }
+   ],
+   "steps": [
+    "Format one public-domain book end to end",
+    "Join 20 self-publishing groups",
+    "Offer $60 per ebook, 2 formats for the first two authors",
+    "Fix tables of contents and page breaks by hand",
+    "Deliver EPUB plus print PDF",
+    "Ask for a review in the author group",
+    "Batch similar genres for speed"
+   ],
+   "pricing_hint": "$60 per ebook, 2 formats",
+   "first_customers": [
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads"
+   ],
+   "pitfalls": [
+    "Check image licences before embedding",
+    "Validate EPUB in two readers",
+    "Never accept handwriting scans without notes"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "digital-product",
+   "trend_tags": [
+    "publishing",
+    "digital-product"
+   ],
+   "first_seen": "2025-04",
+   "maturity": "mature",
+   "version": 1,
+   "updated_at": "2026-03-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Chamber of commerce newsletter",
+      "Google Maps 4-star shops with unanswered reviews",
+      "Nextdoor neighbourhood posts"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Local parish newsletter ads",
+      "Google Maps high-street shops",
+      "Facebook local community groups"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Chamber of commerce directory",
+      "Google Maps shops on main streets",
+      "Nextdoor Canada community posts"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Council newsletter sponsorships",
+      "Google Maps suburban strip shops",
+      "Nextdoor Australia neighbourhood posts"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-onl-ebook-formatting-125",
+   "title": "Ebook formatting for self-publishers (old town)",
+   "one_liner": "Self-published authors pay per title to get manuscripts converted to clean EPUB and print-ready PDF.",
+   "min_capital": 360,
+   "capital_tier": "<500",
+   "hours_per_week": "<10",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "SG",
+    "PH"
+   ],
+   "online_or_offline": "offline",
+   "legal_blocks": [],
+   "skills_needed": [
+    "writing",
+    "basic_english"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "low",
+   "payback_days": 21,
+   "recurring": false,
+   "channel_ids": [
+    "facebook",
+    "referral",
+    "local-groups",
+    "etsy"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Formatting software licence",
+     "amount": 162
+    },
+    {
+     "item": "Self-publishing group ads",
+     "amount": 108
+    },
+    {
+     "item": "Sample fonts and licences",
+     "amount": 90
+    }
+   ],
+   "steps": [
+    "Format one public-domain book end to end",
+    "Join 25 self-publishing groups",
+    "Offer $110 with cover layout for the first two authors",
+    "Fix tables of contents and page breaks by hand",
+    "Deliver EPUB plus print PDF",
+    "Ask for a review in the author group",
+    "Batch similar genres for speed"
+   ],
+   "pricing_hint": "$110 with cover layout",
+   "first_customers": [
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter"
+   ],
+   "pitfalls": [
+    "Check image licences before embedding",
+    "Validate EPUB in two readers",
+    "Never accept handwriting scans without notes"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "digital-product",
+   "trend_tags": [
+    "publishing",
+    "digital-product"
+   ],
+   "first_seen": "2024-05",
+   "maturity": "growing",
+   "version": 1,
+   "updated_at": "2026-04-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Google Maps 4-star shops with unanswered reviews",
+      "Nextdoor neighbourhood posts",
+      "Thumbtack local leads"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Google Maps high-street shops",
+      "Facebook local community groups",
+      "Nextdoor UK street posts"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Google Maps shops on main streets",
+      "Nextdoor Canada community posts",
+      "Local Facebook buy-and-sell groups"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "WhatsApp business contact lists",
+      "Google Maps shop clusters in heartland malls",
+      "Facebook neighbourhood groups for HDB estates"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Facebook Marketplace local groups",
+      "Barangay community referrals",
+      "Google Maps shops along main roads"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-onl-ebook-formatting-126",
+   "title": "Ebook formatting for self-publishers (hillside)",
+   "one_liner": "Self-published authors pay per title to get manuscripts converted to clean EPUB and print-ready PDF.",
+   "min_capital": 7325,
+   "capital_tier": "2k-10k",
+   "hours_per_week": "10-25",
+   "countries": [
+    "US",
+    "UK",
+    "AU"
+   ],
+   "online_or_offline": "hybrid",
+   "legal_blocks": [],
+   "skills_needed": [
+    "writing",
+    "basic_english"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "low",
+   "payback_days": 30,
+   "recurring": false,
+   "channel_ids": [
+    "facebook",
+    "referral",
+    "local-groups",
+    "etsy"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Formatting software licence",
+     "amount": 3296
+    },
+    {
+     "item": "Self-publishing group ads",
+     "amount": 2198
+    },
+    {
+     "item": "Sample fonts and licences",
+     "amount": 1831
+    }
+   ],
+   "steps": [
+    "Format one public-domain book end to end",
+    "Join 30 self-publishing groups",
+    "Offer $39 picture books for the first two authors",
+    "Fix tables of contents and page breaks by hand",
+    "Deliver EPUB plus print PDF",
+    "Ask for a review in the author group",
+    "Batch similar genres for speed"
+   ],
+   "pricing_hint": "$39 picture books",
+   "first_customers": [
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews"
+   ],
+   "pitfalls": [
+    "Check image licences before embedding",
+    "Validate EPUB in two readers",
+    "Never accept handwriting scans without notes"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "digital-product",
+   "trend_tags": [
+    "publishing",
+    "digital-product"
+   ],
+   "first_seen": "2024-06",
+   "maturity": "mature",
+   "version": 1,
+   "updated_at": "2026-05-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Nextdoor neighbourhood posts",
+      "Thumbtack local leads",
+      "Chamber of commerce newsletter"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Facebook local community groups",
+      "Nextdoor UK street posts",
+      "Local parish newsletter ads"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Nextdoor Australia neighbourhood posts",
+      "Local Facebook community groups",
+      "Council newsletter sponsorships"
+     ]
+    }
+   }
+  }
+ ]
+}

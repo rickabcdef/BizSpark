@@ -1,0 +1,1352 @@
+{
+ "industry": "template-packs",
+ "count": 11,
+ "ideas": [
+  {
+   "id": "bs-cnt-template-packs-219",
+   "title": "Spreadsheet and planner template packs (market)",
+   "one_liner": "Small business owners buy ready-made budgeting, rota and invoice template packs for their trade.",
+   "min_capital": 475,
+   "capital_tier": "<500",
+   "hours_per_week": "10-25",
+   "countries": [
+    "US",
+    "CA",
+    "AU"
+   ],
+   "online_or_offline": "online",
+   "legal_blocks": [],
+   "skills_needed": [
+    "design",
+    "basic_english"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "low",
+   "payback_days": 45,
+   "recurring": false,
+   "channel_ids": [
+    "etsy",
+    "shopify",
+    "facebook",
+    "referral"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Etsy listing fees",
+     "amount": 142
+    },
+    {
+     "item": "Design tool subscription",
+     "amount": 190
+    },
+    {
+     "item": "Sample screenshot photography",
+     "amount": 143
+    }
+   ],
+   "steps": [
+    "Build one rota template for a real café",
+    "Test it with the owner for a week",
+    "Screenshot 15 use-case previews",
+    "Offer $12 launch-week price on Etsy and a trade group",
+    "Bundle 3 templates per trade",
+    "Add a 2-page how-to PDF",
+    "Email buyers a follow-up upsell"
+   ],
+   "pricing_hint": "$12 launch-week price",
+   "first_customers": [
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts"
+   ],
+   "pitfalls": [
+    "Lock formula cells before selling",
+    "Test printing on A4 and Letter",
+    "Never resell licensed artwork"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "digital-product",
+   "trend_tags": [
+    "digital-product",
+    "templates"
+   ],
+   "first_seen": "2024-03",
+   "maturity": "saturated",
+   "version": 1,
+   "updated_at": "2026-10-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Thumbtack local leads",
+      "Chamber of commerce newsletter",
+      "Google Maps 4-star shops with unanswered reviews"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Local Facebook buy-and-sell groups",
+      "Chamber of commerce directory",
+      "Google Maps shops on main streets"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Local Facebook community groups",
+      "Council newsletter sponsorships",
+      "Google Maps suburban strip shops"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-cnt-template-packs-220",
+   "title": "Spreadsheet and planner template packs(lakeside)",
+   "one_liner": "Small business owners buy ready-made budgeting, rota and invoice template packs for their trade.",
+   "min_capital": 125,
+   "capital_tier": "<500",
+   "hours_per_week": "10-25",
+   "countries": [
+    "US",
+    "UK",
+    "AU",
+    "PH"
+   ],
+   "online_or_offline": "online",
+   "legal_blocks": [],
+   "skills_needed": [
+    "design",
+    "basic_english"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "low",
+   "payback_days": 21,
+   "recurring": false,
+   "channel_ids": [
+    "etsy",
+    "shopify",
+    "facebook",
+    "referral"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Etsy listing fees",
+     "amount": 38
+    },
+    {
+     "item": "Design tool subscription",
+     "amount": 50
+    },
+    {
+     "item": "Sample screenshot photography",
+     "amount": 37
+    }
+   ],
+   "steps": [
+    "Build one rota template for a real café",
+    "Test it with the owner for a week",
+    "Screenshot 20 use-case previews",
+    "Offer $19 per template pack on Etsy and a trade group",
+    "Bundle 3 templates per trade",
+    "Add a 2-page how-to PDF",
+    "Email buyers a follow-up upsell"
+   ],
+   "pricing_hint": "$19 per template pack",
+   "first_customers": [
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads"
+   ],
+   "pitfalls": [
+    "Lock formula cells before selling",
+    "Test printing on A4 and Letter",
+    "Never resell licensed artwork"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "digital-product",
+   "trend_tags": [
+    "digital-product",
+    "templates"
+   ],
+   "first_seen": "2025-04",
+   "maturity": "emerging",
+   "version": 1,
+   "updated_at": "2026-11-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Chamber of commerce newsletter",
+      "Google Maps 4-star shops with unanswered reviews",
+      "Nextdoor neighbourhood posts"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Local parish newsletter ads",
+      "Google Maps high-street shops",
+      "Facebook local community groups"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Council newsletter sponsorships",
+      "Google Maps suburban strip shops",
+      "Nextdoor Australia neighbourhood posts"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Viber neighbourhood groups",
+      "Facebook Marketplace local groups",
+      "Barangay community referrals"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-cnt-template-packs-221",
+   "title": "Spreadsheet and planner template packs",
+   "one_liner": "Small business owners buy ready-made budgeting, rota and invoice template packs for their trade.",
+   "min_capital": 2740,
+   "capital_tier": "2k-10k",
+   "hours_per_week": "full",
+   "countries": [
+    "US",
+    "UK",
+    "AU",
+    "SG",
+    "PH"
+   ],
+   "online_or_offline": "online",
+   "legal_blocks": [],
+   "skills_needed": [
+    "design",
+    "basic_english"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "low",
+   "payback_days": 30,
+   "recurring": false,
+   "channel_ids": [
+    "etsy",
+    "shopify",
+    "facebook",
+    "referral"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Etsy listing fees",
+     "amount": 822
+    },
+    {
+     "item": "Design tool subscription",
+     "amount": 1096
+    },
+    {
+     "item": "Sample screenshot photography",
+     "amount": 822
+    }
+   ],
+   "steps": [
+    "Build one rota template for a real café",
+    "Test it with the owner for a week",
+    "Screenshot 25 use-case previews",
+    "Offer $49 for a trade bundle of 5 on Etsy and a trade group",
+    "Bundle 3 templates per trade",
+    "Add a 2-page how-to PDF",
+    "Email buyers a follow-up upsell"
+   ],
+   "pricing_hint": "$49 for a trade bundle of 5",
+   "first_customers": [
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter"
+   ],
+   "pitfalls": [
+    "Lock formula cells before selling",
+    "Test printing on A4 and Letter",
+    "Never resell licensed artwork"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "digital-product",
+   "trend_tags": [
+    "digital-product",
+    "templates"
+   ],
+   "first_seen": "2024-05",
+   "maturity": "growing",
+   "version": 1,
+   "updated_at": "2026-01-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Google Maps 4-star shops with unanswered reviews",
+      "Nextdoor neighbourhood posts",
+      "Thumbtack local leads"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Google Maps high-street shops",
+      "Facebook local community groups",
+      "Nextdoor UK street posts"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Google Maps suburban strip shops",
+      "Nextdoor Australia neighbourhood posts",
+      "Local Facebook community groups"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "WhatsApp business contact lists",
+      "Google Maps shop clusters in heartland malls",
+      "Facebook neighbourhood groups for HDB estates"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Facebook Marketplace local groups",
+      "Barangay community referrals",
+      "Google Maps shops along main roads"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-cnt-template-packs-222",
+   "title": "Spreadsheet and planner template packs (north)",
+   "one_liner": "Small business owners buy ready-made budgeting, rota and invoice template packs for their trade.",
+   "min_capital": 1255,
+   "capital_tier": "500-2k",
+   "hours_per_week": "<10",
+   "countries": [
+    "US",
+    "CA",
+    "SG",
+    "PH"
+   ],
+   "online_or_offline": "online",
+   "legal_blocks": [],
+   "skills_needed": [
+    "design",
+    "basic_english"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "low",
+   "payback_days": 45,
+   "recurring": false,
+   "channel_ids": [
+    "etsy",
+    "shopify",
+    "facebook",
+    "referral"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Etsy listing fees",
+     "amount": 376
+    },
+    {
+     "item": "Design tool subscription",
+     "amount": 502
+    },
+    {
+     "item": "Sample screenshot photography",
+     "amount": 377
+    }
+   ],
+   "steps": [
+    "Build one rota template for a real café",
+    "Test it with the owner for a week",
+    "Screenshot 30 use-case previews",
+    "Offer $12 launch-week price on Etsy and a trade group",
+    "Bundle 3 templates per trade",
+    "Add a 2-page how-to PDF",
+    "Email buyers a follow-up upsell"
+   ],
+   "pricing_hint": "$12 launch-week price",
+   "first_customers": [
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews"
+   ],
+   "pitfalls": [
+    "Lock formula cells before selling",
+    "Test printing on A4 and Letter",
+    "Never resell licensed artwork"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "digital-product",
+   "trend_tags": [
+    "digital-product",
+    "templates"
+   ],
+   "first_seen": "2024-06",
+   "maturity": "growing",
+   "version": 1,
+   "updated_at": "2026-02-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Nextdoor neighbourhood posts",
+      "Thumbtack local leads",
+      "Chamber of commerce newsletter"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Nextdoor Canada community posts",
+      "Local Facebook buy-and-sell groups",
+      "Chamber of commerce directory"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "Google Maps shop clusters in heartland malls",
+      "Facebook neighbourhood groups for HDB estates",
+      "WhatsApp business contact lists"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Barangay community referrals",
+      "Google Maps shops along main roads",
+      "Viber neighbourhood groups"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-cnt-template-packs-223",
+   "title": "Spreadsheet and planner template packs (east)",
+   "one_liner": "Small business owners buy ready-made budgeting, rota and invoice template packs for their trade.",
+   "min_capital": 1355,
+   "capital_tier": "500-2k",
+   "hours_per_week": "<10",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU",
+    "SG"
+   ],
+   "online_or_offline": "online",
+   "legal_blocks": [],
+   "skills_needed": [
+    "design",
+    "basic_english"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "low",
+   "payback_days": 21,
+   "recurring": false,
+   "channel_ids": [
+    "etsy",
+    "shopify",
+    "facebook",
+    "referral"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Etsy listing fees",
+     "amount": 406
+    },
+    {
+     "item": "Design tool subscription",
+     "amount": 542
+    },
+    {
+     "item": "Sample screenshot photography",
+     "amount": 407
+    }
+   ],
+   "steps": [
+    "Build one rota template for a real café",
+    "Test it with the owner for a week",
+    "Screenshot 5 use-case previews",
+    "Offer $19 per template pack on Etsy and a trade group",
+    "Bundle 3 templates per trade",
+    "Add a 2-page how-to PDF",
+    "Email buyers a follow-up upsell"
+   ],
+   "pricing_hint": "$19 per template pack",
+   "first_customers": [
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts"
+   ],
+   "pitfalls": [
+    "Lock formula cells before selling",
+    "Test printing on A4 and Letter",
+    "Never resell licensed artwork"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "digital-product",
+   "trend_tags": [
+    "digital-product",
+    "templates"
+   ],
+   "first_seen": "2025-07",
+   "maturity": "growing",
+   "version": 1,
+   "updated_at": "2026-03-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Thumbtack local leads",
+      "Chamber of commerce newsletter",
+      "Google Maps 4-star shops with unanswered reviews"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Nextdoor UK street posts",
+      "Local parish newsletter ads",
+      "Google Maps high-street shops"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Local Facebook buy-and-sell groups",
+      "Chamber of commerce directory",
+      "Google Maps shops on main streets"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Local Facebook community groups",
+      "Council newsletter sponsorships",
+      "Google Maps suburban strip shops"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "Facebook neighbourhood groups for HDB estates",
+      "WhatsApp business contact lists",
+      "Google Maps shop clusters in heartland malls"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-cnt-template-packs-224",
+   "title": "Spreadsheet and planner template packs",
+   "one_liner": "Small business owners buy ready-made budgeting, rota and invoice template packs for their trade.",
+   "min_capital": 1450,
+   "capital_tier": "500-2k",
+   "hours_per_week": "full",
+   "countries": [
+    "US",
+    "UK",
+    "CA"
+   ],
+   "online_or_offline": "online",
+   "legal_blocks": [],
+   "skills_needed": [
+    "design",
+    "basic_english"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "low",
+   "payback_days": 30,
+   "recurring": false,
+   "channel_ids": [
+    "etsy",
+    "shopify",
+    "facebook",
+    "referral"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Etsy listing fees",
+     "amount": 435
+    },
+    {
+     "item": "Design tool subscription",
+     "amount": 580
+    },
+    {
+     "item": "Sample screenshot photography",
+     "amount": 435
+    }
+   ],
+   "steps": [
+    "Build one rota template for a real café",
+    "Test it with the owner for a week",
+    "Screenshot 10 use-case previews",
+    "Offer $49 for a trade bundle of 5 on Etsy and a trade group",
+    "Bundle 3 templates per trade",
+    "Add a 2-page how-to PDF",
+    "Email buyers a follow-up upsell"
+   ],
+   "pricing_hint": "$49 for a trade bundle of 5",
+   "first_customers": [
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads"
+   ],
+   "pitfalls": [
+    "Lock formula cells before selling",
+    "Test printing on A4 and Letter",
+    "Never resell licensed artwork"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "digital-product",
+   "trend_tags": [
+    "digital-product",
+    "templates"
+   ],
+   "first_seen": "2024-08",
+   "maturity": "emerging",
+   "version": 1,
+   "updated_at": "2026-04-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Chamber of commerce newsletter",
+      "Google Maps 4-star shops with unanswered reviews",
+      "Nextdoor neighbourhood posts"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Local parish newsletter ads",
+      "Google Maps high-street shops",
+      "Facebook local community groups"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Chamber of commerce directory",
+      "Google Maps shops on main streets",
+      "Nextdoor Canada community posts"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-cnt-template-packs-225",
+   "title": "Spreadsheet and planner template packs",
+   "one_liner": "Small business owners buy ready-made budgeting, rota and invoice template packs for their trade.",
+   "min_capital": 160,
+   "capital_tier": "<500",
+   "hours_per_week": "<10",
+   "countries": [
+    "US",
+    "UK",
+    "AU",
+    "SG",
+    "PH"
+   ],
+   "online_or_offline": "online",
+   "legal_blocks": [],
+   "skills_needed": [
+    "design",
+    "basic_english"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "low",
+   "payback_days": 45,
+   "recurring": false,
+   "channel_ids": [
+    "etsy",
+    "shopify",
+    "facebook",
+    "referral"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Etsy listing fees",
+     "amount": 48
+    },
+    {
+     "item": "Design tool subscription",
+     "amount": 64
+    },
+    {
+     "item": "Sample screenshot photography",
+     "amount": 48
+    }
+   ],
+   "steps": [
+    "Build one rota template for a real café",
+    "Test it with the owner for a week",
+    "Screenshot 15 use-case previews",
+    "Offer $12 launch-week price on Etsy and a trade group",
+    "Bundle 3 templates per trade",
+    "Add a 2-page how-to PDF",
+    "Email buyers a follow-up upsell"
+   ],
+   "pricing_hint": "$12 launch-week price",
+   "first_customers": [
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter"
+   ],
+   "pitfalls": [
+    "Lock formula cells before selling",
+    "Test printing on A4 and Letter",
+    "Never resell licensed artwork"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "digital-product",
+   "trend_tags": [
+    "digital-product",
+    "templates"
+   ],
+   "first_seen": "2024-09",
+   "maturity": "mature",
+   "version": 1,
+   "updated_at": "2026-05-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Google Maps 4-star shops with unanswered reviews",
+      "Nextdoor neighbourhood posts",
+      "Thumbtack local leads"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Google Maps high-street shops",
+      "Facebook local community groups",
+      "Nextdoor UK street posts"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Google Maps suburban strip shops",
+      "Nextdoor Australia neighbourhood posts",
+      "Local Facebook community groups"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "Google Maps shop clusters in heartland malls",
+      "Facebook neighbourhood groups for HDB estates",
+      "WhatsApp business contact lists"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Facebook Marketplace local groups",
+      "Barangay community referrals",
+      "Google Maps shops along main roads"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-cnt-template-packs-226",
+   "title": "Spreadsheet and planner template packs",
+   "one_liner": "Small business owners buy ready-made budgeting, rota and invoice template packs for their trade.",
+   "min_capital": 1645,
+   "capital_tier": "500-2k",
+   "hours_per_week": "<10",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU",
+    "PH"
+   ],
+   "online_or_offline": "hybrid",
+   "legal_blocks": [],
+   "skills_needed": [
+    "design",
+    "basic_english"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "low",
+   "payback_days": 21,
+   "recurring": false,
+   "channel_ids": [
+    "etsy",
+    "shopify",
+    "facebook",
+    "referral"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Etsy listing fees",
+     "amount": 494
+    },
+    {
+     "item": "Design tool subscription",
+     "amount": 658
+    },
+    {
+     "item": "Sample screenshot photography",
+     "amount": 493
+    }
+   ],
+   "steps": [
+    "Build one rota template for a real café",
+    "Test it with the owner for a week",
+    "Screenshot 20 use-case previews",
+    "Offer $19 per template pack on Etsy and a trade group",
+    "Bundle 3 templates per trade",
+    "Add a 2-page how-to PDF",
+    "Email buyers a follow-up upsell"
+   ],
+   "pricing_hint": "$19 per template pack",
+   "first_customers": [
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews"
+   ],
+   "pitfalls": [
+    "Lock formula cells before selling",
+    "Test printing on A4 and Letter",
+    "Never resell licensed artwork"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "digital-product",
+   "trend_tags": [
+    "digital-product",
+    "templates"
+   ],
+   "first_seen": "2025-10",
+   "maturity": "mature",
+   "version": 1,
+   "updated_at": "2026-06-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Nextdoor neighbourhood posts",
+      "Thumbtack local leads",
+      "Chamber of commerce newsletter"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Facebook local community groups",
+      "Nextdoor UK street posts",
+      "Local parish newsletter ads"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Nextdoor Canada community posts",
+      "Local Facebook buy-and-sell groups",
+      "Chamber of commerce directory"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Nextdoor Australia neighbourhood posts",
+      "Local Facebook community groups",
+      "Council newsletter sponsorships"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Barangay community referrals",
+      "Google Maps shops along main roads",
+      "Viber neighbourhood groups"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-cnt-template-packs-227",
+   "title": "Spreadsheet and planner template packs (central)",
+   "one_liner": "Small business owners buy ready-made budgeting, rota and invoice template packs for their trade.",
+   "min_capital": 3320,
+   "capital_tier": "2k-10k",
+   "hours_per_week": "<10",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU",
+    "SG",
+    "PH"
+   ],
+   "online_or_offline": "online",
+   "legal_blocks": [],
+   "skills_needed": [
+    "design",
+    "basic_english"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "low",
+   "payback_days": 30,
+   "recurring": false,
+   "channel_ids": [
+    "etsy",
+    "shopify",
+    "facebook",
+    "referral"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Etsy listing fees",
+     "amount": 996
+    },
+    {
+     "item": "Design tool subscription",
+     "amount": 1328
+    },
+    {
+     "item": "Sample screenshot photography",
+     "amount": 996
+    }
+   ],
+   "steps": [
+    "Build one rota template for a real café",
+    "Test it with the owner for a week",
+    "Screenshot 25 use-case previews",
+    "Offer $49 for a trade bundle of 5 on Etsy and a trade group",
+    "Bundle 3 templates per trade",
+    "Add a 2-page how-to PDF",
+    "Email buyers a follow-up upsell"
+   ],
+   "pricing_hint": "$49 for a trade bundle of 5",
+   "first_customers": [
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts"
+   ],
+   "pitfalls": [
+    "Lock formula cells before selling",
+    "Test printing on A4 and Letter",
+    "Never resell licensed artwork"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "digital-product",
+   "trend_tags": [
+    "digital-product",
+    "templates"
+   ],
+   "first_seen": "2024-11",
+   "maturity": "growing",
+   "version": 1,
+   "updated_at": "2026-07-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Thumbtack local leads",
+      "Chamber of commerce newsletter",
+      "Google Maps 4-star shops with unanswered reviews"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Nextdoor UK street posts",
+      "Local parish newsletter ads",
+      "Google Maps high-street shops"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Local Facebook buy-and-sell groups",
+      "Chamber of commerce directory",
+      "Google Maps shops on main streets"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Local Facebook community groups",
+      "Council newsletter sponsorships",
+      "Google Maps suburban strip shops"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "WhatsApp business contact lists",
+      "Google Maps shop clusters in heartland malls",
+      "Facebook neighbourhood groups for HDB estates"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Google Maps shops along main roads",
+      "Viber neighbourhood groups",
+      "Facebook Marketplace local groups"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-cnt-template-packs-228",
+   "title": "Spreadsheet and planner template packs (bayside)",
+   "one_liner": "Small business owners buy ready-made budgeting, rota and invoice template packs for their trade.",
+   "min_capital": 1840,
+   "capital_tier": "500-2k",
+   "hours_per_week": "<10",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU",
+    "SG",
+    "PH"
+   ],
+   "online_or_offline": "online",
+   "legal_blocks": [],
+   "skills_needed": [
+    "design",
+    "basic_english"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "low",
+   "payback_days": 45,
+   "recurring": false,
+   "channel_ids": [
+    "etsy",
+    "shopify",
+    "facebook",
+    "referral"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Etsy listing fees",
+     "amount": 552
+    },
+    {
+     "item": "Design tool subscription",
+     "amount": 736
+    },
+    {
+     "item": "Sample screenshot photography",
+     "amount": 552
+    }
+   ],
+   "steps": [
+    "Build one rota template for a real café",
+    "Test it with the owner for a week",
+    "Screenshot 30 use-case previews",
+    "Offer $12 launch-week price on Etsy and a trade group",
+    "Bundle 3 templates per trade",
+    "Add a 2-page how-to PDF",
+    "Email buyers a follow-up upsell"
+   ],
+   "pricing_hint": "$12 launch-week price",
+   "first_customers": [
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads"
+   ],
+   "pitfalls": [
+    "Lock formula cells before selling",
+    "Test printing on A4 and Letter",
+    "Never resell licensed artwork"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "digital-product",
+   "trend_tags": [
+    "digital-product",
+    "templates"
+   ],
+   "first_seen": "2024-12",
+   "maturity": "mature",
+   "version": 1,
+   "updated_at": "2026-08-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Chamber of commerce newsletter",
+      "Google Maps 4-star shops with unanswered reviews",
+      "Nextdoor neighbourhood posts"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Local parish newsletter ads",
+      "Google Maps high-street shops",
+      "Facebook local community groups"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Chamber of commerce directory",
+      "Google Maps shops on main streets",
+      "Nextdoor Canada community posts"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Council newsletter sponsorships",
+      "Google Maps suburban strip shops",
+      "Nextdoor Australia neighbourhood posts"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "Google Maps shop clusters in heartland malls",
+      "Facebook neighbourhood groups for HDB estates",
+      "WhatsApp business contact lists"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Viber neighbourhood groups",
+      "Facebook Marketplace local groups",
+      "Barangay community referrals"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-cnt-template-packs-229",
+   "title": "Spreadsheet and planner template packs (market)",
+   "one_liner": "Small business owners buy ready-made budgeting, rota and invoice template packs for their trade.",
+   "min_capital": 3515,
+   "capital_tier": "2k-10k",
+   "hours_per_week": "10-25",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU",
+    "SG"
+   ],
+   "online_or_offline": "hybrid",
+   "legal_blocks": [],
+   "skills_needed": [
+    "design",
+    "basic_english"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "low",
+   "payback_days": 21,
+   "recurring": false,
+   "channel_ids": [
+    "etsy",
+    "shopify",
+    "facebook",
+    "referral"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Etsy listing fees",
+     "amount": 1054
+    },
+    {
+     "item": "Design tool subscription",
+     "amount": 1406
+    },
+    {
+     "item": "Sample screenshot photography",
+     "amount": 1055
+    }
+   ],
+   "steps": [
+    "Build one rota template for a real café",
+    "Test it with the owner for a week",
+    "Screenshot 5 use-case previews",
+    "Offer $19 per template pack on Etsy and a trade group",
+    "Bundle 3 templates per trade",
+    "Add a 2-page how-to PDF",
+    "Email buyers a follow-up upsell"
+   ],
+   "pricing_hint": "$19 per template pack",
+   "first_customers": [
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter"
+   ],
+   "pitfalls": [
+    "Lock formula cells before selling",
+    "Test printing on A4 and Letter",
+    "Never resell licensed artwork"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "digital-product",
+   "trend_tags": [
+    "digital-product",
+    "templates"
+   ],
+   "first_seen": "2025-01",
+   "maturity": "growing",
+   "version": 1,
+   "updated_at": "2026-09-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Google Maps 4-star shops with unanswered reviews",
+      "Nextdoor neighbourhood posts",
+      "Thumbtack local leads"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Google Maps high-street shops",
+      "Facebook local community groups",
+      "Nextdoor UK street posts"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Google Maps shops on main streets",
+      "Nextdoor Canada community posts",
+      "Local Facebook buy-and-sell groups"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Google Maps suburban strip shops",
+      "Nextdoor Australia neighbourhood posts",
+      "Local Facebook community groups"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "Facebook neighbourhood groups for HDB estates",
+      "WhatsApp business contact lists",
+      "Google Maps shop clusters in heartland malls"
+     ]
+    }
+   }
+  }
+ ]
+}

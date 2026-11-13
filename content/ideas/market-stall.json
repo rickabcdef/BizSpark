@@ -1,0 +1,1996 @@
+{
+ "industry": "market-stall",
+ "count": 16,
+ "ideas": [
+  {
+   "id": "bs-hnd-market-stall-263",
+   "title": "Weekend market stall of baked staples (east)",
+   "one_liner": "Weekend market crowds pay for a small stall selling 3 signature bakes made from one cheap base dough.",
+   "min_capital": 245,
+   "capital_tier": "<500",
+   "hours_per_week": "full",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU",
+    "SG"
+   ],
+   "online_or_offline": "offline",
+   "legal_blocks": [],
+   "skills_needed": [
+    "cooking"
+   ],
+   "assets_needed": [
+    "kitchen"
+   ],
+   "risk_level": "medium",
+   "payback_days": 21,
+   "recurring": true,
+   "channel_ids": [
+    "walk-in",
+    "facebook",
+    "local-groups",
+    "referral"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Market stall fee",
+     "amount": 86
+    },
+    {
+     "item": "Ingredients and packaging",
+     "amount": 98
+    },
+    {
+     "item": "Food-handler certificate",
+     "amount": 61
+    }
+   ],
+   "steps": [
+    "Bake 25 samples and price-test on friends",
+    "Book one weekend market stall",
+    "Get the food-handler certificate",
+    "Offer $15 three-pack box with a 3-bake box",
+    "Post the Saturday menu in local groups",
+    "Take pre-orders via a simple form",
+    "Track which bake sells out first"
+   ],
+   "pricing_hint": "$15 three-pack box",
+   "first_customers": [
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts"
+   ],
+   "pitfalls": [
+    "Check cottage-food rules for home kitchens",
+    "Never sell perishables without cold storage",
+    "Price with the stall fee included"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "local-service",
+   "trend_tags": [
+    "food",
+    "local"
+   ],
+   "first_seen": "2024-11",
+   "maturity": "growing",
+   "version": 1,
+   "updated_at": "2026-10-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Thumbtack local leads",
+      "Chamber of commerce newsletter",
+      "Google Maps 4-star shops with unanswered reviews"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Nextdoor UK street posts",
+      "Local parish newsletter ads",
+      "Google Maps high-street shops"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Local Facebook buy-and-sell groups",
+      "Chamber of commerce directory",
+      "Google Maps shops on main streets"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Local Facebook community groups",
+      "Council newsletter sponsorships",
+      "Google Maps suburban strip shops"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "WhatsApp business contact lists",
+      "Google Maps shop clusters in heartland malls",
+      "Facebook neighbourhood groups for HDB estates"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-hnd-market-stall-264",
+   "title": "Weekend market stall of baked staples",
+   "one_liner": "Weekend market crowds pay for a small stall selling 3 signature bakes made from one cheap base dough.",
+   "min_capital": 340,
+   "capital_tier": "<500",
+   "hours_per_week": "10-25",
+   "countries": [
+    "US",
+    "UK",
+    "AU",
+    "SG",
+    "PH"
+   ],
+   "online_or_offline": "offline",
+   "legal_blocks": [],
+   "skills_needed": [
+    "cooking"
+   ],
+   "assets_needed": [
+    "kitchen"
+   ],
+   "risk_level": "medium",
+   "payback_days": 30,
+   "recurring": true,
+   "channel_ids": [
+    "walk-in",
+    "facebook",
+    "local-groups",
+    "referral"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Market stall fee",
+     "amount": 119
+    },
+    {
+     "item": "Ingredients and packaging",
+     "amount": 136
+    },
+    {
+     "item": "Food-handler certificate",
+     "amount": 85
+    }
+   ],
+   "steps": [
+    "Bake 30 samples and price-test on friends",
+    "Book one weekend market stall",
+    "Get the food-handler certificate",
+    "Offer $35 pre-order family box with a 3-bake box",
+    "Post the Saturday menu in local groups",
+    "Take pre-orders via a simple form",
+    "Track which bake sells out first"
+   ],
+   "pricing_hint": "$35 pre-order family box",
+   "first_customers": [
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads"
+   ],
+   "pitfalls": [
+    "Check cottage-food rules for home kitchens",
+    "Never sell perishables without cold storage",
+    "Price with the stall fee included"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "local-service",
+   "trend_tags": [
+    "food",
+    "local"
+   ],
+   "first_seen": "2024-12",
+   "maturity": "saturated",
+   "version": 1,
+   "updated_at": "2026-11-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Chamber of commerce newsletter",
+      "Google Maps 4-star shops with unanswered reviews",
+      "Nextdoor neighbourhood posts"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Local parish newsletter ads",
+      "Google Maps high-street shops",
+      "Facebook local community groups"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Council newsletter sponsorships",
+      "Google Maps suburban strip shops",
+      "Nextdoor Australia neighbourhood posts"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "Google Maps shop clusters in heartland malls",
+      "Facebook neighbourhood groups for HDB estates",
+      "WhatsApp business contact lists"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Viber neighbourhood groups",
+      "Facebook Marketplace local groups",
+      "Barangay community referrals"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-hnd-market-stall-265",
+   "title": "Weekend market stall of baked staples (old town)",
+   "one_liner": "Weekend market crowds pay for a small stall selling 3 signature bakes made from one cheap base dough.",
+   "min_capital": 440,
+   "capital_tier": "<500",
+   "hours_per_week": "full",
+   "countries": [
+    "US",
+    "UK",
+    "AU",
+    "PH"
+   ],
+   "online_or_offline": "offline",
+   "legal_blocks": [],
+   "skills_needed": [
+    "cooking"
+   ],
+   "assets_needed": [
+    "kitchen"
+   ],
+   "risk_level": "medium",
+   "payback_days": 14,
+   "recurring": true,
+   "channel_ids": [
+    "walk-in",
+    "facebook",
+    "local-groups",
+    "referral"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Market stall fee",
+     "amount": 154
+    },
+    {
+     "item": "Ingredients and packaging",
+     "amount": 176
+    },
+    {
+     "item": "Food-handler certificate",
+     "amount": 110
+    }
+   ],
+   "steps": [
+    "Bake 5 samples and price-test on friends",
+    "Book one weekend market stall",
+    "Get the food-handler certificate",
+    "Offer $6 per signature bake with a 3-bake box",
+    "Post the Saturday menu in local groups",
+    "Take pre-orders via a simple form",
+    "Track which bake sells out first"
+   ],
+   "pricing_hint": "$6 per signature bake",
+   "first_customers": [
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter"
+   ],
+   "pitfalls": [
+    "Check cottage-food rules for home kitchens",
+    "Never sell perishables without cold storage",
+    "Price with the stall fee included"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "local-service",
+   "trend_tags": [
+    "food",
+    "local"
+   ],
+   "first_seen": "2025-01",
+   "maturity": "emerging",
+   "version": 1,
+   "updated_at": "2026-01-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Google Maps 4-star shops with unanswered reviews",
+      "Nextdoor neighbourhood posts",
+      "Thumbtack local leads"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Google Maps high-street shops",
+      "Facebook local community groups",
+      "Nextdoor UK street posts"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Google Maps suburban strip shops",
+      "Nextdoor Australia neighbourhood posts",
+      "Local Facebook community groups"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Facebook Marketplace local groups",
+      "Barangay community referrals",
+      "Google Maps shops along main roads"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-hnd-market-stall-266",
+   "title": "Weekend market stall of baked staples (hillside)",
+   "one_liner": "Weekend market crowds pay for a small stall selling 3 signature bakes made from one cheap base dough.",
+   "min_capital": 85,
+   "capital_tier": "<500",
+   "hours_per_week": "<10",
+   "countries": [
+    "UK",
+    "CA",
+    "AU",
+    "SG",
+    "PH"
+   ],
+   "online_or_offline": "offline",
+   "legal_blocks": [],
+   "skills_needed": [
+    "cooking"
+   ],
+   "assets_needed": [
+    "kitchen"
+   ],
+   "risk_level": "medium",
+   "payback_days": 21,
+   "recurring": true,
+   "channel_ids": [
+    "walk-in",
+    "facebook",
+    "local-groups",
+    "referral"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Market stall fee",
+     "amount": 30
+    },
+    {
+     "item": "Ingredients and packaging",
+     "amount": 34
+    },
+    {
+     "item": "Food-handler certificate",
+     "amount": 21
+    }
+   ],
+   "steps": [
+    "Bake 10 samples and price-test on friends",
+    "Book one weekend market stall",
+    "Get the food-handler certificate",
+    "Offer $15 three-pack box with a 3-bake box",
+    "Post the Saturday menu in local groups",
+    "Take pre-orders via a simple form",
+    "Track which bake sells out first"
+   ],
+   "pricing_hint": "$15 three-pack box",
+   "first_customers": [
+    "Facebook local community groups",
+    "Nextdoor UK street posts",
+    "Local parish newsletter ads",
+    "Google Maps high-street shops"
+   ],
+   "pitfalls": [
+    "Check cottage-food rules for home kitchens",
+    "Never sell perishables without cold storage",
+    "Price with the stall fee included"
+   ],
+   "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+   "wave": "local-service",
+   "trend_tags": [
+    "food",
+    "local"
+   ],
+   "first_seen": "2024-02",
+   "maturity": "mature",
+   "version": 1,
+   "updated_at": "2026-02-01",
+   "status": "active",
+   "overrides": {
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Facebook local community groups",
+      "Nextdoor UK street posts",
+      "Local parish newsletter ads"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Nextdoor Canada community posts",
+      "Local Facebook buy-and-sell groups",
+      "Chamber of commerce directory"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Nextdoor Australia neighbourhood posts",
+      "Local Facebook community groups",
+      "Council newsletter sponsorships"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "WhatsApp business contact lists",
+      "Google Maps shop clusters in heartland malls",
+      "Facebook neighbourhood groups for HDB estates"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Barangay community referrals",
+      "Google Maps shops along main roads",
+      "Viber neighbourhood groups"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-hnd-market-stall-267",
+   "title": "Weekend market stall of baked staples (central)",
+   "one_liner": "Weekend market crowds pay for a small stall selling 3 signature bakes made from one cheap base dough.",
+   "min_capital": 180,
+   "capital_tier": "<500",
+   "hours_per_week": "10-25",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU",
+    "SG",
+    "PH"
+   ],
+   "online_or_offline": "offline",
+   "legal_blocks": [],
+   "skills_needed": [
+    "cooking"
+   ],
+   "assets_needed": [
+    "kitchen"
+   ],
+   "risk_level": "medium",
+   "payback_days": 30,
+   "recurring": true,
+   "channel_ids": [
+    "walk-in",
+    "facebook",
+    "local-groups",
+    "referral"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Market stall fee",
+     "amount": 63
+    },
+    {
+     "item": "Ingredients and packaging",
+     "amount": 72
+    },
+    {
+     "item": "Food-handler certificate",
+     "amount": 45
+    }
+   ],
+   "steps": [
+    "Bake 15 samples and price-test on friends",
+    "Book one weekend market stall",
+    "Get the food-handler certificate",
+    "Offer $35 pre-order family box with a 3-bake box",
+    "Post the Saturday menu in local groups",
+    "Take pre-orders via a simple form",
+    "Track which bake sells out first"
+   ],
+   "pricing_hint": "$35 pre-order family box",
+   "first_customers": [
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts"
+   ],
+   "pitfalls": [
+    "Check cottage-food rules for home kitchens",
+    "Never sell perishables without cold storage",
+    "Price with the stall fee included"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "local-service",
+   "trend_tags": [
+    "food",
+    "local"
+   ],
+   "first_seen": "2024-03",
+   "maturity": "saturated",
+   "version": 1,
+   "updated_at": "2026-03-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Thumbtack local leads",
+      "Chamber of commerce newsletter",
+      "Google Maps 4-star shops with unanswered reviews"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Nextdoor UK street posts",
+      "Local parish newsletter ads",
+      "Google Maps high-street shops"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Local Facebook buy-and-sell groups",
+      "Chamber of commerce directory",
+      "Google Maps shops on main streets"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Local Facebook community groups",
+      "Council newsletter sponsorships",
+      "Google Maps suburban strip shops"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "Google Maps shop clusters in heartland malls",
+      "Facebook neighbourhood groups for HDB estates",
+      "WhatsApp business contact lists"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Google Maps shops along main roads",
+      "Viber neighbourhood groups",
+      "Facebook Marketplace local groups"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-hnd-market-stall-268",
+   "title": "Weekend market stall of baked staples (bayside)",
+   "one_liner": "Weekend market crowds pay for a small stall selling 3 signature bakes made from one cheap base dough.",
+   "min_capital": 1580,
+   "capital_tier": "500-2k",
+   "hours_per_week": "10-25",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU"
+   ],
+   "online_or_offline": "hybrid",
+   "legal_blocks": [],
+   "skills_needed": [
+    "cooking"
+   ],
+   "assets_needed": [
+    "kitchen"
+   ],
+   "risk_level": "medium",
+   "payback_days": 14,
+   "recurring": true,
+   "channel_ids": [
+    "walk-in",
+    "facebook",
+    "local-groups",
+    "referral"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Market stall fee",
+     "amount": 553
+    },
+    {
+     "item": "Ingredients and packaging",
+     "amount": 632
+    },
+    {
+     "item": "Food-handler certificate",
+     "amount": 395
+    }
+   ],
+   "steps": [
+    "Bake 20 samples and price-test on friends",
+    "Book one weekend market stall",
+    "Get the food-handler certificate",
+    "Offer $6 per signature bake with a 3-bake box",
+    "Post the Saturday menu in local groups",
+    "Take pre-orders via a simple form",
+    "Track which bake sells out first"
+   ],
+   "pricing_hint": "$6 per signature bake",
+   "first_customers": [
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads"
+   ],
+   "pitfalls": [
+    "Check cottage-food rules for home kitchens",
+    "Never sell perishables without cold storage",
+    "Price with the stall fee included"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "local-service",
+   "trend_tags": [
+    "food",
+    "local"
+   ],
+   "first_seen": "2025-04",
+   "maturity": "mature",
+   "version": 1,
+   "updated_at": "2026-04-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Chamber of commerce newsletter",
+      "Google Maps 4-star shops with unanswered reviews",
+      "Nextdoor neighbourhood posts"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Local parish newsletter ads",
+      "Google Maps high-street shops",
+      "Facebook local community groups"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Chamber of commerce directory",
+      "Google Maps shops on main streets",
+      "Nextdoor Canada community posts"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Council newsletter sponsorships",
+      "Google Maps suburban strip shops",
+      "Nextdoor Australia neighbourhood posts"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-hnd-market-stall-269",
+   "title": "Weekend market stall of baked staples (market)",
+   "one_liner": "Weekend market crowds pay for a small stall selling 3 signature bakes made from one cheap base dough.",
+   "min_capital": 375,
+   "capital_tier": "<500",
+   "hours_per_week": "10-25",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU",
+    "PH"
+   ],
+   "online_or_offline": "online",
+   "legal_blocks": [],
+   "skills_needed": [
+    "cooking"
+   ],
+   "assets_needed": [
+    "kitchen"
+   ],
+   "risk_level": "medium",
+   "payback_days": 21,
+   "recurring": true,
+   "channel_ids": [
+    "walk-in",
+    "facebook",
+    "local-groups",
+    "referral"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Market stall fee",
+     "amount": 131
+    },
+    {
+     "item": "Ingredients and packaging",
+     "amount": 150
+    },
+    {
+     "item": "Food-handler certificate",
+     "amount": 94
+    }
+   ],
+   "steps": [
+    "Bake 25 samples and price-test on friends",
+    "Book one weekend market stall",
+    "Get the food-handler certificate",
+    "Offer $15 three-pack box with a 3-bake box",
+    "Post the Saturday menu in local groups",
+    "Take pre-orders via a simple form",
+    "Track which bake sells out first"
+   ],
+   "pricing_hint": "$15 three-pack box",
+   "first_customers": [
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter"
+   ],
+   "pitfalls": [
+    "Check cottage-food rules for home kitchens",
+    "Never sell perishables without cold storage",
+    "Price with the stall fee included"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "local-service",
+   "trend_tags": [
+    "food",
+    "local"
+   ],
+   "first_seen": "2024-05",
+   "maturity": "saturated",
+   "version": 1,
+   "updated_at": "2026-05-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Google Maps 4-star shops with unanswered reviews",
+      "Nextdoor neighbourhood posts",
+      "Thumbtack local leads"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Google Maps high-street shops",
+      "Facebook local community groups",
+      "Nextdoor UK street posts"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Google Maps shops on main streets",
+      "Nextdoor Canada community posts",
+      "Local Facebook buy-and-sell groups"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Google Maps suburban strip shops",
+      "Nextdoor Australia neighbourhood posts",
+      "Local Facebook community groups"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Facebook Marketplace local groups",
+      "Barangay community referrals",
+      "Google Maps shops along main roads"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-hnd-market-stall-270",
+   "title": "Weekend market stall of baked staples(lakeside)",
+   "one_liner": "Weekend market crowds pay for a small stall selling 3 signature bakes made from one cheap base dough.",
+   "min_capital": 475,
+   "capital_tier": "<500",
+   "hours_per_week": "10-25",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU"
+   ],
+   "online_or_offline": "offline",
+   "legal_blocks": [],
+   "skills_needed": [
+    "cooking"
+   ],
+   "assets_needed": [
+    "kitchen"
+   ],
+   "risk_level": "medium",
+   "payback_days": 30,
+   "recurring": true,
+   "channel_ids": [
+    "walk-in",
+    "facebook",
+    "local-groups",
+    "referral"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Market stall fee",
+     "amount": 166
+    },
+    {
+     "item": "Ingredients and packaging",
+     "amount": 190
+    },
+    {
+     "item": "Food-handler certificate",
+     "amount": 119
+    }
+   ],
+   "steps": [
+    "Bake 30 samples and price-test on friends",
+    "Book one weekend market stall",
+    "Get the food-handler certificate",
+    "Offer $35 pre-order family box with a 3-bake box",
+    "Post the Saturday menu in local groups",
+    "Take pre-orders via a simple form",
+    "Track which bake sells out first"
+   ],
+   "pricing_hint": "$35 pre-order family box",
+   "first_customers": [
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews"
+   ],
+   "pitfalls": [
+    "Check cottage-food rules for home kitchens",
+    "Never sell perishables without cold storage",
+    "Price with the stall fee included"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "local-service",
+   "trend_tags": [
+    "food",
+    "local"
+   ],
+   "first_seen": "2024-06",
+   "maturity": "saturated",
+   "version": 1,
+   "updated_at": "2026-06-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Nextdoor neighbourhood posts",
+      "Thumbtack local leads",
+      "Chamber of commerce newsletter"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Facebook local community groups",
+      "Nextdoor UK street posts",
+      "Local parish newsletter ads"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Nextdoor Canada community posts",
+      "Local Facebook buy-and-sell groups",
+      "Chamber of commerce directory"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Nextdoor Australia neighbourhood posts",
+      "Local Facebook community groups",
+      "Council newsletter sponsorships"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-hnd-market-stall-271",
+   "title": "Weekend market stall of baked staples",
+   "one_liner": "Weekend market crowds pay for a small stall selling 3 signature bakes made from one cheap base dough.",
+   "min_capital": 120,
+   "capital_tier": "<500",
+   "hours_per_week": "10-25",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "SG",
+    "PH"
+   ],
+   "online_or_offline": "offline",
+   "legal_blocks": [],
+   "skills_needed": [
+    "cooking"
+   ],
+   "assets_needed": [
+    "kitchen"
+   ],
+   "risk_level": "medium",
+   "payback_days": 14,
+   "recurring": true,
+   "channel_ids": [
+    "walk-in",
+    "facebook",
+    "local-groups",
+    "referral"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Market stall fee",
+     "amount": 42
+    },
+    {
+     "item": "Ingredients and packaging",
+     "amount": 48
+    },
+    {
+     "item": "Food-handler certificate",
+     "amount": 30
+    }
+   ],
+   "steps": [
+    "Bake 5 samples and price-test on friends",
+    "Book one weekend market stall",
+    "Get the food-handler certificate",
+    "Offer $6 per signature bake with a 3-bake box",
+    "Post the Saturday menu in local groups",
+    "Take pre-orders via a simple form",
+    "Track which bake sells out first"
+   ],
+   "pricing_hint": "$6 per signature bake",
+   "first_customers": [
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts"
+   ],
+   "pitfalls": [
+    "Check cottage-food rules for home kitchens",
+    "Never sell perishables without cold storage",
+    "Price with the stall fee included"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "local-service",
+   "trend_tags": [
+    "food",
+    "local"
+   ],
+   "first_seen": "2025-07",
+   "maturity": "mature",
+   "version": 1,
+   "updated_at": "2026-07-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Thumbtack local leads",
+      "Chamber of commerce newsletter",
+      "Google Maps 4-star shops with unanswered reviews"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Nextdoor UK street posts",
+      "Local parish newsletter ads",
+      "Google Maps high-street shops"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Local Facebook buy-and-sell groups",
+      "Chamber of commerce directory",
+      "Google Maps shops on main streets"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "Facebook neighbourhood groups for HDB estates",
+      "WhatsApp business contact lists",
+      "Google Maps shop clusters in heartland malls"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Google Maps shops along main roads",
+      "Viber neighbourhood groups",
+      "Facebook Marketplace local groups"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-hnd-market-stall-272",
+   "title": "Weekend market stall of baked staples (north)",
+   "one_liner": "Weekend market crowds pay for a small stall selling 3 signature bakes made from one cheap base dough.",
+   "min_capital": 215,
+   "capital_tier": "<500",
+   "hours_per_week": "full",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU",
+    "SG",
+    "PH"
+   ],
+   "online_or_offline": "offline",
+   "legal_blocks": [],
+   "skills_needed": [
+    "cooking"
+   ],
+   "assets_needed": [
+    "kitchen"
+   ],
+   "risk_level": "medium",
+   "payback_days": 21,
+   "recurring": true,
+   "channel_ids": [
+    "walk-in",
+    "facebook",
+    "local-groups",
+    "referral"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Market stall fee",
+     "amount": 75
+    },
+    {
+     "item": "Ingredients and packaging",
+     "amount": 86
+    },
+    {
+     "item": "Food-handler certificate",
+     "amount": 54
+    }
+   ],
+   "steps": [
+    "Bake 10 samples and price-test on friends",
+    "Book one weekend market stall",
+    "Get the food-handler certificate",
+    "Offer $15 three-pack box with a 3-bake box",
+    "Post the Saturday menu in local groups",
+    "Take pre-orders via a simple form",
+    "Track which bake sells out first"
+   ],
+   "pricing_hint": "$15 three-pack box",
+   "first_customers": [
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads"
+   ],
+   "pitfalls": [
+    "Check cottage-food rules for home kitchens",
+    "Never sell perishables without cold storage",
+    "Price with the stall fee included"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "local-service",
+   "trend_tags": [
+    "food",
+    "local"
+   ],
+   "first_seen": "2024-08",
+   "maturity": "saturated",
+   "version": 1,
+   "updated_at": "2026-08-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Chamber of commerce newsletter",
+      "Google Maps 4-star shops with unanswered reviews",
+      "Nextdoor neighbourhood posts"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Local parish newsletter ads",
+      "Google Maps high-street shops",
+      "Facebook local community groups"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Chamber of commerce directory",
+      "Google Maps shops on main streets",
+      "Nextdoor Canada community posts"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Council newsletter sponsorships",
+      "Google Maps suburban strip shops",
+      "Nextdoor Australia neighbourhood posts"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "WhatsApp business contact lists",
+      "Google Maps shop clusters in heartland malls",
+      "Facebook neighbourhood groups for HDB estates"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Viber neighbourhood groups",
+      "Facebook Marketplace local groups",
+      "Barangay community referrals"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-hnd-market-stall-273",
+   "title": "Weekend market stall of baked staples (east)",
+   "one_liner": "Weekend market crowds pay for a small stall selling 3 signature bakes made from one cheap base dough.",
+   "min_capital": 685,
+   "capital_tier": "500-2k",
+   "hours_per_week": "10-25",
+   "countries": [
+    "US",
+    "CA",
+    "SG",
+    "PH"
+   ],
+   "online_or_offline": "offline",
+   "legal_blocks": [],
+   "skills_needed": [
+    "cooking"
+   ],
+   "assets_needed": [
+    "kitchen"
+   ],
+   "risk_level": "medium",
+   "payback_days": 30,
+   "recurring": true,
+   "channel_ids": [
+    "walk-in",
+    "facebook",
+    "local-groups",
+    "referral"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Market stall fee",
+     "amount": 240
+    },
+    {
+     "item": "Ingredients and packaging",
+     "amount": 274
+    },
+    {
+     "item": "Food-handler certificate",
+     "amount": 171
+    }
+   ],
+   "steps": [
+    "Bake 15 samples and price-test on friends",
+    "Book one weekend market stall",
+    "Get the food-handler certificate",
+    "Offer $35 pre-order family box with a 3-bake box",
+    "Post the Saturday menu in local groups",
+    "Take pre-orders via a simple form",
+    "Track which bake sells out first"
+   ],
+   "pricing_hint": "$35 pre-order family box",
+   "first_customers": [
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter"
+   ],
+   "pitfalls": [
+    "Check cottage-food rules for home kitchens",
+    "Never sell perishables without cold storage",
+    "Price with the stall fee included"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "local-service",
+   "trend_tags": [
+    "food",
+    "local"
+   ],
+   "first_seen": "2024-09",
+   "maturity": "mature",
+   "version": 1,
+   "updated_at": "2026-09-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Google Maps 4-star shops with unanswered reviews",
+      "Nextdoor neighbourhood posts",
+      "Thumbtack local leads"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Google Maps shops on main streets",
+      "Nextdoor Canada community posts",
+      "Local Facebook buy-and-sell groups"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "Google Maps shop clusters in heartland malls",
+      "Facebook neighbourhood groups for HDB estates",
+      "WhatsApp business contact lists"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Facebook Marketplace local groups",
+      "Barangay community referrals",
+      "Google Maps shops along main roads"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-hnd-market-stall-274",
+   "title": "Weekend market stall of baked staples",
+   "one_liner": "Weekend market crowds pay for a small stall selling 3 signature bakes made from one cheap base dough.",
+   "min_capital": 780,
+   "capital_tier": "500-2k",
+   "hours_per_week": "full",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU",
+    "SG",
+    "PH"
+   ],
+   "online_or_offline": "offline",
+   "legal_blocks": [],
+   "skills_needed": [
+    "cooking"
+   ],
+   "assets_needed": [
+    "kitchen"
+   ],
+   "risk_level": "medium",
+   "payback_days": 14,
+   "recurring": true,
+   "channel_ids": [
+    "walk-in",
+    "facebook",
+    "local-groups",
+    "referral"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Market stall fee",
+     "amount": 273
+    },
+    {
+     "item": "Ingredients and packaging",
+     "amount": 312
+    },
+    {
+     "item": "Food-handler certificate",
+     "amount": 195
+    }
+   ],
+   "steps": [
+    "Bake 20 samples and price-test on friends",
+    "Book one weekend market stall",
+    "Get the food-handler certificate",
+    "Offer $6 per signature bake with a 3-bake box",
+    "Post the Saturday menu in local groups",
+    "Take pre-orders via a simple form",
+    "Track which bake sells out first"
+   ],
+   "pricing_hint": "$6 per signature bake",
+   "first_customers": [
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews"
+   ],
+   "pitfalls": [
+    "Check cottage-food rules for home kitchens",
+    "Never sell perishables without cold storage",
+    "Price with the stall fee included"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "local-service",
+   "trend_tags": [
+    "food",
+    "local"
+   ],
+   "first_seen": "2025-10",
+   "maturity": "saturated",
+   "version": 1,
+   "updated_at": "2026-10-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Nextdoor neighbourhood posts",
+      "Thumbtack local leads",
+      "Chamber of commerce newsletter"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Facebook local community groups",
+      "Nextdoor UK street posts",
+      "Local parish newsletter ads"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Nextdoor Canada community posts",
+      "Local Facebook buy-and-sell groups",
+      "Chamber of commerce directory"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Nextdoor Australia neighbourhood posts",
+      "Local Facebook community groups",
+      "Council newsletter sponsorships"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "Facebook neighbourhood groups for HDB estates",
+      "WhatsApp business contact lists",
+      "Google Maps shop clusters in heartland malls"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Barangay community referrals",
+      "Google Maps shops along main roads",
+      "Viber neighbourhood groups"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-hnd-market-stall-275",
+   "title": "Weekend market stall of baked staples (old town)",
+   "one_liner": "Weekend market crowds pay for a small stall selling 3 signature bakes made from one cheap base dough.",
+   "min_capital": 60,
+   "capital_tier": "<500",
+   "hours_per_week": "full",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "SG",
+    "PH"
+   ],
+   "online_or_offline": "offline",
+   "legal_blocks": [],
+   "skills_needed": [
+    "cooking"
+   ],
+   "assets_needed": [
+    "kitchen"
+   ],
+   "risk_level": "medium",
+   "payback_days": 21,
+   "recurring": true,
+   "channel_ids": [
+    "walk-in",
+    "facebook",
+    "local-groups",
+    "referral"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Market stall fee",
+     "amount": 21
+    },
+    {
+     "item": "Ingredients and packaging",
+     "amount": 24
+    },
+    {
+     "item": "Food-handler certificate",
+     "amount": 15
+    }
+   ],
+   "steps": [
+    "Bake 25 samples and price-test on friends",
+    "Book one weekend market stall",
+    "Get the food-handler certificate",
+    "Offer $15 three-pack box with a 3-bake box",
+    "Post the Saturday menu in local groups",
+    "Take pre-orders via a simple form",
+    "Track which bake sells out first"
+   ],
+   "pricing_hint": "$15 three-pack box",
+   "first_customers": [
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts"
+   ],
+   "pitfalls": [
+    "Check cottage-food rules for home kitchens",
+    "Never sell perishables without cold storage",
+    "Price with the stall fee included"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "local-service",
+   "trend_tags": [
+    "food",
+    "local"
+   ],
+   "first_seen": "2024-11",
+   "maturity": "mature",
+   "version": 1,
+   "updated_at": "2026-11-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Thumbtack local leads",
+      "Chamber of commerce newsletter",
+      "Google Maps 4-star shops with unanswered reviews"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Nextdoor UK street posts",
+      "Local parish newsletter ads",
+      "Google Maps high-street shops"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Local Facebook buy-and-sell groups",
+      "Chamber of commerce directory",
+      "Google Maps shops on main streets"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "WhatsApp business contact lists",
+      "Google Maps shop clusters in heartland malls",
+      "Facebook neighbourhood groups for HDB estates"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Google Maps shops along main roads",
+      "Viber neighbourhood groups",
+      "Facebook Marketplace local groups"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-hnd-market-stall-276",
+   "title": "Weekend market stall of baked staples (hillside)",
+   "one_liner": "Weekend market crowds pay for a small stall selling 3 signature bakes made from one cheap base dough.",
+   "min_capital": 155,
+   "capital_tier": "<500",
+   "hours_per_week": "full",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "SG",
+    "PH"
+   ],
+   "online_or_offline": "offline",
+   "legal_blocks": [],
+   "skills_needed": [
+    "cooking"
+   ],
+   "assets_needed": [
+    "kitchen"
+   ],
+   "risk_level": "medium",
+   "payback_days": 30,
+   "recurring": true,
+   "channel_ids": [
+    "walk-in",
+    "facebook",
+    "local-groups",
+    "referral"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Market stall fee",
+     "amount": 54
+    },
+    {
+     "item": "Ingredients and packaging",
+     "amount": 62
+    },
+    {
+     "item": "Food-handler certificate",
+     "amount": 39
+    }
+   ],
+   "steps": [
+    "Bake 30 samples and price-test on friends",
+    "Book one weekend market stall",
+    "Get the food-handler certificate",
+    "Offer $35 pre-order family box with a 3-bake box",
+    "Post the Saturday menu in local groups",
+    "Take pre-orders via a simple form",
+    "Track which bake sells out first"
+   ],
+   "pricing_hint": "$35 pre-order family box",
+   "first_customers": [
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads"
+   ],
+   "pitfalls": [
+    "Check cottage-food rules for home kitchens",
+    "Never sell perishables without cold storage",
+    "Price with the stall fee included"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "local-service",
+   "trend_tags": [
+    "food",
+    "local"
+   ],
+   "first_seen": "2024-12",
+   "maturity": "growing",
+   "version": 1,
+   "updated_at": "2026-01-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Chamber of commerce newsletter",
+      "Google Maps 4-star shops with unanswered reviews",
+      "Nextdoor neighbourhood posts"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Local parish newsletter ads",
+      "Google Maps high-street shops",
+      "Facebook local community groups"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Chamber of commerce directory",
+      "Google Maps shops on main streets",
+      "Nextdoor Canada community posts"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "Google Maps shop clusters in heartland malls",
+      "Facebook neighbourhood groups for HDB estates",
+      "WhatsApp business contact lists"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Viber neighbourhood groups",
+      "Facebook Marketplace local groups",
+      "Barangay community referrals"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-hnd-market-stall-277",
+   "title": "Weekend market stall of baked staples (central)",
+   "one_liner": "Weekend market crowds pay for a small stall selling 3 signature bakes made from one cheap base dough.",
+   "min_capital": 250,
+   "capital_tier": "<500",
+   "hours_per_week": "<10",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU",
+    "SG"
+   ],
+   "online_or_offline": "offline",
+   "legal_blocks": [],
+   "skills_needed": [
+    "cooking"
+   ],
+   "assets_needed": [
+    "kitchen"
+   ],
+   "risk_level": "medium",
+   "payback_days": 14,
+   "recurring": true,
+   "channel_ids": [
+    "walk-in",
+    "facebook",
+    "local-groups",
+    "referral"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Market stall fee",
+     "amount": 88
+    },
+    {
+     "item": "Ingredients and packaging",
+     "amount": 100
+    },
+    {
+     "item": "Food-handler certificate",
+     "amount": 62
+    }
+   ],
+   "steps": [
+    "Bake 5 samples and price-test on friends",
+    "Book one weekend market stall",
+    "Get the food-handler certificate",
+    "Offer $6 per signature bake with a 3-bake box",
+    "Post the Saturday menu in local groups",
+    "Take pre-orders via a simple form",
+    "Track which bake sells out first"
+   ],
+   "pricing_hint": "$6 per signature bake",
+   "first_customers": [
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter"
+   ],
+   "pitfalls": [
+    "Check cottage-food rules for home kitchens",
+    "Never sell perishables without cold storage",
+    "Price with the stall fee included"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "local-service",
+   "trend_tags": [
+    "food",
+    "local"
+   ],
+   "first_seen": "2025-01",
+   "maturity": "growing",
+   "version": 1,
+   "updated_at": "2026-02-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Google Maps 4-star shops with unanswered reviews",
+      "Nextdoor neighbourhood posts",
+      "Thumbtack local leads"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Google Maps high-street shops",
+      "Facebook local community groups",
+      "Nextdoor UK street posts"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Google Maps shops on main streets",
+      "Nextdoor Canada community posts",
+      "Local Facebook buy-and-sell groups"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Google Maps suburban strip shops",
+      "Nextdoor Australia neighbourhood posts",
+      "Local Facebook community groups"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "Facebook neighbourhood groups for HDB estates",
+      "WhatsApp business contact lists",
+      "Google Maps shop clusters in heartland malls"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-hnd-market-stall-278",
+   "title": "Weekend market stall of baked staples (bayside)",
+   "one_liner": "Weekend market crowds pay for a small stall selling 3 signature bakes made from one cheap base dough.",
+   "min_capital": 350,
+   "capital_tier": "<500",
+   "hours_per_week": "<10",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU",
+    "PH"
+   ],
+   "online_or_offline": "online",
+   "legal_blocks": [],
+   "skills_needed": [
+    "cooking"
+   ],
+   "assets_needed": [
+    "kitchen"
+   ],
+   "risk_level": "medium",
+   "payback_days": 21,
+   "recurring": true,
+   "channel_ids": [
+    "walk-in",
+    "facebook",
+    "local-groups",
+    "referral"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Market stall fee",
+     "amount": 122
+    },
+    {
+     "item": "Ingredients and packaging",
+     "amount": 140
+    },
+    {
+     "item": "Food-handler certificate",
+     "amount": 88
+    }
+   ],
+   "steps": [
+    "Bake 10 samples and price-test on friends",
+    "Book one weekend market stall",
+    "Get the food-handler certificate",
+    "Offer $15 three-pack box with a 3-bake box",
+    "Post the Saturday menu in local groups",
+    "Take pre-orders via a simple form",
+    "Track which bake sells out first"
+   ],
+   "pricing_hint": "$15 three-pack box",
+   "first_customers": [
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews"
+   ],
+   "pitfalls": [
+    "Check cottage-food rules for home kitchens",
+    "Never sell perishables without cold storage",
+    "Price with the stall fee included"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "local-service",
+   "trend_tags": [
+    "food",
+    "local"
+   ],
+   "first_seen": "2024-02",
+   "maturity": "mature",
+   "version": 1,
+   "updated_at": "2026-03-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Nextdoor neighbourhood posts",
+      "Thumbtack local leads",
+      "Chamber of commerce newsletter"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Facebook local community groups",
+      "Nextdoor UK street posts",
+      "Local parish newsletter ads"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Nextdoor Canada community posts",
+      "Local Facebook buy-and-sell groups",
+      "Chamber of commerce directory"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Nextdoor Australia neighbourhood posts",
+      "Local Facebook community groups",
+      "Council newsletter sponsorships"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Barangay community referrals",
+      "Google Maps shops along main roads",
+      "Viber neighbourhood groups"
+     ]
+    }
+   }
+  }
+ ]
+}

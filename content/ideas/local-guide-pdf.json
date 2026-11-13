@@ -1,0 +1,1382 @@
+{
+ "industry": "local-guide-pdf",
+ "count": 11,
+ "ideas": [
+  {
+   "id": "bs-cnt-local-guide-pdf-241",
+   "title": "Moving-to-town guide PDFs",
+   "one_liner": "New residents and relocators buy a practical 20-page moving-to-your-city guide with verified local contacts.",
+   "min_capital": 360,
+   "capital_tier": "<500",
+   "hours_per_week": "full",
+   "countries": [
+    "US",
+    "UK",
+    "SG",
+    "PH"
+   ],
+   "online_or_offline": "online",
+   "legal_blocks": [],
+   "skills_needed": [
+    "writing",
+    "basic_english"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "low",
+   "payback_days": 30,
+   "recurring": false,
+   "channel_ids": [
+    "etsy",
+    "shopify",
+    "facebook",
+    "referral"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Design tool subscription",
+     "amount": 126
+    },
+    {
+     "item": "Fact-checking calls and visits",
+     "amount": 126
+    },
+    {
+     "item": "Etsy and shop listing fees",
+     "amount": 108
+    }
+   ],
+   "steps": [
+    "List 5 questions every newcomer asks",
+    "Verify 50 local contacts by phone",
+    "Draft a 20-page guide with maps",
+    "Offer $14 per guide in relocation groups",
+    "Add printable school and clinic checklists",
+    "Refresh contacts every quarter",
+    "Bundle a neighbourhood-by-neighbourhood add-on"
+   ],
+   "pricing_hint": "$14 per guide",
+   "first_customers": [
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter"
+   ],
+   "pitfalls": [
+    "Verify every phone number by calling",
+    "Date-stamp prices and hours",
+    "Never copy tourism-board photos"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "digital-product",
+   "trend_tags": [
+    "digital-product",
+    "local"
+   ],
+   "first_seen": "2025-01",
+   "maturity": "emerging",
+   "version": 1,
+   "updated_at": "2026-10-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Google Maps 4-star shops with unanswered reviews",
+      "Nextdoor neighbourhood posts",
+      "Thumbtack local leads"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Google Maps high-street shops",
+      "Facebook local community groups",
+      "Nextdoor UK street posts"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "Facebook neighbourhood groups for HDB estates",
+      "WhatsApp business contact lists",
+      "Google Maps shop clusters in heartland malls"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Facebook Marketplace local groups",
+      "Barangay community referrals",
+      "Google Maps shops along main roads"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-cnt-local-guide-pdf-242",
+   "title": "Moving-to-town guide PDFs (north)",
+   "one_liner": "New residents and relocators buy a practical 20-page moving-to-your-city guide with verified local contacts.",
+   "min_capital": 1815,
+   "capital_tier": "500-2k",
+   "hours_per_week": "10-25",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU",
+    "SG",
+    "PH"
+   ],
+   "online_or_offline": "hybrid",
+   "legal_blocks": [],
+   "skills_needed": [
+    "writing",
+    "basic_english"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "low",
+   "payback_days": 45,
+   "recurring": false,
+   "channel_ids": [
+    "etsy",
+    "shopify",
+    "facebook",
+    "referral"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Design tool subscription",
+     "amount": 635
+    },
+    {
+     "item": "Fact-checking calls and visits",
+     "amount": 635
+    },
+    {
+     "item": "Etsy and shop listing fees",
+     "amount": 545
+    }
+   ],
+   "steps": [
+    "List 10 questions every newcomer asks",
+    "Verify 50 local contacts by phone",
+    "Draft a 20-page guide with maps",
+    "Offer $24 with printable checklists in relocation groups",
+    "Add printable school and clinic checklists",
+    "Refresh contacts every quarter",
+    "Bundle a neighbourhood-by-neighbourhood add-on"
+   ],
+   "pricing_hint": "$24 with printable checklists",
+   "first_customers": [
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews"
+   ],
+   "pitfalls": [
+    "Verify every phone number by calling",
+    "Date-stamp prices and hours",
+    "Never copy tourism-board photos"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "digital-product",
+   "trend_tags": [
+    "digital-product",
+    "local"
+   ],
+   "first_seen": "2024-02",
+   "maturity": "growing",
+   "version": 1,
+   "updated_at": "2026-11-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Nextdoor neighbourhood posts",
+      "Thumbtack local leads",
+      "Chamber of commerce newsletter"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Facebook local community groups",
+      "Nextdoor UK street posts",
+      "Local parish newsletter ads"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Nextdoor Canada community posts",
+      "Local Facebook buy-and-sell groups",
+      "Chamber of commerce directory"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Nextdoor Australia neighbourhood posts",
+      "Local Facebook community groups",
+      "Council newsletter sponsorships"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "WhatsApp business contact lists",
+      "Google Maps shop clusters in heartland malls",
+      "Facebook neighbourhood groups for HDB estates"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Barangay community referrals",
+      "Google Maps shops along main roads",
+      "Viber neighbourhood groups"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-cnt-local-guide-pdf-243",
+   "title": "Moving-to-town guide PDFs (east)",
+   "one_liner": "New residents and relocators buy a practical 20-page moving-to-your-city guide with verified local contacts.",
+   "min_capital": 105,
+   "capital_tier": "<500",
+   "hours_per_week": "full",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU",
+    "SG"
+   ],
+   "online_or_offline": "hybrid",
+   "legal_blocks": [],
+   "skills_needed": [
+    "writing",
+    "basic_english"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "low",
+   "payback_days": 60,
+   "recurring": false,
+   "channel_ids": [
+    "etsy",
+    "shopify",
+    "facebook",
+    "referral"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Design tool subscription",
+     "amount": 37
+    },
+    {
+     "item": "Fact-checking calls and visits",
+     "amount": 37
+    },
+    {
+     "item": "Etsy and shop listing fees",
+     "amount": 31
+    }
+   ],
+   "steps": [
+    "List 15 questions every newcomer asks",
+    "Verify 50 local contacts by phone",
+    "Draft a 20-page guide with maps",
+    "Offer $9 launch price in relocation groups",
+    "Add printable school and clinic checklists",
+    "Refresh contacts every quarter",
+    "Bundle a neighbourhood-by-neighbourhood add-on"
+   ],
+   "pricing_hint": "$9 launch price",
+   "first_customers": [
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts"
+   ],
+   "pitfalls": [
+    "Verify every phone number by calling",
+    "Date-stamp prices and hours",
+    "Never copy tourism-board photos"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "digital-product",
+   "trend_tags": [
+    "digital-product",
+    "local"
+   ],
+   "first_seen": "2024-03",
+   "maturity": "saturated",
+   "version": 1,
+   "updated_at": "2026-01-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Thumbtack local leads",
+      "Chamber of commerce newsletter",
+      "Google Maps 4-star shops with unanswered reviews"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Nextdoor UK street posts",
+      "Local parish newsletter ads",
+      "Google Maps high-street shops"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Local Facebook buy-and-sell groups",
+      "Chamber of commerce directory",
+      "Google Maps shops on main streets"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Local Facebook community groups",
+      "Council newsletter sponsorships",
+      "Google Maps suburban strip shops"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "Google Maps shop clusters in heartland malls",
+      "Facebook neighbourhood groups for HDB estates",
+      "WhatsApp business contact lists"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-cnt-local-guide-pdf-244",
+   "title": "Moving-to-town guide PDFs (riverside)",
+   "one_liner": "New residents and relocators buy a practical 20-page moving-to-your-city guide with verified local contacts.",
+   "min_capital": 4970,
+   "capital_tier": "2k-10k",
+   "hours_per_week": "<10",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU"
+   ],
+   "online_or_offline": "online",
+   "legal_blocks": [],
+   "skills_needed": [
+    "writing",
+    "basic_english"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "low",
+   "payback_days": 30,
+   "recurring": false,
+   "channel_ids": [
+    "etsy",
+    "shopify",
+    "facebook",
+    "referral"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Design tool subscription",
+     "amount": 1740
+    },
+    {
+     "item": "Fact-checking calls and visits",
+     "amount": 1740
+    },
+    {
+     "item": "Etsy and shop listing fees",
+     "amount": 1490
+    }
+   ],
+   "steps": [
+    "List 20 questions every newcomer asks",
+    "Verify 50 local contacts by phone",
+    "Draft a 20-page guide with maps",
+    "Offer $14 per guide in relocation groups",
+    "Add printable school and clinic checklists",
+    "Refresh contacts every quarter",
+    "Bundle a neighbourhood-by-neighbourhood add-on"
+   ],
+   "pricing_hint": "$14 per guide",
+   "first_customers": [
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads"
+   ],
+   "pitfalls": [
+    "Verify every phone number by calling",
+    "Date-stamp prices and hours",
+    "Never copy tourism-board photos"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "digital-product",
+   "trend_tags": [
+    "digital-product",
+    "local"
+   ],
+   "first_seen": "2025-04",
+   "maturity": "growing",
+   "version": 1,
+   "updated_at": "2026-02-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Chamber of commerce newsletter",
+      "Google Maps 4-star shops with unanswered reviews",
+      "Nextdoor neighbourhood posts"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Local parish newsletter ads",
+      "Google Maps high-street shops",
+      "Facebook local community groups"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Chamber of commerce directory",
+      "Google Maps shops on main streets",
+      "Nextdoor Canada community posts"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Council newsletter sponsorships",
+      "Google Maps suburban strip shops",
+      "Nextdoor Australia neighbourhood posts"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-cnt-local-guide-pdf-245",
+   "title": "Moving-to-town guide PDFs (old town)",
+   "one_liner": "New residents and relocators buy a practical 20-page moving-to-your-city guide with verified local contacts.",
+   "min_capital": 730,
+   "capital_tier": "500-2k",
+   "hours_per_week": "10-25",
+   "countries": [
+    "US",
+    "UK",
+    "AU",
+    "SG"
+   ],
+   "online_or_offline": "online",
+   "legal_blocks": [],
+   "skills_needed": [
+    "writing",
+    "basic_english"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "low",
+   "payback_days": 45,
+   "recurring": false,
+   "channel_ids": [
+    "etsy",
+    "shopify",
+    "facebook",
+    "referral"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Design tool subscription",
+     "amount": 255
+    },
+    {
+     "item": "Fact-checking calls and visits",
+     "amount": 255
+    },
+    {
+     "item": "Etsy and shop listing fees",
+     "amount": 220
+    }
+   ],
+   "steps": [
+    "List 25 questions every newcomer asks",
+    "Verify 50 local contacts by phone",
+    "Draft a 20-page guide with maps",
+    "Offer $24 with printable checklists in relocation groups",
+    "Add printable school and clinic checklists",
+    "Refresh contacts every quarter",
+    "Bundle a neighbourhood-by-neighbourhood add-on"
+   ],
+   "pricing_hint": "$24 with printable checklists",
+   "first_customers": [
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter"
+   ],
+   "pitfalls": [
+    "Verify every phone number by calling",
+    "Date-stamp prices and hours",
+    "Never copy tourism-board photos"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "digital-product",
+   "trend_tags": [
+    "digital-product",
+    "local"
+   ],
+   "first_seen": "2024-05",
+   "maturity": "growing",
+   "version": 1,
+   "updated_at": "2026-03-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Google Maps 4-star shops with unanswered reviews",
+      "Nextdoor neighbourhood posts",
+      "Thumbtack local leads"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Google Maps high-street shops",
+      "Facebook local community groups",
+      "Nextdoor UK street posts"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Google Maps suburban strip shops",
+      "Nextdoor Australia neighbourhood posts",
+      "Local Facebook community groups"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "WhatsApp business contact lists",
+      "Google Maps shop clusters in heartland malls",
+      "Facebook neighbourhood groups for HDB estates"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-cnt-local-guide-pdf-246",
+   "title": "Moving-to-town guide PDFs (hillside)",
+   "one_liner": "New residents and relocators buy a practical 20-page moving-to-your-city guide with verified local contacts.",
+   "min_capital": 825,
+   "capital_tier": "500-2k",
+   "hours_per_week": "<10",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "SG",
+    "PH"
+   ],
+   "online_or_offline": "online",
+   "legal_blocks": [],
+   "skills_needed": [
+    "writing",
+    "basic_english"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "low",
+   "payback_days": 60,
+   "recurring": false,
+   "channel_ids": [
+    "etsy",
+    "shopify",
+    "facebook",
+    "referral"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Design tool subscription",
+     "amount": 289
+    },
+    {
+     "item": "Fact-checking calls and visits",
+     "amount": 289
+    },
+    {
+     "item": "Etsy and shop listing fees",
+     "amount": 247
+    }
+   ],
+   "steps": [
+    "List 30 questions every newcomer asks",
+    "Verify 50 local contacts by phone",
+    "Draft a 20-page guide with maps",
+    "Offer $9 launch price in relocation groups",
+    "Add printable school and clinic checklists",
+    "Refresh contacts every quarter",
+    "Bundle a neighbourhood-by-neighbourhood add-on"
+   ],
+   "pricing_hint": "$9 launch price",
+   "first_customers": [
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews"
+   ],
+   "pitfalls": [
+    "Verify every phone number by calling",
+    "Date-stamp prices and hours",
+    "Never copy tourism-board photos"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "digital-product",
+   "trend_tags": [
+    "digital-product",
+    "local"
+   ],
+   "first_seen": "2024-06",
+   "maturity": "mature",
+   "version": 1,
+   "updated_at": "2026-04-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Nextdoor neighbourhood posts",
+      "Thumbtack local leads",
+      "Chamber of commerce newsletter"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Facebook local community groups",
+      "Nextdoor UK street posts",
+      "Local parish newsletter ads"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Nextdoor Canada community posts",
+      "Local Facebook buy-and-sell groups",
+      "Chamber of commerce directory"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "Google Maps shop clusters in heartland malls",
+      "Facebook neighbourhood groups for HDB estates",
+      "WhatsApp business contact lists"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Barangay community referrals",
+      "Google Maps shops along main roads",
+      "Viber neighbourhood groups"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-cnt-local-guide-pdf-247",
+   "title": "Moving-to-town guide PDFs (central)",
+   "one_liner": "New residents and relocators buy a practical 20-page moving-to-your-city guide with verified local contacts.",
+   "min_capital": 920,
+   "capital_tier": "500-2k",
+   "hours_per_week": "<10",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU",
+    "SG",
+    "PH"
+   ],
+   "online_or_offline": "online",
+   "legal_blocks": [],
+   "skills_needed": [
+    "writing",
+    "basic_english"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "low",
+   "payback_days": 30,
+   "recurring": false,
+   "channel_ids": [
+    "etsy",
+    "shopify",
+    "facebook",
+    "referral"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Design tool subscription",
+     "amount": 322
+    },
+    {
+     "item": "Fact-checking calls and visits",
+     "amount": 322
+    },
+    {
+     "item": "Etsy and shop listing fees",
+     "amount": 276
+    }
+   ],
+   "steps": [
+    "List 5 questions every newcomer asks",
+    "Verify 50 local contacts by phone",
+    "Draft a 20-page guide with maps",
+    "Offer $14 per guide in relocation groups",
+    "Add printable school and clinic checklists",
+    "Refresh contacts every quarter",
+    "Bundle a neighbourhood-by-neighbourhood add-on"
+   ],
+   "pricing_hint": "$14 per guide",
+   "first_customers": [
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts"
+   ],
+   "pitfalls": [
+    "Verify every phone number by calling",
+    "Date-stamp prices and hours",
+    "Never copy tourism-board photos"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "digital-product",
+   "trend_tags": [
+    "digital-product",
+    "local"
+   ],
+   "first_seen": "2025-07",
+   "maturity": "mature",
+   "version": 1,
+   "updated_at": "2026-05-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Thumbtack local leads",
+      "Chamber of commerce newsletter",
+      "Google Maps 4-star shops with unanswered reviews"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Nextdoor UK street posts",
+      "Local parish newsletter ads",
+      "Google Maps high-street shops"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Local Facebook buy-and-sell groups",
+      "Chamber of commerce directory",
+      "Google Maps shops on main streets"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Local Facebook community groups",
+      "Council newsletter sponsorships",
+      "Google Maps suburban strip shops"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "Facebook neighbourhood groups for HDB estates",
+      "WhatsApp business contact lists",
+      "Google Maps shop clusters in heartland malls"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Google Maps shops along main roads",
+      "Viber neighbourhood groups",
+      "Facebook Marketplace local groups"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-cnt-local-guide-pdf-248",
+   "title": "Moving-to-town guide PDFs (bayside)",
+   "one_liner": "New residents and relocators buy a practical 20-page moving-to-your-city guide with verified local contacts.",
+   "min_capital": 5360,
+   "capital_tier": "2k-10k",
+   "hours_per_week": "10-25",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU"
+   ],
+   "online_or_offline": "online",
+   "legal_blocks": [],
+   "skills_needed": [
+    "writing",
+    "basic_english"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "low",
+   "payback_days": 45,
+   "recurring": false,
+   "channel_ids": [
+    "etsy",
+    "shopify",
+    "facebook",
+    "referral"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Design tool subscription",
+     "amount": 1876
+    },
+    {
+     "item": "Fact-checking calls and visits",
+     "amount": 1876
+    },
+    {
+     "item": "Etsy and shop listing fees",
+     "amount": 1608
+    }
+   ],
+   "steps": [
+    "List 10 questions every newcomer asks",
+    "Verify 50 local contacts by phone",
+    "Draft a 20-page guide with maps",
+    "Offer $24 with printable checklists in relocation groups",
+    "Add printable school and clinic checklists",
+    "Refresh contacts every quarter",
+    "Bundle a neighbourhood-by-neighbourhood add-on"
+   ],
+   "pricing_hint": "$24 with printable checklists",
+   "first_customers": [
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads"
+   ],
+   "pitfalls": [
+    "Verify every phone number by calling",
+    "Date-stamp prices and hours",
+    "Never copy tourism-board photos"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "digital-product",
+   "trend_tags": [
+    "digital-product",
+    "local"
+   ],
+   "first_seen": "2024-08",
+   "maturity": "emerging",
+   "version": 1,
+   "updated_at": "2026-06-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Chamber of commerce newsletter",
+      "Google Maps 4-star shops with unanswered reviews",
+      "Nextdoor neighbourhood posts"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Local parish newsletter ads",
+      "Google Maps high-street shops",
+      "Facebook local community groups"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Chamber of commerce directory",
+      "Google Maps shops on main streets",
+      "Nextdoor Canada community posts"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Council newsletter sponsorships",
+      "Google Maps suburban strip shops",
+      "Nextdoor Australia neighbourhood posts"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-cnt-local-guide-pdf-249",
+   "title": "Moving-to-town guide PDFs (market)",
+   "one_liner": "New residents and relocators buy a practical 20-page moving-to-your-city guide with verified local contacts.",
+   "min_capital": 235,
+   "capital_tier": "<500",
+   "hours_per_week": "<10",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU",
+    "SG"
+   ],
+   "online_or_offline": "online",
+   "legal_blocks": [],
+   "skills_needed": [
+    "writing",
+    "basic_english"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "low",
+   "payback_days": 60,
+   "recurring": false,
+   "channel_ids": [
+    "etsy",
+    "shopify",
+    "facebook",
+    "referral"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Design tool subscription",
+     "amount": 82
+    },
+    {
+     "item": "Fact-checking calls and visits",
+     "amount": 82
+    },
+    {
+     "item": "Etsy and shop listing fees",
+     "amount": 71
+    }
+   ],
+   "steps": [
+    "List 15 questions every newcomer asks",
+    "Verify 50 local contacts by phone",
+    "Draft a 20-page guide with maps",
+    "Offer $9 launch price in relocation groups",
+    "Add printable school and clinic checklists",
+    "Refresh contacts every quarter",
+    "Bundle a neighbourhood-by-neighbourhood add-on"
+   ],
+   "pricing_hint": "$9 launch price",
+   "first_customers": [
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter"
+   ],
+   "pitfalls": [
+    "Verify every phone number by calling",
+    "Date-stamp prices and hours",
+    "Never copy tourism-board photos"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "digital-product",
+   "trend_tags": [
+    "digital-product",
+    "local"
+   ],
+   "first_seen": "2024-09",
+   "maturity": "growing",
+   "version": 1,
+   "updated_at": "2026-07-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Google Maps 4-star shops with unanswered reviews",
+      "Nextdoor neighbourhood posts",
+      "Thumbtack local leads"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Google Maps high-street shops",
+      "Facebook local community groups",
+      "Nextdoor UK street posts"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Google Maps shops on main streets",
+      "Nextdoor Canada community posts",
+      "Local Facebook buy-and-sell groups"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Google Maps suburban strip shops",
+      "Nextdoor Australia neighbourhood posts",
+      "Local Facebook community groups"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "Google Maps shop clusters in heartland malls",
+      "Facebook neighbourhood groups for HDB estates",
+      "WhatsApp business contact lists"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-cnt-local-guide-pdf-250",
+   "title": "Moving-to-town guide PDFs(lakeside)",
+   "one_liner": "New residents and relocators buy a practical 20-page moving-to-your-city guide with verified local contacts.",
+   "min_capital": 5555,
+   "capital_tier": "2k-10k",
+   "hours_per_week": "<10",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU",
+    "PH"
+   ],
+   "online_or_offline": "online",
+   "legal_blocks": [],
+   "skills_needed": [
+    "writing",
+    "basic_english"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "low",
+   "payback_days": 30,
+   "recurring": false,
+   "channel_ids": [
+    "etsy",
+    "shopify",
+    "facebook",
+    "referral"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Design tool subscription",
+     "amount": 1944
+    },
+    {
+     "item": "Fact-checking calls and visits",
+     "amount": 1944
+    },
+    {
+     "item": "Etsy and shop listing fees",
+     "amount": 1667
+    }
+   ],
+   "steps": [
+    "List 20 questions every newcomer asks",
+    "Verify 50 local contacts by phone",
+    "Draft a 20-page guide with maps",
+    "Offer $14 per guide in relocation groups",
+    "Add printable school and clinic checklists",
+    "Refresh contacts every quarter",
+    "Bundle a neighbourhood-by-neighbourhood add-on"
+   ],
+   "pricing_hint": "$14 per guide",
+   "first_customers": [
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews"
+   ],
+   "pitfalls": [
+    "Verify every phone number by calling",
+    "Date-stamp prices and hours",
+    "Never copy tourism-board photos"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "digital-product",
+   "trend_tags": [
+    "digital-product",
+    "local"
+   ],
+   "first_seen": "2025-10",
+   "maturity": "growing",
+   "version": 1,
+   "updated_at": "2026-08-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Nextdoor neighbourhood posts",
+      "Thumbtack local leads",
+      "Chamber of commerce newsletter"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Facebook local community groups",
+      "Nextdoor UK street posts",
+      "Local parish newsletter ads"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Nextdoor Canada community posts",
+      "Local Facebook buy-and-sell groups",
+      "Chamber of commerce directory"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Nextdoor Australia neighbourhood posts",
+      "Local Facebook community groups",
+      "Council newsletter sponsorships"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Barangay community referrals",
+      "Google Maps shops along main roads",
+      "Viber neighbourhood groups"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-cnt-local-guide-pdf-251",
+   "title": "Moving-to-town guide PDFs",
+   "one_liner": "New residents and relocators buy a practical 20-page moving-to-your-city guide with verified local contacts.",
+   "min_capital": 1310,
+   "capital_tier": "500-2k",
+   "hours_per_week": "<10",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU",
+    "SG",
+    "PH"
+   ],
+   "online_or_offline": "online",
+   "legal_blocks": [],
+   "skills_needed": [
+    "writing",
+    "basic_english"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "low",
+   "payback_days": 45,
+   "recurring": false,
+   "channel_ids": [
+    "etsy",
+    "shopify",
+    "facebook",
+    "referral"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Design tool subscription",
+     "amount": 458
+    },
+    {
+     "item": "Fact-checking calls and visits",
+     "amount": 458
+    },
+    {
+     "item": "Etsy and shop listing fees",
+     "amount": 394
+    }
+   ],
+   "steps": [
+    "List 25 questions every newcomer asks",
+    "Verify 50 local contacts by phone",
+    "Draft a 20-page guide with maps",
+    "Offer $24 with printable checklists in relocation groups",
+    "Add printable school and clinic checklists",
+    "Refresh contacts every quarter",
+    "Bundle a neighbourhood-by-neighbourhood add-on"
+   ],
+   "pricing_hint": "$24 with printable checklists",
+   "first_customers": [
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts"
+   ],
+   "pitfalls": [
+    "Verify every phone number by calling",
+    "Date-stamp prices and hours",
+    "Never copy tourism-board photos"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "digital-product",
+   "trend_tags": [
+    "digital-product",
+    "local"
+   ],
+   "first_seen": "2024-11",
+   "maturity": "mature",
+   "version": 1,
+   "updated_at": "2026-09-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Thumbtack local leads",
+      "Chamber of commerce newsletter",
+      "Google Maps 4-star shops with unanswered reviews"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Nextdoor UK street posts",
+      "Local parish newsletter ads",
+      "Google Maps high-street shops"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Local Facebook buy-and-sell groups",
+      "Chamber of commerce directory",
+      "Google Maps shops on main streets"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Local Facebook community groups",
+      "Council newsletter sponsorships",
+      "Google Maps suburban strip shops"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "WhatsApp business contact lists",
+      "Google Maps shop clusters in heartland malls",
+      "Facebook neighbourhood groups for HDB estates"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Google Maps shops along main roads",
+      "Viber neighbourhood groups",
+      "Facebook Marketplace local groups"
+     ]
+    }
+   }
+  }
+ ]
+}

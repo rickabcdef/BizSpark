@@ -1,0 +1,1644 @@
+{
+ "industry": "product-photo",
+ "count": 13,
+ "ideas": [
+  {
+   "id": "bs-onl-product-photo-088",
+   "title": "Product photo cleanup for small sellers",
+   "one_liner": "Etsy and eBay sellers pay per batch to get phone photos cut out, lit and background-cleaned.",
+   "min_capital": 3640,
+   "capital_tier": "2k-10k",
+   "hours_per_week": "10-25",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU",
+    "PH"
+   ],
+   "online_or_offline": "offline",
+   "legal_blocks": [],
+   "skills_needed": [
+    "design",
+    "basic_english"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "low",
+   "payback_days": 14,
+   "recurring": true,
+   "channel_ids": [
+    "etsy",
+    "facebook",
+    "referral",
+    "local-groups"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Photo editing tool subscription",
+     "amount": 1456
+    },
+    {
+     "item": "Lightbox and lamp set",
+     "amount": 1274
+    },
+    {
+     "item": "Sample listing fees on Etsy",
+     "amount": 910
+    }
+   ],
+   "steps": [
+    "Re-shoot 3 items from your own home",
+    "Edit them free for one Etsy seller",
+    "Build a 6-image before/after portfolio",
+    "Message 20 sellers with the portfolio",
+    "Offer $12 per product, 5 photos for the first batch",
+    "Deliver within 48 hours per batch",
+    "Ask for a shop-announcement mention"
+   ],
+   "pricing_hint": "$12 per product, 5 photos",
+   "first_customers": [
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads"
+   ],
+   "pitfalls": [
+    "Never claim studio quality from phone shots",
+    "Fix white balance before cutting out",
+    "Keep the seller's listing sizes exact"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "mobile-internet",
+   "trend_tags": [
+    "ecommerce",
+    "visual"
+   ],
+   "first_seen": "2025-04",
+   "maturity": "growing",
+   "version": 1,
+   "updated_at": "2026-11-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Chamber of commerce newsletter",
+      "Google Maps 4-star shops with unanswered reviews",
+      "Nextdoor neighbourhood posts"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Local parish newsletter ads",
+      "Google Maps high-street shops",
+      "Facebook local community groups"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Chamber of commerce directory",
+      "Google Maps shops on main streets",
+      "Nextdoor Canada community posts"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Council newsletter sponsorships",
+      "Google Maps suburban strip shops",
+      "Nextdoor Australia neighbourhood posts"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Viber neighbourhood groups",
+      "Facebook Marketplace local groups",
+      "Barangay community referrals"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-onl-product-photo-089",
+   "title": "Product photo cleanup for small sellers (market)",
+   "one_liner": "Etsy and eBay sellers pay per batch to get phone photos cut out, lit and background-cleaned.",
+   "min_capital": 465,
+   "capital_tier": "<500",
+   "hours_per_week": "full",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU",
+    "PH"
+   ],
+   "online_or_offline": "hybrid",
+   "legal_blocks": [],
+   "skills_needed": [
+    "design",
+    "basic_english"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "low",
+   "payback_days": 21,
+   "recurring": true,
+   "channel_ids": [
+    "etsy",
+    "facebook",
+    "referral",
+    "local-groups"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Photo editing tool subscription",
+     "amount": 186
+    },
+    {
+     "item": "Lightbox and lamp set",
+     "amount": 163
+    },
+    {
+     "item": "Sample listing fees on Etsy",
+     "amount": 116
+    }
+   ],
+   "steps": [
+    "Re-shoot 3 items from your own home",
+    "Edit them free for one Etsy seller",
+    "Build a 6-image before/after portfolio",
+    "Message 25 sellers with the portfolio",
+    "Offer $49 per 10-product batch for the first batch",
+    "Deliver within 48 hours per batch",
+    "Ask for a shop-announcement mention"
+   ],
+   "pricing_hint": "$49 per 10-product batch",
+   "first_customers": [
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter"
+   ],
+   "pitfalls": [
+    "Never claim studio quality from phone shots",
+    "Fix white balance before cutting out",
+    "Keep the seller's listing sizes exact"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "mobile-internet",
+   "trend_tags": [
+    "ecommerce",
+    "visual"
+   ],
+   "first_seen": "2024-05",
+   "maturity": "mature",
+   "version": 1,
+   "updated_at": "2026-01-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Google Maps 4-star shops with unanswered reviews",
+      "Nextdoor neighbourhood posts",
+      "Thumbtack local leads"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Google Maps high-street shops",
+      "Facebook local community groups",
+      "Nextdoor UK street posts"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Google Maps shops on main streets",
+      "Nextdoor Canada community posts",
+      "Local Facebook buy-and-sell groups"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Google Maps suburban strip shops",
+      "Nextdoor Australia neighbourhood posts",
+      "Local Facebook community groups"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Facebook Marketplace local groups",
+      "Barangay community referrals",
+      "Google Maps shops along main roads"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-onl-product-photo-090",
+   "title": "Product photo cleanup for small sellers",
+   "one_liner": "Etsy and eBay sellers pay per batch to get phone photos cut out, lit and background-cleaned.",
+   "min_capital": 875,
+   "capital_tier": "500-2k",
+   "hours_per_week": "10-25",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU",
+    "SG",
+    "PH"
+   ],
+   "online_or_offline": "offline",
+   "legal_blocks": [],
+   "skills_needed": [
+    "design",
+    "basic_english"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "low",
+   "payback_days": 30,
+   "recurring": true,
+   "channel_ids": [
+    "etsy",
+    "facebook",
+    "referral",
+    "local-groups"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Photo editing tool subscription",
+     "amount": 350
+    },
+    {
+     "item": "Lightbox and lamp set",
+     "amount": 306
+    },
+    {
+     "item": "Sample listing fees on Etsy",
+     "amount": 219
+    }
+   ],
+   "steps": [
+    "Re-shoot 3 items from your own home",
+    "Edit them free for one Etsy seller",
+    "Build a 6-image before/after portfolio",
+    "Message 30 sellers with the portfolio",
+    "Offer $99/month for 2 shops for the first batch",
+    "Deliver within 48 hours per batch",
+    "Ask for a shop-announcement mention"
+   ],
+   "pricing_hint": "$99/month for 2 shops",
+   "first_customers": [
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews"
+   ],
+   "pitfalls": [
+    "Never claim studio quality from phone shots",
+    "Fix white balance before cutting out",
+    "Keep the seller's listing sizes exact"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "mobile-internet",
+   "trend_tags": [
+    "ecommerce",
+    "visual"
+   ],
+   "first_seen": "2024-06",
+   "maturity": "mature",
+   "version": 1,
+   "updated_at": "2026-02-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Nextdoor neighbourhood posts",
+      "Thumbtack local leads",
+      "Chamber of commerce newsletter"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Facebook local community groups",
+      "Nextdoor UK street posts",
+      "Local parish newsletter ads"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Nextdoor Canada community posts",
+      "Local Facebook buy-and-sell groups",
+      "Chamber of commerce directory"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Nextdoor Australia neighbourhood posts",
+      "Local Facebook community groups",
+      "Council newsletter sponsorships"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "Google Maps shop clusters in heartland malls",
+      "Facebook neighbourhood groups for HDB estates",
+      "WhatsApp business contact lists"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Barangay community referrals",
+      "Google Maps shops along main roads",
+      "Viber neighbourhood groups"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-onl-product-photo-091",
+   "title": "Product photo cleanup for small sellers",
+   "one_liner": "Etsy and eBay sellers pay per batch to get phone photos cut out, lit and background-cleaned.",
+   "min_capital": 970,
+   "capital_tier": "500-2k",
+   "hours_per_week": "<10",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU",
+    "SG",
+    "PH"
+   ],
+   "online_or_offline": "offline",
+   "legal_blocks": [],
+   "skills_needed": [
+    "design",
+    "basic_english"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "low",
+   "payback_days": 14,
+   "recurring": true,
+   "channel_ids": [
+    "etsy",
+    "facebook",
+    "referral",
+    "local-groups"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Photo editing tool subscription",
+     "amount": 388
+    },
+    {
+     "item": "Lightbox and lamp set",
+     "amount": 340
+    },
+    {
+     "item": "Sample listing fees on Etsy",
+     "amount": 242
+    }
+   ],
+   "steps": [
+    "Re-shoot 3 items from your own home",
+    "Edit them free for one Etsy seller",
+    "Build a 6-image before/after portfolio",
+    "Message 5 sellers with the portfolio",
+    "Offer $12 per product, 5 photos for the first batch",
+    "Deliver within 48 hours per batch",
+    "Ask for a shop-announcement mention"
+   ],
+   "pricing_hint": "$12 per product, 5 photos",
+   "first_customers": [
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts"
+   ],
+   "pitfalls": [
+    "Never claim studio quality from phone shots",
+    "Fix white balance before cutting out",
+    "Keep the seller's listing sizes exact"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "mobile-internet",
+   "trend_tags": [
+    "ecommerce",
+    "visual"
+   ],
+   "first_seen": "2025-07",
+   "maturity": "emerging",
+   "version": 1,
+   "updated_at": "2026-03-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Thumbtack local leads",
+      "Chamber of commerce newsletter",
+      "Google Maps 4-star shops with unanswered reviews"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Nextdoor UK street posts",
+      "Local parish newsletter ads",
+      "Google Maps high-street shops"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Local Facebook buy-and-sell groups",
+      "Chamber of commerce directory",
+      "Google Maps shops on main streets"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Local Facebook community groups",
+      "Council newsletter sponsorships",
+      "Google Maps suburban strip shops"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "Facebook neighbourhood groups for HDB estates",
+      "WhatsApp business contact lists",
+      "Google Maps shop clusters in heartland malls"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Google Maps shops along main roads",
+      "Viber neighbourhood groups",
+      "Facebook Marketplace local groups"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-onl-product-photo-092",
+   "title": "Product photo cleanup for small sellers (north)",
+   "one_liner": "Etsy and eBay sellers pay per batch to get phone photos cut out, lit and background-cleaned.",
+   "min_capital": 1065,
+   "capital_tier": "500-2k",
+   "hours_per_week": "10-25",
+   "countries": [
+    "UK",
+    "CA",
+    "PH"
+   ],
+   "online_or_offline": "offline",
+   "legal_blocks": [],
+   "skills_needed": [
+    "design",
+    "basic_english"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "low",
+   "payback_days": 21,
+   "recurring": true,
+   "channel_ids": [
+    "etsy",
+    "facebook",
+    "referral",
+    "local-groups"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Photo editing tool subscription",
+     "amount": 426
+    },
+    {
+     "item": "Lightbox and lamp set",
+     "amount": 373
+    },
+    {
+     "item": "Sample listing fees on Etsy",
+     "amount": 266
+    }
+   ],
+   "steps": [
+    "Re-shoot 3 items from your own home",
+    "Edit them free for one Etsy seller",
+    "Build a 6-image before/after portfolio",
+    "Message 10 sellers with the portfolio",
+    "Offer $49 per 10-product batch for the first batch",
+    "Deliver within 48 hours per batch",
+    "Ask for a shop-announcement mention"
+   ],
+   "pricing_hint": "$49 per 10-product batch",
+   "first_customers": [
+    "Local parish newsletter ads",
+    "Google Maps high-street shops",
+    "Facebook local community groups",
+    "Nextdoor UK street posts"
+   ],
+   "pitfalls": [
+    "Never claim studio quality from phone shots",
+    "Fix white balance before cutting out",
+    "Keep the seller's listing sizes exact"
+   ],
+   "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+   "wave": "mobile-internet",
+   "trend_tags": [
+    "ecommerce",
+    "visual"
+   ],
+   "first_seen": "2024-08",
+   "maturity": "emerging",
+   "version": 1,
+   "updated_at": "2026-04-01",
+   "status": "active",
+   "overrides": {
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Local parish newsletter ads",
+      "Google Maps high-street shops",
+      "Facebook local community groups"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Chamber of commerce directory",
+      "Google Maps shops on main streets",
+      "Nextdoor Canada community posts"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Viber neighbourhood groups",
+      "Facebook Marketplace local groups",
+      "Barangay community referrals"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-onl-product-photo-093",
+   "title": "Product photo cleanup for small sellers (east)",
+   "one_liner": "Etsy and eBay sellers pay per batch to get phone photos cut out, lit and background-cleaned.",
+   "min_capital": 405,
+   "capital_tier": "<500",
+   "hours_per_week": "10-25",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU",
+    "SG",
+    "PH"
+   ],
+   "online_or_offline": "offline",
+   "legal_blocks": [],
+   "skills_needed": [
+    "design",
+    "basic_english"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "low",
+   "payback_days": 30,
+   "recurring": true,
+   "channel_ids": [
+    "etsy",
+    "facebook",
+    "referral",
+    "local-groups"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Photo editing tool subscription",
+     "amount": 162
+    },
+    {
+     "item": "Lightbox and lamp set",
+     "amount": 142
+    },
+    {
+     "item": "Sample listing fees on Etsy",
+     "amount": 101
+    }
+   ],
+   "steps": [
+    "Re-shoot 3 items from your own home",
+    "Edit them free for one Etsy seller",
+    "Build a 6-image before/after portfolio",
+    "Message 15 sellers with the portfolio",
+    "Offer $99/month for 2 shops for the first batch",
+    "Deliver within 48 hours per batch",
+    "Ask for a shop-announcement mention"
+   ],
+   "pricing_hint": "$99/month for 2 shops",
+   "first_customers": [
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter"
+   ],
+   "pitfalls": [
+    "Never claim studio quality from phone shots",
+    "Fix white balance before cutting out",
+    "Keep the seller's listing sizes exact"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "mobile-internet",
+   "trend_tags": [
+    "ecommerce",
+    "visual"
+   ],
+   "first_seen": "2024-09",
+   "maturity": "mature",
+   "version": 1,
+   "updated_at": "2026-05-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Google Maps 4-star shops with unanswered reviews",
+      "Nextdoor neighbourhood posts",
+      "Thumbtack local leads"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Google Maps high-street shops",
+      "Facebook local community groups",
+      "Nextdoor UK street posts"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Google Maps shops on main streets",
+      "Nextdoor Canada community posts",
+      "Local Facebook buy-and-sell groups"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Google Maps suburban strip shops",
+      "Nextdoor Australia neighbourhood posts",
+      "Local Facebook community groups"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "Google Maps shop clusters in heartland malls",
+      "Facebook neighbourhood groups for HDB estates",
+      "WhatsApp business contact lists"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Facebook Marketplace local groups",
+      "Barangay community referrals",
+      "Google Maps shops along main roads"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-onl-product-photo-094",
+   "title": "Product photo cleanup for small sellers",
+   "one_liner": "Etsy and eBay sellers pay per batch to get phone photos cut out, lit and background-cleaned.",
+   "min_capital": 50,
+   "capital_tier": "<500",
+   "hours_per_week": "<10",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU",
+    "SG",
+    "PH"
+   ],
+   "online_or_offline": "offline",
+   "legal_blocks": [],
+   "skills_needed": [
+    "design",
+    "basic_english"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "low",
+   "payback_days": 14,
+   "recurring": true,
+   "channel_ids": [
+    "etsy",
+    "facebook",
+    "referral",
+    "local-groups"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Photo editing tool subscription",
+     "amount": 20
+    },
+    {
+     "item": "Lightbox and lamp set",
+     "amount": 18
+    },
+    {
+     "item": "Sample listing fees on Etsy",
+     "amount": 12
+    }
+   ],
+   "steps": [
+    "Re-shoot 3 items from your own home",
+    "Edit them free for one Etsy seller",
+    "Build a 6-image before/after portfolio",
+    "Message 20 sellers with the portfolio",
+    "Offer $12 per product, 5 photos for the first batch",
+    "Deliver within 48 hours per batch",
+    "Ask for a shop-announcement mention"
+   ],
+   "pricing_hint": "$12 per product, 5 photos",
+   "first_customers": [
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews"
+   ],
+   "pitfalls": [
+    "Never claim studio quality from phone shots",
+    "Fix white balance before cutting out",
+    "Keep the seller's listing sizes exact"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "mobile-internet",
+   "trend_tags": [
+    "ecommerce",
+    "visual"
+   ],
+   "first_seen": "2025-10",
+   "maturity": "emerging",
+   "version": 1,
+   "updated_at": "2026-06-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Nextdoor neighbourhood posts",
+      "Thumbtack local leads",
+      "Chamber of commerce newsletter"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Facebook local community groups",
+      "Nextdoor UK street posts",
+      "Local parish newsletter ads"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Nextdoor Canada community posts",
+      "Local Facebook buy-and-sell groups",
+      "Chamber of commerce directory"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Nextdoor Australia neighbourhood posts",
+      "Local Facebook community groups",
+      "Council newsletter sponsorships"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "Facebook neighbourhood groups for HDB estates",
+      "WhatsApp business contact lists",
+      "Google Maps shop clusters in heartland malls"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Barangay community referrals",
+      "Google Maps shops along main roads",
+      "Viber neighbourhood groups"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-onl-product-photo-095",
+   "title": "Product photo cleanup for small sellers",
+   "one_liner": "Etsy and eBay sellers pay per batch to get phone photos cut out, lit and background-cleaned.",
+   "min_capital": 4320,
+   "capital_tier": "2k-10k",
+   "hours_per_week": "<10",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU",
+    "PH"
+   ],
+   "online_or_offline": "offline",
+   "legal_blocks": [],
+   "skills_needed": [
+    "design",
+    "basic_english"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "low",
+   "payback_days": 21,
+   "recurring": true,
+   "channel_ids": [
+    "etsy",
+    "facebook",
+    "referral",
+    "local-groups"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Photo editing tool subscription",
+     "amount": 1728
+    },
+    {
+     "item": "Lightbox and lamp set",
+     "amount": 1512
+    },
+    {
+     "item": "Sample listing fees on Etsy",
+     "amount": 1080
+    }
+   ],
+   "steps": [
+    "Re-shoot 3 items from your own home",
+    "Edit them free for one Etsy seller",
+    "Build a 6-image before/after portfolio",
+    "Message 25 sellers with the portfolio",
+    "Offer $49 per 10-product batch for the first batch",
+    "Deliver within 48 hours per batch",
+    "Ask for a shop-announcement mention"
+   ],
+   "pricing_hint": "$49 per 10-product batch",
+   "first_customers": [
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts"
+   ],
+   "pitfalls": [
+    "Never claim studio quality from phone shots",
+    "Fix white balance before cutting out",
+    "Keep the seller's listing sizes exact"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "mobile-internet",
+   "trend_tags": [
+    "ecommerce",
+    "visual"
+   ],
+   "first_seen": "2024-11",
+   "maturity": "growing",
+   "version": 1,
+   "updated_at": "2026-07-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Thumbtack local leads",
+      "Chamber of commerce newsletter",
+      "Google Maps 4-star shops with unanswered reviews"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Nextdoor UK street posts",
+      "Local parish newsletter ads",
+      "Google Maps high-street shops"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Local Facebook buy-and-sell groups",
+      "Chamber of commerce directory",
+      "Google Maps shops on main streets"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Local Facebook community groups",
+      "Council newsletter sponsorships",
+      "Google Maps suburban strip shops"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Google Maps shops along main roads",
+      "Viber neighbourhood groups",
+      "Facebook Marketplace local groups"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-onl-product-photo-096",
+   "title": "Product photo cleanup for small sellers",
+   "one_liner": "Etsy and eBay sellers pay per batch to get phone photos cut out, lit and background-cleaned.",
+   "min_capital": 245,
+   "capital_tier": "<500",
+   "hours_per_week": "<10",
+   "countries": [
+    "US",
+    "UK",
+    "SG"
+   ],
+   "online_or_offline": "offline",
+   "legal_blocks": [],
+   "skills_needed": [
+    "design",
+    "basic_english"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "low",
+   "payback_days": 30,
+   "recurring": true,
+   "channel_ids": [
+    "etsy",
+    "facebook",
+    "referral",
+    "local-groups"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Photo editing tool subscription",
+     "amount": 98
+    },
+    {
+     "item": "Lightbox and lamp set",
+     "amount": 86
+    },
+    {
+     "item": "Sample listing fees on Etsy",
+     "amount": 61
+    }
+   ],
+   "steps": [
+    "Re-shoot 3 items from your own home",
+    "Edit them free for one Etsy seller",
+    "Build a 6-image before/after portfolio",
+    "Message 30 sellers with the portfolio",
+    "Offer $99/month for 2 shops for the first batch",
+    "Deliver within 48 hours per batch",
+    "Ask for a shop-announcement mention"
+   ],
+   "pricing_hint": "$99/month for 2 shops",
+   "first_customers": [
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads"
+   ],
+   "pitfalls": [
+    "Never claim studio quality from phone shots",
+    "Fix white balance before cutting out",
+    "Keep the seller's listing sizes exact"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "mobile-internet",
+   "trend_tags": [
+    "ecommerce",
+    "visual"
+   ],
+   "first_seen": "2024-12",
+   "maturity": "growing",
+   "version": 1,
+   "updated_at": "2026-08-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Chamber of commerce newsletter",
+      "Google Maps 4-star shops with unanswered reviews",
+      "Nextdoor neighbourhood posts"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Local parish newsletter ads",
+      "Google Maps high-street shops",
+      "Facebook local community groups"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "Google Maps shop clusters in heartland malls",
+      "Facebook neighbourhood groups for HDB estates",
+      "WhatsApp business contact lists"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-onl-product-photo-097",
+   "title": "Product photo cleanup for small sellers",
+   "one_liner": "Etsy and eBay sellers pay per batch to get phone photos cut out, lit and background-cleaned.",
+   "min_capital": 340,
+   "capital_tier": "<500",
+   "hours_per_week": "<10",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU",
+    "SG"
+   ],
+   "online_or_offline": "offline",
+   "legal_blocks": [],
+   "skills_needed": [
+    "design",
+    "basic_english"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "low",
+   "payback_days": 14,
+   "recurring": true,
+   "channel_ids": [
+    "etsy",
+    "facebook",
+    "referral",
+    "local-groups"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Photo editing tool subscription",
+     "amount": 136
+    },
+    {
+     "item": "Lightbox and lamp set",
+     "amount": 119
+    },
+    {
+     "item": "Sample listing fees on Etsy",
+     "amount": 85
+    }
+   ],
+   "steps": [
+    "Re-shoot 3 items from your own home",
+    "Edit them free for one Etsy seller",
+    "Build a 6-image before/after portfolio",
+    "Message 5 sellers with the portfolio",
+    "Offer $12 per product, 5 photos for the first batch",
+    "Deliver within 48 hours per batch",
+    "Ask for a shop-announcement mention"
+   ],
+   "pricing_hint": "$12 per product, 5 photos",
+   "first_customers": [
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter"
+   ],
+   "pitfalls": [
+    "Never claim studio quality from phone shots",
+    "Fix white balance before cutting out",
+    "Keep the seller's listing sizes exact"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "mobile-internet",
+   "trend_tags": [
+    "ecommerce",
+    "visual"
+   ],
+   "first_seen": "2025-01",
+   "maturity": "mature",
+   "version": 1,
+   "updated_at": "2026-09-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Google Maps 4-star shops with unanswered reviews",
+      "Nextdoor neighbourhood posts",
+      "Thumbtack local leads"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Google Maps high-street shops",
+      "Facebook local community groups",
+      "Nextdoor UK street posts"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Google Maps shops on main streets",
+      "Nextdoor Canada community posts",
+      "Local Facebook buy-and-sell groups"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Google Maps suburban strip shops",
+      "Nextdoor Australia neighbourhood posts",
+      "Local Facebook community groups"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "Facebook neighbourhood groups for HDB estates",
+      "WhatsApp business contact lists",
+      "Google Maps shop clusters in heartland malls"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-onl-product-photo-098",
+   "title": "Product photo cleanup for small sellers",
+   "one_liner": "Etsy and eBay sellers pay per batch to get phone photos cut out, lit and background-cleaned.",
+   "min_capital": 1650,
+   "capital_tier": "500-2k",
+   "hours_per_week": "<10",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU",
+    "SG",
+    "PH"
+   ],
+   "online_or_offline": "offline",
+   "legal_blocks": [],
+   "skills_needed": [
+    "design",
+    "basic_english"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "low",
+   "payback_days": 21,
+   "recurring": true,
+   "channel_ids": [
+    "etsy",
+    "facebook",
+    "referral",
+    "local-groups"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Photo editing tool subscription",
+     "amount": 660
+    },
+    {
+     "item": "Lightbox and lamp set",
+     "amount": 578
+    },
+    {
+     "item": "Sample listing fees on Etsy",
+     "amount": 412
+    }
+   ],
+   "steps": [
+    "Re-shoot 3 items from your own home",
+    "Edit them free for one Etsy seller",
+    "Build a 6-image before/after portfolio",
+    "Message 10 sellers with the portfolio",
+    "Offer $49 per 10-product batch for the first batch",
+    "Deliver within 48 hours per batch",
+    "Ask for a shop-announcement mention"
+   ],
+   "pricing_hint": "$49 per 10-product batch",
+   "first_customers": [
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews"
+   ],
+   "pitfalls": [
+    "Never claim studio quality from phone shots",
+    "Fix white balance before cutting out",
+    "Keep the seller's listing sizes exact"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "mobile-internet",
+   "trend_tags": [
+    "ecommerce",
+    "visual"
+   ],
+   "first_seen": "2024-02",
+   "maturity": "growing",
+   "version": 1,
+   "updated_at": "2026-10-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Nextdoor neighbourhood posts",
+      "Thumbtack local leads",
+      "Chamber of commerce newsletter"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Facebook local community groups",
+      "Nextdoor UK street posts",
+      "Local parish newsletter ads"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Nextdoor Canada community posts",
+      "Local Facebook buy-and-sell groups",
+      "Chamber of commerce directory"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Nextdoor Australia neighbourhood posts",
+      "Local Facebook community groups",
+      "Council newsletter sponsorships"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "WhatsApp business contact lists",
+      "Google Maps shop clusters in heartland malls",
+      "Facebook neighbourhood groups for HDB estates"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Barangay community referrals",
+      "Google Maps shops along main roads",
+      "Viber neighbourhood groups"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-onl-product-photo-099",
+   "title": "Product photo cleanup for small sellers (market)",
+   "one_liner": "Etsy and eBay sellers pay per batch to get phone photos cut out, lit and background-cleaned.",
+   "min_capital": 1745,
+   "capital_tier": "500-2k",
+   "hours_per_week": "<10",
+   "countries": [
+    "US",
+    "UK",
+    "AU",
+    "SG",
+    "PH"
+   ],
+   "online_or_offline": "online",
+   "legal_blocks": [],
+   "skills_needed": [
+    "design",
+    "basic_english"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "low",
+   "payback_days": 30,
+   "recurring": true,
+   "channel_ids": [
+    "etsy",
+    "facebook",
+    "referral",
+    "local-groups"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Photo editing tool subscription",
+     "amount": 698
+    },
+    {
+     "item": "Lightbox and lamp set",
+     "amount": 611
+    },
+    {
+     "item": "Sample listing fees on Etsy",
+     "amount": 436
+    }
+   ],
+   "steps": [
+    "Re-shoot 3 items from your own home",
+    "Edit them free for one Etsy seller",
+    "Build a 6-image before/after portfolio",
+    "Message 15 sellers with the portfolio",
+    "Offer $99/month for 2 shops for the first batch",
+    "Deliver within 48 hours per batch",
+    "Ask for a shop-announcement mention"
+   ],
+   "pricing_hint": "$99/month for 2 shops",
+   "first_customers": [
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts"
+   ],
+   "pitfalls": [
+    "Never claim studio quality from phone shots",
+    "Fix white balance before cutting out",
+    "Keep the seller's listing sizes exact"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "mobile-internet",
+   "trend_tags": [
+    "ecommerce",
+    "visual"
+   ],
+   "first_seen": "2024-03",
+   "maturity": "saturated",
+   "version": 1,
+   "updated_at": "2026-11-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Thumbtack local leads",
+      "Chamber of commerce newsletter",
+      "Google Maps 4-star shops with unanswered reviews"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Nextdoor UK street posts",
+      "Local parish newsletter ads",
+      "Google Maps high-street shops"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Local Facebook community groups",
+      "Council newsletter sponsorships",
+      "Google Maps suburban strip shops"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "Google Maps shop clusters in heartland malls",
+      "Facebook neighbourhood groups for HDB estates",
+      "WhatsApp business contact lists"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Google Maps shops along main roads",
+      "Viber neighbourhood groups",
+      "Facebook Marketplace local groups"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-onl-product-photo-100",
+   "title": "Product photo cleanup for small sellers",
+   "one_liner": "Etsy and eBay sellers pay per batch to get phone photos cut out, lit and background-cleaned.",
+   "min_capital": 4805,
+   "capital_tier": "2k-10k",
+   "hours_per_week": "<10",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU"
+   ],
+   "online_or_offline": "hybrid",
+   "legal_blocks": [],
+   "skills_needed": [
+    "design",
+    "basic_english"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "low",
+   "payback_days": 14,
+   "recurring": true,
+   "channel_ids": [
+    "etsy",
+    "facebook",
+    "referral",
+    "local-groups"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Photo editing tool subscription",
+     "amount": 1922
+    },
+    {
+     "item": "Lightbox and lamp set",
+     "amount": 1682
+    },
+    {
+     "item": "Sample listing fees on Etsy",
+     "amount": 1201
+    }
+   ],
+   "steps": [
+    "Re-shoot 3 items from your own home",
+    "Edit them free for one Etsy seller",
+    "Build a 6-image before/after portfolio",
+    "Message 20 sellers with the portfolio",
+    "Offer $12 per product, 5 photos for the first batch",
+    "Deliver within 48 hours per batch",
+    "Ask for a shop-announcement mention"
+   ],
+   "pricing_hint": "$12 per product, 5 photos",
+   "first_customers": [
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads"
+   ],
+   "pitfalls": [
+    "Never claim studio quality from phone shots",
+    "Fix white balance before cutting out",
+    "Keep the seller's listing sizes exact"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "mobile-internet",
+   "trend_tags": [
+    "ecommerce",
+    "visual"
+   ],
+   "first_seen": "2025-04",
+   "maturity": "growing",
+   "version": 1,
+   "updated_at": "2026-01-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Chamber of commerce newsletter",
+      "Google Maps 4-star shops with unanswered reviews",
+      "Nextdoor neighbourhood posts"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Local parish newsletter ads",
+      "Google Maps high-street shops",
+      "Facebook local community groups"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Chamber of commerce directory",
+      "Google Maps shops on main streets",
+      "Nextdoor Canada community posts"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Council newsletter sponsorships",
+      "Google Maps suburban strip shops",
+      "Nextdoor Australia neighbourhood posts"
+     ]
+    }
+   }
+  }
+ ]
+}

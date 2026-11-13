@@ -1,0 +1,1674 @@
+{
+ "industry": "resume-polish",
+ "count": 13,
+ "ideas": [
+  {
+   "id": "bs-onl-resume-polish-101",
+   "title": "Resume and LinkedIn polish service",
+   "one_liner": "Job seekers pay a fixed fee for a rewritten resume and matching LinkedIn headline section.",
+   "min_capital": 560,
+   "capital_tier": "500-2k",
+   "hours_per_week": "<10",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU",
+    "SG",
+    "PH"
+   ],
+   "online_or_offline": "online",
+   "legal_blocks": [],
+   "skills_needed": [
+    "writing",
+    "basic_english"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "low",
+   "payback_days": 14,
+   "recurring": false,
+   "channel_ids": [
+    "facebook",
+    "referral",
+    "local-groups",
+    "chamber"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Resume template licences",
+     "amount": 168
+    },
+    {
+     "item": "Job-board ad or group post boosts",
+     "amount": 196
+    },
+    {
+     "item": "Portfolio site domain and hosting",
+     "amount": 196
+    }
+   ],
+   "steps": [
+    "Rewrite your own resume as the sample",
+    "Rewrite one free for a friend",
+    "Collect 25 before/after samples",
+    "Post the offer in local job groups",
+    "Offer $79 resume plus LinkedIn rewrite, 3-day turnaround",
+    "Send a fill-in worksheet first",
+    "Ask each client for a referral at handover"
+   ],
+   "pricing_hint": "$79 resume plus LinkedIn rewrite",
+   "first_customers": [
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter"
+   ],
+   "pitfalls": [
+    "Never invent experience for clients",
+    "Tailor keywords to the real job ad",
+    "Deliver editable files, not just PDFs"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "digital-product",
+   "trend_tags": [
+    "career",
+    "writing"
+   ],
+   "first_seen": "2024-05",
+   "maturity": "mature",
+   "version": 1,
+   "updated_at": "2026-02-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Google Maps 4-star shops with unanswered reviews",
+      "Nextdoor neighbourhood posts",
+      "Thumbtack local leads"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Google Maps high-street shops",
+      "Facebook local community groups",
+      "Nextdoor UK street posts"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Google Maps shops on main streets",
+      "Nextdoor Canada community posts",
+      "Local Facebook buy-and-sell groups"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Google Maps suburban strip shops",
+      "Nextdoor Australia neighbourhood posts",
+      "Local Facebook community groups"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "WhatsApp business contact lists",
+      "Google Maps shop clusters in heartland malls",
+      "Facebook neighbourhood groups for HDB estates"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Facebook Marketplace local groups",
+      "Barangay community referrals",
+      "Google Maps shops along main roads"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-onl-resume-polish-102",
+   "title": "Resume and LinkedIn polish service (north)",
+   "one_liner": "Job seekers pay a fixed fee for a rewritten resume and matching LinkedIn headline section.",
+   "min_capital": 655,
+   "capital_tier": "500-2k",
+   "hours_per_week": "<10",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU",
+    "SG",
+    "PH"
+   ],
+   "online_or_offline": "online",
+   "legal_blocks": [],
+   "skills_needed": [
+    "writing",
+    "basic_english"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "low",
+   "payback_days": 21,
+   "recurring": false,
+   "channel_ids": [
+    "facebook",
+    "referral",
+    "local-groups",
+    "chamber"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Resume template licences",
+     "amount": 196
+    },
+    {
+     "item": "Job-board ad or group post boosts",
+     "amount": 229
+    },
+    {
+     "item": "Portfolio site domain and hosting",
+     "amount": 230
+    }
+   ],
+   "steps": [
+    "Rewrite your own resume as the sample",
+    "Rewrite one free for a friend",
+    "Collect 30 before/after samples",
+    "Post the offer in local job groups",
+    "Offer $120 with mock interview notes, 3-day turnaround",
+    "Send a fill-in worksheet first",
+    "Ask each client for a referral at handover"
+   ],
+   "pricing_hint": "$120 with mock interview notes",
+   "first_customers": [
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews"
+   ],
+   "pitfalls": [
+    "Never invent experience for clients",
+    "Tailor keywords to the real job ad",
+    "Deliver editable files, not just PDFs"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "digital-product",
+   "trend_tags": [
+    "career",
+    "writing"
+   ],
+   "first_seen": "2024-06",
+   "maturity": "saturated",
+   "version": 1,
+   "updated_at": "2026-03-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Nextdoor neighbourhood posts",
+      "Thumbtack local leads",
+      "Chamber of commerce newsletter"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Facebook local community groups",
+      "Nextdoor UK street posts",
+      "Local parish newsletter ads"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Nextdoor Canada community posts",
+      "Local Facebook buy-and-sell groups",
+      "Chamber of commerce directory"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Nextdoor Australia neighbourhood posts",
+      "Local Facebook community groups",
+      "Council newsletter sponsorships"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "Google Maps shop clusters in heartland malls",
+      "Facebook neighbourhood groups for HDB estates",
+      "WhatsApp business contact lists"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Barangay community referrals",
+      "Google Maps shops along main roads",
+      "Viber neighbourhood groups"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-onl-resume-polish-103",
+   "title": "Resume and LinkedIn polish service (east)",
+   "one_liner": "Job seekers pay a fixed fee for a rewritten resume and matching LinkedIn headline section.",
+   "min_capital": 475,
+   "capital_tier": "<500",
+   "hours_per_week": "<10",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU",
+    "SG"
+   ],
+   "online_or_offline": "online",
+   "legal_blocks": [],
+   "skills_needed": [
+    "writing",
+    "basic_english"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "low",
+   "payback_days": 7,
+   "recurring": false,
+   "channel_ids": [
+    "facebook",
+    "referral",
+    "local-groups",
+    "chamber"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Resume template licences",
+     "amount": 142
+    },
+    {
+     "item": "Job-board ad or group post boosts",
+     "amount": 166
+    },
+    {
+     "item": "Portfolio site domain and hosting",
+     "amount": 167
+    }
+   ],
+   "steps": [
+    "Rewrite your own resume as the sample",
+    "Rewrite one free for a friend",
+    "Collect 5 before/after samples",
+    "Post the offer in local job groups",
+    "Offer $45 per resume rewrite, 3-day turnaround",
+    "Send a fill-in worksheet first",
+    "Ask each client for a referral at handover"
+   ],
+   "pricing_hint": "$45 per resume rewrite",
+   "first_customers": [
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts"
+   ],
+   "pitfalls": [
+    "Never invent experience for clients",
+    "Tailor keywords to the real job ad",
+    "Deliver editable files, not just PDFs"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "digital-product",
+   "trend_tags": [
+    "career",
+    "writing"
+   ],
+   "first_seen": "2025-07",
+   "maturity": "growing",
+   "version": 1,
+   "updated_at": "2026-04-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Thumbtack local leads",
+      "Chamber of commerce newsletter",
+      "Google Maps 4-star shops with unanswered reviews"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Nextdoor UK street posts",
+      "Local parish newsletter ads",
+      "Google Maps high-street shops"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Local Facebook buy-and-sell groups",
+      "Chamber of commerce directory",
+      "Google Maps shops on main streets"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Local Facebook community groups",
+      "Council newsletter sponsorships",
+      "Google Maps suburban strip shops"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "Facebook neighbourhood groups for HDB estates",
+      "WhatsApp business contact lists",
+      "Google Maps shop clusters in heartland malls"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-onl-resume-polish-104",
+   "title": "Resume and LinkedIn polish service (riverside)",
+   "one_liner": "Job seekers pay a fixed fee for a rewritten resume and matching LinkedIn headline section.",
+   "min_capital": 120,
+   "capital_tier": "<500",
+   "hours_per_week": "10-25",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU",
+    "PH"
+   ],
+   "online_or_offline": "online",
+   "legal_blocks": [],
+   "skills_needed": [
+    "writing",
+    "basic_english"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "low",
+   "payback_days": 14,
+   "recurring": false,
+   "channel_ids": [
+    "facebook",
+    "referral",
+    "local-groups",
+    "chamber"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Resume template licences",
+     "amount": 36
+    },
+    {
+     "item": "Job-board ad or group post boosts",
+     "amount": 42
+    },
+    {
+     "item": "Portfolio site domain and hosting",
+     "amount": 42
+    }
+   ],
+   "steps": [
+    "Rewrite your own resume as the sample",
+    "Rewrite one free for a friend",
+    "Collect 10 before/after samples",
+    "Post the offer in local job groups",
+    "Offer $79 resume plus LinkedIn rewrite, 3-day turnaround",
+    "Send a fill-in worksheet first",
+    "Ask each client for a referral at handover"
+   ],
+   "pricing_hint": "$79 resume plus LinkedIn rewrite",
+   "first_customers": [
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads"
+   ],
+   "pitfalls": [
+    "Never invent experience for clients",
+    "Tailor keywords to the real job ad",
+    "Deliver editable files, not just PDFs"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "digital-product",
+   "trend_tags": [
+    "career",
+    "writing"
+   ],
+   "first_seen": "2024-08",
+   "maturity": "growing",
+   "version": 1,
+   "updated_at": "2026-05-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Chamber of commerce newsletter",
+      "Google Maps 4-star shops with unanswered reviews",
+      "Nextdoor neighbourhood posts"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Local parish newsletter ads",
+      "Google Maps high-street shops",
+      "Facebook local community groups"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Chamber of commerce directory",
+      "Google Maps shops on main streets",
+      "Nextdoor Canada community posts"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Council newsletter sponsorships",
+      "Google Maps suburban strip shops",
+      "Nextdoor Australia neighbourhood posts"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Viber neighbourhood groups",
+      "Facebook Marketplace local groups",
+      "Barangay community referrals"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-onl-resume-polish-105",
+   "title": "Resume and LinkedIn polish service (old town)",
+   "one_liner": "Job seekers pay a fixed fee for a rewritten resume and matching LinkedIn headline section.",
+   "min_capital": 950,
+   "capital_tier": "500-2k",
+   "hours_per_week": "<10",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU",
+    "SG",
+    "PH"
+   ],
+   "online_or_offline": "online",
+   "legal_blocks": [],
+   "skills_needed": [
+    "writing",
+    "basic_english"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "low",
+   "payback_days": 21,
+   "recurring": false,
+   "channel_ids": [
+    "facebook",
+    "referral",
+    "local-groups",
+    "chamber"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Resume template licences",
+     "amount": 285
+    },
+    {
+     "item": "Job-board ad or group post boosts",
+     "amount": 332
+    },
+    {
+     "item": "Portfolio site domain and hosting",
+     "amount": 333
+    }
+   ],
+   "steps": [
+    "Rewrite your own resume as the sample",
+    "Rewrite one free for a friend",
+    "Collect 15 before/after samples",
+    "Post the offer in local job groups",
+    "Offer $120 with mock interview notes, 3-day turnaround",
+    "Send a fill-in worksheet first",
+    "Ask each client for a referral at handover"
+   ],
+   "pricing_hint": "$120 with mock interview notes",
+   "first_customers": [
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter"
+   ],
+   "pitfalls": [
+    "Never invent experience for clients",
+    "Tailor keywords to the real job ad",
+    "Deliver editable files, not just PDFs"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "digital-product",
+   "trend_tags": [
+    "career",
+    "writing"
+   ],
+   "first_seen": "2024-09",
+   "maturity": "mature",
+   "version": 1,
+   "updated_at": "2026-06-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Google Maps 4-star shops with unanswered reviews",
+      "Nextdoor neighbourhood posts",
+      "Thumbtack local leads"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Google Maps high-street shops",
+      "Facebook local community groups",
+      "Nextdoor UK street posts"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Google Maps shops on main streets",
+      "Nextdoor Canada community posts",
+      "Local Facebook buy-and-sell groups"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Google Maps suburban strip shops",
+      "Nextdoor Australia neighbourhood posts",
+      "Local Facebook community groups"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "Google Maps shop clusters in heartland malls",
+      "Facebook neighbourhood groups for HDB estates",
+      "WhatsApp business contact lists"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Facebook Marketplace local groups",
+      "Barangay community referrals",
+      "Google Maps shops along main roads"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-onl-resume-polish-106",
+   "title": "Resume and LinkedIn polish service (hillside)",
+   "one_liner": "Job seekers pay a fixed fee for a rewritten resume and matching LinkedIn headline section.",
+   "min_capital": 5385,
+   "capital_tier": "2k-10k",
+   "hours_per_week": "10-25",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU"
+   ],
+   "online_or_offline": "hybrid",
+   "legal_blocks": [],
+   "skills_needed": [
+    "writing",
+    "basic_english"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "low",
+   "payback_days": 7,
+   "recurring": false,
+   "channel_ids": [
+    "facebook",
+    "referral",
+    "local-groups",
+    "chamber"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Resume template licences",
+     "amount": 1616
+    },
+    {
+     "item": "Job-board ad or group post boosts",
+     "amount": 1885
+    },
+    {
+     "item": "Portfolio site domain and hosting",
+     "amount": 1884
+    }
+   ],
+   "steps": [
+    "Rewrite your own resume as the sample",
+    "Rewrite one free for a friend",
+    "Collect 20 before/after samples",
+    "Post the offer in local job groups",
+    "Offer $45 per resume rewrite, 3-day turnaround",
+    "Send a fill-in worksheet first",
+    "Ask each client for a referral at handover"
+   ],
+   "pricing_hint": "$45 per resume rewrite",
+   "first_customers": [
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews"
+   ],
+   "pitfalls": [
+    "Never invent experience for clients",
+    "Tailor keywords to the real job ad",
+    "Deliver editable files, not just PDFs"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "digital-product",
+   "trend_tags": [
+    "career",
+    "writing"
+   ],
+   "first_seen": "2025-10",
+   "maturity": "emerging",
+   "version": 1,
+   "updated_at": "2026-07-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Nextdoor neighbourhood posts",
+      "Thumbtack local leads",
+      "Chamber of commerce newsletter"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Facebook local community groups",
+      "Nextdoor UK street posts",
+      "Local parish newsletter ads"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Nextdoor Canada community posts",
+      "Local Facebook buy-and-sell groups",
+      "Chamber of commerce directory"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Nextdoor Australia neighbourhood posts",
+      "Local Facebook community groups",
+      "Council newsletter sponsorships"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-onl-resume-polish-107",
+   "title": "Resume and LinkedIn polish service (central)",
+   "one_liner": "Job seekers pay a fixed fee for a rewritten resume and matching LinkedIn headline section.",
+   "min_capital": 5480,
+   "capital_tier": "2k-10k",
+   "hours_per_week": "<10",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU"
+   ],
+   "online_or_offline": "online",
+   "legal_blocks": [],
+   "skills_needed": [
+    "writing",
+    "basic_english"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "low",
+   "payback_days": 14,
+   "recurring": false,
+   "channel_ids": [
+    "facebook",
+    "referral",
+    "local-groups",
+    "chamber"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Resume template licences",
+     "amount": 1644
+    },
+    {
+     "item": "Job-board ad or group post boosts",
+     "amount": 1918
+    },
+    {
+     "item": "Portfolio site domain and hosting",
+     "amount": 1918
+    }
+   ],
+   "steps": [
+    "Rewrite your own resume as the sample",
+    "Rewrite one free for a friend",
+    "Collect 25 before/after samples",
+    "Post the offer in local job groups",
+    "Offer $79 resume plus LinkedIn rewrite, 3-day turnaround",
+    "Send a fill-in worksheet first",
+    "Ask each client for a referral at handover"
+   ],
+   "pricing_hint": "$79 resume plus LinkedIn rewrite",
+   "first_customers": [
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts"
+   ],
+   "pitfalls": [
+    "Never invent experience for clients",
+    "Tailor keywords to the real job ad",
+    "Deliver editable files, not just PDFs"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "digital-product",
+   "trend_tags": [
+    "career",
+    "writing"
+   ],
+   "first_seen": "2024-11",
+   "maturity": "mature",
+   "version": 1,
+   "updated_at": "2026-08-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Thumbtack local leads",
+      "Chamber of commerce newsletter",
+      "Google Maps 4-star shops with unanswered reviews"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Nextdoor UK street posts",
+      "Local parish newsletter ads",
+      "Google Maps high-street shops"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Local Facebook buy-and-sell groups",
+      "Chamber of commerce directory",
+      "Google Maps shops on main streets"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Local Facebook community groups",
+      "Council newsletter sponsorships",
+      "Google Maps suburban strip shops"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-onl-resume-polish-108",
+   "title": "Resume and LinkedIn polish service (bayside)",
+   "one_liner": "Job seekers pay a fixed fee for a rewritten resume and matching LinkedIn headline section.",
+   "min_capital": 60,
+   "capital_tier": "<500",
+   "hours_per_week": "10-25",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "SG"
+   ],
+   "online_or_offline": "online",
+   "legal_blocks": [],
+   "skills_needed": [
+    "writing",
+    "basic_english"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "low",
+   "payback_days": 21,
+   "recurring": false,
+   "channel_ids": [
+    "facebook",
+    "referral",
+    "local-groups",
+    "chamber"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Resume template licences",
+     "amount": 18
+    },
+    {
+     "item": "Job-board ad or group post boosts",
+     "amount": 21
+    },
+    {
+     "item": "Portfolio site domain and hosting",
+     "amount": 21
+    }
+   ],
+   "steps": [
+    "Rewrite your own resume as the sample",
+    "Rewrite one free for a friend",
+    "Collect 30 before/after samples",
+    "Post the offer in local job groups",
+    "Offer $120 with mock interview notes, 3-day turnaround",
+    "Send a fill-in worksheet first",
+    "Ask each client for a referral at handover"
+   ],
+   "pricing_hint": "$120 with mock interview notes",
+   "first_customers": [
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads"
+   ],
+   "pitfalls": [
+    "Never invent experience for clients",
+    "Tailor keywords to the real job ad",
+    "Deliver editable files, not just PDFs"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "digital-product",
+   "trend_tags": [
+    "career",
+    "writing"
+   ],
+   "first_seen": "2024-12",
+   "maturity": "emerging",
+   "version": 1,
+   "updated_at": "2026-09-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Chamber of commerce newsletter",
+      "Google Maps 4-star shops with unanswered reviews",
+      "Nextdoor neighbourhood posts"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Local parish newsletter ads",
+      "Google Maps high-street shops",
+      "Facebook local community groups"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Chamber of commerce directory",
+      "Google Maps shops on main streets",
+      "Nextdoor Canada community posts"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "Google Maps shop clusters in heartland malls",
+      "Facebook neighbourhood groups for HDB estates",
+      "WhatsApp business contact lists"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-onl-resume-polish-109",
+   "title": "Resume and LinkedIn polish service (market)",
+   "one_liner": "Job seekers pay a fixed fee for a rewritten resume and matching LinkedIn headline section.",
+   "min_capital": 155,
+   "capital_tier": "<500",
+   "hours_per_week": "full",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU",
+    "SG"
+   ],
+   "online_or_offline": "online",
+   "legal_blocks": [],
+   "skills_needed": [
+    "writing",
+    "basic_english"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "low",
+   "payback_days": 7,
+   "recurring": false,
+   "channel_ids": [
+    "facebook",
+    "referral",
+    "local-groups",
+    "chamber"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Resume template licences",
+     "amount": 46
+    },
+    {
+     "item": "Job-board ad or group post boosts",
+     "amount": 54
+    },
+    {
+     "item": "Portfolio site domain and hosting",
+     "amount": 55
+    }
+   ],
+   "steps": [
+    "Rewrite your own resume as the sample",
+    "Rewrite one free for a friend",
+    "Collect 5 before/after samples",
+    "Post the offer in local job groups",
+    "Offer $45 per resume rewrite, 3-day turnaround",
+    "Send a fill-in worksheet first",
+    "Ask each client for a referral at handover"
+   ],
+   "pricing_hint": "$45 per resume rewrite",
+   "first_customers": [
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter"
+   ],
+   "pitfalls": [
+    "Never invent experience for clients",
+    "Tailor keywords to the real job ad",
+    "Deliver editable files, not just PDFs"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "digital-product",
+   "trend_tags": [
+    "career",
+    "writing"
+   ],
+   "first_seen": "2025-01",
+   "maturity": "growing",
+   "version": 1,
+   "updated_at": "2026-10-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Google Maps 4-star shops with unanswered reviews",
+      "Nextdoor neighbourhood posts",
+      "Thumbtack local leads"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Google Maps high-street shops",
+      "Facebook local community groups",
+      "Nextdoor UK street posts"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Google Maps shops on main streets",
+      "Nextdoor Canada community posts",
+      "Local Facebook buy-and-sell groups"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Google Maps suburban strip shops",
+      "Nextdoor Australia neighbourhood posts",
+      "Local Facebook community groups"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "Facebook neighbourhood groups for HDB estates",
+      "WhatsApp business contact lists",
+      "Google Maps shop clusters in heartland malls"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-onl-resume-polish-110",
+   "title": "Resume and LinkedIn polish service(lakeside)",
+   "one_liner": "Job seekers pay a fixed fee for a rewritten resume and matching LinkedIn headline section.",
+   "min_capital": 255,
+   "capital_tier": "<500",
+   "hours_per_week": "<10",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU",
+    "SG",
+    "PH"
+   ],
+   "online_or_offline": "offline",
+   "legal_blocks": [],
+   "skills_needed": [
+    "writing",
+    "basic_english"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "low",
+   "payback_days": 14,
+   "recurring": false,
+   "channel_ids": [
+    "facebook",
+    "referral",
+    "local-groups",
+    "chamber"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Resume template licences",
+     "amount": 76
+    },
+    {
+     "item": "Job-board ad or group post boosts",
+     "amount": 89
+    },
+    {
+     "item": "Portfolio site domain and hosting",
+     "amount": 90
+    }
+   ],
+   "steps": [
+    "Rewrite your own resume as the sample",
+    "Rewrite one free for a friend",
+    "Collect 10 before/after samples",
+    "Post the offer in local job groups",
+    "Offer $79 resume plus LinkedIn rewrite, 3-day turnaround",
+    "Send a fill-in worksheet first",
+    "Ask each client for a referral at handover"
+   ],
+   "pricing_hint": "$79 resume plus LinkedIn rewrite",
+   "first_customers": [
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews"
+   ],
+   "pitfalls": [
+    "Never invent experience for clients",
+    "Tailor keywords to the real job ad",
+    "Deliver editable files, not just PDFs"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "digital-product",
+   "trend_tags": [
+    "career",
+    "writing"
+   ],
+   "first_seen": "2024-02",
+   "maturity": "growing",
+   "version": 1,
+   "updated_at": "2026-11-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Nextdoor neighbourhood posts",
+      "Thumbtack local leads",
+      "Chamber of commerce newsletter"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Facebook local community groups",
+      "Nextdoor UK street posts",
+      "Local parish newsletter ads"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Nextdoor Canada community posts",
+      "Local Facebook buy-and-sell groups",
+      "Chamber of commerce directory"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Nextdoor Australia neighbourhood posts",
+      "Local Facebook community groups",
+      "Council newsletter sponsorships"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "WhatsApp business contact lists",
+      "Google Maps shop clusters in heartland malls",
+      "Facebook neighbourhood groups for HDB estates"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Barangay community referrals",
+      "Google Maps shops along main roads",
+      "Viber neighbourhood groups"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-onl-resume-polish-111",
+   "title": "Resume and LinkedIn polish service",
+   "one_liner": "Job seekers pay a fixed fee for a rewritten resume and matching LinkedIn headline section.",
+   "min_capital": 5870,
+   "capital_tier": "2k-10k",
+   "hours_per_week": "<10",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU",
+    "SG",
+    "PH"
+   ],
+   "online_or_offline": "hybrid",
+   "legal_blocks": [],
+   "skills_needed": [
+    "writing",
+    "basic_english"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "low",
+   "payback_days": 21,
+   "recurring": false,
+   "channel_ids": [
+    "facebook",
+    "referral",
+    "local-groups",
+    "chamber"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Resume template licences",
+     "amount": 1761
+    },
+    {
+     "item": "Job-board ad or group post boosts",
+     "amount": 2054
+    },
+    {
+     "item": "Portfolio site domain and hosting",
+     "amount": 2055
+    }
+   ],
+   "steps": [
+    "Rewrite your own resume as the sample",
+    "Rewrite one free for a friend",
+    "Collect 15 before/after samples",
+    "Post the offer in local job groups",
+    "Offer $120 with mock interview notes, 3-day turnaround",
+    "Send a fill-in worksheet first",
+    "Ask each client for a referral at handover"
+   ],
+   "pricing_hint": "$120 with mock interview notes",
+   "first_customers": [
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts"
+   ],
+   "pitfalls": [
+    "Never invent experience for clients",
+    "Tailor keywords to the real job ad",
+    "Deliver editable files, not just PDFs"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "digital-product",
+   "trend_tags": [
+    "career",
+    "writing"
+   ],
+   "first_seen": "2024-03",
+   "maturity": "emerging",
+   "version": 1,
+   "updated_at": "2026-01-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Thumbtack local leads",
+      "Chamber of commerce newsletter",
+      "Google Maps 4-star shops with unanswered reviews"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Nextdoor UK street posts",
+      "Local parish newsletter ads",
+      "Google Maps high-street shops"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Local Facebook buy-and-sell groups",
+      "Chamber of commerce directory",
+      "Google Maps shops on main streets"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Local Facebook community groups",
+      "Council newsletter sponsorships",
+      "Google Maps suburban strip shops"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "Google Maps shop clusters in heartland malls",
+      "Facebook neighbourhood groups for HDB estates",
+      "WhatsApp business contact lists"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Google Maps shops along main roads",
+      "Viber neighbourhood groups",
+      "Facebook Marketplace local groups"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-onl-resume-polish-112",
+   "title": "Resume and LinkedIn polish service (north)",
+   "one_liner": "Job seekers pay a fixed fee for a rewritten resume and matching LinkedIn headline section.",
+   "min_capital": 1625,
+   "capital_tier": "500-2k",
+   "hours_per_week": "<10",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU",
+    "PH"
+   ],
+   "online_or_offline": "online",
+   "legal_blocks": [],
+   "skills_needed": [
+    "writing",
+    "basic_english"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "low",
+   "payback_days": 7,
+   "recurring": false,
+   "channel_ids": [
+    "facebook",
+    "referral",
+    "local-groups",
+    "chamber"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Resume template licences",
+     "amount": 488
+    },
+    {
+     "item": "Job-board ad or group post boosts",
+     "amount": 569
+    },
+    {
+     "item": "Portfolio site domain and hosting",
+     "amount": 568
+    }
+   ],
+   "steps": [
+    "Rewrite your own resume as the sample",
+    "Rewrite one free for a friend",
+    "Collect 20 before/after samples",
+    "Post the offer in local job groups",
+    "Offer $45 per resume rewrite, 3-day turnaround",
+    "Send a fill-in worksheet first",
+    "Ask each client for a referral at handover"
+   ],
+   "pricing_hint": "$45 per resume rewrite",
+   "first_customers": [
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads"
+   ],
+   "pitfalls": [
+    "Never invent experience for clients",
+    "Tailor keywords to the real job ad",
+    "Deliver editable files, not just PDFs"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "digital-product",
+   "trend_tags": [
+    "career",
+    "writing"
+   ],
+   "first_seen": "2025-04",
+   "maturity": "growing",
+   "version": 1,
+   "updated_at": "2026-02-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Chamber of commerce newsletter",
+      "Google Maps 4-star shops with unanswered reviews",
+      "Nextdoor neighbourhood posts"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Local parish newsletter ads",
+      "Google Maps high-street shops",
+      "Facebook local community groups"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Chamber of commerce directory",
+      "Google Maps shops on main streets",
+      "Nextdoor Canada community posts"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Council newsletter sponsorships",
+      "Google Maps suburban strip shops",
+      "Nextdoor Australia neighbourhood posts"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Viber neighbourhood groups",
+      "Facebook Marketplace local groups",
+      "Barangay community referrals"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-onl-resume-polish-113",
+   "title": "Resume and LinkedIn polish service (east)",
+   "one_liner": "Job seekers pay a fixed fee for a rewritten resume and matching LinkedIn headline section.",
+   "min_capital": 1725,
+   "capital_tier": "500-2k",
+   "hours_per_week": "10-25",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU",
+    "SG",
+    "PH"
+   ],
+   "online_or_offline": "online",
+   "legal_blocks": [],
+   "skills_needed": [
+    "writing",
+    "basic_english"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "low",
+   "payback_days": 14,
+   "recurring": false,
+   "channel_ids": [
+    "facebook",
+    "referral",
+    "local-groups",
+    "chamber"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Resume template licences",
+     "amount": 518
+    },
+    {
+     "item": "Job-board ad or group post boosts",
+     "amount": 604
+    },
+    {
+     "item": "Portfolio site domain and hosting",
+     "amount": 603
+    }
+   ],
+   "steps": [
+    "Rewrite your own resume as the sample",
+    "Rewrite one free for a friend",
+    "Collect 25 before/after samples",
+    "Post the offer in local job groups",
+    "Offer $79 resume plus LinkedIn rewrite, 3-day turnaround",
+    "Send a fill-in worksheet first",
+    "Ask each client for a referral at handover"
+   ],
+   "pricing_hint": "$79 resume plus LinkedIn rewrite",
+   "first_customers": [
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter"
+   ],
+   "pitfalls": [
+    "Never invent experience for clients",
+    "Tailor keywords to the real job ad",
+    "Deliver editable files, not just PDFs"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "digital-product",
+   "trend_tags": [
+    "career",
+    "writing"
+   ],
+   "first_seen": "2024-05",
+   "maturity": "mature",
+   "version": 1,
+   "updated_at": "2026-03-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Google Maps 4-star shops with unanswered reviews",
+      "Nextdoor neighbourhood posts",
+      "Thumbtack local leads"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Google Maps high-street shops",
+      "Facebook local community groups",
+      "Nextdoor UK street posts"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Google Maps shops on main streets",
+      "Nextdoor Canada community posts",
+      "Local Facebook buy-and-sell groups"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Google Maps suburban strip shops",
+      "Nextdoor Australia neighbourhood posts",
+      "Local Facebook community groups"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "WhatsApp business contact lists",
+      "Google Maps shop clusters in heartland malls",
+      "Facebook neighbourhood groups for HDB estates"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Facebook Marketplace local groups",
+      "Barangay community referrals",
+      "Google Maps shops along main roads"
+     ]
+    }
+   }
+  }
+ ]
+}

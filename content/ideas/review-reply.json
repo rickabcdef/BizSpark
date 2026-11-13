@@ -1,0 +1,1449 @@
+{
+ "industry": "review-reply",
+ "count": 11,
+ "ideas": [
+  {
+   "id": "bs-svc-review-reply-001",
+   "title": "Local shop review-reply desk",
+   "one_liner": "Independent shop owners pay a flat monthly fee to get every Google and Yelp review answered within a day.",
+   "min_capital": 2100,
+   "capital_tier": "2k-10k",
+   "hours_per_week": "10-25",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU",
+    "PH"
+   ],
+   "online_or_offline": "offline",
+   "legal_blocks": [],
+   "skills_needed": [
+    "writing",
+    "basic_english"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "low",
+   "payback_days": 14,
+   "recurring": true,
+   "channel_ids": [
+    "google-maps",
+    "nextdoor",
+    "walk-in",
+    "chamber"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Domain and one-page site",
+     "amount": 420
+    },
+    {
+     "item": "Printed intro letters",
+     "amount": 630
+    },
+    {
+     "item": "First month of a mail tool",
+     "amount": 630
+    },
+    {
+     "item": "Sample reply pack printing",
+     "amount": 420
+    }
+   ],
+   "steps": [
+    "Pick one street with 5+ independent shops",
+    "Write 10 review reply templates",
+    "Print 5 intro letters with a free sample reply",
+    "Walk in on a Tuesday morning",
+    "Offer $49/month for up to 15 replies, first month free",
+    "Deliver replies by email within 24 hours",
+    "Ask client #1 for two introductions"
+   ],
+   "pricing_hint": "$49/month for up to 15 replies",
+   "first_customers": [
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter"
+   ],
+   "pitfalls": [
+    "Sell answered reviews, not writing tools",
+    "Cap at 25 shops until templates are proven",
+    "Check local rules on soliciting businesses in person"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "ai-llm",
+   "trend_tags": [
+    "local-service",
+    "retainer",
+    "reputation"
+   ],
+   "first_seen": "2025-01",
+   "maturity": "saturated",
+   "version": 1,
+   "updated_at": "2026-01-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Google Maps 4-star shops with unanswered reviews",
+      "Nextdoor neighbourhood posts",
+      "Thumbtack local leads"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Google Maps high-street shops",
+      "Facebook local community groups",
+      "Nextdoor UK street posts"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Google Maps shops on main streets",
+      "Nextdoor Canada community posts",
+      "Local Facebook buy-and-sell groups"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Google Maps suburban strip shops",
+      "Nextdoor Australia neighbourhood posts",
+      "Local Facebook community groups"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Facebook Marketplace local groups",
+      "Barangay community referrals",
+      "Google Maps shops along main roads"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-svc-review-reply-002",
+   "title": "Local shop review-reply desk (north)",
+   "one_liner": "Independent shop owners pay a flat monthly fee to get every Google and Yelp review answered within a day.",
+   "min_capital": 2195,
+   "capital_tier": "2k-10k",
+   "hours_per_week": "<10",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU",
+    "SG",
+    "PH"
+   ],
+   "online_or_offline": "offline",
+   "legal_blocks": [],
+   "skills_needed": [
+    "writing",
+    "basic_english"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "low",
+   "payback_days": 21,
+   "recurring": true,
+   "channel_ids": [
+    "google-maps",
+    "nextdoor",
+    "walk-in",
+    "chamber"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Domain and one-page site",
+     "amount": 439
+    },
+    {
+     "item": "Printed intro letters",
+     "amount": 658
+    },
+    {
+     "item": "First month of a mail tool",
+     "amount": 658
+    },
+    {
+     "item": "Sample reply pack printing",
+     "amount": 440
+    }
+   ],
+   "steps": [
+    "Pick one street with 10+ independent shops",
+    "Write 10 review reply templates",
+    "Print 10 intro letters with a free sample reply",
+    "Walk in on a Tuesday morning",
+    "Offer $59/month unlimited replies, first month free",
+    "Deliver replies by email within 24 hours",
+    "Ask client #1 for two introductions"
+   ],
+   "pricing_hint": "$59/month unlimited replies",
+   "first_customers": [
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews"
+   ],
+   "pitfalls": [
+    "Sell answered reviews, not writing tools",
+    "Cap at 25 shops until templates are proven",
+    "Check local rules on soliciting businesses in person"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "ai-llm",
+   "trend_tags": [
+    "local-service",
+    "retainer",
+    "reputation"
+   ],
+   "first_seen": "2024-02",
+   "maturity": "growing",
+   "version": 1,
+   "updated_at": "2026-02-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Nextdoor neighbourhood posts",
+      "Thumbtack local leads",
+      "Chamber of commerce newsletter"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Facebook local community groups",
+      "Nextdoor UK street posts",
+      "Local parish newsletter ads"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Nextdoor Canada community posts",
+      "Local Facebook buy-and-sell groups",
+      "Chamber of commerce directory"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Nextdoor Australia neighbourhood posts",
+      "Local Facebook community groups",
+      "Council newsletter sponsorships"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "WhatsApp business contact lists",
+      "Google Maps shop clusters in heartland malls",
+      "Facebook neighbourhood groups for HDB estates"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Barangay community referrals",
+      "Google Maps shops along main roads",
+      "Viber neighbourhood groups"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-svc-review-reply-003",
+   "title": "Local shop review-reply desk (east)",
+   "one_liner": "Independent shop owners pay a flat monthly fee to get every Google and Yelp review answered within a day.",
+   "min_capital": 2295,
+   "capital_tier": "2k-10k",
+   "hours_per_week": "10-25",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU",
+    "PH"
+   ],
+   "online_or_offline": "offline",
+   "legal_blocks": [],
+   "skills_needed": [
+    "writing",
+    "basic_english"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "low",
+   "payback_days": 30,
+   "recurring": true,
+   "channel_ids": [
+    "google-maps",
+    "nextdoor",
+    "walk-in",
+    "chamber"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Domain and one-page site",
+     "amount": 459
+    },
+    {
+     "item": "Printed intro letters",
+     "amount": 688
+    },
+    {
+     "item": "First month of a mail tool",
+     "amount": 688
+    },
+    {
+     "item": "Sample reply pack printing",
+     "amount": 460
+    }
+   ],
+   "steps": [
+    "Pick one street with 15+ independent shops",
+    "Write 10 review reply templates",
+    "Print 15 intro letters with a free sample reply",
+    "Walk in on a Tuesday morning",
+    "Offer $29/month for 8 replies, first month free",
+    "Deliver replies by email within 24 hours",
+    "Ask client #1 for two introductions"
+   ],
+   "pricing_hint": "$29/month for 8 replies",
+   "first_customers": [
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts"
+   ],
+   "pitfalls": [
+    "Sell answered reviews, not writing tools",
+    "Cap at 25 shops until templates are proven",
+    "Check local rules on soliciting businesses in person"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "ai-llm",
+   "trend_tags": [
+    "local-service",
+    "retainer",
+    "reputation"
+   ],
+   "first_seen": "2024-03",
+   "maturity": "mature",
+   "version": 1,
+   "updated_at": "2026-03-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Thumbtack local leads",
+      "Chamber of commerce newsletter",
+      "Google Maps 4-star shops with unanswered reviews"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Nextdoor UK street posts",
+      "Local parish newsletter ads",
+      "Google Maps high-street shops"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Local Facebook buy-and-sell groups",
+      "Chamber of commerce directory",
+      "Google Maps shops on main streets"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Local Facebook community groups",
+      "Council newsletter sponsorships",
+      "Google Maps suburban strip shops"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Google Maps shops along main roads",
+      "Viber neighbourhood groups",
+      "Facebook Marketplace local groups"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-svc-review-reply-004",
+   "title": "Local shop review-reply desk (riverside)",
+   "one_liner": "Independent shop owners pay a flat monthly fee to get every Google and Yelp review answered within a day.",
+   "min_capital": 810,
+   "capital_tier": "500-2k",
+   "hours_per_week": "<10",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU",
+    "SG"
+   ],
+   "online_or_offline": "offline",
+   "legal_blocks": [],
+   "skills_needed": [
+    "writing",
+    "basic_english"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "low",
+   "payback_days": 14,
+   "recurring": true,
+   "channel_ids": [
+    "google-maps",
+    "nextdoor",
+    "walk-in",
+    "chamber"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Domain and one-page site",
+     "amount": 162
+    },
+    {
+     "item": "Printed intro letters",
+     "amount": 243
+    },
+    {
+     "item": "First month of a mail tool",
+     "amount": 243
+    },
+    {
+     "item": "Sample reply pack printing",
+     "amount": 162
+    }
+   ],
+   "steps": [
+    "Pick one street with 20+ independent shops",
+    "Write 10 review reply templates",
+    "Print 20 intro letters with a free sample reply",
+    "Walk in on a Tuesday morning",
+    "Offer $49/month for up to 15 replies, first month free",
+    "Deliver replies by email within 24 hours",
+    "Ask client #1 for two introductions"
+   ],
+   "pricing_hint": "$49/month for up to 15 replies",
+   "first_customers": [
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads"
+   ],
+   "pitfalls": [
+    "Sell answered reviews, not writing tools",
+    "Cap at 25 shops until templates are proven",
+    "Check local rules on soliciting businesses in person"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "ai-llm",
+   "trend_tags": [
+    "local-service",
+    "retainer",
+    "reputation"
+   ],
+   "first_seen": "2025-04",
+   "maturity": "mature",
+   "version": 1,
+   "updated_at": "2026-04-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Chamber of commerce newsletter",
+      "Google Maps 4-star shops with unanswered reviews",
+      "Nextdoor neighbourhood posts"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Local parish newsletter ads",
+      "Google Maps high-street shops",
+      "Facebook local community groups"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Chamber of commerce directory",
+      "Google Maps shops on main streets",
+      "Nextdoor Canada community posts"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Council newsletter sponsorships",
+      "Google Maps suburban strip shops",
+      "Nextdoor Australia neighbourhood posts"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "Facebook neighbourhood groups for HDB estates",
+      "WhatsApp business contact lists",
+      "Google Maps shop clusters in heartland malls"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-svc-review-reply-005",
+   "title": "Local shop review-reply desk (old town)",
+   "one_liner": "Independent shop owners pay a flat monthly fee to get every Google and Yelp review answered within a day.",
+   "min_capital": 2490,
+   "capital_tier": "2k-10k",
+   "hours_per_week": "<10",
+   "countries": [
+    "US",
+    "CA",
+    "AU",
+    "SG",
+    "PH"
+   ],
+   "online_or_offline": "offline",
+   "legal_blocks": [],
+   "skills_needed": [
+    "writing",
+    "basic_english"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "low",
+   "payback_days": 21,
+   "recurring": true,
+   "channel_ids": [
+    "google-maps",
+    "nextdoor",
+    "walk-in",
+    "chamber"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Domain and one-page site",
+     "amount": 498
+    },
+    {
+     "item": "Printed intro letters",
+     "amount": 747
+    },
+    {
+     "item": "First month of a mail tool",
+     "amount": 747
+    },
+    {
+     "item": "Sample reply pack printing",
+     "amount": 498
+    }
+   ],
+   "steps": [
+    "Pick one street with 25+ independent shops",
+    "Write 10 review reply templates",
+    "Print 25 intro letters with a free sample reply",
+    "Walk in on a Tuesday morning",
+    "Offer $59/month unlimited replies, first month free",
+    "Deliver replies by email within 24 hours",
+    "Ask client #1 for two introductions"
+   ],
+   "pricing_hint": "$59/month unlimited replies",
+   "first_customers": [
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter"
+   ],
+   "pitfalls": [
+    "Sell answered reviews, not writing tools",
+    "Cap at 25 shops until templates are proven",
+    "Check local rules on soliciting businesses in person"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "ai-llm",
+   "trend_tags": [
+    "local-service",
+    "retainer",
+    "reputation"
+   ],
+   "first_seen": "2024-05",
+   "maturity": "saturated",
+   "version": 1,
+   "updated_at": "2026-05-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Google Maps 4-star shops with unanswered reviews",
+      "Nextdoor neighbourhood posts",
+      "Thumbtack local leads"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Google Maps shops on main streets",
+      "Nextdoor Canada community posts",
+      "Local Facebook buy-and-sell groups"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Google Maps suburban strip shops",
+      "Nextdoor Australia neighbourhood posts",
+      "Local Facebook community groups"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "WhatsApp business contact lists",
+      "Google Maps shop clusters in heartland malls",
+      "Facebook neighbourhood groups for HDB estates"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Facebook Marketplace local groups",
+      "Barangay community referrals",
+      "Google Maps shops along main roads"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-svc-review-reply-006",
+   "title": "Local shop review-reply desk (hillside)",
+   "one_liner": "Independent shop owners pay a flat monthly fee to get every Google and Yelp review answered within a day.",
+   "min_capital": 1005,
+   "capital_tier": "500-2k",
+   "hours_per_week": "<10",
+   "countries": [
+    "US",
+    "CA",
+    "AU"
+   ],
+   "online_or_offline": "hybrid",
+   "legal_blocks": [],
+   "skills_needed": [
+    "writing",
+    "basic_english"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "low",
+   "payback_days": 30,
+   "recurring": true,
+   "channel_ids": [
+    "google-maps",
+    "nextdoor",
+    "walk-in",
+    "chamber"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Domain and one-page site",
+     "amount": 201
+    },
+    {
+     "item": "Printed intro letters",
+     "amount": 302
+    },
+    {
+     "item": "First month of a mail tool",
+     "amount": 302
+    },
+    {
+     "item": "Sample reply pack printing",
+     "amount": 200
+    }
+   ],
+   "steps": [
+    "Pick one street with 30+ independent shops",
+    "Write 10 review reply templates",
+    "Print 30 intro letters with a free sample reply",
+    "Walk in on a Tuesday morning",
+    "Offer $29/month for 8 replies, first month free",
+    "Deliver replies by email within 24 hours",
+    "Ask client #1 for two introductions"
+   ],
+   "pricing_hint": "$29/month for 8 replies",
+   "first_customers": [
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews"
+   ],
+   "pitfalls": [
+    "Sell answered reviews, not writing tools",
+    "Cap at 25 shops until templates are proven",
+    "Check local rules on soliciting businesses in person"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "ai-llm",
+   "trend_tags": [
+    "local-service",
+    "retainer",
+    "reputation"
+   ],
+   "first_seen": "2024-06",
+   "maturity": "mature",
+   "version": 1,
+   "updated_at": "2026-06-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Nextdoor neighbourhood posts",
+      "Thumbtack local leads",
+      "Chamber of commerce newsletter"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Nextdoor Canada community posts",
+      "Local Facebook buy-and-sell groups",
+      "Chamber of commerce directory"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Nextdoor Australia neighbourhood posts",
+      "Local Facebook community groups",
+      "Council newsletter sponsorships"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-svc-review-reply-007",
+   "title": "Local shop review-reply desk (central)",
+   "one_liner": "Independent shop owners pay a flat monthly fee to get every Google and Yelp review answered within a day.",
+   "min_capital": 1100,
+   "capital_tier": "500-2k",
+   "hours_per_week": "10-25",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU",
+    "SG",
+    "PH"
+   ],
+   "online_or_offline": "offline",
+   "legal_blocks": [],
+   "skills_needed": [
+    "writing",
+    "basic_english"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "low",
+   "payback_days": 14,
+   "recurring": true,
+   "channel_ids": [
+    "google-maps",
+    "nextdoor",
+    "walk-in",
+    "chamber"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Domain and one-page site",
+     "amount": 220
+    },
+    {
+     "item": "Printed intro letters",
+     "amount": 330
+    },
+    {
+     "item": "First month of a mail tool",
+     "amount": 330
+    },
+    {
+     "item": "Sample reply pack printing",
+     "amount": 220
+    }
+   ],
+   "steps": [
+    "Pick one street with 5+ independent shops",
+    "Write 10 review reply templates",
+    "Print 5 intro letters with a free sample reply",
+    "Walk in on a Tuesday morning",
+    "Offer $49/month for up to 15 replies, first month free",
+    "Deliver replies by email within 24 hours",
+    "Ask client #1 for two introductions"
+   ],
+   "pricing_hint": "$49/month for up to 15 replies",
+   "first_customers": [
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts"
+   ],
+   "pitfalls": [
+    "Sell answered reviews, not writing tools",
+    "Cap at 25 shops until templates are proven",
+    "Check local rules on soliciting businesses in person"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "local-service",
+   "trend_tags": [
+    "local-service",
+    "retainer",
+    "reputation"
+   ],
+   "first_seen": "2025-07",
+   "maturity": "growing",
+   "version": 1,
+   "updated_at": "2026-07-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Thumbtack local leads",
+      "Chamber of commerce newsletter",
+      "Google Maps 4-star shops with unanswered reviews"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Nextdoor UK street posts",
+      "Local parish newsletter ads",
+      "Google Maps high-street shops"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Local Facebook buy-and-sell groups",
+      "Chamber of commerce directory",
+      "Google Maps shops on main streets"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Local Facebook community groups",
+      "Council newsletter sponsorships",
+      "Google Maps suburban strip shops"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "Facebook neighbourhood groups for HDB estates",
+      "WhatsApp business contact lists",
+      "Google Maps shop clusters in heartland malls"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Google Maps shops along main roads",
+      "Viber neighbourhood groups",
+      "Facebook Marketplace local groups"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-svc-review-reply-008",
+   "title": "Local shop review-reply desk (bayside)",
+   "one_liner": "Independent shop owners pay a flat monthly fee to get every Google and Yelp review answered within a day.",
+   "min_capital": 2780,
+   "capital_tier": "2k-10k",
+   "hours_per_week": "<10",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU",
+    "SG",
+    "PH"
+   ],
+   "online_or_offline": "offline",
+   "legal_blocks": [
+    "SG"
+   ],
+   "skills_needed": [
+    "writing",
+    "basic_english"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "low",
+   "payback_days": 21,
+   "recurring": true,
+   "channel_ids": [
+    "google-maps",
+    "nextdoor",
+    "walk-in",
+    "chamber"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Domain and one-page site",
+     "amount": 556
+    },
+    {
+     "item": "Printed intro letters",
+     "amount": 834
+    },
+    {
+     "item": "First month of a mail tool",
+     "amount": 834
+    },
+    {
+     "item": "Sample reply pack printing",
+     "amount": 556
+    }
+   ],
+   "steps": [
+    "Pick one street with 10+ independent shops",
+    "Write 10 review reply templates",
+    "Print 10 intro letters with a free sample reply",
+    "Walk in on a Tuesday morning",
+    "Offer $59/month unlimited replies, first month free",
+    "Deliver replies by email within 24 hours",
+    "Ask client #1 for two introductions"
+   ],
+   "pricing_hint": "$59/month unlimited replies",
+   "first_customers": [
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads"
+   ],
+   "pitfalls": [
+    "Sell answered reviews, not writing tools",
+    "Cap at 25 shops until templates are proven",
+    "Check local rules on soliciting businesses in person"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "local-service",
+   "trend_tags": [
+    "local-service",
+    "retainer",
+    "reputation"
+   ],
+   "first_seen": "2024-08",
+   "maturity": "mature",
+   "version": 1,
+   "updated_at": "2026-08-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Chamber of commerce newsletter",
+      "Google Maps 4-star shops with unanswered reviews",
+      "Nextdoor neighbourhood posts"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Local parish newsletter ads",
+      "Google Maps high-street shops",
+      "Facebook local community groups"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Chamber of commerce directory",
+      "Google Maps shops on main streets",
+      "Nextdoor Canada community posts"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Council newsletter sponsorships",
+      "Google Maps suburban strip shops",
+      "Nextdoor Australia neighbourhood posts"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "WhatsApp business contact lists",
+      "Google Maps shop clusters in heartland malls",
+      "Facebook neighbourhood groups for HDB estates"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Viber neighbourhood groups",
+      "Facebook Marketplace local groups",
+      "Barangay community referrals"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-svc-review-reply-009",
+   "title": "Local shop review-reply desk (market)",
+   "one_liner": "Independent shop owners pay a flat monthly fee to get every Google and Yelp review answered within a day.",
+   "min_capital": 2875,
+   "capital_tier": "2k-10k",
+   "hours_per_week": "10-25",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "SG",
+    "PH"
+   ],
+   "online_or_offline": "offline",
+   "legal_blocks": [],
+   "skills_needed": [
+    "writing",
+    "basic_english"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "low",
+   "payback_days": 30,
+   "recurring": true,
+   "channel_ids": [
+    "google-maps",
+    "nextdoor",
+    "walk-in",
+    "chamber"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Domain and one-page site",
+     "amount": 575
+    },
+    {
+     "item": "Printed intro letters",
+     "amount": 862
+    },
+    {
+     "item": "First month of a mail tool",
+     "amount": 862
+    },
+    {
+     "item": "Sample reply pack printing",
+     "amount": 576
+    }
+   ],
+   "steps": [
+    "Pick one street with 15+ independent shops",
+    "Write 10 review reply templates",
+    "Print 15 intro letters with a free sample reply",
+    "Walk in on a Tuesday morning",
+    "Offer $29/month for 8 replies, first month free",
+    "Deliver replies by email within 24 hours",
+    "Ask client #1 for two introductions"
+   ],
+   "pricing_hint": "$29/month for 8 replies",
+   "first_customers": [
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter"
+   ],
+   "pitfalls": [
+    "Sell answered reviews, not writing tools",
+    "Cap at 25 shops until templates are proven",
+    "Check local rules on soliciting businesses in person"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "local-service",
+   "trend_tags": [
+    "local-service",
+    "retainer",
+    "reputation"
+   ],
+   "first_seen": "2024-09",
+   "maturity": "growing",
+   "version": 1,
+   "updated_at": "2026-09-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Google Maps 4-star shops with unanswered reviews",
+      "Nextdoor neighbourhood posts",
+      "Thumbtack local leads"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Google Maps high-street shops",
+      "Facebook local community groups",
+      "Nextdoor UK street posts"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Google Maps shops on main streets",
+      "Nextdoor Canada community posts",
+      "Local Facebook buy-and-sell groups"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "Google Maps shop clusters in heartland malls",
+      "Facebook neighbourhood groups for HDB estates",
+      "WhatsApp business contact lists"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Facebook Marketplace local groups",
+      "Barangay community referrals",
+      "Google Maps shops along main roads"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-svc-review-reply-010",
+   "title": "Local shop review-reply desk(lakeside)",
+   "one_liner": "Independent shop owners pay a flat monthly fee to get every Google and Yelp review answered within a day.",
+   "min_capital": 455,
+   "capital_tier": "<500",
+   "hours_per_week": "<10",
+   "countries": [
+    "US",
+    "UK",
+    "AU"
+   ],
+   "online_or_offline": "offline",
+   "legal_blocks": [],
+   "skills_needed": [
+    "writing",
+    "basic_english"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "low",
+   "payback_days": 14,
+   "recurring": true,
+   "channel_ids": [
+    "google-maps",
+    "nextdoor",
+    "walk-in",
+    "chamber"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Domain and one-page site",
+     "amount": 91
+    },
+    {
+     "item": "Printed intro letters",
+     "amount": 136
+    },
+    {
+     "item": "First month of a mail tool",
+     "amount": 136
+    },
+    {
+     "item": "Sample reply pack printing",
+     "amount": 92
+    }
+   ],
+   "steps": [
+    "Pick one street with 20+ independent shops",
+    "Write 10 review reply templates",
+    "Print 20 intro letters with a free sample reply",
+    "Walk in on a Tuesday morning",
+    "Offer $49/month for up to 15 replies, first month free",
+    "Deliver replies by email within 24 hours",
+    "Ask client #1 for two introductions"
+   ],
+   "pricing_hint": "$49/month for up to 15 replies",
+   "first_customers": [
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews"
+   ],
+   "pitfalls": [
+    "Sell answered reviews, not writing tools",
+    "Cap at 25 shops until templates are proven",
+    "Check local rules on soliciting businesses in person"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "local-service",
+   "trend_tags": [
+    "local-service",
+    "retainer",
+    "reputation"
+   ],
+   "first_seen": "2025-10",
+   "maturity": "saturated",
+   "version": 1,
+   "updated_at": "2026-10-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Nextdoor neighbourhood posts",
+      "Thumbtack local leads",
+      "Chamber of commerce newsletter"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Facebook local community groups",
+      "Nextdoor UK street posts",
+      "Local parish newsletter ads"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Nextdoor Australia neighbourhood posts",
+      "Local Facebook community groups",
+      "Council newsletter sponsorships"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-svc-review-reply-011",
+   "title": "Local shop review-reply desk",
+   "one_liner": "Independent shop owners pay a flat monthly fee to get every Google and Yelp review answered within a day.",
+   "min_capital": 100,
+   "capital_tier": "<500",
+   "hours_per_week": "<10",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU",
+    "SG",
+    "PH"
+   ],
+   "online_or_offline": "offline",
+   "legal_blocks": [],
+   "skills_needed": [
+    "writing",
+    "basic_english"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "low",
+   "payback_days": 21,
+   "recurring": true,
+   "channel_ids": [
+    "google-maps",
+    "nextdoor",
+    "walk-in",
+    "chamber"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Domain and one-page site",
+     "amount": 20
+    },
+    {
+     "item": "Printed intro letters",
+     "amount": 30
+    },
+    {
+     "item": "First month of a mail tool",
+     "amount": 30
+    },
+    {
+     "item": "Sample reply pack printing",
+     "amount": 20
+    }
+   ],
+   "steps": [
+    "Pick one street with 25+ independent shops",
+    "Write 10 review reply templates",
+    "Print 25 intro letters with a free sample reply",
+    "Walk in on a Tuesday morning",
+    "Offer $59/month unlimited replies, first month free",
+    "Deliver replies by email within 24 hours",
+    "Ask client #1 for two introductions"
+   ],
+   "pricing_hint": "$59/month unlimited replies",
+   "first_customers": [
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts"
+   ],
+   "pitfalls": [
+    "Sell answered reviews, not writing tools",
+    "Cap at 25 shops until templates are proven",
+    "Check local rules on soliciting businesses in person"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "local-service",
+   "trend_tags": [
+    "local-service",
+    "retainer",
+    "reputation"
+   ],
+   "first_seen": "2024-11",
+   "maturity": "growing",
+   "version": 1,
+   "updated_at": "2026-11-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Thumbtack local leads",
+      "Chamber of commerce newsletter",
+      "Google Maps 4-star shops with unanswered reviews"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Nextdoor UK street posts",
+      "Local parish newsletter ads",
+      "Google Maps high-street shops"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Local Facebook buy-and-sell groups",
+      "Chamber of commerce directory",
+      "Google Maps shops on main streets"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Local Facebook community groups",
+      "Council newsletter sponsorships",
+      "Google Maps suburban strip shops"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "WhatsApp business contact lists",
+      "Google Maps shop clusters in heartland malls",
+      "Facebook neighbourhood groups for HDB estates"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Google Maps shops along main roads",
+      "Viber neighbourhood groups",
+      "Facebook Marketplace local groups"
+     ]
+    }
+   }
+  }
+ ]
+}

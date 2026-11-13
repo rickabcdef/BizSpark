@@ -1,0 +1,1361 @@
+{
+ "industry": "google-maps-setup",
+ "count": 11,
+ "ideas": [
+  {
+   "id": "bs-b2b-google-maps-setup-175",
+   "title": "Google Maps profile setup for local firms",
+   "one_liner": "Clinics, plumbers and cafés pay a one-off fee for a verified Google Maps profile with photos.",
+   "min_capital": 12380,
+   "capital_tier": "10k+",
+   "hours_per_week": "<10",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU",
+    "SG"
+   ],
+   "online_or_offline": "hybrid",
+   "legal_blocks": [],
+   "skills_needed": [
+    "basic_english"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "low",
+   "payback_days": 14,
+   "recurring": false,
+   "channel_ids": [
+    "google-maps",
+    "walk-in",
+    "chamber",
+    "referral"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Business listing tool subscription",
+     "amount": 3714
+    },
+    {
+     "item": "Printed pitch cards",
+     "amount": 3095
+    },
+    {
+     "item": "Sample post photography",
+     "amount": 5571
+    }
+   ],
+   "steps": [
+    "Audit 5 local Maps profiles for gaps",
+    "Fix one free as a demo case",
+    "Print before/after screenshots",
+    "Walk in with the demo on your laptop",
+    "Offer $120 one-off setup including 10 photos",
+    "Complete verification with the owner present",
+    "Offer a monthly upkeep retainer"
+   ],
+   "pricing_hint": "$120 one-off setup",
+   "first_customers": [
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts"
+   ],
+   "pitfalls": [
+    "Never post as the owner without consent",
+    "Match the business name exactly as registered",
+    "Schedule photos in daylight"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "mobile-internet",
+   "trend_tags": [
+    "local-seo",
+    "b2b"
+   ],
+   "first_seen": "2025-07",
+   "maturity": "emerging",
+   "version": 1,
+   "updated_at": "2026-10-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Thumbtack local leads",
+      "Chamber of commerce newsletter",
+      "Google Maps 4-star shops with unanswered reviews"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Nextdoor UK street posts",
+      "Local parish newsletter ads",
+      "Google Maps high-street shops"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Local Facebook buy-and-sell groups",
+      "Chamber of commerce directory",
+      "Google Maps shops on main streets"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Local Facebook community groups",
+      "Council newsletter sponsorships",
+      "Google Maps suburban strip shops"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "Facebook neighbourhood groups for HDB estates",
+      "WhatsApp business contact lists",
+      "Google Maps shop clusters in heartland malls"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-b2b-google-maps-setup-176",
+   "title": "Google Maps profile setup for local firms",
+   "one_liner": "Clinics, plumbers and cafés pay a one-off fee for a verified Google Maps profile with photos.",
+   "min_capital": 12475,
+   "capital_tier": "10k+",
+   "hours_per_week": "10-25",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU",
+    "SG",
+    "PH"
+   ],
+   "online_or_offline": "online",
+   "legal_blocks": [],
+   "skills_needed": [
+    "basic_english"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "low",
+   "payback_days": 21,
+   "recurring": false,
+   "channel_ids": [
+    "google-maps",
+    "walk-in",
+    "chamber",
+    "referral"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Business listing tool subscription",
+     "amount": 3742
+    },
+    {
+     "item": "Printed pitch cards",
+     "amount": 3119
+    },
+    {
+     "item": "Sample post photography",
+     "amount": 5614
+    }
+   ],
+   "steps": [
+    "Audit 10 local Maps profiles for gaps",
+    "Fix one free as a demo case",
+    "Print before/after screenshots",
+    "Walk in with the demo on your laptop",
+    "Offer $89 setup without photography including 10 photos",
+    "Complete verification with the owner present",
+    "Offer a monthly upkeep retainer"
+   ],
+   "pricing_hint": "$89 setup without photography",
+   "first_customers": [
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads"
+   ],
+   "pitfalls": [
+    "Never post as the owner without consent",
+    "Match the business name exactly as registered",
+    "Schedule photos in daylight"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "mobile-internet",
+   "trend_tags": [
+    "local-seo",
+    "b2b"
+   ],
+   "first_seen": "2024-08",
+   "maturity": "mature",
+   "version": 1,
+   "updated_at": "2026-11-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Chamber of commerce newsletter",
+      "Google Maps 4-star shops with unanswered reviews",
+      "Nextdoor neighbourhood posts"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Local parish newsletter ads",
+      "Google Maps high-street shops",
+      "Facebook local community groups"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Chamber of commerce directory",
+      "Google Maps shops on main streets",
+      "Nextdoor Canada community posts"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Council newsletter sponsorships",
+      "Google Maps suburban strip shops",
+      "Nextdoor Australia neighbourhood posts"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "WhatsApp business contact lists",
+      "Google Maps shop clusters in heartland malls",
+      "Facebook neighbourhood groups for HDB estates"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Viber neighbourhood groups",
+      "Facebook Marketplace local groups",
+      "Barangay community referrals"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-b2b-google-maps-setup-177",
+   "title": "Google Maps profile setup for local firms",
+   "one_liner": "Clinics, plumbers and cafés pay a one-off fee for a verified Google Maps profile with photos.",
+   "min_capital": 12570,
+   "capital_tier": "10k+",
+   "hours_per_week": "full",
+   "countries": [
+    "UK",
+    "CA",
+    "AU",
+    "PH"
+   ],
+   "online_or_offline": "offline",
+   "legal_blocks": [],
+   "skills_needed": [
+    "basic_english"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "low",
+   "payback_days": 30,
+   "recurring": false,
+   "channel_ids": [
+    "google-maps",
+    "walk-in",
+    "chamber",
+    "referral"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Business listing tool subscription",
+     "amount": 3771
+    },
+    {
+     "item": "Printed pitch cards",
+     "amount": 3142
+    },
+    {
+     "item": "Sample post photography",
+     "amount": 5657
+    }
+   ],
+   "steps": [
+    "Audit 15 local Maps profiles for gaps",
+    "Fix one free as a demo case",
+    "Print before/after screenshots",
+    "Walk in with the demo on your laptop",
+    "Offer $40/month upkeep retainer including 10 photos",
+    "Complete verification with the owner present",
+    "Offer a monthly upkeep retainer"
+   ],
+   "pricing_hint": "$40/month upkeep retainer",
+   "first_customers": [
+    "Google Maps high-street shops",
+    "Facebook local community groups",
+    "Nextdoor UK street posts",
+    "Local parish newsletter ads"
+   ],
+   "pitfalls": [
+    "Never post as the owner without consent",
+    "Match the business name exactly as registered",
+    "Schedule photos in daylight"
+   ],
+   "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+   "wave": "mobile-internet",
+   "trend_tags": [
+    "local-seo",
+    "b2b"
+   ],
+   "first_seen": "2024-09",
+   "maturity": "growing",
+   "version": 1,
+   "updated_at": "2026-01-01",
+   "status": "active",
+   "overrides": {
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Google Maps high-street shops",
+      "Facebook local community groups",
+      "Nextdoor UK street posts"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Google Maps shops on main streets",
+      "Nextdoor Canada community posts",
+      "Local Facebook buy-and-sell groups"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Google Maps suburban strip shops",
+      "Nextdoor Australia neighbourhood posts",
+      "Local Facebook community groups"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Facebook Marketplace local groups",
+      "Barangay community referrals",
+      "Google Maps shops along main roads"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-b2b-google-maps-setup-178",
+   "title": "Google Maps profile setup for local firms",
+   "one_liner": "Clinics, plumbers and cafés pay a one-off fee for a verified Google Maps profile with photos.",
+   "min_capital": 5470,
+   "capital_tier": "2k-10k",
+   "hours_per_week": "10-25",
+   "countries": [
+    "US",
+    "UK",
+    "AU",
+    "SG",
+    "PH"
+   ],
+   "online_or_offline": "hybrid",
+   "legal_blocks": [],
+   "skills_needed": [
+    "basic_english"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "low",
+   "payback_days": 14,
+   "recurring": false,
+   "channel_ids": [
+    "google-maps",
+    "walk-in",
+    "chamber",
+    "referral"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Business listing tool subscription",
+     "amount": 1641
+    },
+    {
+     "item": "Printed pitch cards",
+     "amount": 1368
+    },
+    {
+     "item": "Sample post photography",
+     "amount": 2461
+    }
+   ],
+   "steps": [
+    "Audit 20 local Maps profiles for gaps",
+    "Fix one free as a demo case",
+    "Print before/after screenshots",
+    "Walk in with the demo on your laptop",
+    "Offer $120 one-off setup including 10 photos",
+    "Complete verification with the owner present",
+    "Offer a monthly upkeep retainer"
+   ],
+   "pricing_hint": "$120 one-off setup",
+   "first_customers": [
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews"
+   ],
+   "pitfalls": [
+    "Never post as the owner without consent",
+    "Match the business name exactly as registered",
+    "Schedule photos in daylight"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "mobile-internet",
+   "trend_tags": [
+    "local-seo",
+    "b2b"
+   ],
+   "first_seen": "2025-10",
+   "maturity": "mature",
+   "version": 1,
+   "updated_at": "2026-02-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Nextdoor neighbourhood posts",
+      "Thumbtack local leads",
+      "Chamber of commerce newsletter"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Facebook local community groups",
+      "Nextdoor UK street posts",
+      "Local parish newsletter ads"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Nextdoor Australia neighbourhood posts",
+      "Local Facebook community groups",
+      "Council newsletter sponsorships"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "Facebook neighbourhood groups for HDB estates",
+      "WhatsApp business contact lists",
+      "Google Maps shop clusters in heartland malls"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Barangay community referrals",
+      "Google Maps shops along main roads",
+      "Viber neighbourhood groups"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-b2b-google-maps-setup-179",
+   "title": "Google Maps profile setup for local firms",
+   "one_liner": "Clinics, plumbers and cafés pay a one-off fee for a verified Google Maps profile with photos.",
+   "min_capital": 12765,
+   "capital_tier": "10k+",
+   "hours_per_week": "<10",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "PH"
+   ],
+   "online_or_offline": "online",
+   "legal_blocks": [],
+   "skills_needed": [
+    "basic_english"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "low",
+   "payback_days": 21,
+   "recurring": false,
+   "channel_ids": [
+    "google-maps",
+    "walk-in",
+    "chamber",
+    "referral"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Business listing tool subscription",
+     "amount": 3830
+    },
+    {
+     "item": "Printed pitch cards",
+     "amount": 3191
+    },
+    {
+     "item": "Sample post photography",
+     "amount": 5744
+    }
+   ],
+   "steps": [
+    "Audit 25 local Maps profiles for gaps",
+    "Fix one free as a demo case",
+    "Print before/after screenshots",
+    "Walk in with the demo on your laptop",
+    "Offer $89 setup without photography including 10 photos",
+    "Complete verification with the owner present",
+    "Offer a monthly upkeep retainer"
+   ],
+   "pricing_hint": "$89 setup without photography",
+   "first_customers": [
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts"
+   ],
+   "pitfalls": [
+    "Never post as the owner without consent",
+    "Match the business name exactly as registered",
+    "Schedule photos in daylight"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "mobile-internet",
+   "trend_tags": [
+    "local-seo",
+    "b2b"
+   ],
+   "first_seen": "2024-11",
+   "maturity": "mature",
+   "version": 1,
+   "updated_at": "2026-03-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Thumbtack local leads",
+      "Chamber of commerce newsletter",
+      "Google Maps 4-star shops with unanswered reviews"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Nextdoor UK street posts",
+      "Local parish newsletter ads",
+      "Google Maps high-street shops"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Local Facebook buy-and-sell groups",
+      "Chamber of commerce directory",
+      "Google Maps shops on main streets"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Google Maps shops along main roads",
+      "Viber neighbourhood groups",
+      "Facebook Marketplace local groups"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-b2b-google-maps-setup-180",
+   "title": "Google Maps profile setup for local firms",
+   "one_liner": "Clinics, plumbers and cafés pay a one-off fee for a verified Google Maps profile with photos.",
+   "min_capital": 295,
+   "capital_tier": "<500",
+   "hours_per_week": "10-25",
+   "countries": [
+    "US",
+    "CA",
+    "AU",
+    "SG",
+    "PH"
+   ],
+   "online_or_offline": "online",
+   "legal_blocks": [],
+   "skills_needed": [
+    "basic_english"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "low",
+   "payback_days": 30,
+   "recurring": false,
+   "channel_ids": [
+    "google-maps",
+    "walk-in",
+    "chamber",
+    "referral"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Business listing tool subscription",
+     "amount": 88
+    },
+    {
+     "item": "Printed pitch cards",
+     "amount": 74
+    },
+    {
+     "item": "Sample post photography",
+     "amount": 133
+    }
+   ],
+   "steps": [
+    "Audit 30 local Maps profiles for gaps",
+    "Fix one free as a demo case",
+    "Print before/after screenshots",
+    "Walk in with the demo on your laptop",
+    "Offer $40/month upkeep retainer including 10 photos",
+    "Complete verification with the owner present",
+    "Offer a monthly upkeep retainer"
+   ],
+   "pricing_hint": "$40/month upkeep retainer",
+   "first_customers": [
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads"
+   ],
+   "pitfalls": [
+    "Never post as the owner without consent",
+    "Match the business name exactly as registered",
+    "Schedule photos in daylight"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "mobile-internet",
+   "trend_tags": [
+    "local-seo",
+    "b2b"
+   ],
+   "first_seen": "2024-12",
+   "maturity": "growing",
+   "version": 1,
+   "updated_at": "2026-04-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Chamber of commerce newsletter",
+      "Google Maps 4-star shops with unanswered reviews",
+      "Nextdoor neighbourhood posts"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Chamber of commerce directory",
+      "Google Maps shops on main streets",
+      "Nextdoor Canada community posts"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Council newsletter sponsorships",
+      "Google Maps suburban strip shops",
+      "Nextdoor Australia neighbourhood posts"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "Google Maps shop clusters in heartland malls",
+      "Facebook neighbourhood groups for HDB estates",
+      "WhatsApp business contact lists"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Viber neighbourhood groups",
+      "Facebook Marketplace local groups",
+      "Barangay community referrals"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-b2b-google-maps-setup-181",
+   "title": "Google Maps profile setup for local firms",
+   "one_liner": "Clinics, plumbers and cafés pay a one-off fee for a verified Google Maps profile with photos.",
+   "min_capital": 12960,
+   "capital_tier": "10k+",
+   "hours_per_week": "full",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU",
+    "SG",
+    "PH"
+   ],
+   "online_or_offline": "online",
+   "legal_blocks": [],
+   "skills_needed": [
+    "basic_english"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "low",
+   "payback_days": 14,
+   "recurring": false,
+   "channel_ids": [
+    "google-maps",
+    "walk-in",
+    "chamber",
+    "referral"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Business listing tool subscription",
+     "amount": 3888
+    },
+    {
+     "item": "Printed pitch cards",
+     "amount": 3240
+    },
+    {
+     "item": "Sample post photography",
+     "amount": 5832
+    }
+   ],
+   "steps": [
+    "Audit 5 local Maps profiles for gaps",
+    "Fix one free as a demo case",
+    "Print before/after screenshots",
+    "Walk in with the demo on your laptop",
+    "Offer $120 one-off setup including 10 photos",
+    "Complete verification with the owner present",
+    "Offer a monthly upkeep retainer"
+   ],
+   "pricing_hint": "$120 one-off setup",
+   "first_customers": [
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter"
+   ],
+   "pitfalls": [
+    "Never post as the owner without consent",
+    "Match the business name exactly as registered",
+    "Schedule photos in daylight"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "mobile-internet",
+   "trend_tags": [
+    "local-seo",
+    "b2b"
+   ],
+   "first_seen": "2025-01",
+   "maturity": "emerging",
+   "version": 1,
+   "updated_at": "2026-05-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Google Maps 4-star shops with unanswered reviews",
+      "Nextdoor neighbourhood posts",
+      "Thumbtack local leads"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Google Maps high-street shops",
+      "Facebook local community groups",
+      "Nextdoor UK street posts"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Google Maps shops on main streets",
+      "Nextdoor Canada community posts",
+      "Local Facebook buy-and-sell groups"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Google Maps suburban strip shops",
+      "Nextdoor Australia neighbourhood posts",
+      "Local Facebook community groups"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "Facebook neighbourhood groups for HDB estates",
+      "WhatsApp business contact lists",
+      "Google Maps shop clusters in heartland malls"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Facebook Marketplace local groups",
+      "Barangay community referrals",
+      "Google Maps shops along main roads"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-b2b-google-maps-setup-182",
+   "title": "Google Maps profile setup for local firms",
+   "one_liner": "Clinics, plumbers and cafés pay a one-off fee for a verified Google Maps profile with photos.",
+   "min_capital": 35,
+   "capital_tier": "<500",
+   "hours_per_week": "<10",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU"
+   ],
+   "online_or_offline": "online",
+   "legal_blocks": [],
+   "skills_needed": [
+    "basic_english"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "low",
+   "payback_days": 21,
+   "recurring": false,
+   "channel_ids": [
+    "google-maps",
+    "walk-in",
+    "chamber",
+    "referral"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Business listing tool subscription",
+     "amount": 10
+    },
+    {
+     "item": "Printed pitch cards",
+     "amount": 9
+    },
+    {
+     "item": "Sample post photography",
+     "amount": 16
+    }
+   ],
+   "steps": [
+    "Audit 10 local Maps profiles for gaps",
+    "Fix one free as a demo case",
+    "Print before/after screenshots",
+    "Walk in with the demo on your laptop",
+    "Offer $89 setup without photography including 10 photos",
+    "Complete verification with the owner present",
+    "Offer a monthly upkeep retainer"
+   ],
+   "pricing_hint": "$89 setup without photography",
+   "first_customers": [
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews"
+   ],
+   "pitfalls": [
+    "Never post as the owner without consent",
+    "Match the business name exactly as registered",
+    "Schedule photos in daylight"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "mobile-internet",
+   "trend_tags": [
+    "local-seo",
+    "b2b"
+   ],
+   "first_seen": "2024-02",
+   "maturity": "growing",
+   "version": 1,
+   "updated_at": "2026-06-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Nextdoor neighbourhood posts",
+      "Thumbtack local leads",
+      "Chamber of commerce newsletter"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Facebook local community groups",
+      "Nextdoor UK street posts",
+      "Local parish newsletter ads"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Nextdoor Canada community posts",
+      "Local Facebook buy-and-sell groups",
+      "Chamber of commerce directory"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Nextdoor Australia neighbourhood posts",
+      "Local Facebook community groups",
+      "Council newsletter sponsorships"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-b2b-google-maps-setup-183",
+   "title": "Google Maps profile setup for local firms (east)",
+   "one_liner": "Clinics, plumbers and cafés pay a one-off fee for a verified Google Maps profile with photos.",
+   "min_capital": 5955,
+   "capital_tier": "2k-10k",
+   "hours_per_week": "10-25",
+   "countries": [
+    "US",
+    "UK",
+    "PH"
+   ],
+   "online_or_offline": "online",
+   "legal_blocks": [],
+   "skills_needed": [
+    "basic_english"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "low",
+   "payback_days": 30,
+   "recurring": false,
+   "channel_ids": [
+    "google-maps",
+    "walk-in",
+    "chamber",
+    "referral"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Business listing tool subscription",
+     "amount": 1786
+    },
+    {
+     "item": "Printed pitch cards",
+     "amount": 1489
+    },
+    {
+     "item": "Sample post photography",
+     "amount": 2680
+    }
+   ],
+   "steps": [
+    "Audit 15 local Maps profiles for gaps",
+    "Fix one free as a demo case",
+    "Print before/after screenshots",
+    "Walk in with the demo on your laptop",
+    "Offer $40/month upkeep retainer including 10 photos",
+    "Complete verification with the owner present",
+    "Offer a monthly upkeep retainer"
+   ],
+   "pricing_hint": "$40/month upkeep retainer",
+   "first_customers": [
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts"
+   ],
+   "pitfalls": [
+    "Never post as the owner without consent",
+    "Match the business name exactly as registered",
+    "Schedule photos in daylight"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "mobile-internet",
+   "trend_tags": [
+    "local-seo",
+    "b2b"
+   ],
+   "first_seen": "2024-03",
+   "maturity": "saturated",
+   "version": 1,
+   "updated_at": "2026-07-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Thumbtack local leads",
+      "Chamber of commerce newsletter",
+      "Google Maps 4-star shops with unanswered reviews"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Nextdoor UK street posts",
+      "Local parish newsletter ads",
+      "Google Maps high-street shops"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Google Maps shops along main roads",
+      "Viber neighbourhood groups",
+      "Facebook Marketplace local groups"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-b2b-google-maps-setup-184",
+   "title": "Google Maps profile setup for local firms",
+   "one_liner": "Clinics, plumbers and cafés pay a one-off fee for a verified Google Maps profile with photos.",
+   "min_capital": 6050,
+   "capital_tier": "2k-10k",
+   "hours_per_week": "<10",
+   "countries": [
+    "US",
+    "UK",
+    "AU",
+    "SG",
+    "PH"
+   ],
+   "online_or_offline": "online",
+   "legal_blocks": [],
+   "skills_needed": [
+    "basic_english"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "low",
+   "payback_days": 14,
+   "recurring": false,
+   "channel_ids": [
+    "google-maps",
+    "walk-in",
+    "chamber",
+    "referral"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Business listing tool subscription",
+     "amount": 1815
+    },
+    {
+     "item": "Printed pitch cards",
+     "amount": 1512
+    },
+    {
+     "item": "Sample post photography",
+     "amount": 2723
+    }
+   ],
+   "steps": [
+    "Audit 20 local Maps profiles for gaps",
+    "Fix one free as a demo case",
+    "Print before/after screenshots",
+    "Walk in with the demo on your laptop",
+    "Offer $120 one-off setup including 10 photos",
+    "Complete verification with the owner present",
+    "Offer a monthly upkeep retainer"
+   ],
+   "pricing_hint": "$120 one-off setup",
+   "first_customers": [
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads"
+   ],
+   "pitfalls": [
+    "Never post as the owner without consent",
+    "Match the business name exactly as registered",
+    "Schedule photos in daylight"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "mobile-internet",
+   "trend_tags": [
+    "local-seo",
+    "b2b"
+   ],
+   "first_seen": "2025-04",
+   "maturity": "mature",
+   "version": 1,
+   "updated_at": "2026-08-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Chamber of commerce newsletter",
+      "Google Maps 4-star shops with unanswered reviews",
+      "Nextdoor neighbourhood posts"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Local parish newsletter ads",
+      "Google Maps high-street shops",
+      "Facebook local community groups"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Council newsletter sponsorships",
+      "Google Maps suburban strip shops",
+      "Nextdoor Australia neighbourhood posts"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "Facebook neighbourhood groups for HDB estates",
+      "WhatsApp business contact lists",
+      "Google Maps shop clusters in heartland malls"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Viber neighbourhood groups",
+      "Facebook Marketplace local groups",
+      "Barangay community referrals"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-b2b-google-maps-setup-185",
+   "title": "Google Maps profile setup for local firms",
+   "one_liner": "Clinics, plumbers and cafés pay a one-off fee for a verified Google Maps profile with photos.",
+   "min_capital": 13350,
+   "capital_tier": "10k+",
+   "hours_per_week": "<10",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU",
+    "SG",
+    "PH"
+   ],
+   "online_or_offline": "online",
+   "legal_blocks": [],
+   "skills_needed": [
+    "basic_english"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "low",
+   "payback_days": 21,
+   "recurring": false,
+   "channel_ids": [
+    "google-maps",
+    "walk-in",
+    "chamber",
+    "referral"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Business listing tool subscription",
+     "amount": 4005
+    },
+    {
+     "item": "Printed pitch cards",
+     "amount": 3338
+    },
+    {
+     "item": "Sample post photography",
+     "amount": 6007
+    }
+   ],
+   "steps": [
+    "Audit 25 local Maps profiles for gaps",
+    "Fix one free as a demo case",
+    "Print before/after screenshots",
+    "Walk in with the demo on your laptop",
+    "Offer $89 setup without photography including 10 photos",
+    "Complete verification with the owner present",
+    "Offer a monthly upkeep retainer"
+   ],
+   "pricing_hint": "$89 setup without photography",
+   "first_customers": [
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter"
+   ],
+   "pitfalls": [
+    "Never post as the owner without consent",
+    "Match the business name exactly as registered",
+    "Schedule photos in daylight"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "mobile-internet",
+   "trend_tags": [
+    "local-seo",
+    "b2b"
+   ],
+   "first_seen": "2024-05",
+   "maturity": "growing",
+   "version": 1,
+   "updated_at": "2026-09-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Google Maps 4-star shops with unanswered reviews",
+      "Nextdoor neighbourhood posts",
+      "Thumbtack local leads"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Google Maps high-street shops",
+      "Facebook local community groups",
+      "Nextdoor UK street posts"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Google Maps shops on main streets",
+      "Nextdoor Canada community posts",
+      "Local Facebook buy-and-sell groups"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Google Maps suburban strip shops",
+      "Nextdoor Australia neighbourhood posts",
+      "Local Facebook community groups"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "WhatsApp business contact lists",
+      "Google Maps shop clusters in heartland malls",
+      "Facebook neighbourhood groups for HDB estates"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Facebook Marketplace local groups",
+      "Barangay community referrals",
+      "Google Maps shops along main roads"
+     ]
+    }
+   }
+  }
+ ]
+}

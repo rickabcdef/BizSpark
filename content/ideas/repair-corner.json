@@ -1,0 +1,1833 @@
+{
+ "industry": "repair-corner",
+ "count": 15,
+ "ideas": [
+  {
+   "id": "bs-hnd-repair-corner-279",
+   "title": "Market-day repair and sharpening corner (market)",
+   "one_liner": "Market visitors pay small fixed prices for knife sharpening, hem fixes and small tool repairs while they shop.",
+   "min_capital": 445,
+   "capital_tier": "<500",
+   "hours_per_week": "full",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU",
+    "PH"
+   ],
+   "online_or_offline": "offline",
+   "legal_blocks": [],
+   "skills_needed": [
+    "handyman"
+   ],
+   "assets_needed": [
+    "car"
+   ],
+   "risk_level": "low",
+   "payback_days": 30,
+   "recurring": true,
+   "channel_ids": [
+    "walk-in",
+    "referral",
+    "facebook",
+    "local-groups"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Sharpening kit and bench grinder",
+     "amount": 178
+    },
+    {
+     "item": "Market stall share fee",
+     "amount": 134
+    },
+    {
+     "item": "Spare parts and thread stock",
+     "amount": 133
+    }
+   ],
+   "steps": [
+    "Sharpen 15 of your own knives for practice",
+    "Book a corner share at one market",
+    "Offer $15 small tool repair while-you-shop turnaround",
+    "Number-tag every item handed in",
+    "Post before/after edges on local groups",
+    "Offer a monthly market-day schedule",
+    "Add tool repairs as the upsell"
+   ],
+   "pricing_hint": "$15 small tool repair",
+   "first_customers": [
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts"
+   ],
+   "pitfalls": [
+    "Photograph every item at intake",
+    "Never promise heirloom restorations",
+    "Guard the grinder with eye protection"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "local-service",
+   "trend_tags": [
+    "repair",
+    "local"
+   ],
+   "first_seen": "2024-03",
+   "maturity": "mature",
+   "version": 1,
+   "updated_at": "2026-04-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Thumbtack local leads",
+      "Chamber of commerce newsletter",
+      "Google Maps 4-star shops with unanswered reviews"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Nextdoor UK street posts",
+      "Local parish newsletter ads",
+      "Google Maps high-street shops"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Local Facebook buy-and-sell groups",
+      "Chamber of commerce directory",
+      "Google Maps shops on main streets"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Local Facebook community groups",
+      "Council newsletter sponsorships",
+      "Google Maps suburban strip shops"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Google Maps shops along main roads",
+      "Viber neighbourhood groups",
+      "Facebook Marketplace local groups"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-hnd-repair-corner-280",
+   "title": "Market-day repair and sharpening corner",
+   "one_liner": "Market visitors pay small fixed prices for knife sharpening, hem fixes and small tool repairs while they shop.",
+   "min_capital": 95,
+   "capital_tier": "<500",
+   "hours_per_week": "full",
+   "countries": [
+    "US",
+    "UK",
+    "AU"
+   ],
+   "online_or_offline": "offline",
+   "legal_blocks": [],
+   "skills_needed": [
+    "handyman"
+   ],
+   "assets_needed": [
+    "car"
+   ],
+   "risk_level": "low",
+   "payback_days": 14,
+   "recurring": true,
+   "channel_ids": [
+    "walk-in",
+    "referral",
+    "facebook",
+    "local-groups"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Sharpening kit and bench grinder",
+     "amount": 38
+    },
+    {
+     "item": "Market stall share fee",
+     "amount": 28
+    },
+    {
+     "item": "Spare parts and thread stock",
+     "amount": 29
+    }
+   ],
+   "steps": [
+    "Sharpen 20 of your own knives for practice",
+    "Book a corner share at one market",
+    "Offer $6 per knife sharpened while-you-shop turnaround",
+    "Number-tag every item handed in",
+    "Post before/after edges on local groups",
+    "Offer a monthly market-day schedule",
+    "Add tool repairs as the upsell"
+   ],
+   "pricing_hint": "$6 per knife sharpened",
+   "first_customers": [
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads"
+   ],
+   "pitfalls": [
+    "Photograph every item at intake",
+    "Never promise heirloom restorations",
+    "Guard the grinder with eye protection"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "local-service",
+   "trend_tags": [
+    "repair",
+    "local"
+   ],
+   "first_seen": "2025-04",
+   "maturity": "saturated",
+   "version": 1,
+   "updated_at": "2026-05-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Chamber of commerce newsletter",
+      "Google Maps 4-star shops with unanswered reviews",
+      "Nextdoor neighbourhood posts"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Local parish newsletter ads",
+      "Google Maps high-street shops",
+      "Facebook local community groups"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Council newsletter sponsorships",
+      "Google Maps suburban strip shops",
+      "Nextdoor Australia neighbourhood posts"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-hnd-repair-corner-281",
+   "title": "Market-day repair and sharpening corner",
+   "one_liner": "Market visitors pay small fixed prices for knife sharpening, hem fixes and small tool repairs while they shop.",
+   "min_capital": 1460,
+   "capital_tier": "500-2k",
+   "hours_per_week": "10-25",
+   "countries": [
+    "US",
+    "UK",
+    "AU",
+    "SG",
+    "PH"
+   ],
+   "online_or_offline": "online",
+   "legal_blocks": [],
+   "skills_needed": [
+    "handyman"
+   ],
+   "assets_needed": [
+    "car"
+   ],
+   "risk_level": "low",
+   "payback_days": 21,
+   "recurring": true,
+   "channel_ids": [
+    "walk-in",
+    "referral",
+    "facebook",
+    "local-groups"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Sharpening kit and bench grinder",
+     "amount": 584
+    },
+    {
+     "item": "Market stall share fee",
+     "amount": 438
+    },
+    {
+     "item": "Spare parts and thread stock",
+     "amount": 438
+    }
+   ],
+   "steps": [
+    "Sharpen 25 of your own knives for practice",
+    "Book a corner share at one market",
+    "Offer $10 per clothing hem while-you-shop turnaround",
+    "Number-tag every item handed in",
+    "Post before/after edges on local groups",
+    "Offer a monthly market-day schedule",
+    "Add tool repairs as the upsell"
+   ],
+   "pricing_hint": "$10 per clothing hem",
+   "first_customers": [
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter"
+   ],
+   "pitfalls": [
+    "Photograph every item at intake",
+    "Never promise heirloom restorations",
+    "Guard the grinder with eye protection"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "local-service",
+   "trend_tags": [
+    "repair",
+    "local"
+   ],
+   "first_seen": "2024-05",
+   "maturity": "mature",
+   "version": 1,
+   "updated_at": "2026-06-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Google Maps 4-star shops with unanswered reviews",
+      "Nextdoor neighbourhood posts",
+      "Thumbtack local leads"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Google Maps high-street shops",
+      "Facebook local community groups",
+      "Nextdoor UK street posts"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Google Maps suburban strip shops",
+      "Nextdoor Australia neighbourhood posts",
+      "Local Facebook community groups"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "WhatsApp business contact lists",
+      "Google Maps shop clusters in heartland malls",
+      "Facebook neighbourhood groups for HDB estates"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Facebook Marketplace local groups",
+      "Barangay community referrals",
+      "Google Maps shops along main roads"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-hnd-repair-corner-282",
+   "title": "Market-day repair and sharpening corner (north)",
+   "one_liner": "Market visitors pay small fixed prices for knife sharpening, hem fixes and small tool repairs while they shop.",
+   "min_capital": 285,
+   "capital_tier": "<500",
+   "hours_per_week": "10-25",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU",
+    "SG",
+    "PH"
+   ],
+   "online_or_offline": "offline",
+   "legal_blocks": [],
+   "skills_needed": [
+    "handyman"
+   ],
+   "assets_needed": [
+    "car"
+   ],
+   "risk_level": "low",
+   "payback_days": 30,
+   "recurring": true,
+   "channel_ids": [
+    "walk-in",
+    "referral",
+    "facebook",
+    "local-groups"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Sharpening kit and bench grinder",
+     "amount": 114
+    },
+    {
+     "item": "Market stall share fee",
+     "amount": 86
+    },
+    {
+     "item": "Spare parts and thread stock",
+     "amount": 85
+    }
+   ],
+   "steps": [
+    "Sharpen 30 of your own knives for practice",
+    "Book a corner share at one market",
+    "Offer $15 small tool repair while-you-shop turnaround",
+    "Number-tag every item handed in",
+    "Post before/after edges on local groups",
+    "Offer a monthly market-day schedule",
+    "Add tool repairs as the upsell"
+   ],
+   "pricing_hint": "$15 small tool repair",
+   "first_customers": [
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews"
+   ],
+   "pitfalls": [
+    "Photograph every item at intake",
+    "Never promise heirloom restorations",
+    "Guard the grinder with eye protection"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "local-service",
+   "trend_tags": [
+    "repair",
+    "local"
+   ],
+   "first_seen": "2024-06",
+   "maturity": "growing",
+   "version": 1,
+   "updated_at": "2026-07-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Nextdoor neighbourhood posts",
+      "Thumbtack local leads",
+      "Chamber of commerce newsletter"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Facebook local community groups",
+      "Nextdoor UK street posts",
+      "Local parish newsletter ads"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Nextdoor Canada community posts",
+      "Local Facebook buy-and-sell groups",
+      "Chamber of commerce directory"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Nextdoor Australia neighbourhood posts",
+      "Local Facebook community groups",
+      "Council newsletter sponsorships"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "Google Maps shop clusters in heartland malls",
+      "Facebook neighbourhood groups for HDB estates",
+      "WhatsApp business contact lists"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Barangay community referrals",
+      "Google Maps shops along main roads",
+      "Viber neighbourhood groups"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-hnd-repair-corner-283",
+   "title": "Market-day repair and sharpening corner (east)",
+   "one_liner": "Market visitors pay small fixed prices for knife sharpening, hem fixes and small tool repairs while they shop.",
+   "min_capital": 385,
+   "capital_tier": "<500",
+   "hours_per_week": "10-25",
+   "countries": [
+    "US",
+    "UK",
+    "SG",
+    "PH"
+   ],
+   "online_or_offline": "offline",
+   "legal_blocks": [],
+   "skills_needed": [
+    "handyman"
+   ],
+   "assets_needed": [
+    "car"
+   ],
+   "risk_level": "low",
+   "payback_days": 14,
+   "recurring": true,
+   "channel_ids": [
+    "walk-in",
+    "referral",
+    "facebook",
+    "local-groups"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Sharpening kit and bench grinder",
+     "amount": 154
+    },
+    {
+     "item": "Market stall share fee",
+     "amount": 116
+    },
+    {
+     "item": "Spare parts and thread stock",
+     "amount": 115
+    }
+   ],
+   "steps": [
+    "Sharpen 5 of your own knives for practice",
+    "Book a corner share at one market",
+    "Offer $6 per knife sharpened while-you-shop turnaround",
+    "Number-tag every item handed in",
+    "Post before/after edges on local groups",
+    "Offer a monthly market-day schedule",
+    "Add tool repairs as the upsell"
+   ],
+   "pricing_hint": "$6 per knife sharpened",
+   "first_customers": [
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts"
+   ],
+   "pitfalls": [
+    "Photograph every item at intake",
+    "Never promise heirloom restorations",
+    "Guard the grinder with eye protection"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "local-service",
+   "trend_tags": [
+    "repair",
+    "local"
+   ],
+   "first_seen": "2025-07",
+   "maturity": "saturated",
+   "version": 1,
+   "updated_at": "2026-08-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Thumbtack local leads",
+      "Chamber of commerce newsletter",
+      "Google Maps 4-star shops with unanswered reviews"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Nextdoor UK street posts",
+      "Local parish newsletter ads",
+      "Google Maps high-street shops"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "Facebook neighbourhood groups for HDB estates",
+      "WhatsApp business contact lists",
+      "Google Maps shop clusters in heartland malls"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Google Maps shops along main roads",
+      "Viber neighbourhood groups",
+      "Facebook Marketplace local groups"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-hnd-repair-corner-284",
+   "title": "Market-day repair and sharpening corner",
+   "one_liner": "Market visitors pay small fixed prices for knife sharpening, hem fixes and small tool repairs while they shop.",
+   "min_capital": 30,
+   "capital_tier": "<500",
+   "hours_per_week": "full",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU"
+   ],
+   "online_or_offline": "online",
+   "legal_blocks": [],
+   "skills_needed": [
+    "handyman"
+   ],
+   "assets_needed": [
+    "car"
+   ],
+   "risk_level": "low",
+   "payback_days": 21,
+   "recurring": true,
+   "channel_ids": [
+    "walk-in",
+    "referral",
+    "facebook",
+    "local-groups"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Sharpening kit and bench grinder",
+     "amount": 12
+    },
+    {
+     "item": "Market stall share fee",
+     "amount": 9
+    },
+    {
+     "item": "Spare parts and thread stock",
+     "amount": 9
+    }
+   ],
+   "steps": [
+    "Sharpen 10 of your own knives for practice",
+    "Book a corner share at one market",
+    "Offer $10 per clothing hem while-you-shop turnaround",
+    "Number-tag every item handed in",
+    "Post before/after edges on local groups",
+    "Offer a monthly market-day schedule",
+    "Add tool repairs as the upsell"
+   ],
+   "pricing_hint": "$10 per clothing hem",
+   "first_customers": [
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads"
+   ],
+   "pitfalls": [
+    "Photograph every item at intake",
+    "Never promise heirloom restorations",
+    "Guard the grinder with eye protection"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "local-service",
+   "trend_tags": [
+    "repair",
+    "local"
+   ],
+   "first_seen": "2024-08",
+   "maturity": "mature",
+   "version": 1,
+   "updated_at": "2026-09-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Chamber of commerce newsletter",
+      "Google Maps 4-star shops with unanswered reviews",
+      "Nextdoor neighbourhood posts"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Local parish newsletter ads",
+      "Google Maps high-street shops",
+      "Facebook local community groups"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Chamber of commerce directory",
+      "Google Maps shops on main streets",
+      "Nextdoor Canada community posts"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Council newsletter sponsorships",
+      "Google Maps suburban strip shops",
+      "Nextdoor Australia neighbourhood posts"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-hnd-repair-corner-285",
+   "title": "Market-day repair and sharpening corner",
+   "one_liner": "Market visitors pay small fixed prices for knife sharpening, hem fixes and small tool repairs while they shop.",
+   "min_capital": 1850,
+   "capital_tier": "500-2k",
+   "hours_per_week": "10-25",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU",
+    "PH"
+   ],
+   "online_or_offline": "offline",
+   "legal_blocks": [],
+   "skills_needed": [
+    "handyman"
+   ],
+   "assets_needed": [
+    "car"
+   ],
+   "risk_level": "low",
+   "payback_days": 30,
+   "recurring": true,
+   "channel_ids": [
+    "walk-in",
+    "referral",
+    "facebook",
+    "local-groups"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Sharpening kit and bench grinder",
+     "amount": 740
+    },
+    {
+     "item": "Market stall share fee",
+     "amount": 555
+    },
+    {
+     "item": "Spare parts and thread stock",
+     "amount": 555
+    }
+   ],
+   "steps": [
+    "Sharpen 15 of your own knives for practice",
+    "Book a corner share at one market",
+    "Offer $15 small tool repair while-you-shop turnaround",
+    "Number-tag every item handed in",
+    "Post before/after edges on local groups",
+    "Offer a monthly market-day schedule",
+    "Add tool repairs as the upsell"
+   ],
+   "pricing_hint": "$15 small tool repair",
+   "first_customers": [
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter"
+   ],
+   "pitfalls": [
+    "Photograph every item at intake",
+    "Never promise heirloom restorations",
+    "Guard the grinder with eye protection"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "local-service",
+   "trend_tags": [
+    "repair",
+    "local"
+   ],
+   "first_seen": "2024-09",
+   "maturity": "mature",
+   "version": 1,
+   "updated_at": "2026-10-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Google Maps 4-star shops with unanswered reviews",
+      "Nextdoor neighbourhood posts",
+      "Thumbtack local leads"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Google Maps high-street shops",
+      "Facebook local community groups",
+      "Nextdoor UK street posts"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Google Maps shops on main streets",
+      "Nextdoor Canada community posts",
+      "Local Facebook buy-and-sell groups"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Google Maps suburban strip shops",
+      "Nextdoor Australia neighbourhood posts",
+      "Local Facebook community groups"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Facebook Marketplace local groups",
+      "Barangay community referrals",
+      "Google Maps shops along main roads"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-hnd-repair-corner-286",
+   "title": "Market-day repair and sharpening corner",
+   "one_liner": "Market visitors pay small fixed prices for knife sharpening, hem fixes and small tool repairs while they shop.",
+   "min_capital": 225,
+   "capital_tier": "<500",
+   "hours_per_week": "full",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU"
+   ],
+   "online_or_offline": "offline",
+   "legal_blocks": [],
+   "skills_needed": [
+    "handyman"
+   ],
+   "assets_needed": [
+    "car"
+   ],
+   "risk_level": "low",
+   "payback_days": 14,
+   "recurring": true,
+   "channel_ids": [
+    "walk-in",
+    "referral",
+    "facebook",
+    "local-groups"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Sharpening kit and bench grinder",
+     "amount": 90
+    },
+    {
+     "item": "Market stall share fee",
+     "amount": 68
+    },
+    {
+     "item": "Spare parts and thread stock",
+     "amount": 67
+    }
+   ],
+   "steps": [
+    "Sharpen 20 of your own knives for practice",
+    "Book a corner share at one market",
+    "Offer $6 per knife sharpened while-you-shop turnaround",
+    "Number-tag every item handed in",
+    "Post before/after edges on local groups",
+    "Offer a monthly market-day schedule",
+    "Add tool repairs as the upsell"
+   ],
+   "pricing_hint": "$6 per knife sharpened",
+   "first_customers": [
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews"
+   ],
+   "pitfalls": [
+    "Photograph every item at intake",
+    "Never promise heirloom restorations",
+    "Guard the grinder with eye protection"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "local-service",
+   "trend_tags": [
+    "repair",
+    "local"
+   ],
+   "first_seen": "2025-10",
+   "maturity": "saturated",
+   "version": 1,
+   "updated_at": "2026-11-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Nextdoor neighbourhood posts",
+      "Thumbtack local leads",
+      "Chamber of commerce newsletter"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Facebook local community groups",
+      "Nextdoor UK street posts",
+      "Local parish newsletter ads"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Nextdoor Canada community posts",
+      "Local Facebook buy-and-sell groups",
+      "Chamber of commerce directory"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Nextdoor Australia neighbourhood posts",
+      "Local Facebook community groups",
+      "Council newsletter sponsorships"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-hnd-repair-corner-287",
+   "title": "Market-day repair and sharpening corner",
+   "one_liner": "Market visitors pay small fixed prices for knife sharpening, hem fixes and small tool repairs while they shop.",
+   "min_capital": 320,
+   "capital_tier": "<500",
+   "hours_per_week": "10-25",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU",
+    "SG"
+   ],
+   "online_or_offline": "hybrid",
+   "legal_blocks": [],
+   "skills_needed": [
+    "handyman"
+   ],
+   "assets_needed": [
+    "car"
+   ],
+   "risk_level": "low",
+   "payback_days": 21,
+   "recurring": true,
+   "channel_ids": [
+    "walk-in",
+    "referral",
+    "facebook",
+    "local-groups"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Sharpening kit and bench grinder",
+     "amount": 128
+    },
+    {
+     "item": "Market stall share fee",
+     "amount": 96
+    },
+    {
+     "item": "Spare parts and thread stock",
+     "amount": 96
+    }
+   ],
+   "steps": [
+    "Sharpen 25 of your own knives for practice",
+    "Book a corner share at one market",
+    "Offer $10 per clothing hem while-you-shop turnaround",
+    "Number-tag every item handed in",
+    "Post before/after edges on local groups",
+    "Offer a monthly market-day schedule",
+    "Add tool repairs as the upsell"
+   ],
+   "pricing_hint": "$10 per clothing hem",
+   "first_customers": [
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts"
+   ],
+   "pitfalls": [
+    "Photograph every item at intake",
+    "Never promise heirloom restorations",
+    "Guard the grinder with eye protection"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "local-service",
+   "trend_tags": [
+    "repair",
+    "local"
+   ],
+   "first_seen": "2024-11",
+   "maturity": "growing",
+   "version": 1,
+   "updated_at": "2026-01-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Thumbtack local leads",
+      "Chamber of commerce newsletter",
+      "Google Maps 4-star shops with unanswered reviews"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Nextdoor UK street posts",
+      "Local parish newsletter ads",
+      "Google Maps high-street shops"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Local Facebook buy-and-sell groups",
+      "Chamber of commerce directory",
+      "Google Maps shops on main streets"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Local Facebook community groups",
+      "Council newsletter sponsorships",
+      "Google Maps suburban strip shops"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "WhatsApp business contact lists",
+      "Google Maps shop clusters in heartland malls",
+      "Facebook neighbourhood groups for HDB estates"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-hnd-repair-corner-288",
+   "title": "Market-day repair and sharpening corner",
+   "one_liner": "Market visitors pay small fixed prices for knife sharpening, hem fixes and small tool repairs while they shop.",
+   "min_capital": 420,
+   "capital_tier": "<500",
+   "hours_per_week": "full",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU",
+    "SG"
+   ],
+   "online_or_offline": "offline",
+   "legal_blocks": [
+    "SG"
+   ],
+   "skills_needed": [
+    "handyman"
+   ],
+   "assets_needed": [
+    "car"
+   ],
+   "risk_level": "low",
+   "payback_days": 30,
+   "recurring": true,
+   "channel_ids": [
+    "walk-in",
+    "referral",
+    "facebook",
+    "local-groups"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Sharpening kit and bench grinder",
+     "amount": 168
+    },
+    {
+     "item": "Market stall share fee",
+     "amount": 126
+    },
+    {
+     "item": "Spare parts and thread stock",
+     "amount": 126
+    }
+   ],
+   "steps": [
+    "Sharpen 30 of your own knives for practice",
+    "Book a corner share at one market",
+    "Offer $15 small tool repair while-you-shop turnaround",
+    "Number-tag every item handed in",
+    "Post before/after edges on local groups",
+    "Offer a monthly market-day schedule",
+    "Add tool repairs as the upsell"
+   ],
+   "pricing_hint": "$15 small tool repair",
+   "first_customers": [
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads"
+   ],
+   "pitfalls": [
+    "Photograph every item at intake",
+    "Never promise heirloom restorations",
+    "Guard the grinder with eye protection"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "local-service",
+   "trend_tags": [
+    "repair",
+    "local"
+   ],
+   "first_seen": "2024-12",
+   "maturity": "growing",
+   "version": 1,
+   "updated_at": "2026-02-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Chamber of commerce newsletter",
+      "Google Maps 4-star shops with unanswered reviews",
+      "Nextdoor neighbourhood posts"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Local parish newsletter ads",
+      "Google Maps high-street shops",
+      "Facebook local community groups"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Chamber of commerce directory",
+      "Google Maps shops on main streets",
+      "Nextdoor Canada community posts"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Council newsletter sponsorships",
+      "Google Maps suburban strip shops",
+      "Nextdoor Australia neighbourhood posts"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "Google Maps shop clusters in heartland malls",
+      "Facebook neighbourhood groups for HDB estates",
+      "WhatsApp business contact lists"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-hnd-repair-corner-289",
+   "title": "Market-day repair and sharpening corner (market)",
+   "one_liner": "Market visitors pay small fixed prices for knife sharpening, hem fixes and small tool repairs while they shop.",
+   "min_capital": 855,
+   "capital_tier": "500-2k",
+   "hours_per_week": "<10",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU"
+   ],
+   "online_or_offline": "offline",
+   "legal_blocks": [],
+   "skills_needed": [
+    "handyman"
+   ],
+   "assets_needed": [
+    "car"
+   ],
+   "risk_level": "low",
+   "payback_days": 14,
+   "recurring": true,
+   "channel_ids": [
+    "walk-in",
+    "referral",
+    "facebook",
+    "local-groups"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Sharpening kit and bench grinder",
+     "amount": 342
+    },
+    {
+     "item": "Market stall share fee",
+     "amount": 256
+    },
+    {
+     "item": "Spare parts and thread stock",
+     "amount": 257
+    }
+   ],
+   "steps": [
+    "Sharpen 5 of your own knives for practice",
+    "Book a corner share at one market",
+    "Offer $6 per knife sharpened while-you-shop turnaround",
+    "Number-tag every item handed in",
+    "Post before/after edges on local groups",
+    "Offer a monthly market-day schedule",
+    "Add tool repairs as the upsell"
+   ],
+   "pricing_hint": "$6 per knife sharpened",
+   "first_customers": [
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter"
+   ],
+   "pitfalls": [
+    "Photograph every item at intake",
+    "Never promise heirloom restorations",
+    "Guard the grinder with eye protection"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "local-service",
+   "trend_tags": [
+    "repair",
+    "local"
+   ],
+   "first_seen": "2025-01",
+   "maturity": "emerging",
+   "version": 1,
+   "updated_at": "2026-03-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Google Maps 4-star shops with unanswered reviews",
+      "Nextdoor neighbourhood posts",
+      "Thumbtack local leads"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Google Maps high-street shops",
+      "Facebook local community groups",
+      "Nextdoor UK street posts"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Google Maps shops on main streets",
+      "Nextdoor Canada community posts",
+      "Local Facebook buy-and-sell groups"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Google Maps suburban strip shops",
+      "Nextdoor Australia neighbourhood posts",
+      "Local Facebook community groups"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-hnd-repair-corner-290",
+   "title": "Market-day repair and sharpening corner",
+   "one_liner": "Market visitors pay small fixed prices for knife sharpening, hem fixes and small tool repairs while they shop.",
+   "min_capital": 165,
+   "capital_tier": "<500",
+   "hours_per_week": "<10",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "SG",
+    "PH"
+   ],
+   "online_or_offline": "offline",
+   "legal_blocks": [],
+   "skills_needed": [
+    "handyman"
+   ],
+   "assets_needed": [
+    "car"
+   ],
+   "risk_level": "low",
+   "payback_days": 21,
+   "recurring": true,
+   "channel_ids": [
+    "walk-in",
+    "referral",
+    "facebook",
+    "local-groups"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Sharpening kit and bench grinder",
+     "amount": 66
+    },
+    {
+     "item": "Market stall share fee",
+     "amount": 50
+    },
+    {
+     "item": "Spare parts and thread stock",
+     "amount": 49
+    }
+   ],
+   "steps": [
+    "Sharpen 10 of your own knives for practice",
+    "Book a corner share at one market",
+    "Offer $10 per clothing hem while-you-shop turnaround",
+    "Number-tag every item handed in",
+    "Post before/after edges on local groups",
+    "Offer a monthly market-day schedule",
+    "Add tool repairs as the upsell"
+   ],
+   "pricing_hint": "$10 per clothing hem",
+   "first_customers": [
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews"
+   ],
+   "pitfalls": [
+    "Photograph every item at intake",
+    "Never promise heirloom restorations",
+    "Guard the grinder with eye protection"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "local-service",
+   "trend_tags": [
+    "repair",
+    "local"
+   ],
+   "first_seen": "2024-02",
+   "maturity": "mature",
+   "version": 1,
+   "updated_at": "2026-04-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Nextdoor neighbourhood posts",
+      "Thumbtack local leads",
+      "Chamber of commerce newsletter"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Facebook local community groups",
+      "Nextdoor UK street posts",
+      "Local parish newsletter ads"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Nextdoor Canada community posts",
+      "Local Facebook buy-and-sell groups",
+      "Chamber of commerce directory"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "WhatsApp business contact lists",
+      "Google Maps shop clusters in heartland malls",
+      "Facebook neighbourhood groups for HDB estates"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Barangay community referrals",
+      "Google Maps shops along main roads",
+      "Viber neighbourhood groups"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-hnd-repair-corner-291",
+   "title": "Market-day repair and sharpening corner",
+   "one_liner": "Market visitors pay small fixed prices for knife sharpening, hem fixes and small tool repairs while they shop.",
+   "min_capital": 260,
+   "capital_tier": "<500",
+   "hours_per_week": "<10",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU",
+    "SG",
+    "PH"
+   ],
+   "online_or_offline": "offline",
+   "legal_blocks": [],
+   "skills_needed": [
+    "handyman"
+   ],
+   "assets_needed": [
+    "car"
+   ],
+   "risk_level": "low",
+   "payback_days": 30,
+   "recurring": true,
+   "channel_ids": [
+    "walk-in",
+    "referral",
+    "facebook",
+    "local-groups"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Sharpening kit and bench grinder",
+     "amount": 104
+    },
+    {
+     "item": "Market stall share fee",
+     "amount": 78
+    },
+    {
+     "item": "Spare parts and thread stock",
+     "amount": 78
+    }
+   ],
+   "steps": [
+    "Sharpen 15 of your own knives for practice",
+    "Book a corner share at one market",
+    "Offer $15 small tool repair while-you-shop turnaround",
+    "Number-tag every item handed in",
+    "Post before/after edges on local groups",
+    "Offer a monthly market-day schedule",
+    "Add tool repairs as the upsell"
+   ],
+   "pricing_hint": "$15 small tool repair",
+   "first_customers": [
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts"
+   ],
+   "pitfalls": [
+    "Photograph every item at intake",
+    "Never promise heirloom restorations",
+    "Guard the grinder with eye protection"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "local-service",
+   "trend_tags": [
+    "repair",
+    "local"
+   ],
+   "first_seen": "2024-03",
+   "maturity": "saturated",
+   "version": 1,
+   "updated_at": "2026-05-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Thumbtack local leads",
+      "Chamber of commerce newsletter",
+      "Google Maps 4-star shops with unanswered reviews"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Nextdoor UK street posts",
+      "Local parish newsletter ads",
+      "Google Maps high-street shops"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Local Facebook buy-and-sell groups",
+      "Chamber of commerce directory",
+      "Google Maps shops on main streets"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Local Facebook community groups",
+      "Council newsletter sponsorships",
+      "Google Maps suburban strip shops"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "Google Maps shop clusters in heartland malls",
+      "Facebook neighbourhood groups for HDB estates",
+      "WhatsApp business contact lists"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Google Maps shops along main roads",
+      "Viber neighbourhood groups",
+      "Facebook Marketplace local groups"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-hnd-repair-corner-292",
+   "title": "Market-day repair and sharpening corner (north)",
+   "one_liner": "Market visitors pay small fixed prices for knife sharpening, hem fixes and small tool repairs while they shop.",
+   "min_capital": 355,
+   "capital_tier": "<500",
+   "hours_per_week": "10-25",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "SG",
+    "PH"
+   ],
+   "online_or_offline": "offline",
+   "legal_blocks": [],
+   "skills_needed": [
+    "handyman"
+   ],
+   "assets_needed": [
+    "car"
+   ],
+   "risk_level": "low",
+   "payback_days": 14,
+   "recurring": true,
+   "channel_ids": [
+    "walk-in",
+    "referral",
+    "facebook",
+    "local-groups"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Sharpening kit and bench grinder",
+     "amount": 142
+    },
+    {
+     "item": "Market stall share fee",
+     "amount": 106
+    },
+    {
+     "item": "Spare parts and thread stock",
+     "amount": 107
+    }
+   ],
+   "steps": [
+    "Sharpen 20 of your own knives for practice",
+    "Book a corner share at one market",
+    "Offer $6 per knife sharpened while-you-shop turnaround",
+    "Number-tag every item handed in",
+    "Post before/after edges on local groups",
+    "Offer a monthly market-day schedule",
+    "Add tool repairs as the upsell"
+   ],
+   "pricing_hint": "$6 per knife sharpened",
+   "first_customers": [
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads"
+   ],
+   "pitfalls": [
+    "Photograph every item at intake",
+    "Never promise heirloom restorations",
+    "Guard the grinder with eye protection"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "local-service",
+   "trend_tags": [
+    "repair",
+    "local"
+   ],
+   "first_seen": "2025-04",
+   "maturity": "mature",
+   "version": 1,
+   "updated_at": "2026-06-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Chamber of commerce newsletter",
+      "Google Maps 4-star shops with unanswered reviews",
+      "Nextdoor neighbourhood posts"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Local parish newsletter ads",
+      "Google Maps high-street shops",
+      "Facebook local community groups"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Chamber of commerce directory",
+      "Google Maps shops on main streets",
+      "Nextdoor Canada community posts"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "Facebook neighbourhood groups for HDB estates",
+      "WhatsApp business contact lists",
+      "Google Maps shop clusters in heartland malls"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Viber neighbourhood groups",
+      "Facebook Marketplace local groups",
+      "Barangay community referrals"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-hnd-repair-corner-293",
+   "title": "Market-day repair and sharpening corner (east)",
+   "one_liner": "Market visitors pay small fixed prices for knife sharpening, hem fixes and small tool repairs while they shop.",
+   "min_capital": 455,
+   "capital_tier": "<500",
+   "hours_per_week": "10-25",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU"
+   ],
+   "online_or_offline": "offline",
+   "legal_blocks": [],
+   "skills_needed": [
+    "handyman"
+   ],
+   "assets_needed": [
+    "car"
+   ],
+   "risk_level": "low",
+   "payback_days": 21,
+   "recurring": true,
+   "channel_ids": [
+    "walk-in",
+    "referral",
+    "facebook",
+    "local-groups"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Sharpening kit and bench grinder",
+     "amount": 182
+    },
+    {
+     "item": "Market stall share fee",
+     "amount": 136
+    },
+    {
+     "item": "Spare parts and thread stock",
+     "amount": 137
+    }
+   ],
+   "steps": [
+    "Sharpen 25 of your own knives for practice",
+    "Book a corner share at one market",
+    "Offer $10 per clothing hem while-you-shop turnaround",
+    "Number-tag every item handed in",
+    "Post before/after edges on local groups",
+    "Offer a monthly market-day schedule",
+    "Add tool repairs as the upsell"
+   ],
+   "pricing_hint": "$10 per clothing hem",
+   "first_customers": [
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter"
+   ],
+   "pitfalls": [
+    "Photograph every item at intake",
+    "Never promise heirloom restorations",
+    "Guard the grinder with eye protection"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "local-service",
+   "trend_tags": [
+    "repair",
+    "local"
+   ],
+   "first_seen": "2024-05",
+   "maturity": "saturated",
+   "version": 1,
+   "updated_at": "2026-07-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Google Maps 4-star shops with unanswered reviews",
+      "Nextdoor neighbourhood posts",
+      "Thumbtack local leads"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Google Maps high-street shops",
+      "Facebook local community groups",
+      "Nextdoor UK street posts"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Google Maps shops on main streets",
+      "Nextdoor Canada community posts",
+      "Local Facebook buy-and-sell groups"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Google Maps suburban strip shops",
+      "Nextdoor Australia neighbourhood posts",
+      "Local Facebook community groups"
+     ]
+    }
+   }
+  }
+ ]
+}

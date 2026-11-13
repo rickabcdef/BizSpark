@@ -1,0 +1,1381 @@
+{
+ "industry": "pet-care",
+ "count": 11,
+ "ideas": [
+  {
+   "id": "bs-svc-pet-care-023",
+   "title": "Dog walking and pet sitting (east)",
+   "one_liner": "Working dog owners pay for weekday lunchtime walks and weekend pet sitting at home.",
+   "min_capital": 4235,
+   "capital_tier": "2k-10k",
+   "hours_per_week": "10-25",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU",
+    "SG",
+    "PH"
+   ],
+   "online_or_offline": "offline",
+   "legal_blocks": [],
+   "skills_needed": [
+    "none"
+   ],
+   "assets_needed": [
+    "spare_room"
+   ],
+   "risk_level": "medium",
+   "payback_days": 14,
+   "recurring": true,
+   "channel_ids": [
+    "nextdoor",
+    "facebook",
+    "walk-in",
+    "referral"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Leads, poo bags and first-aid kit",
+     "amount": 1694
+    },
+    {
+     "item": "Flyers for vet clinics boards",
+     "amount": 1059
+    },
+    {
+     "item": "Pet-sitter liability insurance",
+     "amount": 1482
+    }
+   ],
+   "steps": [
+    "Post on 25 neighbourhood boards this week",
+    "Offer a free first walk for one dog",
+    "Buy leads, bags and a first-aid kit",
+    "Set fixed lunchtime walking rounds",
+    "Ask the vet clinic to display a flyer",
+    "Send a photo update after every walk",
+    "Fill midday slots with weekend sitting"
+   ],
+   "pricing_hint": "$180/week for 5 walks",
+   "first_customers": [
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts"
+   ],
+   "pitfalls": [
+    "Meet the dog and owner before accepting",
+    "Never walk more than 3 dogs at once",
+    "Confirm vaccination records before sitting"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "local-service",
+   "trend_tags": [
+    "local-service",
+    "recurring"
+   ],
+   "first_seen": "2024-11",
+   "maturity": "saturated",
+   "version": 1,
+   "updated_at": "2026-01-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Thumbtack local leads",
+      "Chamber of commerce newsletter",
+      "Google Maps 4-star shops with unanswered reviews"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Nextdoor UK street posts",
+      "Local parish newsletter ads",
+      "Google Maps high-street shops"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Local Facebook buy-and-sell groups",
+      "Chamber of commerce directory",
+      "Google Maps shops on main streets"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Local Facebook community groups",
+      "Council newsletter sponsorships",
+      "Google Maps suburban strip shops"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "WhatsApp business contact lists",
+      "Google Maps shop clusters in heartland malls",
+      "Facebook neighbourhood groups for HDB estates"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Google Maps shops along main roads",
+      "Viber neighbourhood groups",
+      "Facebook Marketplace local groups"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-svc-pet-care-024",
+   "title": "Dog walking and pet sitting (riverside)",
+   "one_liner": "Working dog owners pay for weekday lunchtime walks and weekend pet sitting at home.",
+   "min_capital": 1370,
+   "capital_tier": "500-2k",
+   "hours_per_week": "10-25",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU",
+    "SG",
+    "PH"
+   ],
+   "online_or_offline": "hybrid",
+   "legal_blocks": [],
+   "skills_needed": [
+    "none"
+   ],
+   "assets_needed": [
+    "spare_room"
+   ],
+   "risk_level": "medium",
+   "payback_days": 21,
+   "recurring": true,
+   "channel_ids": [
+    "nextdoor",
+    "facebook",
+    "walk-in",
+    "referral"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Leads, poo bags and first-aid kit",
+     "amount": 548
+    },
+    {
+     "item": "Flyers for vet clinics boards",
+     "amount": 342
+    },
+    {
+     "item": "Pet-sitter liability insurance",
+     "amount": 480
+    }
+   ],
+   "steps": [
+    "Post on 30 neighbourhood boards this week",
+    "Offer a free first walk for one dog",
+    "Buy leads, bags and a first-aid kit",
+    "Set fixed lunchtime walking rounds",
+    "Ask the vet clinic to display a flyer",
+    "Send a photo update after every walk",
+    "Fill midday slots with weekend sitting"
+   ],
+   "pricing_hint": "$35 per overnight pet sit",
+   "first_customers": [
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads"
+   ],
+   "pitfalls": [
+    "Meet the dog and owner before accepting",
+    "Never walk more than 3 dogs at once",
+    "Confirm vaccination records before sitting"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "local-service",
+   "trend_tags": [
+    "local-service",
+    "recurring"
+   ],
+   "first_seen": "2024-12",
+   "maturity": "mature",
+   "version": 1,
+   "updated_at": "2026-02-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Chamber of commerce newsletter",
+      "Google Maps 4-star shops with unanswered reviews",
+      "Nextdoor neighbourhood posts"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Local parish newsletter ads",
+      "Google Maps high-street shops",
+      "Facebook local community groups"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Chamber of commerce directory",
+      "Google Maps shops on main streets",
+      "Nextdoor Canada community posts"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Council newsletter sponsorships",
+      "Google Maps suburban strip shops",
+      "Nextdoor Australia neighbourhood posts"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "Google Maps shop clusters in heartland malls",
+      "Facebook neighbourhood groups for HDB estates",
+      "WhatsApp business contact lists"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Viber neighbourhood groups",
+      "Facebook Marketplace local groups",
+      "Barangay community referrals"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-svc-pet-care-025",
+   "title": "Dog walking and pet sitting (old town)",
+   "one_liner": "Working dog owners pay for weekday lunchtime walks and weekend pet sitting at home.",
+   "min_capital": 1470,
+   "capital_tier": "500-2k",
+   "hours_per_week": "<10",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU",
+    "SG"
+   ],
+   "online_or_offline": "offline",
+   "legal_blocks": [],
+   "skills_needed": [
+    "none"
+   ],
+   "assets_needed": [
+    "spare_room"
+   ],
+   "risk_level": "medium",
+   "payback_days": 7,
+   "recurring": true,
+   "channel_ids": [
+    "nextdoor",
+    "facebook",
+    "walk-in",
+    "referral"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Leads, poo bags and first-aid kit",
+     "amount": 588
+    },
+    {
+     "item": "Flyers for vet clinics boards",
+     "amount": 368
+    },
+    {
+     "item": "Pet-sitter liability insurance",
+     "amount": 514
+    }
+   ],
+   "steps": [
+    "Post on 5 neighbourhood boards this week",
+    "Offer a free first walk for one dog",
+    "Buy leads, bags and a first-aid kit",
+    "Set fixed lunchtime walking rounds",
+    "Ask the vet clinic to display a flyer",
+    "Send a photo update after every walk",
+    "Fill midday slots with weekend sitting"
+   ],
+   "pricing_hint": "$20 per 45-minute walk",
+   "first_customers": [
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter"
+   ],
+   "pitfalls": [
+    "Meet the dog and owner before accepting",
+    "Never walk more than 3 dogs at once",
+    "Confirm vaccination records before sitting"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "local-service",
+   "trend_tags": [
+    "local-service",
+    "recurring"
+   ],
+   "first_seen": "2025-01",
+   "maturity": "saturated",
+   "version": 1,
+   "updated_at": "2026-03-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Google Maps 4-star shops with unanswered reviews",
+      "Nextdoor neighbourhood posts",
+      "Thumbtack local leads"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Google Maps high-street shops",
+      "Facebook local community groups",
+      "Nextdoor UK street posts"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Google Maps shops on main streets",
+      "Nextdoor Canada community posts",
+      "Local Facebook buy-and-sell groups"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Google Maps suburban strip shops",
+      "Nextdoor Australia neighbourhood posts",
+      "Local Facebook community groups"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "Facebook neighbourhood groups for HDB estates",
+      "WhatsApp business contact lists",
+      "Google Maps shop clusters in heartland malls"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-svc-pet-care-026",
+   "title": "Dog walking and pet sitting (hillside)",
+   "one_liner": "Working dog owners pay for weekday lunchtime walks and weekend pet sitting at home.",
+   "min_capital": 205,
+   "capital_tier": "<500",
+   "hours_per_week": "<10",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU",
+    "SG"
+   ],
+   "online_or_offline": "offline",
+   "legal_blocks": [],
+   "skills_needed": [
+    "none"
+   ],
+   "assets_needed": [
+    "spare_room"
+   ],
+   "risk_level": "medium",
+   "payback_days": 14,
+   "recurring": true,
+   "channel_ids": [
+    "nextdoor",
+    "facebook",
+    "walk-in",
+    "referral"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Leads, poo bags and first-aid kit",
+     "amount": 82
+    },
+    {
+     "item": "Flyers for vet clinics boards",
+     "amount": 51
+    },
+    {
+     "item": "Pet-sitter liability insurance",
+     "amount": 72
+    }
+   ],
+   "steps": [
+    "Post on 10 neighbourhood boards this week",
+    "Offer a free first walk for one dog",
+    "Buy leads, bags and a first-aid kit",
+    "Set fixed lunchtime walking rounds",
+    "Ask the vet clinic to display a flyer",
+    "Send a photo update after every walk",
+    "Fill midday slots with weekend sitting"
+   ],
+   "pricing_hint": "$180/week for 5 walks",
+   "first_customers": [
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews"
+   ],
+   "pitfalls": [
+    "Meet the dog and owner before accepting",
+    "Never walk more than 3 dogs at once",
+    "Confirm vaccination records before sitting"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "local-service",
+   "trend_tags": [
+    "local-service",
+    "recurring"
+   ],
+   "first_seen": "2024-02",
+   "maturity": "growing",
+   "version": 1,
+   "updated_at": "2026-04-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Nextdoor neighbourhood posts",
+      "Thumbtack local leads",
+      "Chamber of commerce newsletter"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Facebook local community groups",
+      "Nextdoor UK street posts",
+      "Local parish newsletter ads"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Nextdoor Canada community posts",
+      "Local Facebook buy-and-sell groups",
+      "Chamber of commerce directory"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Nextdoor Australia neighbourhood posts",
+      "Local Facebook community groups",
+      "Council newsletter sponsorships"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "WhatsApp business contact lists",
+      "Google Maps shop clusters in heartland malls",
+      "Facebook neighbourhood groups for HDB estates"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-svc-pet-care-027",
+   "title": "Dog walking and pet sitting (central)",
+   "one_liner": "Working dog owners pay for weekday lunchtime walks and weekend pet sitting at home.",
+   "min_capital": 300,
+   "capital_tier": "<500",
+   "hours_per_week": "full",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU",
+    "SG",
+    "PH"
+   ],
+   "online_or_offline": "offline",
+   "legal_blocks": [],
+   "skills_needed": [
+    "none"
+   ],
+   "assets_needed": [
+    "spare_room"
+   ],
+   "risk_level": "medium",
+   "payback_days": 21,
+   "recurring": true,
+   "channel_ids": [
+    "nextdoor",
+    "facebook",
+    "walk-in",
+    "referral"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Leads, poo bags and first-aid kit",
+     "amount": 120
+    },
+    {
+     "item": "Flyers for vet clinics boards",
+     "amount": 75
+    },
+    {
+     "item": "Pet-sitter liability insurance",
+     "amount": 105
+    }
+   ],
+   "steps": [
+    "Post on 15 neighbourhood boards this week",
+    "Offer a free first walk for one dog",
+    "Buy leads, bags and a first-aid kit",
+    "Set fixed lunchtime walking rounds",
+    "Ask the vet clinic to display a flyer",
+    "Send a photo update after every walk",
+    "Fill midday slots with weekend sitting"
+   ],
+   "pricing_hint": "$35 per overnight pet sit",
+   "first_customers": [
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts"
+   ],
+   "pitfalls": [
+    "Meet the dog and owner before accepting",
+    "Never walk more than 3 dogs at once",
+    "Confirm vaccination records before sitting"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "local-service",
+   "trend_tags": [
+    "local-service",
+    "recurring"
+   ],
+   "first_seen": "2024-03",
+   "maturity": "mature",
+   "version": 1,
+   "updated_at": "2026-05-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Thumbtack local leads",
+      "Chamber of commerce newsletter",
+      "Google Maps 4-star shops with unanswered reviews"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Nextdoor UK street posts",
+      "Local parish newsletter ads",
+      "Google Maps high-street shops"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Local Facebook buy-and-sell groups",
+      "Chamber of commerce directory",
+      "Google Maps shops on main streets"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Local Facebook community groups",
+      "Council newsletter sponsorships",
+      "Google Maps suburban strip shops"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "Google Maps shop clusters in heartland malls",
+      "Facebook neighbourhood groups for HDB estates",
+      "WhatsApp business contact lists"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Google Maps shops along main roads",
+      "Viber neighbourhood groups",
+      "Facebook Marketplace local groups"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-svc-pet-care-028",
+   "title": "Dog walking and pet sitting (bayside)",
+   "one_liner": "Working dog owners pay for weekday lunchtime walks and weekend pet sitting at home.",
+   "min_capital": 400,
+   "capital_tier": "<500",
+   "hours_per_week": "10-25",
+   "countries": [
+    "US",
+    "UK",
+    "CA"
+   ],
+   "online_or_offline": "offline",
+   "legal_blocks": [],
+   "skills_needed": [
+    "none"
+   ],
+   "assets_needed": [
+    "spare_room"
+   ],
+   "risk_level": "medium",
+   "payback_days": 7,
+   "recurring": true,
+   "channel_ids": [
+    "nextdoor",
+    "facebook",
+    "walk-in",
+    "referral"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Leads, poo bags and first-aid kit",
+     "amount": 160
+    },
+    {
+     "item": "Flyers for vet clinics boards",
+     "amount": 100
+    },
+    {
+     "item": "Pet-sitter liability insurance",
+     "amount": 140
+    }
+   ],
+   "steps": [
+    "Post on 20 neighbourhood boards this week",
+    "Offer a free first walk for one dog",
+    "Buy leads, bags and a first-aid kit",
+    "Set fixed lunchtime walking rounds",
+    "Ask the vet clinic to display a flyer",
+    "Send a photo update after every walk",
+    "Fill midday slots with weekend sitting"
+   ],
+   "pricing_hint": "$20 per 45-minute walk",
+   "first_customers": [
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads"
+   ],
+   "pitfalls": [
+    "Meet the dog and owner before accepting",
+    "Never walk more than 3 dogs at once",
+    "Confirm vaccination records before sitting"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "local-service",
+   "trend_tags": [
+    "local-service",
+    "recurring"
+   ],
+   "first_seen": "2025-04",
+   "maturity": "emerging",
+   "version": 1,
+   "updated_at": "2026-06-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Chamber of commerce newsletter",
+      "Google Maps 4-star shops with unanswered reviews",
+      "Nextdoor neighbourhood posts"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Local parish newsletter ads",
+      "Google Maps high-street shops",
+      "Facebook local community groups"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Chamber of commerce directory",
+      "Google Maps shops on main streets",
+      "Nextdoor Canada community posts"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-svc-pet-care-029",
+   "title": "Dog walking and pet sitting (market)",
+   "one_liner": "Working dog owners pay for weekday lunchtime walks and weekend pet sitting at home.",
+   "min_capital": 45,
+   "capital_tier": "<500",
+   "hours_per_week": "full",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU",
+    "SG",
+    "PH"
+   ],
+   "online_or_offline": "offline",
+   "legal_blocks": [],
+   "skills_needed": [
+    "none"
+   ],
+   "assets_needed": [
+    "spare_room"
+   ],
+   "risk_level": "medium",
+   "payback_days": 14,
+   "recurring": true,
+   "channel_ids": [
+    "nextdoor",
+    "facebook",
+    "walk-in",
+    "referral"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Leads, poo bags and first-aid kit",
+     "amount": 18
+    },
+    {
+     "item": "Flyers for vet clinics boards",
+     "amount": 11
+    },
+    {
+     "item": "Pet-sitter liability insurance",
+     "amount": 16
+    }
+   ],
+   "steps": [
+    "Post on 25 neighbourhood boards this week",
+    "Offer a free first walk for one dog",
+    "Buy leads, bags and a first-aid kit",
+    "Set fixed lunchtime walking rounds",
+    "Ask the vet clinic to display a flyer",
+    "Send a photo update after every walk",
+    "Fill midday slots with weekend sitting"
+   ],
+   "pricing_hint": "$180/week for 5 walks",
+   "first_customers": [
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter"
+   ],
+   "pitfalls": [
+    "Meet the dog and owner before accepting",
+    "Never walk more than 3 dogs at once",
+    "Confirm vaccination records before sitting"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "local-service",
+   "trend_tags": [
+    "local-service",
+    "recurring"
+   ],
+   "first_seen": "2024-05",
+   "maturity": "mature",
+   "version": 1,
+   "updated_at": "2026-07-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Google Maps 4-star shops with unanswered reviews",
+      "Nextdoor neighbourhood posts",
+      "Thumbtack local leads"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Google Maps high-street shops",
+      "Facebook local community groups",
+      "Nextdoor UK street posts"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Google Maps shops on main streets",
+      "Nextdoor Canada community posts",
+      "Local Facebook buy-and-sell groups"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Google Maps suburban strip shops",
+      "Nextdoor Australia neighbourhood posts",
+      "Local Facebook community groups"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "WhatsApp business contact lists",
+      "Google Maps shop clusters in heartland malls",
+      "Facebook neighbourhood groups for HDB estates"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Facebook Marketplace local groups",
+      "Barangay community referrals",
+      "Google Maps shops along main roads"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-svc-pet-care-030",
+   "title": "Dog walking and pet sitting(lakeside)",
+   "one_liner": "Working dog owners pay for weekday lunchtime walks and weekend pet sitting at home.",
+   "min_capital": 145,
+   "capital_tier": "<500",
+   "hours_per_week": "10-25",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU",
+    "PH"
+   ],
+   "online_or_offline": "offline",
+   "legal_blocks": [],
+   "skills_needed": [
+    "none"
+   ],
+   "assets_needed": [
+    "spare_room"
+   ],
+   "risk_level": "medium",
+   "payback_days": 21,
+   "recurring": true,
+   "channel_ids": [
+    "nextdoor",
+    "facebook",
+    "walk-in",
+    "referral"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Leads, poo bags and first-aid kit",
+     "amount": 58
+    },
+    {
+     "item": "Flyers for vet clinics boards",
+     "amount": 36
+    },
+    {
+     "item": "Pet-sitter liability insurance",
+     "amount": 51
+    }
+   ],
+   "steps": [
+    "Post on 30 neighbourhood boards this week",
+    "Offer a free first walk for one dog",
+    "Buy leads, bags and a first-aid kit",
+    "Set fixed lunchtime walking rounds",
+    "Ask the vet clinic to display a flyer",
+    "Send a photo update after every walk",
+    "Fill midday slots with weekend sitting"
+   ],
+   "pricing_hint": "$35 per overnight pet sit",
+   "first_customers": [
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews"
+   ],
+   "pitfalls": [
+    "Meet the dog and owner before accepting",
+    "Never walk more than 3 dogs at once",
+    "Confirm vaccination records before sitting"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "local-service",
+   "trend_tags": [
+    "local-service",
+    "recurring"
+   ],
+   "first_seen": "2024-06",
+   "maturity": "growing",
+   "version": 1,
+   "updated_at": "2026-08-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Nextdoor neighbourhood posts",
+      "Thumbtack local leads",
+      "Chamber of commerce newsletter"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Facebook local community groups",
+      "Nextdoor UK street posts",
+      "Local parish newsletter ads"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Nextdoor Canada community posts",
+      "Local Facebook buy-and-sell groups",
+      "Chamber of commerce directory"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Nextdoor Australia neighbourhood posts",
+      "Local Facebook community groups",
+      "Council newsletter sponsorships"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Barangay community referrals",
+      "Google Maps shops along main roads",
+      "Viber neighbourhood groups"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-svc-pet-care-031",
+   "title": "Dog walking and pet sitting",
+   "one_liner": "Working dog owners pay for weekday lunchtime walks and weekend pet sitting at home.",
+   "min_capital": 240,
+   "capital_tier": "<500",
+   "hours_per_week": "full",
+   "countries": [
+    "US",
+    "CA",
+    "AU",
+    "SG"
+   ],
+   "online_or_offline": "hybrid",
+   "legal_blocks": [],
+   "skills_needed": [
+    "none"
+   ],
+   "assets_needed": [
+    "spare_room"
+   ],
+   "risk_level": "medium",
+   "payback_days": 7,
+   "recurring": true,
+   "channel_ids": [
+    "nextdoor",
+    "facebook",
+    "walk-in",
+    "referral"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Leads, poo bags and first-aid kit",
+     "amount": 96
+    },
+    {
+     "item": "Flyers for vet clinics boards",
+     "amount": 60
+    },
+    {
+     "item": "Pet-sitter liability insurance",
+     "amount": 84
+    }
+   ],
+   "steps": [
+    "Post on 5 neighbourhood boards this week",
+    "Offer a free first walk for one dog",
+    "Buy leads, bags and a first-aid kit",
+    "Set fixed lunchtime walking rounds",
+    "Ask the vet clinic to display a flyer",
+    "Send a photo update after every walk",
+    "Fill midday slots with weekend sitting"
+   ],
+   "pricing_hint": "$20 per 45-minute walk",
+   "first_customers": [
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts"
+   ],
+   "pitfalls": [
+    "Meet the dog and owner before accepting",
+    "Never walk more than 3 dogs at once",
+    "Confirm vaccination records before sitting"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "local-service",
+   "trend_tags": [
+    "local-service",
+    "recurring"
+   ],
+   "first_seen": "2025-07",
+   "maturity": "mature",
+   "version": 1,
+   "updated_at": "2026-09-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Thumbtack local leads",
+      "Chamber of commerce newsletter",
+      "Google Maps 4-star shops with unanswered reviews"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Local Facebook buy-and-sell groups",
+      "Chamber of commerce directory",
+      "Google Maps shops on main streets"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Local Facebook community groups",
+      "Council newsletter sponsorships",
+      "Google Maps suburban strip shops"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "Facebook neighbourhood groups for HDB estates",
+      "WhatsApp business contact lists",
+      "Google Maps shop clusters in heartland malls"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-svc-pet-care-032",
+   "title": "Dog walking and pet sitting (north)",
+   "one_liner": "Working dog owners pay for weekday lunchtime walks and weekend pet sitting at home.",
+   "min_capital": 765,
+   "capital_tier": "500-2k",
+   "hours_per_week": "<10",
+   "countries": [
+    "US",
+    "UK",
+    "AU",
+    "SG"
+   ],
+   "online_or_offline": "hybrid",
+   "legal_blocks": [],
+   "skills_needed": [
+    "none"
+   ],
+   "assets_needed": [
+    "spare_room"
+   ],
+   "risk_level": "medium",
+   "payback_days": 14,
+   "recurring": true,
+   "channel_ids": [
+    "nextdoor",
+    "facebook",
+    "walk-in",
+    "referral"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Leads, poo bags and first-aid kit",
+     "amount": 306
+    },
+    {
+     "item": "Flyers for vet clinics boards",
+     "amount": 191
+    },
+    {
+     "item": "Pet-sitter liability insurance",
+     "amount": 268
+    }
+   ],
+   "steps": [
+    "Post on 10 neighbourhood boards this week",
+    "Offer a free first walk for one dog",
+    "Buy leads, bags and a first-aid kit",
+    "Set fixed lunchtime walking rounds",
+    "Ask the vet clinic to display a flyer",
+    "Send a photo update after every walk",
+    "Fill midday slots with weekend sitting"
+   ],
+   "pricing_hint": "$180/week for 5 walks",
+   "first_customers": [
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads"
+   ],
+   "pitfalls": [
+    "Meet the dog and owner before accepting",
+    "Never walk more than 3 dogs at once",
+    "Confirm vaccination records before sitting"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "local-service",
+   "trend_tags": [
+    "local-service",
+    "recurring"
+   ],
+   "first_seen": "2024-08",
+   "maturity": "mature",
+   "version": 1,
+   "updated_at": "2026-10-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Chamber of commerce newsletter",
+      "Google Maps 4-star shops with unanswered reviews",
+      "Nextdoor neighbourhood posts"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Local parish newsletter ads",
+      "Google Maps high-street shops",
+      "Facebook local community groups"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Council newsletter sponsorships",
+      "Google Maps suburban strip shops",
+      "Nextdoor Australia neighbourhood posts"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "WhatsApp business contact lists",
+      "Google Maps shop clusters in heartland malls",
+      "Facebook neighbourhood groups for HDB estates"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-svc-pet-care-033",
+   "title": "Dog walking and pet sitting (east)",
+   "one_liner": "Working dog owners pay for weekday lunchtime walks and weekend pet sitting at home.",
+   "min_capital": 865,
+   "capital_tier": "500-2k",
+   "hours_per_week": "full",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU",
+    "SG"
+   ],
+   "online_or_offline": "offline",
+   "legal_blocks": [],
+   "skills_needed": [
+    "none"
+   ],
+   "assets_needed": [
+    "spare_room"
+   ],
+   "risk_level": "medium",
+   "payback_days": 21,
+   "recurring": true,
+   "channel_ids": [
+    "nextdoor",
+    "facebook",
+    "walk-in",
+    "referral"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Leads, poo bags and first-aid kit",
+     "amount": 346
+    },
+    {
+     "item": "Flyers for vet clinics boards",
+     "amount": 216
+    },
+    {
+     "item": "Pet-sitter liability insurance",
+     "amount": 303
+    }
+   ],
+   "steps": [
+    "Post on 15 neighbourhood boards this week",
+    "Offer a free first walk for one dog",
+    "Buy leads, bags and a first-aid kit",
+    "Set fixed lunchtime walking rounds",
+    "Ask the vet clinic to display a flyer",
+    "Send a photo update after every walk",
+    "Fill midday slots with weekend sitting"
+   ],
+   "pricing_hint": "$35 per overnight pet sit",
+   "first_customers": [
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter"
+   ],
+   "pitfalls": [
+    "Meet the dog and owner before accepting",
+    "Never walk more than 3 dogs at once",
+    "Confirm vaccination records before sitting"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "local-service",
+   "trend_tags": [
+    "local-service",
+    "recurring"
+   ],
+   "first_seen": "2024-09",
+   "maturity": "growing",
+   "version": 1,
+   "updated_at": "2026-11-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Google Maps 4-star shops with unanswered reviews",
+      "Nextdoor neighbourhood posts",
+      "Thumbtack local leads"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Google Maps high-street shops",
+      "Facebook local community groups",
+      "Nextdoor UK street posts"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Google Maps shops on main streets",
+      "Nextdoor Canada community posts",
+      "Local Facebook buy-and-sell groups"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Google Maps suburban strip shops",
+      "Nextdoor Australia neighbourhood posts",
+      "Local Facebook community groups"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "Google Maps shop clusters in heartland malls",
+      "Facebook neighbourhood groups for HDB estates",
+      "WhatsApp business contact lists"
+     ]
+    }
+   }
+  }
+ ]
+}

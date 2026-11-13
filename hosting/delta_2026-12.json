@@ -1,1 +1,1962 @@
-{}
+{
+ "target_baseline": "v1",
+ "release": "2026-12-01",
+ "add": [
+  {
+   "id": "bs-agt-booking-312",
+   "title": "Booking-bot for salons and barbers",
+   "one_liner": "Salons, clinics and trades pay a setup fee plus retainer for a simple booking bot on WhatsApp or their site.",
+   "min_capital": 30,
+   "capital_tier": "<500",
+   "hours_per_week": "<10",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU",
+    "SG",
+    "PH"
+   ],
+   "online_or_offline": "hybrid",
+   "legal_blocks": [],
+   "skills_needed": [
+    "coding",
+    "basic_english"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "medium",
+   "payback_days": 30,
+   "recurring": true,
+   "channel_ids": [
+    "chamber",
+    "referral",
+    "facebook",
+    "google-maps"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Bot platform subscription",
+     "amount": 10
+    },
+    {
+     "item": "Demo domain and hosting",
+     "amount": 8
+    },
+    {
+     "item": "Chamber membership and events",
+     "amount": 12
+    }
+   ],
+   "steps": [
+    "Build one demo bot for a fake salon",
+    "Demo it to 5 firms at the chamber",
+    "Offer $390 setup + $49/month, 30-day tuning window",
+    "Map the firm's real booking rules first",
+    "Hand over an admin how-to sheet",
+    "Review transcripts weekly and fix gaps",
+    "Upsell a monthly transcript report"
+   ],
+   "pricing_hint": "$390 setup + $49/month",
+   "first_customers": [
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter"
+   ],
+   "pitfalls": [
+    "Show a demo, never experiment on clients",
+    "Get the owner's approval on every reply template",
+    "Keep a human handoff path always"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "bi-agent",
+   "trend_tags": [
+    "bi-agent",
+    "local",
+    "retainer",
+    "booking"
+   ],
+   "first_seen": "2026-12",
+   "maturity": "emerging",
+   "version": 1,
+   "updated_at": "2026-12-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Google Maps 4-star shops with unanswered reviews",
+      "Nextdoor neighbourhood posts",
+      "Thumbtack local leads"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Google Maps high-street shops",
+      "Facebook local community groups",
+      "Nextdoor UK street posts"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Google Maps shops on main streets",
+      "Nextdoor Canada community posts",
+      "Local Facebook buy-and-sell groups"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Google Maps suburban strip shops",
+      "Nextdoor Australia neighbourhood posts",
+      "Local Facebook community groups"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "Facebook neighbourhood groups for HDB estates",
+      "WhatsApp business contact lists",
+      "Google Maps shop clusters in heartland malls"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Facebook Marketplace local groups",
+      "Barangay community referrals",
+      "Google Maps shops along main roads"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-agt-quote-313",
+   "title": "Quote-bot for trades on the go",
+   "one_liner": "Salons, clinics and trades pay a setup fee plus retainer for a simple booking bot on WhatsApp or their site.",
+   "min_capital": 695,
+   "capital_tier": "500-2k",
+   "hours_per_week": "10-25",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU",
+    "SG",
+    "PH"
+   ],
+   "online_or_offline": "online",
+   "legal_blocks": [],
+   "skills_needed": [
+    "coding",
+    "basic_english"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "medium",
+   "payback_days": 45,
+   "recurring": true,
+   "channel_ids": [
+    "chamber",
+    "referral",
+    "facebook",
+    "google-maps"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Bot platform subscription",
+     "amount": 243
+    },
+    {
+     "item": "Demo domain and hosting",
+     "amount": 174
+    },
+    {
+     "item": "Chamber membership and events",
+     "amount": 278
+    }
+   ],
+   "steps": [
+    "Build one demo bot for a fake salon",
+    "Demo it to 10 firms at the chamber",
+    "Offer $340 setup + $39/month, 30-day tuning window",
+    "Map the firm's real booking rules first",
+    "Hand over an admin how-to sheet",
+    "Review transcripts weekly and fix gaps",
+    "Upsell a monthly transcript report"
+   ],
+   "pricing_hint": "$340 setup + $39/month",
+   "first_customers": [
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews"
+   ],
+   "pitfalls": [
+    "Show a demo, never experiment on clients",
+    "Get the owner's approval on every reply template",
+    "Keep a human handoff path always"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "bi-agent",
+   "trend_tags": [
+    "bi-agent",
+    "local",
+    "retainer",
+    "quote"
+   ],
+   "first_seen": "2026-12",
+   "maturity": "growing",
+   "version": 1,
+   "updated_at": "2026-12-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Nextdoor neighbourhood posts",
+      "Thumbtack local leads",
+      "Chamber of commerce newsletter"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Facebook local community groups",
+      "Nextdoor UK street posts",
+      "Local parish newsletter ads"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Nextdoor Canada community posts",
+      "Local Facebook buy-and-sell groups",
+      "Chamber of commerce directory"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Nextdoor Australia neighbourhood posts",
+      "Local Facebook community groups",
+      "Council newsletter sponsorships"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "WhatsApp business contact lists",
+      "Google Maps shop clusters in heartland malls",
+      "Facebook neighbourhood groups for HDB estates"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Barangay community referrals",
+      "Google Maps shops along main roads",
+      "Viber neighbourhood groups"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-agt-faq-314",
+   "title": "FAQ-bot for dental and physio clinics",
+   "one_liner": "Salons, clinics and trades pay a setup fee plus retainer for a simple booking bot on WhatsApp or their site.",
+   "min_capital": 2445,
+   "capital_tier": "2k-10k",
+   "hours_per_week": "full",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU",
+    "SG",
+    "PH"
+   ],
+   "online_or_offline": "offline",
+   "legal_blocks": [],
+   "skills_needed": [
+    "coding",
+    "basic_english"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "medium",
+   "payback_days": 60,
+   "recurring": true,
+   "channel_ids": [
+    "chamber",
+    "referral",
+    "facebook",
+    "google-maps"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Bot platform subscription",
+     "amount": 856
+    },
+    {
+     "item": "Demo domain and hosting",
+     "amount": 611
+    },
+    {
+     "item": "Chamber membership and events",
+     "amount": 978
+    }
+   ],
+   "steps": [
+    "Build one demo bot for a fake salon",
+    "Demo it to 15 firms at the chamber",
+    "Offer $420 setup + $59/month, 30-day tuning window",
+    "Map the firm's real booking rules first",
+    "Hand over an admin how-to sheet",
+    "Review transcripts weekly and fix gaps",
+    "Upsell a monthly transcript report"
+   ],
+   "pricing_hint": "$420 setup + $59/month",
+   "first_customers": [
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts"
+   ],
+   "pitfalls": [
+    "Show a demo, never experiment on clients",
+    "Get the owner's approval on every reply template",
+    "Keep a human handoff path always"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "bi-agent",
+   "trend_tags": [
+    "bi-agent",
+    "local",
+    "retainer",
+    "faq"
+   ],
+   "first_seen": "2026-12",
+   "maturity": "emerging",
+   "version": 1,
+   "updated_at": "2026-12-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Thumbtack local leads",
+      "Chamber of commerce newsletter",
+      "Google Maps 4-star shops with unanswered reviews"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Nextdoor UK street posts",
+      "Local parish newsletter ads",
+      "Google Maps high-street shops"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Local Facebook buy-and-sell groups",
+      "Chamber of commerce directory",
+      "Google Maps shops on main streets"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Local Facebook community groups",
+      "Council newsletter sponsorships",
+      "Google Maps suburban strip shops"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "Google Maps shop clusters in heartland malls",
+      "Facebook neighbourhood groups for HDB estates",
+      "WhatsApp business contact lists"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Google Maps shops along main roads",
+      "Viber neighbourhood groups",
+      "Facebook Marketplace local groups"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-agt-intake-315",
+   "title": "Client intake form agent for law offices",
+   "one_liner": "Salons, clinics and trades pay a setup fee plus retainer for a simple booking bot on WhatsApp or their site.",
+   "min_capital": 11020,
+   "capital_tier": "10k+",
+   "hours_per_week": "<10",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU",
+    "SG",
+    "PH"
+   ],
+   "online_or_offline": "hybrid",
+   "legal_blocks": [],
+   "skills_needed": [
+    "coding",
+    "basic_english"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "medium",
+   "payback_days": 30,
+   "recurring": true,
+   "channel_ids": [
+    "chamber",
+    "referral",
+    "facebook",
+    "google-maps"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Bot platform subscription",
+     "amount": 3857
+    },
+    {
+     "item": "Demo domain and hosting",
+     "amount": 2755
+    },
+    {
+     "item": "Chamber membership and events",
+     "amount": 4408
+    }
+   ],
+   "steps": [
+    "Build one demo bot for a fake salon",
+    "Demo it to 20 firms at the chamber",
+    "Offer $460 setup + $69/month, 30-day tuning window",
+    "Map the firm's real booking rules first",
+    "Hand over an admin how-to sheet",
+    "Review transcripts weekly and fix gaps",
+    "Upsell a monthly transcript report"
+   ],
+   "pricing_hint": "$460 setup + $69/month",
+   "first_customers": [
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads"
+   ],
+   "pitfalls": [
+    "Show a demo, never experiment on clients",
+    "Get the owner's approval on every reply template",
+    "Keep a human handoff path always"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "bi-agent",
+   "trend_tags": [
+    "bi-agent",
+    "local",
+    "retainer",
+    "intake"
+   ],
+   "first_seen": "2026-12",
+   "maturity": "growing",
+   "version": 1,
+   "updated_at": "2026-12-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Chamber of commerce newsletter",
+      "Google Maps 4-star shops with unanswered reviews",
+      "Nextdoor neighbourhood posts"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Local parish newsletter ads",
+      "Google Maps high-street shops",
+      "Facebook local community groups"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Chamber of commerce directory",
+      "Google Maps shops on main streets",
+      "Nextdoor Canada community posts"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Council newsletter sponsorships",
+      "Google Maps suburban strip shops",
+      "Nextdoor Australia neighbourhood posts"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "Facebook neighbourhood groups for HDB estates",
+      "WhatsApp business contact lists",
+      "Google Maps shop clusters in heartland malls"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Viber neighbourhood groups",
+      "Facebook Marketplace local groups",
+      "Barangay community referrals"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-agt-roster-316",
+   "title": "Staff roster agent for small cafés",
+   "one_liner": "Salons, clinics and trades pay a setup fee plus retainer for a simple booking bot on WhatsApp or their site.",
+   "min_capital": 270,
+   "capital_tier": "<500",
+   "hours_per_week": "10-25",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU",
+    "SG",
+    "PH"
+   ],
+   "online_or_offline": "online",
+   "legal_blocks": [],
+   "skills_needed": [
+    "coding",
+    "basic_english"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "medium",
+   "payback_days": 45,
+   "recurring": true,
+   "channel_ids": [
+    "chamber",
+    "referral",
+    "facebook",
+    "google-maps"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Bot platform subscription",
+     "amount": 94
+    },
+    {
+     "item": "Demo domain and hosting",
+     "amount": 68
+    },
+    {
+     "item": "Chamber membership and events",
+     "amount": 108
+    }
+   ],
+   "steps": [
+    "Build one demo bot for a fake salon",
+    "Demo it to 5 firms at the chamber",
+    "Offer $300 setup + $35/month, 30-day tuning window",
+    "Map the firm's real booking rules first",
+    "Hand over an admin how-to sheet",
+    "Review transcripts weekly and fix gaps",
+    "Upsell a monthly transcript report"
+   ],
+   "pricing_hint": "$300 setup + $35/month",
+   "first_customers": [
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter"
+   ],
+   "pitfalls": [
+    "Show a demo, never experiment on clients",
+    "Get the owner's approval on every reply template",
+    "Keep a human handoff path always"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "bi-agent",
+   "trend_tags": [
+    "bi-agent",
+    "local",
+    "retainer",
+    "roster"
+   ],
+   "first_seen": "2026-12",
+   "maturity": "emerging",
+   "version": 1,
+   "updated_at": "2026-12-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Google Maps 4-star shops with unanswered reviews",
+      "Nextdoor neighbourhood posts",
+      "Thumbtack local leads"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Google Maps high-street shops",
+      "Facebook local community groups",
+      "Nextdoor UK street posts"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Google Maps shops on main streets",
+      "Nextdoor Canada community posts",
+      "Local Facebook buy-and-sell groups"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Google Maps suburban strip shops",
+      "Nextdoor Australia neighbourhood posts",
+      "Local Facebook community groups"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "WhatsApp business contact lists",
+      "Google Maps shop clusters in heartland malls",
+      "Facebook neighbourhood groups for HDB estates"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Facebook Marketplace local groups",
+      "Barangay community referrals",
+      "Google Maps shops along main roads"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-agt-lead-317",
+   "title": "Lead-reply agent for landscapers",
+   "one_liner": "Salons, clinics and trades pay a setup fee plus retainer for a simple booking bot on WhatsApp or their site.",
+   "min_capital": 1385,
+   "capital_tier": "500-2k",
+   "hours_per_week": "full",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "SG",
+    "PH"
+   ],
+   "online_or_offline": "offline",
+   "legal_blocks": [],
+   "skills_needed": [
+    "coding",
+    "basic_english"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "medium",
+   "payback_days": 60,
+   "recurring": true,
+   "channel_ids": [
+    "chamber",
+    "referral",
+    "facebook",
+    "google-maps"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Bot platform subscription",
+     "amount": 485
+    },
+    {
+     "item": "Demo domain and hosting",
+     "amount": 346
+    },
+    {
+     "item": "Chamber membership and events",
+     "amount": 554
+    }
+   ],
+   "steps": [
+    "Build one demo bot for a fake salon",
+    "Demo it to 10 firms at the chamber",
+    "Offer $360 setup + $45/month, 30-day tuning window",
+    "Map the firm's real booking rules first",
+    "Hand over an admin how-to sheet",
+    "Review transcripts weekly and fix gaps",
+    "Upsell a monthly transcript report"
+   ],
+   "pricing_hint": "$360 setup + $45/month",
+   "first_customers": [
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews"
+   ],
+   "pitfalls": [
+    "Show a demo, never experiment on clients",
+    "Get the owner's approval on every reply template",
+    "Keep a human handoff path always"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "bi-agent",
+   "trend_tags": [
+    "bi-agent",
+    "local",
+    "retainer",
+    "lead"
+   ],
+   "first_seen": "2026-12",
+   "maturity": "growing",
+   "version": 1,
+   "updated_at": "2026-12-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Nextdoor neighbourhood posts",
+      "Thumbtack local leads",
+      "Chamber of commerce newsletter"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Facebook local community groups",
+      "Nextdoor UK street posts",
+      "Local parish newsletter ads"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Nextdoor Canada community posts",
+      "Local Facebook buy-and-sell groups",
+      "Chamber of commerce directory"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "Google Maps shop clusters in heartland malls",
+      "Facebook neighbourhood groups for HDB estates",
+      "WhatsApp business contact lists"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Barangay community referrals",
+      "Google Maps shops along main roads",
+      "Viber neighbourhood groups"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-agt-invoice-318",
+   "title": "Invoice reminder agent for tutors",
+   "one_liner": "Salons, clinics and trades pay a setup fee plus retainer for a simple booking bot on WhatsApp or their site.",
+   "min_capital": 3140,
+   "capital_tier": "2k-10k",
+   "hours_per_week": "<10",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU",
+    "SG",
+    "PH"
+   ],
+   "online_or_offline": "hybrid",
+   "legal_blocks": [],
+   "skills_needed": [
+    "coding",
+    "basic_english"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "medium",
+   "payback_days": 30,
+   "recurring": true,
+   "channel_ids": [
+    "chamber",
+    "referral",
+    "facebook",
+    "google-maps"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Bot platform subscription",
+     "amount": 1099
+    },
+    {
+     "item": "Demo domain and hosting",
+     "amount": 785
+    },
+    {
+     "item": "Chamber membership and events",
+     "amount": 1256
+    }
+   ],
+   "steps": [
+    "Build one demo bot for a fake salon",
+    "Demo it to 15 firms at the chamber",
+    "Offer $280 setup + $29/month, 30-day tuning window",
+    "Map the firm's real booking rules first",
+    "Hand over an admin how-to sheet",
+    "Review transcripts weekly and fix gaps",
+    "Upsell a monthly transcript report"
+   ],
+   "pricing_hint": "$280 setup + $29/month",
+   "first_customers": [
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts"
+   ],
+   "pitfalls": [
+    "Show a demo, never experiment on clients",
+    "Get the owner's approval on every reply template",
+    "Keep a human handoff path always"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "bi-agent",
+   "trend_tags": [
+    "bi-agent",
+    "local",
+    "retainer",
+    "invoice"
+   ],
+   "first_seen": "2026-12",
+   "maturity": "emerging",
+   "version": 1,
+   "updated_at": "2026-12-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Thumbtack local leads",
+      "Chamber of commerce newsletter",
+      "Google Maps 4-star shops with unanswered reviews"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Nextdoor UK street posts",
+      "Local parish newsletter ads",
+      "Google Maps high-street shops"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Local Facebook buy-and-sell groups",
+      "Chamber of commerce directory",
+      "Google Maps shops on main streets"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Local Facebook community groups",
+      "Council newsletter sponsorships",
+      "Google Maps suburban strip shops"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "Facebook neighbourhood groups for HDB estates",
+      "WhatsApp business contact lists",
+      "Google Maps shop clusters in heartland malls"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Google Maps shops along main roads",
+      "Viber neighbourhood groups",
+      "Facebook Marketplace local groups"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-agt-stock-319",
+   "title": "Parts-stock alert agent for garages",
+   "one_liner": "Salons, clinics and trades pay a setup fee plus retainer for a simple booking bot on WhatsApp or their site.",
+   "min_capital": 11710,
+   "capital_tier": "10k+",
+   "hours_per_week": "10-25",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU",
+    "SG",
+    "PH"
+   ],
+   "online_or_offline": "online",
+   "legal_blocks": [],
+   "skills_needed": [
+    "coding",
+    "basic_english"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "medium",
+   "payback_days": 45,
+   "recurring": true,
+   "channel_ids": [
+    "chamber",
+    "referral",
+    "facebook",
+    "google-maps"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Bot platform subscription",
+     "amount": 4098
+    },
+    {
+     "item": "Demo domain and hosting",
+     "amount": 2928
+    },
+    {
+     "item": "Chamber membership and events",
+     "amount": 4684
+    }
+   ],
+   "steps": [
+    "Build one demo bot for a fake salon",
+    "Demo it to 20 firms at the chamber",
+    "Offer $480 setup + $59/month, 30-day tuning window",
+    "Map the firm's real booking rules first",
+    "Hand over an admin how-to sheet",
+    "Review transcripts weekly and fix gaps",
+    "Upsell a monthly transcript report"
+   ],
+   "pricing_hint": "$480 setup + $59/month",
+   "first_customers": [
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads"
+   ],
+   "pitfalls": [
+    "Show a demo, never experiment on clients",
+    "Get the owner's approval on every reply template",
+    "Keep a human handoff path always"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "bi-agent",
+   "trend_tags": [
+    "bi-agent",
+    "local",
+    "retainer",
+    "stock"
+   ],
+   "first_seen": "2026-12",
+   "maturity": "growing",
+   "version": 1,
+   "updated_at": "2026-12-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Chamber of commerce newsletter",
+      "Google Maps 4-star shops with unanswered reviews",
+      "Nextdoor neighbourhood posts"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Local parish newsletter ads",
+      "Google Maps high-street shops",
+      "Facebook local community groups"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Chamber of commerce directory",
+      "Google Maps shops on main streets",
+      "Nextdoor Canada community posts"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Council newsletter sponsorships",
+      "Google Maps suburban strip shops",
+      "Nextdoor Australia neighbourhood posts"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "WhatsApp business contact lists",
+      "Google Maps shop clusters in heartland malls",
+      "Facebook neighbourhood groups for HDB estates"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Viber neighbourhood groups",
+      "Facebook Marketplace local groups",
+      "Barangay community referrals"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-agt-review-320",
+   "title": "Review-request agent for cleaners",
+   "one_liner": "Salons, clinics and trades pay a setup fee plus retainer for a simple booking bot on WhatsApp or their site.",
+   "min_capital": 65,
+   "capital_tier": "<500",
+   "hours_per_week": "full",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU",
+    "SG",
+    "PH"
+   ],
+   "online_or_offline": "offline",
+   "legal_blocks": [],
+   "skills_needed": [
+    "coding",
+    "basic_english"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "medium",
+   "payback_days": 60,
+   "recurring": true,
+   "channel_ids": [
+    "chamber",
+    "referral",
+    "facebook",
+    "google-maps"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Bot platform subscription",
+     "amount": 23
+    },
+    {
+     "item": "Demo domain and hosting",
+     "amount": 16
+    },
+    {
+     "item": "Chamber membership and events",
+     "amount": 26
+    }
+   ],
+   "steps": [
+    "Build one demo bot for a fake salon",
+    "Demo it to 5 firms at the chamber",
+    "Offer $320 setup + $39/month, 30-day tuning window",
+    "Map the firm's real booking rules first",
+    "Hand over an admin how-to sheet",
+    "Review transcripts weekly and fix gaps",
+    "Upsell a monthly transcript report"
+   ],
+   "pricing_hint": "$320 setup + $39/month",
+   "first_customers": [
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter"
+   ],
+   "pitfalls": [
+    "Show a demo, never experiment on clients",
+    "Get the owner's approval on every reply template",
+    "Keep a human handoff path always"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "bi-agent",
+   "trend_tags": [
+    "bi-agent",
+    "local",
+    "retainer",
+    "review"
+   ],
+   "first_seen": "2026-12",
+   "maturity": "emerging",
+   "version": 1,
+   "updated_at": "2026-12-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Google Maps 4-star shops with unanswered reviews",
+      "Nextdoor neighbourhood posts",
+      "Thumbtack local leads"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Google Maps high-street shops",
+      "Facebook local community groups",
+      "Nextdoor UK street posts"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Google Maps shops on main streets",
+      "Nextdoor Canada community posts",
+      "Local Facebook buy-and-sell groups"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Google Maps suburban strip shops",
+      "Nextdoor Australia neighbourhood posts",
+      "Local Facebook community groups"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "Google Maps shop clusters in heartland malls",
+      "Facebook neighbourhood groups for HDB estates",
+      "WhatsApp business contact lists"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Facebook Marketplace local groups",
+      "Barangay community referrals",
+      "Google Maps shops along main roads"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-agt-menu-321",
+   "title": "Menu-update agent for food trucks",
+   "one_liner": "Salons, clinics and trades pay a setup fee plus retainer for a simple booking bot on WhatsApp or their site.",
+   "min_capital": 695,
+   "capital_tier": "500-2k",
+   "hours_per_week": "<10",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU",
+    "SG",
+    "PH"
+   ],
+   "online_or_offline": "hybrid",
+   "legal_blocks": [],
+   "skills_needed": [
+    "coding",
+    "basic_english"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "medium",
+   "payback_days": 30,
+   "recurring": true,
+   "channel_ids": [
+    "chamber",
+    "referral",
+    "facebook",
+    "google-maps"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Bot platform subscription",
+     "amount": 243
+    },
+    {
+     "item": "Demo domain and hosting",
+     "amount": 174
+    },
+    {
+     "item": "Chamber membership and events",
+     "amount": 278
+    }
+   ],
+   "steps": [
+    "Build one demo bot for a fake salon",
+    "Demo it to 10 firms at the chamber",
+    "Offer $260 setup + $25/month, 30-day tuning window",
+    "Map the firm's real booking rules first",
+    "Hand over an admin how-to sheet",
+    "Review transcripts weekly and fix gaps",
+    "Upsell a monthly transcript report"
+   ],
+   "pricing_hint": "$260 setup + $25/month",
+   "first_customers": [
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews"
+   ],
+   "pitfalls": [
+    "Show a demo, never experiment on clients",
+    "Get the owner's approval on every reply template",
+    "Keep a human handoff path always"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "bi-agent",
+   "trend_tags": [
+    "bi-agent",
+    "local",
+    "retainer",
+    "menu"
+   ],
+   "first_seen": "2026-12",
+   "maturity": "growing",
+   "version": 1,
+   "updated_at": "2026-12-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Nextdoor neighbourhood posts",
+      "Thumbtack local leads",
+      "Chamber of commerce newsletter"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Facebook local community groups",
+      "Nextdoor UK street posts",
+      "Local parish newsletter ads"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Nextdoor Canada community posts",
+      "Local Facebook buy-and-sell groups",
+      "Chamber of commerce directory"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Nextdoor Australia neighbourhood posts",
+      "Local Facebook community groups",
+      "Council newsletter sponsorships"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "Facebook neighbourhood groups for HDB estates",
+      "WhatsApp business contact lists",
+      "Google Maps shop clusters in heartland malls"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Barangay community referrals",
+      "Google Maps shops along main roads",
+      "Viber neighbourhood groups"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-agt-callback-322",
+   "title": "Callback scheduler for plumbers",
+   "one_liner": "Salons, clinics and trades pay a setup fee plus retainer for a simple booking bot on WhatsApp or their site.",
+   "min_capital": 3830,
+   "capital_tier": "2k-10k",
+   "hours_per_week": "10-25",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU",
+    "SG",
+    "PH"
+   ],
+   "online_or_offline": "online",
+   "legal_blocks": [],
+   "skills_needed": [
+    "coding",
+    "basic_english"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "medium",
+   "payback_days": 45,
+   "recurring": true,
+   "channel_ids": [
+    "chamber",
+    "referral",
+    "facebook",
+    "google-maps"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Bot platform subscription",
+     "amount": 1340
+    },
+    {
+     "item": "Demo domain and hosting",
+     "amount": 958
+    },
+    {
+     "item": "Chamber membership and events",
+     "amount": 1532
+    }
+   ],
+   "steps": [
+    "Build one demo bot for a fake salon",
+    "Demo it to 15 firms at the chamber",
+    "Offer $410 setup + $55/month, 30-day tuning window",
+    "Map the firm's real booking rules first",
+    "Hand over an admin how-to sheet",
+    "Review transcripts weekly and fix gaps",
+    "Upsell a monthly transcript report"
+   ],
+   "pricing_hint": "$410 setup + $55/month",
+   "first_customers": [
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts"
+   ],
+   "pitfalls": [
+    "Show a demo, never experiment on clients",
+    "Get the owner's approval on every reply template",
+    "Keep a human handoff path always"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "bi-agent",
+   "trend_tags": [
+    "bi-agent",
+    "local",
+    "retainer",
+    "cb"
+   ],
+   "first_seen": "2026-12",
+   "maturity": "emerging",
+   "version": 1,
+   "updated_at": "2026-12-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Thumbtack local leads",
+      "Chamber of commerce newsletter",
+      "Google Maps 4-star shops with unanswered reviews"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Nextdoor UK street posts",
+      "Local parish newsletter ads",
+      "Google Maps high-street shops"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Local Facebook buy-and-sell groups",
+      "Chamber of commerce directory",
+      "Google Maps shops on main streets"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Local Facebook community groups",
+      "Council newsletter sponsorships",
+      "Google Maps suburban strip shops"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "WhatsApp business contact lists",
+      "Google Maps shop clusters in heartland malls",
+      "Facebook neighbourhood groups for HDB estates"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Google Maps shops along main roads",
+      "Viber neighbourhood groups",
+      "Facebook Marketplace local groups"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-agt-archive-323",
+   "title": "Job-photo archive agent for builders",
+   "one_liner": "Salons, clinics and trades pay a setup fee plus retainer for a simple booking bot on WhatsApp or their site.",
+   "min_capital": 12405,
+   "capital_tier": "10k+",
+   "hours_per_week": "full",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU",
+    "SG",
+    "PH"
+   ],
+   "online_or_offline": "offline",
+   "legal_blocks": [],
+   "skills_needed": [
+    "coding",
+    "basic_english"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "medium",
+   "payback_days": 60,
+   "recurring": true,
+   "channel_ids": [
+    "chamber",
+    "referral",
+    "facebook",
+    "google-maps"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Bot platform subscription",
+     "amount": 4342
+    },
+    {
+     "item": "Demo domain and hosting",
+     "amount": 3101
+    },
+    {
+     "item": "Chamber membership and events",
+     "amount": 4962
+    }
+   ],
+   "steps": [
+    "Build one demo bot for a fake salon",
+    "Demo it to 20 firms at the chamber",
+    "Offer $440 setup + $49/month, 30-day tuning window",
+    "Map the firm's real booking rules first",
+    "Hand over an admin how-to sheet",
+    "Review transcripts weekly and fix gaps",
+    "Upsell a monthly transcript report"
+   ],
+   "pricing_hint": "$440 setup + $49/month",
+   "first_customers": [
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads"
+   ],
+   "pitfalls": [
+    "Show a demo, never experiment on clients",
+    "Get the owner's approval on every reply template",
+    "Keep a human handoff path always"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "bi-agent",
+   "trend_tags": [
+    "bi-agent",
+    "local",
+    "retainer",
+    "archive"
+   ],
+   "first_seen": "2026-12",
+   "maturity": "growing",
+   "version": 1,
+   "updated_at": "2026-12-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Chamber of commerce newsletter",
+      "Google Maps 4-star shops with unanswered reviews",
+      "Nextdoor neighbourhood posts"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Local parish newsletter ads",
+      "Google Maps high-street shops",
+      "Facebook local community groups"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Chamber of commerce directory",
+      "Google Maps shops on main streets",
+      "Nextdoor Canada community posts"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Council newsletter sponsorships",
+      "Google Maps suburban strip shops",
+      "Nextdoor Australia neighbourhood posts"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "Google Maps shop clusters in heartland malls",
+      "Facebook neighbourhood groups for HDB estates",
+      "WhatsApp business contact lists"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Viber neighbourhood groups",
+      "Facebook Marketplace local groups",
+      "Barangay community referrals"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-agt-shift-324",
+   "title": "Shift-swap agent for care teams",
+   "one_liner": "Salons, clinics and trades pay a setup fee plus retainer for a simple booking bot on WhatsApp or their site.",
+   "min_capital": 305,
+   "capital_tier": "<500",
+   "hours_per_week": "<10",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "SG",
+    "PH"
+   ],
+   "online_or_offline": "hybrid",
+   "legal_blocks": [],
+   "skills_needed": [
+    "coding",
+    "basic_english"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "medium",
+   "payback_days": 30,
+   "recurring": true,
+   "channel_ids": [
+    "chamber",
+    "referral",
+    "facebook",
+    "google-maps"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Bot platform subscription",
+     "amount": 107
+    },
+    {
+     "item": "Demo domain and hosting",
+     "amount": 76
+    },
+    {
+     "item": "Chamber membership and events",
+     "amount": 122
+    }
+   ],
+   "steps": [
+    "Build one demo bot for a fake salon",
+    "Demo it to 5 firms at the chamber",
+    "Offer $370 setup + $49/month, 30-day tuning window",
+    "Map the firm's real booking rules first",
+    "Hand over an admin how-to sheet",
+    "Review transcripts weekly and fix gaps",
+    "Upsell a monthly transcript report"
+   ],
+   "pricing_hint": "$370 setup + $49/month",
+   "first_customers": [
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter"
+   ],
+   "pitfalls": [
+    "Show a demo, never experiment on clients",
+    "Get the owner's approval on every reply template",
+    "Keep a human handoff path always"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "bi-agent",
+   "trend_tags": [
+    "bi-agent",
+    "local",
+    "retainer",
+    "shift"
+   ],
+   "first_seen": "2026-12",
+   "maturity": "emerging",
+   "version": 1,
+   "updated_at": "2026-12-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Google Maps 4-star shops with unanswered reviews",
+      "Nextdoor neighbourhood posts",
+      "Thumbtack local leads"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Google Maps high-street shops",
+      "Facebook local community groups",
+      "Nextdoor UK street posts"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Google Maps shops on main streets",
+      "Nextdoor Canada community posts",
+      "Local Facebook buy-and-sell groups"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "Facebook neighbourhood groups for HDB estates",
+      "WhatsApp business contact lists",
+      "Google Maps shop clusters in heartland malls"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Facebook Marketplace local groups",
+      "Barangay community referrals",
+      "Google Maps shops along main roads"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-agt-order-325",
+   "title": "Takeaway order-taking agent for bistros",
+   "one_liner": "Salons, clinics and trades pay a setup fee plus retainer for a simple booking bot on WhatsApp or their site.",
+   "min_capital": 1390,
+   "capital_tier": "500-2k",
+   "hours_per_week": "10-25",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU",
+    "SG",
+    "PH"
+   ],
+   "online_or_offline": "online",
+   "legal_blocks": [],
+   "skills_needed": [
+    "coding",
+    "basic_english"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "medium",
+   "payback_days": 45,
+   "recurring": true,
+   "channel_ids": [
+    "chamber",
+    "referral",
+    "facebook",
+    "google-maps"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Bot platform subscription",
+     "amount": 486
+    },
+    {
+     "item": "Demo domain and hosting",
+     "amount": 348
+    },
+    {
+     "item": "Chamber membership and events",
+     "amount": 556
+    }
+   ],
+   "steps": [
+    "Build one demo bot for a fake salon",
+    "Demo it to 10 firms at the chamber",
+    "Offer $450 setup + $59/month, 30-day tuning window",
+    "Map the firm's real booking rules first",
+    "Hand over an admin how-to sheet",
+    "Review transcripts weekly and fix gaps",
+    "Upsell a monthly transcript report"
+   ],
+   "pricing_hint": "$450 setup + $59/month",
+   "first_customers": [
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews"
+   ],
+   "pitfalls": [
+    "Show a demo, never experiment on clients",
+    "Get the owner's approval on every reply template",
+    "Keep a human handoff path always"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "bi-agent",
+   "trend_tags": [
+    "bi-agent",
+    "local",
+    "retainer",
+    "order"
+   ],
+   "first_seen": "2026-12",
+   "maturity": "growing",
+   "version": 1,
+   "updated_at": "2026-12-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Nextdoor neighbourhood posts",
+      "Thumbtack local leads",
+      "Chamber of commerce newsletter"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Facebook local community groups",
+      "Nextdoor UK street posts",
+      "Local parish newsletter ads"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Nextdoor Canada community posts",
+      "Local Facebook buy-and-sell groups",
+      "Chamber of commerce directory"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Nextdoor Australia neighbourhood posts",
+      "Local Facebook community groups",
+      "Council newsletter sponsorships"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "WhatsApp business contact lists",
+      "Google Maps shop clusters in heartland malls",
+      "Facebook neighbourhood groups for HDB estates"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Barangay community referrals",
+      "Google Maps shops along main roads",
+      "Viber neighbourhood groups"
+     ]
+    }
+   }
+  }
+ ],
+ "revise": [
+  {
+   "id": "bs-svc-review-reply-001",
+   "maturity": "growing",
+   "version": 2,
+   "updated_at": "2026-12-01"
+  },
+  {
+   "id": "bs-onl-product-photo-088",
+   "pricing_hint": "$15 per product, 5 photos",
+   "version": 2,
+   "updated_at": "2026-12-01"
+  },
+  {
+   "id": "bs-hnd-market-stall-263",
+   "channel_ids": [
+    "walk-in",
+    "facebook",
+    "local-groups",
+    "whatsapp"
+   ],
+   "version": 2,
+   "updated_at": "2026-12-01"
+  },
+  {
+   "id": "bs-b2b-google-maps-setup-175",
+   "first_customers": [
+    "Google Maps clinics with incomplete profiles",
+    "Chamber of commerce newsletter",
+    "Walk-in visits on quiet afternoons"
+   ],
+   "version": 2,
+   "updated_at": "2026-12-01"
+  },
+  {
+   "id": "bs-cnt-template-packs-219",
+   "compliance_note": "US: check sales-tax rules for digital goods.",
+   "version": 2,
+   "updated_at": "2026-12-01"
+  }
+ ],
+ "retire": [
+  "bs-onl-transcription-local-139"
+ ]
+}

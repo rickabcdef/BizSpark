@@ -1,0 +1,1196 @@
+{
+ "industry": "appliance-tuneup",
+ "count": 10,
+ "ideas": [
+  {
+   "id": "bs-svc-appliance-tuneup-078",
+   "title": "Appliance tune-up and safety check visits",
+   "one_liner": "Landlords pay for yearly dryer and dishwasher safety tune-ups with a written check sheet.",
+   "min_capital": 300,
+   "capital_tier": "<500",
+   "hours_per_week": "10-25",
+   "countries": [
+    "US",
+    "UK",
+    "AU",
+    "SG"
+   ],
+   "online_or_offline": "offline",
+   "legal_blocks": [],
+   "skills_needed": [
+    "handyman"
+   ],
+   "assets_needed": [
+    "car"
+   ],
+   "risk_level": "medium",
+   "payback_days": 60,
+   "recurring": true,
+   "channel_ids": [
+    "referral",
+    "nextdoor",
+    "chamber",
+    "facebook"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Basic tools and multimeter",
+     "amount": 105
+    },
+    {
+     "item": "Filters and spare parts stock",
+     "amount": 120
+    },
+    {
+     "item": "Printed safety-check certificates",
+     "amount": 75
+    }
+   ],
+   "steps": [
+    "List 30 appliances you can service confidently",
+    "Print a one-page safety checklist",
+    "Offer $69 filter-swap service to landlord groups",
+    "Post the offer in landlord groups",
+    "Service 3 units per morning round",
+    "Leave a written safety sheet per job",
+    "Book annual return visits on the spot"
+   ],
+   "pricing_hint": "$69 filter-swap service",
+   "first_customers": [
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews"
+   ],
+   "pitfalls": [
+    "Never work on gas appliances unlicensed",
+    "Photograph faults before repairs",
+    "Decline jobs beyond your tool set"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "local-service",
+   "trend_tags": [
+    "local-service",
+    "property"
+   ],
+   "first_seen": "2024-06",
+   "maturity": "saturated",
+   "version": 1,
+   "updated_at": "2026-01-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Nextdoor neighbourhood posts",
+      "Thumbtack local leads",
+      "Chamber of commerce newsletter"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Facebook local community groups",
+      "Nextdoor UK street posts",
+      "Local parish newsletter ads"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Nextdoor Australia neighbourhood posts",
+      "Local Facebook community groups",
+      "Council newsletter sponsorships"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "Google Maps shop clusters in heartland malls",
+      "Facebook neighbourhood groups for HDB estates",
+      "WhatsApp business contact lists"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-svc-appliance-tuneup-079",
+   "title": "Appliance tune-up and safety check visits",
+   "one_liner": "Landlords pay for yearly dryer and dishwasher safety tune-ups with a written check sheet.",
+   "min_capital": 395,
+   "capital_tier": "<500",
+   "hours_per_week": "<10",
+   "countries": [
+    "UK",
+    "AU",
+    "SG"
+   ],
+   "online_or_offline": "offline",
+   "legal_blocks": [],
+   "skills_needed": [
+    "handyman"
+   ],
+   "assets_needed": [
+    "car"
+   ],
+   "risk_level": "medium",
+   "payback_days": 30,
+   "recurring": true,
+   "channel_ids": [
+    "referral",
+    "nextdoor",
+    "chamber",
+    "facebook"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Basic tools and multimeter",
+     "amount": 138
+    },
+    {
+     "item": "Filters and spare parts stock",
+     "amount": 158
+    },
+    {
+     "item": "Printed safety-check certificates",
+     "amount": 99
+    }
+   ],
+   "steps": [
+    "List 5 appliances you can service confidently",
+    "Print a one-page safety checklist",
+    "Offer $89 per appliance safety visit to landlord groups",
+    "Post the offer in landlord groups",
+    "Service 3 units per morning round",
+    "Leave a written safety sheet per job",
+    "Book annual return visits on the spot"
+   ],
+   "pricing_hint": "$89 per appliance safety visit",
+   "first_customers": [
+    "Nextdoor UK street posts",
+    "Local parish newsletter ads",
+    "Google Maps high-street shops",
+    "Facebook local community groups"
+   ],
+   "pitfalls": [
+    "Never work on gas appliances unlicensed",
+    "Photograph faults before repairs",
+    "Decline jobs beyond your tool set"
+   ],
+   "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+   "wave": "local-service",
+   "trend_tags": [
+    "local-service",
+    "property"
+   ],
+   "first_seen": "2025-07",
+   "maturity": "growing",
+   "version": 1,
+   "updated_at": "2026-02-01",
+   "status": "active",
+   "overrides": {
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Nextdoor UK street posts",
+      "Local parish newsletter ads",
+      "Google Maps high-street shops"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Local Facebook community groups",
+      "Council newsletter sponsorships",
+      "Google Maps suburban strip shops"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "Facebook neighbourhood groups for HDB estates",
+      "WhatsApp business contact lists",
+      "Google Maps shop clusters in heartland malls"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-svc-appliance-tuneup-080",
+   "title": "Appliance tune-up and safety check visits",
+   "one_liner": "Landlords pay for yearly dryer and dishwasher safety tune-ups with a written check sheet.",
+   "min_capital": 45,
+   "capital_tier": "<500",
+   "hours_per_week": "<10",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU",
+    "SG"
+   ],
+   "online_or_offline": "offline",
+   "legal_blocks": [],
+   "skills_needed": [
+    "handyman"
+   ],
+   "assets_needed": [
+    "car"
+   ],
+   "risk_level": "medium",
+   "payback_days": 45,
+   "recurring": true,
+   "channel_ids": [
+    "referral",
+    "nextdoor",
+    "chamber",
+    "facebook"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Basic tools and multimeter",
+     "amount": 16
+    },
+    {
+     "item": "Filters and spare parts stock",
+     "amount": 18
+    },
+    {
+     "item": "Printed safety-check certificates",
+     "amount": 11
+    }
+   ],
+   "steps": [
+    "List 10 appliances you can service confidently",
+    "Print a one-page safety checklist",
+    "Offer $149 annual two-appliance plan to landlord groups",
+    "Post the offer in landlord groups",
+    "Service 3 units per morning round",
+    "Leave a written safety sheet per job",
+    "Book annual return visits on the spot"
+   ],
+   "pricing_hint": "$149 annual two-appliance plan",
+   "first_customers": [
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads"
+   ],
+   "pitfalls": [
+    "Never work on gas appliances unlicensed",
+    "Photograph faults before repairs",
+    "Decline jobs beyond your tool set"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "local-service",
+   "trend_tags": [
+    "local-service",
+    "property"
+   ],
+   "first_seen": "2024-08",
+   "maturity": "growing",
+   "version": 1,
+   "updated_at": "2026-03-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Chamber of commerce newsletter",
+      "Google Maps 4-star shops with unanswered reviews",
+      "Nextdoor neighbourhood posts"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Local parish newsletter ads",
+      "Google Maps high-street shops",
+      "Facebook local community groups"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Chamber of commerce directory",
+      "Google Maps shops on main streets",
+      "Nextdoor Canada community posts"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Council newsletter sponsorships",
+      "Google Maps suburban strip shops",
+      "Nextdoor Australia neighbourhood posts"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "WhatsApp business contact lists",
+      "Google Maps shop clusters in heartland malls",
+      "Facebook neighbourhood groups for HDB estates"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-svc-appliance-tuneup-081",
+   "title": "Appliance tune-up and safety check visits",
+   "one_liner": "Landlords pay for yearly dryer and dishwasher safety tune-ups with a written check sheet.",
+   "min_capital": 1380,
+   "capital_tier": "500-2k",
+   "hours_per_week": "full",
+   "countries": [
+    "UK",
+    "CA",
+    "AU"
+   ],
+   "online_or_offline": "offline",
+   "legal_blocks": [],
+   "skills_needed": [
+    "handyman"
+   ],
+   "assets_needed": [
+    "car"
+   ],
+   "risk_level": "medium",
+   "payback_days": 60,
+   "recurring": true,
+   "channel_ids": [
+    "referral",
+    "nextdoor",
+    "chamber",
+    "facebook"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Basic tools and multimeter",
+     "amount": 483
+    },
+    {
+     "item": "Filters and spare parts stock",
+     "amount": 552
+    },
+    {
+     "item": "Printed safety-check certificates",
+     "amount": 345
+    }
+   ],
+   "steps": [
+    "List 15 appliances you can service confidently",
+    "Print a one-page safety checklist",
+    "Offer $69 filter-swap service to landlord groups",
+    "Post the offer in landlord groups",
+    "Service 3 units per morning round",
+    "Leave a written safety sheet per job",
+    "Book annual return visits on the spot"
+   ],
+   "pricing_hint": "$69 filter-swap service",
+   "first_customers": [
+    "Google Maps high-street shops",
+    "Facebook local community groups",
+    "Nextdoor UK street posts",
+    "Local parish newsletter ads"
+   ],
+   "pitfalls": [
+    "Never work on gas appliances unlicensed",
+    "Photograph faults before repairs",
+    "Decline jobs beyond your tool set"
+   ],
+   "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+   "wave": "local-service",
+   "trend_tags": [
+    "local-service",
+    "property"
+   ],
+   "first_seen": "2024-09",
+   "maturity": "growing",
+   "version": 1,
+   "updated_at": "2026-04-01",
+   "status": "active",
+   "overrides": {
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Google Maps high-street shops",
+      "Facebook local community groups",
+      "Nextdoor UK street posts"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Google Maps shops on main streets",
+      "Nextdoor Canada community posts",
+      "Local Facebook buy-and-sell groups"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Google Maps suburban strip shops",
+      "Nextdoor Australia neighbourhood posts",
+      "Local Facebook community groups"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-svc-appliance-tuneup-082",
+   "title": "Appliance tune-up and safety check visits",
+   "one_liner": "Landlords pay for yearly dryer and dishwasher safety tune-ups with a written check sheet.",
+   "min_capital": 235,
+   "capital_tier": "<500",
+   "hours_per_week": "10-25",
+   "countries": [
+    "US",
+    "UK",
+    "SG"
+   ],
+   "online_or_offline": "offline",
+   "legal_blocks": [],
+   "skills_needed": [
+    "handyman"
+   ],
+   "assets_needed": [
+    "car"
+   ],
+   "risk_level": "medium",
+   "payback_days": 30,
+   "recurring": true,
+   "channel_ids": [
+    "referral",
+    "nextdoor",
+    "chamber",
+    "facebook"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Basic tools and multimeter",
+     "amount": 82
+    },
+    {
+     "item": "Filters and spare parts stock",
+     "amount": 94
+    },
+    {
+     "item": "Printed safety-check certificates",
+     "amount": 59
+    }
+   ],
+   "steps": [
+    "List 20 appliances you can service confidently",
+    "Print a one-page safety checklist",
+    "Offer $89 per appliance safety visit to landlord groups",
+    "Post the offer in landlord groups",
+    "Service 3 units per morning round",
+    "Leave a written safety sheet per job",
+    "Book annual return visits on the spot"
+   ],
+   "pricing_hint": "$89 per appliance safety visit",
+   "first_customers": [
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews"
+   ],
+   "pitfalls": [
+    "Never work on gas appliances unlicensed",
+    "Photograph faults before repairs",
+    "Decline jobs beyond your tool set"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "local-service",
+   "trend_tags": [
+    "local-service",
+    "property"
+   ],
+   "first_seen": "2025-10",
+   "maturity": "mature",
+   "version": 1,
+   "updated_at": "2026-05-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Nextdoor neighbourhood posts",
+      "Thumbtack local leads",
+      "Chamber of commerce newsletter"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Facebook local community groups",
+      "Nextdoor UK street posts",
+      "Local parish newsletter ads"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "Facebook neighbourhood groups for HDB estates",
+      "WhatsApp business contact lists",
+      "Google Maps shop clusters in heartland malls"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-svc-appliance-tuneup-083",
+   "title": "Appliance tune-up and safety check visits (east)",
+   "one_liner": "Landlords pay for yearly dryer and dishwasher safety tune-ups with a written check sheet.",
+   "min_capital": 1575,
+   "capital_tier": "500-2k",
+   "hours_per_week": "10-25",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "SG",
+    "PH"
+   ],
+   "online_or_offline": "offline",
+   "legal_blocks": [],
+   "skills_needed": [
+    "handyman"
+   ],
+   "assets_needed": [
+    "car"
+   ],
+   "risk_level": "medium",
+   "payback_days": 45,
+   "recurring": true,
+   "channel_ids": [
+    "referral",
+    "nextdoor",
+    "chamber",
+    "facebook"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Basic tools and multimeter",
+     "amount": 551
+    },
+    {
+     "item": "Filters and spare parts stock",
+     "amount": 630
+    },
+    {
+     "item": "Printed safety-check certificates",
+     "amount": 394
+    }
+   ],
+   "steps": [
+    "List 25 appliances you can service confidently",
+    "Print a one-page safety checklist",
+    "Offer $149 annual two-appliance plan to landlord groups",
+    "Post the offer in landlord groups",
+    "Service 3 units per morning round",
+    "Leave a written safety sheet per job",
+    "Book annual return visits on the spot"
+   ],
+   "pricing_hint": "$149 annual two-appliance plan",
+   "first_customers": [
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts"
+   ],
+   "pitfalls": [
+    "Never work on gas appliances unlicensed",
+    "Photograph faults before repairs",
+    "Decline jobs beyond your tool set"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "local-service",
+   "trend_tags": [
+    "local-service",
+    "property"
+   ],
+   "first_seen": "2024-11",
+   "maturity": "mature",
+   "version": 1,
+   "updated_at": "2026-06-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Thumbtack local leads",
+      "Chamber of commerce newsletter",
+      "Google Maps 4-star shops with unanswered reviews"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Nextdoor UK street posts",
+      "Local parish newsletter ads",
+      "Google Maps high-street shops"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Local Facebook buy-and-sell groups",
+      "Chamber of commerce directory",
+      "Google Maps shops on main streets"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "WhatsApp business contact lists",
+      "Google Maps shop clusters in heartland malls",
+      "Facebook neighbourhood groups for HDB estates"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Google Maps shops along main roads",
+      "Viber neighbourhood groups",
+      "Facebook Marketplace local groups"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-svc-appliance-tuneup-084",
+   "title": "Appliance tune-up and safety check visits",
+   "one_liner": "Landlords pay for yearly dryer and dishwasher safety tune-ups with a written check sheet.",
+   "min_capital": 1670,
+   "capital_tier": "500-2k",
+   "hours_per_week": "full",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU",
+    "SG",
+    "PH"
+   ],
+   "online_or_offline": "hybrid",
+   "legal_blocks": [],
+   "skills_needed": [
+    "handyman"
+   ],
+   "assets_needed": [
+    "car"
+   ],
+   "risk_level": "medium",
+   "payback_days": 60,
+   "recurring": true,
+   "channel_ids": [
+    "referral",
+    "nextdoor",
+    "chamber",
+    "facebook"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Basic tools and multimeter",
+     "amount": 584
+    },
+    {
+     "item": "Filters and spare parts stock",
+     "amount": 668
+    },
+    {
+     "item": "Printed safety-check certificates",
+     "amount": 418
+    }
+   ],
+   "steps": [
+    "List 30 appliances you can service confidently",
+    "Print a one-page safety checklist",
+    "Offer $69 filter-swap service to landlord groups",
+    "Post the offer in landlord groups",
+    "Service 3 units per morning round",
+    "Leave a written safety sheet per job",
+    "Book annual return visits on the spot"
+   ],
+   "pricing_hint": "$69 filter-swap service",
+   "first_customers": [
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads"
+   ],
+   "pitfalls": [
+    "Never work on gas appliances unlicensed",
+    "Photograph faults before repairs",
+    "Decline jobs beyond your tool set"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "local-service",
+   "trend_tags": [
+    "local-service",
+    "property"
+   ],
+   "first_seen": "2024-12",
+   "maturity": "mature",
+   "version": 1,
+   "updated_at": "2026-07-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Chamber of commerce newsletter",
+      "Google Maps 4-star shops with unanswered reviews",
+      "Nextdoor neighbourhood posts"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Local parish newsletter ads",
+      "Google Maps high-street shops",
+      "Facebook local community groups"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Chamber of commerce directory",
+      "Google Maps shops on main streets",
+      "Nextdoor Canada community posts"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Council newsletter sponsorships",
+      "Google Maps suburban strip shops",
+      "Nextdoor Australia neighbourhood posts"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "Google Maps shop clusters in heartland malls",
+      "Facebook neighbourhood groups for HDB estates",
+      "WhatsApp business contact lists"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Viber neighbourhood groups",
+      "Facebook Marketplace local groups",
+      "Barangay community referrals"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-svc-appliance-tuneup-085",
+   "title": "Appliance tune-up and safety check visits",
+   "one_liner": "Landlords pay for yearly dryer and dishwasher safety tune-ups with a written check sheet.",
+   "min_capital": 80,
+   "capital_tier": "<500",
+   "hours_per_week": "<10",
+   "countries": [
+    "US",
+    "UK",
+    "CA"
+   ],
+   "online_or_offline": "offline",
+   "legal_blocks": [],
+   "skills_needed": [
+    "handyman"
+   ],
+   "assets_needed": [
+    "car"
+   ],
+   "risk_level": "medium",
+   "payback_days": 30,
+   "recurring": true,
+   "channel_ids": [
+    "referral",
+    "nextdoor",
+    "chamber",
+    "facebook"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Basic tools and multimeter",
+     "amount": 28
+    },
+    {
+     "item": "Filters and spare parts stock",
+     "amount": 32
+    },
+    {
+     "item": "Printed safety-check certificates",
+     "amount": 20
+    }
+   ],
+   "steps": [
+    "List 5 appliances you can service confidently",
+    "Print a one-page safety checklist",
+    "Offer $89 per appliance safety visit to landlord groups",
+    "Post the offer in landlord groups",
+    "Service 3 units per morning round",
+    "Leave a written safety sheet per job",
+    "Book annual return visits on the spot"
+   ],
+   "pricing_hint": "$89 per appliance safety visit",
+   "first_customers": [
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter"
+   ],
+   "pitfalls": [
+    "Never work on gas appliances unlicensed",
+    "Photograph faults before repairs",
+    "Decline jobs beyond your tool set"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "local-service",
+   "trend_tags": [
+    "local-service",
+    "property"
+   ],
+   "first_seen": "2025-01",
+   "maturity": "saturated",
+   "version": 1,
+   "updated_at": "2026-08-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Google Maps 4-star shops with unanswered reviews",
+      "Nextdoor neighbourhood posts",
+      "Thumbtack local leads"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Google Maps high-street shops",
+      "Facebook local community groups",
+      "Nextdoor UK street posts"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Google Maps shops on main streets",
+      "Nextdoor Canada community posts",
+      "Local Facebook buy-and-sell groups"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-svc-appliance-tuneup-086",
+   "title": "Appliance tune-up and safety check visits",
+   "one_liner": "Landlords pay for yearly dryer and dishwasher safety tune-ups with a written check sheet.",
+   "min_capital": 175,
+   "capital_tier": "<500",
+   "hours_per_week": "full",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU",
+    "SG",
+    "PH"
+   ],
+   "online_or_offline": "hybrid",
+   "legal_blocks": [],
+   "skills_needed": [
+    "handyman"
+   ],
+   "assets_needed": [
+    "car"
+   ],
+   "risk_level": "medium",
+   "payback_days": 45,
+   "recurring": true,
+   "channel_ids": [
+    "referral",
+    "nextdoor",
+    "chamber",
+    "facebook"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Basic tools and multimeter",
+     "amount": 61
+    },
+    {
+     "item": "Filters and spare parts stock",
+     "amount": 70
+    },
+    {
+     "item": "Printed safety-check certificates",
+     "amount": 44
+    }
+   ],
+   "steps": [
+    "List 10 appliances you can service confidently",
+    "Print a one-page safety checklist",
+    "Offer $149 annual two-appliance plan to landlord groups",
+    "Post the offer in landlord groups",
+    "Service 3 units per morning round",
+    "Leave a written safety sheet per job",
+    "Book annual return visits on the spot"
+   ],
+   "pricing_hint": "$149 annual two-appliance plan",
+   "first_customers": [
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews"
+   ],
+   "pitfalls": [
+    "Never work on gas appliances unlicensed",
+    "Photograph faults before repairs",
+    "Decline jobs beyond your tool set"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "local-service",
+   "trend_tags": [
+    "local-service",
+    "property"
+   ],
+   "first_seen": "2024-02",
+   "maturity": "mature",
+   "version": 1,
+   "updated_at": "2026-09-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Nextdoor neighbourhood posts",
+      "Thumbtack local leads",
+      "Chamber of commerce newsletter"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Facebook local community groups",
+      "Nextdoor UK street posts",
+      "Local parish newsletter ads"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Nextdoor Canada community posts",
+      "Local Facebook buy-and-sell groups",
+      "Chamber of commerce directory"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Nextdoor Australia neighbourhood posts",
+      "Local Facebook community groups",
+      "Council newsletter sponsorships"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "WhatsApp business contact lists",
+      "Google Maps shop clusters in heartland malls",
+      "Facebook neighbourhood groups for HDB estates"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Barangay community referrals",
+      "Google Maps shops along main roads",
+      "Viber neighbourhood groups"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-svc-appliance-tuneup-087",
+   "title": "Appliance tune-up and safety check visits",
+   "one_liner": "Landlords pay for yearly dryer and dishwasher safety tune-ups with a written check sheet.",
+   "min_capital": 3540,
+   "capital_tier": "2k-10k",
+   "hours_per_week": "10-25",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU",
+    "SG",
+    "PH"
+   ],
+   "online_or_offline": "hybrid",
+   "legal_blocks": [],
+   "skills_needed": [
+    "handyman"
+   ],
+   "assets_needed": [
+    "car"
+   ],
+   "risk_level": "medium",
+   "payback_days": 60,
+   "recurring": true,
+   "channel_ids": [
+    "referral",
+    "nextdoor",
+    "chamber",
+    "facebook"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Basic tools and multimeter",
+     "amount": 1239
+    },
+    {
+     "item": "Filters and spare parts stock",
+     "amount": 1416
+    },
+    {
+     "item": "Printed safety-check certificates",
+     "amount": 885
+    }
+   ],
+   "steps": [
+    "List 15 appliances you can service confidently",
+    "Print a one-page safety checklist",
+    "Offer $69 filter-swap service to landlord groups",
+    "Post the offer in landlord groups",
+    "Service 3 units per morning round",
+    "Leave a written safety sheet per job",
+    "Book annual return visits on the spot"
+   ],
+   "pricing_hint": "$69 filter-swap service",
+   "first_customers": [
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts"
+   ],
+   "pitfalls": [
+    "Never work on gas appliances unlicensed",
+    "Photograph faults before repairs",
+    "Decline jobs beyond your tool set"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "local-service",
+   "trend_tags": [
+    "local-service",
+    "property"
+   ],
+   "first_seen": "2024-03",
+   "maturity": "emerging",
+   "version": 1,
+   "updated_at": "2026-10-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Thumbtack local leads",
+      "Chamber of commerce newsletter",
+      "Google Maps 4-star shops with unanswered reviews"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Nextdoor UK street posts",
+      "Local parish newsletter ads",
+      "Google Maps high-street shops"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Local Facebook buy-and-sell groups",
+      "Chamber of commerce directory",
+      "Google Maps shops on main streets"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Local Facebook community groups",
+      "Council newsletter sponsorships",
+      "Google Maps suburban strip shops"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "Google Maps shop clusters in heartland malls",
+      "Facebook neighbourhood groups for HDB estates",
+      "WhatsApp business contact lists"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Google Maps shops along main roads",
+      "Viber neighbourhood groups",
+      "Facebook Marketplace local groups"
+     ]
+    }
+   }
+  }
+ ]
+}

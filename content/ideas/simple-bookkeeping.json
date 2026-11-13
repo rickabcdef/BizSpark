@@ -1,0 +1,1301 @@
+{
+ "industry": "simple-bookkeeping",
+ "count": 11,
+ "ideas": [
+  {
+   "id": "bs-b2b-simple-bookkeeping-186",
+   "title": "Monthly bookkeeping for micro firms (hillside)",
+   "one_liner": "Micro businesses pay a fixed monthly fee to have receipts categorised and a simple monthly P&L sent over.",
+   "min_capital": 13445,
+   "capital_tier": "10k+",
+   "hours_per_week": "10-25",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU",
+    "SG",
+    "PH"
+   ],
+   "online_or_offline": "online",
+   "legal_blocks": [],
+   "skills_needed": [
+    "basic_english"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "medium",
+   "payback_days": 45,
+   "recurring": true,
+   "channel_ids": [
+    "chamber",
+    "referral",
+    "facebook",
+    "local-groups"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Bookkeeping software subscription",
+     "amount": 5378
+    },
+    {
+     "item": "Bookkeeping basics course",
+     "amount": 4034
+    },
+    {
+     "item": "Professional indemnity insurance",
+     "amount": 4033
+    }
+   ],
+   "steps": [
+    "Do one friend's books free for a month",
+    "Set up a receipt-capture workflow",
+    "Offer $45 one-off cleanup hour to chamber members",
+    "Collect statements read-only access",
+    "Categorise weekly, reconcile monthly",
+    "Send a one-page P&L every month-end",
+    "Ask for an accountant referral"
+   ],
+   "pricing_hint": "$45 one-off cleanup hour",
+   "first_customers": [
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews"
+   ],
+   "pitfalls": [
+    "Never give tax advice — refer out",
+    "Keep client data on encrypted drives",
+    "Agree the cutoff date in writing"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "digital-product",
+   "trend_tags": [
+    "b2b",
+    "finance"
+   ],
+   "first_seen": "2024-06",
+   "maturity": "emerging",
+   "version": 1,
+   "updated_at": "2026-10-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Nextdoor neighbourhood posts",
+      "Thumbtack local leads",
+      "Chamber of commerce newsletter"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Facebook local community groups",
+      "Nextdoor UK street posts",
+      "Local parish newsletter ads"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Nextdoor Canada community posts",
+      "Local Facebook buy-and-sell groups",
+      "Chamber of commerce directory"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Nextdoor Australia neighbourhood posts",
+      "Local Facebook community groups",
+      "Council newsletter sponsorships"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "Google Maps shop clusters in heartland malls",
+      "Facebook neighbourhood groups for HDB estates",
+      "WhatsApp business contact lists"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Barangay community referrals",
+      "Google Maps shops along main roads",
+      "Viber neighbourhood groups"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-b2b-simple-bookkeeping-187",
+   "title": "Monthly bookkeeping for micro firms (central)",
+   "one_liner": "Micro businesses pay a fixed monthly fee to have receipts categorised and a simple monthly P&L sent over.",
+   "min_capital": 13540,
+   "capital_tier": "10k+",
+   "hours_per_week": "<10",
+   "countries": [
+    "US",
+    "UK"
+   ],
+   "online_or_offline": "hybrid",
+   "legal_blocks": [],
+   "skills_needed": [
+    "basic_english"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "medium",
+   "payback_days": 21,
+   "recurring": true,
+   "channel_ids": [
+    "chamber",
+    "referral",
+    "facebook",
+    "local-groups"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Bookkeeping software subscription",
+     "amount": 5416
+    },
+    {
+     "item": "Bookkeeping basics course",
+     "amount": 4062
+    },
+    {
+     "item": "Professional indemnity insurance",
+     "amount": 4062
+    }
+   ],
+   "steps": [
+    "Do one friend's books free for a month",
+    "Set up a receipt-capture workflow",
+    "Offer $140/month cash-basis bookkeeping to chamber members",
+    "Collect statements read-only access",
+    "Categorise weekly, reconcile monthly",
+    "Send a one-page P&L every month-end",
+    "Ask for an accountant referral"
+   ],
+   "pricing_hint": "$140/month cash-basis bookkeeping",
+   "first_customers": [
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts"
+   ],
+   "pitfalls": [
+    "Never give tax advice — refer out",
+    "Keep client data on encrypted drives",
+    "Agree the cutoff date in writing"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "digital-product",
+   "trend_tags": [
+    "b2b",
+    "finance"
+   ],
+   "first_seen": "2025-07",
+   "maturity": "growing",
+   "version": 1,
+   "updated_at": "2026-11-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Thumbtack local leads",
+      "Chamber of commerce newsletter",
+      "Google Maps 4-star shops with unanswered reviews"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Nextdoor UK street posts",
+      "Local parish newsletter ads",
+      "Google Maps high-street shops"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-b2b-simple-bookkeeping-188",
+   "title": "Monthly bookkeeping for micro firms (bayside)",
+   "one_liner": "Micro businesses pay a fixed monthly fee to have receipts categorised and a simple monthly P&L sent over.",
+   "min_capital": 170,
+   "capital_tier": "<500",
+   "hours_per_week": "<10",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU",
+    "SG"
+   ],
+   "online_or_offline": "online",
+   "legal_blocks": [],
+   "skills_needed": [
+    "basic_english"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "medium",
+   "payback_days": 30,
+   "recurring": true,
+   "channel_ids": [
+    "chamber",
+    "referral",
+    "facebook",
+    "local-groups"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Bookkeeping software subscription",
+     "amount": 68
+    },
+    {
+     "item": "Bookkeeping basics course",
+     "amount": 51
+    },
+    {
+     "item": "Professional indemnity insurance",
+     "amount": 51
+    }
+   ],
+   "steps": [
+    "Do one friend's books free for a month",
+    "Set up a receipt-capture workflow",
+    "Offer $99/month, small firms to chamber members",
+    "Collect statements read-only access",
+    "Categorise weekly, reconcile monthly",
+    "Send a one-page P&L every month-end",
+    "Ask for an accountant referral"
+   ],
+   "pricing_hint": "$99/month, small firms",
+   "first_customers": [
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads"
+   ],
+   "pitfalls": [
+    "Never give tax advice — refer out",
+    "Keep client data on encrypted drives",
+    "Agree the cutoff date in writing"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "digital-product",
+   "trend_tags": [
+    "b2b",
+    "finance"
+   ],
+   "first_seen": "2024-08",
+   "maturity": "mature",
+   "version": 1,
+   "updated_at": "2026-01-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Chamber of commerce newsletter",
+      "Google Maps 4-star shops with unanswered reviews",
+      "Nextdoor neighbourhood posts"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Local parish newsletter ads",
+      "Google Maps high-street shops",
+      "Facebook local community groups"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Chamber of commerce directory",
+      "Google Maps shops on main streets",
+      "Nextdoor Canada community posts"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Council newsletter sponsorships",
+      "Google Maps suburban strip shops",
+      "Nextdoor Australia neighbourhood posts"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "WhatsApp business contact lists",
+      "Google Maps shop clusters in heartland malls",
+      "Facebook neighbourhood groups for HDB estates"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-b2b-simple-bookkeeping-189",
+   "title": "Monthly bookkeeping for micro firms (market)",
+   "one_liner": "Micro businesses pay a fixed monthly fee to have receipts categorised and a simple monthly P&L sent over.",
+   "min_capital": 6535,
+   "capital_tier": "2k-10k",
+   "hours_per_week": "full",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU",
+    "PH"
+   ],
+   "online_or_offline": "online",
+   "legal_blocks": [],
+   "skills_needed": [
+    "basic_english"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "medium",
+   "payback_days": 45,
+   "recurring": true,
+   "channel_ids": [
+    "chamber",
+    "referral",
+    "facebook",
+    "local-groups"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Bookkeeping software subscription",
+     "amount": 2614
+    },
+    {
+     "item": "Bookkeeping basics course",
+     "amount": 1960
+    },
+    {
+     "item": "Professional indemnity insurance",
+     "amount": 1961
+    }
+   ],
+   "steps": [
+    "Do one friend's books free for a month",
+    "Set up a receipt-capture workflow",
+    "Offer $45 one-off cleanup hour to chamber members",
+    "Collect statements read-only access",
+    "Categorise weekly, reconcile monthly",
+    "Send a one-page P&L every month-end",
+    "Ask for an accountant referral"
+   ],
+   "pricing_hint": "$45 one-off cleanup hour",
+   "first_customers": [
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter"
+   ],
+   "pitfalls": [
+    "Never give tax advice — refer out",
+    "Keep client data on encrypted drives",
+    "Agree the cutoff date in writing"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "digital-product",
+   "trend_tags": [
+    "b2b",
+    "finance"
+   ],
+   "first_seen": "2024-09",
+   "maturity": "mature",
+   "version": 1,
+   "updated_at": "2026-02-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Google Maps 4-star shops with unanswered reviews",
+      "Nextdoor neighbourhood posts",
+      "Thumbtack local leads"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Google Maps high-street shops",
+      "Facebook local community groups",
+      "Nextdoor UK street posts"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Google Maps shops on main streets",
+      "Nextdoor Canada community posts",
+      "Local Facebook buy-and-sell groups"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Google Maps suburban strip shops",
+      "Nextdoor Australia neighbourhood posts",
+      "Local Facebook community groups"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Facebook Marketplace local groups",
+      "Barangay community referrals",
+      "Google Maps shops along main roads"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-b2b-simple-bookkeeping-190",
+   "title": "Monthly bookkeeping for micro firms(lakeside)",
+   "one_liner": "Micro businesses pay a fixed monthly fee to have receipts categorised and a simple monthly P&L sent over.",
+   "min_capital": 13835,
+   "capital_tier": "10k+",
+   "hours_per_week": "10-25",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU",
+    "SG"
+   ],
+   "online_or_offline": "online",
+   "legal_blocks": [],
+   "skills_needed": [
+    "basic_english"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "medium",
+   "payback_days": 21,
+   "recurring": true,
+   "channel_ids": [
+    "chamber",
+    "referral",
+    "facebook",
+    "local-groups"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Bookkeeping software subscription",
+     "amount": 5534
+    },
+    {
+     "item": "Bookkeeping basics course",
+     "amount": 4150
+    },
+    {
+     "item": "Professional indemnity insurance",
+     "amount": 4151
+    }
+   ],
+   "steps": [
+    "Do one friend's books free for a month",
+    "Set up a receipt-capture workflow",
+    "Offer $140/month cash-basis bookkeeping to chamber members",
+    "Collect statements read-only access",
+    "Categorise weekly, reconcile monthly",
+    "Send a one-page P&L every month-end",
+    "Ask for an accountant referral"
+   ],
+   "pricing_hint": "$140/month cash-basis bookkeeping",
+   "first_customers": [
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews"
+   ],
+   "pitfalls": [
+    "Never give tax advice — refer out",
+    "Keep client data on encrypted drives",
+    "Agree the cutoff date in writing"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "digital-product",
+   "trend_tags": [
+    "b2b",
+    "finance"
+   ],
+   "first_seen": "2025-10",
+   "maturity": "saturated",
+   "version": 1,
+   "updated_at": "2026-03-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Nextdoor neighbourhood posts",
+      "Thumbtack local leads",
+      "Chamber of commerce newsletter"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Facebook local community groups",
+      "Nextdoor UK street posts",
+      "Local parish newsletter ads"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Nextdoor Canada community posts",
+      "Local Facebook buy-and-sell groups",
+      "Chamber of commerce directory"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Nextdoor Australia neighbourhood posts",
+      "Local Facebook community groups",
+      "Council newsletter sponsorships"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "Facebook neighbourhood groups for HDB estates",
+      "WhatsApp business contact lists",
+      "Google Maps shop clusters in heartland malls"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-b2b-simple-bookkeeping-191",
+   "title": "Monthly bookkeeping for micro firms",
+   "one_liner": "Micro businesses pay a fixed monthly fee to have receipts categorised and a simple monthly P&L sent over.",
+   "min_capital": 13930,
+   "capital_tier": "10k+",
+   "hours_per_week": "10-25",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "SG",
+    "PH"
+   ],
+   "online_or_offline": "online",
+   "legal_blocks": [],
+   "skills_needed": [
+    "basic_english"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "medium",
+   "payback_days": 30,
+   "recurring": true,
+   "channel_ids": [
+    "chamber",
+    "referral",
+    "facebook",
+    "local-groups"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Bookkeeping software subscription",
+     "amount": 5572
+    },
+    {
+     "item": "Bookkeeping basics course",
+     "amount": 4179
+    },
+    {
+     "item": "Professional indemnity insurance",
+     "amount": 4179
+    }
+   ],
+   "steps": [
+    "Do one friend's books free for a month",
+    "Set up a receipt-capture workflow",
+    "Offer $99/month, small firms to chamber members",
+    "Collect statements read-only access",
+    "Categorise weekly, reconcile monthly",
+    "Send a one-page P&L every month-end",
+    "Ask for an accountant referral"
+   ],
+   "pricing_hint": "$99/month, small firms",
+   "first_customers": [
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts"
+   ],
+   "pitfalls": [
+    "Never give tax advice — refer out",
+    "Keep client data on encrypted drives",
+    "Agree the cutoff date in writing"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "digital-product",
+   "trend_tags": [
+    "b2b",
+    "finance"
+   ],
+   "first_seen": "2024-11",
+   "maturity": "growing",
+   "version": 1,
+   "updated_at": "2026-04-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Thumbtack local leads",
+      "Chamber of commerce newsletter",
+      "Google Maps 4-star shops with unanswered reviews"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Nextdoor UK street posts",
+      "Local parish newsletter ads",
+      "Google Maps high-street shops"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Local Facebook buy-and-sell groups",
+      "Chamber of commerce directory",
+      "Google Maps shops on main streets"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "WhatsApp business contact lists",
+      "Google Maps shop clusters in heartland malls",
+      "Facebook neighbourhood groups for HDB estates"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Google Maps shops along main roads",
+      "Viber neighbourhood groups",
+      "Facebook Marketplace local groups"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-b2b-simple-bookkeeping-192",
+   "title": "Monthly bookkeeping for micro firms (north)",
+   "one_liner": "Micro businesses pay a fixed monthly fee to have receipts categorised and a simple monthly P&L sent over.",
+   "min_capital": 6825,
+   "capital_tier": "2k-10k",
+   "hours_per_week": "10-25",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "SG"
+   ],
+   "online_or_offline": "hybrid",
+   "legal_blocks": [],
+   "skills_needed": [
+    "basic_english"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "medium",
+   "payback_days": 45,
+   "recurring": true,
+   "channel_ids": [
+    "chamber",
+    "referral",
+    "facebook",
+    "local-groups"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Bookkeeping software subscription",
+     "amount": 2730
+    },
+    {
+     "item": "Bookkeeping basics course",
+     "amount": 2048
+    },
+    {
+     "item": "Professional indemnity insurance",
+     "amount": 2047
+    }
+   ],
+   "steps": [
+    "Do one friend's books free for a month",
+    "Set up a receipt-capture workflow",
+    "Offer $45 one-off cleanup hour to chamber members",
+    "Collect statements read-only access",
+    "Categorise weekly, reconcile monthly",
+    "Send a one-page P&L every month-end",
+    "Ask for an accountant referral"
+   ],
+   "pricing_hint": "$45 one-off cleanup hour",
+   "first_customers": [
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads"
+   ],
+   "pitfalls": [
+    "Never give tax advice — refer out",
+    "Keep client data on encrypted drives",
+    "Agree the cutoff date in writing"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "digital-product",
+   "trend_tags": [
+    "b2b",
+    "finance"
+   ],
+   "first_seen": "2024-12",
+   "maturity": "growing",
+   "version": 1,
+   "updated_at": "2026-05-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Chamber of commerce newsletter",
+      "Google Maps 4-star shops with unanswered reviews",
+      "Nextdoor neighbourhood posts"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Local parish newsletter ads",
+      "Google Maps high-street shops",
+      "Facebook local community groups"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Chamber of commerce directory",
+      "Google Maps shops on main streets",
+      "Nextdoor Canada community posts"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "Google Maps shop clusters in heartland malls",
+      "Facebook neighbourhood groups for HDB estates",
+      "WhatsApp business contact lists"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-b2b-simple-bookkeeping-193",
+   "title": "Monthly bookkeeping for micro firms (east)",
+   "one_liner": "Micro businesses pay a fixed monthly fee to have receipts categorised and a simple monthly P&L sent over.",
+   "min_capital": 205,
+   "capital_tier": "<500",
+   "hours_per_week": "<10",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU",
+    "PH"
+   ],
+   "online_or_offline": "offline",
+   "legal_blocks": [],
+   "skills_needed": [
+    "basic_english"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "medium",
+   "payback_days": 21,
+   "recurring": true,
+   "channel_ids": [
+    "chamber",
+    "referral",
+    "facebook",
+    "local-groups"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Bookkeeping software subscription",
+     "amount": 82
+    },
+    {
+     "item": "Bookkeeping basics course",
+     "amount": 62
+    },
+    {
+     "item": "Professional indemnity insurance",
+     "amount": 61
+    }
+   ],
+   "steps": [
+    "Do one friend's books free for a month",
+    "Set up a receipt-capture workflow",
+    "Offer $140/month cash-basis bookkeeping to chamber members",
+    "Collect statements read-only access",
+    "Categorise weekly, reconcile monthly",
+    "Send a one-page P&L every month-end",
+    "Ask for an accountant referral"
+   ],
+   "pricing_hint": "$140/month cash-basis bookkeeping",
+   "first_customers": [
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter"
+   ],
+   "pitfalls": [
+    "Never give tax advice — refer out",
+    "Keep client data on encrypted drives",
+    "Agree the cutoff date in writing"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "digital-product",
+   "trend_tags": [
+    "b2b",
+    "finance"
+   ],
+   "first_seen": "2025-01",
+   "maturity": "mature",
+   "version": 1,
+   "updated_at": "2026-06-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Google Maps 4-star shops with unanswered reviews",
+      "Nextdoor neighbourhood posts",
+      "Thumbtack local leads"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Google Maps high-street shops",
+      "Facebook local community groups",
+      "Nextdoor UK street posts"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Google Maps shops on main streets",
+      "Nextdoor Canada community posts",
+      "Local Facebook buy-and-sell groups"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Google Maps suburban strip shops",
+      "Nextdoor Australia neighbourhood posts",
+      "Local Facebook community groups"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Facebook Marketplace local groups",
+      "Barangay community referrals",
+      "Google Maps shops along main roads"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-b2b-simple-bookkeeping-194",
+   "title": "Monthly bookkeeping for micro firms (riverside)",
+   "one_liner": "Micro businesses pay a fixed monthly fee to have receipts categorised and a simple monthly P&L sent over.",
+   "min_capital": 14220,
+   "capital_tier": "10k+",
+   "hours_per_week": "full",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU"
+   ],
+   "online_or_offline": "online",
+   "legal_blocks": [],
+   "skills_needed": [
+    "basic_english"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "medium",
+   "payback_days": 30,
+   "recurring": true,
+   "channel_ids": [
+    "chamber",
+    "referral",
+    "facebook",
+    "local-groups"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Bookkeeping software subscription",
+     "amount": 5688
+    },
+    {
+     "item": "Bookkeeping basics course",
+     "amount": 4266
+    },
+    {
+     "item": "Professional indemnity insurance",
+     "amount": 4266
+    }
+   ],
+   "steps": [
+    "Do one friend's books free for a month",
+    "Set up a receipt-capture workflow",
+    "Offer $99/month, small firms to chamber members",
+    "Collect statements read-only access",
+    "Categorise weekly, reconcile monthly",
+    "Send a one-page P&L every month-end",
+    "Ask for an accountant referral"
+   ],
+   "pricing_hint": "$99/month, small firms",
+   "first_customers": [
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews"
+   ],
+   "pitfalls": [
+    "Never give tax advice — refer out",
+    "Keep client data on encrypted drives",
+    "Agree the cutoff date in writing"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "digital-product",
+   "trend_tags": [
+    "b2b",
+    "finance"
+   ],
+   "first_seen": "2024-02",
+   "maturity": "emerging",
+   "version": 1,
+   "updated_at": "2026-07-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Nextdoor neighbourhood posts",
+      "Thumbtack local leads",
+      "Chamber of commerce newsletter"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Facebook local community groups",
+      "Nextdoor UK street posts",
+      "Local parish newsletter ads"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Nextdoor Canada community posts",
+      "Local Facebook buy-and-sell groups",
+      "Chamber of commerce directory"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Nextdoor Australia neighbourhood posts",
+      "Local Facebook community groups",
+      "Council newsletter sponsorships"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-b2b-simple-bookkeeping-195",
+   "title": "Monthly bookkeeping for micro firms (old town)",
+   "one_liner": "Micro businesses pay a fixed monthly fee to have receipts categorised and a simple monthly P&L sent over.",
+   "min_capital": 14320,
+   "capital_tier": "10k+",
+   "hours_per_week": "<10",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "SG"
+   ],
+   "online_or_offline": "online",
+   "legal_blocks": [],
+   "skills_needed": [
+    "basic_english"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "medium",
+   "payback_days": 45,
+   "recurring": true,
+   "channel_ids": [
+    "chamber",
+    "referral",
+    "facebook",
+    "local-groups"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Bookkeeping software subscription",
+     "amount": 5728
+    },
+    {
+     "item": "Bookkeeping basics course",
+     "amount": 4296
+    },
+    {
+     "item": "Professional indemnity insurance",
+     "amount": 4296
+    }
+   ],
+   "steps": [
+    "Do one friend's books free for a month",
+    "Set up a receipt-capture workflow",
+    "Offer $45 one-off cleanup hour to chamber members",
+    "Collect statements read-only access",
+    "Categorise weekly, reconcile monthly",
+    "Send a one-page P&L every month-end",
+    "Ask for an accountant referral"
+   ],
+   "pricing_hint": "$45 one-off cleanup hour",
+   "first_customers": [
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts"
+   ],
+   "pitfalls": [
+    "Never give tax advice — refer out",
+    "Keep client data on encrypted drives",
+    "Agree the cutoff date in writing"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "digital-product",
+   "trend_tags": [
+    "b2b",
+    "finance"
+   ],
+   "first_seen": "2024-03",
+   "maturity": "growing",
+   "version": 1,
+   "updated_at": "2026-08-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Thumbtack local leads",
+      "Chamber of commerce newsletter",
+      "Google Maps 4-star shops with unanswered reviews"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Nextdoor UK street posts",
+      "Local parish newsletter ads",
+      "Google Maps high-street shops"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Local Facebook buy-and-sell groups",
+      "Chamber of commerce directory",
+      "Google Maps shops on main streets"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "Google Maps shop clusters in heartland malls",
+      "Facebook neighbourhood groups for HDB estates",
+      "WhatsApp business contact lists"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-b2b-simple-bookkeeping-196",
+   "title": "Monthly bookkeeping for micro firms (hillside)",
+   "one_liner": "Micro businesses pay a fixed monthly fee to have receipts categorised and a simple monthly P&L sent over.",
+   "min_capital": 7215,
+   "capital_tier": "2k-10k",
+   "hours_per_week": "<10",
+   "countries": [
+    "US",
+    "UK"
+   ],
+   "online_or_offline": "online",
+   "legal_blocks": [],
+   "skills_needed": [
+    "basic_english"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "medium",
+   "payback_days": 21,
+   "recurring": true,
+   "channel_ids": [
+    "chamber",
+    "referral",
+    "facebook",
+    "local-groups"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Bookkeeping software subscription",
+     "amount": 2886
+    },
+    {
+     "item": "Bookkeeping basics course",
+     "amount": 2164
+    },
+    {
+     "item": "Professional indemnity insurance",
+     "amount": 2165
+    }
+   ],
+   "steps": [
+    "Do one friend's books free for a month",
+    "Set up a receipt-capture workflow",
+    "Offer $140/month cash-basis bookkeeping to chamber members",
+    "Collect statements read-only access",
+    "Categorise weekly, reconcile monthly",
+    "Send a one-page P&L every month-end",
+    "Ask for an accountant referral"
+   ],
+   "pricing_hint": "$140/month cash-basis bookkeeping",
+   "first_customers": [
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads"
+   ],
+   "pitfalls": [
+    "Never give tax advice — refer out",
+    "Keep client data on encrypted drives",
+    "Agree the cutoff date in writing"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "digital-product",
+   "trend_tags": [
+    "b2b",
+    "finance"
+   ],
+   "first_seen": "2025-04",
+   "maturity": "mature",
+   "version": 1,
+   "updated_at": "2026-09-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Chamber of commerce newsletter",
+      "Google Maps 4-star shops with unanswered reviews",
+      "Nextdoor neighbourhood posts"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Local parish newsletter ads",
+      "Google Maps high-street shops",
+      "Facebook local community groups"
+     ]
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,1490 @@
+{
+ "industry": "invoice-chasing",
+ "count": 12,
+ "ideas": [
+  {
+   "id": "bs-b2b-invoice-chasing-163",
+   "title": "Overdue invoice chasing service (east)",
+   "one_liner": "Small trading firms pay a monthly retainer to have overdue invoices chased politely until paid.",
+   "min_capital": 11215,
+   "capital_tier": "10k+",
+   "hours_per_week": "<10",
+   "countries": [
+    "US",
+    "UK",
+    "SG",
+    "PH"
+   ],
+   "online_or_offline": "online",
+   "legal_blocks": [],
+   "skills_needed": [
+    "writing",
+    "basic_english"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "low",
+   "payback_days": 21,
+   "recurring": true,
+   "channel_ids": [
+    "chamber",
+    "referral",
+    "facebook",
+    "local-groups"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Accounting tool subscription",
+     "amount": 4486
+    },
+    {
+     "item": "Templates and letterhead design",
+     "amount": 2804
+    },
+    {
+     "item": "Business network membership",
+     "amount": 3925
+    }
+   ],
+   "steps": [
+    "Ask one local firm about late payers",
+    "Write a 3-step polite chasing sequence",
+    "Pitch $180/month per firm at the chamber",
+    "Take over the invoice list in a sheet",
+    "Send reminders on day 7, 14, 30",
+    "Escalate to phone calls after day 30",
+    "Report recovery totals every Friday"
+   ],
+   "pricing_hint": "$180/month per firm",
+   "first_customers": [
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts"
+   ],
+   "pitfalls": [
+    "Stay polite — you use their name",
+    "Never threaten legal action yourself",
+    "Confirm who may approve payment plans"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "digital-product",
+   "trend_tags": [
+    "b2b",
+    "cashflow"
+   ],
+   "first_seen": "2025-07",
+   "maturity": "mature",
+   "version": 1,
+   "updated_at": "2026-09-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Thumbtack local leads",
+      "Chamber of commerce newsletter",
+      "Google Maps 4-star shops with unanswered reviews"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Nextdoor UK street posts",
+      "Local parish newsletter ads",
+      "Google Maps high-street shops"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "Facebook neighbourhood groups for HDB estates",
+      "WhatsApp business contact lists",
+      "Google Maps shop clusters in heartland malls"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Google Maps shops along main roads",
+      "Viber neighbourhood groups",
+      "Facebook Marketplace local groups"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-b2b-invoice-chasing-164",
+   "title": "Overdue invoice chasing service (riverside)",
+   "one_liner": "Small trading firms pay a monthly retainer to have overdue invoices chased politely until paid.",
+   "min_capital": 4110,
+   "capital_tier": "2k-10k",
+   "hours_per_week": "10-25",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU"
+   ],
+   "online_or_offline": "online",
+   "legal_blocks": [],
+   "skills_needed": [
+    "writing",
+    "basic_english"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "low",
+   "payback_days": 30,
+   "recurring": true,
+   "channel_ids": [
+    "chamber",
+    "referral",
+    "facebook",
+    "local-groups"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Accounting tool subscription",
+     "amount": 1644
+    },
+    {
+     "item": "Templates and letterhead design",
+     "amount": 1028
+    },
+    {
+     "item": "Business network membership",
+     "amount": 1438
+    }
+   ],
+   "steps": [
+    "Ask one local firm about late payers",
+    "Write a 3-step polite chasing sequence",
+    "Pitch $25 bonus per recovered invoice at the chamber",
+    "Take over the invoice list in a sheet",
+    "Send reminders on day 7, 14, 30",
+    "Escalate to phone calls after day 30",
+    "Report recovery totals every Friday"
+   ],
+   "pricing_hint": "$25 bonus per recovered invoice",
+   "first_customers": [
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads"
+   ],
+   "pitfalls": [
+    "Stay polite — you use their name",
+    "Never threaten legal action yourself",
+    "Confirm who may approve payment plans"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "digital-product",
+   "trend_tags": [
+    "b2b",
+    "cashflow"
+   ],
+   "first_seen": "2024-08",
+   "maturity": "mature",
+   "version": 1,
+   "updated_at": "2026-10-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Chamber of commerce newsletter",
+      "Google Maps 4-star shops with unanswered reviews",
+      "Nextdoor neighbourhood posts"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Local parish newsletter ads",
+      "Google Maps high-street shops",
+      "Facebook local community groups"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Chamber of commerce directory",
+      "Google Maps shops on main streets",
+      "Nextdoor Canada community posts"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Council newsletter sponsorships",
+      "Google Maps suburban strip shops",
+      "Nextdoor Australia neighbourhood posts"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-b2b-invoice-chasing-165",
+   "title": "Overdue invoice chasing service (old town)",
+   "one_liner": "Small trading firms pay a monthly retainer to have overdue invoices chased politely until paid.",
+   "min_capital": 11410,
+   "capital_tier": "10k+",
+   "hours_per_week": "<10",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU",
+    "SG"
+   ],
+   "online_or_offline": "hybrid",
+   "legal_blocks": [],
+   "skills_needed": [
+    "writing",
+    "basic_english"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "low",
+   "payback_days": 45,
+   "recurring": true,
+   "channel_ids": [
+    "chamber",
+    "referral",
+    "facebook",
+    "local-groups"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Accounting tool subscription",
+     "amount": 4564
+    },
+    {
+     "item": "Templates and letterhead design",
+     "amount": 2852
+    },
+    {
+     "item": "Business network membership",
+     "amount": 3994
+    }
+   ],
+   "steps": [
+    "Ask one local firm about late payers",
+    "Write a 3-step polite chasing sequence",
+    "Pitch $99/month for 10 invoices at the chamber",
+    "Take over the invoice list in a sheet",
+    "Send reminders on day 7, 14, 30",
+    "Escalate to phone calls after day 30",
+    "Report recovery totals every Friday"
+   ],
+   "pricing_hint": "$99/month for 10 invoices",
+   "first_customers": [
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter"
+   ],
+   "pitfalls": [
+    "Stay polite — you use their name",
+    "Never threaten legal action yourself",
+    "Confirm who may approve payment plans"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "digital-product",
+   "trend_tags": [
+    "b2b",
+    "cashflow"
+   ],
+   "first_seen": "2024-09",
+   "maturity": "mature",
+   "version": 1,
+   "updated_at": "2026-11-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Google Maps 4-star shops with unanswered reviews",
+      "Nextdoor neighbourhood posts",
+      "Thumbtack local leads"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Google Maps high-street shops",
+      "Facebook local community groups",
+      "Nextdoor UK street posts"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Google Maps shops on main streets",
+      "Nextdoor Canada community posts",
+      "Local Facebook buy-and-sell groups"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Google Maps suburban strip shops",
+      "Nextdoor Australia neighbourhood posts",
+      "Local Facebook community groups"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "Google Maps shop clusters in heartland malls",
+      "Facebook neighbourhood groups for HDB estates",
+      "WhatsApp business contact lists"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-b2b-invoice-chasing-166",
+   "title": "Overdue invoice chasing service (hillside)",
+   "one_liner": "Small trading firms pay a monthly retainer to have overdue invoices chased politely until paid.",
+   "min_capital": 4305,
+   "capital_tier": "2k-10k",
+   "hours_per_week": "full",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU",
+    "SG",
+    "PH"
+   ],
+   "online_or_offline": "online",
+   "legal_blocks": [],
+   "skills_needed": [
+    "writing",
+    "basic_english"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "low",
+   "payback_days": 21,
+   "recurring": true,
+   "channel_ids": [
+    "chamber",
+    "referral",
+    "facebook",
+    "local-groups"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Accounting tool subscription",
+     "amount": 1722
+    },
+    {
+     "item": "Templates and letterhead design",
+     "amount": 1076
+    },
+    {
+     "item": "Business network membership",
+     "amount": 1507
+    }
+   ],
+   "steps": [
+    "Ask one local firm about late payers",
+    "Write a 3-step polite chasing sequence",
+    "Pitch $180/month per firm at the chamber",
+    "Take over the invoice list in a sheet",
+    "Send reminders on day 7, 14, 30",
+    "Escalate to phone calls after day 30",
+    "Report recovery totals every Friday"
+   ],
+   "pricing_hint": "$180/month per firm",
+   "first_customers": [
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews"
+   ],
+   "pitfalls": [
+    "Stay polite — you use their name",
+    "Never threaten legal action yourself",
+    "Confirm who may approve payment plans"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "digital-product",
+   "trend_tags": [
+    "b2b",
+    "cashflow"
+   ],
+   "first_seen": "2025-10",
+   "maturity": "growing",
+   "version": 1,
+   "updated_at": "2026-01-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Nextdoor neighbourhood posts",
+      "Thumbtack local leads",
+      "Chamber of commerce newsletter"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Facebook local community groups",
+      "Nextdoor UK street posts",
+      "Local parish newsletter ads"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Nextdoor Canada community posts",
+      "Local Facebook buy-and-sell groups",
+      "Chamber of commerce directory"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Nextdoor Australia neighbourhood posts",
+      "Local Facebook community groups",
+      "Council newsletter sponsorships"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "Facebook neighbourhood groups for HDB estates",
+      "WhatsApp business contact lists",
+      "Google Maps shop clusters in heartland malls"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Barangay community referrals",
+      "Google Maps shops along main roads",
+      "Viber neighbourhood groups"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-b2b-invoice-chasing-167",
+   "title": "Overdue invoice chasing service (central)",
+   "one_liner": "Small trading firms pay a monthly retainer to have overdue invoices chased politely until paid.",
+   "min_capital": 11600,
+   "capital_tier": "10k+",
+   "hours_per_week": "10-25",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "SG"
+   ],
+   "online_or_offline": "offline",
+   "legal_blocks": [],
+   "skills_needed": [
+    "writing",
+    "basic_english"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "low",
+   "payback_days": 30,
+   "recurring": true,
+   "channel_ids": [
+    "chamber",
+    "referral",
+    "facebook",
+    "local-groups"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Accounting tool subscription",
+     "amount": 4640
+    },
+    {
+     "item": "Templates and letterhead design",
+     "amount": 2900
+    },
+    {
+     "item": "Business network membership",
+     "amount": 4060
+    }
+   ],
+   "steps": [
+    "Ask one local firm about late payers",
+    "Write a 3-step polite chasing sequence",
+    "Pitch $25 bonus per recovered invoice at the chamber",
+    "Take over the invoice list in a sheet",
+    "Send reminders on day 7, 14, 30",
+    "Escalate to phone calls after day 30",
+    "Report recovery totals every Friday"
+   ],
+   "pricing_hint": "$25 bonus per recovered invoice",
+   "first_customers": [
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts"
+   ],
+   "pitfalls": [
+    "Stay polite — you use their name",
+    "Never threaten legal action yourself",
+    "Confirm who may approve payment plans"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "digital-product",
+   "trend_tags": [
+    "b2b",
+    "cashflow"
+   ],
+   "first_seen": "2024-11",
+   "maturity": "growing",
+   "version": 1,
+   "updated_at": "2026-02-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Thumbtack local leads",
+      "Chamber of commerce newsletter",
+      "Google Maps 4-star shops with unanswered reviews"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Nextdoor UK street posts",
+      "Local parish newsletter ads",
+      "Google Maps high-street shops"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Local Facebook buy-and-sell groups",
+      "Chamber of commerce directory",
+      "Google Maps shops on main streets"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "WhatsApp business contact lists",
+      "Google Maps shop clusters in heartland malls",
+      "Facebook neighbourhood groups for HDB estates"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-b2b-invoice-chasing-168",
+   "title": "Overdue invoice chasing service (bayside)",
+   "one_liner": "Small trading firms pay a monthly retainer to have overdue invoices chased politely until paid.",
+   "min_capital": 4500,
+   "capital_tier": "2k-10k",
+   "hours_per_week": "10-25",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU",
+    "SG",
+    "PH"
+   ],
+   "online_or_offline": "online",
+   "legal_blocks": [
+    "SG"
+   ],
+   "skills_needed": [
+    "writing",
+    "basic_english"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "low",
+   "payback_days": 45,
+   "recurring": true,
+   "channel_ids": [
+    "chamber",
+    "referral",
+    "facebook",
+    "local-groups"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Accounting tool subscription",
+     "amount": 1800
+    },
+    {
+     "item": "Templates and letterhead design",
+     "amount": 1125
+    },
+    {
+     "item": "Business network membership",
+     "amount": 1575
+    }
+   ],
+   "steps": [
+    "Ask one local firm about late payers",
+    "Write a 3-step polite chasing sequence",
+    "Pitch $99/month for 10 invoices at the chamber",
+    "Take over the invoice list in a sheet",
+    "Send reminders on day 7, 14, 30",
+    "Escalate to phone calls after day 30",
+    "Report recovery totals every Friday"
+   ],
+   "pricing_hint": "$99/month for 10 invoices",
+   "first_customers": [
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads"
+   ],
+   "pitfalls": [
+    "Stay polite — you use their name",
+    "Never threaten legal action yourself",
+    "Confirm who may approve payment plans"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "digital-product",
+   "trend_tags": [
+    "b2b",
+    "cashflow"
+   ],
+   "first_seen": "2024-12",
+   "maturity": "mature",
+   "version": 1,
+   "updated_at": "2026-03-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Chamber of commerce newsletter",
+      "Google Maps 4-star shops with unanswered reviews",
+      "Nextdoor neighbourhood posts"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Local parish newsletter ads",
+      "Google Maps high-street shops",
+      "Facebook local community groups"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Chamber of commerce directory",
+      "Google Maps shops on main streets",
+      "Nextdoor Canada community posts"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Council newsletter sponsorships",
+      "Google Maps suburban strip shops",
+      "Nextdoor Australia neighbourhood posts"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "Google Maps shop clusters in heartland malls",
+      "Facebook neighbourhood groups for HDB estates",
+      "WhatsApp business contact lists"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Viber neighbourhood groups",
+      "Facebook Marketplace local groups",
+      "Barangay community referrals"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-b2b-invoice-chasing-169",
+   "title": "Overdue invoice chasing service (market)",
+   "one_liner": "Small trading firms pay a monthly retainer to have overdue invoices chased politely until paid.",
+   "min_capital": 125,
+   "capital_tier": "<500",
+   "hours_per_week": "<10",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU",
+    "SG"
+   ],
+   "online_or_offline": "online",
+   "legal_blocks": [],
+   "skills_needed": [
+    "writing",
+    "basic_english"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "low",
+   "payback_days": 21,
+   "recurring": true,
+   "channel_ids": [
+    "chamber",
+    "referral",
+    "facebook",
+    "local-groups"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Accounting tool subscription",
+     "amount": 50
+    },
+    {
+     "item": "Templates and letterhead design",
+     "amount": 31
+    },
+    {
+     "item": "Business network membership",
+     "amount": 44
+    }
+   ],
+   "steps": [
+    "Ask one local firm about late payers",
+    "Write a 3-step polite chasing sequence",
+    "Pitch $180/month per firm at the chamber",
+    "Take over the invoice list in a sheet",
+    "Send reminders on day 7, 14, 30",
+    "Escalate to phone calls after day 30",
+    "Report recovery totals every Friday"
+   ],
+   "pricing_hint": "$180/month per firm",
+   "first_customers": [
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter"
+   ],
+   "pitfalls": [
+    "Stay polite — you use their name",
+    "Never threaten legal action yourself",
+    "Confirm who may approve payment plans"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "digital-product",
+   "trend_tags": [
+    "b2b",
+    "cashflow"
+   ],
+   "first_seen": "2025-01",
+   "maturity": "emerging",
+   "version": 1,
+   "updated_at": "2026-04-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Google Maps 4-star shops with unanswered reviews",
+      "Nextdoor neighbourhood posts",
+      "Thumbtack local leads"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Google Maps high-street shops",
+      "Facebook local community groups",
+      "Nextdoor UK street posts"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Google Maps shops on main streets",
+      "Nextdoor Canada community posts",
+      "Local Facebook buy-and-sell groups"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Google Maps suburban strip shops",
+      "Nextdoor Australia neighbourhood posts",
+      "Local Facebook community groups"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "Facebook neighbourhood groups for HDB estates",
+      "WhatsApp business contact lists",
+      "Google Maps shop clusters in heartland malls"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-b2b-invoice-chasing-170",
+   "title": "Overdue invoice chasing service(lakeside)",
+   "one_liner": "Small trading firms pay a monthly retainer to have overdue invoices chased politely until paid.",
+   "min_capital": 11895,
+   "capital_tier": "10k+",
+   "hours_per_week": "<10",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "SG",
+    "PH"
+   ],
+   "online_or_offline": "online",
+   "legal_blocks": [],
+   "skills_needed": [
+    "writing",
+    "basic_english"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "low",
+   "payback_days": 30,
+   "recurring": true,
+   "channel_ids": [
+    "chamber",
+    "referral",
+    "facebook",
+    "local-groups"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Accounting tool subscription",
+     "amount": 4758
+    },
+    {
+     "item": "Templates and letterhead design",
+     "amount": 2974
+    },
+    {
+     "item": "Business network membership",
+     "amount": 4163
+    }
+   ],
+   "steps": [
+    "Ask one local firm about late payers",
+    "Write a 3-step polite chasing sequence",
+    "Pitch $25 bonus per recovered invoice at the chamber",
+    "Take over the invoice list in a sheet",
+    "Send reminders on day 7, 14, 30",
+    "Escalate to phone calls after day 30",
+    "Report recovery totals every Friday"
+   ],
+   "pricing_hint": "$25 bonus per recovered invoice",
+   "first_customers": [
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews"
+   ],
+   "pitfalls": [
+    "Stay polite — you use their name",
+    "Never threaten legal action yourself",
+    "Confirm who may approve payment plans"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "digital-product",
+   "trend_tags": [
+    "b2b",
+    "cashflow"
+   ],
+   "first_seen": "2024-02",
+   "maturity": "growing",
+   "version": 1,
+   "updated_at": "2026-05-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Nextdoor neighbourhood posts",
+      "Thumbtack local leads",
+      "Chamber of commerce newsletter"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Facebook local community groups",
+      "Nextdoor UK street posts",
+      "Local parish newsletter ads"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Nextdoor Canada community posts",
+      "Local Facebook buy-and-sell groups",
+      "Chamber of commerce directory"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "WhatsApp business contact lists",
+      "Google Maps shop clusters in heartland malls",
+      "Facebook neighbourhood groups for HDB estates"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Barangay community referrals",
+      "Google Maps shops along main roads",
+      "Viber neighbourhood groups"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-b2b-invoice-chasing-171",
+   "title": "Overdue invoice chasing service",
+   "one_liner": "Small trading firms pay a monthly retainer to have overdue invoices chased politely until paid.",
+   "min_capital": 11990,
+   "capital_tier": "10k+",
+   "hours_per_week": "<10",
+   "countries": [
+    "UK",
+    "AU",
+    "SG",
+    "PH"
+   ],
+   "online_or_offline": "online",
+   "legal_blocks": [],
+   "skills_needed": [
+    "writing",
+    "basic_english"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "low",
+   "payback_days": 45,
+   "recurring": true,
+   "channel_ids": [
+    "chamber",
+    "referral",
+    "facebook",
+    "local-groups"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Accounting tool subscription",
+     "amount": 4796
+    },
+    {
+     "item": "Templates and letterhead design",
+     "amount": 2998
+    },
+    {
+     "item": "Business network membership",
+     "amount": 4196
+    }
+   ],
+   "steps": [
+    "Ask one local firm about late payers",
+    "Write a 3-step polite chasing sequence",
+    "Pitch $99/month for 10 invoices at the chamber",
+    "Take over the invoice list in a sheet",
+    "Send reminders on day 7, 14, 30",
+    "Escalate to phone calls after day 30",
+    "Report recovery totals every Friday"
+   ],
+   "pricing_hint": "$99/month for 10 invoices",
+   "first_customers": [
+    "Nextdoor UK street posts",
+    "Local parish newsletter ads",
+    "Google Maps high-street shops",
+    "Facebook local community groups"
+   ],
+   "pitfalls": [
+    "Stay polite — you use their name",
+    "Never threaten legal action yourself",
+    "Confirm who may approve payment plans"
+   ],
+   "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+   "wave": "digital-product",
+   "trend_tags": [
+    "b2b",
+    "cashflow"
+   ],
+   "first_seen": "2024-03",
+   "maturity": "emerging",
+   "version": 1,
+   "updated_at": "2026-06-01",
+   "status": "active",
+   "overrides": {
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Nextdoor UK street posts",
+      "Local parish newsletter ads",
+      "Google Maps high-street shops"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Local Facebook community groups",
+      "Council newsletter sponsorships",
+      "Google Maps suburban strip shops"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "Google Maps shop clusters in heartland malls",
+      "Facebook neighbourhood groups for HDB estates",
+      "WhatsApp business contact lists"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Google Maps shops along main roads",
+      "Viber neighbourhood groups",
+      "Facebook Marketplace local groups"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-b2b-invoice-chasing-172",
+   "title": "Overdue invoice chasing service (north)",
+   "one_liner": "Small trading firms pay a monthly retainer to have overdue invoices chased politely until paid.",
+   "min_capital": 415,
+   "capital_tier": "<500",
+   "hours_per_week": "10-25",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU"
+   ],
+   "online_or_offline": "hybrid",
+   "legal_blocks": [],
+   "skills_needed": [
+    "writing",
+    "basic_english"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "low",
+   "payback_days": 21,
+   "recurring": true,
+   "channel_ids": [
+    "chamber",
+    "referral",
+    "facebook",
+    "local-groups"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Accounting tool subscription",
+     "amount": 166
+    },
+    {
+     "item": "Templates and letterhead design",
+     "amount": 104
+    },
+    {
+     "item": "Business network membership",
+     "amount": 145
+    }
+   ],
+   "steps": [
+    "Ask one local firm about late payers",
+    "Write a 3-step polite chasing sequence",
+    "Pitch $180/month per firm at the chamber",
+    "Take over the invoice list in a sheet",
+    "Send reminders on day 7, 14, 30",
+    "Escalate to phone calls after day 30",
+    "Report recovery totals every Friday"
+   ],
+   "pricing_hint": "$180/month per firm",
+   "first_customers": [
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads"
+   ],
+   "pitfalls": [
+    "Stay polite — you use their name",
+    "Never threaten legal action yourself",
+    "Confirm who may approve payment plans"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "digital-product",
+   "trend_tags": [
+    "b2b",
+    "cashflow"
+   ],
+   "first_seen": "2025-04",
+   "maturity": "saturated",
+   "version": 1,
+   "updated_at": "2026-07-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Chamber of commerce newsletter",
+      "Google Maps 4-star shops with unanswered reviews",
+      "Nextdoor neighbourhood posts"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Local parish newsletter ads",
+      "Google Maps high-street shops",
+      "Facebook local community groups"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Chamber of commerce directory",
+      "Google Maps shops on main streets",
+      "Nextdoor Canada community posts"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Council newsletter sponsorships",
+      "Google Maps suburban strip shops",
+      "Nextdoor Australia neighbourhood posts"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-b2b-invoice-chasing-173",
+   "title": "Overdue invoice chasing service (east)",
+   "one_liner": "Small trading firms pay a monthly retainer to have overdue invoices chased politely until paid.",
+   "min_capital": 12185,
+   "capital_tier": "10k+",
+   "hours_per_week": "full",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU",
+    "SG"
+   ],
+   "online_or_offline": "hybrid",
+   "legal_blocks": [],
+   "skills_needed": [
+    "writing",
+    "basic_english"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "low",
+   "payback_days": 30,
+   "recurring": true,
+   "channel_ids": [
+    "chamber",
+    "referral",
+    "facebook",
+    "local-groups"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Accounting tool subscription",
+     "amount": 4874
+    },
+    {
+     "item": "Templates and letterhead design",
+     "amount": 3046
+    },
+    {
+     "item": "Business network membership",
+     "amount": 4265
+    }
+   ],
+   "steps": [
+    "Ask one local firm about late payers",
+    "Write a 3-step polite chasing sequence",
+    "Pitch $25 bonus per recovered invoice at the chamber",
+    "Take over the invoice list in a sheet",
+    "Send reminders on day 7, 14, 30",
+    "Escalate to phone calls after day 30",
+    "Report recovery totals every Friday"
+   ],
+   "pricing_hint": "$25 bonus per recovered invoice",
+   "first_customers": [
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter"
+   ],
+   "pitfalls": [
+    "Stay polite — you use their name",
+    "Never threaten legal action yourself",
+    "Confirm who may approve payment plans"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "digital-product",
+   "trend_tags": [
+    "b2b",
+    "cashflow"
+   ],
+   "first_seen": "2024-05",
+   "maturity": "saturated",
+   "version": 1,
+   "updated_at": "2026-08-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Google Maps 4-star shops with unanswered reviews",
+      "Nextdoor neighbourhood posts",
+      "Thumbtack local leads"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Google Maps high-street shops",
+      "Facebook local community groups",
+      "Nextdoor UK street posts"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Google Maps shops on main streets",
+      "Nextdoor Canada community posts",
+      "Local Facebook buy-and-sell groups"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Google Maps suburban strip shops",
+      "Nextdoor Australia neighbourhood posts",
+      "Local Facebook community groups"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "WhatsApp business contact lists",
+      "Google Maps shop clusters in heartland malls",
+      "Facebook neighbourhood groups for HDB estates"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-b2b-invoice-chasing-174",
+   "title": "Overdue invoice chasing service (riverside)",
+   "one_liner": "Small trading firms pay a monthly retainer to have overdue invoices chased politely until paid.",
+   "min_capital": 5080,
+   "capital_tier": "2k-10k",
+   "hours_per_week": "<10",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU",
+    "PH"
+   ],
+   "online_or_offline": "online",
+   "legal_blocks": [],
+   "skills_needed": [
+    "writing",
+    "basic_english"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "low",
+   "payback_days": 45,
+   "recurring": true,
+   "channel_ids": [
+    "chamber",
+    "referral",
+    "facebook",
+    "local-groups"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Accounting tool subscription",
+     "amount": 2032
+    },
+    {
+     "item": "Templates and letterhead design",
+     "amount": 1270
+    },
+    {
+     "item": "Business network membership",
+     "amount": 1778
+    }
+   ],
+   "steps": [
+    "Ask one local firm about late payers",
+    "Write a 3-step polite chasing sequence",
+    "Pitch $99/month for 10 invoices at the chamber",
+    "Take over the invoice list in a sheet",
+    "Send reminders on day 7, 14, 30",
+    "Escalate to phone calls after day 30",
+    "Report recovery totals every Friday"
+   ],
+   "pricing_hint": "$99/month for 10 invoices",
+   "first_customers": [
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews"
+   ],
+   "pitfalls": [
+    "Stay polite — you use their name",
+    "Never threaten legal action yourself",
+    "Confirm who may approve payment plans"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "digital-product",
+   "trend_tags": [
+    "b2b",
+    "cashflow"
+   ],
+   "first_seen": "2024-06",
+   "maturity": "growing",
+   "version": 1,
+   "updated_at": "2026-09-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Nextdoor neighbourhood posts",
+      "Thumbtack local leads",
+      "Chamber of commerce newsletter"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Facebook local community groups",
+      "Nextdoor UK street posts",
+      "Local parish newsletter ads"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Nextdoor Canada community posts",
+      "Local Facebook buy-and-sell groups",
+      "Chamber of commerce directory"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Nextdoor Australia neighbourhood posts",
+      "Local Facebook community groups",
+      "Council newsletter sponsorships"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Barangay community referrals",
+      "Google Maps shops along main roads",
+      "Viber neighbourhood groups"
+     ]
+    }
+   }
+  }
+ ]
+}

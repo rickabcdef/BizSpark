@@ -1,0 +1,1362 @@
+{
+ "industry": "window-cleaning",
+ "count": 11,
+ "ideas": [
+  {
+   "id": "bs-svc-window-cleaning-067",
+   "title": "Shopfront and home window cleaning (central)",
+   "one_liner": "Shop owners and homeowners pay for streak-free windows on a standing monthly round.",
+   "min_capital": 130,
+   "capital_tier": "<500",
+   "hours_per_week": "<10",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU",
+    "PH"
+   ],
+   "online_or_offline": "offline",
+   "legal_blocks": [],
+   "skills_needed": [
+    "none",
+    "handyman"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "medium",
+   "payback_days": 14,
+   "recurring": true,
+   "channel_ids": [
+    "walk-in",
+    "nextdoor",
+    "referral",
+    "google-maps"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Squeegee and pole kit",
+     "amount": 52
+    },
+    {
+     "item": "Ladder (second-hand)",
+     "amount": 39
+    },
+    {
+     "item": "Printed flyers for shop strips",
+     "amount": 39
+    }
+   ],
+   "steps": [
+    "Walk the main strip and count 5 shops",
+    "Clean one shopfront free as a demo",
+    "Print before/after photos for pitching",
+    "Offer $8 per shopfront window for a monthly round",
+    "Book shops into one morning route",
+    "Send an invoice the same day",
+    "Ask each owner about a neighbour referral"
+   ],
+   "pricing_hint": "$8 per shopfront window",
+   "first_customers": [
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts"
+   ],
+   "pitfalls": [
+    "Never lean ladders against glass",
+    "Use pure-water or finish with squeegee only",
+    "Skip high windows without a spotter"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "local-service",
+   "trend_tags": [
+    "local-service",
+    "recurring"
+   ],
+   "first_seen": "2025-07",
+   "maturity": "mature",
+   "version": 1,
+   "updated_at": "2026-01-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Thumbtack local leads",
+      "Chamber of commerce newsletter",
+      "Google Maps 4-star shops with unanswered reviews"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Nextdoor UK street posts",
+      "Local parish newsletter ads",
+      "Google Maps high-street shops"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Local Facebook buy-and-sell groups",
+      "Chamber of commerce directory",
+      "Google Maps shops on main streets"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Local Facebook community groups",
+      "Council newsletter sponsorships",
+      "Google Maps suburban strip shops"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Google Maps shops along main roads",
+      "Viber neighbourhood groups",
+      "Facebook Marketplace local groups"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-svc-window-cleaning-068",
+   "title": "Shopfront and home window cleaning (bayside)",
+   "one_liner": "Shop owners and homeowners pay for streak-free windows on a standing monthly round.",
+   "min_capital": 1500,
+   "capital_tier": "500-2k",
+   "hours_per_week": "full",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "PH"
+   ],
+   "online_or_offline": "hybrid",
+   "legal_blocks": [],
+   "skills_needed": [
+    "none",
+    "handyman"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "medium",
+   "payback_days": 21,
+   "recurring": true,
+   "channel_ids": [
+    "walk-in",
+    "nextdoor",
+    "referral",
+    "google-maps"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Squeegee and pole kit",
+     "amount": 600
+    },
+    {
+     "item": "Ladder (second-hand)",
+     "amount": 450
+    },
+    {
+     "item": "Printed flyers for shop strips",
+     "amount": 450
+    }
+   ],
+   "steps": [
+    "Walk the main strip and count 10 shops",
+    "Clean one shopfront free as a demo",
+    "Print before/after photos for pitching",
+    "Offer $70 whole-house outside clean for a monthly round",
+    "Book shops into one morning route",
+    "Send an invoice the same day",
+    "Ask each owner about a neighbour referral"
+   ],
+   "pricing_hint": "$70 whole-house outside clean",
+   "first_customers": [
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads"
+   ],
+   "pitfalls": [
+    "Never lean ladders against glass",
+    "Use pure-water or finish with squeegee only",
+    "Skip high windows without a spotter"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "local-service",
+   "trend_tags": [
+    "local-service",
+    "recurring"
+   ],
+   "first_seen": "2024-08",
+   "maturity": "saturated",
+   "version": 1,
+   "updated_at": "2026-02-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Chamber of commerce newsletter",
+      "Google Maps 4-star shops with unanswered reviews",
+      "Nextdoor neighbourhood posts"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Local parish newsletter ads",
+      "Google Maps high-street shops",
+      "Facebook local community groups"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Chamber of commerce directory",
+      "Google Maps shops on main streets",
+      "Nextdoor Canada community posts"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Viber neighbourhood groups",
+      "Facebook Marketplace local groups",
+      "Barangay community referrals"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-svc-window-cleaning-069",
+   "title": "Shopfront and home window cleaning (market)",
+   "one_liner": "Shop owners and homeowners pay for streak-free windows on a standing monthly round.",
+   "min_capital": 8695,
+   "capital_tier": "2k-10k",
+   "hours_per_week": "full",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU",
+    "SG"
+   ],
+   "online_or_offline": "offline",
+   "legal_blocks": [],
+   "skills_needed": [
+    "none",
+    "handyman"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "medium",
+   "payback_days": 30,
+   "recurring": true,
+   "channel_ids": [
+    "walk-in",
+    "nextdoor",
+    "referral",
+    "google-maps"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Squeegee and pole kit",
+     "amount": 3478
+    },
+    {
+     "item": "Ladder (second-hand)",
+     "amount": 2608
+    },
+    {
+     "item": "Printed flyers for shop strips",
+     "amount": 2609
+    }
+   ],
+   "steps": [
+    "Walk the main strip and count 15 shops",
+    "Clean one shopfront free as a demo",
+    "Print before/after photos for pitching",
+    "Offer $150/month shopfront round for a monthly round",
+    "Book shops into one morning route",
+    "Send an invoice the same day",
+    "Ask each owner about a neighbour referral"
+   ],
+   "pricing_hint": "$150/month shopfront round",
+   "first_customers": [
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter"
+   ],
+   "pitfalls": [
+    "Never lean ladders against glass",
+    "Use pure-water or finish with squeegee only",
+    "Skip high windows without a spotter"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "local-service",
+   "trend_tags": [
+    "local-service",
+    "recurring"
+   ],
+   "first_seen": "2024-09",
+   "maturity": "growing",
+   "version": 1,
+   "updated_at": "2026-03-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Google Maps 4-star shops with unanswered reviews",
+      "Nextdoor neighbourhood posts",
+      "Thumbtack local leads"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Google Maps high-street shops",
+      "Facebook local community groups",
+      "Nextdoor UK street posts"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Google Maps shops on main streets",
+      "Nextdoor Canada community posts",
+      "Local Facebook buy-and-sell groups"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Google Maps suburban strip shops",
+      "Nextdoor Australia neighbourhood posts",
+      "Local Facebook community groups"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "Google Maps shop clusters in heartland malls",
+      "Facebook neighbourhood groups for HDB estates",
+      "WhatsApp business contact lists"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-svc-window-cleaning-070",
+   "title": "Shopfront and home window cleaning(lakeside)",
+   "one_liner": "Shop owners and homeowners pay for streak-free windows on a standing monthly round.",
+   "min_capital": 425,
+   "capital_tier": "<500",
+   "hours_per_week": "10-25",
+   "countries": [
+    "US",
+    "CA",
+    "AU",
+    "SG",
+    "PH"
+   ],
+   "online_or_offline": "offline",
+   "legal_blocks": [],
+   "skills_needed": [
+    "none",
+    "handyman"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "medium",
+   "payback_days": 14,
+   "recurring": true,
+   "channel_ids": [
+    "walk-in",
+    "nextdoor",
+    "referral",
+    "google-maps"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Squeegee and pole kit",
+     "amount": 170
+    },
+    {
+     "item": "Ladder (second-hand)",
+     "amount": 128
+    },
+    {
+     "item": "Printed flyers for shop strips",
+     "amount": 127
+    }
+   ],
+   "steps": [
+    "Walk the main strip and count 20 shops",
+    "Clean one shopfront free as a demo",
+    "Print before/after photos for pitching",
+    "Offer $8 per shopfront window for a monthly round",
+    "Book shops into one morning route",
+    "Send an invoice the same day",
+    "Ask each owner about a neighbour referral"
+   ],
+   "pricing_hint": "$8 per shopfront window",
+   "first_customers": [
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews"
+   ],
+   "pitfalls": [
+    "Never lean ladders against glass",
+    "Use pure-water or finish with squeegee only",
+    "Skip high windows without a spotter"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "local-service",
+   "trend_tags": [
+    "local-service",
+    "recurring"
+   ],
+   "first_seen": "2025-10",
+   "maturity": "mature",
+   "version": 1,
+   "updated_at": "2026-04-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Nextdoor neighbourhood posts",
+      "Thumbtack local leads",
+      "Chamber of commerce newsletter"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Nextdoor Canada community posts",
+      "Local Facebook buy-and-sell groups",
+      "Chamber of commerce directory"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Nextdoor Australia neighbourhood posts",
+      "Local Facebook community groups",
+      "Council newsletter sponsorships"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "Facebook neighbourhood groups for HDB estates",
+      "WhatsApp business contact lists",
+      "Google Maps shop clusters in heartland malls"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Barangay community referrals",
+      "Google Maps shops along main roads",
+      "Viber neighbourhood groups"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-svc-window-cleaning-071",
+   "title": "Shopfront and home window cleaning",
+   "one_liner": "Shop owners and homeowners pay for streak-free windows on a standing monthly round.",
+   "min_capital": 70,
+   "capital_tier": "<500",
+   "hours_per_week": "<10",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU",
+    "PH"
+   ],
+   "online_or_offline": "offline",
+   "legal_blocks": [],
+   "skills_needed": [
+    "none",
+    "handyman"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "medium",
+   "payback_days": 21,
+   "recurring": true,
+   "channel_ids": [
+    "walk-in",
+    "nextdoor",
+    "referral",
+    "google-maps"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Squeegee and pole kit",
+     "amount": 28
+    },
+    {
+     "item": "Ladder (second-hand)",
+     "amount": 21
+    },
+    {
+     "item": "Printed flyers for shop strips",
+     "amount": 21
+    }
+   ],
+   "steps": [
+    "Walk the main strip and count 25 shops",
+    "Clean one shopfront free as a demo",
+    "Print before/after photos for pitching",
+    "Offer $70 whole-house outside clean for a monthly round",
+    "Book shops into one morning route",
+    "Send an invoice the same day",
+    "Ask each owner about a neighbour referral"
+   ],
+   "pricing_hint": "$70 whole-house outside clean",
+   "first_customers": [
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts"
+   ],
+   "pitfalls": [
+    "Never lean ladders against glass",
+    "Use pure-water or finish with squeegee only",
+    "Skip high windows without a spotter"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "local-service",
+   "trend_tags": [
+    "local-service",
+    "recurring"
+   ],
+   "first_seen": "2024-11",
+   "maturity": "saturated",
+   "version": 1,
+   "updated_at": "2026-05-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Thumbtack local leads",
+      "Chamber of commerce newsletter",
+      "Google Maps 4-star shops with unanswered reviews"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Nextdoor UK street posts",
+      "Local parish newsletter ads",
+      "Google Maps high-street shops"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Local Facebook buy-and-sell groups",
+      "Chamber of commerce directory",
+      "Google Maps shops on main streets"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Local Facebook community groups",
+      "Council newsletter sponsorships",
+      "Google Maps suburban strip shops"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Google Maps shops along main roads",
+      "Viber neighbourhood groups",
+      "Facebook Marketplace local groups"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-svc-window-cleaning-072",
+   "title": "Shopfront and home window cleaning (north)",
+   "one_liner": "Shop owners and homeowners pay for streak-free windows on a standing monthly round.",
+   "min_capital": 1885,
+   "capital_tier": "500-2k",
+   "hours_per_week": "10-25",
+   "countries": [
+    "US",
+    "UK",
+    "PH"
+   ],
+   "online_or_offline": "hybrid",
+   "legal_blocks": [],
+   "skills_needed": [
+    "none",
+    "handyman"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "medium",
+   "payback_days": 30,
+   "recurring": true,
+   "channel_ids": [
+    "walk-in",
+    "nextdoor",
+    "referral",
+    "google-maps"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Squeegee and pole kit",
+     "amount": 754
+    },
+    {
+     "item": "Ladder (second-hand)",
+     "amount": 566
+    },
+    {
+     "item": "Printed flyers for shop strips",
+     "amount": 565
+    }
+   ],
+   "steps": [
+    "Walk the main strip and count 30 shops",
+    "Clean one shopfront free as a demo",
+    "Print before/after photos for pitching",
+    "Offer $150/month shopfront round for a monthly round",
+    "Book shops into one morning route",
+    "Send an invoice the same day",
+    "Ask each owner about a neighbour referral"
+   ],
+   "pricing_hint": "$150/month shopfront round",
+   "first_customers": [
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads"
+   ],
+   "pitfalls": [
+    "Never lean ladders against glass",
+    "Use pure-water or finish with squeegee only",
+    "Skip high windows without a spotter"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "local-service",
+   "trend_tags": [
+    "local-service",
+    "recurring"
+   ],
+   "first_seen": "2024-12",
+   "maturity": "emerging",
+   "version": 1,
+   "updated_at": "2026-06-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Chamber of commerce newsletter",
+      "Google Maps 4-star shops with unanswered reviews",
+      "Nextdoor neighbourhood posts"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Local parish newsletter ads",
+      "Google Maps high-street shops",
+      "Facebook local community groups"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Viber neighbourhood groups",
+      "Facebook Marketplace local groups",
+      "Barangay community referrals"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-svc-window-cleaning-073",
+   "title": "Shopfront and home window cleaning (east)",
+   "one_liner": "Shop owners and homeowners pay for streak-free windows on a standing monthly round.",
+   "min_capital": 605,
+   "capital_tier": "500-2k",
+   "hours_per_week": "full",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU",
+    "SG",
+    "PH"
+   ],
+   "online_or_offline": "offline",
+   "legal_blocks": [],
+   "skills_needed": [
+    "none",
+    "handyman"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "medium",
+   "payback_days": 14,
+   "recurring": true,
+   "channel_ids": [
+    "walk-in",
+    "nextdoor",
+    "referral",
+    "google-maps"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Squeegee and pole kit",
+     "amount": 242
+    },
+    {
+     "item": "Ladder (second-hand)",
+     "amount": 182
+    },
+    {
+     "item": "Printed flyers for shop strips",
+     "amount": 181
+    }
+   ],
+   "steps": [
+    "Walk the main strip and count 5 shops",
+    "Clean one shopfront free as a demo",
+    "Print before/after photos for pitching",
+    "Offer $8 per shopfront window for a monthly round",
+    "Book shops into one morning route",
+    "Send an invoice the same day",
+    "Ask each owner about a neighbour referral"
+   ],
+   "pricing_hint": "$8 per shopfront window",
+   "first_customers": [
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter"
+   ],
+   "pitfalls": [
+    "Never lean ladders against glass",
+    "Use pure-water or finish with squeegee only",
+    "Skip high windows without a spotter"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "local-service",
+   "trend_tags": [
+    "local-service",
+    "recurring"
+   ],
+   "first_seen": "2025-01",
+   "maturity": "mature",
+   "version": 1,
+   "updated_at": "2026-07-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Google Maps 4-star shops with unanswered reviews",
+      "Nextdoor neighbourhood posts",
+      "Thumbtack local leads"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Google Maps high-street shops",
+      "Facebook local community groups",
+      "Nextdoor UK street posts"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Google Maps shops on main streets",
+      "Nextdoor Canada community posts",
+      "Local Facebook buy-and-sell groups"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Google Maps suburban strip shops",
+      "Nextdoor Australia neighbourhood posts",
+      "Local Facebook community groups"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "Facebook neighbourhood groups for HDB estates",
+      "WhatsApp business contact lists",
+      "Google Maps shop clusters in heartland malls"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Facebook Marketplace local groups",
+      "Barangay community referrals",
+      "Google Maps shops along main roads"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-svc-window-cleaning-074",
+   "title": "Shopfront and home window cleaning (riverside)",
+   "one_liner": "Shop owners and homeowners pay for streak-free windows on a standing monthly round.",
+   "min_capital": 360,
+   "capital_tier": "<500",
+   "hours_per_week": "10-25",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU"
+   ],
+   "online_or_offline": "offline",
+   "legal_blocks": [],
+   "skills_needed": [
+    "none",
+    "handyman"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "medium",
+   "payback_days": 21,
+   "recurring": true,
+   "channel_ids": [
+    "walk-in",
+    "nextdoor",
+    "referral",
+    "google-maps"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Squeegee and pole kit",
+     "amount": 144
+    },
+    {
+     "item": "Ladder (second-hand)",
+     "amount": 108
+    },
+    {
+     "item": "Printed flyers for shop strips",
+     "amount": 108
+    }
+   ],
+   "steps": [
+    "Walk the main strip and count 10 shops",
+    "Clean one shopfront free as a demo",
+    "Print before/after photos for pitching",
+    "Offer $70 whole-house outside clean for a monthly round",
+    "Book shops into one morning route",
+    "Send an invoice the same day",
+    "Ask each owner about a neighbour referral"
+   ],
+   "pricing_hint": "$70 whole-house outside clean",
+   "first_customers": [
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews"
+   ],
+   "pitfalls": [
+    "Never lean ladders against glass",
+    "Use pure-water or finish with squeegee only",
+    "Skip high windows without a spotter"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "local-service",
+   "trend_tags": [
+    "local-service",
+    "recurring"
+   ],
+   "first_seen": "2024-02",
+   "maturity": "growing",
+   "version": 1,
+   "updated_at": "2026-08-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Nextdoor neighbourhood posts",
+      "Thumbtack local leads",
+      "Chamber of commerce newsletter"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Facebook local community groups",
+      "Nextdoor UK street posts",
+      "Local parish newsletter ads"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Nextdoor Canada community posts",
+      "Local Facebook buy-and-sell groups",
+      "Chamber of commerce directory"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Nextdoor Australia neighbourhood posts",
+      "Local Facebook community groups",
+      "Council newsletter sponsorships"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-svc-window-cleaning-075",
+   "title": "Shopfront and home window cleaning (old town)",
+   "one_liner": "Shop owners and homeowners pay for streak-free windows on a standing monthly round.",
+   "min_capital": 460,
+   "capital_tier": "<500",
+   "hours_per_week": "<10",
+   "countries": [
+    "US",
+    "UK",
+    "AU",
+    "PH"
+   ],
+   "online_or_offline": "hybrid",
+   "legal_blocks": [],
+   "skills_needed": [
+    "none",
+    "handyman"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "medium",
+   "payback_days": 30,
+   "recurring": true,
+   "channel_ids": [
+    "walk-in",
+    "nextdoor",
+    "referral",
+    "google-maps"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Squeegee and pole kit",
+     "amount": 184
+    },
+    {
+     "item": "Ladder (second-hand)",
+     "amount": 138
+    },
+    {
+     "item": "Printed flyers for shop strips",
+     "amount": 138
+    }
+   ],
+   "steps": [
+    "Walk the main strip and count 15 shops",
+    "Clean one shopfront free as a demo",
+    "Print before/after photos for pitching",
+    "Offer $150/month shopfront round for a monthly round",
+    "Book shops into one morning route",
+    "Send an invoice the same day",
+    "Ask each owner about a neighbour referral"
+   ],
+   "pricing_hint": "$150/month shopfront round",
+   "first_customers": [
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts"
+   ],
+   "pitfalls": [
+    "Never lean ladders against glass",
+    "Use pure-water or finish with squeegee only",
+    "Skip high windows without a spotter"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "local-service",
+   "trend_tags": [
+    "local-service",
+    "recurring"
+   ],
+   "first_seen": "2024-03",
+   "maturity": "growing",
+   "version": 1,
+   "updated_at": "2026-09-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Thumbtack local leads",
+      "Chamber of commerce newsletter",
+      "Google Maps 4-star shops with unanswered reviews"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Nextdoor UK street posts",
+      "Local parish newsletter ads",
+      "Google Maps high-street shops"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Local Facebook community groups",
+      "Council newsletter sponsorships",
+      "Google Maps suburban strip shops"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Google Maps shops along main roads",
+      "Viber neighbourhood groups",
+      "Facebook Marketplace local groups"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-svc-window-cleaning-076",
+   "title": "Shopfront and home window cleaning (hillside)",
+   "one_liner": "Shop owners and homeowners pay for streak-free windows on a standing monthly round.",
+   "min_capital": 105,
+   "capital_tier": "<500",
+   "hours_per_week": "10-25",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU",
+    "SG",
+    "PH"
+   ],
+   "online_or_offline": "offline",
+   "legal_blocks": [],
+   "skills_needed": [
+    "none",
+    "handyman"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "medium",
+   "payback_days": 14,
+   "recurring": true,
+   "channel_ids": [
+    "walk-in",
+    "nextdoor",
+    "referral",
+    "google-maps"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Squeegee and pole kit",
+     "amount": 42
+    },
+    {
+     "item": "Ladder (second-hand)",
+     "amount": 32
+    },
+    {
+     "item": "Printed flyers for shop strips",
+     "amount": 31
+    }
+   ],
+   "steps": [
+    "Walk the main strip and count 20 shops",
+    "Clean one shopfront free as a demo",
+    "Print before/after photos for pitching",
+    "Offer $8 per shopfront window for a monthly round",
+    "Book shops into one morning route",
+    "Send an invoice the same day",
+    "Ask each owner about a neighbour referral"
+   ],
+   "pricing_hint": "$8 per shopfront window",
+   "first_customers": [
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads"
+   ],
+   "pitfalls": [
+    "Never lean ladders against glass",
+    "Use pure-water or finish with squeegee only",
+    "Skip high windows without a spotter"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "local-service",
+   "trend_tags": [
+    "local-service",
+    "recurring"
+   ],
+   "first_seen": "2025-04",
+   "maturity": "mature",
+   "version": 1,
+   "updated_at": "2026-10-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Chamber of commerce newsletter",
+      "Google Maps 4-star shops with unanswered reviews",
+      "Nextdoor neighbourhood posts"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Local parish newsletter ads",
+      "Google Maps high-street shops",
+      "Facebook local community groups"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Chamber of commerce directory",
+      "Google Maps shops on main streets",
+      "Nextdoor Canada community posts"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Council newsletter sponsorships",
+      "Google Maps suburban strip shops",
+      "Nextdoor Australia neighbourhood posts"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "Facebook neighbourhood groups for HDB estates",
+      "WhatsApp business contact lists",
+      "Google Maps shop clusters in heartland malls"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Viber neighbourhood groups",
+      "Facebook Marketplace local groups",
+      "Barangay community referrals"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-svc-window-cleaning-077",
+   "title": "Shopfront and home window cleaning (central)",
+   "one_liner": "Shop owners and homeowners pay for streak-free windows on a standing monthly round.",
+   "min_capital": 990,
+   "capital_tier": "500-2k",
+   "hours_per_week": "full",
+   "countries": [
+    "UK",
+    "CA",
+    "AU",
+    "SG",
+    "PH"
+   ],
+   "online_or_offline": "offline",
+   "legal_blocks": [],
+   "skills_needed": [
+    "none",
+    "handyman"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "medium",
+   "payback_days": 21,
+   "recurring": true,
+   "channel_ids": [
+    "walk-in",
+    "nextdoor",
+    "referral",
+    "google-maps"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Squeegee and pole kit",
+     "amount": 396
+    },
+    {
+     "item": "Ladder (second-hand)",
+     "amount": 297
+    },
+    {
+     "item": "Printed flyers for shop strips",
+     "amount": 297
+    }
+   ],
+   "steps": [
+    "Walk the main strip and count 25 shops",
+    "Clean one shopfront free as a demo",
+    "Print before/after photos for pitching",
+    "Offer $70 whole-house outside clean for a monthly round",
+    "Book shops into one morning route",
+    "Send an invoice the same day",
+    "Ask each owner about a neighbour referral"
+   ],
+   "pricing_hint": "$70 whole-house outside clean",
+   "first_customers": [
+    "Google Maps high-street shops",
+    "Facebook local community groups",
+    "Nextdoor UK street posts",
+    "Local parish newsletter ads"
+   ],
+   "pitfalls": [
+    "Never lean ladders against glass",
+    "Use pure-water or finish with squeegee only",
+    "Skip high windows without a spotter"
+   ],
+   "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+   "wave": "local-service",
+   "trend_tags": [
+    "local-service",
+    "recurring"
+   ],
+   "first_seen": "2024-05",
+   "maturity": "mature",
+   "version": 1,
+   "updated_at": "2026-11-01",
+   "status": "active",
+   "overrides": {
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Google Maps high-street shops",
+      "Facebook local community groups",
+      "Nextdoor UK street posts"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Google Maps shops on main streets",
+      "Nextdoor Canada community posts",
+      "Local Facebook buy-and-sell groups"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Google Maps suburban strip shops",
+      "Nextdoor Australia neighbourhood posts",
+      "Local Facebook community groups"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "WhatsApp business contact lists",
+      "Google Maps shop clusters in heartland malls",
+      "Facebook neighbourhood groups for HDB estates"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Facebook Marketplace local groups",
+      "Barangay community referrals",
+      "Google Maps shops along main roads"
+     ]
+    }
+   }
+  }
+ ]
+}

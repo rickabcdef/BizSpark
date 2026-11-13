@@ -1,0 +1,1550 @@
+{
+ "industry": "calendar-va",
+ "count": 12,
+ "ideas": [
+  {
+   "id": "bs-onl-calendar-va-127",
+   "title": "Calendar and inbox VA for solo coaches (central)",
+   "one_liner": "Solo coaches and consultants pay a monthly retainer to have their schedule and booking links kept tidy.",
+   "min_capital": 100,
+   "capital_tier": "<500",
+   "hours_per_week": "<10",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU",
+    "SG",
+    "PH"
+   ],
+   "online_or_offline": "online",
+   "legal_blocks": [],
+   "skills_needed": [
+    "basic_english",
+    "writing"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "low",
+   "payback_days": 21,
+   "recurring": true,
+   "channel_ids": [
+    "facebook",
+    "referral",
+    "chamber",
+    "local-groups"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Scheduling tool subscription",
+     "amount": 35
+    },
+    {
+     "item": "Portfolio one-page site",
+     "amount": 30
+    },
+    {
+     "item": "Business group membership ads",
+     "amount": 35
+    }
+   ],
+   "steps": [
+    "Manage a friend's calendar free for 2 weeks",
+    "Write your 5-rule scheduling SOP",
+    "Message 5 coaches in business groups",
+    "Offer $220/month, 10 hours with a 2-week trial",
+    "Take over bookings and reminders",
+    "Send a Friday schedule digest",
+    "Ask for a testimonial after month one"
+   ],
+   "pricing_hint": "$220/month, 10 hours",
+   "first_customers": [
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts"
+   ],
+   "pitfalls": [
+    "Confirm time zones in writing",
+    "Never double-book without asking",
+    "Keep client emails confidential"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "digital-product",
+   "trend_tags": [
+    "va",
+    "remote"
+   ],
+   "first_seen": "2025-07",
+   "maturity": "mature",
+   "version": 1,
+   "updated_at": "2026-06-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Thumbtack local leads",
+      "Chamber of commerce newsletter",
+      "Google Maps 4-star shops with unanswered reviews"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Nextdoor UK street posts",
+      "Local parish newsletter ads",
+      "Google Maps high-street shops"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Local Facebook buy-and-sell groups",
+      "Chamber of commerce directory",
+      "Google Maps shops on main streets"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Local Facebook community groups",
+      "Council newsletter sponsorships",
+      "Google Maps suburban strip shops"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "Facebook neighbourhood groups for HDB estates",
+      "WhatsApp business contact lists",
+      "Google Maps shop clusters in heartland malls"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Google Maps shops along main roads",
+      "Viber neighbourhood groups",
+      "Facebook Marketplace local groups"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-onl-calendar-va-128",
+   "title": "Calendar and inbox VA for solo coaches (bayside)",
+   "one_liner": "Solo coaches and consultants pay a monthly retainer to have their schedule and booking links kept tidy.",
+   "min_capital": 1800,
+   "capital_tier": "500-2k",
+   "hours_per_week": "10-25",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU",
+    "SG",
+    "PH"
+   ],
+   "online_or_offline": "online",
+   "legal_blocks": [
+    "SG"
+   ],
+   "skills_needed": [
+    "basic_english",
+    "writing"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "low",
+   "payback_days": 30,
+   "recurring": true,
+   "channel_ids": [
+    "facebook",
+    "referral",
+    "chamber",
+    "local-groups"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Scheduling tool subscription",
+     "amount": 630
+    },
+    {
+     "item": "Portfolio one-page site",
+     "amount": 540
+    },
+    {
+     "item": "Business group membership ads",
+     "amount": 630
+    }
+   ],
+   "steps": [
+    "Manage a friend's calendar free for 2 weeks",
+    "Write your 5-rule scheduling SOP",
+    "Message 10 coaches in business groups",
+    "Offer $350/month, 18 hours with a 2-week trial",
+    "Take over bookings and reminders",
+    "Send a Friday schedule digest",
+    "Ask for a testimonial after month one"
+   ],
+   "pricing_hint": "$350/month, 18 hours",
+   "first_customers": [
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads"
+   ],
+   "pitfalls": [
+    "Confirm time zones in writing",
+    "Never double-book without asking",
+    "Keep client emails confidential"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "digital-product",
+   "trend_tags": [
+    "va",
+    "remote"
+   ],
+   "first_seen": "2024-08",
+   "maturity": "growing",
+   "version": 1,
+   "updated_at": "2026-07-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Chamber of commerce newsletter",
+      "Google Maps 4-star shops with unanswered reviews",
+      "Nextdoor neighbourhood posts"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Local parish newsletter ads",
+      "Google Maps high-street shops",
+      "Facebook local community groups"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Chamber of commerce directory",
+      "Google Maps shops on main streets",
+      "Nextdoor Canada community posts"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Council newsletter sponsorships",
+      "Google Maps suburban strip shops",
+      "Nextdoor Australia neighbourhood posts"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "WhatsApp business contact lists",
+      "Google Maps shop clusters in heartland malls",
+      "Facebook neighbourhood groups for HDB estates"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Viber neighbourhood groups",
+      "Facebook Marketplace local groups",
+      "Barangay community referrals"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-onl-calendar-va-129",
+   "title": "Calendar and inbox VA for solo coaches (market)",
+   "one_liner": "Solo coaches and consultants pay a monthly retainer to have their schedule and booking links kept tidy.",
+   "min_capital": 295,
+   "capital_tier": "<500",
+   "hours_per_week": "full",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU",
+    "SG",
+    "PH"
+   ],
+   "online_or_offline": "online",
+   "legal_blocks": [],
+   "skills_needed": [
+    "basic_english",
+    "writing"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "low",
+   "payback_days": 45,
+   "recurring": true,
+   "channel_ids": [
+    "facebook",
+    "referral",
+    "chamber",
+    "local-groups"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Scheduling tool subscription",
+     "amount": 103
+    },
+    {
+     "item": "Portfolio one-page site",
+     "amount": 88
+    },
+    {
+     "item": "Business group membership ads",
+     "amount": 104
+    }
+   ],
+   "steps": [
+    "Manage a friend's calendar free for 2 weeks",
+    "Write your 5-rule scheduling SOP",
+    "Message 15 coaches in business groups",
+    "Offer $35/hour flexible blocks with a 2-week trial",
+    "Take over bookings and reminders",
+    "Send a Friday schedule digest",
+    "Ask for a testimonial after month one"
+   ],
+   "pricing_hint": "$35/hour flexible blocks",
+   "first_customers": [
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter"
+   ],
+   "pitfalls": [
+    "Confirm time zones in writing",
+    "Never double-book without asking",
+    "Keep client emails confidential"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "digital-product",
+   "trend_tags": [
+    "va",
+    "remote"
+   ],
+   "first_seen": "2024-09",
+   "maturity": "growing",
+   "version": 1,
+   "updated_at": "2026-08-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Google Maps 4-star shops with unanswered reviews",
+      "Nextdoor neighbourhood posts",
+      "Thumbtack local leads"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Google Maps high-street shops",
+      "Facebook local community groups",
+      "Nextdoor UK street posts"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Google Maps shops on main streets",
+      "Nextdoor Canada community posts",
+      "Local Facebook buy-and-sell groups"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Google Maps suburban strip shops",
+      "Nextdoor Australia neighbourhood posts",
+      "Local Facebook community groups"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "Google Maps shop clusters in heartland malls",
+      "Facebook neighbourhood groups for HDB estates",
+      "WhatsApp business contact lists"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Facebook Marketplace local groups",
+      "Barangay community referrals",
+      "Google Maps shops along main roads"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-onl-calendar-va-130",
+   "title": "Calendar and inbox VA for solo coaches(lakeside)",
+   "one_liner": "Solo coaches and consultants pay a monthly retainer to have their schedule and booking links kept tidy.",
+   "min_capital": 615,
+   "capital_tier": "500-2k",
+   "hours_per_week": "10-25",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "SG"
+   ],
+   "online_or_offline": "online",
+   "legal_blocks": [],
+   "skills_needed": [
+    "basic_english",
+    "writing"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "low",
+   "payback_days": 21,
+   "recurring": true,
+   "channel_ids": [
+    "facebook",
+    "referral",
+    "chamber",
+    "local-groups"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Scheduling tool subscription",
+     "amount": 215
+    },
+    {
+     "item": "Portfolio one-page site",
+     "amount": 184
+    },
+    {
+     "item": "Business group membership ads",
+     "amount": 216
+    }
+   ],
+   "steps": [
+    "Manage a friend's calendar free for 2 weeks",
+    "Write your 5-rule scheduling SOP",
+    "Message 20 coaches in business groups",
+    "Offer $220/month, 10 hours with a 2-week trial",
+    "Take over bookings and reminders",
+    "Send a Friday schedule digest",
+    "Ask for a testimonial after month one"
+   ],
+   "pricing_hint": "$220/month, 10 hours",
+   "first_customers": [
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews"
+   ],
+   "pitfalls": [
+    "Confirm time zones in writing",
+    "Never double-book without asking",
+    "Keep client emails confidential"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "digital-product",
+   "trend_tags": [
+    "va",
+    "remote"
+   ],
+   "first_seen": "2025-10",
+   "maturity": "saturated",
+   "version": 1,
+   "updated_at": "2026-09-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Nextdoor neighbourhood posts",
+      "Thumbtack local leads",
+      "Chamber of commerce newsletter"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Facebook local community groups",
+      "Nextdoor UK street posts",
+      "Local parish newsletter ads"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Nextdoor Canada community posts",
+      "Local Facebook buy-and-sell groups",
+      "Chamber of commerce directory"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "Facebook neighbourhood groups for HDB estates",
+      "WhatsApp business contact lists",
+      "Google Maps shop clusters in heartland malls"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-onl-calendar-va-131",
+   "title": "Calendar and inbox VA for solo coaches",
+   "one_liner": "Solo coaches and consultants pay a monthly retainer to have their schedule and booking links kept tidy.",
+   "min_capital": 710,
+   "capital_tier": "500-2k",
+   "hours_per_week": "<10",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU",
+    "PH"
+   ],
+   "online_or_offline": "online",
+   "legal_blocks": [],
+   "skills_needed": [
+    "basic_english",
+    "writing"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "low",
+   "payback_days": 30,
+   "recurring": true,
+   "channel_ids": [
+    "facebook",
+    "referral",
+    "chamber",
+    "local-groups"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Scheduling tool subscription",
+     "amount": 248
+    },
+    {
+     "item": "Portfolio one-page site",
+     "amount": 213
+    },
+    {
+     "item": "Business group membership ads",
+     "amount": 249
+    }
+   ],
+   "steps": [
+    "Manage a friend's calendar free for 2 weeks",
+    "Write your 5-rule scheduling SOP",
+    "Message 25 coaches in business groups",
+    "Offer $350/month, 18 hours with a 2-week trial",
+    "Take over bookings and reminders",
+    "Send a Friday schedule digest",
+    "Ask for a testimonial after month one"
+   ],
+   "pricing_hint": "$350/month, 18 hours",
+   "first_customers": [
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts"
+   ],
+   "pitfalls": [
+    "Confirm time zones in writing",
+    "Never double-book without asking",
+    "Keep client emails confidential"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "digital-product",
+   "trend_tags": [
+    "va",
+    "remote"
+   ],
+   "first_seen": "2024-11",
+   "maturity": "mature",
+   "version": 1,
+   "updated_at": "2026-10-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Thumbtack local leads",
+      "Chamber of commerce newsletter",
+      "Google Maps 4-star shops with unanswered reviews"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Nextdoor UK street posts",
+      "Local parish newsletter ads",
+      "Google Maps high-street shops"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Local Facebook buy-and-sell groups",
+      "Chamber of commerce directory",
+      "Google Maps shops on main streets"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Local Facebook community groups",
+      "Council newsletter sponsorships",
+      "Google Maps suburban strip shops"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Google Maps shops along main roads",
+      "Viber neighbourhood groups",
+      "Facebook Marketplace local groups"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-onl-calendar-va-132",
+   "title": "Calendar and inbox VA for solo coaches (north)",
+   "one_liner": "Solo coaches and consultants pay a monthly retainer to have their schedule and booking links kept tidy.",
+   "min_capital": 135,
+   "capital_tier": "<500",
+   "hours_per_week": "<10",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU",
+    "SG",
+    "PH"
+   ],
+   "online_or_offline": "hybrid",
+   "legal_blocks": [],
+   "skills_needed": [
+    "basic_english",
+    "writing"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "low",
+   "payback_days": 45,
+   "recurring": true,
+   "channel_ids": [
+    "facebook",
+    "referral",
+    "chamber",
+    "local-groups"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Scheduling tool subscription",
+     "amount": 47
+    },
+    {
+     "item": "Portfolio one-page site",
+     "amount": 40
+    },
+    {
+     "item": "Business group membership ads",
+     "amount": 48
+    }
+   ],
+   "steps": [
+    "Manage a friend's calendar free for 2 weeks",
+    "Write your 5-rule scheduling SOP",
+    "Message 30 coaches in business groups",
+    "Offer $35/hour flexible blocks with a 2-week trial",
+    "Take over bookings and reminders",
+    "Send a Friday schedule digest",
+    "Ask for a testimonial after month one"
+   ],
+   "pricing_hint": "$35/hour flexible blocks",
+   "first_customers": [
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads"
+   ],
+   "pitfalls": [
+    "Confirm time zones in writing",
+    "Never double-book without asking",
+    "Keep client emails confidential"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "digital-product",
+   "trend_tags": [
+    "va",
+    "remote"
+   ],
+   "first_seen": "2024-12",
+   "maturity": "mature",
+   "version": 1,
+   "updated_at": "2026-11-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Chamber of commerce newsletter",
+      "Google Maps 4-star shops with unanswered reviews",
+      "Nextdoor neighbourhood posts"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Local parish newsletter ads",
+      "Google Maps high-street shops",
+      "Facebook local community groups"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Chamber of commerce directory",
+      "Google Maps shops on main streets",
+      "Nextdoor Canada community posts"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Council newsletter sponsorships",
+      "Google Maps suburban strip shops",
+      "Nextdoor Australia neighbourhood posts"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "Google Maps shop clusters in heartland malls",
+      "Facebook neighbourhood groups for HDB estates",
+      "WhatsApp business contact lists"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Viber neighbourhood groups",
+      "Facebook Marketplace local groups",
+      "Barangay community referrals"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-onl-calendar-va-133",
+   "title": "Calendar and inbox VA for solo coaches (east)",
+   "one_liner": "Solo coaches and consultants pay a monthly retainer to have their schedule and booking links kept tidy.",
+   "min_capital": 235,
+   "capital_tier": "<500",
+   "hours_per_week": "<10",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "PH"
+   ],
+   "online_or_offline": "online",
+   "legal_blocks": [],
+   "skills_needed": [
+    "basic_english",
+    "writing"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "low",
+   "payback_days": 21,
+   "recurring": true,
+   "channel_ids": [
+    "facebook",
+    "referral",
+    "chamber",
+    "local-groups"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Scheduling tool subscription",
+     "amount": 82
+    },
+    {
+     "item": "Portfolio one-page site",
+     "amount": 70
+    },
+    {
+     "item": "Business group membership ads",
+     "amount": 83
+    }
+   ],
+   "steps": [
+    "Manage a friend's calendar free for 2 weeks",
+    "Write your 5-rule scheduling SOP",
+    "Message 5 coaches in business groups",
+    "Offer $220/month, 10 hours with a 2-week trial",
+    "Take over bookings and reminders",
+    "Send a Friday schedule digest",
+    "Ask for a testimonial after month one"
+   ],
+   "pricing_hint": "$220/month, 10 hours",
+   "first_customers": [
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter"
+   ],
+   "pitfalls": [
+    "Confirm time zones in writing",
+    "Never double-book without asking",
+    "Keep client emails confidential"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "digital-product",
+   "trend_tags": [
+    "va",
+    "remote"
+   ],
+   "first_seen": "2025-01",
+   "maturity": "emerging",
+   "version": 1,
+   "updated_at": "2026-01-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Google Maps 4-star shops with unanswered reviews",
+      "Nextdoor neighbourhood posts",
+      "Thumbtack local leads"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Google Maps high-street shops",
+      "Facebook local community groups",
+      "Nextdoor UK street posts"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Google Maps shops on main streets",
+      "Nextdoor Canada community posts",
+      "Local Facebook buy-and-sell groups"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Facebook Marketplace local groups",
+      "Barangay community referrals",
+      "Google Maps shops along main roads"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-onl-calendar-va-134",
+   "title": "Calendar and inbox VA for solo coaches",
+   "one_liner": "Solo coaches and consultants pay a monthly retainer to have their schedule and booking links kept tidy.",
+   "min_capital": 330,
+   "capital_tier": "<500",
+   "hours_per_week": "10-25",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU",
+    "PH"
+   ],
+   "online_or_offline": "online",
+   "legal_blocks": [],
+   "skills_needed": [
+    "basic_english",
+    "writing"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "low",
+   "payback_days": 30,
+   "recurring": true,
+   "channel_ids": [
+    "facebook",
+    "referral",
+    "chamber",
+    "local-groups"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Scheduling tool subscription",
+     "amount": 115
+    },
+    {
+     "item": "Portfolio one-page site",
+     "amount": 99
+    },
+    {
+     "item": "Business group membership ads",
+     "amount": 116
+    }
+   ],
+   "steps": [
+    "Manage a friend's calendar free for 2 weeks",
+    "Write your 5-rule scheduling SOP",
+    "Message 10 coaches in business groups",
+    "Offer $350/month, 18 hours with a 2-week trial",
+    "Take over bookings and reminders",
+    "Send a Friday schedule digest",
+    "Ask for a testimonial after month one"
+   ],
+   "pricing_hint": "$350/month, 18 hours",
+   "first_customers": [
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews"
+   ],
+   "pitfalls": [
+    "Confirm time zones in writing",
+    "Never double-book without asking",
+    "Keep client emails confidential"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "digital-product",
+   "trend_tags": [
+    "va",
+    "remote"
+   ],
+   "first_seen": "2024-02",
+   "maturity": "growing",
+   "version": 1,
+   "updated_at": "2026-02-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Nextdoor neighbourhood posts",
+      "Thumbtack local leads",
+      "Chamber of commerce newsletter"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Facebook local community groups",
+      "Nextdoor UK street posts",
+      "Local parish newsletter ads"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Nextdoor Canada community posts",
+      "Local Facebook buy-and-sell groups",
+      "Chamber of commerce directory"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Nextdoor Australia neighbourhood posts",
+      "Local Facebook community groups",
+      "Council newsletter sponsorships"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Barangay community referrals",
+      "Google Maps shops along main roads",
+      "Viber neighbourhood groups"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-onl-calendar-va-135",
+   "title": "Calendar and inbox VA for solo coaches",
+   "one_liner": "Solo coaches and consultants pay a monthly retainer to have their schedule and booking links kept tidy.",
+   "min_capital": 8200,
+   "capital_tier": "2k-10k",
+   "hours_per_week": "<10",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU",
+    "SG"
+   ],
+   "online_or_offline": "hybrid",
+   "legal_blocks": [],
+   "skills_needed": [
+    "basic_english",
+    "writing"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "low",
+   "payback_days": 45,
+   "recurring": true,
+   "channel_ids": [
+    "facebook",
+    "referral",
+    "chamber",
+    "local-groups"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Scheduling tool subscription",
+     "amount": 2870
+    },
+    {
+     "item": "Portfolio one-page site",
+     "amount": 2460
+    },
+    {
+     "item": "Business group membership ads",
+     "amount": 2870
+    }
+   ],
+   "steps": [
+    "Manage a friend's calendar free for 2 weeks",
+    "Write your 5-rule scheduling SOP",
+    "Message 15 coaches in business groups",
+    "Offer $35/hour flexible blocks with a 2-week trial",
+    "Take over bookings and reminders",
+    "Send a Friday schedule digest",
+    "Ask for a testimonial after month one"
+   ],
+   "pricing_hint": "$35/hour flexible blocks",
+   "first_customers": [
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts"
+   ],
+   "pitfalls": [
+    "Confirm time zones in writing",
+    "Never double-book without asking",
+    "Keep client emails confidential"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "digital-product",
+   "trend_tags": [
+    "va",
+    "remote"
+   ],
+   "first_seen": "2024-03",
+   "maturity": "mature",
+   "version": 1,
+   "updated_at": "2026-03-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Thumbtack local leads",
+      "Chamber of commerce newsletter",
+      "Google Maps 4-star shops with unanswered reviews"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Nextdoor UK street posts",
+      "Local parish newsletter ads",
+      "Google Maps high-street shops"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Local Facebook buy-and-sell groups",
+      "Chamber of commerce directory",
+      "Google Maps shops on main streets"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Local Facebook community groups",
+      "Council newsletter sponsorships",
+      "Google Maps suburban strip shops"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "Google Maps shop clusters in heartland malls",
+      "Facebook neighbourhood groups for HDB estates",
+      "WhatsApp business contact lists"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-onl-calendar-va-136",
+   "title": "Calendar and inbox VA for solo coaches",
+   "one_liner": "Solo coaches and consultants pay a monthly retainer to have their schedule and booking links kept tidy.",
+   "min_capital": 8295,
+   "capital_tier": "2k-10k",
+   "hours_per_week": "10-25",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU",
+    "PH"
+   ],
+   "online_or_offline": "online",
+   "legal_blocks": [],
+   "skills_needed": [
+    "basic_english",
+    "writing"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "low",
+   "payback_days": 21,
+   "recurring": true,
+   "channel_ids": [
+    "facebook",
+    "referral",
+    "chamber",
+    "local-groups"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Scheduling tool subscription",
+     "amount": 2903
+    },
+    {
+     "item": "Portfolio one-page site",
+     "amount": 2488
+    },
+    {
+     "item": "Business group membership ads",
+     "amount": 2904
+    }
+   ],
+   "steps": [
+    "Manage a friend's calendar free for 2 weeks",
+    "Write your 5-rule scheduling SOP",
+    "Message 20 coaches in business groups",
+    "Offer $220/month, 10 hours with a 2-week trial",
+    "Take over bookings and reminders",
+    "Send a Friday schedule digest",
+    "Ask for a testimonial after month one"
+   ],
+   "pricing_hint": "$220/month, 10 hours",
+   "first_customers": [
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads"
+   ],
+   "pitfalls": [
+    "Confirm time zones in writing",
+    "Never double-book without asking",
+    "Keep client emails confidential"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "digital-product",
+   "trend_tags": [
+    "va",
+    "remote"
+   ],
+   "first_seen": "2025-04",
+   "maturity": "growing",
+   "version": 1,
+   "updated_at": "2026-04-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Chamber of commerce newsletter",
+      "Google Maps 4-star shops with unanswered reviews",
+      "Nextdoor neighbourhood posts"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Local parish newsletter ads",
+      "Google Maps high-street shops",
+      "Facebook local community groups"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Chamber of commerce directory",
+      "Google Maps shops on main streets",
+      "Nextdoor Canada community posts"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Council newsletter sponsorships",
+      "Google Maps suburban strip shops",
+      "Nextdoor Australia neighbourhood posts"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Viber neighbourhood groups",
+      "Facebook Marketplace local groups",
+      "Barangay community referrals"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-onl-calendar-va-137",
+   "title": "Calendar and inbox VA for solo coaches (central)",
+   "one_liner": "Solo coaches and consultants pay a monthly retainer to have their schedule and booking links kept tidy.",
+   "min_capital": 1290,
+   "capital_tier": "500-2k",
+   "hours_per_week": "<10",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "SG",
+    "PH"
+   ],
+   "online_or_offline": "online",
+   "legal_blocks": [],
+   "skills_needed": [
+    "basic_english",
+    "writing"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "low",
+   "payback_days": 30,
+   "recurring": true,
+   "channel_ids": [
+    "facebook",
+    "referral",
+    "chamber",
+    "local-groups"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Scheduling tool subscription",
+     "amount": 451
+    },
+    {
+     "item": "Portfolio one-page site",
+     "amount": 387
+    },
+    {
+     "item": "Business group membership ads",
+     "amount": 452
+    }
+   ],
+   "steps": [
+    "Manage a friend's calendar free for 2 weeks",
+    "Write your 5-rule scheduling SOP",
+    "Message 25 coaches in business groups",
+    "Offer $350/month, 18 hours with a 2-week trial",
+    "Take over bookings and reminders",
+    "Send a Friday schedule digest",
+    "Ask for a testimonial after month one"
+   ],
+   "pricing_hint": "$350/month, 18 hours",
+   "first_customers": [
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter"
+   ],
+   "pitfalls": [
+    "Confirm time zones in writing",
+    "Never double-book without asking",
+    "Keep client emails confidential"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "digital-product",
+   "trend_tags": [
+    "va",
+    "remote"
+   ],
+   "first_seen": "2024-05",
+   "maturity": "growing",
+   "version": 1,
+   "updated_at": "2026-05-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Google Maps 4-star shops with unanswered reviews",
+      "Nextdoor neighbourhood posts",
+      "Thumbtack local leads"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Google Maps high-street shops",
+      "Facebook local community groups",
+      "Nextdoor UK street posts"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Google Maps shops on main streets",
+      "Nextdoor Canada community posts",
+      "Local Facebook buy-and-sell groups"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "WhatsApp business contact lists",
+      "Google Maps shop clusters in heartland malls",
+      "Facebook neighbourhood groups for HDB estates"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Facebook Marketplace local groups",
+      "Barangay community referrals",
+      "Google Maps shops along main roads"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-onl-calendar-va-138",
+   "title": "Calendar and inbox VA for solo coaches (bayside)",
+   "one_liner": "Solo coaches and consultants pay a monthly retainer to have their schedule and booking links kept tidy.",
+   "min_capital": 1390,
+   "capital_tier": "500-2k",
+   "hours_per_week": "<10",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU",
+    "SG",
+    "PH"
+   ],
+   "online_or_offline": "online",
+   "legal_blocks": [],
+   "skills_needed": [
+    "basic_english",
+    "writing"
+   ],
+   "assets_needed": [
+    "laptop"
+   ],
+   "risk_level": "low",
+   "payback_days": 45,
+   "recurring": true,
+   "channel_ids": [
+    "facebook",
+    "referral",
+    "chamber",
+    "local-groups"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Scheduling tool subscription",
+     "amount": 486
+    },
+    {
+     "item": "Portfolio one-page site",
+     "amount": 417
+    },
+    {
+     "item": "Business group membership ads",
+     "amount": 487
+    }
+   ],
+   "steps": [
+    "Manage a friend's calendar free for 2 weeks",
+    "Write your 5-rule scheduling SOP",
+    "Message 30 coaches in business groups",
+    "Offer $35/hour flexible blocks with a 2-week trial",
+    "Take over bookings and reminders",
+    "Send a Friday schedule digest",
+    "Ask for a testimonial after month one"
+   ],
+   "pricing_hint": "$35/hour flexible blocks",
+   "first_customers": [
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews"
+   ],
+   "pitfalls": [
+    "Confirm time zones in writing",
+    "Never double-book without asking",
+    "Keep client emails confidential"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "digital-product",
+   "trend_tags": [
+    "va",
+    "remote"
+   ],
+   "first_seen": "2024-06",
+   "maturity": "emerging",
+   "version": 1,
+   "updated_at": "2026-06-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Nextdoor neighbourhood posts",
+      "Thumbtack local leads",
+      "Chamber of commerce newsletter"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Facebook local community groups",
+      "Nextdoor UK street posts",
+      "Local parish newsletter ads"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Nextdoor Canada community posts",
+      "Local Facebook buy-and-sell groups",
+      "Chamber of commerce directory"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Nextdoor Australia neighbourhood posts",
+      "Local Facebook community groups",
+      "Council newsletter sponsorships"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "Google Maps shop clusters in heartland malls",
+      "Facebook neighbourhood groups for HDB estates",
+      "WhatsApp business contact lists"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Barangay community referrals",
+      "Google Maps shops along main roads",
+      "Viber neighbourhood groups"
+     ]
+    }
+   }
+  }
+ ]
+}

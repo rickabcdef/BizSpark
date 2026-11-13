@@ -1,0 +1,1391 @@
+{
+ "industry": "home-cleaning",
+ "count": 11,
+ "ideas": [
+  {
+   "id": "bs-svc-home-cleaning-012",
+   "title": "Weekly home cleaning rounds (north)",
+   "one_liner": "Busy households pay for a fixed weekly or fortnightly clean of kitchens, bathrooms and floors.",
+   "min_capital": 1585,
+   "capital_tier": "500-2k",
+   "hours_per_week": "10-25",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU",
+    "PH"
+   ],
+   "online_or_offline": "offline",
+   "legal_blocks": [],
+   "skills_needed": [
+    "none"
+   ],
+   "assets_needed": [
+    "kitchen"
+   ],
+   "risk_level": "medium",
+   "payback_days": 21,
+   "recurring": true,
+   "channel_ids": [
+    "nextdoor",
+    "facebook",
+    "walk-in",
+    "referral"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Cleaning supplies starter kit",
+     "amount": 713
+    },
+    {
+     "item": "Printed flyers and door hangers",
+     "amount": 396
+    },
+    {
+     "item": "Liability insurance first month",
+     "amount": 476
+    }
+   ],
+   "steps": [
+    "Flyer 30 homes in one suburb this weekend",
+    "Offer a discounted first clean",
+    "Buy supplies from the local supermarket",
+    "Book two homes per day, back to back",
+    "Photograph one before/after with permission",
+    "Ask every client for a Google review",
+    "Raise rates after ten regular clients"
+   ],
+   "pricing_hint": "$95 first clean, then $85",
+   "first_customers": [
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads"
+   ],
+   "pitfalls": [
+    "Never quote without seeing the rooms",
+    "Ask about allergies before using products",
+    "Get insurance before touching client property"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "local-service",
+   "trend_tags": [
+    "local-service",
+    "recurring"
+   ],
+   "first_seen": "2024-12",
+   "maturity": "growing",
+   "version": 1,
+   "updated_at": "2026-01-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Chamber of commerce newsletter",
+      "Google Maps 4-star shops with unanswered reviews",
+      "Nextdoor neighbourhood posts"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Local parish newsletter ads",
+      "Google Maps high-street shops",
+      "Facebook local community groups"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Chamber of commerce directory",
+      "Google Maps shops on main streets",
+      "Nextdoor Canada community posts"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Council newsletter sponsorships",
+      "Google Maps suburban strip shops",
+      "Nextdoor Australia neighbourhood posts"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Viber neighbourhood groups",
+      "Facebook Marketplace local groups",
+      "Barangay community referrals"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-svc-home-cleaning-013",
+   "title": "Weekly home cleaning rounds (east)",
+   "one_liner": "Busy households pay for a fixed weekly or fortnightly clean of kitchens, bathrooms and floors.",
+   "min_capital": 3265,
+   "capital_tier": "2k-10k",
+   "hours_per_week": "10-25",
+   "countries": [
+    "US",
+    "UK",
+    "AU"
+   ],
+   "online_or_offline": "hybrid",
+   "legal_blocks": [],
+   "skills_needed": [
+    "none"
+   ],
+   "assets_needed": [
+    "kitchen"
+   ],
+   "risk_level": "medium",
+   "payback_days": 7,
+   "recurring": true,
+   "channel_ids": [
+    "nextdoor",
+    "facebook",
+    "walk-in",
+    "referral"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Cleaning supplies starter kit",
+     "amount": 1469
+    },
+    {
+     "item": "Printed flyers and door hangers",
+     "amount": 816
+    },
+    {
+     "item": "Liability insurance first month",
+     "amount": 980
+    }
+   ],
+   "steps": [
+    "Flyer 5 homes in one suburb this weekend",
+    "Offer a discounted first clean",
+    "Buy supplies from the local supermarket",
+    "Book two homes per day, back to back",
+    "Photograph one before/after with permission",
+    "Ask every client for a Google review",
+    "Raise rates after ten regular clients"
+   ],
+   "pricing_hint": "$30/hour, 3-hour minimum",
+   "first_customers": [
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter"
+   ],
+   "pitfalls": [
+    "Never quote without seeing the rooms",
+    "Ask about allergies before using products",
+    "Get insurance before touching client property"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "local-service",
+   "trend_tags": [
+    "local-service",
+    "recurring"
+   ],
+   "first_seen": "2025-01",
+   "maturity": "growing",
+   "version": 1,
+   "updated_at": "2026-02-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Google Maps 4-star shops with unanswered reviews",
+      "Nextdoor neighbourhood posts",
+      "Thumbtack local leads"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Google Maps high-street shops",
+      "Facebook local community groups",
+      "Nextdoor UK street posts"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Google Maps suburban strip shops",
+      "Nextdoor Australia neighbourhood posts",
+      "Local Facebook community groups"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-svc-home-cleaning-014",
+   "title": "Weekly home cleaning rounds (riverside)",
+   "one_liner": "Busy households pay for a fixed weekly or fortnightly clean of kitchens, bathrooms and floors.",
+   "min_capital": 390,
+   "capital_tier": "<500",
+   "hours_per_week": "10-25",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU",
+    "SG",
+    "PH"
+   ],
+   "online_or_offline": "hybrid",
+   "legal_blocks": [],
+   "skills_needed": [
+    "none"
+   ],
+   "assets_needed": [
+    "kitchen"
+   ],
+   "risk_level": "medium",
+   "payback_days": 14,
+   "recurring": true,
+   "channel_ids": [
+    "nextdoor",
+    "facebook",
+    "walk-in",
+    "referral"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Cleaning supplies starter kit",
+     "amount": 176
+    },
+    {
+     "item": "Printed flyers and door hangers",
+     "amount": 98
+    },
+    {
+     "item": "Liability insurance first month",
+     "amount": 116
+    }
+   ],
+   "steps": [
+    "Flyer 10 homes in one suburb this weekend",
+    "Offer a discounted first clean",
+    "Buy supplies from the local supermarket",
+    "Book two homes per day, back to back",
+    "Photograph one before/after with permission",
+    "Ask every client for a Google review",
+    "Raise rates after ten regular clients"
+   ],
+   "pricing_hint": "$110 flat for a 2-bed weekly clean",
+   "first_customers": [
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews"
+   ],
+   "pitfalls": [
+    "Never quote without seeing the rooms",
+    "Ask about allergies before using products",
+    "Get insurance before touching client property"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "local-service",
+   "trend_tags": [
+    "local-service",
+    "recurring"
+   ],
+   "first_seen": "2024-02",
+   "maturity": "saturated",
+   "version": 1,
+   "updated_at": "2026-03-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Nextdoor neighbourhood posts",
+      "Thumbtack local leads",
+      "Chamber of commerce newsletter"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Facebook local community groups",
+      "Nextdoor UK street posts",
+      "Local parish newsletter ads"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Nextdoor Canada community posts",
+      "Local Facebook buy-and-sell groups",
+      "Chamber of commerce directory"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Nextdoor Australia neighbourhood posts",
+      "Local Facebook community groups",
+      "Council newsletter sponsorships"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "WhatsApp business contact lists",
+      "Google Maps shop clusters in heartland malls",
+      "Facebook neighbourhood groups for HDB estates"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Barangay community referrals",
+      "Google Maps shops along main roads",
+      "Viber neighbourhood groups"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-svc-home-cleaning-015",
+   "title": "Weekly home cleaning rounds (old town)",
+   "one_liner": "Busy households pay for a fixed weekly or fortnightly clean of kitchens, bathrooms and floors.",
+   "min_capital": 40,
+   "capital_tier": "<500",
+   "hours_per_week": "<10",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU",
+    "SG",
+    "PH"
+   ],
+   "online_or_offline": "offline",
+   "legal_blocks": [],
+   "skills_needed": [
+    "none"
+   ],
+   "assets_needed": [
+    "kitchen"
+   ],
+   "risk_level": "medium",
+   "payback_days": 21,
+   "recurring": true,
+   "channel_ids": [
+    "nextdoor",
+    "facebook",
+    "walk-in",
+    "referral"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Cleaning supplies starter kit",
+     "amount": 18
+    },
+    {
+     "item": "Printed flyers and door hangers",
+     "amount": 10
+    },
+    {
+     "item": "Liability insurance first month",
+     "amount": 12
+    }
+   ],
+   "steps": [
+    "Flyer 15 homes in one suburb this weekend",
+    "Offer a discounted first clean",
+    "Buy supplies from the local supermarket",
+    "Book two homes per day, back to back",
+    "Photograph one before/after with permission",
+    "Ask every client for a Google review",
+    "Raise rates after ten regular clients"
+   ],
+   "pricing_hint": "$95 first clean, then $85",
+   "first_customers": [
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts"
+   ],
+   "pitfalls": [
+    "Never quote without seeing the rooms",
+    "Ask about allergies before using products",
+    "Get insurance before touching client property"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "local-service",
+   "trend_tags": [
+    "local-service",
+    "recurring"
+   ],
+   "first_seen": "2024-03",
+   "maturity": "saturated",
+   "version": 1,
+   "updated_at": "2026-04-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Thumbtack local leads",
+      "Chamber of commerce newsletter",
+      "Google Maps 4-star shops with unanswered reviews"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Nextdoor UK street posts",
+      "Local parish newsletter ads",
+      "Google Maps high-street shops"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Local Facebook buy-and-sell groups",
+      "Chamber of commerce directory",
+      "Google Maps shops on main streets"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Local Facebook community groups",
+      "Council newsletter sponsorships",
+      "Google Maps suburban strip shops"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "Google Maps shop clusters in heartland malls",
+      "Facebook neighbourhood groups for HDB estates",
+      "WhatsApp business contact lists"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Google Maps shops along main roads",
+      "Viber neighbourhood groups",
+      "Facebook Marketplace local groups"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-svc-home-cleaning-016",
+   "title": "Weekly home cleaning rounds (hillside)",
+   "one_liner": "Busy households pay for a fixed weekly or fortnightly clean of kitchens, bathrooms and floors.",
+   "min_capital": 135,
+   "capital_tier": "<500",
+   "hours_per_week": "<10",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU",
+    "SG",
+    "PH"
+   ],
+   "online_or_offline": "offline",
+   "legal_blocks": [],
+   "skills_needed": [
+    "none"
+   ],
+   "assets_needed": [
+    "kitchen"
+   ],
+   "risk_level": "medium",
+   "payback_days": 7,
+   "recurring": true,
+   "channel_ids": [
+    "nextdoor",
+    "facebook",
+    "walk-in",
+    "referral"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Cleaning supplies starter kit",
+     "amount": 61
+    },
+    {
+     "item": "Printed flyers and door hangers",
+     "amount": 34
+    },
+    {
+     "item": "Liability insurance first month",
+     "amount": 40
+    }
+   ],
+   "steps": [
+    "Flyer 20 homes in one suburb this weekend",
+    "Offer a discounted first clean",
+    "Buy supplies from the local supermarket",
+    "Book two homes per day, back to back",
+    "Photograph one before/after with permission",
+    "Ask every client for a Google review",
+    "Raise rates after ten regular clients"
+   ],
+   "pricing_hint": "$30/hour, 3-hour minimum",
+   "first_customers": [
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads"
+   ],
+   "pitfalls": [
+    "Never quote without seeing the rooms",
+    "Ask about allergies before using products",
+    "Get insurance before touching client property"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "local-service",
+   "trend_tags": [
+    "local-service",
+    "recurring"
+   ],
+   "first_seen": "2025-04",
+   "maturity": "mature",
+   "version": 1,
+   "updated_at": "2026-05-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Chamber of commerce newsletter",
+      "Google Maps 4-star shops with unanswered reviews",
+      "Nextdoor neighbourhood posts"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Local parish newsletter ads",
+      "Google Maps high-street shops",
+      "Facebook local community groups"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Chamber of commerce directory",
+      "Google Maps shops on main streets",
+      "Nextdoor Canada community posts"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Council newsletter sponsorships",
+      "Google Maps suburban strip shops",
+      "Nextdoor Australia neighbourhood posts"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "Facebook neighbourhood groups for HDB estates",
+      "WhatsApp business contact lists",
+      "Google Maps shop clusters in heartland malls"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Viber neighbourhood groups",
+      "Facebook Marketplace local groups",
+      "Barangay community referrals"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-svc-home-cleaning-017",
+   "title": "Weekly home cleaning rounds (central)",
+   "one_liner": "Busy households pay for a fixed weekly or fortnightly clean of kitchens, bathrooms and floors.",
+   "min_capital": 230,
+   "capital_tier": "<500",
+   "hours_per_week": "10-25",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU",
+    "PH"
+   ],
+   "online_or_offline": "offline",
+   "legal_blocks": [],
+   "skills_needed": [
+    "none"
+   ],
+   "assets_needed": [
+    "kitchen"
+   ],
+   "risk_level": "medium",
+   "payback_days": 14,
+   "recurring": true,
+   "channel_ids": [
+    "nextdoor",
+    "facebook",
+    "walk-in",
+    "referral"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Cleaning supplies starter kit",
+     "amount": 104
+    },
+    {
+     "item": "Printed flyers and door hangers",
+     "amount": 58
+    },
+    {
+     "item": "Liability insurance first month",
+     "amount": 68
+    }
+   ],
+   "steps": [
+    "Flyer 25 homes in one suburb this weekend",
+    "Offer a discounted first clean",
+    "Buy supplies from the local supermarket",
+    "Book two homes per day, back to back",
+    "Photograph one before/after with permission",
+    "Ask every client for a Google review",
+    "Raise rates after ten regular clients"
+   ],
+   "pricing_hint": "$110 flat for a 2-bed weekly clean",
+   "first_customers": [
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter"
+   ],
+   "pitfalls": [
+    "Never quote without seeing the rooms",
+    "Ask about allergies before using products",
+    "Get insurance before touching client property"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "local-service",
+   "trend_tags": [
+    "local-service",
+    "recurring"
+   ],
+   "first_seen": "2024-05",
+   "maturity": "mature",
+   "version": 1,
+   "updated_at": "2026-06-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Google Maps 4-star shops with unanswered reviews",
+      "Nextdoor neighbourhood posts",
+      "Thumbtack local leads"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Google Maps high-street shops",
+      "Facebook local community groups",
+      "Nextdoor UK street posts"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Google Maps shops on main streets",
+      "Nextdoor Canada community posts",
+      "Local Facebook buy-and-sell groups"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Google Maps suburban strip shops",
+      "Nextdoor Australia neighbourhood posts",
+      "Local Facebook community groups"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Facebook Marketplace local groups",
+      "Barangay community referrals",
+      "Google Maps shops along main roads"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-svc-home-cleaning-018",
+   "title": "Weekly home cleaning rounds (bayside)",
+   "one_liner": "Busy households pay for a fixed weekly or fortnightly clean of kitchens, bathrooms and floors.",
+   "min_capital": 330,
+   "capital_tier": "<500",
+   "hours_per_week": "<10",
+   "countries": [
+    "US",
+    "CA",
+    "AU",
+    "SG",
+    "PH"
+   ],
+   "online_or_offline": "offline",
+   "legal_blocks": [],
+   "skills_needed": [
+    "none"
+   ],
+   "assets_needed": [
+    "kitchen"
+   ],
+   "risk_level": "medium",
+   "payback_days": 21,
+   "recurring": true,
+   "channel_ids": [
+    "nextdoor",
+    "facebook",
+    "walk-in",
+    "referral"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Cleaning supplies starter kit",
+     "amount": 148
+    },
+    {
+     "item": "Printed flyers and door hangers",
+     "amount": 82
+    },
+    {
+     "item": "Liability insurance first month",
+     "amount": 100
+    }
+   ],
+   "steps": [
+    "Flyer 30 homes in one suburb this weekend",
+    "Offer a discounted first clean",
+    "Buy supplies from the local supermarket",
+    "Book two homes per day, back to back",
+    "Photograph one before/after with permission",
+    "Ask every client for a Google review",
+    "Raise rates after ten regular clients"
+   ],
+   "pricing_hint": "$95 first clean, then $85",
+   "first_customers": [
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews"
+   ],
+   "pitfalls": [
+    "Never quote without seeing the rooms",
+    "Ask about allergies before using products",
+    "Get insurance before touching client property"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "local-service",
+   "trend_tags": [
+    "local-service",
+    "recurring"
+   ],
+   "first_seen": "2024-06",
+   "maturity": "mature",
+   "version": 1,
+   "updated_at": "2026-07-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Nextdoor neighbourhood posts",
+      "Thumbtack local leads",
+      "Chamber of commerce newsletter"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Nextdoor Canada community posts",
+      "Local Facebook buy-and-sell groups",
+      "Chamber of commerce directory"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Nextdoor Australia neighbourhood posts",
+      "Local Facebook community groups",
+      "Council newsletter sponsorships"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "Google Maps shop clusters in heartland malls",
+      "Facebook neighbourhood groups for HDB estates",
+      "WhatsApp business contact lists"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Barangay community referrals",
+      "Google Maps shops along main roads",
+      "Viber neighbourhood groups"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-svc-home-cleaning-019",
+   "title": "Weekly home cleaning rounds (market)",
+   "one_liner": "Busy households pay for a fixed weekly or fortnightly clean of kitchens, bathrooms and floors.",
+   "min_capital": 425,
+   "capital_tier": "<500",
+   "hours_per_week": "<10",
+   "countries": [
+    "UK",
+    "CA",
+    "AU",
+    "SG",
+    "PH"
+   ],
+   "online_or_offline": "hybrid",
+   "legal_blocks": [],
+   "skills_needed": [
+    "none"
+   ],
+   "assets_needed": [
+    "kitchen"
+   ],
+   "risk_level": "medium",
+   "payback_days": 7,
+   "recurring": true,
+   "channel_ids": [
+    "nextdoor",
+    "facebook",
+    "walk-in",
+    "referral"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Cleaning supplies starter kit",
+     "amount": 191
+    },
+    {
+     "item": "Printed flyers and door hangers",
+     "amount": 106
+    },
+    {
+     "item": "Liability insurance first month",
+     "amount": 128
+    }
+   ],
+   "steps": [
+    "Flyer 5 homes in one suburb this weekend",
+    "Offer a discounted first clean",
+    "Buy supplies from the local supermarket",
+    "Book two homes per day, back to back",
+    "Photograph one before/after with permission",
+    "Ask every client for a Google review",
+    "Raise rates after ten regular clients"
+   ],
+   "pricing_hint": "$30/hour, 3-hour minimum",
+   "first_customers": [
+    "Nextdoor UK street posts",
+    "Local parish newsletter ads",
+    "Google Maps high-street shops",
+    "Facebook local community groups"
+   ],
+   "pitfalls": [
+    "Never quote without seeing the rooms",
+    "Ask about allergies before using products",
+    "Get insurance before touching client property"
+   ],
+   "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+   "wave": "local-service",
+   "trend_tags": [
+    "local-service",
+    "recurring"
+   ],
+   "first_seen": "2025-07",
+   "maturity": "mature",
+   "version": 1,
+   "updated_at": "2026-08-01",
+   "status": "active",
+   "overrides": {
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Nextdoor UK street posts",
+      "Local parish newsletter ads",
+      "Google Maps high-street shops"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Local Facebook buy-and-sell groups",
+      "Chamber of commerce directory",
+      "Google Maps shops on main streets"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Local Facebook community groups",
+      "Council newsletter sponsorships",
+      "Google Maps suburban strip shops"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "Facebook neighbourhood groups for HDB estates",
+      "WhatsApp business contact lists",
+      "Google Maps shop clusters in heartland malls"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Google Maps shops along main roads",
+      "Viber neighbourhood groups",
+      "Facebook Marketplace local groups"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-svc-home-cleaning-020",
+   "title": "Weekly home cleaning rounds(lakeside)",
+   "one_liner": "Busy households pay for a fixed weekly or fortnightly clean of kitchens, bathrooms and floors.",
+   "min_capital": 985,
+   "capital_tier": "500-2k",
+   "hours_per_week": "10-25",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU",
+    "SG",
+    "PH"
+   ],
+   "online_or_offline": "offline",
+   "legal_blocks": [],
+   "skills_needed": [
+    "none"
+   ],
+   "assets_needed": [
+    "kitchen"
+   ],
+   "risk_level": "medium",
+   "payback_days": 14,
+   "recurring": true,
+   "channel_ids": [
+    "nextdoor",
+    "facebook",
+    "walk-in",
+    "referral"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Cleaning supplies starter kit",
+     "amount": 443
+    },
+    {
+     "item": "Printed flyers and door hangers",
+     "amount": 246
+    },
+    {
+     "item": "Liability insurance first month",
+     "amount": 296
+    }
+   ],
+   "steps": [
+    "Flyer 10 homes in one suburb this weekend",
+    "Offer a discounted first clean",
+    "Buy supplies from the local supermarket",
+    "Book two homes per day, back to back",
+    "Photograph one before/after with permission",
+    "Ask every client for a Google review",
+    "Raise rates after ten regular clients"
+   ],
+   "pricing_hint": "$110 flat for a 2-bed weekly clean",
+   "first_customers": [
+    "Chamber of commerce newsletter",
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads"
+   ],
+   "pitfalls": [
+    "Never quote without seeing the rooms",
+    "Ask about allergies before using products",
+    "Get insurance before touching client property"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "local-service",
+   "trend_tags": [
+    "local-service",
+    "recurring"
+   ],
+   "first_seen": "2024-08",
+   "maturity": "mature",
+   "version": 1,
+   "updated_at": "2026-09-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Chamber of commerce newsletter",
+      "Google Maps 4-star shops with unanswered reviews",
+      "Nextdoor neighbourhood posts"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Local parish newsletter ads",
+      "Google Maps high-street shops",
+      "Facebook local community groups"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Chamber of commerce directory",
+      "Google Maps shops on main streets",
+      "Nextdoor Canada community posts"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Council newsletter sponsorships",
+      "Google Maps suburban strip shops",
+      "Nextdoor Australia neighbourhood posts"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "WhatsApp business contact lists",
+      "Google Maps shop clusters in heartland malls",
+      "Facebook neighbourhood groups for HDB estates"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Viber neighbourhood groups",
+      "Facebook Marketplace local groups",
+      "Barangay community referrals"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-svc-home-cleaning-021",
+   "title": "Weekly home cleaning rounds",
+   "one_liner": "Busy households pay for a fixed weekly or fortnightly clean of kitchens, bathrooms and floors.",
+   "min_capital": 1080,
+   "capital_tier": "500-2k",
+   "hours_per_week": "<10",
+   "countries": [
+    "US",
+    "UK",
+    "CA",
+    "AU",
+    "SG"
+   ],
+   "online_or_offline": "offline",
+   "legal_blocks": [],
+   "skills_needed": [
+    "none"
+   ],
+   "assets_needed": [
+    "kitchen"
+   ],
+   "risk_level": "medium",
+   "payback_days": 21,
+   "recurring": true,
+   "channel_ids": [
+    "nextdoor",
+    "facebook",
+    "walk-in",
+    "referral"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Cleaning supplies starter kit",
+     "amount": 486
+    },
+    {
+     "item": "Printed flyers and door hangers",
+     "amount": 270
+    },
+    {
+     "item": "Liability insurance first month",
+     "amount": 324
+    }
+   ],
+   "steps": [
+    "Flyer 15 homes in one suburb this weekend",
+    "Offer a discounted first clean",
+    "Buy supplies from the local supermarket",
+    "Book two homes per day, back to back",
+    "Photograph one before/after with permission",
+    "Ask every client for a Google review",
+    "Raise rates after ten regular clients"
+   ],
+   "pricing_hint": "$95 first clean, then $85",
+   "first_customers": [
+    "Google Maps 4-star shops with unanswered reviews",
+    "Nextdoor neighbourhood posts",
+    "Thumbtack local leads",
+    "Chamber of commerce newsletter"
+   ],
+   "pitfalls": [
+    "Never quote without seeing the rooms",
+    "Ask about allergies before using products",
+    "Get insurance before touching client property"
+   ],
+   "compliance_note": "US: check local business-name registration and sales-tax rules.",
+   "wave": "local-service",
+   "trend_tags": [
+    "local-service",
+    "recurring"
+   ],
+   "first_seen": "2024-09",
+   "maturity": "growing",
+   "version": 1,
+   "updated_at": "2026-10-01",
+   "status": "active",
+   "overrides": {
+    "US": {
+     "currency": "USD",
+     "compliance_note": "US: check local business-name registration and sales-tax rules.",
+     "first_customers": [
+      "Google Maps 4-star shops with unanswered reviews",
+      "Nextdoor neighbourhood posts",
+      "Thumbtack local leads"
+     ]
+    },
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Google Maps high-street shops",
+      "Facebook local community groups",
+      "Nextdoor UK street posts"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Google Maps shops on main streets",
+      "Nextdoor Canada community posts",
+      "Local Facebook buy-and-sell groups"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Google Maps suburban strip shops",
+      "Nextdoor Australia neighbourhood posts",
+      "Local Facebook community groups"
+     ]
+    },
+    "SG": {
+     "currency": "SGD",
+     "compliance_note": "SG: check ACRA registration before invoicing.",
+     "first_customers": [
+      "Google Maps shop clusters in heartland malls",
+      "Facebook neighbourhood groups for HDB estates",
+      "WhatsApp business contact lists"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bs-svc-home-cleaning-022",
+   "title": "Weekly home cleaning rounds (north)",
+   "one_liner": "Busy households pay for a fixed weekly or fortnightly clean of kitchens, bathrooms and floors.",
+   "min_capital": 1175,
+   "capital_tier": "500-2k",
+   "hours_per_week": "<10",
+   "countries": [
+    "UK",
+    "CA",
+    "AU",
+    "PH"
+   ],
+   "online_or_offline": "offline",
+   "legal_blocks": [],
+   "skills_needed": [
+    "none"
+   ],
+   "assets_needed": [
+    "kitchen"
+   ],
+   "risk_level": "medium",
+   "payback_days": 7,
+   "recurring": true,
+   "channel_ids": [
+    "nextdoor",
+    "facebook",
+    "walk-in",
+    "referral"
+   ],
+   "cost_breakdown": [
+    {
+     "item": "Cleaning supplies starter kit",
+     "amount": 529
+    },
+    {
+     "item": "Printed flyers and door hangers",
+     "amount": 294
+    },
+    {
+     "item": "Liability insurance first month",
+     "amount": 352
+    }
+   ],
+   "steps": [
+    "Flyer 20 homes in one suburb this weekend",
+    "Offer a discounted first clean",
+    "Buy supplies from the local supermarket",
+    "Book two homes per day, back to back",
+    "Photograph one before/after with permission",
+    "Ask every client for a Google review",
+    "Raise rates after ten regular clients"
+   ],
+   "pricing_hint": "$30/hour, 3-hour minimum",
+   "first_customers": [
+    "Facebook local community groups",
+    "Nextdoor UK street posts",
+    "Local parish newsletter ads",
+    "Google Maps high-street shops"
+   ],
+   "pitfalls": [
+    "Never quote without seeing the rooms",
+    "Ask about allergies before using products",
+    "Get insurance before touching client property"
+   ],
+   "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+   "wave": "local-service",
+   "trend_tags": [
+    "local-service",
+    "recurring"
+   ],
+   "first_seen": "2025-10",
+   "maturity": "saturated",
+   "version": 1,
+   "updated_at": "2026-11-01",
+   "status": "active",
+   "overrides": {
+    "UK": {
+     "currency": "GBP",
+     "compliance_note": "UK: register as self-employed with HMRC once income starts.",
+     "first_customers": [
+      "Facebook local community groups",
+      "Nextdoor UK street posts",
+      "Local parish newsletter ads"
+     ]
+    },
+    "CA": {
+     "currency": "CAD",
+     "compliance_note": "CA: register the business name provincially before invoicing.",
+     "first_customers": [
+      "Nextdoor Canada community posts",
+      "Local Facebook buy-and-sell groups",
+      "Chamber of commerce directory"
+     ]
+    },
+    "AU": {
+     "currency": "AUD",
+     "compliance_note": "AU: check state council permits before door-to-door work.",
+     "first_customers": [
+      "Nextdoor Australia neighbourhood posts",
+      "Local Facebook community groups",
+      "Council newsletter sponsorships"
+     ]
+    },
+    "PH": {
+     "currency": "PHP",
+     "compliance_note": "PH: check barangay / DTI registration for home-based services.",
+     "first_customers": [
+      "Barangay community referrals",
+      "Google Maps shops along main roads",
+      "Viber neighbourhood groups"
+     ]
+    }
+   }
+  }
+ ]
+}
