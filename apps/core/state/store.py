@@ -31,6 +31,11 @@ import time
 from . import paths
 from . import settings as settings_mod
 
+# PM 2026-11-14：存档行标题要与详情页同口径走 zhpack 中文覆盖（老板反馈：
+# 结果页/详情是中文，「我的点子」列表却是英文标题）。engine 不反向依赖 state，
+# 此导入无环。
+from engine import zhpack as _zhpack
+
 STATE_V = 1
 DEFAULT_LIBRARY_VERSION = "2026.11"
 
@@ -174,8 +179,13 @@ def find_idea(idea_id):
 
 
 def _idea_card(item):
-    """给存档行用的展示字段（金额来自库 + currency 覆盖，不写死售价）。"""
-    title = item.get("title") if isinstance(item.get("title"), str) else item.get("id")
+    """给存档行用的展示字段（金额来自库 + currency 覆盖，不写死售价）。
+
+    PM 2026-11-14：标题与详情页同口径——先过 zhpack 中文覆盖（is_zh 时），
+    缺项回退英文原文。
+    """
+    shown = _zhpack.overlay(item) if isinstance(item, dict) else item
+    title = shown.get("title") if isinstance(shown.get("title"), str) else item.get("id")
     capital = item.get("min_capital")
     currency = "USD"
     overrides = item.get("overrides") if isinstance(item.get("overrides"), dict) else {}
@@ -288,10 +298,18 @@ def list_saved(payload=None):
     st = load_state()
     items = list(st["saved"])
     items.sort(key=lambda s: str(s.get("saved_at") or ""), reverse=True)
-    # 补 title（历史条目缺 title 时用库补，库已删则用 id）
+    # 标题按当前 locale 重算（PM 2026-11-14：存档时刻的语言可能与当前不同，
+    # 且旧条目存的是英文名；库内还在的条目用 _idea_card 覆盖口径重算，
+    # 已 retire / 库中删除的条目保留存量标题）。
     for it in items:
-        if not it.get("title") or it.get("min_capital") is None:
-            card = _idea_card(find_idea(it.get("id")) or {"id": it.get("id")})
+        lib_item = find_idea(it.get("id"))
+        if lib_item is not None:
+            card = _idea_card(lib_item)
+            it["title"] = card["title"]
+            if it.get("min_capital") is None:
+                it["min_capital"] = card["min_capital"]
+        elif not it.get("title") or it.get("min_capital") is None:
+            card = _idea_card({"id": it.get("id")})
             it["title"] = it.get("title") or card["title"]
             if it.get("min_capital") is None:
                 it["min_capital"] = card["min_capital"]

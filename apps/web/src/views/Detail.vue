@@ -8,7 +8,7 @@
 import { computed, onMounted, ref } from "vue";
 import { useRoute, useRouter } from "vue-router";
 import { t } from "../i18n";
-import { diagnose, getIdea, getState } from "../bridge/cmd";
+import { diagnose, getIdea, getState, listSaved } from "../bridge/cmd";
 import AppShell from "../components/AppShell.vue";
 import KvRow from "../components/KvRow.vue";
 import StepList from "../components/StepList.vue";
@@ -48,6 +48,15 @@ onMounted(async () => {
           rank: typeof hit.rank === "number" ? hit.rank : d.value.rank,
           match_pct: typeof hit.match_pct === "number" ? hit.match_pct : d.value.match_pct,
         };
+      } else if (!d.value.match_pct) {
+        // 深链/存档打开：该点子未必在当前 Top3 里（PM 2026-11-14 修复
+        // 「· % 匹配」空百分比）。回退读存档时刻记录的 match_pct。
+        const sv = await listSaved().catch(() => null);
+        const savedHit = ((sv?.items as Array<Record<string, unknown>>) || []).find(
+          (x) => String(x.id || "") === String(d.value?.id || ""),
+        );
+        const m = savedHit?.match_pct;
+        if (typeof m === "number") d.value = { ...d.value, match_pct: m };
       }
     } catch { /* diagnose 失败时 eyebrow 百分比留空，不影响页面其余内容 */ }
   }
