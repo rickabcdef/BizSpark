@@ -13,29 +13,26 @@ import json
 import os
 import re
 
-_CORE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-FX_PATH = os.path.join(_CORE_DIR, "data", "fx.json")
+from engine import money as _money  # PM 2026-11-14：fx 收编进 engine.money（USD→本地乘数）
 
-# fx.json 缺失时的兜底（与 C 的 engine.detail.DEFAULT_FX 口径一致，不联网）
-DEFAULT_FX = {"USD": 1.0, "CAD": 0.74, "GBP": 0.79, "AUD": 0.66, "SGD": 0.75, "PHP": 0.018}
+_CORE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+FX_PATH = _money.FX_PATH
 
 CSV_HEADERS = ["item", "amount", "currency"]
 
 
 def _load_fx():
-    try:
-        with open(FX_PATH, encoding="utf-8") as f:
-            data = json.load(f)
-        if isinstance(data, dict) and data:
-            return {k: float(v) for k, v in data.items() if isinstance(v, (int, float))}
-    except (OSError, ValueError, TypeError):
-        pass
-    return dict(DEFAULT_FX)
+    return _money.load_fx()
 
 
 def _slug(idea_id):
     slug = re.sub(r"[^a-zA-Z0-9]+", "-", str(idea_id or "idea")).strip("-").lower()
     return slug or "idea"
+
+
+def _safe_title(name, limit=48):
+    s = re.sub(r'[\\/:*?"<>|\r\n\t]+', " ", str(name or "")).strip(" .")
+    return (s[:limit].rstrip(" .")) or "plan"
 
 
 def csv_rows(detail):
@@ -76,13 +73,23 @@ def export_csv(payload):
                       "recoverable": True}
     path = os.path.abspath(str(path).strip())
 
+    # PM 2026-11-14：country 缺省回退问卷答案（货币口径与 PDF/详情一致）
     from engine import get_idea as _get_idea  # 局部导入避免循环依赖
-    detail, err = _get_idea({"id": idea_id})
+    from engine import answers_country as _answers_country
+    country = payload.get("country") if isinstance(payload.get("country"), str) else None
+    if not country or not country.strip():
+        country = _answers_country()
+    detail, err = _get_idea({"id": idea_id, "country": country})
     if err:
         return None, err
 
     directory = os.path.dirname(path) if os.path.splitext(path)[1] else path
-    out_path = os.path.join(directory, "BizSpark-Plan-%s-costs.csv" % _slug(idea_id))
+    # PM 2026-11-14：默认文件名随语言本地化（中文「BizSpark-方案-<标题>-成本表.csv」）
+    from . import detail as _rd
+    if _rd._zh():
+        out_path = os.path.join(directory, "BizSpark-方案-%s-成本表.csv" % _safe_title(detail.get("title")))
+    else:
+        out_path = os.path.join(directory, "BizSpark-Plan-%s-costs.csv" % _slug(idea_id))
 
     try:
         os.makedirs(directory, exist_ok=True)

@@ -18,7 +18,11 @@ const DIST = path.join(REPO, "apps", "web", "dist");
 const LOCALES = JSON.parse(
   fs.readFileSync(path.join(REPO, "apps", "web", "src", "locales", "en-US.json"), "utf8"),
 );
-const t = (k) => LOCALES[k] || k;
+const t = (k, vars) => {
+  let s = LOCALES[k] || k;
+  if (vars) s = s.replace(/\{(\w+)\}/g, (_, n) => (vars[n] !== undefined ? String(vars[n]) : `{${n}}`));
+  return s;
+};
 
 const results = [];
 const record = (id, ok, detail, metrics) => {
@@ -227,7 +231,9 @@ const CHECKS = {
     page.__base = bridge.base;
     await answerQuiz(page, [0, 1, 0, [0, 2], 0]);   // US / 第2档 / <10h
     const lead = await page.locator(".page-head .lead").innerText();
-    const need = [t("results.ans_cap2"), t("results.ans_h1"), "United States"];
+    // PM 2026-11-14：资金档文案参数化后，复述句金额由 money.ts 按所选国家格式化
+    // （US → USD：$500 / $2,000，与 engine.money.to_local 同取整规则）
+    const need = [t("results.ans_cap2", { lo: "$500", hi: "$2,000" }), t("results.ans_h1"), "United States"];
     const missing = need.filter((w) => !lead.includes(w));
     record("T-20", missing.length === 0, `复述句「${lead}」· 缺 ${JSON.stringify(missing)}`);
   }),

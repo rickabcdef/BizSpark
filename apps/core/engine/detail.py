@@ -12,11 +12,13 @@
 import json
 import os
 
-_CORE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-FX_PATH = os.path.join(_CORE_DIR, "data", "fx.json")
+from . import money as _money
 
-# 静态汇率表兜底（fx.json 缺失时用；D 落库后以 fx.json 为准，不联网）
-DEFAULT_FX = {"USD": 1.0, "CAD": 0.74, "GBP": 0.79, "AUD": 0.66, "SGD": 0.75, "PHP": 0.018}
+_CORE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+FX_PATH = _money.FX_PATH
+
+# 静态汇率表兜底已收编进 engine.money（PM 2026-11-14：fx.json 为 USD→本地乘数）
+DEFAULT_FX = _money.DEFAULT_FX
 
 OVERRIDE_FIELDS = ("currency", "first_customers", "compliance_note")
 
@@ -69,19 +71,12 @@ def _t32_sanitize(detail):
 
 
 def _load_fx():
-    try:
-        with open(FX_PATH, encoding="utf-8") as f:
-            data = json.load(f)
-        if isinstance(data, dict) and data:
-            return {k: float(v) for k, v in data.items() if isinstance(v, (int, float))}
-    except (OSError, ValueError, TypeError):
-        pass
-    return dict(DEFAULT_FX)
+    return _money.load_fx()
 
 
 def _fmt(amount, currency, fx):
-    rate = fx.get(currency, 1.0)
-    return "{} {:,.0f}".format(currency, amount * rate)
+    """契约格式（"CAD 89"）；PM 2026-11-14：金额按 USD→本地汇率乘算 + 友好取整。"""
+    return _money.fmt_code(amount, currency, fx)
 
 
 def assemble(idea, country=None):
@@ -116,9 +111,12 @@ def assemble(idea, country=None):
     detail["cost_total"] = cost_total
 
     # 派生字段 2：cost_rows（按 currency 格式化；currency 仅影响展示符号）
+    # PM 2026-11-14：币种 = per-idea overrides.currency 优先，缺省按国家映射
+    # （US/CA/GB/AU/SG/PH），无国家时回退 USD。
     fx = _load_fx()
-    currency = detail.get("currency") if isinstance(detail.get("currency"), str) else "USD"
-    detail["currency"] = currency  # 无覆盖时显式落默认 USD，保证字段恒在
+    currency = detail.get("currency") if isinstance(detail.get("currency"), str) \
+        and detail.get("currency").strip() else _money.currency_for(country)
+    detail["currency"] = currency  # 显式落默认，保证字段恒在
     detail["cost_rows"] = [{"item": (c.get("item") or "") if isinstance(c, dict) else "",
                             "amount": _fmt((c.get("amount") or 0) if isinstance(c, dict) else 0,
                                            currency, fx)}
@@ -129,7 +127,9 @@ def assemble(idea, country=None):
     detail["total_to_first_invoice"] = _fmt(cost_total, currency, fx)
 
     # 派生字段 3：payback_hint（pricing_hint + payback_days 拼一句；zh 包走中文句式）
+    # PM 2026-11-14：定价提示里的美元金额随所选币种本地化（"$NN"/"NN 美元" → 本地符号+换算金额）
     hint = detail.get("pricing_hint") if isinstance(detail.get("pricing_hint"), str) else ""
+    hint = _money.localize_text(hint, currency, fx)
     days = detail.get("payback_days")
     if zhpack.is_zh():
         detail["payback_hint"] = (zhpack.PAYBACK_HINT_ZH.format(hint=hint, days=int(days))
@@ -138,6 +138,11 @@ def assemble(idea, country=None):
         days_part = "most founders cover costs within {} days".format(int(days)) if isinstance(days, (int, float)) \
             else "costs are typically covered early"
         detail["payback_hint"] = "{} — {}".format(hint, days_part) if hint else days_part.capitalize() + "."
+
+    # PM 2026-11-14：步骤文案里的美元金额同样随所选币种本地化
+    # （老板反馈"内容里一律用所选货币"；全库仅 steps 携带金额，290/312 条）
+    detail["steps"] = [_money.localize_text(s, currency, fx) if isinstance(s, str) else s
+                       for s in _as_list(detail.get("steps"))]
 
     # B 兼容别名：channels（Detail.vue 渠道卡消费），契约字段仍是 first_customers
     detail["channels"] = detail.get("first_customers") or []

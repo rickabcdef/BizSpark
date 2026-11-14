@@ -197,8 +197,9 @@ export async function startBridge(opts = {}) {
           return;
         }
         if (dialogDir && cmd === "export_plan" && !payload.path) {
-          const safe = String(payload.id || "plan").replace(/[^\w.-]/g, "");
-          payload = { ...payload, path: path.join(dialogDir, `BizSpark-Plan-${safe}.pdf`) };
+          // PM 2026-11-14：传目录，文件名由引擎按语言自动命名
+          //（中文「BizSpark-方案-<标题>.pdf」，英文「BizSpark-Plan-<id>.pdf」）
+          payload = { ...payload, path: dialogDir };
         }
         if (!sidecar) {
           res.writeHead(200, { "content-type": "application/json" });

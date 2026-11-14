@@ -35,6 +35,7 @@ from . import settings as settings_mod
 # 结果页/详情是中文，「我的点子」列表却是英文标题）。engine 不反向依赖 state，
 # 此导入无环。
 from engine import zhpack as _zhpack
+from engine import money as _money
 
 STATE_V = 1
 DEFAULT_LIBRARY_VERSION = "2026.11"
@@ -182,24 +183,37 @@ def _idea_card(item):
     """给存档行用的展示字段（金额来自库 + currency 覆盖，不写死售价）。
 
     PM 2026-11-14：标题与详情页同口径——先过 zhpack 中文覆盖（is_zh 时），
-    缺项回退英文原文。
+    缺项回退英文原文。金额随所选国家货币换算（问卷答案国家优先，设置国家兜底），
+    USD 保持旧格式（From + 符号 + 原值），非 USD 用货币符号前缀 + 换算金额。
     """
     shown = _zhpack.overlay(item) if isinstance(item, dict) else item
     title = shown.get("title") if isinstance(shown.get("title"), str) else item.get("id")
     capital = item.get("min_capital")
     currency = "USD"
     overrides = item.get("overrides") if isinstance(item.get("overrides"), dict) else {}
-    # 用设置里的国家取覆盖币种（与详情页口径一致），缺覆盖回退 USD
-    try:
-        country = settings_mod.normalize(load_state().get("settings")).get("country")
-    except OSError:
-        country = None
+    # 国家：问卷答案优先（货币口径与结果页/详情一致），缺省用设置里的国家
+    country = None
+    st = load_state()
+    la = st.get("last_answers") if isinstance(st, dict) else None
+    if isinstance(la, dict) and isinstance(la.get("country"), str) and la.get("country").strip():
+        country = la["country"].strip().upper()
+    if not country:
+        try:
+            country = settings_mod.normalize(load_state().get("settings")).get("country")
+        except OSError:
+            country = None
     if country and isinstance(overrides.get(country), dict) and overrides[country].get("currency"):
         currency = overrides[country]["currency"]
-    symbol = CURRENCY_SYMBOL.get(currency, "")
+    else:
+        currency = _money.currency_for(country, overrides)
     min_capital = None
     if isinstance(capital, (int, float)):
-        min_capital = "From %s%s" % (symbol, format(int(capital), ","))
+        if currency == "USD":
+            symbol = CURRENCY_SYMBOL.get("USD", "$")
+            min_capital = "From %s%s" % (symbol, format(int(capital), ","))
+        else:
+            amount = _money.fmt_symbol(capital, currency)
+            min_capital = ("起步 " + amount) if _zhpack.is_zh() else ("From " + amount)
     return {"title": title, "min_capital": min_capital}
 
 
@@ -234,6 +248,8 @@ def get_state(payload=None):
         "license_state": license_state,
         "first_run": bool(st.get("first_run", True)),
         "timeline": st.get("timeline") or [],
+        # PM 2026-11-14：静态汇率表（USD→本地乘数）给前端做问卷资金档/复述句本地化
+        "fx": _money.load_fx(),
         "paths": paths.all_paths(),
     }, None
 

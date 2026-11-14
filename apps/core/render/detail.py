@@ -135,13 +135,29 @@ def local_note(detail):
 
 
 def build_pdf_view(detail):
-    """E-03 输入：把 IdeaDetail 整理成 PDF 9 块固定顺序所需的数据（与详情页一致）。"""
+    """E-03 输入：把 IdeaDetail 整理成 PDF 9 块固定顺序所需的数据（与详情页一致）。
+
+    PM 2026-11-14：块标题随语言本地化（zh 包此前标题/正文已中文，但
+    "What it costs" 等 PDF 块标题仍是英文硬编码）。
+    """
     d = sanitize(detail)
     zh = _zh()
+    heads = ({"costs": "起步要花多少钱", "steps": "最前面的 7 步", "pricing": "定价与回本",
+              "channels": "第一批客户从哪里来", "pitfalls": "最容易做错的三个地方",
+              "note": "本地提示"}
+             if zh else
+             {"costs": "What it costs", "steps": "First 7 steps", "pricing": "Pricing & payback",
+              "channels": "First customers", "pitfalls": "3 pitfalls", "note": "Local note"})
     return {
         "eyebrow": "BizSpark · 一页方案" if zh else "BizSpark · One-page plan",
         "title": d["title"],
         "one_liner": d["one_liner"],
+        "h_costs": heads["costs"],
+        "h_steps": heads["steps"],
+        "h_pricing": heads["pricing"],
+        "h_channels": heads["channels"],
+        "h_pitfalls": heads["pitfalls"],
+        "h_note": heads["note"],
         "cost_rows": [{"item": _clip(r.get("item"), MAX_LINE), "amount": _s(r.get("amount"), "-")}
                       for r in d["cost_rows"]],
         "cost_total_label": "开出第一张账单前的总投入" if zh else "Total to first invoice",

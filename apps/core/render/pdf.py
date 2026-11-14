@@ -3,11 +3,16 @@
 
 规则（F06）：
 - reportlab 渲染**单页** A4 / Letter 自适应 PDF，9 个内容块顺序写死（与详情页一致）
-- 无水印 / 无二维码 / 无在线链接 / 无分享按钮；字体 Helvetica 内置，英文版不嵌 CJK
+- 无水印 / 无二维码 / 无在线链接 / 无分享按钮
 - 全程本地写盘，不上传、不生成在线链接、不经过任何服务器
 - 写盘成功返回 {filename, file_name, bytes, pages:1, path}（file_name 为 B 前端消费名）
 - 目录不可写 → 仅返回可恢复错误（前端唯一提示 Choose another folder，T-34）
 - 渲染异常 → E_PDF_RENDER（内部错误码，禁止展示给用户）
+
+PM 2026-11-14（老板反馈）：① 中文导出内容乱码 → 检测到 CJK 文本时改用
+含中文字形的字体（Windows 微软雅黑/黑体，兜底 STSong-Light CID）；
+② 块标题随语言本地化；③ 中文版默认文件名为「BizSpark-方案-<标题>.pdf」
+（payload.path 传目录时自动命名，英文版仍为 BizSpark-Plan-<id>.pdf）。
 """
 
 import os
@@ -19,6 +24,9 @@ from reportlab.lib.styles import ParagraphStyle
 from reportlab.lib.units import mm
 from reportlab.lib.enums import TA_CENTER
 from reportlab.lib import colors
+from reportlab.pdfbase import pdfmetrics
+from reportlab.pdfbase.ttfonts import TTFont
+from reportlab.pdfbase.cidfonts import UnicodeCIDFont
 from reportlab.platypus import (SimpleDocTemplate, Paragraph, Spacer, Table,
                                 TableStyle, KeepTogether)
 
@@ -27,6 +35,58 @@ from . import detail as rd
 # 单页自适应：字号从大到小逐档重排，直到恰好 1 页（T-27 pages:1）
 FONT_LADDER = [9.5, 9.0, 8.5, 8.0, 7.5]
 ORANGE = colors.HexColor("#E8590C")
+
+_FONT = None  # (regular, bold)；懒注册一次
+
+
+def _try_register(name, candidates):
+    """按候选顺序注册第一个可用的 TTF/TTC 字体，成功返回字体名。"""
+    for path, idx in candidates:
+        try:
+            if not os.path.isfile(path):
+                continue
+            if idx is None:
+                pdfmetrics.registerFont(TTFont(name, path))
+            else:
+                pdfmetrics.registerFont(TTFont(name, path, subfontIndex=idx))
+            return name
+        except Exception:
+            continue
+    return None
+
+
+def _cjk_fonts():
+    """返回 (regular, bold) 字体名：优先系统 CJK 字体，兜底 STSong-Light CID。"""
+    global _FONT
+    if _FONT:
+        return _FONT
+    win = os.path.join(os.environ.get("WINDIR", r"C:\Windows"), "Fonts")
+    reg = _try_register("BSCJK", [
+        (os.path.join(win, "msyh.ttc"), 0), (os.path.join(win, "msyh.ttf"), None),
+        (os.path.join(win, "simsun.ttc"), 0), (os.path.join(win, "simhei.ttf"), None),
+    ])
+    bold = _try_register("BSCJK-B", [
+        (os.path.join(win, "msyhbd.ttc"), 0), (os.path.join(win, "simhei.ttf"), None),
+    ]) if reg else None
+    if not reg:
+        try:
+            pdfmetrics.registerFont(UnicodeCIDFont("STSong-Light"))
+            reg = "STSong-Light"
+        except Exception:
+            reg = "Helvetica"
+    _FONT = (reg, bold or reg)
+    return _FONT
+
+
+def _has_cjk(view):
+    """视图里任一文本含 CJK 字符就需要中文字体（en 包标题也可能带中文变体）。"""
+    for k, v in view.items():
+        if k.startswith("_") or not isinstance(v, str):
+            continue
+        if any("\u2e80" <= ch <= "\u9fff" or "\u30a0" <= ch <= "\u30ff" for ch in v):
+            return True
+    return False
+
 
 _BLOCK_TITLES = {
     "costs": "What it costs",
@@ -46,35 +106,51 @@ def _slug(idea_id):
     return slug or "idea"
 
 
-def _styles(base):
+def _safe_title(name, limit=48):
+    """文件名安全化：去非法字符与首尾空白/点，限长（中文标题一字一位）。"""
+    s = re.sub(r'[\\/:*?"<>|\r\n\t]+', " ", str(name or "")).strip(" .")
+    return (s[:limit].rstrip(" .")) or "plan"
+
+
+def _default_pdf_name(detail, view):
+    """默认文件名：中文版「BizSpark-方案-<标题>.pdf」，英文版沿用 id slug。"""
+    if rd._zh():
+        return "BizSpark-方案-%s.pdf" % _safe_title(view.get("title") or detail.get("id") or "plan")
+    return "BizSpark-Plan-%s.pdf" % _slug(detail.get("id"))
+
+
+def _styles(base, font_reg="Helvetica", font_bold="Helvetica-Bold"):
     lead = base * 1.05
     return {
-        "eyebrow": ParagraphStyle("eyebrow", fontName="Helvetica", fontSize=base - 1,
+        "eyebrow": ParagraphStyle("eyebrow", fontName=font_reg, fontSize=base - 1,
                                   textColor=colors.HexColor("#868E96"), spaceAfter=2 * lead),
-        "title": ParagraphStyle("title", fontName="Helvetica-Bold", fontSize=base + 6,
+        "title": ParagraphStyle("title", fontName=font_bold, fontSize=base + 6,
                                 leading=(base + 6) * 1.15, spaceAfter=2),
-        "one_liner": ParagraphStyle("one_liner", fontName="Helvetica", fontSize=base,
+        "one_liner": ParagraphStyle("one_liner", fontName=font_reg, fontSize=base,
                                     leading=base * 1.3, textColor=colors.HexColor("#495057"),
                                     spaceAfter=6 * lead),
-        "h2": ParagraphStyle("h2", fontName="Helvetica-Bold", fontSize=base + 1,
+        "h2": ParagraphStyle("h2", fontName=font_bold, fontSize=base + 1,
                              leading=(base + 1) * 1.2, spaceBefore=6, spaceAfter=3),
-        "body": ParagraphStyle("body", fontName="Helvetica", fontSize=base,
+        "body": ParagraphStyle("body", fontName=font_reg, fontSize=base,
                                leading=base * 1.3, spaceAfter=2),
-        "num": ParagraphStyle("num", fontName="Helvetica", fontSize=base,
+        "num": ParagraphStyle("num", fontName=font_reg, fontSize=base,
                               leading=base * 1.3, leftIndent=14, firstLineIndent=-14,
                               spaceAfter=1.5),
-        "total": ParagraphStyle("total", fontName="Helvetica-Bold", fontSize=base + 1,
+        "total": ParagraphStyle("total", fontName=font_bold, fontSize=base + 1,
                                 textColor=ORANGE),
-        "note": ParagraphStyle("note", fontName="Helvetica", fontSize=base - 1,
+        "note": ParagraphStyle("note", fontName=font_reg, fontSize=base - 1,
                                leading=(base - 1) * 1.3, textColor=colors.HexColor("#495057"),
                                spaceAfter=2),
-        "footer": ParagraphStyle("footer", fontName="Helvetica", fontSize=base - 2,
+        "footer": ParagraphStyle("footer", fontName=font_reg, fontSize=base - 2,
                                  textColor=colors.HexColor("#868E96"), alignment=TA_CENTER),
     }
 
 
 def _build_story(view, st, cell_st):
-    """F06 步骤 3：9 个内容块顺序写死，不得调序、不得增删块。"""
+    """F06 步骤 3：9 个内容块顺序写死，不得调序、不得增删块。
+
+    PM 2026-11-14：块标题走 view 的本地化标题（h_* 键），缺失回退英文常量。
+    """
     story = []
     # 1 页眉小字
     story.append(Paragraph(_esc(view["eyebrow"]), st["eyebrow"]))
@@ -94,25 +170,26 @@ def _build_story(view, st, cell_st):
         ("BOTTOMPADDING", (0, 0), (-1, -1), 1.5),
         ("LEFTPADDING", (0, 0), (-1, -1), 0),
     ]))
-    story.append(KeepTogether([Paragraph(_BLOCK_TITLES["costs"], st["h2"]), t]))
+    story.append(KeepTogether([Paragraph(_esc(view.get("h_costs") or _BLOCK_TITLES["costs"]), st["h2"]), t]))
     # 4 First 7 steps 编号列表（01…07）
-    story.append(Paragraph(_BLOCK_TITLES["steps"], st["h2"]))
+    story.append(Paragraph(_esc(view.get("h_steps") or _BLOCK_TITLES["steps"]), st["h2"]))
     for i, s in enumerate(view["steps"], 1):
         story.append(Paragraph("%02d. %s" % (i, _esc(s)), st["num"]))
     # 5 Pricing & payback 一行
-    story.append(Paragraph("Pricing &amp; payback", st["h2"]))
+    story.append(Paragraph(_esc(view.get("h_pricing") or "Pricing &amp; payback"), st["h2"]))
     story.append(Paragraph(_esc(view["pricing_payback"]), st["body"]))
     # 6 First customers 列表
-    story.append(Paragraph(_BLOCK_TITLES["channels"], st["h2"]))
+    story.append(Paragraph(_esc(view.get("h_channels") or _BLOCK_TITLES["channels"]), st["h2"]))
     for c in view["first_customers"]:
         story.append(Paragraph("• %s" % _esc(c), st["num"]))
     # 7 3 pitfalls 列表
-    story.append(Paragraph(_BLOCK_TITLES["pitfalls"], st["h2"]))
+    story.append(Paragraph(_esc(view.get("h_pitfalls") or _BLOCK_TITLES["pitfalls"]), st["h2"]))
     for p in view["pitfalls"]:
         story.append(Paragraph("• %s" % _esc(p), st["num"]))
     # 8 Local note 一句
     story.append(Spacer(1, 4))
-    story.append(Paragraph("<b>Local note:</b> %s" % _esc(view["local_note"]), st["note"]))
+    story.append(Paragraph("<b>%s</b> %s" % (_esc(view.get("h_note") or "Local note:"),
+                                             _esc(view["local_note"])), st["note"]))
     # 9 页脚（固定，无页码之外的额外元素）
     story.append(Spacer(1, 6))
     story.append(Paragraph(_esc(view["footer"]), st["footer"]))
@@ -122,7 +199,8 @@ def _build_story(view, st, cell_st):
 def _render_once(view, page_size, base):
     """按指定字号排版并 build 到临时文件，返回 (页数, 字节数)。"""
     tmp = view["_path"] + ".tmp"
-    st = _styles(base)
+    reg, bold = _cjk_fonts() if _has_cjk(view) else ("Helvetica", "Helvetica-Bold")
+    st = _styles(base, font_reg=reg, font_bold=bold)
     doc = SimpleDocTemplate(tmp, pagesize=page_size,
                             leftMargin=18 * mm, rightMargin=18 * mm,
                             topMargin=14 * mm, bottomMargin=14 * mm,
@@ -168,13 +246,26 @@ def export_plan(payload):
     path = os.path.abspath(str(path).strip())
 
     # 取 IdeaDetail（C 的 get_idea：国家覆盖合并 + 派生字段）
+    # PM 2026-11-14：country 缺省回退问卷答案（货币口径全链路一致）
     from engine import get_idea as _get_idea  # 局部导入避免循环依赖
-    detail, err = _get_idea({"id": idea_id})
+    from engine import answers_country as _answers_country
+    country = payload.get("country") if isinstance(payload.get("country"), str) else None
+    if not country or not country.strip():
+        country = _answers_country()
+    detail, err = _get_idea({"id": idea_id, "country": country})
     if err:
         return None, err
 
     started = time.perf_counter()
     view = rd.build_pdf_view(detail)
+
+    # PM 2026-11-14：path 传目录（无 .pdf 后缀）时按语言自动命名
+    # —— 中文「BizSpark-方案-<标题>.pdf」，英文「BizSpark-Plan-<id>.pdf」
+    raw = str(path).strip()
+    if not raw.lower().endswith(".pdf"):
+        os.makedirs(raw, exist_ok=True)
+        raw = os.path.join(raw, _default_pdf_name(detail, view))
+    path = os.path.abspath(raw)
     view["_path"] = path
     try:
         paper = payload.get("paper") if isinstance(payload.get("paper"), str) else "A4"

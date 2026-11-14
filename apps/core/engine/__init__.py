@@ -18,9 +18,27 @@ from . import score as score_mod
 from .score import SEEN_FACTOR, match_pct
 from .why import build_why, build_tags
 from . import zhpack
+from . import money as _money
 from . import detail as detail_mod
 
 DEGRADE_NOTE = "Try a slightly bigger budget next time."
+
+
+def answers_country():
+    """当前答案里的国家（state.last_answers.country）；无答案回退 None。
+
+    PM 2026-11-14：get_idea / export_plan 的货币口径要跟问卷所选国家走
+    （老板反馈：选加拿大后详情/PDF 仍是 USD）。懒导入 state 避免循环
+    （state.store 反向依赖 engine.zhpack）。
+    """
+    try:
+        from state import store as _store  # 局部导入避免环
+        st = _store.load_state()
+        la = st.get("last_answers") if isinstance(st, dict) else None
+        c = la.get("country") if isinstance(la, dict) else None
+        return str(c).upper() if isinstance(c, str) and c.strip() else None
+    except Exception:
+        return None
 
 # ---- C-09 库加载与整库损坏回退链（T-38）：current.json → baseline 只读副本 → fallback_ideas.json ----
 
@@ -99,8 +117,11 @@ def _to_card(idea, total, answers):
     """§3.3 卡片对象 + B 兼容别名 summary（Results.vue 消费）。
 
     PM 2026-11-13：zh 包对标题/简介做内容覆盖（zhpack，缺项回退英文）。
+    PM 2026-11-14：卡片 why / tags 的金额随所选国家货币本地化（老板反馈）。
     """
     shown = zhpack.overlay(idea)
+    cur = _money.currency_for(answers.get("country") if isinstance(answers, dict) else None)
+    fx = _money.load_fx()
     return {
         "rank": 0,  # 输出前回填
         "id": shown.get("id"),
@@ -108,8 +129,8 @@ def _to_card(idea, total, answers):
         "one_liner": shown.get("one_liner"),
         "summary": shown.get("one_liner"),  # B 兼容别名（契约字段仍是 one_liner）
         "match_pct": match_pct(total),
-        "why": build_why(idea, answers, _dim_scores(idea, answers)),
-        "tags": build_tags(idea),
+        "why": build_why(idea, answers, _dim_scores(idea, answers), currency=cur, fx=fx),
+        "tags": build_tags(idea, currency=cur, fx=fx),
     }
 
 
@@ -200,11 +221,16 @@ def diagnose(payload, library=None):
 
 
 def get_idea(payload):
-    """C-10：get_idea(id) 装配（§3.4）——合并国家覆盖 + 3 个派生字段，交 E/B。"""
+    """C-10：get_idea(id) 装配（§3.4）——合并国家覆盖 + 3 个派生字段，交 E/B。
+
+    PM 2026-11-14：country 缺省时回退问卷答案里的国家（货币口径全链路一致）。
+    """
     idea_id = payload.get("id") if isinstance(payload, dict) else None
     if not idea_id:
         return None, {"code": "E_BAD_REQUEST", "message": "id is required", "recoverable": True}
     country = payload.get("country") if isinstance(payload.get("country"), str) else None
+    if not country or not country.strip():
+        country = answers_country()
     ideas, _src = load_library()
     found = next((i for i in ideas if i.get("id") == idea_id), None)
     if found is None:

@@ -11,6 +11,7 @@ import { computed, onMounted, ref } from "vue";
 import { useRouter } from "vue-router";
 import { t } from "../i18n";
 import { diagnose, getState, saveAnswers } from "../bridge/cmd";
+import { currencyOf, fmtAmount } from "../money";
 import AppShell from "../components/AppShell.vue";
 import OptionCard from "../components/OptionCard.vue";
 
@@ -62,13 +63,31 @@ const q = computed(() => QUIZ[idx.value]);
 const picked = computed(() => answers.value[q.value.key]);
 /** 多选页：点过任意选项（含 Nothing yet）后才允许 Next */
 const touched = ref(false);
+/** PM 2026-11-14：资金档金额按所选国家货币展示（fx 来自 get_state.fx） */
+const fxMap = ref<Record<string, number>>({});
 
 onMounted(async () => {
   // Back/Change answers 预选：读上次答案（损坏则默认重来，不弹窗）
   const st = await getState();
   const last = (st && (st.last_answers as Record<string, string | string[]>)) || null;
   if (last) answers.value = { ...last };
+  fxMap.value = ((st && (st.fx as Record<string, number>)) || {});
 });
+
+/** 资金档 USD 边界（与引擎 CAPITAL_TIERS 同口径） */
+const CAP_TIER_USD: Record<string, [number, number | null]> = {
+  "<500": [500, null], "500-2k": [500, 2000], "2k-10k": [2000, 10000], "10k+": [10000, null],
+};
+
+function optTitle(o: Opt): string {
+  if (!o.title.startsWith("quiz.")) return o.title;
+  const tier = CAP_TIER_USD[o.value];
+  if (!tier) return t(o.title);
+  const [lo, hi] = tier;
+  const cur = currencyOf(String(answers.value.country || "US"));
+  return t(o.title, { amt: fmtAmount(lo, cur, fxMap.value), lo: fmtAmount(lo, cur, fxMap.value),
+                      hi: hi ? fmtAmount(hi, cur, fxMap.value) : "" });
+}
 
 function selOf(o: Opt): boolean {
   const p = picked.value;
@@ -145,7 +164,7 @@ const canNext = computed(() => {
         <div class="muted tiny">{{ t(q.hintKey) }}</div>
         <div class="opts">
           <template v-for="o in q.opts" :key="o.value">
-            <OptionCard :icon="o.icon" :title="o.title.startsWith('quiz.') ? t(o.title) : o.title"
+            <OptionCard :icon="o.icon" :title="optTitle(o)"
               :desc="o.desc ? (o.desc.startsWith('quiz.') ? t(o.desc) : o.desc) : undefined"
               :selected="selOf(o)" :radio="!q.multi" @pick="pick(o)" />
           </template>

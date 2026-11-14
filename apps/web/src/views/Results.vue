@@ -11,6 +11,7 @@ import { computed, onMounted, ref } from "vue";
 import { useRouter } from "vue-router";
 import { t } from "../i18n";
 import { diagnose, getState, saveIdea } from "../bridge/cmd";
+import { currencyOf, fmtAmount } from "../money";
 import AppShell from "../components/AppShell.vue";
 import IdeaCard from "../components/IdeaCard.vue";
 
@@ -24,6 +25,8 @@ const checked = ref<number | null>(null);
 const filtered = ref<number | null>(null);
 const saved = ref(false);
 const answers = ref<Record<string, string | string[]>>({});
+/** PM 2026-11-14：复述句金额按所选国家货币展示（fx 来自 get_state.fx） */
+const fxMap = ref<Record<string, number>>({});
 
 const CAP_LABEL: Record<string, string> = {
   "<500": "results.ans_cap1", "500-2k": "results.ans_cap2", "2k-10k": "results.ans_cap3", "10k+": "results.ans_cap4",
@@ -36,9 +39,21 @@ const COUNTRY_KEY: Record<string, string> = {
   AU: "results.country_au", SG: "results.country_sg", PH: "results.country_ph",
 };
 
+/** 资金档 USD 边界（与引擎 CAPITAL_TIERS 同口径） */
+const CAP_TIER_USD: Record<string, [number, number | null]> = {
+  "<500": [500, null], "500-2k": [500, 2000], "2k-10k": [2000, 10000], "10k+": [10000, null],
+};
+
 const recap = computed(() => {
   const a = answers.value;
-  const cap = CAP_LABEL[String(a.capital)] ? t(CAP_LABEL[String(a.capital)]) : "";
+  const cur = currencyOf(String(a.country || "US"));
+  const tier = CAP_TIER_USD[String(a.capital)];
+  const cap = CAP_LABEL[String(a.capital)]
+    ? t(CAP_LABEL[String(a.capital)], tier
+        ? { amt: fmtAmount(tier[0], cur, fxMap.value), lo: fmtAmount(tier[0], cur, fxMap.value),
+            hi: tier[1] ? fmtAmount(tier[1], cur, fxMap.value) : "" }
+        : undefined)
+    : "";
   const hrs = HOURS_LABEL[String(a.hours)] ? t(HOURS_LABEL[String(a.hours)]) : "";
   const code = String(a.country || "US");
   const country = COUNTRY_KEY[code] ? t(COUNTRY_KEY[code]) : code;
@@ -52,6 +67,7 @@ onMounted(async () => {
     const st = await getState();
     const la = (st && (st.last_answers as Record<string, string | string[]>)) || null;
     if (la && Object.keys(la).length) answers.value = la;
+    fxMap.value = ((st && (st.fx as Record<string, number>)) || {});
   } catch { /* 状态读不到时保持空 answers（recap 退化为默认国家句） */ }
   const r = await diagnose(answers.value);
   if (r) {

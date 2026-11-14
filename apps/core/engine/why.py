@@ -62,16 +62,19 @@ def pick_pool(idea, dim_scores):
     }.get(best, "general")
 
 
-def build_why(idea, answers, dim_scores):
+def build_why(idea, answers, dim_scores, currency=None, fx=None):
     """生成一句 why。模板 + 答案具体词；触发禁词则回退到安全模板（防御性）。
 
     PM 2026-11-13：locale 感知——BIZSPARK_LOCALE=zh-CN 时走 zhpack 的中文模板池与标签，
     缺省行为与原实现完全一致（英文）。
+    PM 2026-11-14：资金档标签里的美元金额随所选国家货币本地化（老板反馈）。
     """
     cap_map, hrs_map, cty_map, ast_map, pools, safe_fb = zhpack.answer_labels()
     zh = zhpack.is_zh()
+    from . import money as _money
+    cap_raw = cap_map.get(answers.get("capital", "<500"), "500 美元以内" if zh else "a small budget")
     ctx = {
-        "capital": cap_map.get(answers.get("capital", "<500"), "500 美元以内" if zh else "a small budget"),
+        "capital": _money.localize_text(cap_raw, currency, fx),
         "hours": hrs_map.get(answers.get("hours", "<10"), "每周几小时" if zh else "a few hours a week"),
         "country": cty_map.get(answers.get("country", "US"), "本地" if zh else "your area"),
         "assets_list": ("、".join(ast_map.get(a, a) for a in answers.get("assets", [])) if zh
@@ -87,16 +90,22 @@ def build_why(idea, answers, dim_scores):
     return safe_fb.format(**ctx)
 
 
-def build_tags(idea):
+def build_tags(idea, currency=None, fx=None):
     """tags 恰好 3 个：起步成本 / 时间 / 线上或本地（复购型则给复购标签）。
 
     PM 2026-11-13：zh 包标签走中文（金额数字不变；en 缺省行为不变）。
+    PM 2026-11-14：起步成本随所选国家货币换算展示（符号+换算金额）。
     """
     zh = zhpack.is_zh()
+    from . import money as _money
     cap = idea.get("min_capital")
     # 内容数据：起步成本标签（来自 D 的库数据，运行期拼装，非源码硬编码售价）
     if isinstance(cap, (int, float)) and cap > 0:
-        cap_tag = ("起步 " + str(int(cap))) if zh else ("From " + str(int(cap)))
+        if currency and currency != "USD":
+            cap_tag = ("起步 " + _money.fmt_symbol(cap, currency, fx)) if zh \
+                else ("From " + _money.fmt_symbol(cap, currency, fx))
+        else:
+            cap_tag = ("起步 " + str(int(cap))) if zh else ("From " + str(int(cap)))
     else:
         cap_tag = "起步成本低" if zh else "Low startup cost"
     h = idea.get("hours_per_week")
