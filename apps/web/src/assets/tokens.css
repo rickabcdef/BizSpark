@@ -1,34 +1,9 @@
 /* ============================================================
-   BizSpark tokens.css — B-01（负责人：B）
-   由 ui/en/html/assets/style.css 的 :root 逐值移植。
-   铁律：不改任何色值/圆角/阴影（深浅色 dark 块是 B-11 新增，
-   浅色值与稿零偏差）。
+   BizSpark tokens.css — B-01/B-11（负责人：B）
+   本文件只保留「跟随系统深色」这一层变量覆盖（B-11 功能）。
+   浅色设计系统已统一到 assets/style.css（与基线逐字节一致），
+   不再在这里维护第二份色值/字号/按钮样式副本。
    ============================================================ */
-:root{
-  --bg:#F7F5F0;
-  --surface:#FFFFFF;
-  --surface-2:#FBF9F5;
-  --ink:#101820;
-  --ink-2:#5B6672;
-  --ink-3:#98A2AD;
-  --line:#E8E4DC;
-  --deep:#0E2438;
-  --deep-2:#15344E;
-  --accent:#F2653A;
-  --accent-2:#E4542A;
-  --accent-soft:#FDEDE6;
-  --green:#1F8A70;
-  --green-soft:#E6F4EF;
-  --gold:#E8B44A;
-  --r-lg:22px;
-  --r-md:14px;
-  --r-sm:10px;
-  --sh:0 12px 34px rgba(16,24,32,.07);
-  --sh-sm:0 3px 12px rgba(16,24,32,.05);
-  --font:'Inter','WenQuanYi Micro Hei',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
-}
-
-/* B-11：深浅色跟随系统（浅色值与 UI 稿零偏差，dark 仅覆盖中性色） */
 @media (prefers-color-scheme: dark){
   :root{
     --bg:#12181F;
@@ -40,64 +15,3 @@
     --line:#2A3540;
   }
 }
-
-/* ---------- base（逐值移植自 style.css） ---------- */
-*{box-sizing:border-box;margin:0;padding:0}
-html,body{height:100%}
-body{
-  font-family:var(--font);
-  background:var(--bg);
-  color:var(--ink);
-  -webkit-font-smoothing:antialiased;
-  font-size:15px;
-  line-height:1.55;
-}
-a{color:inherit;text-decoration:none}
-button{font-family:inherit;cursor:pointer;border:0;background:none;color:inherit}
-::selection{background:var(--accent-soft)}
-
-/* ---------- type ---------- */
-.eyebrow{font-size:10.5px;letter-spacing:2px;text-transform:uppercase;color:var(--accent);font-weight:700;margin-bottom:12px}
-h1{font-size:34px;line-height:1.18;letter-spacing:-1.1px;font-weight:750}
-h2{font-size:21px;letter-spacing:-.5px;font-weight:700}
-h3{font-size:15.5px;font-weight:700;letter-spacing:-.2px}
-.lead{color:var(--ink-2);font-size:15px;margin-top:10px;max-width:620px}
-.muted{color:var(--ink-2)}
-.tiny{font-size:11.5px;color:var(--ink-3)}
-.page-head{margin-bottom:30px}
-.hr{height:1px;background:var(--line);margin:22px 0}
-
-/* ---------- buttons ---------- */
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;height:44px;padding:0 20px;
-  border-radius:12px;font-size:13.5px;font-weight:650;transition:.18s;white-space:nowrap}
-.btn-primary{background:var(--accent);color:#fff;box-shadow:0 8px 20px rgba(242,101,58,.25)}
-.btn-primary:hover{background:var(--accent-2);transform:translateY(-1px)}
-.btn-ghost{background:var(--surface);border:1px solid var(--line);color:var(--ink)}
-.btn-ghost:hover{border-color:#D5CFC3;background:#fff}
-.btn-quiet{color:var(--ink-2);height:38px;padding:0 12px}
-.btn-quiet:hover{color:var(--ink);background:rgba(16,24,32,.04)}
-.btn-lg{height:54px;padding:0 28px;font-size:15px;border-radius:14px}
-.btn-row{display:flex;gap:12px;align-items:center;flex-wrap:wrap}
-.btn:disabled{opacity:.45;cursor:not-allowed;transform:none}
-
-/* ---------- cards / grid ---------- */
-.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--r-lg);box-shadow:var(--sh-sm)}
-.pad{padding:26px}
-.grid{display:grid;gap:16px}
-.g3{grid-template-columns:repeat(3,1fr)}
-.g2{grid-template-columns:repeat(2,1fr)}
-
-/* ---------- misc（全局复用） ---------- */
-.foot-note{margin-top:26px;font-size:11.5px;color:var(--ink-3);display:flex;align-items:center;gap:8px}
-.empty{text-align:center;padding:60px 20px;color:var(--ink-3)}
-.empty .ico{font-size:34px;opacity:.5}
-.toast{position:fixed;right:28px;bottom:26px;background:var(--deep);color:#fff;padding:13px 17px;border-radius:13px;
-  box-shadow:0 16px 40px rgba(0,0,0,.22);font-size:12.5px;display:flex;align-items:center;gap:11px;z-index:9}
-.toast .dot{background:var(--green)}
-.dot{width:7px;height:7px;border-radius:50%;background:var(--green);box-shadow:0 0 0 3px rgba(31,138,112,.22)}
-.kv{display:flex;justify-content:space-between;padding:9px 0;border-bottom:1px dashed var(--line);font-size:13px}
-.kv:last-child{border:0}
-.kv b{font-weight:650}
-
-/* B-11：键盘可操作（焦点环，不改稿内视觉） */
-:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:4px}

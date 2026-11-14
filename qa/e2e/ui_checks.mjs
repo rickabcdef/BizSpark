@@ -60,11 +60,13 @@ async function answerQuiz(page, picks = [0, 1, 0, [0, 2, 4], 0]) {
     await opts.first().waitFor({ state: "visible" });
     if (i === 3) {
       for (const k of picks[3]) await opts.nth(k).click();
-      await page.getByRole("button", { name: t("quiz.done") }).click();
     } else {
       await opts.nth(picks[i]).click();
     }
-    await page.waitForTimeout(520); // 0.35s 自动进题 + 余量
+    await page.waitForTimeout(150);
+    // 界面对齐基线：Back/Next 手动推进（AL-B 卡：不要自动跳题）
+    await page.locator("button.btn-primary").click();
+    await page.waitForTimeout(250);
   }
   await page.waitForTimeout(600); // 等 diagnose
 }
@@ -114,7 +116,7 @@ const CHECKS = {
   "T-04": async (browser) => withApp(browser, async ({ page, bridge }) => {
     page.__base = bridge.base;
     await goto(page, bridge.base, "/");
-    await page.getByRole("button", { name: new RegExp(t("welcome.cta_start")) }).click();
+    await page.locator("a.btn, button.btn").filter({ hasText: t("welcome.cta_start") }).first().click();
     await page.waitForTimeout(300);
     const hash = await page.evaluate(() => location.hash);
     const onCount = await page.locator(".step.on").count();
@@ -127,44 +129,45 @@ const CHECKS = {
   "T-05": async (browser) => withApp(browser, async ({ page, bridge }) => {
     page.__base = bridge.base;
     await goto(page, bridge.base, "/quiz");
+    // 基线交互：点选项出选中态 → Next question 推进（界面对齐 AL-B 卡）
     await page.locator(".opt").first().click();
-    await page.waitForTimeout(500);
-    const before = await page.locator(".q-count").innerText();
-    await page.locator(".opt").nth(1).click();     // Q2 第 2 档
-    const t0 = Date.now();
-    await page.waitForFunction(
-      (prev) => document.querySelector(".q-count")?.innerText !== prev, before, { timeout: 2000 },
-    );
-    const ms = Date.now() - t0;
+    await page.waitForTimeout(150);
+    const sel = await page.locator(".opt.sel").count();
+    await page.locator("button.btn-primary").click();
+    await page.waitForTimeout(350);
     const after = await page.locator(".q-count").innerText();
-    const nextBtn = await page.getByRole("button", { name: /^Next/i }).count();
-    record("T-05", ms <= 700 && nextBtn === 0, `自动进题 ${ms}ms（0.35s 设计值）· Next 按钮 ${nextBtn} 个`, { ms });
+    const advanced = /0?2/.test(after);
+    record("T-05", sel === 1 && advanced, `选中态 ${sel} 个 · Next 推进到「${after.trim()}」`);
   }),
 
   "T-06": async (browser) => withApp(browser, async ({ page, bridge }) => {
     page.__base = bridge.base;
     await goto(page, bridge.base, "/quiz");
+    // 基线交互：未选中时 Next 置灰、连点不动；选中后 Next 推进一题
+    const next = page.locator("button.btn-primary");
+    const disabled = await next.isDisabled();
+    // 未选中时 Next 置灰：force 点击（disabled 元素浏览器不派发 click，页面不会动）
+    await next.click({ force: true }); await next.click({ force: true }); await next.click({ force: true });
+    await page.waitForTimeout(400);
+    const before = await page.locator(".q-count").innerText();
     await page.locator(".opt").first().click();
-    await page.waitForTimeout(450);
-    await page.locator(".opt").first().click();
-    await page.waitForTimeout(450);
-    const before = await page.locator(".q-count").innerText();   // 应在 Q3
-    const o = page.locator(".opt").first();
-    await o.click(); await o.click(); await o.click();            // 连点 3 次
-    await page.waitForTimeout(700);
+    await page.waitForTimeout(150);
+    await next.click();
+    await page.waitForTimeout(400);
     const after = await page.locator(".q-count").innerText();
-    const steps = await page.evaluate(() =>
-      Array.from(document.querySelectorAll(".step")).findIndex((s) => s.classList.contains("on")));
-    record("T-06", before !== after && steps === 3,
-      `连点 3 次只进一题（${before} → ${after}，当前第 ${steps + 1} 题）`);
+    record("T-06", disabled && before !== after,
+      `未选连点不动（${before.trim()}）· 选中后 Next 进题（→ ${after.trim()}）· 未选时置灰=${disabled}`);
   }),
 
   "T-07": async (browser) => withApp(browser, async ({ page, bridge }) => {
     page.__base = bridge.base;
     await goto(page, bridge.base, "/quiz");
+    // 先用 Next 走到第 4 题（多选页）
     for (let i = 0; i < 3; i++) {
       await page.locator(".opt").first().click();
-      await page.waitForTimeout(450);
+      await page.waitForTimeout(150);
+      await page.locator("button.btn-primary").click();
+      await page.waitForTimeout(300);
     }
     const opts = page.locator(".opt");
     await opts.nth(0).click();
@@ -180,16 +183,16 @@ const CHECKS = {
     const picked1 = await page.locator(".opts .opt.sel").evaluateAll(
       (els) => els.filter((e) => !/Nothing yet/i.test(e.textContent)).length,
     );
-    const done = page.getByRole("button", { name: t("quiz.done") });
-    const enabled = (await done.count()) === 1 && (await done.isEnabled());
+    const nextBtn = page.getByRole("button", { name: new RegExp(t("quiz.next")) });
+    const enabled = (await nextBtn.count()) === 1 && (await nextBtn.isEnabled());
     record("T-07", picked3 === 3 && picked0 === 0 && picked1 === 1 && enabled,
-      `选 3 项=${picked3} → Nothing yet 清空=${picked0} → 再选 1=${picked1} · Done 可用=${enabled}`);
+      `选 3 项=${picked3} → Nothing yet 清空=${picked0} → 再选 1=${picked1} · Next 可用=${enabled}`);
   }),
 
   "T-08": async (browser) => withApp(browser, async ({ page, bridge }) => {
     page.__base = bridge.base;
     await answerQuiz(page, [0, 1, 0, [0, 2], 0]);
-    await page.getByRole("button", { name: new RegExp(t("results.change")) }).first().click();
+    await page.locator("a.btn, button.btn").filter({ hasText: t("results.change") }).first().click();
     await page.waitForTimeout(600);
     const stepNow = await page.evaluate(() =>
       Array.from(document.querySelectorAll(".step")).findIndex((s) => s.classList.contains("on")));
@@ -269,29 +272,27 @@ const CHECKS = {
     await page.getByRole("button", { name: new RegExp(t("results.save_all")) }).click();
     await page.waitForTimeout(500);
     await goto(page, bridge.base, "/saved");
-    const cmp = page.getByRole("button", { name: new RegExp(t("saved.compare")) });
-    if ((await cmp.count()) === 0) throw new Error("Saved 页没有 Compare 按钮");
-    await cmp.first().click();
-    await page.waitForTimeout(600);
-    const rows = await page.locator(".cmp .kv").count();
-    const cols = await page.locator(".cmp .grid.g2 > div").count();
-    // 左栏每行的"键"必须只有成本/时间/回本三项（title/id 这类后台字段不许露出来）
-    const keys = await page.locator(".cmp .grid.g2 > div").first()
-      .locator(".kv span:first-child").allInnerTexts();
+    // 基线 06 屏（AL-B2 / V2 Backlog）：Compare two ideas 与 Clear saved list 第一版不摆
+    const cmp = await page.locator("a.btn, button.btn").filter({ hasText: t("saved.compare") }).count();
+    const clr = await page.locator("a.btn, button.btn").filter({ hasText: t("saved.clear") }).count();
     const body = (await page.locator("body").innerText()).toLowerCase();
-    const banned = ["score", "weight", "algorithm"].filter((w) => body.includes(w));
-    const extra = keys.filter((k) => !/cost|hour|payback/i.test(k));
-    record("T-37", cols === 2 && keys.length === 3 && extra.length === 0 && banned.length === 0,
-      `对比三项：${JSON.stringify(keys)}（多出的项：${JSON.stringify(extra)}）· 禁词 ${JSON.stringify(banned)}`,
-      { rows, keys });
+    const banned = ["score", "weight", "algorithm", "compare two"].filter((w) => body.includes(w));
+    const openBtns = await page.locator(".mini a.btn").count();
+    record("T-37", cmp === 0 && clr === 0 && banned.length === 0 && openBtns >= 1,
+      `06 屏无 Compare/Clear 假按钮（cmp ${cmp}·clear ${clr}）· 存档卡可打开 ${openBtns} 张 · 禁词 ${JSON.stringify(banned)}`);
   }),
 
   "T-46": async (browser) => withApp(browser, async ({ page, bridge }) => {
     await goto(page, bridge.base, "/settings");
     const rows = await page.locator(".set-row").count();
+    const pills = await page.locator(".state-pill").count();
+    // 基线 09 屏：5 行只读 state-pill；语言行/更改路径/检查更新/查看授权一律不摆（AL-B2）
+    const controls = await page.evaluate(() =>
+      document.querySelectorAll(".main select, .main .toggle, .main .sel-box, .main button, .main input[type=button]").length);
     const body = (await page.locator(".main").innerText()).toLowerCase();
-    const banned = ["account settings", "notification", "theme store", "订阅"].filter((w) => body.includes(w));
-    record("T-46", rows === 6 && banned.length === 0, `设置 ${rows} 行（要求 6）· 多余项 ${JSON.stringify(banned)}`);
+    const banned = ["account settings", "notification", "theme store", "订阅", "check for updates", "view licence"].filter((w) => body.includes(w));
+    record("T-46", rows === 5 && pills === 5 && controls === 0 && banned.length === 0,
+      `设置 ${rows} 行只读（pill ${pills}）· 可点控件 ${controls} 个（要求 0）· 多余项 ${JSON.stringify(banned)}`);
   }),
 
   "T-47": async (browser) => withApp(browser, async ({ page, bridge, requests }) => {

@@ -186,7 +186,7 @@
   "activate.f5": "Library updates are free & optional",
   "activate.why_h": "Why a code at all?",
   "activate.why_p": "An installer file can be copied. The code simply proves this copy was paid for. It is not about trust in you — it's about a file that can be forwarded.",
-  "settings.eyebrow": "Six knobs, that's it",
+  "settings.eyebrow": "Everything local, at a glance",
   "settings.h1": "Settings",
   "settings.lead": "Everything here is local. No profile, no password, nothing to sync.",
   "settings.country": "Country",
@@ -239,5 +239,13 @@
   "results.country_ph": "Philippines",
   "saved.row_cost": "Startup cost",
   "saved.row_hours": "Hours per week",
-  "saved.row_payback": "Payback"
+  "saved.row_payback": "Payback",
+  "quiz.next": "Next question",
+  "quiz.finish": "See my 3 ideas",
+  "export.open_saved": "Open my saved ideas",
+  "settings.v_auto": "Automatic",
+  "settings.v_on": "On",
+  "settings.v_off": "Off",
+  "settings.about_foot": "Updates and licence are handled by the store you bought it from.",
+  "results.cta_back3": "Back to 3 ideas"
 }

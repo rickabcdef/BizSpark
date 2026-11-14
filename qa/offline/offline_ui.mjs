@@ -79,7 +79,9 @@ const goto = async (page, base, hash) => {
   await page.waitForTimeout(120);
 };
 
-/** 依次回答 5 题（与 ui_checks.mjs 同一走法），最后停在 Results。 */
+/** 依次回答 5 题（与 ui_checks.mjs 同一走法），最后停在 Results。
+ *  基线是 Back / Next 两个按钮、不自动跳题：每题点完选项必须显式点一次 Next。
+ *  第 5 题的推进按钮文案是 quiz.finish（See my 3 ideas），走 .btn-primary 定位以免绑文案。 */
 async function answerQuiz(page, base, picks = [0, 1, 0, [0, 2, 4], 0]) {
   await goto(page, base, "/quiz");
   for (let i = 0; i < 5; i++) {
@@ -87,13 +89,15 @@ async function answerQuiz(page, base, picks = [0, 1, 0, [0, 2, 4], 0]) {
     await opts.first().waitFor({ state: "visible" });
     if (i === 3) {
       for (const k of picks[3]) await opts.nth(k).click();
-      await page.getByRole("button", { name: t("quiz.done") }).click();
     } else {
       await opts.nth(picks[i]).click();
     }
-    await page.waitForTimeout(520); // 0.35s 自动进题 + 余量
+    const next = page.locator("button.btn-primary").first();
+    await next.waitFor({ state: "visible" });
+    await next.click(); // 未选中时按钮 disabled，click 会自动等 enabled
+    await page.waitForTimeout(180);
   }
-  await page.waitForTimeout(600); // 等 diagnose
+  await page.waitForTimeout(800); // 等 diagnose
 }
 
 async function main() {
@@ -141,9 +145,8 @@ async function main() {
       result.steps.push({ step: "detail", ok: Boolean(ideaId), ideaId });
 
       // 4) 导出（Export 页 onMounted 自动 export_plan，路径由 dialogDir 补）
-      //    已知缺陷（B-09 候选）：Detail 的 CTA router.push('/export') 不带 ideaId，
-      //    Export.vue 读 history.state?.ideaId 拿到空串 → 导出失败、无文件行。
-      //    演练记缺陷后，用注入 history.state 的方式继续验证导出链路本身离线可用。
+      //    D-10 已修：Detail 的 CTA 走 router.push({state:{ideaId}}) 携带点子 ID，
+      //    正常情况下直接出文件行；下面保留兜底分支，若再次丢 ID 会记缺陷并注入 state 续跑。
       await page.getByRole("button", { name: t("detail.cta_export") }).click();
       let exported = false;
       try {
@@ -152,7 +155,7 @@ async function main() {
       } catch {
         result.defects = result.defects || [];
         result.defects.push(
-          "B-09 候选（新发现）：Detail.vue 跳 /export 未携带 ideaId，" +
+          "B-09 回归：Detail.vue 跳 /export 未携带 ideaId，" +
           "Export.vue 的 history.state?.ideaId 为空 → 完成页不出文件行（导出静默失败）",
         );
         await page.evaluate((id) => {

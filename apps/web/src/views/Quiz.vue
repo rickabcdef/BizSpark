@@ -1,10 +1,11 @@
 <!-- Quiz.vue — B-03/B-06（负责人：B）
      对应 en/html/02-quiz.html。F02 问卷交互（§3.1 题目表，写死不改序）：
-     - 选中 → 0.35s 自动进下一题；0.35s 内重复点击忽略（连点去重）
-     - Q4 多选 + 唯一例外按钮 Done；Nothing yet 清空其余，选其他项自动取消它
+     - 基线是两个按钮：← Back 与 Next question（AL-B 卡第 6 条：不要自动跳题）
+     - Q4 多选；Nothing yet 清空其余，选其他项自动取消它
      - Back 返回上一题不丢答案；从 Results 回来带上次答案预选
      - 每题选择后 save_answers 静默落库；未选时主推进置灰、不弹校验
-     - Q5 完成不发请求不显示 loading，直接路由 Results 并并行 diagnose -->
+     - Q5 完成不发请求不显示 loading，直接路由 Results 并并行 diagnose
+     样式全部来自 assets/style.css。 -->
 <script setup lang="ts">
 import { computed, onMounted, ref } from "vue";
 import { useRouter } from "vue-router";
@@ -59,10 +60,8 @@ const idx = ref(0);
 const answers = ref<Record<string, string | string[]>>({});
 const q = computed(() => QUIZ[idx.value]);
 const picked = computed(() => answers.value[q.value.key]);
-
-/* 连点去重：0.35s 自动进题窗口内忽略后续点击 */
-const advancing = ref(false);
-const doneShown = ref(false);
+/** 多选页：点过任意选项（含 Nothing yet）后才允许 Next */
+const touched = ref(false);
 
 onMounted(async () => {
   // Back/Change answers 预选：读上次答案（损坏则默认重来，不弹窗）
@@ -77,7 +76,6 @@ function selOf(o: Opt): boolean {
 }
 
 function pick(o: Opt): void {
-  if (advancing.value) return; // 连点去重
   const k = q.value.key;
   if (q.value.multi) {
     if (o.value === "nothing") {
@@ -89,18 +87,16 @@ function pick(o: Opt): void {
       else cur.push(o.value);
       answers.value[k] = cur;
     }
-    doneShown.value = true;
+    touched.value = true;
+    void saveAnswers({ [k]: answers.value[k] });
   } else {
     answers.value[k] = o.value;
-    advancing.value = true;
     void saveAnswers({ [k]: o.value }); // F：每题落库（静默）
-    setTimeout(() => advance(), 350);   // 0.35s 自动进下一题
   }
 }
 
-async function advance(): Promise<void> {
-  advancing.value = false;
-  doneShown.value = false;
+function advance(): void {
+  touched.value = false;
   if (idx.value < QUIZ.length - 1) {
     idx.value += 1;
     return;
@@ -112,13 +108,18 @@ async function advance(): Promise<void> {
 }
 
 function back(): void {
-  if (advancing.value) return;
+  touched.value = false;
+  if (idx.value === 0) {
+    router.push("/");
+    return;
+  }
   idx.value = Math.max(0, idx.value - 1);
 }
 
 const canNext = computed(() => {
   const p = picked.value;
-  return q.value.multi ? true : p !== undefined && p !== "" && (!Array.isArray(p) || p.length > 0);
+  if (q.value.multi) return touched.value;
+  return p !== undefined && p !== "";
 });
 </script>
 
@@ -139,7 +140,7 @@ const canNext = computed(() => {
     </div>
     <div class="quiz-wrap">
       <div class="card q-card">
-        <div class="q-count">{{ t("quiz.count", { n: String(idx + 1).padStart(2, "0"), name: t(q.step === 1 ? "quiz.s1" : q.step === 2 ? "quiz.s2" : q.step === 3 ? "quiz.s3" : q.step === 4 ? "quiz.s4" : "quiz.s5") }) }}</div>
+        <div class="q-count">{{ t("quiz.count", { n: String(idx + 1).padStart(2, "0"), name: t(STEPS[idx]) }) }}</div>
         <div class="q-title">{{ t(q.titleKey) }}</div>
         <div class="muted tiny">{{ t(q.hintKey) }}</div>
         <div class="opts">
@@ -148,44 +149,25 @@ const canNext = computed(() => {
               :desc="o.desc ? (o.desc.startsWith('quiz.') ? t(o.desc) : o.desc) : undefined"
               :selected="selOf(o)" :radio="!q.multi" @pick="pick(o)" />
           </template>
-          <OptionCard v-if="q.multi" icon="🕊" :title="t('quiz.q4.nothing')" :selected="(picked as string[])?.length === 0 && picked !== undefined" :radio="false" @pick="pick({ value: 'nothing', icon: '', title: '' })" />
+          <OptionCard v-if="q.multi" icon="🕊" :title="t('quiz.q4.nothing')"
+            :selected="Array.isArray(picked) && picked.length === 0 && touched" :radio="false"
+            @pick="pick({ value: 'nothing', icon: '', title: '' })" />
         </div>
         <div class="hr"></div>
         <div class="btn-row">
           <button class="btn btn-ghost" type="button" @click="back">← {{ t("common.back") }}</button>
-          <button v-if="q.multi && doneShown" class="btn btn-primary" type="button" @click="advance">{{ t("quiz.done") }}</button>
-          <span class="tiny spacer">{{ t("quiz.time_note") }}</span>
+          <button class="btn btn-primary" type="button" :disabled="!canNext" @click="advance">
+            {{ idx === QUIZ.length - 1 ? t("quiz.finish") : t("quiz.next") }}&nbsp;→</button>
+          <span class="tiny" style="margin-left:auto">{{ t("quiz.time_note") }}</span>
         </div>
       </div>
       <div>
         <div class="card aside-note"><div class="ico">🔒</div><h3>{{ t("quiz.note1_h") }}</h3>
           <p>{{ t("quiz.note1_p") }}</p></div>
-        <div class="card aside-note note2"><div class="ico">✦</div><h3>{{ t("quiz.note2_h") }}</h3>
-          <p>{{ t("quiz.note2_p") }}</p></div>
+        <div class="card aside-note" style="margin-top:16px;background:var(--deep);border-color:var(--deep);color:#fff">
+          <div class="ico">✦</div><h3>{{ t("quiz.note2_h") }}</h3>
+          <p style="color:#A8BACB">{{ t("quiz.note2_p") }}</p></div>
       </div>
     </div>
   </AppShell>
 </template>
-
-<style scoped>
-.stepper{display:flex;align-items:center;gap:0;margin-bottom:34px}
-.step{display:flex;align-items:center;gap:9px;font-size:12px;color:var(--ink-3)}
-.step .num{width:25px;height:25px;border-radius:50%;border:1.5px solid var(--line);display:grid;place-items:center;font-size:11px;font-weight:700;background:#fff}
-.step.done .num{background:var(--green);border-color:var(--green);color:#fff}
-.step.on .num{background:var(--accent);border-color:var(--accent);color:#fff;box-shadow:0 0 0 5px var(--accent-soft)}
-.step.on{color:var(--ink);font-weight:650}
-.step-line{height:1.5px;width:44px;background:var(--line);margin:0 14px}
-.step-line.done{background:var(--green)}
-.quiz-wrap{display:grid;grid-template-columns:minmax(0,1fr) 268px;gap:24px;align-items:start}
-.q-card{padding:34px 36px}
-.q-count{font-size:11px;letter-spacing:1.6px;text-transform:uppercase;color:var(--ink-3);font-weight:700}
-.q-title{font-size:26px;font-weight:730;letter-spacing:-.7px;margin:12px 0 6px}
-.opts{display:grid;gap:10px;margin-top:26px}
-.spacer{margin-left:auto}
-.aside-note{padding:22px}
-.aside-note .ico{font-size:22px}
-.aside-note h3{margin:12px 0 7px}
-.aside-note p{font-size:12.5px;color:var(--ink-2)}
-.note2{margin-top:16px;background:var(--deep);border-color:var(--deep);color:#fff}
-.note2 p{color:#A8BACB}
-</style>

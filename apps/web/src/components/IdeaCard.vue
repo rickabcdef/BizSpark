@@ -23,18 +23,3 @@ defineProps<{
   </div>
 </template>
 
-<style scoped>
-.idea-card{position:relative;overflow:hidden;padding:24px 22px 22px;display:flex;flex-direction:column;min-height:266px;transition:.2s}
-.idea-card:hover{transform:translateY(-3px);box-shadow:var(--sh)}
-.idea-card::before{content:"";position:absolute;top:0;left:0;right:0;height:3px;background:var(--accent);opacity:.85}
-.idea-card:nth-child(2)::before{background:var(--deep-2)}
-.idea-card:nth-child(3)::before{background:var(--green)}
-.idea-no{font-size:11px;letter-spacing:1.5px;color:var(--ink-3);font-weight:700}
-.idea-card h3{font-size:17.5px;margin:12px 0 8px;line-height:1.32}
-.idea-card p{font-size:12.8px;color:var(--ink-2);flex:1}
-.why{background:var(--surface-2);border-radius:10px;padding:10px 12px;font-size:11.8px;color:var(--ink-2);margin:14px 0 16px;border-left:3px solid var(--gold)}
-.why :deep(b){color:var(--ink)}
-.meta-row{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px}
-.tag{font-size:10.5px;padding:4px 9px;border-radius:999px;background:var(--bg);border:1px solid var(--line);color:var(--ink-2)}
-.match{margin-left:auto;font-size:11px;font-weight:700;color:var(--green);white-space:nowrap;align-self:center}
-</style>

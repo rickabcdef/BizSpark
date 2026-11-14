@@ -186,7 +186,7 @@
   "activate.f5": "点子库更新免费且可选",
   "activate.why_h": "为什么还要一个码？",
   "activate.why_p": "安装包文件是可以被复制转发的。这个码只用来证明这份副本付过钱。不是不信任你，是文件本身能被转发。",
-  "settings.eyebrow": "就 6 个旋钮，没了",
+  "settings.eyebrow": "本地状态一览",
   "settings.h1": "设置",
   "settings.lead": "这里每一项都是本地的。没有资料、没有密码、没有同步。",
   "settings.country": "国家",
@@ -239,5 +239,13 @@
   "results.country_ph": "菲律宾",
   "saved.row_cost": "起步成本",
   "saved.row_hours": "每周时间",
-  "saved.row_payback": "回本时间"
+  "saved.row_payback": "回本时间",
+  "quiz.next": "下一题",
+  "quiz.finish": "看我的 3 个点子",
+  "export.open_saved": "打开我存的点子",
+  "settings.v_auto": "自动",
+  "settings.v_on": "开",
+  "settings.v_off": "关",
+  "settings.about_foot": "更新与授权由你购买它的商店处理。",
+  "results.cta_back3": "回到 3 个点子"
 }

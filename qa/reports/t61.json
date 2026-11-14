@@ -1,0 +1,148 @@
+{
+  "gate": "T-61",
+  "date": "2026-11-14T04:00:14.222Z",
+  "status": "PASS",
+  "fail": 0,
+  "results": [
+    {
+      "route": "/",
+      "tag": "zh-CN 01",
+      "dead": [],
+      "deco": [],
+      "buttons": 2
+    },
+    {
+      "route": "/quiz",
+      "tag": "zh-CN 02",
+      "dead": [],
+      "deco": [],
+      "buttons": 8
+    },
+    {
+      "route": "/results",
+      "tag": "zh-CN 03",
+      "dead": [],
+      "deco": [],
+      "buttons": 5
+    },
+    {
+      "route": "/detail/x",
+      "tag": "zh-CN 04",
+      "dead": [],
+      "deco": [],
+      "buttons": 1
+    },
+    {
+      "route": "/export",
+      "tag": "zh-CN 05",
+      "dead": [],
+      "deco": [],
+      "buttons": 2
+    },
+    {
+      "route": "/saved",
+      "tag": "zh-CN 06",
+      "dead": [],
+      "deco": [],
+      "buttons": 2
+    },
+    {
+      "route": "/library",
+      "tag": "zh-CN 08",
+      "dead": [],
+      "deco": [],
+      "buttons": 0
+    },
+    {
+      "route": "/activate",
+      "tag": "zh-CN 07",
+      "dead": [],
+      "deco": [],
+      "buttons": 1
+    },
+    {
+      "route": "/settings",
+      "tag": "zh-CN 09",
+      "dead": [],
+      "deco": [],
+      "buttons": 0
+    },
+    {
+      "route": "主链路",
+      "tag": "flow",
+      "flow": {
+        "steps": [
+          "找我的 3 个点子: #/ → #/quiz ✓",
+          "看一页方案: #/results → #/detail/bs-svc-mobile-car-wash-053 ✓",
+          "导出我的方案: #/detail/bs-svc-mobile-car-wash-053 → #/export ✓",
+          "打开我存的点子: #/export → #/saved ✓",
+          "找新点子: #/saved → #/quiz ✓"
+        ],
+        "ok": true
+      }
+    },
+    {
+      "route": "/",
+      "tag": "en-US 01",
+      "dead": [],
+      "deco": [],
+      "buttons": 2
+    },
+    {
+      "route": "/quiz",
+      "tag": "en-US 02",
+      "dead": [],
+      "deco": [],
+      "buttons": 8
+    },
+    {
+      "route": "/results",
+      "tag": "en-US 03",
+      "dead": [],
+      "deco": [],
+      "buttons": 5
+    },
+    {
+      "route": "/detail/x",
+      "tag": "en-US 04",
+      "dead": [],
+      "deco": [],
+      "buttons": 1
+    },
+    {
+      "route": "/export",
+      "tag": "en-US 05",
+      "dead": [],
+      "deco": [],
+      "buttons": 2
+    },
+    {
+      "route": "/saved",
+      "tag": "en-US 06",
+      "dead": [],
+      "deco": [],
+      "buttons": 2
+    },
+    {
+      "route": "/library",
+      "tag": "en-US 08",
+      "dead": [],
+      "deco": [],
+      "buttons": 0
+    },
+    {
+      "route": "/activate",
+      "tag": "en-US 07",
+      "dead": [],
+      "deco": [],
+      "buttons": 1
+    },
+    {
+      "route": "/settings",
+      "tag": "en-US 09",
+      "dead": [],
+      "deco": [],
+      "buttons": 0
+    }
+  ]
+}

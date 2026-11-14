@@ -41,12 +41,12 @@ onMounted(async () => {
       <h1>{{ t("library.h1") }}</h1>
       <p class="lead">{{ t("library.lead") }}</p>
     </div>
-    <div class="grid g2 align-start">
+    <div class="grid g2" style="align-items:start">
       <div class="card pad">
-        <div class="lib-head">
+        <div style="display:flex;justify-content:space-between;align-items:center;gap:10px">
           <div>
             <h3>{{ t("library.current_h") }}</h3>
-            <div class="tiny mt4">{{ libLine }}</div>
+            <div class="tiny" style="margin-top:4px">{{ libLine }}</div>
           </div>
           <Tag :green="true">✓ {{ t("library.up_to_date") }}</Tag>
         </div>
@@ -62,15 +62,15 @@ onMounted(async () => {
       <div>
         <div class="card pad">
           <h3>{{ t("library.how_h") }}</h3>
-          <p class="tiny mt8 line-19" v-html="t('library.how_p')"></p>
+          <p class="tiny" style="margin-top:8px;line-height:1.9" v-html="t('library.how_p')"></p>
           <div class="hr"></div>
           <KvRow :k="t('library.k_fail')" :v="t('library.v_silent')" :bold-key="false" />
           <KvRow :k="t('library.k_saved')" :v="t('library.v_untouched')" />
           <KvRow :k="t('library.k_cost')" :v="t('library.v_static')" />
         </div>
-        <div class="card pad why-card">
+        <div class="card pad" style="margin-top:16px;background:var(--accent-soft);border-color:#F6D3C5">
           <h3>{{ t("library.why_h") }}</h3>
-          <p class="tiny mt7">{{ t("library.why_p") }}</p>
+          <p class="tiny" style="margin-top:7px">{{ t("library.why_p") }}</p>
         </div>
       </div>
     </div>
@@ -78,20 +78,3 @@ onMounted(async () => {
   </AppShell>
 </template>
 
-<style scoped>
-.align-start{align-items:start}
-.lib-head{display:flex;justify-content:space-between;align-items:center;gap:10px}
-.mt4{margin-top:4px}
-.mt7{margin-top:7px}
-.mt8{margin-top:8px}
-.line-19{line-height:1.9}
-.timeline{position:relative;padding-left:26px;margin-top:22px}
-.timeline::before{content:"";position:absolute;left:7px;top:6px;bottom:6px;width:1.5px;background:var(--line)}
-.tl{position:relative;padding:0 0 22px}
-.tl::before{content:"";position:absolute;left:-23px;top:5px;width:11px;height:11px;border-radius:50%;background:#fff;border:2px solid var(--line)}
-.tl.on::before{border-color:var(--accent);background:var(--accent)}
-.tl .td{font-size:11px;letter-spacing:1px;color:var(--ink-3);font-weight:700;text-transform:uppercase}
-.tl h3{margin:5px 0 4px}
-.tl p{font-size:12.5px;color:var(--ink-2)}
-.why-card{margin-top:16px;background:var(--accent-soft);border-color:#F6D3C5}
-</style>

@@ -1,6 +1,6 @@
 {
   "task": "H-04 离线演练（飞行模式 + 托管关一整天 + manifest 404/脏 JSON/超大包）",
-  "generated_at": "2026-11-13 17:45:54",
+  "generated_at": "2026-11-14 11:52:47",
   "scenarios": [
     {
       "id": "D1",
@@ -267,7 +267,7 @@
       "id": "D5",
       "name": "前端离线零阻塞（socket 桩 + 真前端全链路）",
       "status": "PASS",
-      "stdout": "D5 前端离线演练：PASS  (steps=5, blocked=0, external=0, pdf=BizSpark-Plan-bs-svc-errand-runner-063.pdf)",
+      "stdout": "D5 前端离线演练：PASS  (steps=5, blocked=0, external=0, pdf=BizSpark-Plan-bs-svc-review-reply-004.pdf)",
       "stderr": "",
       "detail": [
         {
@@ -282,12 +282,12 @@
         {
           "step": "detail",
           "ok": true,
-          "ideaId": "bs-svc-errand-runner-063"
+          "ideaId": "bs-svc-review-reply-004"
         },
         {
           "step": "export",
           "ok": true,
-          "pdf": "BizSpark-Plan-bs-svc-errand-runner-063.pdf"
+          "pdf": "BizSpark-Plan-bs-svc-review-reply-004.pdf"
         },
         {
           "step": "saved",
@@ -298,5 +298,5 @@
   ],
   "known_issues": [],
   "status": "PASS",
-  "elapsed_s": 28.3
+  "elapsed_s": 21.8
 }

@@ -1,15 +1,16 @@
 <!-- Settings.vue — B-09/B-10（负责人：B）
-     对应 en/html/09-settings.html。F11 设置页：
-     - 6 行封顶：Country / Language / Save location / Library check / Appearance / Crash notes
-     - get_settings / set_settings（静默）；About 卡（版本/库/授权/账号）
-     - F12 轻更新提示只提示不安装 -->
+     对应 en/html/09-settings.html。F11 设置页（本轮按基线改为「只读状态一览」）：
+     - eyebrow: Everything local, at a glance
+     - 恰好 5 行，右侧一律 .state-pill 只读（国家 / 路径 / 每月检查 / 跟随外观 / 崩溃记录）
+     - AL-B2：语言行、Change…、Check for updates、View licence 全部删除
+     - 数据只从 get_settings 读，界面不提供任何修改入口（AL-F1）
+     样式全部来自 assets/style.css。 -->
 <script setup lang="ts">
-import { onMounted, ref } from "vue";
+import { computed, onMounted, ref } from "vue";
 import { t } from "../i18n";
-import { getSettings, licenseStatus, setSettings } from "../bridge/cmd";
+import { getSettings, licenseStatus } from "../bridge/cmd";
 import AppShell from "../components/AppShell.vue";
 import KvRow from "../components/KvRow.vue";
-import Toggle from "../components/Toggle.vue";
 
 const country = ref("US");
 const savePath = ref("Documents / BizSpark");
@@ -19,11 +20,12 @@ const crashNotes = ref(false);
 const lic = ref<string>("");
 const ver = ref("1.0.0");
 
-const COUNTRIES: Array<{ v: string; label: string }> = [
-  { v: "US", label: "🇺🇸 United States" }, { v: "CA", label: "🇨🇦 Canada" },
-  { v: "UK", label: "🇬🇧 United Kingdom" }, { v: "AU", label: "🇦🇺 Australia" },
-  { v: "SG", label: "🇸🇬 Singapore" }, { v: "PH", label: "🇵🇭 Philippines" },
-];
+const FLAG: Record<string, string> = { US: "🇺🇸", CA: "🇨🇦", UK: "🇬🇧", AU: "🇦🇺", SG: "🇸🇬", PH: "🇵🇭" };
+const countryLabel = computed(() => {
+  const code = String(country.value || "US");
+  const name = t("quiz.q1.o_" + code.toLowerCase());
+  return `${FLAG[code] || ""} ${name !== "quiz.q1.o_" + code.toLowerCase() ? name : code}`.trim();
+});
 
 onMounted(async () => {
   const s = await getSettings();
@@ -39,10 +41,6 @@ onMounted(async () => {
     lic.value = l.status === "activated" ? t("settings.lic_ok") : t("settings.lic_none");
   }
 });
-
-async function patch(k: string, v: unknown): Promise<void> {
-  await setSettings({ [k]: v }); // 静默
-}
 </script>
 
 <template>
@@ -52,69 +50,44 @@ async function patch(k: string, v: unknown): Promise<void> {
       <h1>{{ t("settings.h1") }}</h1>
       <p class="lead">{{ t("settings.lead") }}</p>
     </div>
-    <div class="grid g2 align-start">
+    <div class="grid g2" style="align-items:start">
       <div class="card pad">
         <div class="set-row">
           <div><div class="st">{{ t("settings.country") }}</div><div class="sd">{{ t("settings.country_d") }}</div></div>
-          <select class="sel-box" :value="country" @change="country = String(($event.target as HTMLSelectElement).value); patch('country', country)">
-            <option v-for="c in COUNTRIES" :key="c.v" :value="c.v">{{ c.label }}</option>
-          </select>
-        </div>
-        <div class="set-row">
-          <div><div class="st">{{ t("settings.lang") }}</div><div class="sd">{{ t("settings.lang_d") }}</div></div>
-          <div class="sel-box">English</div>
+          <span class="state-pill">{{ countryLabel }}</span>
         </div>
         <div class="set-row">
           <div><div class="st">{{ t("settings.path") }}</div><div class="sd">{{ savePath }}</div></div>
-          <button class="btn btn-ghost sm-btn" type="button">{{ t("settings.path_change") }}</button>
+          <span class="state-pill">{{ savePath }}</span>
         </div>
         <div class="set-row">
           <div><div class="st">{{ t("settings.libcheck") }}</div><div class="sd">{{ t("settings.libcheck_d") }}</div></div>
-          <Toggle :on="libCheck" @update:on="(v) => { libCheck = v; patch('library_check', v) }" />
+          <span class="state-pill">{{ libCheck ? t("settings.v_auto") : t("settings.v_off") }}</span>
         </div>
         <div class="set-row">
           <div><div class="st">{{ t("settings.appearance") }}</div><div class="sd">{{ t("settings.appearance_d") }}</div></div>
-          <Toggle :on="followSystem" @update:on="(v) => { followSystem = v; patch('follow_system_appearance', v) }" />
+          <span class="state-pill">{{ followSystem ? t("settings.v_on") : t("settings.v_off") }}</span>
         </div>
         <div class="set-row">
           <div><div class="st">{{ t("settings.crash") }}</div><div class="sd">{{ t("settings.crash_d") }}</div></div>
-          <Toggle :on="crashNotes" @update:on="(v) => { crashNotes = v; patch('crash_notes', v) }" />
+          <span class="state-pill">{{ crashNotes ? t("settings.v_on") : t("settings.v_off") }}</span>
         </div>
       </div>
       <div>
         <div class="card pad">
           <div class="eyebrow">{{ t("settings.privacy_eyebrow") }}</div>
-          <h2 class="priv-h">{{ t("settings.privacy_h") }}</h2>
-          <p class="tiny mt12">{{ t("settings.privacy_p") }}</p>
+          <h2 style="font-size:19px;line-height:1.4">{{ t("settings.privacy_h") }}</h2>
+          <p class="tiny" style="margin-top:12px">{{ t("settings.privacy_p") }}</p>
         </div>
-        <div class="card pad mt16">
+        <div class="card pad" style="margin-top:16px">
           <h3>{{ t("settings.about_h") }}</h3>
           <KvRow :k="t('settings.about_ver')" :v="ver" />
           <KvRow :k="t('settings.about_lib')" v="2026.11 (312)" />
           <KvRow :k="t('settings.about_lic')" :v="lic || '—'" :accent="lic !== ''" />
           <KvRow :k="t('settings.about_account')" v="None" />
-          <div class="btn-row mt18">
-            <button class="btn btn-ghost sm-btn2" type="button">{{ t("settings.check_updates") }}</button>
-            <button class="btn btn-quiet sm-text" type="button">{{ t("settings.view_licence") }}</button>
-          </div>
+          <div class="tiny" style="margin-top:14px">{{ t("settings.about_foot") }}</div>
         </div>
       </div>
     </div>
   </AppShell>
 </template>
-
-<style scoped>
-.align-start{align-items:start}
-.set-row{display:flex;align-items:center;justify-content:space-between;padding:15px 2px;border-bottom:1px solid var(--line)}
-.set-row:last-child{border:0}
-.set-row .st{font-size:13.5px;font-weight:620}
-.set-row .sd{font-size:11.5px;color:var(--ink-3);margin-top:2px}
-.sel-box{border:1px solid var(--line);border-radius:10px;padding:8px 12px;font-size:12.5px;background:var(--surface-2);min-width:130px;text-align:left;color:var(--ink)}
-.sm-btn{height:34px;font-size:12px}
-.sm-btn2{height:36px;font-size:12px}
-.sm-text{font-size:12px}
-.priv-h{font-size:19px;line-height:1.4}
-.mt12{margin-top:12px}
-.mt16{margin-top:16px}
-.mt18{margin-top:18px}
-</style>

@@ -6,9 +6,9 @@
     {
       "id": "T-01",
       "ok": true,
-      "detail": "首屏 234ms（红线 1500）· 溢出 0px · 主 CTA 1 个 · 外网请求 0",
+      "detail": "首屏 278ms（红线 1500）· 溢出 0px · 主 CTA 1 个 · 外网请求 0",
       "metrics": {
-        "ms": 234,
+        "ms": 278,
         "scroll": 0,
         "primaries": 1
       }
@@ -30,21 +30,19 @@
     {
       "id": "T-05",
       "ok": true,
-      "detail": "自动进题 357ms（0.35s 设计值）· Next 按钮 0 个",
-      "metrics": {
-        "ms": 357
-      }
+      "detail": "选中态 1 个 · Next 推进到「QUESTION 02 — MONEY」",
+      "metrics": {}
     },
     {
       "id": "T-06",
       "ok": true,
-      "detail": "连点 3 次只进一题（QUESTION 03 — TIME → QUESTION 04 — RESOURCES，当前第 4 题）",
+      "detail": "未选连点不动（QUESTION 01 — ABOUT YOU）· 选中后 Next 进题（→ QUESTION 02 — MONEY）· 未选时置灰=true",
       "metrics": {}
     },
     {
       "id": "T-07",
       "ok": true,
-      "detail": "选 3 项=3 → Nothing yet 清空=0 → 再选 1=1 · Done 可用=true",
+      "detail": "选 3 项=3 → Nothing yet 清空=0 → 再选 1=1 · Next 可用=true",
       "metrics": {}
     },
     {
@@ -56,12 +54,12 @@
     {
       "id": "T-19",
       "ok": true,
-      "detail": "3 卡 · 等高=true(344/344/344) · 元素序 6 个 · 多余控件 0",
+      "detail": "3 卡 · 等高=true(364/364/364) · 元素序 6 个 · 多余控件 0",
       "metrics": {
         "heights": [
-          344,
-          344,
-          344
+          364,
+          364,
+          364
         ],
         "order": [
           "idea-no",
@@ -100,20 +98,13 @@
     {
       "id": "T-37",
       "ok": true,
-      "detail": "对比三项：[\"Startup cost\",\"Hours per week\",\"Payback\"]（多出的项：[]）· 禁词 []",
-      "metrics": {
-        "rows": 6,
-        "keys": [
-          "Startup cost",
-          "Hours per week",
-          "Payback"
-        ]
-      }
+      "detail": "06 屏无 Compare/Clear 假按钮（cmp 0·clear 0）· 存档卡可打开 3 张 · 禁词 []",
+      "metrics": {}
     },
     {
       "id": "T-46",
       "ok": true,
-      "detail": "设置 6 行（要求 6）· 多余项 []",
+      "detail": "设置 5 行只读（pill 5）· 可点控件 0 个（要求 0）· 多余项 []",
       "metrics": {}
     },
     {

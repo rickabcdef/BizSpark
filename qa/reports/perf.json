@@ -1,20 +1,20 @@
 {
   "rounds": 12,
   "metrics": {
-    "cold_start_ms": 1397.7,
+    "cold_start_ms": 1024.8,
     "diagnose_ms": {
-      "p50": 39.5,
-      "p95": 44.0,
-      "max": 47.7
+      "p50": 35.7,
+      "p95": 38.5,
+      "max": 39.8
     },
     "export_ms": {
-      "p50": 62.6,
-      "max": 78.3
+      "p50": 48.7,
+      "max": 53.2
     },
-    "rss_mb": 36.2,
+    "rss_mb": 35.9,
     "bundle_mb": {
       "web_dist": 0.2,
-      "core_py_and_data": 1.3,
+      "core_py_and_data": 1.6,
       "note": "真安装包（Tauri + PyInstaller）≤80MB 由 scripts/pack.sh 校验；此处为未压缩源体积"
     },
     "egress": 0

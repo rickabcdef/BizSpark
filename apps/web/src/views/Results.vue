@@ -4,7 +4,8 @@
      - 降级 1–2 卡自适应（diagnose 返回不足 3 条）
      - 答案复述句（lead 按 §2.4 answers 拼接）+ 统计行 checked/filtered/3
      - save_idea ×N（Save all three）；Change my answers → Quiz（Back 带预选）
-     - 数据全部来自 diagnose；静默失败走空态（本页无 loading >1s） -->
+     - 数据全部来自 diagnose；静默失败走空态（本页无 loading >1s）
+     样式全部来自 assets/style.css。 -->
 <script setup lang="ts">
 import { computed, onMounted, ref } from "vue";
 import { useRouter } from "vue-router";
@@ -78,21 +79,22 @@ async function saveAll(): Promise<void> {
         :no="`${String(ix + 1).padStart(2, '0')} / ${String(ideas.length).padStart(2, '0')}`"
         :match="i.match_pct ? `${i.match_pct}% ${t('common.match')}` : undefined"
         :title="i.title || ''" :desc="i.summary || ''" :why="i.why || undefined" :tags="i.tags">
-        <router-link class="btn btn-primary card-cta" :to="`/detail/${i.id || ix}`">{{ t("results.cta") }}&nbsp;→</router-link>
+        <router-link class="btn btn-primary card-cta" style="width:100%"
+          :to="`/detail/${i.id || ix}`">{{ t("results.cta") }}&nbsp;→</router-link>
       </IdeaCard>
     </div>
     <div v-if="ideas.length === 0" class="empty card">
       <div class="ico">✦</div>
       <p>{{ t("results.empty") }}</p>
-      <button class="btn btn-ghost" type="button" @click="router.push('/quiz')">{{ t("results.change") }}</button>
+      <router-link class="btn btn-ghost" style="margin-top:18px" to="/quiz">← {{ t("results.change") }}</router-link>
     </div>
     <template v-if="ideas.length">
       <div class="hr"></div>
       <div class="btn-row">
-        <button class="btn btn-ghost" type="button" @click="router.push('/quiz')">← {{ t("results.change") }}</button>
+        <router-link class="btn btn-ghost" to="/quiz">← {{ t("results.change") }}</router-link>
         <button class="btn btn-quiet" type="button" @click="saveAll" :disabled="saved">
           {{ saved ? t("results.saved_all") : t("results.save_all") }}</button>
-        <span class="tiny spacer">{{ t("results.note") }}</span>
+        <span class="tiny" style="margin-left:auto">{{ t("results.note") }}</span>
       </div>
       <div class="stat">
         <div><div class="sv">{{ checked ?? "—" }}</div><div class="sl">{{ t("results.stat_checked") }}</div></div>
@@ -102,14 +104,3 @@ async function saveAll(): Promise<void> {
     </template>
   </AppShell>
 </template>
-
-<style scoped>
-.card-cta{width:100%}
-.spacer{margin-left:auto}
-.stat{display:flex;gap:34px;margin-top:30px}
-.stat .sv{font-size:24px;font-weight:750;letter-spacing:-.8px}
-.stat .sl{font-size:11px;color:var(--ink-3);margin-top:2px}
-.empty .btn{margin-top:18px}
-/* 降级 1 卡时保持与稿一致的卡片宽度观感 */
-.grid:not(.g3):not(.g2){grid-template-columns:1fr}
-</style>

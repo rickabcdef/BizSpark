@@ -52,9 +52,9 @@
       "page": "activate",
       "locale": "en-US",
       "overflowX": 0,
-      "overflowY": 84,
+      "overflowY": 0,
       "cards": 3,
-      "scrollH": 984
+      "scrollH": 900
     },
     {
       "page": "library",

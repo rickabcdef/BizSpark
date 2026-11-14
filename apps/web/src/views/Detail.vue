@@ -1,14 +1,14 @@
 <!-- Detail.vue — B-08（负责人：B）
-     对应 en/html/04-detail.html。F05 详情组件：
-     - 4 个内容卡顺序照 DOM：costs → steps → channels → pitfalls（不加第五张卡）
-     - 右侧 sticky（一页纸 PaperPreview + 导出按钮）
-     - 脏字段不显示 undefined：v-if 有值才渲染
-     数据：get_idea(id)（C+D 装配的完整详情对象）；失败走空态。 -->
+     对应 en/html/04-detail.html。F05 一页方案：
+     - 恰好 4 张内容卡（成本 / 7 步 / 第一批客户 / 3 个坑），不摆第 5 张
+     - 定价提示与合规句只进 PDF 与数据对象，页面上不另立卡片
+     - 右侧 sticky：纸样预览 + Export my plan + 返回 3 个点子
+     样式全部来自 assets/style.css；仅保留基线里的内联间距。 -->
 <script setup lang="ts">
 import { computed, onMounted, ref } from "vue";
 import { useRoute, useRouter } from "vue-router";
 import { t } from "../i18n";
-import { getIdea } from "../bridge/cmd";
+import { diagnose, getIdea, getState } from "../bridge/cmd";
 import AppShell from "../components/AppShell.vue";
 import KvRow from "../components/KvRow.vue";
 import StepList from "../components/StepList.vue";
@@ -31,7 +31,31 @@ const pitfallItems = computed(() => d.value?.pitfalls || []);
 
 onMounted(async () => {
   d.value = await getIdea(String(route.params.id || ""));
+  // 基线 eyebrow 是「Idea 01 / 03 · 94% match」，但 get_idea 的 IdeaDetail 不带
+  // match_pct/rank（这两个字段只在 diagnose 卡片对象里）。与 Results 同口径重放
+  // diagnose（只读计算，非新功能），按 id 回填；找不到就保持空（深链降级）。
+  if (d.value) {
+    try {
+      const st = await getState();
+      const la = (st && (st.last_answers as Record<string, string | string[]>)) || {};
+      const r = await diagnose(Object.keys(la).length ? la : {});
+      const hit = ((r?.ideas as Array<Record<string, unknown>>) || []).find(
+        (x) => String(x.id || "") === String(d.value?.id || ""),
+      );
+      if (hit) {
+        d.value = {
+          ...d.value,
+          rank: typeof hit.rank === "number" ? hit.rank : d.value.rank,
+          match_pct: typeof hit.match_pct === "number" ? hit.match_pct : d.value.match_pct,
+        };
+      }
+    } catch { /* diagnose 失败时 eyebrow 百分比留空，不影响页面其余内容 */ }
+  }
 });
+
+function goExport(): void {
+  router.push({ path: "/export", state: { ideaId: String(d.value?.id || route.params.id || "") } });
+}
 </script>
 
 <template>
@@ -70,10 +94,9 @@ onMounted(async () => {
         <div class="card pad">
           <div class="eyebrow">{{ t("detail.paper_eyebrow") }}</div>
           <PaperPreview :title="d.title || ''" />
-          <div class="tiny paper-note">{{ t("detail.paper_note") }}</div>
-          <button class="btn btn-primary w100" type="button"
-            @click="router.push({ path: '/export', state: { ideaId: String(d?.id || route.params.id || '') } })">{{ t("detail.cta_export") }}&nbsp;↓</button>
-          <button class="btn btn-ghost w100 mt10" type="button" @click="router.push('/results')">← {{ t("detail.cta_back") }}</button>
+          <div class="tiny" style="margin:18px 0 14px">{{ t("detail.paper_note") }}</div>
+          <button class="btn btn-primary" style="width:100%" type="button" @click="goExport">{{ t("detail.cta_export") }}&nbsp;↓</button>
+          <router-link class="btn btn-ghost" style="width:100%;margin-top:10px" to="/results">← {{ t("detail.cta_back") }}</router-link>
         </div>
         <div class="foot-note">🔒 {{ t("detail.privacy") }}</div>
       </div>
@@ -81,22 +104,7 @@ onMounted(async () => {
     <div v-else class="empty card">
       <div class="ico">▤</div>
       <p>{{ t("results.empty") }}</p>
-      <button class="btn btn-ghost" type="button" @click="router.push('/results')">← {{ t("detail.cta_back") }}</button>
+      <router-link class="btn btn-ghost" style="margin-top:18px" to="/results">← {{ t("detail.cta_back") }}</router-link>
     </div>
   </AppShell>
 </template>
-
-<style scoped>
-.detail-wrap{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:24px;align-items:start}
-.sec{padding:24px 26px;margin-bottom:16px}
-.sec-h{display:flex;align-items:center;gap:10px;margin-bottom:16px}
-.sec-h .b{width:26px;height:26px;border-radius:8px;background:var(--accent-soft);color:var(--accent);
-  display:grid;place-items:center;font-size:12px;font-weight:800}
-.pill-list{display:flex;flex-wrap:wrap;gap:8px}
-.pill{font-size:12px;padding:7px 12px;border:1px solid var(--line);border-radius:10px;background:var(--surface-2)}
-.warn{background:#FFF8EC;border:1px solid #F2E2BE;border-radius:10px;padding:11px 13px;font-size:12.3px;color:#7A5A1E;margin-bottom:8px}
-.sticky{position:sticky;top:24px}
-.paper-note{margin:18px 0 14px}
-.w100{width:100%}
-.mt10{margin-top:10px}
-</style>
