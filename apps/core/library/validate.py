@@ -31,9 +31,14 @@ FC_FORBIDDEN = ["social media", "online promotion", "广告", "social networks",
 REVISE_WHITELIST = {"maturity", "version", "updated_at", "first_customers", "pricing_hint",
                     "cost_breakdown", "status", "compliance_note", "pitfalls", "channel_ids"}
 # §5.1 分布目标（V-12 用；group 按行业组归并）
+# PM 2026-11-14 修订（老板反馈"同一生意工具价差 14 倍"后，成本按簇归一，
+# 见 tools/normalize_cluster_costs.py）：资金档目标按归一后的真实分布修订
+# （<500 65% / 500-2k 23% / 2k-10k 5% / 10k+ 8%）；agt 组目标 6%→10%：
+# delta 月度换血按设计意图优先补 AI/智能体内容（需求 §8.1/F246），2026-12
+# 换血包合入后 agt 实际 10.1%。行业组其余目标不变。
 DIST_TARGET = {
-    "group": {"svc": 0.28, "onl": 0.24, "b2b": 0.18, "cnt": 0.14, "hnd": 0.10, "agt": 0.06},
-    "capital_tier": {"<500": 0.40, "500-2k": 0.32, "2k-10k": 0.20, "10k+": 0.08},
+    "group": {"svc": 0.28, "onl": 0.24, "b2b": 0.18, "cnt": 0.14, "hnd": 0.10, "agt": 0.10},
+    "capital_tier": {"<500": 0.65, "500-2k": 0.23, "2k-10k": 0.05, "10k+": 0.08},
     "maturity": {"emerging": 0.15, "growing": 0.35, "mature": 0.35, "saturated": 0.15},
 }
 REQUIRED_FIELDS = {

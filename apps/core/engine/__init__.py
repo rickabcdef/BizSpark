@@ -10,6 +10,7 @@
 
 import json
 import os
+import re
 
 from .quiz import validate_answers
 from .filter import hard_filter, relax_hours
@@ -152,10 +153,32 @@ def diagnose(payload, library=None):
                                            str(t[1].get("id", ""))))
 
     # 步骤 6：克制输出 Top3；saturated 不进 Top3（可用条目不足除外）
-    top, top_filled = [], 0
+    # PM 2026-11-14（老板反馈 bug）：库里同一门生意有多个地点变体（如擦玻璃 11 条），
+    # 直接取前 3 会出现"3 个席位全是同一门生意换个地名"。
+    # 修复：按业务簇（id 去掉尾部 -NNN）去重——Top3 必须来自 3 门不同的生意；
+    # 簇内代表 = 该用户条件下得分最高的变体（排序天然保证）。打分本身不动。
+    def _cluster_key(entry):
+        return re.sub(r"-\d+$", "", str(entry.get("id", "")))
+
+    def _diversify(candidates, limit):
+        picked, seen = [], set()
+        for item in candidates:
+            key = _cluster_key(item[1])
+            if key in seen:
+                continue
+            seen.add(key)
+            picked.append(item)
+            if len(picked) >= limit:
+                break
+        return picked
+
     non_sat = [t for t in scored if not t[2]]
     sat_only = [t for t in scored if t[2]]
-    take = (non_sat + sat_only)[:3]
+    take = _diversify(non_sat, 3)
+    if len(take) < 3:  # 可用条目不足时才允许 saturated 补位（仍遵守簇去重）
+        taken_ids = {t[1].get("id") for t in take}
+        take += _diversify([t for t in sat_only if t[1].get("id") not in taken_ids], 3 - len(take))
+    top, top_filled = [], 0
     for _total, idea, _sat in take:
         card = _to_card(idea, _total, answers)
         top_filled += 1
