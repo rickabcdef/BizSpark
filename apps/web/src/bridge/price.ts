@@ -15,7 +15,7 @@ interface Pricing {
   model: "one-time" | "monthly" | "yearly" | "seat";
 }
 
-const SYM: Record<string, string> = { USD: "$", GBP: "£", EUR: "€", CAD: "C$", AUD: "A$", SGD: "S$", PHP: "₱" };
+const SYM: Record<string, string> = { USD: "$", GBP: "£", EUR: "€", CAD: "CA$", AUD: "A$", SGD: "S$", PHP: "₱" };
 
 function pricing(): Pricing {
   const w = window as unknown as { BIZSPARK_PRICING?: Pricing };

@@ -100,12 +100,10 @@ def build_tags(idea, currency=None, fx=None):
     from . import money as _money
     cap = idea.get("min_capital")
     # 内容数据：起步成本标签（来自 D 的库数据，运行期拼装，非源码硬编码售价）
+    # PM 2026-11-14：一律"符号+金额"，美元也带 $（不再出现裸数字与币种码）
     if isinstance(cap, (int, float)) and cap > 0:
-        if currency and currency != "USD":
-            cap_tag = ("起步 " + _money.fmt_symbol(cap, currency, fx)) if zh \
-                else ("From " + _money.fmt_symbol(cap, currency, fx))
-        else:
-            cap_tag = ("起步 " + str(int(cap))) if zh else ("From " + str(int(cap)))
+        amount = _money.fmt_symbol(cap, currency or "USD", fx)
+        cap_tag = ("起步 " + amount) if zh else ("From " + amount)
     else:
         cap_tag = "起步成本低" if zh else "Low startup cost"
     h = idea.get("hours_per_week")

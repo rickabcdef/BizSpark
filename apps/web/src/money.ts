@@ -1,14 +1,15 @@
 /**
  * money.ts — 货币展示口径（PM 2026-11-14，老板反馈：选了什么货币，价格一律跟什么货币）。
  * fx 来自 get_state.fx（engine 同口径：USD→本地乘数 + 友好取整）。
- * 仅用于问卷资金档 / 结果复述句；成本与金额数字的权威换算在引擎（engine.money）。
+ * 展示一律"符号+金额"（$ / CA$ / £ / A$ / S$ / ₱）——面向全球用户，符号写法更亲切；
+ * 币种码写法（CAD 690）不外露。后端 engine.money.SYMBOLS 与这里必须保持一致。
  */
 export const CURRENCY_BY_COUNTRY: Record<string, string> = {
   US: "USD", CA: "CAD", GB: "GBP", UK: "GBP", AU: "AUD", SG: "SGD", PH: "PHP",
 };
 
 const SYMBOLS: Record<string, string> = {
-  USD: "$", CAD: "C$", GBP: "£", AUD: "A$", SGD: "S$", PHP: "₱",
+  USD: "$", CAD: "CA$", GBP: "£", AUD: "A$", SGD: "S$", PHP: "₱",
 };
 
 export function currencyOf(country?: string): string {

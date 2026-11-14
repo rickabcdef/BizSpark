@@ -1,7 +1,7 @@
 {
   "task": "H-02 一键全量回归",
-  "generated_at": "2026-11-14 11:53:08",
-  "elapsed_s": 217.8,
+  "generated_at": "2026-11-14 23:33:38",
+  "elapsed_s": 232.4,
   "stages": [
     {
       "stage": "engine",
@@ -14,9 +14,9 @@
       ],
       "cwd": "D:\\XiangMu\\Project\\BizSpark",
       "returncode": 0,
-      "elapsed_s": 29.1,
+      "elapsed_s": 30.8,
       "status": "PASS",
-      "tail": "test_why_uses_answer_words (qa.cases.test_engine.T16WhyPlainWords.test_why_uses_answer_words) ... ok\ntest_shape (qa.cases.test_engine.T17OutputShape.test_shape) ... ok\ntest_degrade_with_two_candidates (qa.cases.test_engine.T18Degrade.test_degrade_with_two_candidates) ... ok\n\n----------------------------------------------------------------------\nRan 16 tests in 28.037s\n\nOK"
+      "tail": "test_why_uses_answer_words (qa.cases.test_engine.T16WhyPlainWords.test_why_uses_answer_words) ... ok\ntest_shape (qa.cases.test_engine.T17OutputShape.test_shape) ... ok\ntest_degrade_with_two_candidates (qa.cases.test_engine.T18Degrade.test_degrade_with_two_candidates) ... ok\n\n----------------------------------------------------------------------\nRan 16 tests in 29.860s\n\nOK"
     },
     {
       "stage": "detail_export",
@@ -29,9 +29,9 @@
       ],
       "cwd": "D:\\XiangMu\\Project\\BizSpark",
       "returncode": 0,
-      "elapsed_s": 31.0,
+      "elapsed_s": 31.6,
       "status": "PASS",
-      "tail": "test_export_without_network (qa.cases.test_detail_export.T33OfflineExport.test_export_without_network) ... ok\ntest_cancel_returns_silent_error (qa.cases.test_detail_export.T34ReadOnlyDir.test_cancel_returns_silent_error) ... ok\ntest_readonly_dir_error_semantics (qa.cases.test_detail_export.T34ReadOnlyDir.test_readonly_dir_error_semantics) ... ok\n\n----------------------------------------------------------------------\nRan 16 tests in 29.986s\n\nOK"
+      "tail": "test_export_without_network (qa.cases.test_detail_export.T33OfflineExport.test_export_without_network) ... ok\ntest_cancel_returns_silent_error (qa.cases.test_detail_export.T34ReadOnlyDir.test_cancel_returns_silent_error) ... ok\ntest_readonly_dir_error_semantics (qa.cases.test_detail_export.T34ReadOnlyDir.test_readonly_dir_error_semantics) ... ok\n\n----------------------------------------------------------------------\nRan 16 tests in 30.577s\n\nOK"
     },
     {
       "stage": "state",
@@ -44,9 +44,9 @@
       ],
       "cwd": "D:\\XiangMu\\Project\\BizSpark",
       "returncode": 0,
-      "elapsed_s": 31.3,
+      "elapsed_s": 33.0,
       "status": "PASS",
-      "tail": "test_good_delta_applies_and_is_idempotent (qa.cases.test_state.T40DeltaRollback.test_good_delta_applies_and_is_idempotent) ... ok\ntest_invalid_delta_rolls_back (qa.cases.test_state.T40DeltaRollback.test_invalid_delta_rolls_back) ... ok\ntest_retire_keeps_entry_on_disk (qa.cases.test_state.T40DeltaRollback.test_retire_keeps_entry_on_disk) ... ok\n\n----------------------------------------------------------------------\nRan 16 tests in 30.407s\n\nOK"
+      "tail": "test_good_delta_applies_and_is_idempotent (qa.cases.test_state.T40DeltaRollback.test_good_delta_applies_and_is_idempotent) ... ok\ntest_invalid_delta_rolls_back (qa.cases.test_state.T40DeltaRollback.test_invalid_delta_rolls_back) ... ok\ntest_retire_keeps_entry_on_disk (qa.cases.test_state.T40DeltaRollback.test_retire_keeps_entry_on_disk) ... ok\n\n----------------------------------------------------------------------\nRan 16 tests in 32.158s\n\nOK"
     },
     {
       "stage": "license",
@@ -59,9 +59,9 @@
       ],
       "cwd": "D:\\XiangMu\\Project\\BizSpark",
       "returncode": 0,
-      "elapsed_s": 12.4,
+      "elapsed_s": 13.2,
       "status": "PASS",
-      "tail": "test_no_heartbeat_commands (qa.cases.test_license.T45OfflineAfterActivation.test_no_heartbeat_commands)\n零心跳：命令表里不该出现 ping 之外的周期性上报类命令。 ... ok\ntest_offline_after_activation (qa.cases.test_license.T45OfflineAfterActivation.test_offline_after_activation) ... ok\n\n----------------------------------------------------------------------\nRan 6 tests in 11.587s\n\nOK"
+      "tail": "test_no_heartbeat_commands (qa.cases.test_license.T45OfflineAfterActivation.test_no_heartbeat_commands)\n零心跳：命令表里不该出现 ping 之外的周期性上报类命令。 ... ok\ntest_offline_after_activation (qa.cases.test_license.T45OfflineAfterActivation.test_offline_after_activation) ... ok\n\n----------------------------------------------------------------------\nRan 6 tests in 12.341s\n\nOK"
     },
     {
       "stage": "content",
@@ -74,9 +74,9 @@
       ],
       "cwd": "D:\\XiangMu\\Project\\BizSpark",
       "returncode": 0,
-      "elapsed_s": 1.5,
+      "elapsed_s": 1.6,
       "status": "PASS",
-      "tail": "test_content_dir_has_no_scripts (qa.cases.test_content.T53NoExecutableContent.test_content_dir_has_no_scripts) ... ok\ntest_delta_shape_only (qa.cases.test_content.T53NoExecutableContent.test_delta_shape_only) ... ok\ntest_hosting_files_are_data_only (qa.cases.test_content.T53NoExecutableContent.test_hosting_files_are_data_only) ... ok\n\n----------------------------------------------------------------------\nRan 8 tests in 0.657s\n\nOK"
+      "tail": "test_content_dir_has_no_scripts (qa.cases.test_content.T53NoExecutableContent.test_content_dir_has_no_scripts) ... ok\ntest_delta_shape_only (qa.cases.test_content.T53NoExecutableContent.test_delta_shape_only) ... ok\ntest_hosting_files_are_data_only (qa.cases.test_content.T53NoExecutableContent.test_hosting_files_are_data_only) ... ok\n\n----------------------------------------------------------------------\nRan 8 tests in 0.707s\n\nOK"
     },
     {
       "stage": "packaging",
@@ -91,7 +91,7 @@
       "returncode": 0,
       "elapsed_s": 5.8,
       "status": "PASS",
-      "tail": "test_no_price_in_store_assets (qa.cases.test_packaging.T58StoreMaterials.test_no_price_in_store_assets) ... ok\ntest_privacy_and_support (qa.cases.test_packaging.T58StoreMaterials.test_privacy_and_support) ... ok\ntest_screenshots_english_only (qa.cases.test_packaging.T58StoreMaterials.test_screenshots_english_only) ... ok\n\n----------------------------------------------------------------------\nRan 11 tests in 4.962s\n\nOK"
+      "tail": "test_no_price_in_store_assets (qa.cases.test_packaging.T58StoreMaterials.test_no_price_in_store_assets) ... ok\ntest_privacy_and_support (qa.cases.test_packaging.T58StoreMaterials.test_privacy_and_support) ... ok\ntest_screenshots_english_only (qa.cases.test_packaging.T58StoreMaterials.test_screenshots_english_only) ... ok\n\n----------------------------------------------------------------------\nRan 11 tests in 4.917s\n\nOK"
     },
     {
       "stage": "contract",
@@ -104,9 +104,9 @@
       ],
       "cwd": "D:\\XiangMu\\Project\\BizSpark",
       "returncode": 0,
-      "elapsed_s": 4.9,
+      "elapsed_s": 5.4,
       "status": "PASS",
-      "tail": "test_four_slots_present (qa.cases.test_contract.PriceSlots.test_four_slots_present) ... ok\ntest_hidden_copy_has_no_amount (qa.cases.test_contract.PriceSlots.test_hidden_copy_has_no_amount) ... ok\ntest_no_hardcoded_copy_in_views (qa.cases.test_contract.UiCopySource.test_no_hardcoded_copy_in_views) ... ok\n\n----------------------------------------------------------------------\nRan 10 tests in 4.080s\n\nOK"
+      "tail": "test_four_slots_present (qa.cases.test_contract.PriceSlots.test_four_slots_present) ... ok\ntest_hidden_copy_has_no_amount (qa.cases.test_contract.PriceSlots.test_hidden_copy_has_no_amount) ... ok\ntest_no_hardcoded_copy_in_views (qa.cases.test_contract.UiCopySource.test_no_hardcoded_copy_in_views) ... ok\n\n----------------------------------------------------------------------\nRan 10 tests in 4.522s\n\nOK"
     },
     {
       "stage": "price",
@@ -119,9 +119,9 @@
       ],
       "cwd": "D:\\XiangMu\\Project\\BizSpark",
       "returncode": 0,
-      "elapsed_s": 1.2,
+      "elapsed_s": 1.4,
       "status": "PASS",
-      "tail": "  text = open(path, encoding=\"utf-8\", errors=\"replace\").read()\nResourceWarning: Enable tracemalloc to get the object allocation traceback\nok\n\n----------------------------------------------------------------------\nRan 4 tests in 0.405s\n\nOK"
+      "tail": "  text = open(path, encoding=\"utf-8\", errors=\"replace\").read()\nResourceWarning: Enable tracemalloc to get the object allocation traceback\nok\n\n----------------------------------------------------------------------\nRan 4 tests in 0.434s\n\nOK"
     },
     {
       "stage": "ui",
@@ -134,9 +134,9 @@
       ],
       "cwd": "D:\\XiangMu\\Project\\BizSpark",
       "returncode": 0,
-      "elapsed_s": 71.0,
+      "elapsed_s": 74.4,
       "status": "PASS",
-      "tail": "test_six_rows (qa.cases.test_ui.T46.test_six_rows) ... ok\ntest_dark_mode (qa.cases.test_ui.T47.test_dark_mode) ... ok\ntest_price_slots_render (qa.cases.test_ui.T59Ui.test_price_slots_render) ... ok\n\n----------------------------------------------------------------------\nRan 16 tests in 70.161s\n\nOK"
+      "tail": "test_six_rows (qa.cases.test_ui.T46.test_six_rows) ... ok\ntest_dark_mode (qa.cases.test_ui.T47.test_dark_mode) ... ok\ntest_price_slots_render (qa.cases.test_ui.T59Ui.test_price_slots_render) ... ok\n\n----------------------------------------------------------------------\nRan 16 tests in 73.557s\n\nOK"
     },
     {
       "stage": "perf",
@@ -146,9 +146,9 @@
       ],
       "cwd": "D:\\XiangMu\\Project\\BizSpark",
       "returncode": 0,
-      "elapsed_s": 7.2,
+      "elapsed_s": 8.3,
       "status": "PASS",
-      "tail": "== F14.1 性能（12 轮） ==\n冷启动到 ready        1024.8 ms   红线 1500  PASS\ndiagnose 312 条     p50   35.7 / p95   38.5 ms   红线 300  PASS\n导出 PDF            p50   48.7 / max   53.2 ms   红线 2000  PASS\n常驻内存                35.9 MB   红线 300  PASS\n包体（dist+core）        1.8 MB   红线 80  PASS\n出网请求                   0 处   红线 0   PASS\n报告：D:\\XiangMu\\Project\\BizSpark\\qa\\reports\\perf.json"
+      "tail": "== F14.1 性能（12 轮） ==\n冷启动到 ready        1195.4 ms   红线 1500  PASS\ndiagnose 312 条     p50   35.7 / p95   37.9 ms   红线 300  PASS\n导出 PDF            p50   53.4 / max   69.1 ms   红线 2000  PASS\n常驻内存                36.1 MB   红线 300  PASS\n包体（dist+core）        1.9 MB   红线 80  PASS\n出网请求                   0 处   红线 0   PASS\n报告：D:\\XiangMu\\Project\\BizSpark\\qa\\reports\\perf.json"
     },
     {
       "stage": "drill",
@@ -158,9 +158,9 @@
       ],
       "cwd": "D:\\XiangMu\\Project\\BizSpark",
       "returncode": 0,
-      "elapsed_s": 22.2,
+      "elapsed_s": 26.8,
       "status": "PASS",
-      "tail": "  ✅ D3c  空对象 delta  [PASS]\n  ✅ D3d  manifest 版本倒退（旧包）  [PASS]\n  ✅ D3e  超大包 3.2MB / 1200 条  [PASS]\n  ✅ D4   断网一月回来，乱序补包  [PASS]\n  ✅ D5   前端离线零阻塞（socket 桩 + 真前端全链路）  [PASS]\n\n离线演练总评：PASS  (21.8s)\n报告：D:\\XiangMu\\Project\\BizSpark\\qa\\reports\\offline-drill.json"
+      "tail": "  ✅ D3c  空对象 delta  [PASS]\n  ✅ D3d  manifest 版本倒退（旧包）  [PASS]\n  ✅ D3e  超大包 3.2MB / 1200 条  [PASS]\n  ✅ D4   断网一月回来，乱序补包  [PASS]\n  ✅ D5   前端离线零阻塞（socket 桩 + 真前端全链路）  [PASS]\n\n离线演练总评：PASS  (26.3s)\n报告：D:\\XiangMu\\Project\\BizSpark\\qa\\reports\\offline-drill.json"
     }
   ],
   "failed": [],

@@ -208,12 +208,9 @@ def _idea_card(item):
         currency = _money.currency_for(country, overrides)
     min_capital = None
     if isinstance(capital, (int, float)):
-        if currency == "USD":
-            symbol = CURRENCY_SYMBOL.get("USD", "$")
-            min_capital = "From %s%s" % (symbol, format(int(capital), ","))
-        else:
-            amount = _money.fmt_symbol(capital, currency)
-            min_capital = ("起步 " + amount) if _zhpack.is_zh() else ("From " + amount)
+        # PM 2026-11-14：一律"符号+金额"，中英文都套本地前缀（原先 USD 分支写死 "From"）
+        amount = _money.fmt_symbol(capital, currency)
+        min_capital = ("起步 " + amount) if _zhpack.is_zh() else ("From " + amount)
     return {"title": title, "min_capital": min_capital}
 
 

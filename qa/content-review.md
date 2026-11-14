@@ -12,36 +12,36 @@
 
 | # | id | 资金档 | 结论 | 不达标项 |
 |---|---|---|---|---|
-| 1 | `bs-agt-ai-agent-setup-local-294` | 2k-10k | ✅ | — |
+| 1 | `bs-agt-ai-agent-setup-local-294` | <500 | ✅ | — |
 | 2 | `bs-agt-ai-agent-setup-local-304` | <500 | ✅ | — |
-| 3 | `bs-b2b-google-maps-setup-176` | 10k+ | ✅ | — |
-| 4 | `bs-b2b-inbox-tidy-208` | 10k+ | ✅ | — |
-| 5 | `bs-b2b-inbox-tidy-218` | 2k-10k | ✅ | — |
-| 6 | `bs-b2b-invoice-chasing-172` | <500 | ✅ | — |
+| 3 | `bs-b2b-google-maps-setup-176` | <500 | ✅ | — |
+| 4 | `bs-b2b-inbox-tidy-208` | 500-2k | ✅ | — |
+| 5 | `bs-b2b-inbox-tidy-218` | 500-2k | ✅ | — |
+| 6 | `bs-b2b-invoice-chasing-172` | 10k+ | ✅ | — |
 | 7 | `bs-b2b-quote-templates-204` | <500 | ✅ | — |
-| 8 | `bs-b2b-simple-bookkeeping-192` | 2k-10k | ✅ | — |
-| 9 | `bs-cnt-local-guide-pdf-246` | 500-2k | ✅ | — |
+| 8 | `bs-b2b-simple-bookkeeping-192` | 10k+ | ✅ | — |
+| 9 | `bs-cnt-local-guide-pdf-246` | <500 | ✅ | — |
 | 10 | `bs-cnt-nbhd-newsletter-234` | <500 | ✅ | — |
-| 11 | `bs-cnt-stock-photo-local-255` | 2k-10k | ✅ | — |
-| 12 | `bs-cnt-template-packs-221` | 2k-10k | ✅ | — |
+| 11 | `bs-cnt-stock-photo-local-255` | <500 | ✅ | — |
+| 12 | `bs-cnt-template-packs-221` | <500 | ✅ | — |
 | 13 | `bs-hnd-market-stall-264` | <500 | ✅ | — |
-| 14 | `bs-hnd-market-stall-274` | 500-2k | ✅ | — |
+| 14 | `bs-hnd-market-stall-274` | <500 | ✅ | — |
 | 15 | `bs-hnd-repair-corner-284` | <500 | ✅ | — |
 | 16 | `bs-onl-calendar-va-127` | <500 | ✅ | — |
-| 17 | `bs-onl-calendar-va-137` | 500-2k | ✅ | — |
-| 18 | `bs-onl-ebook-formatting-122` | <500 | ✅ | — |
-| 19 | `bs-onl-online-tutoring-156` | 500-2k | ✅ | — |
-| 20 | `bs-onl-product-photo-091` | 500-2k | ✅ | — |
+| 17 | `bs-onl-calendar-va-137` | <500 | ✅ | — |
+| 18 | `bs-onl-ebook-formatting-122` | 500-2k | ✅ | — |
+| 19 | `bs-onl-online-tutoring-156` | <500 | ✅ | — |
+| 20 | `bs-onl-product-photo-091` | <500 | ✅ | — |
 | 21 | `bs-onl-resume-polish-101` | 500-2k | ✅ | — |
-| 22 | `bs-onl-resume-polish-111` | 2k-10k | ✅ | — |
-| 23 | `bs-onl-transcription-local-146` | <500 | ✅ | — |
-| 24 | `bs-svc-appliance-tuneup-083` | 500-2k | ✅ | — |
+| 22 | `bs-onl-resume-polish-111` | 500-2k | ✅ | — |
+| 23 | `bs-onl-transcription-local-146` | 2k-10k | ✅ | — |
+| 24 | `bs-svc-appliance-tuneup-083` | <500 | ✅ | — |
 | 25 | `bs-svc-errand-runner-061` | 500-2k | ✅ | — |
-| 26 | `bs-svc-home-cleaning-016` | <500 | ✅ | — |
+| 26 | `bs-svc-home-cleaning-016` | 500-2k | ✅ | — |
 | 27 | `bs-svc-lawn-garden-037` | 500-2k | ✅ | — |
-| 28 | `bs-svc-mobile-car-wash-047` | 2k-10k | ✅ | — |
-| 29 | `bs-svc-pet-care-024` | 500-2k | ✅ | — |
-| 30 | `bs-svc-review-reply-001` | 2k-10k | ✅ | — |
+| 28 | `bs-svc-mobile-car-wash-047` | <500 | ✅ | — |
+| 29 | `bs-svc-pet-care-024` | <500 | ✅ | — |
+| 30 | `bs-svc-review-reply-001` | <500 | ✅ | — |
 
 ## 抽样覆盖
 

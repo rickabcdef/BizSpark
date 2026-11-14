@@ -4,8 +4,10 @@
 规则：
 - 内部数值口径统一 USD（§3.2 不变），**展示层**按所选国家换算成本地货币
 - 汇率静态表 fx.json：USD→本地货币的乘数（不联网取汇率）
-- 展示两种格式：fmt_code（币种码+金额，契约沿用）/ fmt_symbol（符号+金额，卡片/问卷用）
-- localize_text：把文案里的 "$NN" / "NN 美元" 换成本地货币（定价提示等自由文本）
+- 展示统一用 fmt_symbol（符号+金额）：$ / CA$ / £ / A$ / S$ / ₱
+  （PM 2026-11-14 老板定稿：工具面向全球用户，符号写法更亲切、像"自己人"；
+   "CAD 690" 这类代码写法一律不外露。fmt_code 保留为兼容别名，输出同符号样式。）
+- localize_text：把文案里的 "$NN" / "NN 美元" / "A–B 美元" 换成本地货币（定价提示等自由文本）
 - 换算金额做友好取整：<50 取整、<500 取到 5、<5000 取到 10、其余取到 100
 """
 
@@ -23,10 +25,11 @@ DEFAULT_FX = {"USD": 1.0, "CAD": 1.37, "GBP": 0.79, "AUD": 1.52, "SGD": 1.34, "P
 COUNTRY_CURRENCY = {"US": "USD", "CA": "CAD", "GB": "GBP", "UK": "GBP",
                     "AU": "AUD", "SG": "SGD", "PH": "PHP"}
 
-SYMBOLS = {"USD": "$", "CAD": "C$", "GBP": "£", "AUD": "A$", "SGD": "S$", "PHP": "₱"}
-ZH_UNITS = {"USD": "美元", "CAD": "加元", "GBP": "英镑", "AUD": "澳元", "SGD": "新元", "PHP": "比索"}
+# 展示符号（CAD 用 CA$：比 C$ 更明确是"加拿大"，与 store.py 同口径）
+SYMBOLS = {"USD": "$", "CAD": "CA$", "GBP": "£", "AUD": "A$", "SGD": "S$", "PHP": "₱"}
 
 _RE_USD_SYMBOL = re.compile(r"\$\s?(\d[\d,]*(?:\.\d+)?)")
+_RE_USD_ZH_RANGE = re.compile(r"(\d[\d,]*)\s*[–\-—]\s*(\d[\d,]*)\s*美元")
 _RE_USD_ZH = re.compile(r"(\d[\d,]*)\s*美元")
 
 
@@ -88,14 +91,14 @@ def _group(n):
     return "{:,}".format(int(n))
 
 
-def fmt_code(amount_usd, currency, fx=None):
-    """契约格式（engine/detail 沿用）："CAD 89"。"""
-    return "{} {:,}".format(currency, to_local(amount_usd, currency, fx))
-
-
 def fmt_symbol(amount_usd, currency, fx=None):
-    """卡片/问卷格式：符号+金额（如 C 加元前缀）。"""
+    """展示格式（全站唯一口径）：符号+金额，如 $NN / CA$NN / £NN / ₱NN。"""
     return "{}{}".format(SYMBOLS.get(currency, currency + " "), _group(to_local(amount_usd, currency, fx)))
+
+
+def fmt_code(amount_usd, currency, fx=None):
+    """兼容别名（旧调用方/契约字段仍走这里）：输出与 fmt_symbol 一致，不再外露币种码。"""
+    return fmt_symbol(amount_usd, currency, fx)
 
 
 def fmt_range(lo_usd, hi_usd, currency, fx=None):
@@ -103,21 +106,24 @@ def fmt_range(lo_usd, hi_usd, currency, fx=None):
 
 
 def localize_text(text, currency, fx=None):
-    """把自由文本里的美元金额换成本地货币（不改非金额文字）。
+    """把自由文本里的美元金额换成本地货币符号（不改非金额文字）。
 
-    支持 "$NN"（en）与 "NN 美元"（zh 包）两种写法；currency=USD 时原样返回。
+    支持 "$NN"（en）、"NN 美元"、"A–B 美元" 三种写法；currency=USD 时把"美元"统一成 "$"。
     """
-    if not isinstance(text, str) or currency == "USD" or not text:
+    if not isinstance(text, str) or not text:
         return text
     fx = fx or load_fx()
 
     def _sym(m):
         return fmt_symbol(m.group(1).replace(",", ""), currency, fx)
 
+    def _zh_range(m):
+        return fmt_range(m.group(1).replace(",", ""), m.group(2).replace(",", ""), currency, fx)
+
     def _zh(m):
-        v = to_local(m.group(1).replace(",", ""), currency, fx)
-        return "{} {}".format(_group(v), ZH_UNITS.get(currency, currency))
+        return fmt_symbol(m.group(1).replace(",", ""), currency, fx)
 
     out = _RE_USD_SYMBOL.sub(_sym, text)
+    out = _RE_USD_ZH_RANGE.sub(_zh_range, out)
     out = _RE_USD_ZH.sub(_zh, out)
     return out
