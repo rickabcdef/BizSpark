@@ -23,7 +23,11 @@ import { fileURLToPath } from "node:url";
 const HERE = path.dirname(fileURLToPath(import.meta.url));
 export const REPO = path.resolve(HERE, "..", "..");
 const MAIN = path.join(REPO, "apps", "core", "main.py");
-const PY = process.env.BIZSPARK_PY || "python";
+// PM 2026-11-15：优先用仓库内 .venv（dev 站 PDF 依赖 reportlab；系统 python 可能没装）
+const VENV_PY = process.platform === "win32"
+  ? path.join(REPO, ".venv", "Scripts", "python.exe")
+  : path.join(REPO, ".venv", "bin", "python");
+const PY = process.env.BIZSPARK_PY || (fs.existsSync(VENV_PY) ? VENV_PY : "python");
 
 const MIME = {
   ".html": "text/html; charset=utf-8",
