@@ -73,6 +73,23 @@ DEGRADE_NOTE_ZH = "下次可以把预算档位调高一档试试。"
 PAYBACK_HINT_ZH = "{hint}，多数人约 {days} 天内回本。"
 PAYBACK_HINT_ZH_NODAYS = "成本通常很快收回。"
 
+# 合规提醒（PDF「本地规定」一句）按国家中文镜像
+# PM 2026-11-15：zh_v1 只覆盖了美国口径，CA/UK/AU/SG/PH 的 overrides 是英文；
+# 全库每国仅一句固定文案（已核对 baseline 去重数=1），故按国家映射即可。
+COUNTRY_COMPLIANCE_ZH = {
+    "US": "美国：开发票前先查本地商号登记和销售税规定。",
+    "CA": "加拿大：开发票前先完成省级商号登记。",
+    "UK": "英国：有收入后要在 HMRC 登记为自雇。",
+    "AU": "澳大利亚：上门服务前先查州/市议会的许可要求。",
+    "SG": "新加坡：开发票前先完成 ACRA 登记。",
+    "PH": "菲律宾：家庭式服务先查 barangay / DTI 登记。",
+}
+
+
+def compliance_note_zh(country):
+    """该国合规提醒的中文版；未知国家回退美国口径（与 en 数据默认一致）。"""
+    return COUNTRY_COMPLIANCE_ZH.get(str(country or "").upper(), COUNTRY_COMPLIANCE_ZH["US"])
+
 
 def answer_labels():
     """why.py 用的答案标签组（中文 / 英文自动切换）。"""

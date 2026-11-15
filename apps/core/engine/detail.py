@@ -102,6 +102,11 @@ def assemble(idea, country=None):
             applied = True
     detail["_override_applied"] = applied
 
+    # PM 2026-11-15：合规提醒随所选国家本地化（zh 包只覆盖了美国口径，
+    # CA/UK/AU/SG/PH 的国家覆盖层是英文；每国仅一句固定文案，按国家映射）
+    if zhpack.is_zh():
+        detail["compliance_note"] = zhpack.compliance_note_zh(country)
+
     # 派生字段 1：cost_total（USD 口径合计）
     costs = zhpack.apply_cost_labels(idea, detail.get("cost_breakdown") or [])
     detail["cost_breakdown"] = costs

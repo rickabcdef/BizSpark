@@ -998,6 +998,8 @@ bizspark/
 > ③ CAD 统一写 `CA$`（比 `C$` 更明确是"加拿大"）；后端 `engine.money.SYMBOLS`、`state/store.py`、`web/src/money.ts`、`web/src/bridge/price.ts` 四处符号表必须同值；
 > ④ 文本里的旧写法（`$49` / `49 美元` / `500–2,000 美元`）由 `engine.money.localize_text` 统一改写为符号样式，USD 也不例外；
 > ⑤ 唯一例外：CSV 导出属数据表，保留 `amount`（数值）+ `currency`（币种码）两列，便于用户自己套公式。
+>
+> **【PM 修订 2026-11-15】** 中文版 PDF「本地提示」（`compliance_note`）此前仅美国口径有中文镜像，选 CA/UK/AU/SG/PH 时会掉回英文（"CA: register the business name provincially before invoicing."）。全库每国仅一句固定文案（baseline 去重核对：每国 distinct=1），故按国家建中文镜像 `zhpack.COUNTRY_COMPLIANCE_ZH`，`detail.assemble` 在 zh 下按所选国家替换；英文版行为不变。
 
 ### 5.2 26 行业清单（D 按此分文件）
 
