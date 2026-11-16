@@ -12,7 +12,7 @@
   "nav.activate": "激活",
   "nav.settings": "设置",
   "side.badge": "一次买断 · 无订阅",
-  "side.ver": "v1.0.0 · 点子库 2026.11 · 可离线",
+  "side.ver": "点子库 {ver} · 可离线",
   "side.chip": "全部留在这台设备",
   "welcome.link_how": "怎么用",
   "welcome.link_get": "你会拿到什么",

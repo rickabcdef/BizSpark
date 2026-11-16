@@ -12,7 +12,7 @@
   "nav.activate": "Activate",
   "nav.settings": "Settings",
   "side.badge": "One-time purchase · No subscription",
-  "side.ver": "v1.0.0 · Library 2026.11 · Offline ready",
+  "side.ver": "Library {ver} · Offline ready",
   "side.chip": "All yours, on this device",
   "welcome.link_how": "How it works",
   "welcome.link_get": "What you get",
