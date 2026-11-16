@@ -203,7 +203,6 @@
   "settings.privacy_p": "The only outbound request is \"is there a newer idea file?\" once a month. It carries no user data. With the internet off, the tool is 100% offline, forever.",
   "settings.about_h": "About",
   "settings.about_ver": "Version",
-  "settings.about_lib": "Library",
   "settings.check_updates": "Check for updates",
   "settings.view_licence": "View licence",
   "price.model_one_time": "one-time",

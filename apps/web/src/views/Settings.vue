@@ -77,7 +77,6 @@ onMounted(async () => {
         <div class="card pad" style="margin-top:16px">
           <h3>{{ t("settings.about_h") }}</h3>
           <KvRow :k="t('settings.about_ver')" :v="ver" />
-          <KvRow :k="t('settings.about_lib')" v="2026.11 (312)" />
           <div class="tiny" style="margin-top:14px">{{ t("settings.about_foot") }}</div>
         </div>
       </div>

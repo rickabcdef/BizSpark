@@ -203,7 +203,6 @@
   "settings.privacy_p": "唯一一次向外请求，是每月问一句「有没有更新的点子文件」。它不带任何用户数据。断网时，这工具就 100% 离线，永久。",
   "settings.about_h": "关于",
   "settings.about_ver": "版本",
-  "settings.about_lib": "点子库",
   "settings.check_updates": "检查更新",
   "settings.view_licence": "查看授权",
   "price.model_one_time": "一次买断",
