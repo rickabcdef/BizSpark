@@ -49,9 +49,7 @@ async function doActivate(): Promise<void> {
 <template>
   <AppShell>
     <div class="page-head">
-      <div class="eyebrow">{{ t("activate.eyebrow") }}</div>
       <h1>{{ t("activate.h1") }}</h1>
-      <p class="lead">{{ t("activate.lead") }}</p>
     </div>
     <div class="grid g2" style="align-items:start;grid-template-columns:repeat(2,minmax(0,1fr))">
       <div class="card pad">
