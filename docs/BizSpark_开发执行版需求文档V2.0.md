@@ -868,6 +868,15 @@ bizspark/
 
 **依赖**：`manifest/delta`（D）、拉取（A）、`state.library_version`（F）。　**用例**：T-30-1…T-30-6、T-40。
 
+> **【PM 修订 2026-11-16 · F09 壳层链路补齐】** 老板验收发现"每月更新"只实现了 F 侧（`apply_delta` 校验/备份/回滚齐全），A 侧的门槛调度与静默拉取整段缺失（`fetch_and_store_manifest` 无人调用），按上文流程补齐：
+> - **编排层两处同口径落地**：①开发/网页环境 `qa/e2e/bridge_server.mjs · runMonthlyLibraryCheck`（startBridge 启动即异步跑，不阻塞首屏）；②桌面壳 `src-tauri/src/monthly_update.rs`（新模块，main.rs setup 后台线程）+ bridge.rs 增 `local_library_version()`/`send_core_line()` 两个公开函数。**Rust 侧本机无 cargo 未编译验证，A 构建时复核**。
+> - **门槛记录归壳层**：`<appData>/library_check.json`（毫秒时间戳），F 的 `state.last_library_check` 仅为展示字段，互不干扰（避免 Library 页每次访问刷新门槛造成"永不触发"）。**拉取失败不盖戳**（下次启动重试，兑现"断网一月回来一次性补齐"）；成功拉到 manifest 即盖戳（无论是否有新版）。
+> - **版本比对归一**：manifest.latest 是 `2026-12`、本地是 `2026.12`，统一 `-`→`.` 再比（字符串即可比）。
+> - **本地版本获取**：sidecar 首行 ready 增加 `library_version` 字段（C 的 main.py），壳层握手即得，免额外请求；编排层比对用 `check_library`（F 报本地、不联网）。
+> - **apply 为 fire-and-forget**：Rust 侧逐包写 `apply_delta` 行不读响应（幂等 + F 侧自校验回滚；`f09-*` req_id 无前端消费者，天然静默）。
+> - **托管制**：开发站默认**不出网**——仅 `BIZSPARK_MANIFEST_URL`（或 startBridge 的 manifestUrl）设置时才启用；生产由构建脚本注入 `BIZSPARK_HOST_URL`，未配置整段跳过。`BIZSPARK_FORCE_LIB_CHECK=1` 强制越过门槛（测试/演示）。
+> - **新增回归阶段 libcheck**（T-31-1…4：强制并入 2026-12 包 312→326 条并留时间线 / 门槛拦截 / 越门槛合并 / 拉取失败静默），全量回归由 11 阶段变 12 阶段。
+
 ---
 
 ### F10 授权激活（分渠道）

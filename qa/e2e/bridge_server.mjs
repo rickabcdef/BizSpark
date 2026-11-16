@@ -108,6 +108,98 @@ class Sidecar {
   }
 }
 
+// ---------------------------------------------------------------------------
+// F09 月度库检查（PM 2026-11-16 补齐，按需求文档 §2.4 F09 / §7.3 契约）：
+//   1. 门槛：当日为每月 1 号，或距上次检查 ≥30 天（或强制开关）
+//   2. 静默 GET manifest（3s 超时、失败不重试、不带任何用户标识）
+//   3. manifest.latest ≤ 本地版本 → 结束（成功检查即盖戳）
+//   4. 有新版 → 按 manifest.files 逐包拉 delta → apply_delta（F 校验→备份→合并→回滚）
+//   5. 全程零弹窗零阻塞（T-30）；任一 delta 失败即停，已成功的保留（apply_sequence 口径）
+// 失败（断网/脏 JSON）不盖戳：下次启动重试——"断网一月回来一次性补齐"。
+// 托管源未配置（BIZSPARK_MANIFEST_URL / opts.manifestUrl）时整段跳过。
+// ---------------------------------------------------------------------------
+const DAY_MS = 86400000;
+const _normVer = (s) => String(s ?? "").replace(/-/g, ".");
+
+async function _fetchText(url, timeoutMs = 3000) {
+  if (/^https?:\/\//i.test(url)) {
+    const ctrl = new AbortController();
+    const timer = setTimeout(() => ctrl.abort(), timeoutMs);
+    try {
+      const r = await fetch(url, { signal: ctrl.signal, redirect: "follow" });
+      if (!r.ok) return null;
+      return await r.text();
+    } catch {
+      return null; // 失败静默（T-30：断网/超时/404 都不报错）
+    } finally {
+      clearTimeout(timer);
+    }
+  }
+  try {
+    return fs.readFileSync(url, "utf8");
+  } catch {
+    return null;
+  }
+}
+
+export async function runMonthlyLibraryCheck(sidecar, appData, manifestUrl, force = false) {
+  try {
+    if (!manifestUrl) return { skipped: "no-source" };
+    // 1) 门槛（壳层自己的记录，与 F 的 state.last_library_check 互不干扰）
+    const recPath = path.join(appData, "library_check.json");
+    let last = 0;
+    try {
+      last = Number(JSON.parse(fs.readFileSync(recPath, "utf8")).last) || 0;
+    } catch {}
+    const now = new Date();
+    const due = force || now.getDate() === 1 || !last || Date.now() - last >= 30 * DAY_MS;
+    if (!due) return { skipped: "not-due" };
+
+    // 2) 静默拉 manifest（manifestUrl 指向 manifest 文件或所在目录均可）
+    const manifestPath = /\.json(\?.*)?$/i.test(manifestUrl) ? manifestUrl : path.join(manifestUrl, "manifest.json");
+    const raw = await _fetchText(manifestPath);
+    if (!raw) return { skipped: "fetch-failed" }; // 不盖戳，下次启动重试
+    let manifest;
+    try {
+      manifest = JSON.parse(raw);
+    } catch {
+      return { skipped: "bad-json" }; // A 静默丢弃，不叫 F（§7.3）
+    }
+    if (!manifest || typeof manifest.latest !== "string") return { skipped: "bad-manifest" };
+    fs.mkdirSync(appData, { recursive: true });
+    fs.writeFileSync(recPath, JSON.stringify({ last: Date.now() }));
+
+    // 3) 比对：本地版本走 check_library（F 报本地，不联网——F09 步骤 2）
+    const info = await sidecar.call("check_library");
+    const local = _normVer(info?.data?.version);
+    if (!local || _normVer(manifest.latest) <= local) return { skipped: "up-to-date", local };
+
+    // 4) 逐包拉 delta → apply_delta；任一失败即停（已成功的保留）
+    const base = /^https?:\/\//i.test(manifestUrl)
+      ? manifestUrl.replace(/[^/]*$/, "")
+      : (path.extname(manifestUrl) ? path.dirname(manifestUrl) : manifestUrl);
+    const applied = [];
+    for (const f of Array.isArray(manifest.files) ? manifest.files : []) {
+      if (typeof f !== "string" || !f) continue;
+      const dUrl = /^https?:\/\//i.test(base) ? base.replace(/\/?$/, "/") + f : path.join(base, f);
+      const dRaw = await _fetchText(dUrl);
+      if (!dRaw) break;
+      let delta;
+      try {
+        delta = JSON.parse(dRaw);
+      } catch {
+        break;
+      }
+      const out = await sidecar.call("apply_delta", { delta });
+      if (!out || out.ok !== true) break;
+      applied.push({ file: f, ...(out.data || {}) });
+    }
+    return { applied, local, latest: manifest.latest };
+  } catch {
+    return { skipped: "error" }; // 零弹窗零阻塞（F09 边界）
+  }
+}
+
 export async function startBridge(opts = {}) {
   const {
     distDir = path.join(REPO, "apps", "web", "dist"),
@@ -117,10 +209,22 @@ export async function startBridge(opts = {}) {
     failMode = null, // "core_down" | null
     dialogDir = null, // 模拟 A 的系统另存为：export_plan 传空 path 时补一个可用路径
     sidecarEnv = null, // 透传给 sidecar 的额外环境变量（H-04 离线演练注入 socket 桩）
+    manifestUrl = null, // F09 月度库检查托管源（未设置时回退 BIZSPARK_MANIFEST_URL；都没有则跳过）
+    forceLibCheck = false, // 强制越过"1 号 / ≥30 天"门槛（测试/演示用）
   } = opts;
 
   let sidecar = failMode ? null : new Sidecar(appData, sidecarEnv || {});
   if (sidecar) await sidecar.start();
+
+  // F09：sidecar 就绪后异步跑月度库检查（不阻塞首屏；结果不产生任何 UI）
+  let libCheckPromise = null;
+  if (sidecar) {
+    libCheckPromise = runMonthlyLibraryCheck(
+      sidecar, appData,
+      manifestUrl || process.env.BIZSPARK_MANIFEST_URL || null,
+      forceLibCheck || process.env.BIZSPARK_FORCE_LIB_CHECK === "1",
+    );
+  }
 
   // PM 2026-11-13：开发常驻模式用（qa/dev.mjs）。重启计数供前端"引擎已更新"热刷新。
   const dev = { restarts: 0, err: null, enabled: false };
@@ -240,6 +344,8 @@ export async function startBridge(opts = {}) {
   return {
     base: `http://127.0.0.1:${port}`,
     sidecar,
+    /** F09 月度库检查结果（Promise；未配置托管源时立即 resolve 为 skipped:no-source） */
+    libCheckPromise,
     /** 开发模式：重启 sidecar（换掉旧进程），失败不抛、只记 err 供前端提示 */
     async restartSidecar(env = {}) {
       dev.enabled = true;

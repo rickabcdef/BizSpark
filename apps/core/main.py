@@ -167,9 +167,19 @@ def handle(raw_line):
 
 
 def _ready_line():
-    """首行 ready（§2.2 sidecar 就绪握手）：无 req_id，B 的 req_id 匹配会自然忽略。"""
+    """首行 ready（§2.2 sidecar 就绪握手）：无 req_id，B 的 req_id 匹配会自然忽略。
+
+    PM 2026-11-16（F09 补齐）：附带 library_version——壳层（A）月度检查
+    在启动握手时即可拿到本地库版本做 manifest 比对，无需再发一次请求。
+    """
+    lib_ver = ""
+    try:
+        lib_ver = _merge.library_info().get("version") or ""
+    except Exception:
+        pass
     return json.dumps({"req_id": None, "ok": True,
-                       "data": {"event": "ready", "version": SIDECAR_VERSION}},
+                       "data": {"event": "ready", "version": SIDECAR_VERSION,
+                                "library_version": lib_ver}},
                       ensure_ascii=False)
 
 

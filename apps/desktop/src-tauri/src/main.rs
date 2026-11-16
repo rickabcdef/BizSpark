@@ -9,6 +9,7 @@
 
 mod bridge;
 mod fingerprint;
+mod monthly_update;
 mod updater;
 
 use bridge::{handle_core_cmd, BridgeState};
@@ -32,6 +33,9 @@ fn main() {
         .setup(|app| {
             bridge::spawn_sidecar(app.handle().clone())?;
             report_cold_start(app.handle(), started);
+            // PM 2026-11-16（F09）：月度库检查——1 号或距上次 ≥30 天静默拉 manifest，
+            // 有新版逐包 apply_delta；后台线程，零弹窗零阻塞（monthly_update.rs）
+            std::thread::spawn(|| monthly_update::run());
             Ok(())
         })
         .plugin(tauri_plugin_shell::init())

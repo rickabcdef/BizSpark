@@ -22,6 +22,43 @@ static RESTARTS: Lazy<Mutex<u32>> = Lazy::new(|| Mutex::new(0));
 /// sidecar 的 stdin 写句柄（转发请求用）
 static SIDECAR_STDIN: Lazy<Arc<Mutex<Option<std::process::ChildStdin>>>> =
     Lazy::new(|| Arc::new(Mutex::new(None)));
+/// PM 2026-11-16（F09）：sidecar 首行 ready 携带的本地库版本，供月度检查比对
+static LOCAL_LIB_VERSION: Lazy<Mutex<Option<String>>> = Lazy::new(|| Mutex::new(None));
+
+/// PM 2026-11-16（F09）：读 sidecar 首行 ready，提取 library_version（无则不动）。
+fn note_ready_line(line: &str) {
+    if let Ok(v) = serde_json::from_str::<serde_json::Value>(line) {
+        let is_ready = v
+            .pointer("/data/event")
+            .and_then(|e| e.as_str())
+            .map(|s| s == "ready")
+            .unwrap_or(false);
+        if is_ready {
+            if let Some(ver) = v.pointer("/data/library_version").and_then(|x| x.as_str()) {
+                *LOCAL_LIB_VERSION.lock().unwrap() = Some(ver.to_string());
+            }
+        }
+    }
+}
+
+/// PM 2026-11-16（F09）：本地库版本（ready 握手带出；未就绪返回 None）。
+pub fn local_library_version() -> Option<String> {
+    LOCAL_LIB_VERSION.lock().unwrap().clone()
+}
+
+/// PM 2026-11-16（F09）：绕过前端直接向 sidecar 写一行请求（月度检查的
+/// apply_delta 用）。响应仍走 core://response 事件总线；apply_delta 幂等
+/// 且自带校验/备份/回滚，调用方无需读响应。
+pub fn send_core_line(line: &str) -> bool {
+    let mut guard = SIDECAR_STDIN.lock().unwrap();
+    match guard.as_mut() {
+        Some(stdin) => stdin
+            .write_all(line.as_bytes())
+            .and_then(|_| stdin.flush())
+            .is_ok(),
+        None => false,
+    }
+}
 
 #[derive(Default)]
 pub struct BridgeState;
@@ -105,6 +142,7 @@ pub fn spawn_sidecar(app: AppHandle) -> Result<(), String> {
                     if l.trim().is_empty() {
                         continue;
                     }
+                    note_ready_line(&l); // PM 2026-11-16（F09）：ready 行顺带记录库版本
                     let _ = app.emit("core://response", l);
                 }
                 Err(_) => break,

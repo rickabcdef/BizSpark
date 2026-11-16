@@ -10,6 +10,7 @@
   engine / detail_export / state / license / content / packaging / contract / price
     → qa/cases/*.py（真 sidecar IPC）
   ui        → qa/cases/test_ui.py（Playwright + 系统 Edge + 真前端 dist）
+  libcheck  → qa/e2e/lib_monthly_check.mjs（F09 月度库检查全链路，T-31 系列）
   perf      → qa/perf/perf_suite.py（F14.1 六项红线）
   drill     → qa/offline/drill.py（H-04 离线演练矩阵）
   visual    → qa/visual/screenshots.mjs（--with-visual）
@@ -67,6 +68,9 @@ def main() -> int:
                                 "-v"], REPO, timeout=1800))
     stages.append(run("ui", [sys.executable, "-m", "unittest", "qa.cases.test_ui",
                              "-v"], REPO, timeout=1500))
+    # PM 2026-11-16（F09 补齐）：月度库检查全链路（T-31 系列，本地目录模拟静态托管）
+    stages.append(run("libcheck", ["node", "e2e/lib_monthly_check.mjs"], QA,
+                      timeout=300))
     if not fast:
         stages.append(run("perf", [sys.executable, "qa/perf/perf_suite.py"], REPO,
                           timeout=900))
