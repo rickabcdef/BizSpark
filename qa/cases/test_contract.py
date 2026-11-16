@@ -148,7 +148,8 @@ class PriceSlots(unittest.TestCase):
 
     CASES = []
 
-    SLOTS = ("hero-trust", "hero-foot", "export-note", "activate-eyebrow")
+    # 【PM 2026-11-16】激活页下线，activate-eyebrow 槽随页面移除（Activate.vue 仍在库）
+    SLOTS = ("hero-trust", "hero-foot", "export-note")
 
     def test_four_slots_present(self):
         blob = ""

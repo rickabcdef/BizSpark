@@ -5,7 +5,6 @@
 import { computed } from "vue";
 import { useRoute } from "vue-router";
 import { t } from "../i18n";
-import { STORE_BUILD } from "../router";
 
 const route = useRoute();
 const items = [
@@ -16,8 +15,7 @@ const items = [
   { to: "/export", ico: "↓", key: "nav.export" },
   { to: "/saved", ico: "❑", key: "nav.saved" },
   { to: "/library", ico: "↻", key: "nav.library" },
-  // D-07 修复（PM）：Store 构建编译期隐藏 Activate 入口
-  ...(STORE_BUILD ? [] : [{ to: "/activate", ico: "⚿", key: "nav.activate" }]),
+  // 【PM 2026-11-16】激活功能下线：Activate 入口移除（恢复时加回此行）
   { to: "/settings", ico: "⚙", key: "nav.settings" },
 ];
 const crumbPage = computed(() => {

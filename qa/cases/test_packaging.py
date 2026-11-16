@@ -61,11 +61,13 @@ class T42StoreFrontend(unittest.TestCase):
         pkg = harness.read_json(WEB / "package.json")
         scripts = pkg.get("scripts") or {}
         self.assertTrue(any("store" in k.lower() for k in scripts),
-                        "package.json 没有 build:store 之类脚本，Store 包必然带 Activate 页：%s"
+                        "package.json 没有 build:store 之类脚本：%s"
                         % sorted(scripts))
+        # 【PM 2026-11-16】激活功能整体下线：/activate 从 router.ts 物理移除，
+        # 任何构建（含 Store 包）都不再包含该路由，比编译期裁剪更强。
         router = (WEB / "src" / "router.ts").read_text(encoding="utf-8")
-        self.assertRegex(router, r"(STORE|store)",
-                         "router.ts 没有编译期裁剪标记（/activate 会进 Store 包）")
+        self.assertNotIn("/activate", router,
+                         "router.ts 仍引用 /activate（激活功能应已下线）")
 
 
 class T55StorePackages(unittest.TestCase):

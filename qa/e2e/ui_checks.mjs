@@ -313,15 +313,14 @@ const CHECKS = {
   }),
 
   "T-59": async (browser) => {
+    // 【PM 2026-11-16】激活页下线，价格槽剩 hero-trust / hero-foot / export-note
     const visible = { display_mode: "visible", amount: 39, currency: "USD", model: "one-time" };
     const hidden = { display_mode: "hidden", amount: null, currency: "USD", model: "one-time" };
     const out = await withApp(browser, async ({ page, bridge }) => {
       await goto(page, bridge.base, "/");
       const trust = await page.locator('[data-price-slot="hero-trust"]').innerText();
       const foot = await page.locator('[data-price-slot="hero-foot"]').innerText();
-      await goto(page, bridge.base, "/activate");
-      const eye = await page.locator('[data-price-slot="activate-eyebrow"]').innerText();
-      return { trust, foot, eye };
+      return { trust, foot };
     }, { pricing: visible });
     const out2 = await withApp(browser, async ({ page, bridge }) => {
       await goto(page, bridge.base, "/");
@@ -330,9 +329,9 @@ const CHECKS = {
       const hasAmount = /\$\s?\d/.test(trust + foot);
       return { trust, foot, hasAmount };
     }, { pricing: hidden });
-    const rendered = /\$39\.00/.test(out.trust) && /\$39\.00/.test(out.foot) && /\$39\.00/.test(out.eye);
+    const rendered = /\$39\.00/.test(out.trust) && /\$39\.00/.test(out.foot);
     record("T-59", rendered && !out2.hasAmount,
-      `visible：hero-trust「${out.trust}」/ hero-foot「${out.foot}」/ activate「${out.eye}」；hidden 无金额=${!out2.hasAmount}`,
+      `visible：hero-trust「${out.trust}」/ hero-foot「${out.foot}」；hidden 无金额=${!out2.hasAmount}`,
       { visible: out, hidden: out2 });
   },
 };
