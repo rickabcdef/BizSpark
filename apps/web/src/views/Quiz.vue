@@ -177,8 +177,7 @@ const canNext = computed(() => {
           <button class="btn btn-ghost" type="button" @click="back">← {{ t("common.back") }}</button>
           <button class="btn btn-primary" type="button" :disabled="!canNext" @click="advance">
             {{ idx === QUIZ.length - 1 ? t("quiz.finish") : t("quiz.next") }}&nbsp;→</button>
-          <span class="tiny" style="margin-left:auto">{{ t("quiz.time_note") }}</span>
-        </div>
+          </div>
       </div>
       <div>
         <div class="card aside-note"><div class="ico">🔒</div><h3>{{ t("quiz.note1_h") }}</h3>
