@@ -8,7 +8,7 @@
 <script setup lang="ts">
 import { computed, onMounted, ref } from "vue";
 import { t } from "../i18n";
-import { getSettings, licenseStatus } from "../bridge/cmd";
+import { getSettings } from "../bridge/cmd";
 import AppShell from "../components/AppShell.vue";
 import KvRow from "../components/KvRow.vue";
 
@@ -17,7 +17,6 @@ const savePath = ref("Documents / BizSpark");
 const libCheck = ref(true);
 const followSystem = ref(true);
 const crashNotes = ref(false);
-const lic = ref<string>("");
 const ver = ref("1.0.0");
 
 const FLAG: Record<string, string> = { US: "🇺🇸", CA: "🇨🇦", UK: "🇬🇧", AU: "🇦🇺", SG: "🇸🇬", PH: "🇵🇭" };
@@ -35,10 +34,6 @@ onMounted(async () => {
     if (typeof s.library_check === "boolean") libCheck.value = s.library_check;
     if (typeof s.follow_system_appearance === "boolean") followSystem.value = s.follow_system_appearance;
     if (typeof s.crash_notes === "boolean") crashNotes.value = s.crash_notes;
-  }
-  const l = await licenseStatus();
-  if (l && typeof l.status === "string") {
-    lic.value = l.status === "activated" ? t("settings.lic_ok") : t("settings.lic_none");
   }
 });
 </script>
@@ -83,8 +78,6 @@ onMounted(async () => {
           <h3>{{ t("settings.about_h") }}</h3>
           <KvRow :k="t('settings.about_ver')" :v="ver" />
           <KvRow :k="t('settings.about_lib')" v="2026.11 (312)" />
-          <KvRow :k="t('settings.about_lic')" :v="lic || '—'" :accent="lic !== ''" />
-          <KvRow :k="t('settings.about_account')" v="None" />
           <div class="tiny" style="margin-top:14px">{{ t("settings.about_foot") }}</div>
         </div>
       </div>
