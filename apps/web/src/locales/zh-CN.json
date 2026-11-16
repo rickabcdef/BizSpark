@@ -104,7 +104,7 @@
   "results.ans_h1": "每周不到 10 小时",
   "results.ans_h2": "每周 10–25 小时",
   "results.ans_h3": "全职投入",
-  "detail.eyebrow": "点子 {rank} / {total} · {match}% 匹配",
+  "detail.eyebrow": "点子 {rank} / {total}",
   "detail.loading": "载入中…",
   "detail.costs_h": "起步要花多少钱",
   "detail.costs_total": "到第一张发票为止合计",
@@ -203,7 +203,7 @@
   "settings.crash_d": "默认关闭。不含答案、不含点子、不含文件。",
   "settings.privacy_eyebrow": "一句话讲清隐私",
   "settings.privacy_h": "你的答案、你存的点子、你导出的方案，永远不离开这台设备。",
-  "settings.privacy_p": "唯一一次向外请求，是每月问一句「有没有更新的点子文件」。它不带任何用户数据。关掉它，这工具就 100% 离线，永久。",
+  "settings.privacy_p": "唯一一次向外请求，是每月问一句「有没有更新的点子文件」。它不带任何用户数据。断网时，这工具就 100% 离线，永久。",
   "settings.about_h": "关于",
   "settings.about_ver": "版本",
   "settings.about_lib": "点子库",
@@ -246,6 +246,8 @@
   "settings.v_auto": "自动",
   "settings.v_on": "开",
   "settings.v_off": "关",
-  "settings.about_foot": "更新与授权由你购买它的商店处理。",
-  "results.cta_back3": "回到 3 个点子"
+  "settings.about_foot": "更新与授权由你购买的应用商店管理。",
+  "results.cta_back3": "回到 3 个点子",
+  "settings.v_follow": "跟随系统",
+  "settings.v_closed": "已关闭"
 }

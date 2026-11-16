@@ -34,7 +34,7 @@ onMounted(renderPriceSlots);
     <div class="hero-mock"><div class="card">
       <div class="tiny" style="letter-spacing:1.4px;text-transform:uppercase">{{ t("welcome.mock_cap") }}</div>
       <div class="idea-card" style="border:0;box-shadow:none;padding:16px 0 0">
-        <div class="idea-no">01 / 03 &nbsp;·&nbsp; 94% {{ t("common.match") }}</div>
+        <div class="idea-no">01 / 03</div>
         <h3>{{ t("welcome.mock_title") }}</h3>
         <p>{{ t("welcome.mock_desc") }}</p>
         <div class="meta-row"><span class="tag">{{ t("welcome.mock_tag1") }}</span><span class="tag">{{ t("welcome.mock_tag2") }}</span><span class="tag">{{ t("welcome.mock_tag3") }}</span></div>

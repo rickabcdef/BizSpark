@@ -41,8 +41,7 @@
     <div class="devs"><div class="dev on">💻</div><div class="dev on">🖥</div><div class="dev">＋</div>
       <span class="tiny" style="margin-left:6px">已用 2 / 3 台</span></div>
     <div class="notice"><span>✓</span><span><b>激活不是登录。</b>校验通过后，本机只留一个很小的签名文件；此后软件断网也能用，我们不会再查第二次。</span></div>
-    <div class="btn-row" style="margin-top:22px"><a class="btn btn-primary" href="01-welcome.html">激活并开始 &nbsp;→</a>
-      <a class="btn btn-quiet" href="#">换电脑了？释放一个名额</a></div>
+    <div class="btn-row" style="margin-top:22px"><a class="btn btn-primary" href="01-welcome.html">激活并开始 &nbsp;→</a></div>
   </div>
   <div>
     <div class="card pad" style="background:var(--deep);border-color:var(--deep);color:#fff">
@@ -65,9 +64,6 @@ document.querySelectorAll('.opt').forEach(function(o){
     o.parentElement.querySelectorAll('.opt').forEach(function(x){x.classList.remove('sel')});
     o.classList.add('sel');
   });
-});
-document.querySelectorAll('.toggle').forEach(function(t){
-  t.addEventListener('click',function(){t.classList.toggle('on')});
 });
 </script>
 <script src="assets/pricing.js"></script>

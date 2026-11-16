@@ -6,9 +6,9 @@
     {
       "id": "T-01",
       "ok": true,
-      "detail": "首屏 278ms（红线 1500）· 溢出 0px · 主 CTA 1 个 · 外网请求 0",
+      "detail": "首屏 220ms（红线 1500）· 溢出 0px · 主 CTA 1 个 · 外网请求 0",
       "metrics": {
-        "ms": 278,
+        "ms": 220,
         "scroll": 0,
         "primaries": 1
       }

@@ -104,7 +104,7 @@
   "results.ans_h1": "under 10 hours a week",
   "results.ans_h2": "10–25 hours a week",
   "results.ans_h3": "full-time",
-  "detail.eyebrow": "Idea {rank} / {total} · {match}% match",
+  "detail.eyebrow": "Idea {rank} / {total}",
   "detail.loading": "Loading…",
   "detail.costs_h": "What it costs to start",
   "detail.costs_total": "Total to first invoice",
@@ -203,7 +203,7 @@
   "settings.crash_d": "Off by default. No answers, no ideas, no files.",
   "settings.privacy_eyebrow": "Privacy, in one sentence",
   "settings.privacy_h": "Your answers, your saved ideas and your exported plans never leave this device.",
-  "settings.privacy_p": "The only outbound request is \"is there a newer idea file?\" once a month. It carries no user data. Turn it off and the tool is 100% offline, forever.",
+  "settings.privacy_p": "The only outbound request is \"is there a newer idea file?\" once a month. It carries no user data. With the internet off, the tool is 100% offline, forever.",
   "settings.about_h": "About",
   "settings.about_ver": "Version",
   "settings.about_lib": "Library",
@@ -247,5 +247,7 @@
   "settings.v_on": "On",
   "settings.v_off": "Off",
   "settings.about_foot": "Updates and licence are handled by the store you bought it from.",
-  "results.cta_back3": "Back to 3 ideas"
+  "results.cta_back3": "Back to 3 ideas",
+  "settings.v_follow": "Follows system",
+  "settings.v_closed": "Off"
 }

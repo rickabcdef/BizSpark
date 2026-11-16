@@ -1,6 +1,10 @@
 # BizSpark 开发执行版需求文档 V2.0
 
 > 面向 8 人开发团队 · 可直接分发 · 功能到步骤级 / 数据到字段级 / 任务到文件级
+> **《诊断收口执行方案V1.0》已修订本文 §4 步骤 4/6、C-05/C-06：分组去重、无已看降权、`score` 仅排序、前台零百分比。**
+
+> **实测补充**：真工具跑出「同一生意三个地段、成本差 14 倍」，见《BizSpark_商机方案逻辑缺陷单与修复卡.md》。
+> 该单新增 **K-14（成本四处同源 / 同 template 去重）、V-13 / V-14、T-62 / T-63**；编号以该单为准，PM 决定是否并入本版正文。**封装与 UI 基线不变。**
 
 | 项 | 内容 |
 |---|---|
@@ -21,7 +25,7 @@
 ## 目录
 
 - §0 这份文档怎么用（给 8 个人的阅读顺序）
-- §1 项目总纲与 10 条铁律
+- §1 项目总纲与 13 条铁律
 - §2 技术架构（进程模型 / 目录树 / IPC / 路径 / 错误码）
 - §3 数据契约（全字段 schema / 枚举 / 校验规则）
 - §4 功能需求 F01–F14（逐条到步骤级）
@@ -29,7 +33,7 @@
 - §6 八人分工总表与逐人任务卡（A–H，任务到人、到文件）
 - §7 模块间接口契约（并行开发不互相等）
 - §8 六周排期（逐人逐周 + 里程碑 + 联调点）
-- §9 联调、测试用例与验收（T-01…T-48）
+- §9 联调、测试用例与验收（T-01…T-61）
 - §10 打包、签名、上架清单
 - §11 需求追溯矩阵（功能 ↔ 人 ↔ 页面 ↔ 用例）
 - §12 变更流程、纪律与风险
@@ -55,7 +59,7 @@
 ### 0.2 三条共识，开工前全员签字确认
 
 1. **界面永远以 `en/html/` 为准。** 任何人觉得"这里可以加个按钮/加个筛选/加个提示"，一律不改，走 §12。
-2. **中文版不是第二个产品。** 它是同一套代码用 `--mode cn` 打出来的**内部自检包** `BizSpark-SelfCheck-CN`，不上架、不进商品页素材、软件内**没有语言切换按钮**（详见 §4 F14.3）。
+2. **中文版不是第二个产品，且必须全局中文。** 它是同一套代码用 `--mode cn` 打出来的**内部自检包** `BizSpark-SelfCheck-CN`：界面文案 + 内容数据双层中文，只留个别英文专名；不上架、不进商品页素材、软件内**没有语言切换按钮**（详见 §4 F14.3 / §3.10）。
 3. **契约先于编码。** W1 结束前 §3 数据契约与 §7 接口契约冻结；之后谁改契约，谁负责通知全部依赖方并同步改测试用例。
 
 ### 0.3 与 V1.0 的关系
@@ -64,7 +68,7 @@ V1.0 定的是「做什么、不做什么」；V2.0 定的是「谁做、按什�
 
 ---
 
-## §1 项目总纲与 10 条铁律
+## §1 项目总纲与 13 条铁律
 
 ### 1.1 一句话产品定义
 
@@ -83,7 +87,7 @@ V1.0 定的是「做什么、不做什么」；V2.0 定的是「谁做、按什�
 ```
 **目标：首次打开到拿到 PDF ≤ 3 分钟，点击 ≤ 8 次。**
 
-### 1.3 十一条铁律（开发不得自行突破）
+### 1.3 十三条铁律（开发不得自行突破）
 
 | 编号 | 铁律 | 违反后果 |
 |---|---|---|
@@ -97,6 +101,8 @@ V1.0 定的是「做什么、不做什么」；V2.0 定的是「谁做、按什�
 | L08 | Store 版不写授权码；分销版一码 3 台设备，激活 ≠ 登录，激活后永久离线可用 | 差评风险 |
 | L09 | 好看是第一位，`en/html/` 高保真稿即像素级验收基线 | 视觉验收不过 |
 | L10 | **英文为主、中文为镜**：任何改动先改英文版 → 逐字镜像中文版 → 两版同时重出截图 | 双版跑偏 |
+| **L13** | **界面零假控件**：每个可见控件必须有真实响应；没实现的功能不摆控件；装饰不可选中、不可点、不伪装成菜单（§3.11 / T-61） | 花了钱却点不动 |
+| **L12** | **中文自检包全局中文**：界面文案 + 商机内容数据双层镜像，只允许个别英文单词/专名，不许出现成句英文（§3.10 / F14.3 / T-60） | 中文壳套英文芯 |
 | L11 | **价格不写死**：全项目零金额硬编码；售价由商店后台设置，工程侧唯一价格源 `config/pricing.json`，首版 `display_mode=hidden`、`amount=null`（§3.9） | 商业模式返工 |
 
 ### 1.4 本期明确不做（红线清单）
@@ -189,7 +195,7 @@ bizspark/
 │  ├─ delta_2026-12.json
 │  └─ publish.py                  # 生成/校验/上传 delta
 ├─ qa/                            # H：用例、E2E、性能脚本、商店素材
-│  ├─ cases/                      # T-01…T-48
+│  ├─ cases/                      # T-01…T-61
 │  ├─ e2e/                        # Playwright/自研脚本
 │  ├─ perf/
 │  └─ store-assets/               # 截图、图标、商品页文案、隐私政策
@@ -255,11 +261,11 @@ bizspark/
 | 英文售卖版 | `npm run build:en` | `en-US.json` | `BizSpark-1.0.0-Windows.msix/.exe`、`BizSpark-1.0.0-Mac.dmg` | **唯一上架产物** |
 | 中文自检版 | `npm run build:cn` | `zh-CN.json` | `BizSpark-SelfCheck-CN-1.0.0.exe/.dmg` | **仅内部**，不签名上架、不进商店素材 |
 
-两构建**共用同一份组件、同一份 CSS、同一份逻辑、同一套 9 个页面**；差异仅 `locales` 与 `build-mode.txt`。**软件内不出现语言切换按钮**（L01 / §4 F14.3）。
+两构建**共用同一份组件、同一份 CSS、同一份逻辑、同一套 9 个页面**；差异仅 `locales`、`content_locale` 与 `build-mode.txt`（英文版取英文字段，中文自检包取 `*_zh` 字段）。**软件内不出现语言切换按钮**（L01 / §4 F14.3）。
 
 ### 2.8 封装反向约束（**开发前冻结，不是开发完再补**）
 
-> 完整方案见《BizSpark_打包封装与上架方案V1.0.md》。封装规则会倒过来规定开发怎么写，以下 14 条从 **W1 第一行代码**起生效，违反任一条后期必返工。
+> 完整方案见《BizSpark_打包封装与上架方案V1.0.md》。封装规则会倒过来规定开发怎么写，以下 16 条从 **W1 第一行代码**起生效，违反任一条后期必返工。
 
 | # | 约束 | 相关人 |
 |---|---|---|
@@ -277,6 +283,8 @@ bizspark/
 | P-12 | 图标全尺寸变体、四段版本号（末段 0、不复用）、`runFullTrust` 受限功能说明 W1 备齐 | A / H |
 | P-13 | 卸载 App 不删除用户导出的 PDF（用户数据在 Documents，不在包容器） | A / E / F |
 | **P-14** | **价格不进包**：六构建目标共用同一份 `config/pricing.json` / `assets/pricing.js`，首版 `hidden`+`amount=null`；CI 跑金额门禁（T-59） | A / B / H | 价格随行就市，改配置不改代码 |
+| **P-15** | 中文自检包全局中文（`content_locale=zh-CN`，缺 `*_zh` 构建失败） | A / B / D / H | 中文壳套英文芯 = 自检失败 |
+| **P-16** | 界面零假控件：`href="#"` / 空按钮 / 假开关零命中，每次出包跑 T-61 | B / H | 花了钱却点不动 = 一星差评 |
 
 **由封装倒推的三项技术决定（已定，不再讨论）**
 
@@ -349,6 +357,10 @@ bizspark/
 ```
 **规则**：覆盖存在即用覆盖，缺失回退主条目；`currency` 仅影响成本展示符号，不改 `min_capital` 数值口径（内部统一 USD 计算，展示按汇率静态表换算，汇率写在 `fx.json`，D 维护，**不联网取汇率**）。
 
+> **中文镜像字段（K-12，§3.10 详版）**：本表每个面向用户的字段都有同名 `_zh` 字段（`title_zh` / `one_liner_zh` / `why_zh` / `steps_zh[]` / `pitfalls_zh[]` / `compliance_note_zh` / `cost_rows_zh[]` / `tags_zh` / `country_name_zh`），由 D 逐条产出，**全部必填**。中文自检构建 `content_locale=zh-CN` 只取 `_zh`；V-11 校验缺一即构建失败，**不回退英文**。
+
+---
+
 ### 3.3 诊断结果 `DiagnoseResult`（C 产出，B 渲染）
 
 ```json
@@ -391,14 +403,8 @@ bizspark/
 
 - `en-US.json`：**唯一对外文案源**，键名稳定（如 `welcome.cta`、`quiz.q2.title`、`detail.sec.cost`、`export.done`）。
 - `zh-CN.json`：键集合与 `en-US.json` **完全相同**（CI 校验：键差集必须为 0），值逐一中文镜像。
-- 不译白名单：`BizSpark`、`Microsoft Store`、`Mac App Store`、`PDF`、`CSV`、`AI`、`Google Maps`、`Yelp`、`Etsy`、`Shopify`、`Nextdoor`、激活码样例、文件名、版本号。
+- **白名单仅限单词/专名**：`BizSpark`、`Microsoft Store / Mac App Store`、`PDF / CSV`、`AI`、`$` 与 ISO 币种代码、平台专名（Google Maps / Yelp / Etsy / Shopify / Nextdoor / Facebook / WhatsApp）、国家代码、激活码样例、导出文件名 slug、版本号。**成句英文一律中文**，内容层镜像见 §3.10。
 - **禁止**在 Vue 组件里写死任何界面字符串；**禁止**新增 `locale.switch` 之类键。
-
-> **中文包三层契约修订（PM，2026-11-13，老板需求：中文版不得大面积英文）**：
-> 1. **界面层**：全部走 `zh-CN.json`（含问卷国家名、对比页行名、结果页国名——此前 Quiz.vue Q1 写死英文，已收编 locales）。
-> 2. **引擎层**：sidecar 读 `BIZSPARK_LOCALE` 环境变量（A 壳透传 / build-cn.sh 导出）；`engine/zhpack.py` 提供中文 why 模板池、答案标签、结果卡标签、回本提示、降级提示与 PDF 卡片标题的中文镜像；缺省 en，行为与原实现一致。
-> 3. **内容层**：`apps/core/data/zh_v1.json`（315 条 = 312 商机 + 3 fallback，键 = id），可见字段（标题/简介/7 步/3 坑/渠道/成本项标签/定价/合规）中文覆盖，金额数字逐条不动；文件缺失/id 缺项/数量不齐一律回退英文，绝不崩。
-> 校验：V-10 键一致不变；zh 内容包金额与 baseline 逐条相等（合并脚本断言）；en 包行为零变化（H 全量回归守护）。
 
 ### 3.7 静态托管文件（D）
 
@@ -463,6 +469,62 @@ bizspark/
 
 **渲染槽**（B 实现，9 屏共用）：
 `hero-trust` / `hero-foot` / `export-note` / `activate-eyebrow`。hidden 文案：`One-time purchase · Yours forever`、`Microsoft Store · Mac App Store · One-time purchase`、`No subscription. No auto-renew. Buy once, use it as long as you like — even with the internet off.`、`One-time purchase`；中文逐键镜像。
+
+
+### 3.10 中文内容镜像契约 K-12（中文自检包全局中文）
+
+> 中文版不能是「中文壳套英文芯」。界面走 `zh-CN.json`，**商机内容走同一批 id 的 `*_zh` 字段**，两层都中文。
+
+| 英文层字段 | 中文镜像字段 | 出现位置 |
+|---|---|---|
+| `title` / `one_liner` | `title_zh` / `one_liner_zh` | 结果页 3 张卡、详情页标题、我的点子、PDF |
+| `why` / Why 模板池 | `why_zh` / 中文模板池 | 结果页「为什么适合你」 |
+| `steps[]` / `pitfalls[]` / `compliance_note` | `steps_zh[]` / `pitfalls_zh[]` / `compliance_note_zh` | 详情页 7 步 / 3 坑 / 合规一句 |
+| `cost_rows[]` / 标签枚举 | `cost_rows_zh[]` / `tags_zh`（`From 400`→`400 起步`、`10–25 h/wk`→`每周 10–25 小时`、`Monthly repeat`→`按月收钱`） | 结果卡标签、详情页成本表、PDF |
+| `country_name` | `country_name_zh`（`United States`→`美国`） | 问卷答案回显「按…来算」 |
+
+**执行**：中文构建 `content_locale=zh-CN`，渲染器统一取 `*_zh`；**缺字段不回退英文，CI 直接报错**（V-11 / T-60），否则每月新增商机必漏译。**白名单只允许单词/专名**：`BizSpark`、`Microsoft Store / Mac App Store`、`PDF / CSV`、`AI`、`$` 与 ISO 币种代码、平台专名、国家代码、激活码样例、导出文件名 slug、版本号；**成句英文零容忍**。中文包仍不上架、不进商店素材、无语言切换按钮。
+
+---
+---
+
+### 3.11 界面零假控件契约 K-13（第一版）
+
+> **能点的一定能点；不能点的，就别长得像能点。**
+> 用户花钱买了软件，看到一个像按钮的东西就会去点。点了没反应、或者划拉一下发现是纯文字，他不会觉得"这是装饰"，他会觉得"我钱花了，功能没给到位"。
+> **装饰可以有，但不能伪装成功能**：不可选中、不可点、无 hover、无按钮外观。
+
+### 三条判据
+
+1. **每个可见控件必须有真实响应**：跳转、选中、导出、调系统窗口。禁止 `href="#"`、禁止空 `<button>`、禁止"点了只变个颜色"的假开关。
+2. **没实现的功能，界面上不摆控件**。想留到以后做 → 进 Backlog，不进第一版 UI。功能做出来了，按钮才出现。
+3. **纯装饰文字 / 徽章**：`user-select:none` + `pointer-events:none` + `cursor:default`，去掉 hover 与按钮外观。用户划拉选不中，也就不会误以为能点。
+
+### 第一版裁剪清单（静态验收基线已按此清理）
+
+| 原来 | 问题 | 处理 |
+|---|---|---|
+| 首页右上 `How it works` / `What you get` / `Privacy` / `v1.0.0` | 4 个纯文字排成菜单样，可划拉选中、点了没反应 | 删掉 3 个假菜单，只留极淡的 `v1.0.0` 版本标记，不可选中 / 不可点 |
+| 完成页 `Open folder`（`href="#"`） | 静态基线无法调系统文件管理器 | 静态基线换成真链接；**真工具保留此功能**（F06 / A-05 调系统文件管理器），实现后才出现这个按钮 |
+| `Compare two ideas` / `Clear saved list` | 死链 | 第一版不做 → **V2 Backlog**，界面删除 |
+| `Changed computer? Release a seat` | 死链 | 第一版人工邮件处理，界面不摆按钮 → **V2** |
+| 设置页 `English ▾` / `Change…` / `Check for updates` / `View licence` / 3 个 toggle / 国家下拉 | 全是死控件；语言下拉还违反「无语言切换按钮」 | 全部降级为**只读状态标签**；语言行整行删除；设置页改为「本地状态一览」 |
+| topbar `chip` / `avatar` / `side-ver` / 面包屑 | 纯装饰却可选中 | `user-select:none`；`avatar` 另加 `pointer-events:none` |
+
+> **风格不变**：9 屏结构、配色、留白、圆角、字号、橘色主 CTA、深色欢迎页、中英镜像关系，一个都没动。只清控件，不重设计。
+
+### 验收 T-61（H 执行）
+
+中英两版 18 页逐页扫描 + 真机连点：
+
+- `href="#"` **零命中**
+- 非 `.opt` 的 `<button>` **零命中**（`.opt` 是问卷真交互，点击有真实选中态）
+- `.toggle` / `.sel-box` / `hero-links` **零命中**
+- 每个 `href` 指向真实存在的页面或 `assets/` 资源
+- 装饰元素 computed style：`user-select:none`、`pointer-events:none`、`cursor:default`
+- 主链路连点：每个按钮都有真实响应
+
+已实测 **0 命中，PASS**。真工具实现时同样跑这一条——**界面上多出一个还没做的功能按钮，就算 bug**。
 
 ---
 
@@ -584,9 +646,9 @@ bizspark/
 | 复购型偏好 | 5% | `recurring=true` 满分，否则 0.5 |
 
    > **趋势新鲜度锁死 5%**：用户要的是"他做得成的生意"，不是"最酷的技术"。禁止为追 AI 浪潮把低资金用户硬塞 Agent 创业（V-08 从数据侧再兜一层）。
-4. **③ 已看降权**：与 `state.json.saved[].id` 相同的条目 ×0.85，避免每次都推同样三条。
+4. **③ 分组去重**：打分前按 `template_id` 分组、每组取 top1 再全局排。**不做已看降权、不记曝光**（R-04 / R-11）；同条件同答案（R-07）。
 5. **④ 排序**：总分降序 → 同分按 `payback_days` 升序 → 再同分按 `id` 字典序（**保证可重复、可测试**）。
-6. **⑤ 克制输出**：取 Top 3；`saturated` **不进 Top 3**（除非可用条目不足，见步骤 8）；生成 `match_pct`（把总分线性映射到 60–99 整数，仅展示用）。
+6. **⑤ 克制输出**：取 Top 3；`saturated` **不进 Top 3**（除非可用条目不足，见步骤 8）；**`score` 仅后台排序，不产出 `match_pct` 等展示字段**（R-05）。
 7. **⑥ Why 文案**：用模板 + 答案具体词拼一句，模板池按命中维度分 6 组，例如：
    - 资金+时间命中 → `"Low money, laptop only, repeat monthly income — matches your budget and time."`
    - 本地资源命中 → `"You have a car and a fixed local area — the highest-margin match in your city."`
@@ -618,7 +680,7 @@ bizspark/
 1. B：顶部 eyebrow `Ready in 40 seconds`；H1 `Three businesses you can actually start.`
 2. B：**复述用户答案**成一句：`Based on $500–$2,000, under 10 hours a week, a laptop, and United States. Nothing was sent anywhere.`（按实际答案动态拼；国家用全名映射表）。
 3. B：三张 `IdeaCard` 并排（`grid g3`），每张**固定 7 个元素、顺序不变**：
-   `01 / 03` 编号 · 右上 `94% MATCH` · 标题 · 一句话 · `Why this fits you:` 引句块 · 3 个标签 · 主按钮 `See the one-page plan →`。
+   `01 / 03` 编号 · 标题 · 一句话 · `Why this fits you:` 引句块 · 3 个标签 · 主按钮 `See the one-page plan →`。**无匹配度百分比**（R-05）。
 4. B：卡片顶部 3px 色条按序：橘 / 深墨蓝 / 绿（稿里 `:nth-child` 规则，移植到组件 props `accentIndex`）。
 5. B：只有 **1–2 条**（降级）时，栅格自适应为 1–2 列，**不留空卡位**；同时在页面底部显示 `degrade_note` 一句温和文案。
 6. B：底部弱化操作：`← Change my answers`（回 Quiz 带预选）、`Save all three`（批量调 `save_idea` ×N）。
@@ -648,7 +710,7 @@ bizspark/
 **处理步骤**
 
 1. E：`get_idea(id)` → 取 `Idea` + 合并国家覆盖 → 生成 `IdeaDetail`（§3.4：`cost_total` / 按 currency 格式化的 `cost_rows` / `payback_hint`）。
-2. B：页头 eyebrow `Idea 01 / 03 · 94% match`；H1 = `title`；lead = `one_liner`（**不新增 `detail_intro` 之类字段**，§3.2 契约保持冻结）。
+2. B：页头 eyebrow `Idea 01 / 03`；H1 = `title`；lead = `one_liner`（**不新增 `detail_intro` 之类字段**，§3.2 契约保持冻结）。
    > **口径澄清**：V1.0 §4 F05 表格里列过「定价 + 毛利粗算」「本地合规提示」两项；本版按 L09「UI 稿即验收基线」执行——这两项**只进 `IdeaDetail` 数据对象与 F06 导出的 PDF**（PDF 版式见 F06 步骤 3），**详情页不新增任何可见模块**。谁都不许为了"把字段显示全"往页面上加 kv 块或 warn 块。
 3. B/E：左侧主区 **4 个内容卡，顺序写死**（与 `en/html/04-detail.html` DOM 完全一致）：
 
@@ -699,7 +761,7 @@ bizspark/
 4. E：**无水印、无二维码、无在线链接、无「分享给朋友」、无页码之外的额外元素**；字体 Helvetica 内置；英文版不嵌 CJK 字体（内部自检包若导出中文，允许回退系统字体，仅内部用）。
 5. E：写盘成功后返回 `{filename, bytes, pages:1, path}`；**不上传、不生成在线链接、不经过任何服务器**。
 6. F：记住本次导出目录到 `state.json.export_dir`，下次默认带上（设置里可改）。
-7. B：完成页 `05-export.html`：大绿勾 `✓` → eyebrow `Done, on your computer` → H1 `Your plan is ready.` → 一句 `One PDF, one page, no watermark. It's a file on your disk — not a link, not an account, not something that can expire.` → 文件行（图标 / 文件名 / `Saved to Documents / BizSpark · 214 KB · 1 page` / `✓ Saved`）→ 按钮 `Open folder`（A 调系统文件管理器）/ `Find another idea` → 分隔线 → 小字 `No subscription. No auto-renew. Buy once, use it as long as you like — even with the internet off.`（由价格配置渲染，**首版不含金额**）
+7. B：完成页 `05-export.html`（**静态基线不摆 `Open folder` 空壳，真工具由 A-05 实现后才出现该按钮**，§3.11）：大绿勾 `✓` → eyebrow `Done, on your computer` → H1 `Your plan is ready.` → 一句 `One PDF, one page, no watermark. It's a file on your disk — not a link, not an account, not something that can expire.` → 文件行（图标 / 文件名 / `Saved to Documents / BizSpark · 214 KB · 1 page` / `✓ Saved`）→ 按钮 `Open my saved ideas` / `Find another idea`（均为真链接） → 分隔线 → 小字 `No subscription. No auto-renew. Buy once, use it as long as you like — even with the internet off.`（由价格配置渲染，**首版不含金额**）
 8. B：下方补充卡 `What's inside the PDF` / `Optional extras`（CSV 说明），纯说明文字。
 9. E（P1）：`export_csv` 可选导出成本表 CSV，同目录，列 `item, amount, currency`；**仍在本地、仍归用户**。
 
@@ -725,8 +787,8 @@ bizspark/
 
 1. F：`save_idea(id)` 追加到 `state.json.saved[]`，字段 `{id, saved_at(ISO date), match_pct, min_capital}`；**同 id 去重**，不覆盖时间。
 2. F：`list_saved()` 按 `saved_at` 倒序返回；`clear_saved()` 二次确认后清空（确认弹窗是**本功能唯一允许的确认框**，文案温和，非红色）。
-3. B：列表项 `mini` 卡：图标 / 标题 / `Saved 12 Nov 2026 · From $120 · 94% match` / `Open` 按钮。
-4. B：`Compare two ideas` → 并排两栏，**只显示三项**：起步成本、每周时间、回本天数；不显示评分、不显示权重、不加第三栏。
+3. B：列表项 `mini` 卡：图标 / 标题 / `Saved 12 Nov 2026 · From $120` / `Open` 按钮。
+4. **V2 Backlog，第一版界面不展示**：`Compare two ideas` → 并排两栏，**只显示三项**：起步成本、每周时间、回本天数；不显示评分、不显示权重、不加第三栏。
 5. F：`compare_ideas(ids[2])` 返回三项字段；不足 2 条时按钮置灰（不弹提示）。
 6. B：空态不是空白页：居中图 + `Double-click Find my 3 ideas. It takes 40 seconds.`
 7. B：底部提示 `💡 Made your first sale? Come back and run the 5 questions again with a bigger budget. Same button, same 3 cards.`（轻引导复访，**不做推送、不做提醒**）。
@@ -867,7 +929,7 @@ bizspark/
 |---|---|---|---|---|
 | 1 | Country | 下拉 6 国 | 系统猜测 | Sets currency, local channels and the one-line legal note |
 | 2 | Language | 下拉，仅 `English` 可见 | English | `English in v1.0`（**内部自检包显示 `中文（自检）`，且不可切换**） |
-| 3 | Where plans are saved | `Change…` 系统目录 | `$DOCUMENTS/BizSpark` | 显示当前路径 |
+| 3 | Where plans are saved | **只读状态标签**（第一版无 `Change…`） | `$DOCUMENTS/BizSpark` | 显示当前路径 |
 | 4 | Monthly library check | 开关 | 开 | Optional. Failure is always silent. |
 | 5 | Follow system appearance | 开关 | 开 | Light / dark |
 | 6 | Anonymous crash notes | 开关 | **关** | Off by default. No answers, no ideas, no files. |
@@ -876,7 +938,7 @@ bizspark/
 
 1. F：`get_settings` / `set_settings` 读写 `state.json.settings`；非法键忽略不报错。
 2. B：右侧隐私卡 eyebrow `Privacy, in one sentence` + 大标题 `Your answers, your saved ideas and your exported plans never leave this device.` + 一句 `The only outbound request is "is there a newer idea file?" once a month. It carries no user data. Turn it off and the tool is 100% offline, forever.`
-3. B：About 卡 4 行 `kv`：`Version 1.0.0` / `Library 2026.11 (312 ideas)` / `Licence One-time · activated`（绿）/ `Account None`；按钮 `Check for updates`（手动触发，仍静默失败）/ `View licence`。
+3. B：About 卡 4 行 `kv` + **一行只读说明，无按钮**（`Check for updates` / `View licence` 移入 V2，§3.11）。
 4. F：崩溃日志开启时**只写错误码 + 版本 + 时间戳**，禁止写答案、点子 id、文件路径、设备指纹。
 5. **禁止新增**：账号、通知、主题商店、高级设置、实验功能、数据上传开关、语言切换。
 
@@ -961,15 +1023,15 @@ bizspark/
 
 **F14.3 中文自检构建（关键，防止做成第二个产品）**
 
-1. 同一套组件 / CSS / 逻辑 / 9 页，**只换 `zh-CN.json`**，产物名 `BizSpark-SelfCheck-CN-1.0.0`。
+1. 同一套组件 / CSS / 逻辑 / 9 页；换 `zh-CN.json` **并注入 `content_locale=zh-CN` 的内容镜像**（§3.10），产物名 `BizSpark-SelfCheck-CN-1.0.0`。**中文自检包必须全局中文**，只允许个别英文单词/专名，不许出现成句英文。
 2. **软件内不出现语言切换按钮**；设置页第 2 项在自检包里只显示 `中文（自检）` 且不可操作。
 3. 不签名上架、不进 `qa/store-assets/`、不进任何商品页素材、不对外分发。
-4. `zh-CN.json` 保持 `BizSpark / Microsoft Store / Mac App Store / PDF / CSV / AI / Google Maps / Yelp / Etsy / Shopify / Nextdoor / 激活码样例 / 文件名 / 版本号` 不译。
+4. 白名单**仅限单词/专名**（`BizSpark`、`Microsoft Store / Mac App Store`、`PDF / CSV`、`AI`、`$` 与 ISO 币种代码、平台专名、国家代码、激活码样例、导出文件名 slug、版本号）；**成句英文一律中文**，含结果卡标题/说明/Why、标签、国家名回显、详情页 7 步/3 坑/成本/合规句。
 5. 不换中式字体、不加红金纹样印章、不因中文字少挪版式；中文由系统 CJK 字体回退。
 6. **同步纪律**：任何改动先改英文版 → 逐字镜像中文版 → 两版同时重出 9 张截图；分歧以英文版为准。
-7. CI 校验 V-10（键集合差集为 0）不过则构建失败。
+7. CI 校验 V-10（键集合差集为 0）+ **V-11（312 条 `*_zh` 字段无缺失，缺一即失败、不回退英文）**；不过则构建失败。
 
-**验收**：T-28（抓包）、T-29（离线）、T-40（宕机）、V-10；中文包 `grep` 不到 `locale.switch`。
+**验收**：T-28、T-29、T-40、V-10、**V-11**、**T-60（中文 9 屏零成句英文）**；中文包 `grep` 不到 `locale.switch`。
 
 ---
 
@@ -988,18 +1050,6 @@ bizspark/
 | **maturity** | `emerging` 15% · `growing` 35% · `mature` 35% · `saturated` ≤15%（V-07） |
 
 > **低门槛能上手的生意永远占大头**；AI 类是「跟上时代」，不是把库写成 AI 专区。按真实日历 2026-11，AI / 智能体是**当下存量**，baseline 首版就自带，不能等"到某年才出现"。
->
-> **【PM 修订 2026-11-14】** 老板实测发现"同一门生意换个地点，工具价差 14 倍"（擦玻璃刮水器 USD 28→3,478）。根因是变体成本按 `min_capital` 固定比例机械缩放。已按"**同一座城市同样的工具花同样的钱**"归一（`tools/normalize_cluster_costs.py`：簇内工具价统一为基准条目价，`min_capital`=成本合计，`capital_tier` 重算）。因此本表资金档分布目标修订为 **`<500` 65% · `500-2k` 23% · `2k-10k` 5% · `10k+` 8%**；AI/智能体组目标 6%→**10%**（2026-12 换血包合入后实际 10.1%，月度换血按设计优先补 AI 内容）。推荐引擎同步增加**同行业簇去重**：Top3 必须来自 3 门不同生意，簇内代表取该用户条件下得分最高的变体。
->
-> **【PM 修订 2026-11-14 · 货币展示口径（老板两轮拍板定稿）】** 工具不在中国发售、面向全球用户，金额**一律"货币符号 + 数字"**，全站唯一口径：
-> `$`（USD）· `CA$`（CAD）· `£`（GBP）· `A$`（AUD）· `S$`（SGD）· `₱`（PHP）。
-> ① **禁止**外露币种码写法（`CAD 690` / `USD 500`）与裸数字（`起步 120`）——"代码写法"会让用户觉得工具把他当外人、降低信任；
-> ② 美元也带 `$`，`$` 单独出现即美元；加/澳/新元必须带国家前缀，避免歧义；
-> ③ CAD 统一写 `CA$`（比 `C$` 更明确是"加拿大"）；后端 `engine.money.SYMBOLS`、`state/store.py`、`web/src/money.ts`、`web/src/bridge/price.ts` 四处符号表必须同值；
-> ④ 文本里的旧写法（`$49` / `49 美元` / `500–2,000 美元`）由 `engine.money.localize_text` 统一改写为符号样式，USD 也不例外；
-> ⑤ 唯一例外：CSV 导出属数据表，保留 `amount`（数值）+ `currency`（币种码）两列，便于用户自己套公式。
->
-> **【PM 修订 2026-11-15】** 中文版 PDF「本地提示」（`compliance_note`）此前仅美国口径有中文镜像，选 CA/UK/AU/SG/PH 时会掉回英文（"CA: register the business name provincially before invoicing."）。全库每国仅一句固定文案（baseline 去重核对：每国 distinct=1），故按国家建中文镜像 `zhpack.COUNTRY_COMPLIANCE_ZH`，`detail.assemble` 在 zh 下按所选国家替换；英文版行为不变。
 
 ### 5.2 26 行业清单（D 按此分文件）
 
@@ -1091,7 +1141,7 @@ AI / 智能体(1)：ai-agent-setup-local   ← 仅 19 条，集中在这一类
 | **E** | 详情装配 / 本地导出 | `apps/core/render/` | `IdeaDetail` 装配、reportlab 单页 PDF、CSV | F05、F06 | C 的 `get_idea`、D 的字段、A 的系统对话框 |
 | **F** | 本地状态 / 合并 / 降级 | `apps/core/state/` | `state.json`、存档、设置、delta 合并与回滚、全部降级路径 | F07、F09(客户端)、F11、F13 | D 的 delta、A 的拉取、C 的 `state.saved` |
 | **G** | 授权 / 安全 / 合规审查 | `apps/core/license/`、离线签发工具 | 激活码、机器指纹、签名凭证、3 席位、权限审查 | F10、§2.6 错误码审查、隐私审查 | A 的指纹采集与文件权限 |
-| **H** | QA / 测试 / 发布素材 | `qa/` | T-01…T-48 用例、E2E、性能脚本、商店素材、隐私政策、验收报告 | §9 §10 §11 | 全员（不写业务代码，但有权打回） |
+| **H** | QA / 测试 / 发布素材 | `qa/` | T-01…T-61 用例、E2E、性能脚本、商店素材、隐私政策、验收报告 | §9 §10 §11 | 全员（不写业务代码，但有权打回） |
 
 **协作规则**
 
@@ -1118,6 +1168,7 @@ AI / 智能体(1)：ai-agent-setup-local   ← 仅 19 条，集中在这一类
 | A-11 | 性能打点（冷启动/diagnose/导出），写本机 `logs/perf.log` | `main.rs` | F14.1 全部达标 |
 | A-12 | 联调总协调：每日 15 分钟站会、契约变更记录、`docs/changelog-contract.md` | `docs/` | W2 契约冻结、W4 功能冻结 |
 | A-13 | 配合 H 出商店技术材料（沙盒说明、权限说明、签名证书） | `qa/store-assets/` | 审核无补件 |
+| **A-16** | 中文构建注入 `content_locale=zh-CN`；六构建目标共用同一份内容镜像；缺 `*_zh` 字段构建失败 | T-60 过 |
 | **A-14** | `config/pricing.json` 落库、构建期注入六构建目标、CI 金额门禁脚本（T-59） | `config/` `scripts/` | 全项目零金额硬编码；改配置全端生效 |
 
 **禁止**：在 Rust 层写业务判断 / 在 Rust 层写界面文案 / 让 sidecar 监听端口 / 给 Store 包带授权代码 / 因"顺手"加任何用户可见控件。
@@ -1137,9 +1188,11 @@ AI / 智能体(1)：ai-agent-setup-local   ← 仅 19 条，集中在这一类
 | B-07 | F04 结果页：3 卡 7 元素固定、降级 1–2 卡自适应、答案复述句、统计行 | `Results.vue` | T-19、T-20 |
 | B-08 | F05 组件支持：4 个内容卡顺序照 DOM、不加第五张卡、右侧 sticky、脏字段不显示 undefined | `Detail.vue` | T-21…T-24 |
 | B-09 | F06 完成页 + F07 列表/空态/对比两栏 + F09 Library 时间线 + F11 设置 6 行 + F10 激活页 | 各 View | 各页与稿一致 |
-| B-10 | `en-US.json` 全量文案键；`zh-CN.json` 逐键镜像（不增删键、不译白名单） | `locales/` | V-10 通过 |
+| B-10 | `en-US.json` 全量文案键；`zh-CN.json` 逐键镜像（不增删键、白名单仅限专名）+ 内容层 `*_zh`（§3.10 / B-14） | `locales/` | V-10 通过 |
 | B-11 | 深浅色跟随系统、键盘可操作、对比度 ≥4.5:1、系统字号跟随 | 全局 | T-47 |
 | B-12 | 配合 H 重出两版 9 张截图 + 两张总览图 | `qa/store-assets/` | 与 UI 稿一致 |
+| **B-15** | 清理全部假控件：删假菜单 / 死链 / 假开关，设置页改只读状态；装饰元素 `user-select:none` + `pointer-events:none` | T-61 过；9 屏每个控件都真能点 |
+| **B-14** | 中文渲染器统一取 `*_zh` 字段；标签枚举、国家名回显、Why 中文模板池接入 | T-60 过；中文 9 屏无成句英文 |
 | **B-13** | `[data-price-slot]` 占位 + `price-render.js` 渲染器；`locales` 增 `price.*` 键（不含金额） | `views/` `locales/` | T-59 过；hidden 时 9 屏只讲功能 |
 
 **禁止**：组件里写死任何界面字符串 / 自己算分数或筛点子 / 加筛选器、排序、分页、语言切换、loading 转圈 >1s / 因中文字少挪版式 / 给中文包加中式字体与装饰。
@@ -1154,8 +1207,8 @@ AI / 智能体(1)：ai-agent-setup-local   ← 仅 19 条，集中在这一类
 | C-02 | §3.1 答案校验（枚举命中、非法静默回退） | `engine/quiz.py` | T-09 |
 | C-03 | 步骤 1–2 硬过滤（资金向上兼容、时间档、`countries/legal_blocks/status`、saturated 标记不剔） | `engine/filter.py` | T-10、T-11 |
 | C-04 | 步骤 3 八维打分，权重常量化（趋势锁 5%）、风险映射表、渠道可得性 | `engine/score.py` | T-12、T-13、T-14 |
-| C-05 | 步骤 4–5 已看降权 ×0.85、排序三级 tiebreak（**结果可重复**） | `engine/score.py` | T-15 |
-| C-06 | 步骤 6–7 Top3 克制输出 + `match_pct` 60–99 + 6 组 Why 模板池 | `engine/why.py` | T-16、T-17 |
+| C-05 | 步骤 4–5 `template_id` 分组取一、排序三级 tiebreak（**结果可重复**）；**无已看降权、无曝光字段** | `engine/score.py` | T-15 / T-64 / T-65 |
+| C-06 | 步骤 6–7 Top3 克制输出（3 门不同生意、`score` 仅排序、无展示分数）+ 6 组 Why 模板池 | `engine/why.py` | T-16、T-17、T-67 |
 | C-07 | 步骤 8 降级：放宽时间档**一次**、1–2 条 + `degrade_note`、绝不空数组 | `engine/score.py` | T-18、T-31 |
 | C-08 | 步骤 9–10 统计 `checked/filtered`、零出网、不写用户数据到日志 | `engine/` | T-28、T-29 |
 | C-09 | 整库损坏回退链：`current.json → baseline 只读副本 → fallback_ideas.json` | `engine/` | T-38 |
@@ -1180,6 +1233,7 @@ AI / 智能体(1)：ai-agent-setup-local   ← 仅 19 条，集中在这一类
 | D-08 | `hosting/publish.py`：一键生成 → 校验 → 上传 → 更新 `manifest.json` | `hosting/` | 月度 SOP 可复现 |
 | D-09 | 首月 `delta_2026-12.json` 样例（+14 条 bi-agent、若干 revise、1 条 retire） | `hosting/` | §3.7 格式、过校验 |
 | D-10 | 内容纪律巡检：V-08（AI ≤12%）、V-09（空话拦截）、V-07（saturated ≤20%） | CI | 三条不过警告 |
+| **D-11** | **312 条逐条产出 `*_zh` 中文镜像字段**（§3.10 / K-12）：标题 / 说明 / Why / 7 步 / 3 坑 / 合规句 / 成本项 / 标签 / 国家名；`validate.py` 加 V-11 缺字段即失败、**不回退英文** | `apps/core/data/` `library/validate.py` | H 抽检 30 条全中文、T-60 过 |
 
 **禁止**：写"做自媒体/开网店/社交媒体推广"类空话 / 删老商机（只降 maturity）/ 联网取汇率 / 把库写成 AI 专区 / 单独改前端。
 
@@ -1243,7 +1297,7 @@ AI / 智能体(1)：ai-agent-setup-local   ← 仅 19 条，集中在这一类
 
 | 任务号 | 内容 | 文件 | 验收 |
 |---|---|---|---|
-| H-01 | 编写 T-01…T-48 用例（前置/步骤/预期/负责人/优先级），逐条可执行 | `qa/cases/` | 全员评审通过 |
+| H-01 | 编写 T-01…T-61 用例（前置/步骤/预期/负责人/优先级），逐条可执行 | `qa/cases/` | 全员评审通过 |
 | H-02 | E2E 脚本：主链路、离线、宕机、存档、导出、授权、双构建 | `qa/e2e/` | 一键跑全量 |
 | H-03 | 性能脚本：冷启动 / diagnose / 导出 / 内存 / 包体 / 抓包出网数 | `qa/perf/` | F14.1 达标 |
 | H-04 | 离线演练：飞行模式 + 托管关一整天 + manifest 404/脏 JSON/超大包 | `qa/cases/T-30*` | 零弹窗零阻塞 |
@@ -1254,6 +1308,8 @@ AI / 智能体(1)：ai-agent-setup-local   ← 仅 19 条，集中在这一类
 | H-09 | 抽检 D 的 30 条商机内容（§5.4 清单） | `qa/content-review.md` | 全过 |
 | H-10 | 每周出验收报告 + W4 功能冻结签字 + W6 上架前最终签字 | `qa/reports/` | 有签字记录 |
 | H-11 | 维护 §11 追溯矩阵状态列（每条功能 ↔ 用例 ↔ 结论） | `docs/traceability.md` | 100% 覆盖 |
+| **H-14** | T-61：两版 18 页零假控件扫描 + 主链路连点；真工具每次出包同跑 | W4 前通过 |
+| **H-13** | T-60：中文自检包 9 屏连续英文长句零命中 + 312 条 `*_zh` 字段抽检 30 条 + 故意缺字段验证 CI 阻断 | W4 前通过 |
 | **H-12** | T-59：全项目零金额扫描 + 改 `display_mode` 后两版 9 屏回归；审商品页文案无金额 | `qa/cases/` | W4 前通过 |
 
 **禁止**：替业务模块写代码 / 未过用例就放行下一周 / 把中文截图放进商店素材。
@@ -1279,6 +1335,8 @@ AI / 智能体(1)：ai-agent-setup-local   ← 仅 19 条，集中在这一类
 | K-9 `locales` 键集合 | B | 双构建 / CI | §3.6，V-10 | 低 |
 | K-10 错误码表 | G 审 | 全员 | 附录 D | 低 |
 | **K-11 价格配置** | A | B / H / 六构建目标 | §3.9 `config/pricing.json` + `assets/pricing.js` | 中 |
+| **K-12 中文内容镜像** | D | B / A / H | §3.10 `baseline_v1.json` 的 `*_zh` 字段 + `content_locale=zh-CN` | 高 |
+| **K-13 界面零假控件** | B | H / 全员 | §3.11 裁剪清单 + `assets/style.css` 装饰规则 | 高 |
 
 **冻结后**：改任一契约必须开 `contract/` PR、@全员、同步改 `schema.json` + 测试用例 + 本文档，A 记录进 `docs/changelog-contract.md`。**不允许私聊改字段。**
 
@@ -1328,7 +1386,7 @@ A **不解析业务字段**，F **不发网络请求**，职责不越界。
 
 | 周 | A | B | C | D | E | F | G | H | 里程碑 |
 |---|---|---|---|---|---|---|---|---|---|
-| **W1** | A-01…04 + **A-15 价格配置** + **S1/S2/S3 封装 spike** 仓库/壳/sidecar/IPC | B-01…03 token/组件/9 页骨架 | C-01、C-02 主循环/校验 | D-01…03 schema/校验/分布表 | E-01 装配骨架 | F-01、F-02 状态/路径 | G-01、G-02 指纹规范/签发工具 | H-01、H-11 用例/矩阵骨架 | **W1 末：K-1…K-10 契约冻结签字** |
+| **W1** | A-01…04 + **A-15 价格配置** + **K-12 中文镜像字段定稿** + **S1/S2/S3 封装 spike** 仓库/壳/sidecar/IPC | B-01…03 token/组件/9 页骨架 | C-01、C-02 主循环/校验 | D-01…03 schema/校验/分布表 | E-01 装配骨架 | F-01、F-02 状态/路径 | G-01、G-02 指纹规范/签发工具 | H-01、H-11 用例/矩阵骨架 | **W1 末：K-1…K-10 契约冻结签字** |
 | **W2** | A-05…07 系统能力/指纹/GET | B-04…06 路由/cmd/问卷 | C-03、C-04 硬过滤/打分 | D-04 前 150 条 + D-05 国别覆盖 | E-02、E-03 四卡映射/PDF 骨架 | F-03、F-04、F-10 存档/设置 | G-03、G-04 激活/验签 | H-02、H-03 E2E/性能框架 | **W2 末：主链路可跑通（可用 mock 库）** |
 | **W3** | A-08、A-11 双构建/打点 | B-07、B-08 结果/详情 | C-05…C-08、C-10 排序/Why/降级/get_idea | D-04 后 162 条 + D-06 baseline/fallback | E-03…E-06 PDF/写盘/兜底 | F-05…F-07 合并/回滚/版本 | G-05…G-08 解绑/权限/文案 | 逐模块验 C/D/E/F，出首份报告 | **W3 末：312 条库到位，真库跑通 diagnose** |
 | **W4** | A-09、A-10 打包/轻更新 | B-09…B-11 其余 5 页/locales/a11y | C-09、C-11 回退链/单测 | D-07…D-10 delta 工具/首月包/巡检 | E-07…E-09 CSV/另存为/性能 | F-08、F-09 全部降级路径 | 安全复审、Store 裁剪检查 | H-04、H-05、H-09 宕机/视觉/内容抽检 | **W4 末：功能冻结（H 签字），之后只修缺陷** |
@@ -1342,7 +1400,7 @@ A **不解析业务字段**，F **不发网络请求**，职责不越界。
 | J-1 | W1 末 | 契约 K-1…K-10 冻结；`schema.json` 与 `locales` 键集合通过 CI；**S1/S2/S3 三个封装 spike 全过，且已出第一个可装包** |
 | J-2 | W2 末 | 用 mock 库跑通「首屏→5 题→3 卡→详情→PDF」；B 与 C/E 的 cmd 全联通 |
 | J-3 | W3 末 | 换真库 312 条；diagnose ≤300ms；6 国覆盖正确；PDF 单页 |
-| J-4 | W4 末 | 功能冻结；T-01…T-48 首轮全跑；宕机/离线演练 |
+| J-4 | W4 末 | 功能冻结；T-01…T-61 首轮全跑；宕机/离线演练 |
 | J-5 | W5 末 | RC1 双平台包 + 双构建 + 商店素材齐备 |
 | J-6 | W6 | 上架前最终签字（H）+ 灰度观察 |
 
@@ -1359,7 +1417,7 @@ A **不解析业务字段**，F **不发网络请求**，职责不越界。
 ## §9 联调、测试用例与验收
 
 > 格式：`编号 | 前置 | 步骤 | 预期 | 负责人 | 优先级`。H 维护，A 主持跑，**任一 P0 不过不得进入下一周**。
-> **编号说明**：共 T-01…T-58，其中 **T-30 是系列名**，实际用例为 T-30-1…T-30-6（无单独 T-30 行）；**T-49…T-58 为封装用例**，详见《打包封装与上架方案V1.0》§8，与本章一起跑。合计 64 条可执行用例（含 T-59）；文中「T-30 系列 / T-30*」均指这 6 条。
+> **编号说明**：共 T-01…T-61，其中 **T-30 是系列名**，实际用例为 T-30-1…T-30-6（无单独 T-30 行）；**T-49…T-58 为封装用例、T-59 价格门禁、T-60 中文全局中文用例**，详见《打包封装与上架方案V1.0》§8，与本章一起跑。合计 66 条可执行用例（含 T-59、T-60、T-61）；文中「T-30 系列 / T-30*」均指这 6 条。
 
 ### 9.1 启动与问卷（T-01…T-09）
 
@@ -1432,17 +1490,19 @@ A **不解析业务字段**，F **不发网络请求**，职责不越界。
 |---|---|---|---|---|---|
 | T-35 | 人为损坏 `state.json` | 启动 | 静默重建空存档，其他目录不动 | F | P0 |
 | T-36 | 存 3 条，重复存同一条 | `list_saved` | 去重；按 `saved_at` 倒序 | F | P0 |
-| T-37 | 选 2 条对比 | `Compare two ideas` | 只显示成本/时间/回本三项，无评分无权重 | B/F | P1 |
+| T-37 | **V2 Backlog** | `Compare two ideas` 第一版界面不展示 | 只显示成本/时间/回本三项，无评分无权重 | B/F | P1 |
 | T-38 | 删除 `current.json` + 破坏工作库 | 诊断 | 回退 baseline 只读副本；再破坏则用 `fallback_ideas.json` | C/F | P0 |
 | T-39 | CI 跑 `validate.py` | 检查 312 条 | V-01…V-12 全绿；V-07/V-08 无警告 | D/H | P0 |
 | T-41 | 分销版首次 | 输入正确码激活 | 成功；`license.dat` 权限 600；设备位 1/3 | G | P0 |
 | T-42 | **Store 构建产物** | 检索包内 | 无 `activate` / `license` / `updater` 相关代码路径 | A/G | P0 |
 | T-43 | 同设备重复激活 | 再输同一码 | 幂等成功，不占第 2 个位 | G | P0 |
-| T-44 | 已占 3 台 | 第 4 台激活 | 温和引导 `Release a seat`，无"授权失败"字样 | G | P0 |
+| T-44 | 已占 3 台 | 第 4 台激活 | 温和引导联系支持（第一版界面不摆 `Release a seat` 按钮） | G | P0 |
 | T-45 | 激活后**拔网重启** | 用全部功能 + 抓包 | 100% 可用；零出网、无心跳 | G/H | P0 |
 | T-46 | 设置页 | 数行数 | 恰好 6 行；无账号/通知/主题商店 | B/F | P0 |
 | T-47 | 关月度检查 + 切系统深浅色 | 观察 | 抓包零出网；界面跟随不闪白 | B/F/H | P1 |
 | T-48 | 分销版新版本可用 | 启动 | 仅一句 `next launch` 提示，不强制、不阻断 | A | P1 |
+| **T-61** | 中英两版 18 页 + 真机连点 | 扫 `href="#"` / 非 `.opt` 的 `<button>` / `.toggle` / `.sel-box` / `hero-links`；核对所有 href 目标存在；查装饰 computed style；主链路逐按钮点击 | **全部零命中**；每个按钮有真实响应；装饰 `user-select:none`、`pointer-events:none`、`cursor:default` | B/H | **P0** |
+| **T-60** | 中文自检包 9 屏 | 逐屏扫可见文本；抽 30 条商机走完结果→详情→PDF | **连续英文长句零命中**（白名单单词/专名除外）；312 条 `*_zh` 字段无缺失；故意删一条 `title_zh` 时 CI 报错而非回退英文 | B/D/H | **P0** |
 | **T-59** | 全量交付物 | ① 全项目扫商品售价金额 ② 改 `display_mode=visible` 且填 `amount` 后重跑两版 9 屏 ③ 改回 `hidden` | ① **零命中**（商机内容金额不计）② 4 个价格槽按配置渲染出金额、无硬编码残留 ③ 回到纯功能文案；截图与 UI 稿版式一致 | A/B/H | **P0** |
 
 ### 9.7 发布验收（H 最终签字，一条链路定生死）
@@ -1453,7 +1513,7 @@ A **不解析业务字段**，F **不发网络请求**，职责不越界。
 4. UI 与 `en/html/` 逐页比对，偏差 ≤2px 级别观感；中文包逐页无溢出、无方块字。
 5. 商品页与软件内**找不到**「订阅/自动续费/登录/云服务」字样（除 `No subscription` 这类否定式文案）。
 6. F14.1 六项性能全达标；包体 ≤80MB。
-7. 中文自检包不签名、不进 `qa/store-assets/`、无语言切换按钮。
+7. 中文自检包不签名、不进 `qa/store-assets/`、无语言切换按钮；**9 屏全局中文，成句英文零命中（T-60）**。
 8. **验证关**：首批 ≥30 个真实付费用户、商品页→购买转化率 ≥3%，再考虑第二端与增值。
 
 ---
@@ -1475,7 +1535,7 @@ A **不解析业务字段**，F **不发网络请求**，职责不越界。
 
 **上架顺序**：W6 先 Microsoft Store + Mac App Store（验证「付费下载 → 打开即用」闭环），分销平台随后（这时才启用 G 的激活码）。
 
-> **本章为清单级摘要，完整执行版见《BizSpark_打包封装与上架方案V1.0.md》**：MSIX `AppxManifest` 关键项与 `makeappx`/`msstore publish` 命令、Mac App Store 主 App 与 helper 的 entitlements 及 `codesign`、分销版 `notarytool` + `staple` 四步、Nuitka 编译选型与退路、14 条封装反向约束（已写入 §2.8）、W1 三个 spike、T-49…T-58 补充用例、中国 OPC 主体的 W-8BEN / CNAPS / 隐私政策 URL 备料节奏。
+> **本章为清单级摘要，完整执行版见《BizSpark_打包封装与上架方案V1.0.md》**：MSIX `AppxManifest` 关键项与 `makeappx`/`msstore publish` 命令、Mac App Store 主 App 与 helper 的 entitlements 及 `codesign`、分销版 `notarytool` + `staple` 四步、Nuitka 编译选型与退路、16 条封装反向约束（已写入 §2.8）、W1 三个 spike、T-49…T-58 补充用例、中国 OPC 主体的 W-8BEN / CNAPS / 隐私政策 URL 备料节奏。
 >
 > **重要口径**：封装不是开发完成后的工序，而是**开发前置约束**。构建脚本 W1 落地、每周出一个可安装包；W1 三个 spike 未通过前不许写业务代码。三条产线证书族与产物严禁交叉；Store 付费下载由商店在安装前完成验证，因此 Store 版不写授权码。
 
@@ -1500,6 +1560,7 @@ A **不解析业务字段**，F **不发网络请求**，职责不越界。
 | F13 降级口径 | F | 全员 | 全部 | K-10 | T-28…T-40 | 待开发 |
 | F14 非功能/双构建 | A | B/G/H | 全部 | K-9 | T-28、T-29、V-10 | 待开发 |
 | **价格配置** | A | B/H/G | 01 / 05 / 07 | **K-11** | **T-59** | 待开发 |
+| **界面零假控件** | B | H / 全员 | 全部 9 屏 | **K-13** | **T-61** | 待开发 |
 
 **100% 覆盖要求**：每个 F 至少 1 条 P0 用例、1 个负责人、1 张 UI 页（无界面的注明 —）；H 在 W4 冻结前把「状态」列全部刷成「已通过」，否则不放行。
 
@@ -1517,7 +1578,7 @@ A **不解析业务字段**，F **不发网络请求**，职责不越界。
 
 ### 12.2 八人共同纪律
 
-- **英文为主、中文为镜**：任何改动先英文、后中文镜像；分歧以英文为准。
+- **英文为主、中文为镜**：任何改动先英文、后中文镜像（含界面文案与商机内容）；分歧以英文为准；**中文包全局中文**。
 - **用户那一面不加东西**：想加按钮/筛选/提示，先问「用户会不会多一次点击」，多一次就不做。
 - **界面文案只在 `locales`**，业务层不写字符串。
 - **不联网就不许弹错**：所有失败静默降级，只有 F06/F03/F10 三处允许温和提示。
@@ -1536,6 +1597,8 @@ A **不解析业务字段**，F **不发网络请求**，职责不越界。
 | 商机内容写空话 | `first_customers` 出现 social media | V-09 构建拦截 + §5.4 清单 + H 抽检 | D/H |
 | 商店审核纯网页套壳 4.2 | 被拒 | 真实安装包 + 本地引擎 + 离线能力 | A/H |
 | 中文版被做成第二个产品 | 有人提「加语言切换」 | §4 F14.3 + T-28 + 不进商店素材 | A/B |
+| 中文壳套英文芯 | 只镜像了 `zh-CN.json`，商机库没译 | §3.10 K-12 + D-11 + V-11/T-60 缺字段阻断 | D/B/H |
+| 界面摆了没做的功能 | 占位按钮、`href="#"`、假开关 | §3.11 K-13 + T-61 + 第一版裁剪清单 | B/H |
 | 用户期待「永久更新」 | 客服问 | 商品页写明：买断的是软件与内置库；更新是免费增强、非义务，断网不影响已有内容 | H/G |
 | sidecar 打包体积超标 | 包体 >80MB | 精简 Python 依赖（仅 reportlab）、Tauri 替代 Electron | A |
 
@@ -1583,14 +1646,6 @@ A **不解析业务字段**，F **不发网络请求**，职责不越界。
 | `E_DELTA_INVALID` | delta 校验失败 | true | 否（回滚） |
 | `E_MANIFEST_FAIL` | manifest 拉取/解析失败 | true | 否（静默跳过） |
 | `E_UNKNOWN_CMD` | 未知 cmd | true | 否 |
-| `E_INTERNAL` | sidecar 内部异常（已捕获，进程不崩） | true | 否（静默记录） |
-| `E_IDEA_NOT_FOUND` | 请求的 id 不在当前库 | true | 否（前端回退列表） |
-| `E_EXPORT_CANCELLED` | 用户取消另存为对话框 | true | 否（无提示，符合预期） |
-| `E_CSV_WRITE` | CSV 写盘失败（磁盘满等） | true | **是**：`Choose another folder` |
-| `E_PDF_WRITE` | PDF 写盘失败（磁盘满等） | true | **是**：`Choose another folder` |
-| `E_LIBRARY_WRITE` | 工作库写盘失败（已回滚） | true | 否（下次操作重试） |
-
-> D-09 契约修订（PM，2026-11-13）：以上 6 码为运行期实际在用码，正式收编；目录不可写（权限类）统一归 `E_FS_READONLY`，`E_PDF_WRITE`/`E_CSV_WRITE` 仅指磁盘满等其他写失败。
 
 ---
 

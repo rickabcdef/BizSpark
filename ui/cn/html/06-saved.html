@@ -34,15 +34,14 @@
 <div class="page-head"><div class="eyebrow">留在这台设备</div><h1>我的点子</h1>
 <p class="lead">本地保存。不上传、不同步、不登录——半年后再打开，它们还在这儿。</p></div>
 <div class="grid" style="gap:12px">
-<div class="card mini"><div class="thumb">✦</div><div class="mt"><h3>街边小店评论代回</h3><p>2026-11-12 保存 · $120 起步 · 94% 匹配</p></div>
-    <a class="btn btn-ghost" style="height:34px;font-size:12px" href="04-detail.html">打开</a></div><div class="card mini"><div class="thumb">▣</div><div class="mt"><h3>AI 辅助商品图精修</h3><p>2026-11-12 保存 · $80 起步 · 89% 匹配</p></div>
-    <a class="btn btn-ghost" style="height:34px;font-size:12px" href="04-detail.html">打开</a></div><div class="card mini"><div class="thumb">◈</div><div class="mt"><h3>周末上门填表与见证</h3><p>2026-11-12 保存 · $260 起步 · 85% 匹配</p></div>
+<div class="card mini"><div class="thumb">✦</div><div class="mt"><h3>街边小店评论代回</h3><p>2026-11-12 保存 · $120 起步</p></div>
+    <a class="btn btn-ghost" style="height:34px;font-size:12px" href="04-detail.html">打开</a></div><div class="card mini"><div class="thumb">▣</div><div class="mt"><h3>AI 辅助商品图精修</h3><p>2026-11-12 保存 · $80 起步</p></div>
+    <a class="btn btn-ghost" style="height:34px;font-size:12px" href="04-detail.html">打开</a></div><div class="card mini"><div class="thumb">◈</div><div class="mt"><h3>周末上门填表与见证</h3><p>2026-11-12 保存 · $260 起步</p></div>
     <a class="btn btn-ghost" style="height:34px;font-size:12px" href="04-detail.html">打开</a></div>
 </div>
 <div class="hr"></div>
 <div class="btn-row"><a class="btn btn-primary" href="02-quiz.html">找新点子 &nbsp;→</a>
-  <a class="btn btn-ghost" href="#">两个点子对照</a>
-  <a class="btn btn-quiet" href="#">清空已存</a></div>
+  <a class="btn btn-ghost" href="03-results.html">回到 3 个点子</a></div>
 <div class="foot-note">💡 第一单做成了？回来把预算调大，再答一遍那 5 道题。还是那个按钮，还是 3 张卡。</div></div>
   </div>
 </div>
@@ -52,9 +51,6 @@ document.querySelectorAll('.opt').forEach(function(o){
     o.parentElement.querySelectorAll('.opt').forEach(function(x){x.classList.remove('sel')});
     o.classList.add('sel');
   });
-});
-document.querySelectorAll('.toggle').forEach(function(t){
-  t.addEventListener('click',function(){t.classList.toggle('on')});
 });
 </script>
 <script src="assets/pricing.js"></script>

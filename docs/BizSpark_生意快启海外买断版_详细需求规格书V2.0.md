@@ -1,6 +1,8 @@
 # 生意快启·海外买断版（BizSpark）
 # 详细需求规格书 V2.0 · 开发实现级
 
+> **口径修订见《BizSpark_诊断收口执行方案V1.0.md》**：TC-019/TC-022 冲突已消除、S18/S30 已改、结果卡 6 元素无匹配度。
+
 | 项 | 内容 |
 |---|---|
 | 文档编号 | BZS-SPEC-V2.0 |
@@ -14,7 +16,7 @@
 | 定价 | **可配置，不写死**；首版一次性买断、由商店分成销售，客户端 / 文档 / UI / HTML / 商品文案均不展示金额（详见「价格配置契约」） |
 | 首发货架 | Microsoft Store、Mac App Store 优先；其后 Gumroad / Lemon Squeezy 等海外软件分销平台 |
 | 首发市场 | 英语区 6 国：US / CA / UK / AU / SG / PH |
-| 界面语言 | 英文 = 唯一对外售卖版；中文 = 内部自检镜像版（仅文案替换，不上架、不对外分发） |
+| 界面语言 | 英文 = 唯一对外售卖版；中文 = 内部自检镜像版（界面文案 + 内容数据双层中文，不上架、不对外分发） |
 | 配套基线 | `en/html/` 9 页高保真 HTML + `en/ui/` 9 张截图；`cn/html/`、`cn/ui/` 为中文镜像；CSS 两版为同一份文件 |
 | 验收依据 | 本文 §19 测试用例 + `en/html/` 逐页比对 |
 
@@ -83,14 +85,15 @@
 > **产品只有一个，是英文版。中文版只是把英文版界面上的字换成中文，给自己看、自己用、自己练熟。**
 > 任何改动先改英文版，再逐字镜像到中文版。出现分歧，以英文版为准。
 
-## 0.4 贯穿全文的六条铁律
+## 0.4 贯穿全文的七条铁律
 
-1. **用户端只留「小」**：答 5 题 → 出 3 条 → 存一张纸。界面上不出现"商机库""权重""版本""引擎""浪潮""算法""匹配度模型"等后台词汇（结果页的 `94% MATCH` 与一句 Why this fits you 属用户语言，允许）。
+1. **用户端只留「小」**：答 5 题 → 出 3 条 → 存一张纸。界面上不出现"商机库""权重""版本""引擎""浪潮""算法""匹配度模型"等后台词汇，**也不出现匹配度百分比与任何时间/库版本痕迹**（结果页只留一句 Why this fits you，R-05 / R-09）。
 2. **复杂全部沉到看不见的一面**：312 条库、打分、差量合并、授权，做厚做全，但不占用户一秒钟注意力。
 3. **核心逻辑在客户端本地**。服务器挂了、忘续费了、断网了，用户无感，功能完整。
 4. **不给自己挖坑**：不接支付接口、不做账号体系、不做订阅、不依赖任何按年续费的运行时服务。
 5. **好看是第一位**，且**风格已定稿不再改**：`en/html/assets/style.css` 为唯一视觉基线，开发实现逐页比对。
 6. **一屏一动作**：每页只有一个强 CTA，不并列两个同等强的按钮，不弹解释、不弹教程、不弹报错。
+7. **界面零假控件**：能点的必须真能点，没实现的功能不摆控件，装饰文字不可选中、不可点、不伪装成菜单。看到 `href="#"` / 空按钮 / 假开关直接打回（详见 §19）。
 
 > 文档写得厚，是给开发和你自己看的"阴面"；用户看到的那一面必须始终薄。
 
@@ -238,7 +241,7 @@
 1. 选项**点击即选中并 0.35s 自动进下一题**（Q4 多选例外，需点 `Done`）。
 2. 页面跳转全部为本地路由，无 loading 态、无骨架屏、无转场动画超过 0.2s。
 3. 所有 `.toggle` 点击即切，本地立即生效，无保存按钮。
-4. **不弹确认框**，唯一例外：`Clear saved list` 需二次确认。
+4. **不弹确认框**（`Clear saved list` 属 V2 Backlog，第一版界面不展示，见 §19）。
 5. 任何网络动作失败 → **静默跳过**，不产生任何 UI 变化。
 
 ---
@@ -394,10 +397,10 @@
 | S15 | 引擎执行硬过滤 | 按 `capital_tier / hours / countries / legal_blocks / status` 剔除 | 无 UI | 只读 `library.json` | ≤80ms | 见 S16 |
 | S16 | 硬过滤后不足 3 条 | 自动放宽 `hours_per_week` 一档，重跑一次 | 无 UI | 无 | ≤80ms | 仍不足 → 输出实际 1–2 条 + 温和一句，**绝不空白页** |
 | S17 | 引擎执行 8 维打分 | 权重见 §9.3，趋势新鲜度锁 5% | 无 UI | 无 | ≤120ms | — |
-| S18 | 引擎降权已看过的 `id` | 与 `saved.json.saved[]` 比对，命中降权 15% | 无 UI | 无 | ≤10ms | 无存档 → 跳过 |
+| S18 | 按 `template_id` 分组取一（**不做已看降权、不记曝光**） | 每组仅保留最高分 1 条，再全局排序 | 无 UI | 无 | ≤10ms | 同条件同答案（R-04 / R-07 / R-11） |
 | S19 | 引擎取 Top 3 并生成 Why 句 | 用答案里的具体词拼句 | 无 UI | 内存 `results[]` | ≤20ms | — |
 | S20 | 渲染 P03 | 三张结果卡 + 答案复述 + 底部统计 | 出 P03 | 无落盘 | 0.2s | — |
-| S21 | 看 P03 三张卡 | 无 | 每卡 7 元素（编号/匹配度/标题/说明/Why/3 标签/主按钮） | 无 | — | — |
+| S21 | 看 P03 三张卡 | 无 | 每卡 **6 元素**（编号/标题/说明/Why/3 标签/主按钮），**无匹配度** | 无 | — | — |
 | S22 | 点第 1 张卡的 `See the one-page plan →`（看一页方案 →） | 按 `id` 从本地库取全字段渲染 | 跳 P04 | 内存 `current_idea_id` | 0.2s | 字段缺失 → 用兜底文案，不报错 |
 | S23 | 浏览 P04 左侧 6 模块 | 无 | 成本表 / 7 步 / 渠道 / 3 坑；右侧 sticky 纸片预览常驻 | 无 | — | — |
 | S24 | 勾选某个步骤（本地交互） | 勾选态仅本轮有效，可勾可不勾 | 步骤前出现勾 | 内存 | — | 不落盘、不影响导出 |
@@ -405,8 +408,8 @@
 | S26 | 点 `Export my plan ↓`（导出我的方案 ↓） | 本地渲染单页 PDF（§12） | 弹出系统原生「另存为」 | 无 | ≤2s | 路径不可写 → 仅提示换文件夹 |
 | S27 | 在另存为里确认路径 | 写文件到 `Documents/BizSpark/`（默认），记住路径 | 跳 P05 完成页 | 写 PDF；更新 `saved.json.export_dir` | ≤2s | 磁盘满 → 提示换目录，不丢已渲染内容 |
 | S28 | 看 P05 | 无 | 大绿勾 + 文件名/大小/路径 + 2 个按钮 + 否定式信任行 | 无 | — | — |
-| S29 | 点 `Open folder`（打开文件夹） | 调系统文件管理器定位到该 PDF | 外部窗口 | 无 | — | 系统不支持 → 静默忽略 |
-| S30 | 或点 `Find another idea`（再找一个点子） | 回到 P03，**保留本轮结果** | 跳 P03 | 无 | 0.2s | — |
+| S29 | 点 `Open folder`（真工具功能，A-05） | 调系统文件管理器定位到该 PDF | 外部窗口 | 无 | — | 系统不支持 → 静默忽略；**静态基线不摆此空壳按钮**（§19） |
+| S30 | 或点 `Find another idea`（再找一个点子） | **换个条件重新诊断**（本单 R-02） | 跳 **P02 问卷** | 无 | 0.2s | — |
 | S31 | 点侧栏 `My ideas` | 读本地存档渲染 | 跳 P06 | 无 | 0.2s | 空 → 显示空态一句，不空白 |
 | S32 | 关闭窗口 | 释放内存，保留所有本地文件 | — | 已落盘数据不变 | — | 强制断电不损坏：写文件用「临时文件 + 原子替换」 |
 
@@ -425,14 +428,14 @@
 | # | 元素 | 类型 | 英文文案 | 中文文案 | 状态 / 行为 |
 |---|---|---|---|---|---|
 | 1 | brand | 文字块 | `BizSpark` / `One idea away` | `BizSpark` / `一个点子就够了` | 32px 橘方标含字母 B |
-| 2 | 顶部链接 | 4 个纯文字 | `How it works` `What you get` `Privacy` `v1.0.0` | `怎么用` `你会拿到什么` `隐私` `v1.0.0` | 无跳转（首版占位，不做弹窗） |
+| 2 | 右上角 | **1 个只读版本标记** | `v1.0.0` | `v1.0.0` | 不可选中 / 不可点 / 无 hover；**3 个假菜单已删**（§19） |
 | 3 | eyebrow | 标签 | `A one-time desktop tool · No account · No subscription` | `一次性买断的桌面工具 · 无需账号 · 无订阅` | 金色 |
 | 4 | H1 | 标题（3 行） | `You don't need / a business plan. / You need one idea.` | `你不需要 / 商业计划书。 / 你只要一个点子。` | `one idea` / `一个点子` 用橘色 `<em>` |
 | 5 | 副文 | 段落 | `Answer 5 short questions. Get 3 businesses you can actually start with the money, time and skills you already have — plus a one-page plan you can print and follow tomorrow.` | `回答 5 道小题。拿到 3 个用你手上的钱、时间和本事真能开起来的生意——外加一张明天就能打印、照着做的一页纸。` | 17px / `#B7C6D3` / 最大宽 530 |
 | 6 | **主 CTA** | `.btn-primary.btn-lg` | `Find my 3 ideas →` | `找我的 3 个点子 →` | 跳 P02；**全页唯一强按钮** |
 | 7 | 次链接 | `.btn-quiet.btn-lg` | `Open my saved ideas` | `打开我存的点子` | 跳 P06；弱化为文字按钮 |
 | 8 | 信任行 | 3 段 | `One-time purchase · Yours forever` / `✓ Works offline` / `✓ Your answers never leave this device` | `一次买断，永久归你` / `✓ 离线可用` / `✓ 你的答案绝不离开这台设备` | 12px 灰 · **不含金额**，由价格配置渲染 |
-| 9 | 右侧 mock 卡 | 静态卡 | `Top match for you` / `01 / 03 · 94% MATCH` / `Local shop review-reply desk` / 说明 / 3 标签 | `最匹配你的一个` / `01 / 03 · 94% 匹配` / `街边小店评论代回` / 说明 / 3 标签 | 倾斜 -4°，纯展示不可点 |
+| 9 | 右侧 mock 卡 | 静态卡 | `Top match for you` / `01 / 03` / `Local shop review-reply desk` / 说明 / 3 标签 | `最匹配你的一个` / `01 / 03` / `街边小店评论代回` / 说明 / 3 标签 | 倾斜 -4°，纯展示不可点 |
 | 10 | footer | 两行 | `Built for people who want to start small and start today.` / `Microsoft Store · Mac App Store · One-time purchase` | `给想从小处着手、今天就动手的人。` / `Microsoft Store · Mac App Store · 一次买断` | 11px / 顶边 1px 半透明白 · **不含金额** |
 
 **异常**：无。首屏不请求权限、不弹联网确认、不放启动广告、不显示"上次使用"、不显示版本更新提示。
@@ -476,13 +479,13 @@
 | 1 | eyebrow | `Ready in 40 seconds` | `40 秒出结果` |
 | 2 | H1 | `Three businesses you can actually start.` | `3 个你真能开起来的生意。` |
 | 3 | lead | `Based on $500–$2,000, under 10 hours a week, a laptop, and United States. Nothing was sent anywhere.` | `按 $500–$2,000、每周不到 10 小时、一台电脑、美国来算。什么都没传出去过。` |
-| 4 | 卡 1 | `01 / 03 · 94% MATCH` / `Local shop review-reply desk` / 说明 / `Why this fits you: Low money, laptop only, repeat monthly income — matches your budget and time.` / `From $120` `<10 h/wk` `Monthly` / `See the one-page plan →` | `01 / 03 · 94% 匹配` / `街边小店评论代回` / … / `为什么适合你：钱少、只要一台电脑、按月收钱——正好对上你的预算和时间。` / `$120 起步` `每周 <10 小时` `按月收钱` / `看一页方案 →` |
-| 5 | 卡 2 | `02 / 03 · 89% MATCH` / `AI-assisted product photo cleanup` / `From $80` `Online` `New wave` | `02 / 03 · 89% 匹配` / `AI 辅助商品图精修` / `$80 起步` `线上` `新趋势` |
-| 6 | 卡 3 | `03 / 03 · 85% MATCH` / `Weekend mobile notary & form helper` / `From $260` `Local` `Weekend` | `03 / 03 · 85% 匹配` / `周末上门填表与见证` / `$260 起步` `本地` `周末` |
+| 4 | 卡 1 | `01 / 03` / `Local shop review-reply desk` / 说明 / `Why this fits you: Low money, laptop only, repeat monthly income — matches your budget and time.` / `From $120` `<10 h/wk` `Monthly` / `See the one-page plan →` | `01 / 03` / `街边小店评论代回` / … / `为什么适合你：钱少、只要一台电脑、按月收钱——正好对上你的预算和时间。` / `$120 起步` `每周 <10 小时` `按月收钱` / `看一页方案 →` |
+| 5 | 卡 2 | `02 / 03` / `AI-assisted product photo cleanup` / `From $80` `Online` `New wave` | `02 / 03 · 89% 匹配` / `AI 辅助商品图精修` / `$80 起步` `线上` `新趋势` |
+| 6 | 卡 3 | `03 / 03` / `Weekend mobile notary & form helper` / `From $260` `Local` `Weekend` | `03 / 03 · 85% 匹配` / `周末上门填表与见证` / `$260 起步` `本地` `周末` |
 | 7 | 操作行 | `← Change my answers` / `Save all three` / `Older, saturated ideas are kept in the library but never pushed to the top.` | `← 改我的答案` / `三个都存起来` / `过时、已经卷透的点子仍留在库里，但绝不会被推到前面。` |
 | 8 | 统计 | `312 ideas checked locally` / `309 ruled out by your money & time` / `3 worth your Monday` | `312 本地筛过的点子` / `309 被你的钱和时间筛掉` / `3 值得你周一动手` |
 
-**结果卡固定 7 元素，不得增减**：编号+匹配度 / 标题 / 一句话说明 / Why 引句 / 3 个标签 / 主按钮。三卡顶部 3px 色条依次 `#F2653A`、`#15344E`、`#1F8A70`，`:nth-child` 实现。
+**结果卡固定 6 元素，不得增减**：编号 / 标题 / 一句话说明 / Why 引句 / 3 个标签 / 主按钮。**不渲染匹配度百分比**（R-05）。三卡顶部 3px 色条依次 `#F2653A`、`#15344E`、`#1F8A70`，`:nth-child` 实现。
 
 **禁止**：筛选器、排序、分页、"查看更多"、对比勾选、广告位、升级解锁。
 
@@ -492,7 +495,7 @@
 
 | 区块 | 标题（英 / 中） | 必须内容 |
 |---|---|---|
-| page-head eyebrow | `Idea 01 / 03 · 94% match` / `点子 01 / 03 · 94% 匹配` | — |
+| page-head eyebrow | `Idea 01 / 03` / `点子 01 / 03` | — |
 | H1 | `Local shop review-reply desk` / `街边小店评论代回` | — |
 | lead | 一句话讲清谁付钱、为什么现在有人买 | — |
 | M1 | `$ What it costs to start` / `$ 起步要花多少钱` | 5 行 `.kv`：域名 $12/年、模板 $0、20 封信 $8、邮件工具 $0–15、**合计 $120（橘色）** |
@@ -525,7 +528,7 @@
 | 3 | H1 | `Your plan is ready.` | `你的方案好了。` |
 | 4 | lead | `One PDF, one page, no watermark. It's a file on your disk — not a link, not an account, not something that can expire.` | `一张 PDF，一页，无水印。它是你硬盘上的一个文件——不是链接、不是账号、也不是会过期的东西。` |
 | 5 | 文件行 | `BizSpark-Plan-local-review-desk.pdf` / `Saved to Documents / BizSpark · 214 KB · 1 page` / `✓ Saved` | 文件名不译 / `已存到 文档 / BizSpark · 214 KB · 1 页` / `✓ 已保存` |
-| 6 | 按钮 | `Open folder` / `Find another idea` | `打开文件夹` / `再找一个点子` |
+| 6 | 按钮（都是真链接） | `Open my saved ideas` / `Find another idea` | `打开我存的点子` / `再找一个点子` | **静态基线无死链**（§19） |
 | 7 | 信任行 | `No subscription. No auto-renew. Buy once, use it as long as you like — even with the internet off.` | `无订阅、不自动续费。买一次，想用多久用多久——就算断网也一样。` | **不含金额** |
 | 8 | 下卡 | `What's inside the PDF` / `Optional extras`（CSV 说明） | `PDF 里有什么` / `可选附带` |
 
@@ -536,12 +539,12 @@
 | # | 元素 | 英文 | 中文 |
 |---|---|---|---|
 | 1 | H1 / lead | `My ideas` / `Saved locally. No cloud, no sync, no login — open the app six months later and they're still here.` | `我的点子` / `本地保存。不上传、不同步、不登录——半年后再打开，它们还在这儿。` |
-| 2 | 3 条 mini | 标题 + `Saved 12 Nov 2026 · From $120 · 94% match` + `Open` | `2026-11-12 保存 · $120 起步 · 94% 匹配` + `打开` |
-| 3 | 操作 | `Find new ideas →` / `Compare two ideas` / `Clear saved list` | `找新点子 →` / `两个点子对照` / `清空已存` |
+| 2 | 3 条 mini | 标题 + `Saved 12 Nov 2026 · From $120` + `Open` | `2026-11-12 保存 · $120 起步` + `打开` |
+| 3 | 操作（都是真链接） | `Find new ideas →` / `Back to 3 ideas` | `找新点子 →` / `回到 3 个点子` | 对比与清空移入 V2（§19） |
 | 4 | 提示 | `💡 Made your first sale? Come back and run the 5 questions again with a bigger budget. Same button, same 3 cards.` | `💡 第一单做成了？回来把预算调大，再答一遍那 5 道题。还是那个按钮，还是 3 张卡。` |
 | 5 | 空态 | `Double-click Find my 3 ideas. It takes 40 seconds.` | `点一下"找我的 3 个点子"，40 秒就好。` |
 
-`Compare two ideas` 仅并排显示 3 项：起步成本 / 每周时间 / 回本天数，不加第四项。`Clear saved list` 是**全系统唯一二次确认**。
+`Compare two ideas` / `Clear saved list` **移入 V2 Backlog，第一版界面不展示**（§19）。
 
 ## P07 · 激活页 `07-activate.html`（**仅分销版可见**）
 
@@ -554,7 +557,7 @@
 | 5 | 说明 | `One code works on up to 3 of your own devices.` | `一个码最多用于你自己的 3 台设备。` |
 | 6 | 设备位 | 2 个绿勾设备 + 1 个 `＋` + `2 of 3 devices used` | `已用 2 / 3 台` |
 | 7 | 绿 notice | `Activation is not a login. Once verified, a small signed file is kept on this device. After that the tool works with the internet off — we never check again.` | `激活不是登录。校验通过后，本机只留一个很小的签名文件；此后软件断网也能用，我们不会再查第二次。` |
-| 8 | 按钮 | `Activate & start →` / `Changed computer? Release a seat` | `激活并开始 →` / `换电脑了？释放一个名额` |
+| 8 | 按钮（只留真链接） | `Activate & start →` | `激活并开始 →` | 释放席位第一版人工邮件，界面不摆按钮（§19） |
 | 9 | 右深色卡 | `One-time purchase` / `Buy once. Own it forever.` + 5 条 ✓ | `一次买断` / `买一次。用一辈子。` + 5 条 ✓ | **不含金额** |
 | 10 | 右下卡 | `Why a code at all?` / `An installer file can be copied. The code simply proves this copy was paid for…` | `为什么还要一个码？` / `安装包文件是可以被复制转发的……` |
 
@@ -571,16 +574,16 @@
 | 5 | 橘软卡 | `Why new ideas keep showing up` / 一段解释季节换挡、老点子下沉不消失 | `为什么点子要一直换新` |
 | 6 | toast | `Library checked · you're up to date. No action needed.` | `点子库已检查 · 已是最新，不用管。` |
 
-**注意**：P08 是后台页，普通用户不必访问；界面**没有"立即检查更新"按钮**（该按钮只放在 P09 About 区）。
+**注意**：P08 是后台页，普通用户不必访问；界面**没有任何检查更新按钮**（§19：没实现的功能不摆控件）。
 
 ## P09 · 设置 `09-settings.html`
 
 | # | 元素 | 英文 | 中文 |
 |---|---|---|---|
-| 1 | eyebrow / H1 / lead | `Six knobs, that's it` / `Settings` / `Everything here is local. No profile, no password, nothing to sync.` | `就 6 个旋钮，没了` / `设置` / `这里每一项都是本地的。没有资料、没有密码、没有同步。` |
+| 1 | eyebrow / H1 / lead | `Everything local, at a glance` / `Settings` / `Everything here is local. No profile, no password, nothing to sync.` | `本地状态一览` / `设置` / `这里每一项都是本地的。没有资料、没有密码、没有同步。` | 第一版为**只读状态页**（§19） |
 | 2 | 6 行开关/选择 | 见 §15 | 见 §15 |
 | 3 | 隐私卡 | `Privacy, in one sentence` / `Your answers, your saved ideas and your exported plans never leave this device.` + 说明唯一出网请求 | `一句话讲清隐私` / 中文等义 |
-| 4 | About | `Version 1.0.0` / `Library 2026.11 (312 ideas)` / `Licence One-time · activated` / `Account None` + `Check for updates` `View licence` | 对应中文 |
+| 4 | About | `Version 1.0.0` / `Library 2026.11 (312 ideas)` / `Licence One-time · activated` / `Account None` + 一行只读说明 | 对应中文 | 两个弱按钮已删（§19） |
 
 ---
 
@@ -642,7 +645,7 @@
 **目的**：让用户 3 秒内确认"这软件懂我"。
 **触发**：F03 完成。
 **输出**：P03 三卡 + 答案复述 + 底部统计。
-**约束**：只给 3 条；`saturated` 不进 Top 3；已看过 `id` 降权 15%；每卡固定 7 元素。
+**约束**：只给 3 条；`saturated` 不进 Top 3；**不做已看降权、不记曝光**（R-04）；同条件同答案（R-07）；每卡固定 **6 元素**。
 **异常**：结果 1–2 条时，第三张卡位置留空但**不显示占位卡**，底部统计数字同步改为实际值。
 **验收**：无筛选器、无排序、无分页、无"查看更多"。
 
@@ -689,7 +692,7 @@
 
 详见 §14。要点：Store 版零授权代码；分销版一码 3 台设备、机器指纹、首次联网校验一次后永久离线。
 
-## F11 设置（P1，六个旋钮封顶）
+## F11 设置（第一版：只读状态页，见 §19）
 
 详见 §15。
 
@@ -969,12 +972,11 @@ match_pct     = clamp(round(score), 60, 97)   // 展示值，避免出现 100% �
 
 > **趋势新鲜度只给 5%，锁死。** 用户要的是"他做得成的生意"，不是"最酷的技术"。禁止为了追 AI 浪潮把 Uber 司机硬塞 5 条 Agent 创业。`wave_rank`: mobile-internet 0.2 / ai-llm 0.6 / ai-agent 0.8 / bi-agent 1.0 / future 1.0。
 
-## 9.4 ③ 降权与排序
+## 9.4 ③ 分组去重与排序
 
 ```
 for idea in kept:
-    if idea.id in saved_ids: idea.score -= 15        // 已看过，别每次推同样三条
-    idea.match_pct = clamp(round(idea.score), 60, 97)
+    # 不做已看降权、不记曝光；score 仅用于排序，不产出任何展示字段（R-04 / R-05 / R-07）
 
 kept.sort(key = (-score, id))                        // 同分按 id 字典序 → 结果确定性
 results = kept[0:3]
@@ -1372,8 +1374,8 @@ S5 失败 → 温和提示重试 / 联系支持，**禁止"授权失败"红字�
 |---|---|
 | 已激活后拔网线重启 | 校验本地签名 → 功能 100% 可用 |
 | 已激活后服务器永久关停 | 用户一辈子无感 |
-| 第 4 台设备 | 提示 `Changed computer? Release a seat`，引导释放，不报失败 |
-| 换电脑 / 重装 | `Release a seat` 手动处理（首版邮件即可，**不做后台、不做账号**） |
+| 第 4 台设备 | 温和提示联系支持换机（第一版人工邮件，界面不摆按钮，§19） |
+| 换电脑 / 重装 | 人工邮件处理（首版即可，**不做后台、不做账号、界面不摆按钮**，§19） |
 | 激活码泄露被多人用 | 到 3 台上限后温和拒绝；Store 版不受影响 |
 
 ## 14.6 激活 ≠ 登录（UI 硬要求）
@@ -1406,7 +1408,7 @@ P07 必须原样展示 5 条：`No subscription` / `No auto-renewal` / `No accou
 **规则**：
 - 点击即生效，无"保存"按钮。
 - 第 2 项**不是语言切换器**：软件内绝不许多出一个按钮；中文是独立构建产物。
-- About 区固定 4 行：`Version 1.0.0` / `Library 2026.11 (312 ideas)` / `Licence One-time · activated` / `Account None`，加 `Check for updates` 与 `View licence` 两个弱按钮。
+- About 区固定 4 行：`Version 1.0.0` / `Library 2026.11 (312 ideas)` / `Licence One-time · activated` / `Account None`，**末尾一行只读说明，无按钮**（§19）。
 - 隐私卡一句话写死：`Your answers, your saved ideas and your exported plans never leave this device.`
 - **禁止新增**：账号、通知、主题商店、高级设置、实验功能、数据上传开关、云同步开关。
 
@@ -1458,7 +1460,7 @@ P07 必须原样展示 5 条：`No subscription` / `No auto-renewal` / `No accou
 
 ---
 
-# 18. 双版本纪律（英文为主，中文为镜）
+# 18. 双版本纪律（英文为主，中文为镜，中文全局中文）
 
 ## 18.1 主次
 
@@ -1478,10 +1480,12 @@ P07 必须原样展示 5 条：`No subscription` / `No auto-renewal` / `No accou
 | 视觉 | 配色、留白、圆角、阴影、字号、深色欢迎页、橘色主 CTA、倾斜纸片预览，全部不变 |
 | 字体 | 拉丁仍走 Inter，中文由系统 CJK 回退；**不换中式字体、不加中国红/金/纹样/印章** |
 | 交互 | 选中即进下一题、卡片跳转、开关、toast，全部一致 |
-| 内容 | **只替换界面上可见的文字**（导航、面包屑、按钮、标签、提示、时间线、隐私说明） |
-| 不译 | `BizSpark`、`Microsoft Store`、`Mac App Store`、`PDF`、`CSV`、Google Maps / Yelp / Etsy / Shopify / Nextdoor、激活码样例 `BZSP-K7Q2-M9XA`、文件名、版本号、`AI` |
+| 界面文案 | 逐键镜像：导航、面包屑、按钮、标签、提示、时间线、隐私说明 |
+| **内容数据** | **逐条镜像**：结果卡标题 / 说明 / Why、标签、国家名回显、详情页 7 步 / 3 坑 / 成本 / 合规句（§18.5） |
+| 不译（**仅限单词/专名**） | `BizSpark`、`Microsoft Store`、`Mac App Store`、`PDF`、`CSV`、`AI`、`$ / USD / CAD / GBP / AUD / SGD / PHP`、平台专名 `Google Maps / Yelp / Etsy / Shopify / Nextdoor / Facebook / WhatsApp`、国家代码 `US / CA / GB / AU / SG / PH`、激活码样例 `BZSP-K7Q2-M9XA`、**导出文件名 slug**、版本号 |
+| **成句英文** | **一律不允许**：点子标题、一句话说明、推荐理由、成本/步骤/坑/合规提示、标签文案、国家名回显，全部中文 |
 
-> 中文版要长得像**"英文版换了行字"**，不能长得像"一个中国软件"。因为你要练的，正是海外用户将来看到的那个东西。
+> 中文版要长得像**"英文版换了行字"**，不能长得像"一个中国软件"，**更不能是中文壳套英文芯**。因为你要练的，正是海外用户将来看到的那个东西。
 
 ## 18.3 同步纪律
 
@@ -1507,7 +1511,7 @@ P07 必须原样展示 5 条：`No subscription` / `No auto-renewal` / `No accou
 ```
 en/html/   9 页英文售卖版（唯一验收基线）
 en/ui/     9 张英文界面截图
-cn/html/   9 页中文自检镜像版（仅文案替换）
+cn/html/   9 页中文自检镜像版（界面文案 + 内容数据双层中文）
 cn/ui/     9 张中文界面截图
 UI总览图_英文版.png / UI总览图_中文版.png
 ```
@@ -1551,7 +1555,7 @@ UI总览图_英文版.png / UI总览图_中文版.png
 | TC-019 | 同一答案连跑 3 次 | 3 次结果完全一致（确定性） |
 | TC-020 | 构造资金档 `10k+` 但库里该档仅 2 条 | 放宽时间档一次后仍不足 → 显示实际条数 + 温和一句，**无空白页** |
 | TC-021 | 把某条标 `saturated` | 不进 Top 3，但仍在库、不删除 |
-| TC-022 | 先保存 3 条再重跑同答案 | 已看过 `id` 降权，Top 3 发生变化 |
+| TC-022 | 先保存 3 条再重跑同答案 | **Top 3 不变**（同条件同答案；系统无曝光字段，R-04 / R-07） |
 | TC-023 | 检查趋势权重 | 固定 5%，低门槛本地生意仍占 Top 3 多数 |
 | TC-024 | `first_customers` 无 SG 变体 | 回退 `default`，不报错 |
 
@@ -1581,14 +1585,14 @@ UI总览图_英文版.png / UI总览图_中文版.png
 | TC-039 | 在另存为点取消 | 回 P04，不产生空文件、不跳 P05 |
 | TC-040 | 同名文件已存在再导一次 | 生成 `-2`，不覆盖旧文件 |
 | TC-041 | 飞行模式导出 | 成功 |
-| TC-042 | 点 `Open folder` | 系统文件管理器定位到该 PDF |
+| TC-042 | 点 `Open folder`（真工具 A-05 实现后） | 系统文件管理器定位到该 PDF |
 
 ## F. 存档 / 设置 / 激活 / 更新
 
 | ID | 步骤 | 预期 |
 |---|---|---|
 | TC-043 | 保存 → 关闭 → 重开 → 看 P06 | 3 条仍在，日期正确，重复保存不新增 |
-| TC-044 | 点 `Clear saved list` | 出现**全系统唯一**二次确认；确认后清空 |
+| TC-044 | **V2 Backlog**：`Clear saved list` 第一版界面不展示（§19） | 第一版无此控件 |
 | TC-045 | P09 数旋钮 | 恰好 6 项，无"保存"按钮，无语言切换器 |
 | TC-046 | 分销版首次输入正确码 | 一次联网校验 → 写 `licence.dat` → 跳 P01 |
 | TC-047 | 已激活后拔网线重启 | 功能 100% 可用，零回连 |
@@ -1688,6 +1692,79 @@ UI总览图_英文版.png / UI总览图_中文版.png
 ---
 
 ## 附：一句话总纲
+
+---
+
+## 18.5 全局中文硬规矩（中文自检包）
+
+> **中文版必须全局中文。** 可以出现个别英文单词 / 专名，但**不允许出现大段英文内容**。
+
+中文自检包是给自己看、自己用、自己练熟的。如果侧栏、按钮是中文，三张结果卡却是 `Dog walking and pet sitting (bayside)` / `Low money and 10–25 hours a week…` / `From 400 · Monthly repeat` / `United States`，等于练了个半吊子——自己都读不顺，更没法讲清海外用户会在哪一步犹豫。
+
+**所以要镜像两层，不是一层：**
+
+| 层 | 英文版 | 中文自检包 |
+|---|---|---|
+| 界面文案 | `locales/en-US.json` | `locales/zh-CN.json` 逐键镜像（导航、按钮、标题、提示…） |
+| **内容数据** | `baseline_v1.json` 的英文字段 | **同一批 id 的 `*_zh` 字段逐条镜像**（点子标题、说明、Why、7 步、3 坑、合规句、标签、国家名回显） |
+
+**中文包专用镜像字段（K-1 的一部分，缺一即构建失败）**
+
+| 字段 | 例子（英 → 中） |
+|---|---|
+| `title_zh` | `Dog walking and pet sitting (bayside)` → `遛狗与上门喂宠（湾区）` |
+| `one_liner_zh` | `Working dog owners pay…` → `上班族狗主付费请人午间遛狗、周末上门看宠。` |
+| `why_zh` | `Low money and 10–25 hours a week…` → `钱少、每周 10–25 小时就够——正好对上你的预算和时间。` |
+| `steps_zh[]` / `pitfalls_zh[]` / `compliance_note_zh` | 7 步清单、3 条坑、合规一句，逐条中文 |
+| `cost_rows_zh[]` / `tags_zh` | `From 400` → `400 起步`；`10–25 h/wk` → `每周 10–25 小时`；`Monthly repeat` → `按月收钱` |
+| `country_name_zh` | `United States` → `美国`；`Singapore` → `新加坡`（问卷答案回显也走这里） |
+
+**三条执行规矩**
+1. 中文构建 `content_locale=zh-CN`，渲染器统一取 `*_zh`；**缺字段不静默回退英文**，直接 CI 报错（V-11 / T-60），否则每次新增商机都会漏译又冒出英文。
+2. 白名单只允许**单词 / 专名 / 代码 / 文件名**，不允许成句英文；`BizSpark-Plan-local-review-desk.pdf` 这类导出文件名保留（便于两版对照）。
+3. 中文自检包**仍不上架、不进商店素材、不加语言切换按钮**；英文版仍是唯一验收基线，改动先英文后中文逐字镜像。
+
+> 一句话：**界面是骨架，内容是血肉，两层都得是中文，这个"镜子"才照得清。**
+
+---
+
+# 19. 界面零假控件（第一版硬规矩）
+
+> **能点的一定能点；不能点的，就别长得像能点。**
+> 用户花钱买了软件，看到一个像按钮的东西就会去点。点了没反应、或者划拉一下发现是纯文字，他不会觉得"这是装饰"，他会觉得"我钱花了，功能没给到位"。
+> **装饰可以有，但不能伪装成功能**：不可选中、不可点、无 hover、无按钮外观。
+
+### 三条判据
+
+1. **每个可见控件必须有真实响应**：跳转、选中、导出、调系统窗口。禁止 `href="#"`、禁止空 `<button>`、禁止"点了只变个颜色"的假开关。
+2. **没实现的功能，界面上不摆控件**。想留到以后做 → 进 Backlog，不进第一版 UI。功能做出来了，按钮才出现。
+3. **纯装饰文字 / 徽章**：`user-select:none` + `pointer-events:none` + `cursor:default`，去掉 hover 与按钮外观。用户划拉选不中，也就不会误以为能点。
+
+### 第一版裁剪清单（静态验收基线已按此清理）
+
+| 原来 | 问题 | 处理 |
+|---|---|---|
+| 首页右上 `How it works` / `What you get` / `Privacy` / `v1.0.0` | 4 个纯文字排成菜单样，可划拉选中、点了没反应 | 删掉 3 个假菜单，只留极淡的 `v1.0.0` 版本标记，不可选中 / 不可点 |
+| 完成页 `Open folder`（`href="#"`） | 静态基线无法调系统文件管理器 | 静态基线换成真链接；**真工具保留此功能**（F06 / A-05 调系统文件管理器），实现后才出现这个按钮 |
+| `Compare two ideas` / `Clear saved list` | 死链 | 第一版不做 → **V2 Backlog**，界面删除 |
+| `Changed computer? Release a seat` | 死链 | 第一版人工邮件处理，界面不摆按钮 → **V2** |
+| 设置页 `English ▾` / `Change…` / `Check for updates` / `View licence` / 3 个 toggle / 国家下拉 | 全是死控件；语言下拉还违反「无语言切换按钮」 | 全部降级为**只读状态标签**；语言行整行删除；设置页改为「本地状态一览」 |
+| topbar `chip` / `avatar` / `side-ver` / 面包屑 | 纯装饰却可选中 | `user-select:none`；`avatar` 另加 `pointer-events:none` |
+
+> **风格不变**：9 屏结构、配色、留白、圆角、字号、橘色主 CTA、深色欢迎页、中英镜像关系，一个都没动。只清控件，不重设计。
+
+### 验收 T-61（H 执行）
+
+中英两版 18 页逐页扫描 + 真机连点：
+
+- `href="#"` **零命中**
+- 非 `.opt` 的 `<button>` **零命中**（`.opt` 是问卷真交互，点击有真实选中态）
+- `.toggle` / `.sel-box` / `hero-links` **零命中**
+- 每个 `href` 指向真实存在的页面或 `assets/` 资源
+- 装饰元素 computed style：`user-select:none`、`pointer-events:none`、`cursor:default`
+- 主链路连点：每个按钮都有真实响应
+
+已实测 **0 命中，PASS**。真工具实现时同样跑这一条——**界面上多出一个还没做的功能按钮，就算 bug**。
 
 ---
 

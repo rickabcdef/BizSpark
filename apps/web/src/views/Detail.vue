@@ -8,7 +8,7 @@
 import { computed, onMounted, ref } from "vue";
 import { useRoute, useRouter } from "vue-router";
 import { t } from "../i18n";
-import { diagnose, getIdea, getState, listSaved } from "../bridge/cmd";
+import { diagnose, getIdea, getState } from "../bridge/cmd";
 import AppShell from "../components/AppShell.vue";
 import KvRow from "../components/KvRow.vue";
 import StepList from "../components/StepList.vue";
@@ -16,7 +16,7 @@ import PaperPreview from "../components/PaperPreview.vue";
 
 interface CostItem { item?: string; amount?: string }
 interface IdeaDetail {
-  id?: string; title?: string; match_pct?: number; rank?: number; summary?: string;
+  id?: string; title?: string; rank?: number; summary?: string;
   costs?: CostItem[]; total_to_first_invoice?: string;
   steps?: string[]; channels?: string[]; pitfalls?: string[];
 }
@@ -31,9 +31,9 @@ const pitfallItems = computed(() => d.value?.pitfalls || []);
 
 onMounted(async () => {
   d.value = await getIdea(String(route.params.id || ""));
-  // 基线 eyebrow 是「Idea 01 / 03 · 94% match」，但 get_idea 的 IdeaDetail 不带
-  // match_pct/rank（这两个字段只在 diagnose 卡片对象里）。与 Results 同口径重放
-  // diagnose（只读计算，非新功能），按 id 回填；找不到就保持空（深链降级）。
+  // 基线 eyebrow 是「Idea 01 / 03」（PM 2026-11-16 按诊断收口撤掉百分比）。
+  // get_idea 的 IdeaDetail 不带 rank（只在 diagnose 卡片里），与 Results 同口径
+  // 重放 diagnose 回填序号；找不到就按 01 降级。match_pct 只做后台排序，前台不读。
   if (d.value) {
     try {
       const st = await getState();
@@ -42,23 +42,10 @@ onMounted(async () => {
       const hit = ((r?.ideas as Array<Record<string, unknown>>) || []).find(
         (x) => String(x.id || "") === String(d.value?.id || ""),
       );
-      if (hit) {
-        d.value = {
-          ...d.value,
-          rank: typeof hit.rank === "number" ? hit.rank : d.value.rank,
-          match_pct: typeof hit.match_pct === "number" ? hit.match_pct : d.value.match_pct,
-        };
-      } else if (!d.value.match_pct) {
-        // 深链/存档打开：该点子未必在当前 Top3 里（PM 2026-11-14 修复
-        // 「· % 匹配」空百分比）。回退读存档时刻记录的 match_pct。
-        const sv = await listSaved().catch(() => null);
-        const savedHit = ((sv?.items as Array<Record<string, unknown>>) || []).find(
-          (x) => String(x.id || "") === String(d.value?.id || ""),
-        );
-        const m = savedHit?.match_pct;
-        if (typeof m === "number") d.value = { ...d.value, match_pct: m };
+      if (hit && typeof hit.rank === "number") {
+        d.value = { ...d.value, rank: hit.rank };
       }
-    } catch { /* diagnose 失败时 eyebrow 百分比留空，不影响页面其余内容 */ }
+    } catch { /* diagnose 失败时序号按 01 降级，不影响页面其余内容 */ }
   }
 });
 
@@ -70,7 +57,7 @@ function goExport(): void {
 <template>
   <AppShell>
     <div class="page-head">
-      <div class="eyebrow">{{ t("detail.eyebrow", { rank: String((d?.rank ?? 1)).padStart(2, "0"), total: "03", match: String(d?.match_pct ?? "") }) }}</div>
+      <div class="eyebrow">{{ t("detail.eyebrow", { rank: String((d?.rank ?? 1)).padStart(2, "0"), total: "03" }) }}</div>
       <h1>{{ d?.title || t("detail.loading") }}</h1>
       <p class="lead">{{ d?.summary || "" }}</p>
     </div>

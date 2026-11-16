@@ -41,8 +41,7 @@
     <div class="devs"><div class="dev on">💻</div><div class="dev on">🖥</div><div class="dev">＋</div>
       <span class="tiny" style="margin-left:6px">2 of 3 devices used</span></div>
     <div class="notice"><span>✓</span><span><b>Activation is not a login.</b> Once verified, a small signed file is kept on this device. After that the tool works with the internet off — we never check again.</span></div>
-    <div class="btn-row" style="margin-top:22px"><a class="btn btn-primary" href="01-welcome.html">Activate &amp; start &nbsp;→</a>
-      <a class="btn btn-quiet" href="#">Changed computer? Release a seat</a></div>
+    <div class="btn-row" style="margin-top:22px"><a class="btn btn-primary" href="01-welcome.html">Activate &amp; start &nbsp;→</a></div>
   </div>
   <div>
     <div class="card pad" style="background:var(--deep);border-color:var(--deep);color:#fff">
@@ -65,9 +64,6 @@ document.querySelectorAll('.opt').forEach(function(o){
     o.parentElement.querySelectorAll('.opt').forEach(function(x){x.classList.remove('sel')});
     o.classList.add('sel');
   });
-});
-document.querySelectorAll('.toggle').forEach(function(t){
-  t.addEventListener('click',function(){t.classList.toggle('on')});
 });
 </script>
 <script src="assets/pricing.js"></script>

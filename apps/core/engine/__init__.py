@@ -15,7 +15,7 @@ import re
 from .quiz import validate_answers
 from .filter import hard_filter, relax_hours
 from . import score as score_mod
-from .score import SEEN_FACTOR, match_pct
+from .score import match_pct
 from .why import build_why, build_tags
 from . import zhpack
 from . import money as _money
@@ -135,7 +135,11 @@ def _to_card(idea, total, answers):
 
 
 def diagnose(payload, library=None):
-    """诊断管线（§F03 步骤 1–9，顺序不得调换）。payload 可含 saved_ids（F 注入 state.saved）。"""
+    """诊断管线（§F03 步骤 1–9，顺序不得调换）。payload 可含 saved_ids（F 注入 state.saved）。
+
+    PM 2026-11-16：saved_ids 仍解析（契约兼容）但**不参与打分**——按诊断收口 R-04
+    不记「看过/存过什么」，不建曝光表，同答案重跑结果恒等（T-65）。
+    """
     answers, _fell_back = validate_answers(payload)
     saved_ids = set()
     raw_saved = payload.get("saved_ids") or payload.get("saved") or []
@@ -166,9 +170,10 @@ def diagnose(payload, library=None):
         if not kept:
             kept = [(i, False) for i in ideas]
 
-    # 步骤 3–5：打分 → 已看降权 → 排序（三级 tiebreak，保证可重复）
-    scored = [(score_mod.score_idea(i, answers) * (SEEN_FACTOR if i.get("id") in saved_ids else 1.0), i, sat)
-              for i, sat in kept]
+    # 步骤 3–5：打分 → 排序（三级 tiebreak，保证可重复）
+    # PM 2026-11-16（诊断收口 R-04 / R-05 / FIX-C5）：**删除「已看降权」**——
+    # 不记用户看过/存过什么，同一答案重跑 Top3 必须不变（T-65）；score 只做后台排序。
+    scored = [(score_mod.score_idea(i, answers), i, sat) for i, sat in kept]
     scored = sorted(scored, key=lambda t: (-t[0],
                                            t[1].get("payback_days") if isinstance(t[1].get("payback_days"), (int, float)) else 10**9,
                                            str(t[1].get("id", ""))))

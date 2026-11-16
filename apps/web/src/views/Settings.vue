@@ -66,11 +66,11 @@ onMounted(async () => {
         </div>
         <div class="set-row">
           <div><div class="st">{{ t("settings.appearance") }}</div><div class="sd">{{ t("settings.appearance_d") }}</div></div>
-          <span class="state-pill">{{ followSystem ? t("settings.v_on") : t("settings.v_off") }}</span>
+          <span class="state-pill">{{ followSystem ? t("settings.v_follow") : t("settings.v_off") }}</span>
         </div>
         <div class="set-row">
           <div><div class="st">{{ t("settings.crash") }}</div><div class="sd">{{ t("settings.crash_d") }}</div></div>
-          <span class="state-pill">{{ crashNotes ? t("settings.v_on") : t("settings.v_off") }}</span>
+          <span class="state-pill">{{ crashNotes ? t("settings.v_on") : t("settings.v_closed") }}</span>
         </div>
       </div>
       <div>

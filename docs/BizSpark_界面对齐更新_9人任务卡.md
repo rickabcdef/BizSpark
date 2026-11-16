@@ -7,6 +7,8 @@
 > 分发：**每人只撕自己那一张卡**，但「第 0 页全员必读」9 个人都要签字
 > 工期：**4 个工作日**（D0 半日发基线 → D1 各自 diff → D2 联调 → D3 回归放行）
 > 本卡编号 `AL-xx`，与 V2.0 的 `A-xx / B-xx` 不冲突；**本卡只管对齐阶段，不替代 V2.0**
+> **并行第二张卡：《BizSpark_诊断收口执行方案V1.0.md》管逻辑（算法与产品），本卡管界面。**
+> **并行缺陷单：实测发现商机方案逻辑问题（同一生意三个地段、成本差 14 倍），另见《BizSpark_商机方案逻辑缺陷单与修复卡.md》，`FIX-xx` 编号，改数据层与引擎层、不动 UI 基线。**
 
 ---
 
@@ -99,7 +101,7 @@ BizSpark_中英双版_UI与HTML.zip
 | **02 问卷** | `02-quiz.html` | 4 个 `.opt` 真选中（点一下有选中态）；`← Back →01`；`Next question →03`；5 步 stepper（只读）；2 张说明卡（只读） | 假开关；把 5 题堆成一页表单；**不要改成"选中自动跳下一题"**——基线里就是 Back / Next 两个按钮，以 HTML 为准；任何价格 | B / C | T-61 |
 | **03 结果** | `03-results.html` | 3 张卡各 1 个真按钮 `→04`；`← Change my answers →02`；`Save all three →06`；统计条 + tiny 说明（只读） | 第 4 张卡；勾选框；"权重 / 引擎 / 商机库 / 匹配度模型"等后台词外露；任何价格 | B / C | T-61 |
 | **04 一页方案** | `04-detail.html` | `Export my plan →05`；`← Back to 3 ideas →03`；**4 张内容卡**（成本 / 7 步 / 第一批客户 / 3 个坑） | **第 5 张卡**；7 步上的勾选框；定价卡、合规卡（这两项只进 PDF 与数据对象）；任何价格 | B / E | T-61 |
-| **05 导出完成** | `05-export.html` | 大绿勾；文件行（文件名 `BizSpark-Plan-….pdf` 英文 slug **不译**）；`Open my saved ideas →06`（真链接）；`Find another idea →03`；价格槽；2 张说明卡（只读） | `href="#"`；**"打开文件夹"空壳按钮**（静态基线不摆；真工具由 A-05 提供系统能力，实现之后才允许出现）；水印；任何金额 | B / A / E | T-59 / T-61 |
+| **05 导出完成** | `05-export.html` | 大绿勾；文件行（文件名 `BizSpark-Plan-….pdf` 英文 slug **不译**）；`Open my saved ideas →06`（真链接）；`Find another idea →02`（换个条件重算）；价格槽；2 张说明卡（只读） | `href="#"`；**"打开文件夹"空壳按钮**（静态基线不摆；真工具由 A-05 提供系统能力，实现之后才允许出现）；水印；任何金额 | B / A / E | T-59 / T-61 |
 | **06 我的点子** | `06-saved.html` | 3 条 mini 各 1 个 `Open →04`；`Find new ideas →02`；`Back to 3 ideas →03`；foot-note（只读） | `Compare two ideas`、`Clear saved list`（**V2 Backlog**）；任何死链 | B / F | T-61 |
 | **07 激活** | `07-activate.html` | 4 格码框（样例 `BZSP-K7Q2-M9XA` 不译）；设备位 `2 of 3` 只读；notice；`Activate & start →01`；右卡价格槽 + 5 条 `✓`；"Why a code" 说明卡 | `Changed computer? Release a seat`（**V2**，第一版人工邮件）；任何金额；把激活做成登录 / 账号 / 密码 | B / G | T-59 / T-61 |
 | **08 点子库** | `08-update.html` | 当前版本 + 一条时间线 + `✓ Up to date` + 一条轻 toast，**纯展示** | **任何按钮**（连「检查更新」都没有）；后台词外露 | B / F | T-61 |
@@ -114,6 +116,8 @@ BizSpark_中英双版_UI与HTML.zip
 | 侧栏脚 | `badge-line` / `side-ver` 只读，文案 `一次买断 · 无订阅` / `可离线` | B |
 | CSS | **全项目只有一份** `assets/style.css`，两版字节一致；客户端不许另写一套视觉 | A / B |
 | 价格槽 | 4 处（01 / 05 / 07 / footer）只从 `assets/pricing.js` 渲染，首版零金额；`From $120`、`$49/month` 是**内容数据**，别误删 | B / D |
+| 零百分比 / 零时间痕迹 | 前台不显示匹配度百分比（`94% MATCH` / `94% 匹配` 已从基线删除）、不显示「更新于 X 月 / 库版本 / 倒计时 / 已为你保留」；结果卡 6 元素（R-05 / R-09） | B / F |
+| 三个「再找」入口 | `← Change my answers`(03)、`Find new ideas`(06)、`Find another idea`(05) **全部回问卷 02-quiz.html**；不加「换一批 / 加载更多」（R-02） | B |
 | 中文自检包 | 界面文案 + 商机内容双层取 `*_zh`；无语言切换按钮；不上架、不进商店素材 | B / D / A |
 | 主链路连点 | 01→02→03→04→05→06→02 每个按钮都有真实响应 | H |
 

@@ -10,7 +10,7 @@ import { t } from "../i18n";
 import { listSaved } from "../bridge/cmd";
 import AppShell from "../components/AppShell.vue";
 
-interface SavedItem { id: string; title?: string; saved_at?: string; match_pct?: number; min_capital?: string }
+interface SavedItem { id: string; title?: string; saved_at?: string; min_capital?: string }
 const items = ref<SavedItem[]>([]);
 const THUMBS = ["✦", "▣", "◈"];
 
@@ -32,7 +32,7 @@ onMounted(async () => {
         <div class="thumb">{{ THUMBS[i % 3] }}</div>
         <div class="mt">
           <h3>{{ it.title || it.id }}</h3>
-          <p>{{ it.saved_at || "" }}<template v-if="it.min_capital"> · {{ it.min_capital }}</template><template v-if="it.match_pct"> · {{ it.match_pct }}% {{ t("common.match") }}</template></p>
+          <p>{{ it.saved_at || "" }}<template v-if="it.min_capital"> · {{ it.min_capital }}</template></p>
         </div>
         <router-link class="btn btn-ghost" style="height:34px;font-size:12px" :to="`/detail/${it.id}`">{{ t("saved.open") }}</router-link>
       </div>

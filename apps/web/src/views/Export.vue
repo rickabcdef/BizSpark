@@ -61,7 +61,7 @@ onMounted(() => {
       <div class="btn-row" style="justify-content:center">
         <router-link class="btn btn-primary" to="/saved">{{ t("export.open_saved") }}</router-link>
         <button v-if="done && canOpenFolder" class="btn btn-ghost" type="button" @click="openFolder">{{ t("export.open_folder") }}</button>
-        <router-link class="btn btn-ghost" to="/results">{{ t("export.another") }}</router-link>
+        <router-link class="btn btn-ghost" to="/quiz">{{ t("export.another") }}</router-link>
       </div>
       <div class="hr"></div>
       <div class="tiny" data-price-slot="export-note"></div>

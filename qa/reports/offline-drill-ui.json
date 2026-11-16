@@ -13,12 +13,12 @@
     {
       "step": "detail",
       "ok": true,
-      "ideaId": "bs-svc-review-reply-004"
+      "ideaId": "bs-svc-review-reply-002"
     },
     {
       "step": "export",
       "ok": true,
-      "pdf": "BizSpark-Plan-bs-svc-review-reply-004.pdf"
+      "pdf": "BizSpark-Plan-bs-svc-review-reply-002.pdf"
     },
     {
       "step": "saved",
@@ -29,7 +29,7 @@
   "consoleErrors": [],
   "externalRequests": [],
   "socketBlocked": 0,
-  "exportPdf": "BizSpark-Plan-bs-svc-review-reply-004.pdf",
+  "exportPdf": "BizSpark-Plan-bs-svc-review-reply-002.pdf",
   "status": "PASS",
   "failed4xx": []
 }

@@ -93,7 +93,6 @@ async function saveAll(): Promise<void> {
     <div class="grid" :class="ideas.length === 3 ? 'g3' : ideas.length === 2 ? 'g2' : ''">
       <IdeaCard v-for="(i, ix) in ideas" :key="i.id || ix"
         :no="`${String(ix + 1).padStart(2, '0')} / ${String(ideas.length).padStart(2, '0')}`"
-        :match="i.match_pct ? `${i.match_pct}% ${t('common.match')}` : undefined"
         :title="i.title || ''" :desc="i.summary || ''" :why="i.why || undefined" :tags="i.tags">
         <router-link class="btn btn-primary card-cta" style="width:100%"
           :to="`/detail/${i.id || ix}`">{{ t("results.cta") }}&nbsp;→</router-link>
