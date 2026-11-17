@@ -5,7 +5,7 @@
 /* ---------- 流式标度：所有尺寸由视口推导，无写死像素 ---------- */
 .hero.hero-fluid {
   --pad-x: clamp(28px, 4.6vw, 150px);
-  --pad-y: clamp(12px, 2.2vh, 72px);
+  --pad-y: clamp(12px, 1.9vh, 62px);
   --col-gap: clamp(40px, 6.6vw, 220px);
   --side-w: clamp(296px, 29vw, 780px);
 
@@ -37,7 +37,7 @@
   column-gap: var(--col-gap);
   align-items: start;
   align-content: safe center;
-  padding: var(--pad-y) var(--pad-x) clamp(16px, 3vh, 54px);
+  padding: var(--pad-y) var(--pad-x) clamp(12px, 2.1vh, 40px);
   min-height: 0;
 }
 
@@ -78,7 +78,9 @@
   min-height: 0;
   container-type: inline-size;
 }
-.hero-side > * { flex: 0 0 auto; }
+.hero-side > .hero-note { flex: 0 0 auto; }
+/* 白卡吃掉右栏剩余高度 → 整栏一块大面板，而不是右下角一张小纸片 */
+.hero-side > .hero-mock { flex: 1 1 auto; min-height: 0; display: flex; }
 
 .hero-fluid .hero-note { position: static; width: auto; max-width: 100%; z-index: 2; }
 .note-kicker {
@@ -125,31 +127,108 @@
   letter-spacing: 0.04em;
 }
 
-/* ---------- 右下白框：紧跟文案，永不压字 ---------- */
+/* ---------- 右下白卡：撑满右栏的整栏大卡（cqw 随右栏宽度伸缩） ---------- */
 .hero-fluid .hero-mock {
   position: relative;
   right: auto;
   top: auto;
-  width: clamp(258px, 23vw, 640px);
-  max-width: 100%;
-  align-self: flex-end;
-  margin-top: clamp(18px, 4vh, 96px);
-  transform: rotate(-3.2deg);
+  /* 向右咬进页面边距一点（padding 内有余量），让卡片"顶"出去，视觉更有气势 */
+  width: calc(100% + clamp(0px, 1.5vw, 32px));
+  max-width: none;
+  margin-right: calc(-1 * clamp(0px, 1.5vw, 32px));
+  align-self: stretch;
+  margin-top: clamp(14px, 2.1vh, 56px);
+  transform: rotate(-2.2deg);
   transform-origin: bottom right;
   z-index: 1;
 }
-.mock-cap { letter-spacing: 0.14em; text-transform: uppercase; }
+/* 卡本体：大内边距 + 大圆角 + 厚投影，撑起整栏的分量 */
+.hero-fluid .hero-mock .card {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: clamp(15px, 4.8cqw, 44px);
+  border-radius: clamp(12px, 3.2cqw, 30px);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  box-shadow:
+    0 clamp(12px, 3cqw, 46px) clamp(30px, 7cqw, 100px) rgba(4, 16, 34, 0.55),
+    0 clamp(2px, 0.7cqw, 12px) clamp(8px, 1.8cqw, 26px) rgba(4, 16, 34, 0.4);
+}
+/* 白卡身后的冷光晕：把卡片从深底上"托"起来，干净而不花 */
+.hero-fluid .hero-mock::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  border-radius: clamp(16px, 4cqw, 36px);
+  transform: translate(clamp(4px, 1.1cqw, 14px), clamp(4px, 1.1cqw, 14px));
+  background: linear-gradient(135deg, rgba(120, 190, 255, 0.16), rgba(242, 101, 58, 0.14));
+  filter: blur(clamp(6px, 1.8cqw, 22px));
+}
+.mock-cap {
+  font-size: clamp(10px, 3.1cqw, 21px);
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
 .hero-fluid .mock-idea {
   border: 0;
   box-shadow: none;
-  padding: clamp(12px, 1.4vh, 18px) 0 0;
+  min-height: 0;
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  padding: clamp(10px, 3.4cqw, 30px) 0 0;
 }
-.hero-fluid .mock-idea h3 { font-size: clamp(13.5px, 1.05vw, 24px); }
-.hero-fluid .mock-idea p { font-size: clamp(10.5px, 0.82vw, 18px); }
+/* ---- 卡内层级：编号 → 标题 → 描述 → 三列信息带 ---- */
+.hero-fluid .mock-idea .idea-no {
+  font-size: clamp(12px, 4.4cqw, 34px);
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  color: #9AAEBF;
+}
+.hero-fluid .mock-idea h3 {
+  font-size: clamp(24px, 8.8cqw, 72px);
+  line-height: 1.08;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  margin: clamp(6px, 1.9cqw, 16px) 0 clamp(6px, 1.8cqw, 14px);
+}
+.hero-fluid .mock-idea p {
+  font-size: clamp(13px, 4.4cqw, 33px);
+  line-height: 1.46;
+  color: #45596B;
+}
+/* 标签沉到面板底部、三列等宽铺满 → 底部一条整齐的信息带 */
+.hero-fluid .mock-idea .meta-row {
+  margin-top: auto;
+  padding-top: clamp(8px, 1.9cqw, 20px);
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(6px, 1.5cqw, 14px);
+}
+.hero-fluid .mock-idea .tag {
+  font-size: clamp(11px, 3.4cqw, 25px);
+  padding: clamp(5px, 1.3cqw, 12px) clamp(6px, 1.6cqw, 14px);
+  font-weight: 700;
+  background: rgba(242, 101, 58, 0.09);
+  border-color: rgba(242, 101, 58, 0.32);
+  color: #B8431F;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 0;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+/* 卡片顶部标识带加厚，像产品样张而不是文档缩略图 */
+.hero-fluid .mock-idea::before { height: clamp(3px, 0.9cqw, 9px); }
 
 /* ---------- 底栏 ---------- */
 .hero-fluid .hero-foot {
-  padding: clamp(13px, 1.9vh, 26px) var(--pad-x);
+  padding: clamp(12px, 1.6vh, 22px) var(--pad-x);
   font-size: var(--fs-foot);
   gap: 16px;
   flex-wrap: wrap;
@@ -157,22 +236,29 @@
 
 /* ---------- 矮窗口：右栏收紧，保证首屏完整 ---------- */
 @media (max-height: 800px) {
-  .hero-fluid .hero-mock { width: clamp(224px, 19vw, 300px); margin-top: clamp(14px, 2.6vh, 40px); }
-  .hero-fluid .hero-mock .card { padding: 15px; }
-  .hero-fluid .mock-idea h3 { font-size: clamp(12.5px, 0.95vw, 15px); }
-  .hero-fluid .mock-idea p { font-size: clamp(10px, 0.76vw, 12px); }
-  .hero-fluid .note-quote { margin: 5px 0 8px; }
+  .hero-fluid .hero-mock { margin-top: clamp(12px, 2.2vh, 34px); }
+  .hero-fluid .hero-mock .card { padding: clamp(13px, 4.05cqw, 32px); }
+  .hero-fluid .mock-idea { padding-top: clamp(9px, 2.5cqw, 20px); }
+  .hero-fluid .mock-idea h3 { font-size: clamp(20px, 7.2cqw, 46px); margin: clamp(7px, 2cqw, 15px) 0 clamp(6px, 1.8cqw, 14px); }
+  .hero-fluid .mock-idea p { font-size: clamp(12.5px, 4cqw, 25px); }
+  .hero-fluid .mock-idea .meta-row { margin-top: clamp(10px, 2.8cqw, 24px); }
+  .hero-fluid .note-quote { margin: 5px 0 8px; line-height: 1.58; }
+  .hero-fluid .note-p { line-height: 1.54; }
   .hero-fluid .note-sign { margin-top: 6px; }
   .hero-fluid .hero-price { margin-top: clamp(16px, 2.6vh, 40px); }
-  .hero-fluid .hero-body { padding-bottom: clamp(12px, 2vh, 40px); }
+  .hero-fluid .hero-body { padding-bottom: clamp(12px, 2.4vh, 38px); }
 }
 @media (max-height: 700px) {
-  .hero-fluid .hero-mock { width: clamp(188px, 16vw, 252px); margin-top: clamp(10px, 2vh, 30px); }
-  .hero-fluid .hero-mock .card { padding: 10px 11px; }
+  .hero-fluid .hero-mock { margin-top: clamp(10px, 1.8vh, 26px); }
+  .hero-fluid .hero-mock .card { padding: clamp(13px, 3.9cqw, 28px); }
+  .hero-fluid .mock-idea { padding-top: clamp(8px, 2.5cqw, 18px); }
+  .hero-fluid .mock-idea h3 { font-size: clamp(19px, 7cqw, 42px); }
+  .hero-fluid .mock-idea p { font-size: clamp(12px, 3.8cqw, 23px); }
+  .hero-fluid .mock-idea .tag { font-size: clamp(10.5px, 3.2cqw, 22px); }
   .hero-fluid .note-p { line-height: 1.5; }
   .hero-fluid .note-quote { line-height: 1.55; }
   .hero-fluid .hero-top { padding-top: 10px; padding-bottom: 10px; }
-  .hero-fluid .hero-body { padding-bottom: clamp(10px, 2vh, 30px); }
+  .hero-fluid .hero-body { padding-bottom: clamp(12px, 3vh, 34px); }
   .hero-fluid .hero-foot { padding-top: 10px; padding-bottom: 10px; }
 }
 
