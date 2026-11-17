@@ -7,9 +7,13 @@
        左栏 .hero-in 720px 撑满、h1 72px、左列正文 18px/560px；
        右栏 .hero-note 定稿 founder note（420px，right 132 / top 196）；
        白框 .hero-mock 归右下（right 132 / top 76%，保留原 transform）。
-       栅格值全部内联，不改 assets/style.css。 -->
+       栅格值全部内联，不改 assets/style.css。
+       【PM 2026-11-17】设计画布等比缩放：上述数值是按 1440×900 定的绝对像素，
+       窗口比这小（如 1072×666）时右栏会压白框、左栏横向压右栏。故把整屏收进
+       1440×900 的 .hero-stage，按 min(宽比, 高比) 整体缩放并居中——任何窗口尺寸
+       下都是设计稿那张图等比缩小的结果，栅格比例与工单量测值不变。 -->
 <script setup lang="ts">
-import { computed, onMounted } from "vue";
+import { computed, onBeforeUnmount, onMounted, ref } from "vue";
 import { locale, t } from "../i18n";
 import { renderPriceSlots } from "../bridge/price";
 
@@ -19,10 +23,32 @@ onMounted(renderPriceSlots);
 const noteTitleStyle = computed(() => ({
   fontSize: locale() === "en-US" ? "30px" : "34px",
 }));
+
+// 设计画布：1440×900（工单 §6 量测视口），整体等比缩放居中
+const DESIGN_W = 1440;
+const DESIGN_H = 900;
+const stageStyle = ref<Record<string, string>>({});
+
+function fitStage(): void {
+  const w = window.innerWidth;
+  const h = window.innerHeight;
+  const s = Math.min(w / DESIGN_W, h / DESIGN_H);
+  const left = (w - DESIGN_W * s) / 2;
+  const top = (h - DESIGN_H * s) / 2;
+  stageStyle.value = { transform: `translate(${left}px, ${top}px) scale(${s})` };
+}
+fitStage();
+
+onMounted(() => {
+  fitStage();
+  window.addEventListener("resize", fitStage);
+});
+onBeforeUnmount(() => window.removeEventListener("resize", fitStage));
 </script>
 
 <template>
   <div class="hero">
+    <div class="hero-stage" :style="stageStyle">
     <div class="orb a"></div><div class="orb b"></div>
     <div class="hero-top">
       <div class="brand"><div class="brand-mark">B</div><div>BizSpark<small>{{ t("brand.tag") }}</small></div></div>
@@ -64,5 +90,20 @@ const noteTitleStyle = computed(() => ({
       </div>
     </div></div>
     <div class="hero-foot"><span>{{ t("welcome.foot") }}</span><span data-price-slot="hero-foot"></span></div>
+    </div><!-- /.hero-stage -->
   </div>
 </template>
+
+<style scoped>
+/* 设计画布：固定 1440×900，transform 由 fitStage() 按窗口等比缩放并居中 */
+.hero-stage {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 1440px;
+  height: 900px;
+  display: flex;
+  flex-direction: column;
+  transform-origin: top left;
+}
+</style>
