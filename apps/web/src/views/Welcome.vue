@@ -2,7 +2,9 @@
      对应 en/html/01-welcome.html：全屏 hero（无 AppShell）。
      AL-B2：右上角只留只读版本标记 hero-meta（基线已删 3 个假菜单）。
      AL-B4：两个主按钮是真实链接（router-link → #/quiz、#/saved）。
-     B-13：hero-trust / hero-foot 两个价格槽。
+     B-13：价格槽只剩 hero-trust；hero-foot 槽已按 PM 2026-11-17 决定整段移除
+     （右下「Microsoft Store · Mac App Store · 一次买断」不再展示，locales 的
+     price.hero_foot_* 键按"不增删键"铁律保留在库，price.ts 的槽位渲染逻辑不动）。
      【PM 2026-11-17】首页两栏版式 · 流式弹性版（v3）
        版式骨架沿用两栏：左栏主张 + 右栏 founder note + 右下白框。
        尺寸全部弹性（clamp + min(vw,vh)），禁止任何写死像素：
@@ -69,7 +71,7 @@ const isEn = computed(() => locale() === "en-US");
       </aside>
     </div>
 
-    <div class="hero-foot"><span>{{ t("welcome.foot") }}</span><span data-price-slot="hero-foot"></span></div>
+    <div class="hero-foot"><span>{{ t("welcome.foot") }}</span></div>
   </div>
 </template>
 
