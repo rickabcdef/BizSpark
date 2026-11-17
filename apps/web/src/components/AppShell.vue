@@ -1,6 +1,6 @@
 <!-- AppShell.vue — B-02（负责人：B）
      246px 深色侧栏 + 70px topbar + content，逐值移植 style.css。
-     9 页复用；nav 9 项，当前项高亮 .on；B-04 侧栏直达。 -->
+     9 页复用；nav 8 项（PM 2026-11-17 去掉「一页方案」项），当前项高亮 .on；B-04 侧栏直达。 -->
 <script setup lang="ts">
 import { computed, onMounted, ref } from "vue";
 import { useRoute } from "vue-router";
@@ -18,7 +18,10 @@ const items = [
   { to: "/", ico: "◈", key: "nav.start" },
   { to: "/quiz", ico: "◎", key: "nav.quiz" },
   { to: "/results", ico: "✦", key: "nav.results" },
-  { to: "/detail", ico: "▤", key: "nav.detail" },
+  // 【PM 2026-11-17】老板决定：侧栏「一页方案」菜单项去掉（点它只是空转到结果页，
+  // 真正的方案页必须带点子 id）。Detail 页与 /detail/:id 路由、卡片入口全部保留，
+  // 面包屑仍显示「一页方案」。恢复侧栏入口只需加回下面这行：
+  // { to: "/detail", ico: "▤", key: "nav.detail" },
   { to: "/export", ico: "↓", key: "nav.export" },
   { to: "/saved", ico: "❑", key: "nav.saved" },
   { to: "/library", ico: "↻", key: "nav.library" },
@@ -26,7 +29,9 @@ const items = [
   { to: "/settings", ico: "⚙", key: "nav.settings" },
 ];
 const crumbPage = computed(() => {
-  const cur = items.find((i) => (i.to === "/detail" ? route.path.startsWith("/detail") : route.path === i.to));
+  // 侧栏已无「一页方案」项，但 /detail/:id 仍在：面包屑单独兜一层，标题不空
+  if (route.path.startsWith("/detail")) return t("nav.detail");
+  const cur = items.find((i) => route.path === i.to);
   return cur ? t(cur.key) : "";
 });
 </script>
@@ -38,7 +43,7 @@ const crumbPage = computed(() => {
       <nav class="nav">
         <div class="nav-label">Workspace</div>
         <router-link v-for="i in items" :key="i.to" class="nav-i" :to="i.to"
-          :class="{ on: i.to === '/detail' ? route.path.startsWith('/detail') : route.path === i.to }">
+          :class="{ on: route.path === i.to }">
           <span class="ico">{{ i.ico }}</span>{{ t(i.key) }}
         </router-link>
       </nav>
