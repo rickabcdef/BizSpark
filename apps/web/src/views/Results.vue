@@ -14,6 +14,7 @@ import { diagnose, getState, saveIdea } from "../bridge/cmd";
 import { currencyOf, fmtAmount } from "../money";
 import AppShell from "../components/AppShell.vue";
 import IdeaCard from "../components/IdeaCard.vue";
+import Icon from "../components/Icon.vue";
 
 interface Idea {
   id?: string; rank?: number; match_pct?: number; title?: string;
@@ -94,14 +95,14 @@ async function saveAll(): Promise<void> {
       <IdeaCard v-for="(i, ix) in ideas" :key="i.id || ix"
         :no="`${String(ix + 1).padStart(2, '0')} / ${String(ideas.length).padStart(2, '0')}`"
         :title="i.title || ''" :desc="i.summary || ''" :why="i.why || undefined" :tags="i.tags">
-        <router-link class="btn btn-primary card-cta" style="width:100%"
+        <router-link class="btn btn-primary card-cta btn-block"
           :to="`/detail/${i.id || ix}`">{{ t("results.cta") }}&nbsp;→</router-link>
       </IdeaCard>
     </div>
     <div v-if="ideas.length === 0" class="empty card">
-      <div class="ico">✦</div>
+      <div class="ico"><Icon name="cards" :size="34" /></div>
       <p>{{ t("results.empty") }}</p>
-      <router-link class="btn btn-ghost" style="margin-top:18px" to="/quiz">← {{ t("results.change") }}</router-link>
+      <router-link class="btn btn-ghost mt18" to="/quiz">← {{ t("results.change") }}</router-link>
     </div>
     <template v-if="ideas.length">
       <div class="hr"></div>
@@ -109,7 +110,7 @@ async function saveAll(): Promise<void> {
         <router-link class="btn btn-ghost" to="/quiz">← {{ t("results.change") }}</router-link>
         <button class="btn btn-quiet" type="button" @click="saveAll" :disabled="saved">
           {{ saved ? t("results.saved_all") : t("results.save_all") }}</button>
-        <span class="tiny" style="margin-left:auto">{{ t("results.note") }}</span>
+        <span class="tiny note-end">{{ t("results.note") }}</span>
       </div>
       <div class="stat">
         <div><div class="sv">{{ checked ?? "—" }}</div><div class="sl">{{ t("results.stat_checked") }}</div></div>

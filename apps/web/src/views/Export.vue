@@ -11,6 +11,7 @@ import { exportPlan, openExportFolder } from "../bridge/cmd";
 import { renderPriceSlots } from "../bridge/price";
 import AppShell from "../components/AppShell.vue";
 import Tag from "../components/Tag.vue";
+import Icon from "../components/Icon.vue";
 
 const fileName = ref<string>("");
 const fileMeta = ref<string>("");
@@ -46,19 +47,19 @@ onMounted(() => {
 <template>
   <AppShell>
     <div class="card center-card">
-      <div class="big-check">✓</div>
+      <div class="big-check"><Icon name="check" :size="32" /></div>
       <div class="eyebrow">{{ t("export.eyebrow") }}</div>
       <h1>{{ t("export.h1") }}</h1>
-      <p class="lead" style="margin:10px auto 0">{{ t("export.lead") }}</p>
+      <p class="lead lead-center">{{ t("export.lead") }}</p>
       <div v-if="done" class="file-row">
-        <div class="file-ico">▤</div>
-        <div style="flex:1">
+        <div class="file-ico"><Icon name="doc" :size="18" /></div>
+        <div class="flex1">
           <div class="fn">{{ fileName }}</div>
           <div class="fs">{{ fileMeta }}</div>
         </div>
-        <Tag :green="true">✓ {{ t("export.saved_tag") }}</Tag>
+        <Tag :green="true"><Icon name="check" :size="12" />{{ t("export.saved_tag") }}</Tag>
       </div>
-      <div class="btn-row" style="justify-content:center">
+      <div class="btn-row center-row">
         <router-link class="btn btn-primary" to="/saved">{{ t("export.open_saved") }}</router-link>
         <button v-if="done && canOpenFolder" class="btn btn-ghost" type="button" @click="openFolder">{{ t("export.open_folder") }}</button>
         <router-link class="btn btn-ghost" to="/quiz">{{ t("export.another") }}</router-link>
@@ -66,10 +67,10 @@ onMounted(() => {
       <div class="hr"></div>
       <div class="tiny" data-price-slot="export-note"></div>
     </div>
-    <div class="card pad" style="max-width:620px;margin:18px auto 0">
-      <div class="grid g2" style="gap:14px">
-        <div><h3>{{ t("export.inside_h") }}</h3><p class="tiny" style="margin-top:6px">{{ t("export.inside_p") }}</p></div>
-        <div><h3>{{ t("export.extras_h") }}</h3><p class="tiny" style="margin-top:6px">{{ t("export.extras_p") }}</p></div>
+    <div class="card pad maxw620">
+      <div class="grid g2 g2tight">
+        <div><h3>{{ t("export.inside_h") }}</h3><p class="tiny mt6">{{ t("export.inside_p") }}</p></div>
+        <div><h3>{{ t("export.extras_h") }}</h3><p class="tiny mt6">{{ t("export.extras_p") }}</p></div>
       </div>
     </div>
   </AppShell>

@@ -6,9 +6,9 @@
     {
       "id": "T-01",
       "ok": true,
-      "detail": "首屏 220ms（红线 1500）· 溢出 0px · 主 CTA 1 个 · 外网请求 0",
+      "detail": "首屏 288ms（红线 1500）· 溢出 0px · 主 CTA 1 个 · 外网请求 0",
       "metrics": {
-        "ms": 220,
+        "ms": 288,
         "scroll": 0,
         "primaries": 1
       }
@@ -116,12 +116,11 @@
     {
       "id": "T-59",
       "ok": true,
-      "detail": "visible：hero-trust「$39.00  one-time, yours forever」/ hero-foot「Microsoft Store · Mac App Store · $39.00 one-time」/ activate「$39.00 · ONE-TIME」；hidden 无金额=true",
+      "detail": "visible：hero-trust「$39.00  one-time, yours forever」/ hero-foot「Microsoft Store · Mac App Store · $39.00 one-time」；hidden 无金额=true",
       "metrics": {
         "visible": {
           "trust": "$39.00  one-time, yours forever",
-          "foot": "Microsoft Store · Mac App Store · $39.00 one-time",
-          "eye": "$39.00 · ONE-TIME"
+          "foot": "Microsoft Store · Mac App Store · $39.00 one-time"
         },
         "hidden": {
           "trust": "One-time purchase  · Yours forever",

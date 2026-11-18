@@ -14,6 +14,7 @@
 import { computed, onMounted, ref } from "vue";
 import { locale, t } from "../i18n";
 import { renderPriceSlots } from "../bridge/price";
+import Icon from "../components/Icon.vue";
 
 onMounted(renderPriceSlots);
 
@@ -32,32 +33,24 @@ const isEn = computed(() => locale() === "en-US");
       <div class="hero-in">
         <div class="eyebrow">{{ t("welcome.eyebrow") }}</div>
         <h1 v-html="t('welcome.h1')"></h1>
-        <p class="hero-lead">{{ t("welcome.lead") }}</p>
+        <!-- 【POL-02】两段共情文字（定稿图左栏正文）；welcome.lead 键语义保留在语言包不渲染 -->
+        <p class="hero-empathy">{{ t("welcome.empathy1") }}</p>
+        <p class="hero-empathy">{{ t("welcome.empathy2") }}</p>
         <div class="btn-row">
           <router-link class="btn btn-primary btn-lg" to="/quiz">{{ t("welcome.cta_start") }}&nbsp;→</router-link>
           <router-link class="btn btn-quiet btn-lg" to="/saved">{{ t("welcome.cta_saved") }}</router-link>
         </div>
         <div class="hero-price">
           <div data-price-slot="hero-trust"></div>
-          <div>✓ {{ t("welcome.offline") }}</div><div>✓ {{ t("welcome.never_leave") }}</div>
+          <div><Icon name="check" :size="14" /> {{ t("welcome.offline") }}</div>
+          <div><Icon name="check" :size="14" /> {{ t("welcome.never_leave") }}</div>
         </div>
       </div>
 
-      <!-- 右栏：定稿 founder note（上）+ 白框（下），列内自然排布，永不重叠 -->
+      <!-- 【POL-02】右栏：白卡上方一句 hook（定稿图右上角斜体橙句）+ 一张白卡；
+           原 founder note 长段自述从模板移除（welcome.note_* 键保留在语言包不删） -->
       <aside class="hero-side">
-        <div class="hero-note">
-          <div class="note-kicker" v-html="t('welcome.note_kicker')"></div>
-          <div class="note-title">{{ t("welcome.note_title") }}<span class="dot">{{ t("welcome.note_period") }}</span></div>
-          <div class="note-quote">{{ t("welcome.note_quote") }}</div>
-          <div class="note-p">{{ t("welcome.note_p1_a") }}<br><span class="ind">{{ t("welcome.note_p1_b") }}</span></div>
-          <div class="note-p">
-            {{ t("welcome.note_p2_a") }}<br><span class="kw">{{ t("welcome.note_p2_kw1") }}</span>{{ t("welcome.note_p2_sep1") }}<span class="kw-accent">{{ t("welcome.note_p2_kw2") }}</span>{{ t("welcome.note_p2_sep2") }}<br><span class="ind">{{ t("welcome.note_p2_b") }}</span>
-          </div>
-          <div class="note-p">
-            {{ t("welcome.note_p3_a") }}<span class="kw">{{ t("welcome.note_p3_kw") }}</span>{{ t("welcome.note_p3_sep") }}<br><span class="ind">{{ t("welcome.note_p3_b") }}</span>
-          </div>
-          <div class="note-sign">{{ t("welcome.note_sign") }}</div>
-        </div>
+        <div class="hero-hook">{{ t("welcome.hook") }}</div>
 
         <div class="hero-mock"><div class="card">
           <div class="tiny mock-cap">{{ t("welcome.mock_cap") }}</div>
@@ -88,12 +81,6 @@ const isEn = computed(() => locale() === "en-US");
   --fs-eyebrow: clamp(10px, 0.82vw, 17px);
   --fs-price: clamp(11px, 0.86vw, 19px);
   --fs-foot: clamp(10.5px, 0.82vw, 17px);
-
-  --fs-kicker: clamp(9.5px, 0.8vw, 17px);
-  --fs-quote: clamp(12.5px, 1vw, 22px);
-  --fs-body: clamp(12.5px, 1.06vw, 24px);
-  --fs-kw: clamp(17px, 1.52vw, 36px);
-  --fs-sign: clamp(12px, 0.96vw, 21px);
 
   display: grid;
   grid-template-rows: auto minmax(0, 1fr) auto;
@@ -129,11 +116,11 @@ const isEn = computed(() => locale() === "en-US");
   letter-spacing: -0.045em;
   margin-top: clamp(8px, 1.3vh, 18px);
 }
-.hero-fluid .hero-lead {
+.hero-fluid .hero-empathy {
   font-size: var(--fs-lead);
   line-height: 1.6;
   max-width: 34em;
-  margin-top: clamp(12px, 2.2vh, 40px);
+  margin-top: clamp(10px, 1.7vh, 30px);
 }
 .hero-fluid .btn-row { margin-top: clamp(20px, 3.4vh, 72px); }
 .hero-fluid .hero-price {
@@ -152,54 +139,26 @@ const isEn = computed(() => locale() === "en-US");
   min-height: 0;
   container-type: inline-size;
 }
-.hero-side > .hero-note { flex: 0 0 auto; }
+.hero-side > .hero-hook { flex: 0 0 auto; }
 /* 白卡吃掉右栏剩余高度 → 整栏一块大面板，而不是右下角一张小纸片 */
 .hero-side > .hero-mock { flex: 1 1 auto; min-height: 0; display: flex; }
 
-.hero-fluid .hero-note { position: static; width: auto; max-width: 100%; z-index: 2; }
-.note-kicker {
-  font-size: var(--fs-kicker);
-  letter-spacing: 0.34em;
-  color: #F2653A;
-  font-weight: 750;
-  margin-bottom: clamp(6px, 1vh, 12px);
-}
-.note-title {
-  font-size: clamp(24px, 9.1cqw, 68px);
-  line-height: 1.2;
-  font-weight: 800;
-  letter-spacing: -0.038em;
-  color: #fff;
-  white-space: nowrap;
-}
-.note-title .dot { color: #F2653A; }
-.hero-fluid.is-en .note-title { font-size: clamp(18px, 6.65cqw, 52px); }
-
-.note-quote {
-  border-left: 2px solid rgba(242, 101, 58, 0.6);
-  padding-left: clamp(9px, 0.9vw, 14px);
-  margin: clamp(6px, 0.9vh, 12px) 0 clamp(8px, 1.3vh, 16px);
-  font-size: var(--fs-quote);
-  line-height: 1.66;
-  color: #9FB2C2;
-}
-.note-p {
-  font-size: var(--fs-body);
-  line-height: 1.62;
-  color: #D6E2EC;
-  margin-top: clamp(3px, 0.6vh, 8px);
-}
-.note-p .ind { display: inline-block; margin-left: 2em; }
-.note-p .kw { font-size: var(--fs-kw); font-weight: 800; color: #fff; letter-spacing: -0.014em; }
-.note-p .kw-accent { color: #F2653A; font-weight: 700; }
-.note-sign {
+/* 【POL-02】右栏 hook：斜体橙句，右对齐（定稿图右上角），随右栏宽度伸缩 */
+.hero-fluid .hero-hook {
+  align-self: flex-end;
   text-align: right;
-  margin-top: clamp(7px, 1.1vh, 16px);
-  font-size: var(--fs-sign);
   font-style: italic;
-  color: #F2653A;
-  letter-spacing: 0.04em;
+  font-weight: 700;
+  font-size: clamp(13px, 1.15vw, 26px);
+  letter-spacing: 0.02em;
+  color: var(--accent);
+  z-index: 2;
+  text-shadow: 0 2px 14px rgba(4, 16, 34, 0.4);
 }
+
+/* 【POL-02】左栏两段共情文字（定稿图口吻） */
+.hero-fluid .hero-empathy { color: #C4D3E0; }
+.hero-fluid .hero-empathy + .hero-empathy { margin-top: clamp(6px, 1.1vh, 20px); }
 
 /* ---------- 右下白卡：撑满右栏的整栏大卡（cqw 随右栏宽度伸缩） ---------- */
 .hero-fluid .hero-mock {
@@ -237,7 +196,7 @@ const isEn = computed(() => locale() === "en-US");
   z-index: -1;
   border-radius: clamp(16px, 4cqw, 36px);
   transform: translate(clamp(4px, 1.1cqw, 14px), clamp(4px, 1.1cqw, 14px));
-  background: linear-gradient(135deg, rgba(120, 190, 255, 0.16), rgba(242, 101, 58, 0.14));
+  background: linear-gradient(135deg, rgba(120, 190, 255, 0.16), rgba(232, 90, 43, 0.14));
   filter: blur(clamp(6px, 1.8cqw, 22px));
 }
 .mock-cap {
@@ -285,9 +244,9 @@ const isEn = computed(() => locale() === "en-US");
   font-size: clamp(11px, 3.4cqw, 25px);
   padding: clamp(5px, 1.3cqw, 12px) clamp(6px, 1.6cqw, 14px);
   font-weight: 700;
-  background: rgba(242, 101, 58, 0.09);
-  border-color: rgba(242, 101, 58, 0.32);
-  color: #B8431F;
+  background: rgba(232, 90, 43, 0.09);
+  border-color: rgba(232, 90, 43, 0.32);
+  color: #A93D1C;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -316,9 +275,7 @@ const isEn = computed(() => locale() === "en-US");
   .hero-fluid .mock-idea h3 { font-size: clamp(20px, 7.2cqw, 46px); margin: clamp(7px, 2cqw, 15px) 0 clamp(6px, 1.8cqw, 14px); }
   .hero-fluid .mock-idea p { font-size: clamp(12.5px, 4cqw, 25px); }
   .hero-fluid .mock-idea .meta-row { margin-top: clamp(10px, 2.8cqw, 24px); }
-  .hero-fluid .note-quote { margin: 5px 0 8px; line-height: 1.58; }
-  .hero-fluid .note-p { line-height: 1.54; }
-  .hero-fluid .note-sign { margin-top: 6px; }
+  .hero-fluid .hero-empathy { line-height: 1.54; }
   .hero-fluid .hero-price { margin-top: clamp(16px, 2.6vh, 40px); }
   .hero-fluid .hero-body { padding-bottom: clamp(12px, 2.4vh, 38px); }
 }
@@ -329,8 +286,7 @@ const isEn = computed(() => locale() === "en-US");
   .hero-fluid .mock-idea h3 { font-size: clamp(19px, 7cqw, 42px); }
   .hero-fluid .mock-idea p { font-size: clamp(12px, 3.8cqw, 23px); }
   .hero-fluid .mock-idea .tag { font-size: clamp(10.5px, 3.2cqw, 22px); }
-  .hero-fluid .note-p { line-height: 1.5; }
-  .hero-fluid .note-quote { line-height: 1.55; }
+  .hero-fluid .hero-empathy { line-height: 1.5; }
   .hero-fluid .hero-top { padding-top: 10px; padding-bottom: 10px; }
   .hero-fluid .hero-body { padding-bottom: clamp(12px, 3vh, 34px); }
   .hero-fluid .hero-foot { padding-top: 10px; padding-bottom: 10px; }
@@ -340,6 +296,6 @@ const isEn = computed(() => locale() === "en-US");
 @media (max-width: 960px) {
   .hero-fluid .hero-body { grid-template-columns: minmax(0, 1fr); row-gap: clamp(24px, 4vh, 52px); }
   .hero-fluid .hero-mock { align-self: flex-start; transform-origin: bottom left; margin-top: clamp(26px, 4.4vh, 56px); }
-  .hero-fluid .note-title { white-space: normal; }
+
 }
 </style>

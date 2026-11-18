@@ -77,7 +77,7 @@ async function doActivate(): Promise<void> {
       </div>
       <div>
         <div class="card pad" style="background:var(--deep);border-color:var(--deep);color:#fff">
-          <div class="eyebrow" style="color:var(--gold)" data-price-slot="activate-eyebrow"></div>
+          <div class="eyebrow" style="color:var(--accent)" data-price-slot="activate-eyebrow"></div>
           <h2 style="font-size:24px;line-height:1.3" v-html="t('activate.buy_h')"></h2>
           <div class="hr" style="background:rgba(255,255,255,.12)"></div>
           <div style="font-size:13px;color:#C2D0DC;line-height:2.1">

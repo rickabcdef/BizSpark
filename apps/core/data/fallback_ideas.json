@@ -52,7 +52,7 @@
    "pricing_hint": "$49/month for up to 15 replies",
    "first_customers": [
     "Google Maps shops with unanswered reviews",
-    "Nextdoor neighbourhood posts",
+    "Nextdoor neighborhood posts",
     "Walk-in visits to strip-mall stores"
    ],
    "pitfalls": [
@@ -77,7 +77,7 @@
      "compliance_note": "US: check local business-name registration and sales-tax rules.",
      "first_customers": [
       "Google Maps shops with unanswered reviews",
-      "Nextdoor neighbourhood posts",
+      "Nextdoor neighborhood posts",
       "Walk-in visits to strip-mall stores"
      ]
     },
@@ -104,7 +104,7 @@
      "compliance_note": "AU: check state council permits before door-to-door work.",
      "first_customers": [
       "Google Maps suburban strip shops",
-      "Nextdoor Australia neighbourhood posts",
+      "Nextdoor Australia neighborhood posts",
       "Local Facebook community groups"
      ]
     }
@@ -162,7 +162,7 @@
    "pricing_hint": "$180 flat per single-car garage",
    "first_customers": [
     "Nextdoor posts offering weekend slots",
-    "Facebook neighbourhood groups",
+    "Facebook neighborhood groups",
     "Referrals from real-estate agents"
    ],
    "pitfalls": [
@@ -186,7 +186,7 @@
      "compliance_note": "US: check local business-name registration and sales-tax rules.",
      "first_customers": [
       "Google Maps shops with unanswered reviews",
-      "Nextdoor neighbourhood posts",
+      "Nextdoor neighborhood posts",
       "Walk-in visits to strip-mall stores"
      ]
     },
@@ -204,7 +204,7 @@
      "compliance_note": "AU: check state council permits before door-to-door work.",
      "first_customers": [
       "Google Maps suburban strip shops",
-      "Nextdoor Australia neighbourhood posts",
+      "Nextdoor Australia neighborhood posts",
       "Local Facebook community groups"
      ]
     }
@@ -246,7 +246,7 @@
      "amount": 60
     },
     {
-     "item": "Template licence",
+     "item": "Template license",
      "amount": 30
     }
    ],
@@ -286,7 +286,7 @@
      "compliance_note": "US: check local business-name registration and sales-tax rules.",
      "first_customers": [
       "Google Maps shops with unanswered reviews",
-      "Nextdoor neighbourhood posts",
+      "Nextdoor neighborhood posts",
       "Walk-in visits to strip-mall stores"
      ]
     },
@@ -303,7 +303,7 @@
      "currency": "SGD",
      "compliance_note": "SG: check ACRA registration before invoicing.",
      "first_customers": [
-      "Facebook neighbourhood groups for HDB estates",
+      "Facebook neighborhood groups for HDB estates",
       "WhatsApp business contact lists",
       "Google Maps shop clusters in heartland malls"
      ]

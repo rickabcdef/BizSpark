@@ -62,7 +62,7 @@
     "Thumbtack local leads",
     "Chamber of commerce newsletter",
     "Google Maps 4-star shops with unanswered reviews",
-    "Nextdoor neighbourhood posts"
+    "Nextdoor neighborhood posts"
    ],
    "pitfalls": [
     "Charge per audio minute, not wall clock",
@@ -122,7 +122,7 @@
      "compliance_note": "PH: check barangay / DTI registration for home-based services.",
      "first_customers": [
       "Google Maps shops along main roads",
-      "Viber neighbourhood groups",
+      "Viber neighborhood groups",
       "Facebook Marketplace local groups"
      ]
     }
@@ -188,7 +188,7 @@
    "first_customers": [
     "Chamber of commerce newsletter",
     "Google Maps 4-star shops with unanswered reviews",
-    "Nextdoor neighbourhood posts",
+    "Nextdoor neighborhood posts",
     "Thumbtack local leads"
    ],
    "pitfalls": [
@@ -214,7 +214,7 @@
      "first_customers": [
       "Chamber of commerce newsletter",
       "Google Maps 4-star shops with unanswered reviews",
-      "Nextdoor neighbourhood posts"
+      "Nextdoor neighborhood posts"
      ]
     },
     "UK": {
@@ -241,7 +241,7 @@
      "first_customers": [
       "Council newsletter sponsorships",
       "Google Maps suburban strip shops",
-      "Nextdoor Australia neighbourhood posts"
+      "Nextdoor Australia neighborhood posts"
      ]
     },
     "SG": {
@@ -250,14 +250,14 @@
      "first_customers": [
       "WhatsApp business contact lists",
       "Google Maps shop clusters in heartland malls",
-      "Facebook neighbourhood groups for HDB estates"
+      "Facebook neighborhood groups for HDB estates"
      ]
     },
     "PH": {
      "currency": "PHP",
      "compliance_note": "PH: check barangay / DTI registration for home-based services.",
      "first_customers": [
-      "Viber neighbourhood groups",
+      "Viber neighborhood groups",
       "Facebook Marketplace local groups",
       "Barangay community referrals"
      ]
@@ -322,7 +322,7 @@
    "pricing_hint": "$18/hour raw, $30 cleaned",
    "first_customers": [
     "Google Maps 4-star shops with unanswered reviews",
-    "Nextdoor neighbourhood posts",
+    "Nextdoor neighborhood posts",
     "Thumbtack local leads",
     "Chamber of commerce newsletter"
    ],
@@ -348,7 +348,7 @@
      "compliance_note": "US: check local business-name registration and sales-tax rules.",
      "first_customers": [
       "Google Maps 4-star shops with unanswered reviews",
-      "Nextdoor neighbourhood posts",
+      "Nextdoor neighborhood posts",
       "Thumbtack local leads"
      ]
     },
@@ -375,7 +375,7 @@
      "compliance_note": "SG: check ACRA registration before invoicing.",
      "first_customers": [
       "Google Maps shop clusters in heartland malls",
-      "Facebook neighbourhood groups for HDB estates",
+      "Facebook neighborhood groups for HDB estates",
       "WhatsApp business contact lists"
      ]
     },
@@ -446,7 +446,7 @@
    ],
    "pricing_hint": "$25 per audio hour",
    "first_customers": [
-    "Nextdoor neighbourhood posts",
+    "Nextdoor neighborhood posts",
     "Thumbtack local leads",
     "Chamber of commerce newsletter",
     "Google Maps 4-star shops with unanswered reviews"
@@ -472,7 +472,7 @@
      "currency": "USD",
      "compliance_note": "US: check local business-name registration and sales-tax rules.",
      "first_customers": [
-      "Nextdoor neighbourhood posts",
+      "Nextdoor neighborhood posts",
       "Thumbtack local leads",
       "Chamber of commerce newsletter"
      ]
@@ -499,7 +499,7 @@
      "currency": "AUD",
      "compliance_note": "AU: check state council permits before door-to-door work.",
      "first_customers": [
-      "Nextdoor Australia neighbourhood posts",
+      "Nextdoor Australia neighborhood posts",
       "Local Facebook community groups",
       "Council newsletter sponsorships"
      ]
@@ -563,7 +563,7 @@
     "Thumbtack local leads",
     "Chamber of commerce newsletter",
     "Google Maps 4-star shops with unanswered reviews",
-    "Nextdoor neighbourhood posts"
+    "Nextdoor neighborhood posts"
    ],
    "pitfalls": [
     "Charge per audio minute, not wall clock",
@@ -597,7 +597,7 @@
      "first_customers": [
       "WhatsApp business contact lists",
       "Google Maps shop clusters in heartland malls",
-      "Facebook neighbourhood groups for HDB estates"
+      "Facebook neighborhood groups for HDB estates"
      ]
     }
    }
@@ -661,7 +661,7 @@
    "first_customers": [
     "Chamber of commerce newsletter",
     "Google Maps 4-star shops with unanswered reviews",
-    "Nextdoor neighbourhood posts",
+    "Nextdoor neighborhood posts",
     "Thumbtack local leads"
    ],
    "pitfalls": [
@@ -687,7 +687,7 @@
      "first_customers": [
       "Chamber of commerce newsletter",
       "Google Maps 4-star shops with unanswered reviews",
-      "Nextdoor neighbourhood posts"
+      "Nextdoor neighborhood posts"
      ]
     },
     "UK": {
@@ -714,7 +714,7 @@
      "first_customers": [
       "Council newsletter sponsorships",
       "Google Maps suburban strip shops",
-      "Nextdoor Australia neighbourhood posts"
+      "Nextdoor Australia neighborhood posts"
      ]
     },
     "SG": {
@@ -722,7 +722,7 @@
      "compliance_note": "SG: check ACRA registration before invoicing.",
      "first_customers": [
       "Google Maps shop clusters in heartland malls",
-      "Facebook neighbourhood groups for HDB estates",
+      "Facebook neighborhood groups for HDB estates",
       "WhatsApp business contact lists"
      ]
     }
@@ -785,7 +785,7 @@
    "pricing_hint": "$25 per audio hour",
    "first_customers": [
     "Google Maps 4-star shops with unanswered reviews",
-    "Nextdoor neighbourhood posts",
+    "Nextdoor neighborhood posts",
     "Thumbtack local leads",
     "Chamber of commerce newsletter"
    ],
@@ -811,7 +811,7 @@
      "compliance_note": "US: check local business-name registration and sales-tax rules.",
      "first_customers": [
       "Google Maps 4-star shops with unanswered reviews",
-      "Nextdoor neighbourhood posts",
+      "Nextdoor neighborhood posts",
       "Thumbtack local leads"
      ]
     },
@@ -838,7 +838,7 @@
      "compliance_note": "AU: check state council permits before door-to-door work.",
      "first_customers": [
       "Google Maps suburban strip shops",
-      "Nextdoor Australia neighbourhood posts",
+      "Nextdoor Australia neighborhood posts",
       "Local Facebook community groups"
      ]
     }
@@ -901,7 +901,7 @@
    ],
    "pricing_hint": "$80 four-episode bundle",
    "first_customers": [
-    "Nextdoor neighbourhood posts",
+    "Nextdoor neighborhood posts",
     "Thumbtack local leads",
     "Chamber of commerce newsletter",
     "Google Maps 4-star shops with unanswered reviews"
@@ -927,7 +927,7 @@
      "currency": "USD",
      "compliance_note": "US: check local business-name registration and sales-tax rules.",
      "first_customers": [
-      "Nextdoor neighbourhood posts",
+      "Nextdoor neighborhood posts",
       "Thumbtack local leads",
       "Chamber of commerce newsletter"
      ]
@@ -956,7 +956,7 @@
      "first_customers": [
       "WhatsApp business contact lists",
       "Google Maps shop clusters in heartland malls",
-      "Facebook neighbourhood groups for HDB estates"
+      "Facebook neighborhood groups for HDB estates"
      ]
     },
     "PH": {
@@ -965,7 +965,7 @@
      "first_customers": [
       "Barangay community referrals",
       "Google Maps shops along main roads",
-      "Viber neighbourhood groups"
+      "Viber neighborhood groups"
      ]
     }
    }
@@ -1031,7 +1031,7 @@
     "Thumbtack local leads",
     "Chamber of commerce newsletter",
     "Google Maps 4-star shops with unanswered reviews",
-    "Nextdoor neighbourhood posts"
+    "Nextdoor neighborhood posts"
    ],
    "pitfalls": [
     "Charge per audio minute, not wall clock",
@@ -1091,7 +1091,7 @@
      "compliance_note": "SG: check ACRA registration before invoicing.",
      "first_customers": [
       "Google Maps shop clusters in heartland malls",
-      "Facebook neighbourhood groups for HDB estates",
+      "Facebook neighborhood groups for HDB estates",
       "WhatsApp business contact lists"
      ]
     },
@@ -1100,7 +1100,7 @@
      "compliance_note": "PH: check barangay / DTI registration for home-based services.",
      "first_customers": [
       "Google Maps shops along main roads",
-      "Viber neighbourhood groups",
+      "Viber neighborhood groups",
       "Facebook Marketplace local groups"
      ]
     }
@@ -1163,7 +1163,7 @@
    "first_customers": [
     "Chamber of commerce newsletter",
     "Google Maps 4-star shops with unanswered reviews",
-    "Nextdoor neighbourhood posts",
+    "Nextdoor neighborhood posts",
     "Thumbtack local leads"
    ],
    "pitfalls": [
@@ -1189,7 +1189,7 @@
      "first_customers": [
       "Chamber of commerce newsletter",
       "Google Maps 4-star shops with unanswered reviews",
-      "Nextdoor neighbourhood posts"
+      "Nextdoor neighborhood posts"
      ]
     },
     "UK": {
@@ -1271,7 +1271,7 @@
    "pricing_hint": "$80 four-episode bundle",
    "first_customers": [
     "Google Maps 4-star shops with unanswered reviews",
-    "Nextdoor neighbourhood posts",
+    "Nextdoor neighborhood posts",
     "Thumbtack local leads",
     "Chamber of commerce newsletter"
    ],
@@ -1297,7 +1297,7 @@
      "compliance_note": "US: check local business-name registration and sales-tax rules.",
      "first_customers": [
       "Google Maps 4-star shops with unanswered reviews",
-      "Nextdoor neighbourhood posts",
+      "Nextdoor neighborhood posts",
       "Thumbtack local leads"
      ]
     },
@@ -1324,7 +1324,7 @@
      "compliance_note": "AU: check state council permits before door-to-door work.",
      "first_customers": [
       "Google Maps suburban strip shops",
-      "Nextdoor Australia neighbourhood posts",
+      "Nextdoor Australia neighborhood posts",
       "Local Facebook community groups"
      ]
     },
@@ -1334,7 +1334,7 @@
      "first_customers": [
       "WhatsApp business contact lists",
       "Google Maps shop clusters in heartland malls",
-      "Facebook neighbourhood groups for HDB estates"
+      "Facebook neighborhood groups for HDB estates"
      ]
     },
     "PH": {
@@ -1405,7 +1405,7 @@
    ],
    "pricing_hint": "$18/hour raw, $30 cleaned",
    "first_customers": [
-    "Nextdoor neighbourhood posts",
+    "Nextdoor neighborhood posts",
     "Thumbtack local leads",
     "Chamber of commerce newsletter",
     "Google Maps 4-star shops with unanswered reviews"
@@ -1431,7 +1431,7 @@
      "currency": "USD",
      "compliance_note": "US: check local business-name registration and sales-tax rules.",
      "first_customers": [
-      "Nextdoor neighbourhood posts",
+      "Nextdoor neighborhood posts",
       "Thumbtack local leads",
       "Chamber of commerce newsletter"
      ]
@@ -1458,7 +1458,7 @@
      "currency": "AUD",
      "compliance_note": "AU: check state council permits before door-to-door work.",
      "first_customers": [
-      "Nextdoor Australia neighbourhood posts",
+      "Nextdoor Australia neighborhood posts",
       "Local Facebook community groups",
       "Council newsletter sponsorships"
      ]
@@ -1468,7 +1468,7 @@
      "compliance_note": "SG: check ACRA registration before invoicing.",
      "first_customers": [
       "Google Maps shop clusters in heartland malls",
-      "Facebook neighbourhood groups for HDB estates",
+      "Facebook neighborhood groups for HDB estates",
       "WhatsApp business contact lists"
      ]
     }

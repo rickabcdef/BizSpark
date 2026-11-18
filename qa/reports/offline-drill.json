@@ -1,6 +1,6 @@
 {
   "task": "H-04 离线演练（飞行模式 + 托管关一整天 + manifest 404/脏 JSON/超大包）",
-  "generated_at": "2026-11-16 15:32:30",
+  "generated_at": "2026-11-18 23:07:45",
   "scenarios": [
     {
       "id": "D1",
@@ -298,5 +298,5 @@
   ],
   "known_issues": [],
   "status": "PASS",
-  "elapsed_s": 25.7
+  "elapsed_s": 27.3
 }

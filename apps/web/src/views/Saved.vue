@@ -9,10 +9,12 @@ import { onMounted, ref } from "vue";
 import { t } from "../i18n";
 import { listSaved } from "../bridge/cmd";
 import AppShell from "../components/AppShell.vue";
+import Icon from "../components/Icon.vue";
 
 interface SavedItem { id: string; title?: string; saved_at?: string; min_capital?: string }
 const items = ref<SavedItem[]>([]);
-const THUMBS = ["✦", "▣", "◈"];
+// 【POL-07】缩略图几何符号 → 统一线性图标（按列表序号循环）
+const THUMBS = ["cards", "doc", "bookmark"];
 
 onMounted(async () => {
   const r = await listSaved();
@@ -27,18 +29,18 @@ onMounted(async () => {
       <h1>{{ t("saved.h1") }}</h1>
       <p class="lead">{{ t("saved.lead") }}</p>
     </div>
-    <div v-if="items.length" class="grid" style="gap:12px">
+    <div v-if="items.length" class="grid grid-tight">
       <div v-for="(it, i) in items" :key="it.id" class="card mini">
-        <div class="thumb">{{ THUMBS[i % 3] }}</div>
+        <div class="thumb"><Icon :name="THUMBS[i % 3]" :size="22" /></div>
         <div class="mt">
           <h3>{{ it.title || it.id }}</h3>
           <p>{{ it.saved_at || "" }}<template v-if="it.min_capital"> · {{ it.min_capital }}</template></p>
         </div>
-        <router-link class="btn btn-ghost" style="height:34px;font-size:12px" :to="`/detail/${it.id}`">{{ t("saved.open") }}</router-link>
+        <router-link class="btn btn-ghost btn-sm" :to="`/detail/${it.id}`">{{ t("saved.open") }}</router-link>
       </div>
     </div>
     <div v-else class="empty card">
-      <div class="ico">❑</div>
+      <div class="ico"><Icon name="bookmark" :size="34" /></div>
       <p>{{ t("saved.empty") }}</p>
     </div>
     <div class="hr"></div>
@@ -46,6 +48,6 @@ onMounted(async () => {
       <router-link class="btn btn-primary" to="/quiz">{{ t("saved.find_new") }}&nbsp;→</router-link>
       <router-link class="btn btn-ghost" to="/results">{{ t("results.cta_back3") }}</router-link>
     </div>
-    <div class="foot-note">💡 {{ t("saved.foot") }}</div>
+    <div class="foot-note"><Icon name="bulb" :size="14" /> {{ t("saved.foot") }}</div>
   </AppShell>
 </template>

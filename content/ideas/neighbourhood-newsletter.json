@@ -4,8 +4,8 @@
  "ideas": [
   {
    "id": "bs-cnt-nbhd-newsletter-230",
-   "title": "Sponsored neighbourhood email newsletter",
-   "one_liner": "Local businesses pay for sponsor slots in a weekly neighbourhood email that residents actually open.",
+   "title": "Sponsored neighborhood email newsletter",
+   "one_liner": "Local businesses pay for sponsor slots in a weekly neighborhood email that residents actually open.",
    "min_capital": 195,
    "capital_tier": "<500",
    "hours_per_week": "10-25",
@@ -58,7 +58,7 @@
    ],
    "pricing_hint": "$200/month exclusive sponsor",
    "first_customers": [
-    "Nextdoor neighbourhood posts",
+    "Nextdoor neighborhood posts",
     "Thumbtack local leads",
     "Chamber of commerce newsletter",
     "Google Maps 4-star shops with unanswered reviews"
@@ -84,7 +84,7 @@
      "currency": "USD",
      "compliance_note": "US: check local business-name registration and sales-tax rules.",
      "first_customers": [
-      "Nextdoor neighbourhood posts",
+      "Nextdoor neighborhood posts",
       "Thumbtack local leads",
       "Chamber of commerce newsletter"
      ]
@@ -113,15 +113,15 @@
      "first_customers": [
       "WhatsApp business contact lists",
       "Google Maps shop clusters in heartland malls",
-      "Facebook neighbourhood groups for HDB estates"
+      "Facebook neighborhood groups for HDB estates"
      ]
     }
    }
   },
   {
    "id": "bs-cnt-nbhd-newsletter-231",
-   "title": "Sponsored neighbourhood email newsletter",
-   "one_liner": "Local businesses pay for sponsor slots in a weekly neighbourhood email that residents actually open.",
+   "title": "Sponsored neighborhood email newsletter",
+   "one_liner": "Local businesses pay for sponsor slots in a weekly neighborhood email that residents actually open.",
    "min_capital": 3710,
    "capital_tier": "2k-10k",
    "hours_per_week": "<10",
@@ -179,7 +179,7 @@
     "Thumbtack local leads",
     "Chamber of commerce newsletter",
     "Google Maps 4-star shops with unanswered reviews",
-    "Nextdoor neighbourhood posts"
+    "Nextdoor neighborhood posts"
    ],
    "pitfalls": [
     "Never spam — confirm double opt-in",
@@ -239,7 +239,7 @@
      "compliance_note": "SG: check ACRA registration before invoicing.",
      "first_customers": [
       "Google Maps shop clusters in heartland malls",
-      "Facebook neighbourhood groups for HDB estates",
+      "Facebook neighborhood groups for HDB estates",
       "WhatsApp business contact lists"
      ]
     },
@@ -248,7 +248,7 @@
      "compliance_note": "PH: check barangay / DTI registration for home-based services.",
      "first_customers": [
       "Google Maps shops along main roads",
-      "Viber neighbourhood groups",
+      "Viber neighborhood groups",
       "Facebook Marketplace local groups"
      ]
     }
@@ -256,8 +256,8 @@
   },
   {
    "id": "bs-cnt-nbhd-newsletter-232",
-   "title": "Sponsored neighbourhood email newsletter (north)",
-   "one_liner": "Local businesses pay for sponsor slots in a weekly neighbourhood email that residents actually open.",
+   "title": "Sponsored neighborhood email newsletter (north)",
+   "one_liner": "Local businesses pay for sponsor slots in a weekly neighborhood email that residents actually open.",
    "min_capital": 385,
    "capital_tier": "<500",
    "hours_per_week": "<10",
@@ -314,7 +314,7 @@
    "first_customers": [
     "Chamber of commerce newsletter",
     "Google Maps 4-star shops with unanswered reviews",
-    "Nextdoor neighbourhood posts",
+    "Nextdoor neighborhood posts",
     "Thumbtack local leads"
    ],
    "pitfalls": [
@@ -340,7 +340,7 @@
      "first_customers": [
       "Chamber of commerce newsletter",
       "Google Maps 4-star shops with unanswered reviews",
-      "Nextdoor neighbourhood posts"
+      "Nextdoor neighborhood posts"
      ]
     },
     "UK": {
@@ -367,14 +367,14 @@
      "first_customers": [
       "Council newsletter sponsorships",
       "Google Maps suburban strip shops",
-      "Nextdoor Australia neighbourhood posts"
+      "Nextdoor Australia neighborhood posts"
      ]
     },
     "SG": {
      "currency": "SGD",
      "compliance_note": "SG: check ACRA registration before invoicing.",
      "first_customers": [
-      "Facebook neighbourhood groups for HDB estates",
+      "Facebook neighborhood groups for HDB estates",
       "WhatsApp business contact lists",
       "Google Maps shop clusters in heartland malls"
      ]
@@ -383,7 +383,7 @@
      "currency": "PHP",
      "compliance_note": "PH: check barangay / DTI registration for home-based services.",
      "first_customers": [
-      "Viber neighbourhood groups",
+      "Viber neighborhood groups",
       "Facebook Marketplace local groups",
       "Barangay community referrals"
      ]
@@ -392,8 +392,8 @@
   },
   {
    "id": "bs-cnt-nbhd-newsletter-233",
-   "title": "Sponsored neighbourhood email newsletter (east)",
-   "one_liner": "Local businesses pay for sponsor slots in a weekly neighbourhood email that residents actually open.",
+   "title": "Sponsored neighborhood email newsletter (east)",
+   "one_liner": "Local businesses pay for sponsor slots in a weekly neighborhood email that residents actually open.",
    "min_capital": 3905,
    "capital_tier": "2k-10k",
    "hours_per_week": "10-25",
@@ -449,7 +449,7 @@
    "pricing_hint": "$200/month exclusive sponsor",
    "first_customers": [
     "Google Maps 4-star shops with unanswered reviews",
-    "Nextdoor neighbourhood posts",
+    "Nextdoor neighborhood posts",
     "Thumbtack local leads",
     "Chamber of commerce newsletter"
    ],
@@ -475,7 +475,7 @@
      "compliance_note": "US: check local business-name registration and sales-tax rules.",
      "first_customers": [
       "Google Maps 4-star shops with unanswered reviews",
-      "Nextdoor neighbourhood posts",
+      "Nextdoor neighborhood posts",
       "Thumbtack local leads"
      ]
     },
@@ -502,7 +502,7 @@
      "compliance_note": "AU: check state council permits before door-to-door work.",
      "first_customers": [
       "Google Maps suburban strip shops",
-      "Nextdoor Australia neighbourhood posts",
+      "Nextdoor Australia neighborhood posts",
       "Local Facebook community groups"
      ]
     },
@@ -512,7 +512,7 @@
      "first_customers": [
       "WhatsApp business contact lists",
       "Google Maps shop clusters in heartland malls",
-      "Facebook neighbourhood groups for HDB estates"
+      "Facebook neighborhood groups for HDB estates"
      ]
     },
     "PH": {
@@ -528,8 +528,8 @@
   },
   {
    "id": "bs-cnt-nbhd-newsletter-234",
-   "title": "Sponsored neighbourhood email newsletter",
-   "one_liner": "Local businesses pay for sponsor slots in a weekly neighbourhood email that residents actually open.",
+   "title": "Sponsored neighborhood email newsletter",
+   "one_liner": "Local businesses pay for sponsor slots in a weekly neighborhood email that residents actually open.",
    "min_capital": 130,
    "capital_tier": "<500",
    "hours_per_week": "10-25",
@@ -584,7 +584,7 @@
    ],
    "pricing_hint": "$25 classified listing",
    "first_customers": [
-    "Nextdoor neighbourhood posts",
+    "Nextdoor neighborhood posts",
     "Thumbtack local leads",
     "Chamber of commerce newsletter",
     "Google Maps 4-star shops with unanswered reviews"
@@ -610,7 +610,7 @@
      "currency": "USD",
      "compliance_note": "US: check local business-name registration and sales-tax rules.",
      "first_customers": [
-      "Nextdoor neighbourhood posts",
+      "Nextdoor neighborhood posts",
       "Thumbtack local leads",
       "Chamber of commerce newsletter"
      ]
@@ -637,7 +637,7 @@
      "currency": "AUD",
      "compliance_note": "AU: check state council permits before door-to-door work.",
      "first_customers": [
-      "Nextdoor Australia neighbourhood posts",
+      "Nextdoor Australia neighborhood posts",
       "Local Facebook community groups",
       "Council newsletter sponsorships"
      ]
@@ -647,7 +647,7 @@
      "compliance_note": "SG: check ACRA registration before invoicing.",
      "first_customers": [
       "Google Maps shop clusters in heartland malls",
-      "Facebook neighbourhood groups for HDB estates",
+      "Facebook neighborhood groups for HDB estates",
       "WhatsApp business contact lists"
      ]
     },
@@ -657,15 +657,15 @@
      "first_customers": [
       "Barangay community referrals",
       "Google Maps shops along main roads",
-      "Viber neighbourhood groups"
+      "Viber neighborhood groups"
      ]
     }
    }
   },
   {
    "id": "bs-cnt-nbhd-newsletter-235",
-   "title": "Sponsored neighbourhood email newsletter",
-   "one_liner": "Local businesses pay for sponsor slots in a weekly neighbourhood email that residents actually open.",
+   "title": "Sponsored neighborhood email newsletter",
+   "one_liner": "Local businesses pay for sponsor slots in a weekly neighborhood email that residents actually open.",
    "min_capital": 1140,
    "capital_tier": "500-2k",
    "hours_per_week": "full",
@@ -722,7 +722,7 @@
     "Thumbtack local leads",
     "Chamber of commerce newsletter",
     "Google Maps 4-star shops with unanswered reviews",
-    "Nextdoor neighbourhood posts"
+    "Nextdoor neighborhood posts"
    ],
    "pitfalls": [
     "Never spam — confirm double opt-in",
@@ -782,7 +782,7 @@
      "compliance_note": "PH: check barangay / DTI registration for home-based services.",
      "first_customers": [
       "Google Maps shops along main roads",
-      "Viber neighbourhood groups",
+      "Viber neighborhood groups",
       "Facebook Marketplace local groups"
      ]
     }
@@ -790,8 +790,8 @@
   },
   {
    "id": "bs-cnt-nbhd-newsletter-236",
-   "title": "Sponsored neighbourhood email newsletter",
-   "one_liner": "Local businesses pay for sponsor slots in a weekly neighbourhood email that residents actually open.",
+   "title": "Sponsored neighborhood email newsletter",
+   "one_liner": "Local businesses pay for sponsor slots in a weekly neighborhood email that residents actually open.",
    "min_capital": 1235,
    "capital_tier": "500-2k",
    "hours_per_week": "<10",
@@ -846,7 +846,7 @@
    "first_customers": [
     "Chamber of commerce newsletter",
     "Google Maps 4-star shops with unanswered reviews",
-    "Nextdoor neighbourhood posts",
+    "Nextdoor neighborhood posts",
     "Thumbtack local leads"
    ],
    "pitfalls": [
@@ -872,7 +872,7 @@
      "first_customers": [
       "Chamber of commerce newsletter",
       "Google Maps 4-star shops with unanswered reviews",
-      "Nextdoor neighbourhood posts"
+      "Nextdoor neighborhood posts"
      ]
     },
     "UK": {
@@ -890,14 +890,14 @@
      "first_customers": [
       "Council newsletter sponsorships",
       "Google Maps suburban strip shops",
-      "Nextdoor Australia neighbourhood posts"
+      "Nextdoor Australia neighborhood posts"
      ]
     },
     "PH": {
      "currency": "PHP",
      "compliance_note": "PH: check barangay / DTI registration for home-based services.",
      "first_customers": [
-      "Viber neighbourhood groups",
+      "Viber neighborhood groups",
       "Facebook Marketplace local groups",
       "Barangay community referrals"
      ]
@@ -906,8 +906,8 @@
   },
   {
    "id": "bs-cnt-nbhd-newsletter-237",
-   "title": "Sponsored neighbourhood email newsletter",
-   "one_liner": "Local businesses pay for sponsor slots in a weekly neighbourhood email that residents actually open.",
+   "title": "Sponsored neighborhood email newsletter",
+   "one_liner": "Local businesses pay for sponsor slots in a weekly neighborhood email that residents actually open.",
    "min_capital": 1330,
    "capital_tier": "500-2k",
    "hours_per_week": "full",
@@ -963,7 +963,7 @@
    "pricing_hint": "$25 classified listing",
    "first_customers": [
     "Google Maps 4-star shops with unanswered reviews",
-    "Nextdoor neighbourhood posts",
+    "Nextdoor neighborhood posts",
     "Thumbtack local leads",
     "Chamber of commerce newsletter"
    ],
@@ -989,7 +989,7 @@
      "compliance_note": "US: check local business-name registration and sales-tax rules.",
      "first_customers": [
       "Google Maps 4-star shops with unanswered reviews",
-      "Nextdoor neighbourhood posts",
+      "Nextdoor neighborhood posts",
       "Thumbtack local leads"
      ]
     },
@@ -1016,7 +1016,7 @@
      "compliance_note": "AU: check state council permits before door-to-door work.",
      "first_customers": [
       "Google Maps suburban strip shops",
-      "Nextdoor Australia neighbourhood posts",
+      "Nextdoor Australia neighborhood posts",
       "Local Facebook community groups"
      ]
     },
@@ -1025,7 +1025,7 @@
      "compliance_note": "SG: check ACRA registration before invoicing.",
      "first_customers": [
       "Google Maps shop clusters in heartland malls",
-      "Facebook neighbourhood groups for HDB estates",
+      "Facebook neighborhood groups for HDB estates",
       "WhatsApp business contact lists"
      ]
     },
@@ -1042,8 +1042,8 @@
   },
   {
    "id": "bs-cnt-nbhd-newsletter-238",
-   "title": "Sponsored neighbourhood email newsletter",
-   "one_liner": "Local businesses pay for sponsor slots in a weekly neighbourhood email that residents actually open.",
+   "title": "Sponsored neighborhood email newsletter",
+   "one_liner": "Local businesses pay for sponsor slots in a weekly neighborhood email that residents actually open.",
    "min_capital": 1430,
    "capital_tier": "500-2k",
    "hours_per_week": "<10",
@@ -1097,7 +1097,7 @@
    ],
    "pricing_hint": "$60 per weekly sponsor slot",
    "first_customers": [
-    "Nextdoor neighbourhood posts",
+    "Nextdoor neighborhood posts",
     "Thumbtack local leads",
     "Chamber of commerce newsletter",
     "Google Maps 4-star shops with unanswered reviews"
@@ -1123,7 +1123,7 @@
      "currency": "USD",
      "compliance_note": "US: check local business-name registration and sales-tax rules.",
      "first_customers": [
-      "Nextdoor neighbourhood posts",
+      "Nextdoor neighborhood posts",
       "Thumbtack local leads",
       "Chamber of commerce newsletter"
      ]
@@ -1150,7 +1150,7 @@
      "currency": "AUD",
      "compliance_note": "AU: check state council permits before door-to-door work.",
      "first_customers": [
-      "Nextdoor Australia neighbourhood posts",
+      "Nextdoor Australia neighborhood posts",
       "Local Facebook community groups",
       "Council newsletter sponsorships"
      ]
@@ -1161,15 +1161,15 @@
      "first_customers": [
       "Barangay community referrals",
       "Google Maps shops along main roads",
-      "Viber neighbourhood groups"
+      "Viber neighborhood groups"
      ]
     }
    }
   },
   {
    "id": "bs-cnt-nbhd-newsletter-239",
-   "title": "Sponsored neighbourhood email newsletter",
-   "one_liner": "Local businesses pay for sponsor slots in a weekly neighbourhood email that residents actually open.",
+   "title": "Sponsored neighborhood email newsletter",
+   "one_liner": "Local businesses pay for sponsor slots in a weekly neighborhood email that residents actually open.",
    "min_capital": 4485,
    "capital_tier": "2k-10k",
    "hours_per_week": "<10",
@@ -1227,7 +1227,7 @@
     "Thumbtack local leads",
     "Chamber of commerce newsletter",
     "Google Maps 4-star shops with unanswered reviews",
-    "Nextdoor neighbourhood posts"
+    "Nextdoor neighborhood posts"
    ],
    "pitfalls": [
     "Never spam — confirm double opt-in",
@@ -1288,7 +1288,7 @@
      "first_customers": [
       "WhatsApp business contact lists",
       "Google Maps shop clusters in heartland malls",
-      "Facebook neighbourhood groups for HDB estates"
+      "Facebook neighborhood groups for HDB estates"
      ]
     },
     "PH": {
@@ -1296,7 +1296,7 @@
      "compliance_note": "PH: check barangay / DTI registration for home-based services.",
      "first_customers": [
       "Google Maps shops along main roads",
-      "Viber neighbourhood groups",
+      "Viber neighborhood groups",
       "Facebook Marketplace local groups"
      ]
     }
@@ -1304,8 +1304,8 @@
   },
   {
    "id": "bs-cnt-nbhd-newsletter-240",
-   "title": "Sponsored neighbourhood email newsletter",
-   "one_liner": "Local businesses pay for sponsor slots in a weekly neighbourhood email that residents actually open.",
+   "title": "Sponsored neighborhood email newsletter",
+   "one_liner": "Local businesses pay for sponsor slots in a weekly neighborhood email that residents actually open.",
    "min_capital": 1625,
    "capital_tier": "500-2k",
    "hours_per_week": "<10",
@@ -1360,7 +1360,7 @@
    "first_customers": [
     "Chamber of commerce newsletter",
     "Google Maps 4-star shops with unanswered reviews",
-    "Nextdoor neighbourhood posts",
+    "Nextdoor neighborhood posts",
     "Thumbtack local leads"
    ],
    "pitfalls": [
@@ -1386,7 +1386,7 @@
      "first_customers": [
       "Chamber of commerce newsletter",
       "Google Maps 4-star shops with unanswered reviews",
-      "Nextdoor neighbourhood posts"
+      "Nextdoor neighborhood posts"
      ]
     },
     "UK": {
@@ -1411,7 +1411,7 @@
      "currency": "PHP",
      "compliance_note": "PH: check barangay / DTI registration for home-based services.",
      "first_customers": [
-      "Viber neighbourhood groups",
+      "Viber neighborhood groups",
       "Facebook Marketplace local groups",
       "Barangay community referrals"
      ]

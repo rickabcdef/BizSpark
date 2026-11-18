@@ -901,6 +901,18 @@ bizspark/
 > - **UI 基线同步**：`ui/{cn,en}/html/02~09` 各页侧栏删除 `04-detail.html` 菜单项（`01-welcome.html` 为营销首页无此菜单）；基线内「看一页方案」卡片按钮保留。
 > - **验收**：中文侧栏 7 项无「一页方案」、英文同构；从结果页点卡片按钮正常进入方案页、面包屑「一页方案」正常显示；导出链路不受影响。
 >
+> **【PM 2026-11-18 · 上架前界面打磨（执行卡 POL-01~10，V1.0）】** 功能零改动，只打磨配色/图标/排版/文案，达到海外商店上架观感标准。执行卡见 docs/BizSpark_上架前界面打磨执行卡V1.0.docx（中英双包，第一版对外仅 en-US；zh-CN 仅老板自检）。落地与门禁结果：
+> - **配色**：style.css :root 全套换中性冷白系（--bg #F5F7F9 等），主橙压深至 #E85A2B，圆角 16/12/8、阴影收敛；**金色角色移除**（--gold 不再定义，.why 左边框与 hero eyebrow 改 --accent）；.warn 暖金黄改橙系警示；暖灰系全部冷灰化。
+> - **图标**：新建 components/Icon.vue（18×18、描边 1.8px、currentColor），侧栏 8 项、问卷资金/时间/资源/风险选项、详情四卡头、锁/灯泡/勾/空态全部线性化；六国国旗 emoji 按 D-03 保留。
+> - **首页 POL-02**：对齐定稿图——左栏 eyebrow→大标题→两段共情文字→按钮→信任行；右栏 hook 斜体橙句+一张白卡；founder note 长段自述与 lead 段不再渲染（welcome.note_*、welcome.lead 键语义保留在语言包）。
+> - **设置 POL-09**：「跟随系统外观」「匿名崩溃记录」两行模板注释隐藏（脚本/读取逻辑/语言包键全保留，V2 取消注释即恢复）；界面只露国家/路径/每月检查 3 行。
+> - **点子库 POL-08**：时间线写死英文日期/状态进语言包（library.tl*_date 新键，两包同步）；why_p 拆短改写。
+> - **文案**：第 4 节 14 个键中英打磨；占位符与键差集 0（两包各 267 键）。
+> - **拼写**：content 展示字段与 baseline_v1.json 美式清理（neighbourhood→neighborhood 等）；**slug/ID/文件名零改动**（文本级替换，未重生成基线，分布校验 PASS）。
+> - **门禁**：T1~T9 全过——全量回归 12/12 PASS（engine/detail_export/state/license/content/packaging/contract/price/ui/libcheck/perf/drill）；contract 测试同步 hero-foot 槽 11-17 下线决定；多视口（5 档×2 语言×5 页）横向溢出 0。
+> - **环境**：.venv 补装 reportlab（5.1.0，detail_export/engine 等单测依赖）。
+> - **遗留**：Activate.vue 内部仍有 emoji/✓（页面不挂路由不露出，按 POL-10 留待 V2 启用前统一）；ui/{cn,en} HTML 基线本轮未同步打磨（执行卡唯一基线=Vue 工程）。
+
 > **【PM 修订 2026-11-17 · 同日更正：侧栏「一页方案」菜单项加回，并升级为真入口】** 老板随后决定菜单项要保留。恢复时一并修掉"假入口"根因——菜单落点不再固定 `/detail`（会被重定向回结果页），改为动态解析：
 > - `AppShell.vue` items 加回 `{ to: "/detail", key: "nav.detail" }`（侧栏恢复 8 项）；模板落点改为 `detailTo` 动态值：**① 取 `state.last_result.ideas[0]`（最近一次诊断第 1 名）→ `/detail/:id`；② 无缓存但有已存答案 → 现算一次 `diagnose` 取第 1 名；③ 都没有（首次启动）→ 落到问卷 `/quiz`（先答题才有方案可看）**。
 > - 回到结果页/问卷时（`watch route.path`）重新解析一次，保证改完答案点菜单进的是新点子的方案。

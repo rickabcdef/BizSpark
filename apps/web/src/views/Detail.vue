@@ -13,6 +13,7 @@ import AppShell from "../components/AppShell.vue";
 import KvRow from "../components/KvRow.vue";
 import StepList from "../components/StepList.vue";
 import PaperPreview from "../components/PaperPreview.vue";
+import Icon from "../components/Icon.vue";
 
 interface CostItem { item?: string; amount?: string }
 interface IdeaDetail {
@@ -65,7 +66,7 @@ function goExport(): void {
       <div>
         <!-- 卡 1：起步成本 -->
         <div class="card sec">
-          <div class="sec-h"><span class="b">$</span><h3>{{ t("detail.costs_h") }}</h3></div>
+          <div class="sec-h"><span class="b"><Icon name="coin" :size="14" /></span><h3>{{ t("detail.costs_h") }}</h3></div>
           <KvRow v-for="(c, i) in costRows" :key="i" :k="c.item || ''" :v="c.amount || ''"
             :bold-key="c.item === d?.costs?.[d.costs.length - 1]?.item" />
           <KvRow v-if="d.total_to_first_invoice" :k="t('detail.costs_total')" :v="d.total_to_first_invoice" :accent="true" :bold-key="true" />
@@ -77,12 +78,12 @@ function goExport(): void {
         </div>
         <!-- 卡 3：第一批客户从哪来 -->
         <div class="card sec">
-          <div class="sec-h"><span class="b">↗</span><h3>{{ t("detail.channels_h") }}</h3></div>
+          <div class="sec-h"><span class="b"><Icon name="pin" :size="14" /></span><h3>{{ t("detail.channels_h") }}</h3></div>
           <div class="pill-list"><span v-for="(c, i) in channelItems" :key="i" class="pill">{{ c }}</span></div>
         </div>
         <!-- 卡 4：三个坑 -->
         <div class="card sec">
-          <div class="sec-h"><span class="b">!</span><h3>{{ t("detail.pitfalls_h") }}</h3></div>
+          <div class="sec-h"><span class="b"><Icon name="alert" :size="14" /></span><h3>{{ t("detail.pitfalls_h") }}</h3></div>
           <div v-for="(p, i) in pitfallItems" :key="i" class="warn">{{ p }}</div>
         </div>
       </div>
@@ -90,17 +91,17 @@ function goExport(): void {
         <div class="card pad">
           <div class="eyebrow">{{ t("detail.paper_eyebrow") }}</div>
           <PaperPreview :title="d.title || ''" />
-          <div class="tiny" style="margin:18px 0 14px">{{ t("detail.paper_note") }}</div>
-          <button class="btn btn-primary" style="width:100%" type="button" @click="goExport">{{ t("detail.cta_export") }}&nbsp;↓</button>
-          <router-link class="btn btn-ghost" style="width:100%;margin-top:10px" to="/results">← {{ t("detail.cta_back") }}</router-link>
+          <div class="tiny paper-note">{{ t("detail.paper_note") }}</div>
+          <button class="btn btn-primary btn-block" type="button" @click="goExport">{{ t("detail.cta_export") }}&nbsp;↓</button>
+          <router-link class="btn btn-ghost btn-block mt10" to="/results">← {{ t("detail.cta_back") }}</router-link>
         </div>
-        <div class="foot-note">🔒 {{ t("detail.privacy") }}</div>
+        <div class="foot-note"><Icon name="lock" :size="14" /> {{ t("detail.privacy") }}</div>
       </div>
     </div>
     <div v-else class="empty card">
-      <div class="ico">▤</div>
+      <div class="ico"><Icon name="doc" :size="34" /></div>
       <p>{{ t("results.empty") }}</p>
-      <router-link class="btn btn-ghost" style="margin-top:18px" to="/results">← {{ t("detail.cta_back") }}</router-link>
+      <router-link class="btn btn-ghost mt18" to="/results">← {{ t("detail.cta_back") }}</router-link>
     </div>
   </AppShell>
 </template>

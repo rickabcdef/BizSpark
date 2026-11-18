@@ -9,6 +9,7 @@ import { computed, onMounted, ref, watch } from "vue";
 import { useRoute } from "vue-router";
 import { t } from "../i18n";
 import { checkLibrary, diagnose, getState } from "../bridge/cmd";
+import Icon from "./Icon.vue";
 
 const route = useRoute();
 // 【PM 2026-11-16】F09：侧栏版本行跟随实际库版本（月度合并后自动变化）；check_library 失败静默保留回退值
@@ -18,16 +19,16 @@ onMounted(async () => {
   if (r && r.version) libVer.value = String(r.version);
 });
 const items = [
-  { to: "/", ico: "◈", key: "nav.start" },
-  { to: "/quiz", ico: "◎", key: "nav.quiz" },
-  { to: "/results", ico: "✦", key: "nav.results" },
+  { to: "/", ico: "home", key: "nav.start" },
+  { to: "/quiz", ico: "search", key: "nav.quiz" },
+  { to: "/results", ico: "cards", key: "nav.results" },
   // 【PM 2026-11-17】老板要求保留「一页方案」菜单项：落点由 detailTo 动态解析，不再空转
   { to: "/detail", ico: "▤", key: "nav.detail" },
-  { to: "/export", ico: "↓", key: "nav.export" },
-  { to: "/saved", ico: "❑", key: "nav.saved" },
-  { to: "/library", ico: "↻", key: "nav.library" },
+  { to: "/export", ico: "download", key: "nav.export" },
+  { to: "/saved", ico: "bookmark", key: "nav.saved" },
+  { to: "/library", ico: "refresh", key: "nav.library" },
   // 【PM 2026-11-16】激活功能下线：Activate 入口移除（恢复时加回此行）
-  { to: "/settings", ico: "⚙", key: "nav.settings" },
+  { to: "/settings", ico: "gear", key: "nav.settings" },
 ];
 /**
  * 「一页方案」菜单的落点：方案页必须带点子 id（3 个点子 3 份方案），
@@ -70,7 +71,7 @@ const crumbPage = computed(() => {
         <router-link v-for="i in items" :key="i.to" class="nav-i"
           :to="i.to === '/detail' ? detailTo : i.to"
           :class="{ on: i.to === '/detail' ? route.path.startsWith('/detail') : route.path === i.to }">
-          <span class="ico">{{ i.ico }}</span>{{ t(i.key) }}
+          <span class="ico"><Icon :name="i.ico" :size="17" /></span>{{ t(i.key) }}
         </router-link>
       </nav>
       <div class="side-foot">
@@ -83,7 +84,6 @@ const crumbPage = computed(() => {
         <div class="crumb">BizSpark&nbsp;&nbsp;/&nbsp;&nbsp;<b>{{ crumbPage }}</b></div>
         <div class="top-right">
           <div class="chip"><span class="dot"></span>{{ t("side.chip") }}</div>
-          <div class="avatar">BS</div>
         </div>
       </div>
       <div class="content"><slot /></div>
