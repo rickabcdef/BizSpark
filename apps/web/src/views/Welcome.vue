@@ -73,10 +73,12 @@ const isEn = computed(() => locale() === "en-US");
 .hero.hero-fluid {
   --pad-x: clamp(28px, 4.6vw, 150px);
   --pad-y: clamp(12px, 1.9vh, 62px);
-  --col-gap: clamp(40px, 6.6vw, 220px);
-  --side-w: clamp(296px, 29vw, 780px);
+  --col-gap: clamp(40px, 5.8vw, 200px);
+  /* 【大气化 2026-11-18】右栏 29vw→34vw：白卡更大（设计稿卡约占 35-40% 宽） */
+  --side-w: clamp(320px, 34vw, 900px);
 
-  --fs-h1: clamp(40px, min(6.6vw, 11vh), 200px);
+  /* 校准：保证第三行「你只需要【一个点子】」（10.5 字宽）完整放进左栏（约 51vw），对齐设计稿 4.2vw 比例 */
+  --fs-h1: clamp(30px, min(4.7vw, 9.5vh), 130px);
   --fs-lead: clamp(15px, min(1.3vw, 1.9vh), 30px);
   --fs-eyebrow: clamp(10px, 0.82vw, 17px);
   --fs-price: clamp(11px, 0.86vw, 19px);
@@ -143,13 +145,14 @@ const isEn = computed(() => locale() === "en-US");
 /* 白卡吃掉右栏剩余高度 → 整栏一块大面板，而不是右下角一张小纸片 */
 .hero-side > .hero-mock { flex: 1 1 auto; min-height: 0; display: flex; }
 
-/* 【POL-02】右栏 hook：斜体橙句，右对齐（定稿图右上角），随右栏宽度伸缩 */
+/* 【大气化 2026-11-18】hook 对齐设计稿：紧贴白卡左上方、与卡连成一体（不再孤悬右上角） */
 .hero-fluid .hero-hook {
-  align-self: flex-end;
-  text-align: right;
+  align-self: flex-start;
+  text-align: left;
+  padding-left: clamp(4px, 1.2cqw, 24px);
   font-style: italic;
   font-weight: 700;
-  font-size: clamp(13px, 1.15vw, 26px);
+  font-size: clamp(14px, 1.45vw, 30px);
   letter-spacing: 0.02em;
   color: var(--accent);
   z-index: 2;
@@ -171,7 +174,8 @@ const isEn = computed(() => locale() === "en-US");
   margin-right: calc(-1 * clamp(0px, 1.5vw, 32px));
   align-self: stretch;
   margin-top: clamp(14px, 2.1vh, 56px);
-  transform: rotate(-2.2deg);
+  /* 【大气化】倾斜加大 -2.2°→-3.4°：设计稿的动感悬浮 */
+  transform: rotate(-3.4deg);
   transform-origin: bottom right;
   z-index: 1;
 }
@@ -185,8 +189,8 @@ const isEn = computed(() => locale() === "en-US");
   border-radius: clamp(12px, 3.2cqw, 30px);
   border: 1px solid rgba(255, 255, 255, 0.6);
   box-shadow:
-    0 clamp(12px, 3cqw, 46px) clamp(30px, 7cqw, 100px) rgba(4, 16, 34, 0.55),
-    0 clamp(2px, 0.7cqw, 12px) clamp(8px, 1.8cqw, 26px) rgba(4, 16, 34, 0.4);
+    0 clamp(14px, 3.4cqw, 52px) clamp(36px, 8cqw, 110px) rgba(4, 16, 34, 0.62),
+    0 clamp(2px, 0.7cqw, 12px) clamp(8px, 1.8cqw, 26px) rgba(4, 16, 34, 0.45);
 }
 /* 白卡身后的冷光晕：把卡片从深底上"托"起来，干净而不花 */
 .hero-fluid .hero-mock::after {
@@ -201,8 +205,13 @@ const isEn = computed(() => locale() === "en-US");
 }
 .mock-cap {
   font-size: clamp(10px, 3.1cqw, 21px);
-  letter-spacing: 0.18em;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
+  color: #64788A;
+  font-weight: 600;
+  /* 【大气化】设计稿卡头：小标下一通栏细线，卡片有"样张"的仪式感 */
+  padding-bottom: clamp(7px, 1.9cqw, 18px);
+  border-bottom: 1px solid rgba(16, 24, 32, 0.14);
 }
 .hero-fluid .mock-idea {
   border: 0;
@@ -256,8 +265,10 @@ const isEn = computed(() => locale() === "en-US");
   overflow: hidden;
   text-overflow: ellipsis;
 }
-/* 卡片顶部标识带加厚，像产品样张而不是文档缩略图 */
-.hero-fluid .mock-idea::before { height: clamp(3px, 0.9cqw, 9px); }
+/* 【大气化】样卡顶部不再压橙色条（设计稿卡顶无色条，靠 kicker+细线定调） */
+.hero-fluid .mock-idea::before { display: none; }
+/* 卡内编号色随新卡头提亮一档 */
+.hero-fluid .mock-idea .idea-no { color: #8CA1B4; }
 
 /* ---------- 底栏 ---------- */
 .hero-fluid .hero-foot {

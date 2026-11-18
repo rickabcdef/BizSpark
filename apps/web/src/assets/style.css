@@ -233,6 +233,9 @@ h3{font-size:15.5px;font-weight:700;letter-spacing:-.2px}
   radial-gradient(760px 520px at 8% 92%,#3A2A28 0%,transparent 60%),var(--deep);color:#fff;position:relative;overflow:hidden;display:flex;flex-direction:column}
 .hero::before{content:"";position:absolute;inset:0;opacity:.16;
   background-image:radial-gradient(rgba(255,255,255,.5) .7px,transparent .7px);background-size:26px 26px}
+/* 【大气化 2026-11-18】四周暗角：深底有进深感，不再是一块平板色 */
+.hero::after{content:"";position:absolute;inset:0;pointer-events:none;z-index:0;
+  background:radial-gradient(120% 90% at 50% 42%,transparent 55%,rgba(2,10,22,.42) 100%)}
 .orb{position:absolute;border-radius:50%;filter:blur(2px)}
 .orb.a{width:340px;height:340px;border:1px solid rgba(255,255,255,.13);right:8%;top:16%}
 .orb.b{width:220px;height:220px;background:radial-gradient(circle,rgba(232,90,43,.35),transparent 70%);right:16%;top:26%}
