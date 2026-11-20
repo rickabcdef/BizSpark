@@ -14,6 +14,7 @@ const PATHS: Record<string, string> = {
   doc: '<rect x="4" y="2.5" width="10" height="13" rx="1.6"/><path d="M6.5 6h5M6.5 9h5M6.5 12h3"/>',
   download: '<path d="M9 3v8.6M5.6 8.6 9 12l3.4-3.4"/><path d="M3.5 14.7h11"/>',
   bookmark: '<path d="M5 2.8h8v12.4l-4-3.4-4 3.4z"/>',
+  user: '<circle cx="9" cy="6.2" r="2.9"/><path d="M3.6 15.6c.7-2.6 2.9-4 5.4-4s4.7 1.4 5.4 4"/>',
   refresh: '<path d="M14.6 9a5.6 5.6 0 1 1-1.7-4"/><path d="M14.8 3.2v3.6h-3.6"/>',
   gear: '<circle cx="9" cy="9" r="2.6"/><path d="M9 2.6v2M9 13.4v2M2.6 9h2M13.4 9h2M4.4 4.4l1.4 1.4M12.2 12.2l1.4 1.4M13.6 4.4l-1.4 1.4M5.8 12.2l-1.4 1.4"/>',
   /* ---- 问卷：资金档 ---- */
@@ -45,6 +46,7 @@ const PATHS: Record<string, string> = {
   lock: '<rect x="4.4" y="7.8" width="9.2" height="7" rx="1.6"/><path d="M6.4 7.8V6a2.6 2.6 0 0 1 5.2 0v1.8"/>',
   bulb: '<path d="M9 2.4a5 5 0 0 1 2.5 9.3c-.5.3-.8.7-.8 1.2h-3.4c0-.5-.3-.9-.8-1.2A5 5 0 0 1 9 2.4z"/><path d="M7.4 15.4h3.2"/>',
   check: '<path d="M3.4 9.6 7.4 13.4 14.6 5.4"/>',
+  "check-circle": '<circle cx="9" cy="9" r="6.6"/><path d="m6.4 9.2 1.8 1.8 3.4-3.6"/>',
   /* ---- 原型补齐：终端 / 文件 / 操作 ---- */
   monitor: '<rect x="2.5" y="3.5" width="13" height="9" rx="1.5"/><path d="M6 15.5h6M9 12.5v3"/>',
   folder: '<path d="M3 5.5h4l1.5 1.8h6.5a1 1 0 0 1 1 1v5.7a1 1 0 0 1-1 1H3z"/><path d="M3 5.5v8.7a1 1 0 0 0 1 1h12"/>',

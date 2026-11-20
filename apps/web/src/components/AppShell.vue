@@ -41,8 +41,8 @@ watch(
 type Tab = { to: string; ico: string; key: string; match: (p: string) => boolean };
 const tabs: Tab[] = [
   { to: "/", ico: "home", key: "nav.start", match: (p) => p === "/" },
-  { to: "/quiz", ico: "search", key: "nav.quiz", match: (p) => p === "/quiz" || p === "/results" || p.startsWith("/detail") },
-  { to: "/saved", ico: "bookmark", key: "nav.saved", match: (p) => ["/saved", "/library", "/export"].includes(p) },
+  { to: "/quiz", ico: "bulb", key: "nav.quiz", match: (p) => p === "/quiz" || p === "/results" || p.startsWith("/detail") },
+  { to: "/saved", ico: "user", key: "nav.saved", match: (p) => ["/saved", "/library", "/export"].includes(p) },
   { to: "/settings", ico: "gear", key: "nav.settings", match: (p) => p === "/settings" },
 ];
 

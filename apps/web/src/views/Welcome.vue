@@ -1,7 +1,7 @@
 <!-- Welcome.vue — 对齐最新版原型 01-welcome。
      脚本（renderPriceSlots 价格槽、isEn 语言判断）全部保留。
      基线：深色品牌 hero；顶栏品牌徽标 + 版本；眉题 / 标题 / 两段共情 / 斜体 hook；
-     主次按钮；两条信任胶囊（含 hero-trust 价格槽）；样例白卡（插画 + 三条要点 + 三标签）；注脚。 -->
+     主次按钮；两条信任胶囊；样例白卡（插画 + 三条要点 + 三标签）；注脚。 -->
 <script setup lang="ts">
 import { computed, onMounted } from "vue";
 import { locale, t } from "../i18n";
@@ -41,9 +41,8 @@ void isEn;
       </div>
 
       <div class="trust">
-        <span class="item"><span class="ico"><Icon name="check" :size="18" /></span><span data-price-slot="hero-trust"></span></span>
-        <span class="item"><span class="ico"><Icon name="check" :size="18" /></span>{{ t("welcome.offline") }}</span>
-        <span class="item"><span class="ico"><Icon name="check" :size="18" /></span>{{ t("welcome.never_leave") }}</span>
+        <span class="item"><span class="ico"><Icon name="check-circle" :size="18" /></span>{{ t("welcome.offline") }}</span>
+        <span class="item"><span class="ico"><Icon name="check-circle" :size="18" /></span>{{ t("welcome.never_leave") }}</span>
       </div>
 
       <div class="hero-card">
