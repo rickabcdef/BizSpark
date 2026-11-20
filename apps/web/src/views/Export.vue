@@ -48,7 +48,9 @@ onMounted(() => {
         <Icon name="close" :size="22" />
       </button>
       <div class="title">{{ t("nav.export") }}</div>
-      <span style="width:40px"></span>
+      <button class="icon-btn" type="button" aria-label="帮助">
+        <Icon name="help" :size="22" />
+      </button>
     </div>
 
     <div class="content" style="padding-top:6px">
