@@ -51,7 +51,9 @@ if (!fs.existsSync(viteBin)) {
 }
 const vite = spawn(
   process.execPath,
-  [viteBin, "--config", "vite.dev.config.mjs", "--port", String(WEB_PORT), "--strictPort"],
+  // --host 0.0.0.0：同时监听局域网网卡，老板手机连同一 WiFi 可直接访问
+  //（http://<本机局域网IP>:端口）；引擎桥接走 Vite 同源代理，手机侧无需直连
+  [viteBin, "--config", "vite.dev.config.mjs", "--host", "0.0.0.0", "--port", String(WEB_PORT), "--strictPort"],
   {
     cwd: path.join(REPO, "apps", "web"),
     env: {
