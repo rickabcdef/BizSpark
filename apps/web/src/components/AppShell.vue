@@ -1,7 +1,7 @@
 <!-- AppShell.vue — 对齐最新版静态原型外壳
      手机：导航贴底深墨蓝横条；宽屏：导航转左侧竖向栏。
-     四主菜单：首页 / 找点子 / 我的 / 设置；results·detail·export 归「找点子」，
-     library 归「我的」。脚本逻辑（库版本检查、方案落点解析、路由监听）全部保留。 -->
+     四主菜单：首页 / 找点子 / 我的 / 设置；quiz·results·detail 归「找点子」，
+     saved·library·export 归「我的」。脚本逻辑（库版本检查、方案落点解析、路由监听）全部保留。 -->
 <script setup lang="ts">
 import { computed, onMounted, ref, watch } from "vue";
 import { useRoute } from "vue-router";
@@ -41,7 +41,7 @@ watch(
 type Tab = { to: string; ico: string; key: string; match: (p: string) => boolean };
 const tabs: Tab[] = [
   { to: "/", ico: "home", key: "nav.start", match: (p) => p === "/" },
-  { to: "/quiz", ico: "search", key: "nav.quiz", match: (p) => ["/quiz", "/results", "/detail"].includes(p) },
+  { to: "/quiz", ico: "search", key: "nav.quiz", match: (p) => p === "/quiz" || p === "/results" || p.startsWith("/detail") },
   { to: "/saved", ico: "bookmark", key: "nav.saved", match: (p) => ["/saved", "/library", "/export"].includes(p) },
   { to: "/settings", ico: "gear", key: "nav.settings", match: (p) => p === "/settings" },
 ];
