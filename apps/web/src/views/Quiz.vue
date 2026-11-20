@@ -16,7 +16,7 @@ const router = useRouter();
 
 /* ---- 题目表（写死，不许加题/改序/自由文本） ---- */
 interface Opt { value: string; icon?: string; iconName?: string; title: string; desc?: string }
-interface Q { key: string; step: number; titleKey: string; hintKey: string; multi: boolean; opts: Opt[] }
+interface Q { key: string; step: number; titleKey: string; hintKey: string; multi: boolean; titleIcon?: string; opts: Opt[] }
 const QUIZ: Q[] = [
   { key: "country", step: 1, titleKey: "quiz.q1.title", hintKey: "quiz.q1.hint", multi: false, opts: [
     { value: "US", icon: "🇺🇸", title: "quiz.q1.o_us", desc: "USD" },
@@ -26,7 +26,7 @@ const QUIZ: Q[] = [
     { value: "SG", icon: "🇸🇬", title: "quiz.q1.o_sg", desc: "SGD" },
     { value: "PH", icon: "🇵🇭", title: "quiz.q1.o_ph", desc: "PHP" },
   ] },
-  { key: "capital", step: 2, titleKey: "quiz.q2.title", hintKey: "quiz.q2.hint", multi: false, opts: [
+  { key: "capital", step: 2, titleKey: "quiz.q2.title", hintKey: "quiz.q2.hint", multi: false, titleIcon: "bag", opts: [
     { value: "<500", iconName: "wallet", title: "quiz.q2.o1", desc: "quiz.q2.o1d" },
     { value: "500-2k", iconName: "cash", title: "quiz.q2.o2", desc: "quiz.q2.o2d" },
     { value: "2k-10k", iconName: "card", title: "quiz.q2.o3", desc: "quiz.q2.o3d" },
@@ -135,7 +135,7 @@ const canNext = computed(() => {
   if (q.value.multi) return touched.value;
   return p !== undefined && p !== "";
 });
-const titleIcon = computed(() => q.value.opts[0]?.iconName || "pin");
+const titleIcon = computed(() => q.value.titleIcon || q.value.opts[0]?.iconName || "pin");
 </script>
 
 <template>
@@ -156,8 +156,7 @@ const titleIcon = computed(() => q.value.opts[0]?.iconName || "pin");
       <div class="steps">
         <span v-for="(s, i) in STEPS" :key="s" class="step-dot"
           :class="{ done: i < idx, current: i === idx }">
-          <Icon v-if="i < idx" name="check" :size="13" />
-          <template v-else>{{ i + 1 }}</template>
+          <Icon v-if="i <= idx" name="check" :size="13" />
         </span>
       </div>
       <h1>{{ t("quiz.h1") }}</h1>

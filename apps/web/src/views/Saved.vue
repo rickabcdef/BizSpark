@@ -44,7 +44,7 @@ onMounted(async () => {
           </div>
           <div class="saved-body">
             <div class="saved-title">{{ it.title || it.id }}</div>
-            <div class="saved-meta">{{ it.min_capital || it.saved_at || "" }}</div>
+            <div class="saved-meta">{{ [t("saved.meta_prefix"), it.min_capital || it.saved_at].filter(Boolean).join(" · ") }}</div>
             <div class="open-btn">
               <router-link :to="`/detail/${it.id}`">{{ t("saved.open") }}</router-link>
             </div>

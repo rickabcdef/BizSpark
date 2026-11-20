@@ -85,7 +85,7 @@ onMounted(() => {
         <div><h3>{{ t("export.inside_h") }}</h3><p>{{ t("export.inside_p") }}</p></div>
       </div>
       <div class="card info-card">
-        <span class="ico"><Icon name="card" :size="22" /></span>
+        <span class="ico"><Icon name="list" :size="22" /></span>
         <div><h3>{{ t("export.extras_h") }}</h3><p>{{ t("export.extras_p") }}</p></div>
       </div>
     </div>

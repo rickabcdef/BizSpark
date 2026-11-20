@@ -12,6 +12,7 @@ import Icon from "../components/Icon.vue";
 interface CostItem { item?: string; amount?: string }
 interface IdeaDetail {
   id?: string; title?: string; rank?: number; summary?: string;
+  tags?: string[];
   costs?: CostItem[]; total_to_first_invoice?: string;
   steps?: string[]; channels?: string[]; pitfalls?: string[];
 }
@@ -23,6 +24,8 @@ const costRows = computed(() => (d.value?.costs || []).filter((c) => c.item && c
 const stepItems = computed(() => (d.value?.steps || []).map((s) => String(s)));
 const channelItems = computed(() => d.value?.channels || []);
 const pitfallItems = computed(() => d.value?.pitfalls || []);
+const costRowIcons = ["phone", "pen", "upload"];
+function costIcon(i: number): string { return costRowIcons[i] || "coin"; }
 
 onMounted(async () => {
   d.value = await getIdea(String(route.params.id || ""));
@@ -65,17 +68,20 @@ function goExport(): void {
         <div class="eyebrow">{{ t("detail.eyebrow", { rank: String((d?.rank ?? 1)).padStart(2, "0"), total: "03" }) }}</div>
         <h1 style="font-size:28px;font-weight:800;margin:6px 0 6px">{{ d?.title || t("detail.loading") }}</h1>
         <p class="lead">{{ d?.summary || "" }}</p>
+        <div v-if="d?.tags?.length" class="tags">
+          <span v-for="(tg, i) in d.tags" :key="i" class="tag">{{ tg }}</span>
+        </div>
       </div>
 
       <!-- 成本卡 -->
       <div v-if="costRows.length" class="card">
-        <div class="card-title"><span class="ico"><Icon name="coin" :size="20" /></span>{{ t("detail.costs_h") }}</div>
+        <div class="card-title"><span class="ico"><Icon name="clock" :size="20" /></span>{{ t("detail.costs_h") }}</div>
         <div v-for="(c, i) in costRows" :key="i" class="row">
-          <span class="row-main"><Icon name="coin" :size="18" />{{ c.item }}</span>
+          <span class="row-main"><Icon :name="costIcon(i)" :size="18" />{{ c.item }}</span>
           <span class="row-val">{{ c.amount }}</span>
         </div>
         <div v-if="d?.total_to_first_invoice" class="cost-total">
-          <Icon name="coin" :size="18" />{{ t("detail.costs_total") }} · {{ d.total_to_first_invoice }}
+          <Icon name="receipt" :size="18" />{{ t("detail.costs_total") }} · {{ d.total_to_first_invoice }}
         </div>
       </div>
 
@@ -85,13 +91,13 @@ function goExport(): void {
         <div v-for="(s, i) in stepItems" :key="i" class="step">
           <span class="num">{{ String(i + 1).padStart(2, "0") }}</span>
           <span class="step-text">{{ s }}</span>
-          <span class="check"><Icon name="check" :size="18" /></span>
+          <span class="check"><Icon name="check-circle" :size="18" /></span>
         </div>
       </div>
 
       <!-- 第一批客户 -->
       <div v-if="channelItems.length" class="card">
-        <div class="card-title"><span class="ico"><Icon name="handshake" :size="20" /></span>{{ t("detail.channels_h") }}</div>
+        <div class="card-title"><span class="ico"><Icon name="user" :size="20" /></span>{{ t("detail.channels_h") }}</div>
         <div class="source-tags">
           <span v-for="(c, i) in channelItems" :key="i" class="tag">{{ c }}</span>
         </div>
@@ -101,7 +107,7 @@ function goExport(): void {
       <div v-if="pitfallItems.length" class="card">
         <div class="card-title"><span class="ico"><Icon name="alert" :size="20" /></span>{{ t("detail.pitfalls_h") }}</div>
         <div v-for="(p, i) in pitfallItems" :key="i" class="pitfall">
-          <span class="ico"><Icon name="alert" :size="16" /></span>{{ p }}
+          <span class="ico"><Icon name="info" :size="16" /></span>{{ p }}
         </div>
       </div>
 

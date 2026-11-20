@@ -22,7 +22,7 @@ const TIMELINE: Tl[] = [
 
 const SWAPS = [
   { ico: "refresh", k: "library.k_fail", v: "library.v_silent" },
-  { ico: "handshake", k: "library.k_saved", v: "library.v_untouched" },
+  { ico: "wifi", k: "library.k_saved", v: "library.v_untouched" },
   { ico: "card", k: "library.k_cost", v: "library.v_static" },
 ];
 
@@ -80,7 +80,7 @@ onMounted(async () => {
       </div>
 
       <div v-if="toast" class="toast">
-        <span class="check"><Icon name="check" :size="18" /></span>{{ t("library.toast") }}
+        <span class="check"><Icon name="check-circle" :size="18" /></span>{{ t("library.toast") }}
       </div>
     </div>
   </AppShell>
