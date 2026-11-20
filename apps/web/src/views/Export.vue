@@ -1,18 +1,16 @@
-<!-- Export.vue — B-09（负责人：B）
-     对应 en/html/05-export.html。F06 完成页：
-     大绿勾 → eyebrow → H1 → 说明 → 文件行 → 两个真按钮 → 两张说明卡
-     AL-A3：Open folder 只在系统能力真实可用时渲染（静态基线不摆空壳；
-            浏览器试玩/开发模式下没有系统文件管理器能力 → 不渲染）。
-     样式全部来自 assets/style.css。 -->
+<!-- Export.vue — 对齐最新版原型 05-export。
+     脚本（runExport 自动导出、canOpenFolder 能力判断、openFolder、价格槽渲染）全部保留。
+     基线：居中成功环 + 眉题 + 标题 + 说明；文件卡；主按钮打开已存；并排两次按钮；两张说明卡。 -->
 <script setup lang="ts">
 import { computed, onMounted, ref } from "vue";
+import { useRouter } from "vue-router";
 import { t } from "../i18n";
 import { exportPlan, openExportFolder } from "../bridge/cmd";
 import { renderPriceSlots } from "../bridge/price";
 import AppShell from "../components/AppShell.vue";
-import Tag from "../components/Tag.vue";
 import Icon from "../components/Icon.vue";
 
+const router = useRouter();
 const fileName = ref<string>("");
 const fileMeta = ref<string>("");
 const done = ref(false);
@@ -25,7 +23,6 @@ const canOpenFolder = computed(() => {
 });
 
 async function runExport(): Promise<void> {
-  // 路径由 A 的另存为对话框决定（B 只传目标 id；path 占位空串由 A 端接管对话框）
   const r = await exportPlan(String(history.state?.ideaId || ""), "");
   if (r) {
     fileName.value = r.file_name || "";
@@ -46,31 +43,48 @@ onMounted(() => {
 
 <template>
   <AppShell>
-    <div class="card center-card">
-      <div class="big-check"><Icon name="check" :size="32" /></div>
-      <div class="eyebrow">{{ t("export.eyebrow") }}</div>
-      <h1>{{ t("export.h1") }}</h1>
-      <p class="lead lead-center">{{ t("export.lead") }}</p>
-      <div v-if="done" class="file-row">
-        <div class="file-ico"><Icon name="doc" :size="18" /></div>
-        <div class="flex1">
-          <div class="fn">{{ fileName }}</div>
-          <div class="fs">{{ fileMeta }}</div>
-        </div>
-        <Tag :green="true"><Icon name="check" :size="12" />{{ t("export.saved_tag") }}</Tag>
-      </div>
-      <div class="btn-row center-row">
-        <router-link class="btn btn-primary" to="/saved">{{ t("export.open_saved") }}</router-link>
-        <button v-if="done && canOpenFolder" class="btn btn-ghost" type="button" @click="openFolder">{{ t("export.open_folder") }}</button>
-        <router-link class="btn btn-ghost" to="/quiz">{{ t("export.another") }}</router-link>
-      </div>
-      <div class="hr"></div>
-      <div class="tiny" data-price-slot="export-note"></div>
+    <div class="topbar">
+      <button class="icon-btn" type="button" aria-label="关闭" @click="router.push('/')">
+        <Icon name="close" :size="22" />
+      </button>
+      <div class="title">{{ t("nav.export") }}</div>
+      <span style="width:40px"></span>
     </div>
-    <div class="card pad maxw620">
-      <div class="grid g2 g2tight">
-        <div><h3>{{ t("export.inside_h") }}</h3><p class="tiny mt6">{{ t("export.inside_p") }}</p></div>
-        <div><h3>{{ t("export.extras_h") }}</h3><p class="tiny mt6">{{ t("export.extras_p") }}</p></div>
+
+    <div class="content" style="padding-top:6px">
+      <div class="export-head">
+        <div class="success-ring"><span class="check-big"><Icon name="check" :size="38" /></span></div>
+        <div class="eyebrow">{{ t("export.eyebrow") }}</div>
+        <h1>{{ t("export.h1") }}</h1>
+        <p class="lead">{{ t("export.lead") }}</p>
+      </div>
+
+      <div class="card" style="margin-top:20px">
+        <div v-if="done" class="file-card">
+          <span class="file-ico"><Icon name="doc" :size="24" /></span>
+          <div class="file-main">
+            <div class="file-name">{{ fileName }}</div>
+            <div class="file-meta">{{ fileMeta }}</div>
+          </div>
+          <span class="badge-saved">{{ t("export.saved_tag") }}</span>
+        </div>
+        <router-link class="btn btn-primary" style="margin-top:16px" to="/saved">{{ t("export.open_saved") }}&nbsp;→</router-link>
+        <div class="btn-row" style="margin-top:12px">
+          <button v-if="done && canOpenFolder" class="btn btn-secondary" type="button" @click="openFolder">
+            <Icon name="folder" :size="18" />{{ t("export.open_folder") }}</button>
+          <router-link class="btn btn-secondary" to="/quiz">
+            <Icon name="search" :size="18" />{{ t("export.another") }}</router-link>
+        </div>
+        <div class="tiny mt10" data-price-slot="export-note"></div>
+      </div>
+
+      <div class="card info-card">
+        <span class="ico"><Icon name="doc" :size="22" /></span>
+        <div><h3>{{ t("export.inside_h") }}</h3><p>{{ t("export.inside_p") }}</p></div>
+      </div>
+      <div class="card info-card">
+        <span class="ico"><Icon name="card" :size="22" /></span>
+        <div><h3>{{ t("export.extras_h") }}</h3><p>{{ t("export.extras_p") }}</p></div>
       </div>
     </div>
   </AppShell>

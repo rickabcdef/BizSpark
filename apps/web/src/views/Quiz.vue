@@ -1,11 +1,7 @@
-<!-- Quiz.vue — B-03/B-06（负责人：B）
-     对应 en/html/02-quiz.html。F02 问卷交互（§3.1 题目表，写死不改序）：
-     - 基线是两个按钮：← Back 与 Next question（AL-B 卡第 6 条：不要自动跳题）
-     - Q4 多选；Nothing yet 清空其余，选其他项自动取消它
-     - Back 返回上一题不丢答案；从 Results 回来带上次答案预选
-     - 每题选择后 save_answers 静默落库；未选时主推进置灰、不弹校验
-     - Q5 完成不发请求不显示 loading，直接路由 Results 并并行 diagnose
-     样式全部来自 assets/style.css。 -->
+<!-- Quiz.vue — 对齐最新版原型 02-quiz。
+     交互脚本（题目表、答案预选、多选清空、落库、Q5 直跳结果并并行 diagnose）全部保留不改。
+     模板按基线：顶栏返回 + 页名 + 本机 chip；q-head 眉题 / 步骤点 / 标题 / 引导；
+     题卡标题 + 选项 + 并排按钮；两条 notice。 -->
 <script setup lang="ts">
 import { computed, onMounted, ref } from "vue";
 import { useRouter } from "vue-router";
@@ -18,7 +14,7 @@ import Icon from "../components/Icon.vue";
 
 const router = useRouter();
 
-/* ---- 题目表（§3.1：写死，不许加题/改序/自由文本） ---- */
+/* ---- 题目表（写死，不许加题/改序/自由文本） ---- */
 interface Opt { value: string; icon?: string; iconName?: string; title: string; desc?: string }
 interface Q { key: string; step: number; titleKey: string; hintKey: string; multi: boolean; opts: Opt[] }
 const QUIZ: Q[] = [
@@ -64,11 +60,10 @@ const q = computed(() => QUIZ[idx.value]);
 const picked = computed(() => answers.value[q.value.key]);
 /** 多选页：点过任意选项（含 Nothing yet）后才允许 Next */
 const touched = ref(false);
-/** PM 2026-11-14：资金档金额按所选国家货币展示（fx 来自 get_state.fx） */
+/** 资金档金额按所选国家货币展示（fx 来自 get_state.fx） */
 const fxMap = ref<Record<string, number>>({});
 
 onMounted(async () => {
-  // Back/Change answers 预选：读上次答案（损坏则默认重来，不弹窗）
   const st = await getState();
   const last = (st && (st.last_answers as Record<string, string | string[]>)) || null;
   if (last) answers.value = { ...last };
@@ -99,11 +94,11 @@ function pick(o: Opt): void {
   const k = q.value.key;
   if (q.value.multi) {
     if (o.value === "nothing") {
-      answers.value[k] = []; // Nothing yet 清掉其余
+      answers.value[k] = [];
     } else {
       const cur = Array.isArray(answers.value[k]) ? [...(answers.value[k] as string[])] : [];
       const i = cur.indexOf(o.value);
-      if (i >= 0) cur.splice(i, 1); // 再点别的选项自动取消它
+      if (i >= 0) cur.splice(i, 1);
       else cur.push(o.value);
       answers.value[k] = cur;
     }
@@ -111,7 +106,7 @@ function pick(o: Opt): void {
     void saveAnswers({ [k]: answers.value[k] });
   } else {
     answers.value[k] = o.value;
-    void saveAnswers({ [k]: o.value }); // F：每题落库（静默）
+    void saveAnswers({ [k]: o.value });
   }
 }
 
@@ -121,7 +116,6 @@ function advance(): void {
     idx.value += 1;
     return;
   }
-  // Q5 完成：不发"计算中"请求、不显示 loading，直接路由并并行 diagnose
   const all = { ...answers.value };
   void diagnose(all);
   router.push("/results");
@@ -141,51 +135,66 @@ const canNext = computed(() => {
   if (q.value.multi) return touched.value;
   return p !== undefined && p !== "";
 });
+const titleIcon = computed(() => q.value.opts[0]?.iconName || "pin");
 </script>
 
 <template>
   <AppShell>
-    <div class="page-head">
+    <div class="topbar">
+      <button class="icon-btn" type="button" aria-label="返回" @click="back">
+        <Icon name="chevron" :size="22" />
+      </button>
+      <div class="title">{{ t("nav.quiz") }}</div>
+      <div class="side">
+        <span style="width:8px;height:8px;border-radius:50%;background:var(--success);display:inline-block;"></span>
+        {{ t("side.chip") }}
+      </div>
+    </div>
+
+    <div class="q-head">
       <div class="eyebrow">{{ t("quiz.eyebrow") }}</div>
+      <div class="steps">
+        <span v-for="(s, i) in STEPS" :key="s" class="step-dot"
+          :class="{ done: i < idx, current: i === idx }">
+          <Icon v-if="i < idx" name="check" :size="13" />
+          <template v-else>{{ i + 1 }}</template>
+        </span>
+      </div>
       <h1>{{ t("quiz.h1") }}</h1>
       <p class="lead">{{ t("quiz.lead") }}</p>
     </div>
-    <div class="stepper">
-      <template v-for="(s, i) in STEPS" :key="i">
-        <div class="step" :class="{ done: i < idx, on: i === idx }">
-          <span class="num"><template v-if="i < idx"><Icon name="check" :size="12" /></template><template v-else>{{ i + 1 }}</template></span>{{ t(s) }}
+
+    <div class="content" style="padding-top:0">
+      <div class="q-card">
+        <div class="q-title">
+          <span class="ico" style="color:var(--accent)"><Icon :name="titleIcon" :size="22" /></span>
+          {{ t(q.titleKey) }}
         </div>
-        <div v-if="i < STEPS.length - 1" class="step-line" :class="{ done: i < idx }"></div>
-      </template>
-    </div>
-    <div class="quiz-wrap">
-      <div class="card q-card">
-        <div class="q-count">{{ t("quiz.count", { n: String(idx + 1).padStart(2, "0"), name: t(STEPS[idx]) }) }}</div>
-        <div class="q-title">{{ t(q.titleKey) }}</div>
-        <div class="muted tiny">{{ t(q.hintKey) }}</div>
-        <div class="opts">
-          <template v-for="o in q.opts" :key="o.value">
-            <OptionCard :icon="o.icon" :icon-name="o.iconName" :title="optTitle(o)"
-              :desc="o.desc ? (o.desc.startsWith('quiz.') ? t(o.desc) : o.desc) : undefined"
-              :selected="selOf(o)" :radio="!q.multi" @pick="pick(o)" />
-          </template>
-          <OptionCard v-if="q.multi" icon-name="box" :title="t('quiz.q4.nothing')"
-            :selected="Array.isArray(picked) && picked.length === 0 && touched" :radio="false"
-            @pick="pick({ value: 'nothing', title: '' })" />
-        </div>
-        <div class="hr"></div>
-        <div class="btn-row">
-          <button class="btn btn-ghost" type="button" @click="back">← {{ t("common.back") }}</button>
-          <button class="btn btn-primary" type="button" :disabled="!canNext" @click="advance">
-            {{ idx === QUIZ.length - 1 ? t("quiz.finish") : t("quiz.next") }}&nbsp;→</button>
-          </div>
+        <p class="q-sub">{{ t(q.hintKey) }}</p>
       </div>
-      <div>
-        <div class="card aside-note"><div class="ico"><Icon name="lock" :size="22" /></div><h3>{{ t("quiz.note1_h") }}</h3>
-          <p>{{ t("quiz.note1_p") }}</p></div>
-        <div class="card aside-note deep">
-          <div class="ico"><Icon name="bulb" :size="22" /></div><h3>{{ t("quiz.note2_h") }}</h3>
-          <p>{{ t("quiz.note2_p") }}</p></div>
+
+      <template v-for="o in q.opts" :key="o.value">
+        <OptionCard :icon="o.icon" :icon-name="o.iconName" :title="optTitle(o)"
+          :desc="o.desc ? (o.desc.startsWith('quiz.') ? t(o.desc) : o.desc) : undefined"
+          :selected="selOf(o)" :radio="!q.multi" @pick="pick(o)" />
+      </template>
+      <OptionCard v-if="q.multi" icon-name="box" :title="t('quiz.q4.nothing')"
+        :selected="Array.isArray(picked) && picked.length === 0 && touched" :radio="false"
+        @pick="pick({ value: 'nothing', title: '' })" />
+
+      <div class="btn-row" style="margin-top:4px">
+        <button class="btn btn-secondary" type="button" @click="back">← {{ t("common.back") }}</button>
+        <button class="btn btn-primary" type="button" :disabled="!canNext" @click="advance">
+          {{ idx === QUIZ.length - 1 ? t("quiz.finish") : t("quiz.next") }}&nbsp;→</button>
+      </div>
+
+      <div class="notice" style="margin-top:18px">
+        <span class="ico"><Icon name="lock" :size="20" /></span>
+        <div><strong style="color:var(--ink)">{{ t("quiz.note1_h") }}</strong><br>{{ t("quiz.note1_p") }}</div>
+      </div>
+      <div class="notice" style="margin-top:12px">
+        <span class="ico"><Icon name="bulb" :size="20" /></span>
+        <div><strong style="color:var(--ink)">{{ t("quiz.note2_h") }}</strong><br>{{ t("quiz.note2_p") }}</div>
       </div>
     </div>
   </AppShell>

@@ -1,16 +1,12 @@
-<!-- Settings.vue — B-09/B-10（负责人：B）
-     对应 en/html/09-settings.html。F11 设置页（本轮按基线改为「只读状态一览」）：
-     - eyebrow: Everything local, at a glance
-     - 第一版展示 3 行只读 .state-pill（国家 / 路径 / 每月检查）；跟随外观、崩溃记录两行已注释收起，逻辑与键保留
-     - AL-B2：语言行、Change…、Check for updates、View licence 全部删除
-     - 数据只从 get_settings 读，界面不提供任何修改入口（AL-F1）
-     样式全部来自 assets/style.css。 -->
+<!-- Settings.vue — 对齐最新版原型 08-settings。
+     脚本（getSettings 读取、各设置变量、国家标签计算）全部保留；界面按基线裁剪为三卡。
+     基线：gear 右上；方案存哪卡；隐私卡（标题 / 短句 / 盾形脚注）；关于卡（版本 + 稳定版徽章同行）。 -->
 <script setup lang="ts">
 import { computed, onMounted, ref } from "vue";
 import { t } from "../i18n";
 import { getSettings } from "../bridge/cmd";
 import AppShell from "../components/AppShell.vue";
-import KvRow from "../components/KvRow.vue";
+import Icon from "../components/Icon.vue";
 
 const country = ref("US");
 const savePath = ref("Documents / BizSpark");
@@ -36,53 +32,43 @@ onMounted(async () => {
     if (typeof s.crash_notes === "boolean") crashNotes.value = s.crash_notes;
   }
 });
+void countryLabel; void savePath; void libCheck; void followSystem; void crashNotes;
 </script>
 
 <template>
   <AppShell>
-    <div class="page-head">
+    <div class="set-head">
+      <span class="gear"><Icon name="gear" :size="26" /></span>
       <div class="eyebrow">{{ t("settings.eyebrow") }}</div>
       <h1>{{ t("settings.h1") }}</h1>
       <p class="lead">{{ t("settings.lead") }}</p>
     </div>
-    <div class="grid g2 g2-start">
-      <div class="card pad">
-        <div class="set-row">
-          <div><div class="st">{{ t("settings.country") }}</div><div class="sd">{{ t("settings.country_d") }}</div></div>
-          <span class="state-pill">{{ countryLabel }}</span>
-        </div>
-        <div class="set-row">
-          <div><div class="st">{{ t("settings.path") }}</div><div class="sd">{{ savePath }}</div></div>
-          <span class="state-pill">{{ savePath }}</span>
-        </div>
-        <div class="set-row">
-          <div><div class="st">{{ t("settings.libcheck") }}</div><div class="sd">{{ t("settings.libcheck_d") }}</div></div>
-          <span class="state-pill">{{ libCheck ? t("settings.v_auto") : t("settings.v_off") }}</span>
-        </div>
-        <!-- 【POL 2026-11-18 · 第一版收起】跟随系统外观：界面不展示，变量 / 读取逻辑 / 语言包键全部保留，第二版按需恢复。
-        <div class="set-row">
-          <div><div class="st">{{ t("settings.appearance") }}</div><div class="sd">{{ t("settings.appearance_d") }}</div></div>
-          <span class="state-pill">{{ followSystem ? t("settings.v_follow") : t("settings.v_off") }}</span>
-        </div>
-        -->
-        <!-- 【POL 2026-11-18 · 第一版收起】匿名崩溃记录：界面不展示，变量 / 本地日志逻辑 / 语言包键全部保留，第二版按需恢复。
-        <div class="set-row">
-          <div><div class="st">{{ t("settings.crash") }}</div><div class="sd">{{ t("settings.crash_d") }}</div></div>
-          <span class="state-pill">{{ crashNotes ? t("settings.v_on") : t("settings.v_closed") }}</span>
-        </div>
-        -->
+
+    <div class="content" style="padding-top:0">
+      <div class="card set-row">
+        <span class="ico"><Icon name="folder" :size="22" /></span>
+        <div><h3>{{ t("settings.path") }}</h3><p>{{ t("settings.path_desc") }}</p></div>
       </div>
-      <div>
-        <div class="card pad">
-          <div class="eyebrow">{{ t("settings.privacy_eyebrow") }}</div>
-          <h2 class="privacy-h2">{{ t("settings.privacy_h") }}</h2>
-          <p class="tiny mt12">{{ t("settings.privacy_p") }}</p>
+
+      <div class="card">
+        <div class="set-row">
+          <span class="ico"><Icon name="shield" :size="22" /></span>
+          <div><h3>{{ t("settings.privacy_eyebrow") }}</h3></div>
         </div>
-        <div class="card pad mt16">
-          <h3>{{ t("settings.about_h") }}</h3>
-          <KvRow :k="t('settings.about_ver')" :v="ver" />
-          <div class="tiny mt14">{{ t("settings.about_foot") }}</div>
+        <div class="privacy-title">{{ t("settings.privacy_h") }}</div>
+        <p class="privacy-desc">{{ t("settings.privacy_short") }}</p>
+        <div class="privacy-foot">
+          <Icon name="shield" :size="18" />{{ t("settings.privacy_foot") }}
         </div>
+      </div>
+
+      <div class="card">
+        <h3 style="font-size:18px;font-weight:700;margin-bottom:14px">{{ t("settings.about_h") }}</h3>
+        <div class="about-row">
+          <span>{{ t("settings.about_ver") }}</span>
+          <span class="about-val"><span class="val">{{ ver }}</span><span class="badge-stable">{{ t("settings.stable") }}</span></span>
+        </div>
+        <p class="about-desc">{{ t("settings.about_foot") }}</p>
       </div>
     </div>
   </AppShell>

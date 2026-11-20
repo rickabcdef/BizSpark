@@ -45,6 +45,13 @@ const PATHS: Record<string, string> = {
   lock: '<rect x="4.4" y="7.8" width="9.2" height="7" rx="1.6"/><path d="M6.4 7.8V6a2.6 2.6 0 0 1 5.2 0v1.8"/>',
   bulb: '<path d="M9 2.4a5 5 0 0 1 2.5 9.3c-.5.3-.8.7-.8 1.2h-3.4c0-.5-.3-.9-.8-1.2A5 5 0 0 1 9 2.4z"/><path d="M7.4 15.4h3.2"/>',
   check: '<path d="M3.4 9.6 7.4 13.4 14.6 5.4"/>',
+  /* ---- 原型补齐：终端 / 文件 / 操作 ---- */
+  monitor: '<rect x="2.5" y="3.5" width="13" height="9" rx="1.5"/><path d="M6 15.5h6M9 12.5v3"/>',
+  folder: '<path d="M3 5.5h4l1.5 1.8h6.5a1 1 0 0 1 1 1v5.7a1 1 0 0 1-1 1H3z"/><path d="M3 5.5v8.7a1 1 0 0 0 1 1h12"/>',
+  chevron: '<path d="M6.5 4.5 11 9l-4.5 4.5"/>',
+  close: '<path d="M5 5l8 8M13 5l-8 8"/>',
+  help: '<circle cx="9" cy="9" r="6.2"/><path d="M9 6.4v.2M6.8 7.9c.2-1.3 1.2-2 2.2-2 1.1 0 2 .7 2.2 1.8.3 1.6-1.6 2-1.6 3.6"/>',
+  star: '<path d="M9 3l1.7 3.5 3.8.6-2.7 2.7.6 3.8L9 11.7 5.6 13.6l.6-3.8L3.5 7.1l3.8-.6z"/>',
 };
 
 const props = defineProps<{ name: string; size?: number }>();
