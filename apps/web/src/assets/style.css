@@ -212,6 +212,8 @@ button{font-family:inherit;cursor:pointer;border:0;background:none;color:inherit
 
 /* ---------- 首页 hero（深色品牌块） ---------- */
 .hero{background:linear-gradient(160deg,var(--deep) 0%,var(--deep-2) 60%,var(--deep) 100%);color:#fff}
+/* 品牌行嵌在 .content 内：左右边距交给 content，不再叠加 topbar 自身左右 padding，使 badge 与下方正文左基线对齐 */
+.hero .topbar{padding-left:0;padding-right:0}
 .hero .brand{display:flex;align-items:center;gap:12px}
 .brand-badge{width:48px;height:48px;border-radius:50%;background:#fff;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:26px;color:var(--accent)}
 .brand-name{font-size:22px;font-weight:800}
