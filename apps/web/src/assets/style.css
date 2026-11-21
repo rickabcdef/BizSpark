@@ -168,7 +168,7 @@ button{font-family:inherit;cursor:pointer;border:0;background:none;color:inherit
   position:fixed;bottom:0;left:50%;transform:translateX(-50%);
   width:100%;max-width:480px;z-index:20;
   background:var(--deep);border-top:1px solid rgba(255,255,255,.14);
-  border-radius:16px 16px 0 0;
+  border-radius:12px 12px 0 0;
   display:flex;justify-content:space-around;align-items:center;padding:10px 12px calc(10px + env(safe-area-inset-bottom));
 }
 @media (min-width:720px){.tabbar{max-width:760px}}
