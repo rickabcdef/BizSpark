@@ -42,7 +42,6 @@ void countryLabel; void savePath; void libCheck; void followSystem; void crashNo
     </div>
 
     <div class="set-head">
-      <div class="eyebrow">{{ t("settings.eyebrow") }}</div>
       <h1>{{ t("settings.h1") }}</h1>
       <p class="lead">{{ t("settings.lead") }}</p>
     </div>
