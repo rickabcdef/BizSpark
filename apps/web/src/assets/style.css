@@ -56,7 +56,7 @@ button{font-family:inherit;cursor:pointer;border:0;background:none;color:inherit
 /* ---------- 顶部栏 ---------- */
 .topbar{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:18px 20px 10px}
 .topbar .title{font-size:22px;font-weight:700}
-.topbar .side{display:flex;align-items:center;gap:8px;color:var(--ink-2);font-size:14px}
+.topbar .side{display:flex;align-items:center;gap:8px;color:var(--ink-2);font-size:14px;margin-left:auto}
 .icon-btn{display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:var(--radius-sm);color:var(--ink);background:transparent;border:none;cursor:pointer}
 
 /* ---------- 标题区 ---------- */
@@ -225,7 +225,8 @@ button{font-family:inherit;cursor:pointer;border:0;background:none;color:inherit
 .hook{margin-top:22px;color:var(--accent);font-size:20px;font-weight:700;font-style:italic;text-decoration:underline;text-decoration-color:rgba(232,90,43,.5);text-underline-offset:6px}
 .hero-actions{margin-top:28px}
 .trust{display:flex;align-items:center;justify-content:center;gap:10px;margin-top:18px;font-size:14px;flex-wrap:wrap}
-.trust .item{display:flex;align-items:center;gap:6px;background:rgba(255,255,255,.94);color:var(--ink);border-radius:999px;padding:8px 14px}
+.trust .item{display:flex;align-items:center;gap:6px;background:rgba(255,255,255,.94);color:var(--ink);border-radius:999px;padding:8px 14px;min-width:0}
+[lang="zh-CN"] .trust .item{white-space:nowrap}
 .trust .item .ico{color:var(--accent)}
 .hero-card{background:var(--surface);color:var(--ink);border-radius:var(--radius-lg);padding:20px;margin-top:26px;box-shadow:var(--shadow-card)}
 .hc-top{display:flex;gap:18px;align-items:center}
@@ -449,4 +450,10 @@ button{font-family:inherit;cursor:pointer;border:0;background:none;color:inherit
 @media (max-width:560px){
   .g3,.g2{grid-template-columns:1fr}
   .btn-lg{width:100%}
+  .trust{gap:8px;font-size:13px}
+  .trust .item{padding:7px 11px;gap:5px;max-width:100%}
+  .trust .item .ico svg{width:16px;height:16px}
+  /* 英文长句窄屏一行放不下，对齐基线纵向两行；中文短句保持并排 */
+  [lang="en-US"] .trust{flex-direction:column;align-items:center}
+  [lang="en-US"] .trust .item{justify-content:center}
 }

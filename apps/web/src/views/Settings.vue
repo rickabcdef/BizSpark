@@ -52,13 +52,13 @@ void countryLabel; void savePath; void libCheck; void followSystem; void crashNo
 
       <div class="card">
         <div class="set-row">
-          <span class="ico"><Icon name="shield" :size="22" /></span>
+          <span class="ico"><Icon name="shield-check" :size="22" /></span>
           <div><h3>{{ t("settings.privacy_eyebrow") }}</h3></div>
         </div>
         <div class="privacy-title">{{ t("settings.privacy_h") }}</div>
         <p class="privacy-desc">{{ t("settings.privacy_short") }}</p>
         <div class="privacy-foot">
-          <Icon name="shield" :size="18" />{{ t("settings.privacy_foot") }}
+          <Icon name="shield-check" :size="18" />{{ t("settings.privacy_foot") }}
         </div>
       </div>
 

@@ -57,7 +57,6 @@ function goExport(): void {
         <button class="icon-btn" type="button" aria-label="返回" @click="router.push('/results')">
           <Icon name="chevron" :size="22" />
         </button>
-        <div class="title">{{ t("nav.detail") }}</div>
       </div>
       <div class="side"><Icon name="monitor" :size="18" />{{ t("side.chip") }}</div>
     </div>

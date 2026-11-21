@@ -144,7 +144,6 @@ const titleIcon = computed(() => q.value.titleIcon || q.value.opts[0]?.iconName 
       <button class="icon-btn" type="button" aria-label="返回" @click="back">
         <Icon name="chevron" :size="22" />
       </button>
-      <div class="title">{{ t("nav.quiz") }}</div>
       <div class="side">
         <span style="width:8px;height:8px;border-radius:50%;background:var(--success);display:inline-block;"></span>
         {{ t("side.chip") }}

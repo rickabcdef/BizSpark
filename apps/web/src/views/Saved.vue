@@ -26,7 +26,6 @@ onMounted(async () => {
 <template>
   <AppShell>
     <div class="topbar">
-      <div class="title">{{ t("nav.saved") }}</div>
       <div class="side"><Icon name="monitor" :size="18" />{{ t("side.chip") }}</div>
     </div>
 

@@ -47,7 +47,6 @@ onMounted(() => {
       <button class="icon-btn" type="button" aria-label="关闭" @click="router.push('/')">
         <Icon name="close" :size="22" />
       </button>
-      <div class="title">{{ t("nav.export") }}</div>
       <button class="icon-btn" type="button" aria-label="帮助">
         <Icon name="help" :size="22" />
       </button>
