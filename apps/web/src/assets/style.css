@@ -315,7 +315,7 @@ button{font-family:inherit;cursor:pointer;border:0;background:none;color:inherit
 
 /* ---------- 05 导出 ---------- */
 .export-head{text-align:center;padding:24px 20px 10px}
-.export-head .eyebrow{color:var(--success);margin-top:18px}
+.export-head .eyebrow{margin-top:18px}
 .export-head h1{font-size:32px;font-weight:800;margin:8px 0}
 .export-head .lead{color:var(--ink-2);font-size:16px;max-width:360px;margin:0 auto}
 .file-card{display:flex;align-items:center;gap:14px}
@@ -357,7 +357,6 @@ button{font-family:inherit;cursor:pointer;border:0;background:none;color:inherit
 
 /* ---------- 07 点子库 ---------- */
 .lib-head{padding:6px 20px 16px}
-.lib-head .eyebrow{color:var(--deep-2)}
 .lib-head h1{font-size:32px;font-weight:800;margin:6px 0 8px}
 .lib-head .lead{color:var(--ink-2);font-size:16px}
 .lib-status{display:flex;align-items:center;justify-content:space-between;margin-bottom:10px}
@@ -371,9 +370,7 @@ button{font-family:inherit;cursor:pointer;border:0;background:none;color:inherit
 .swap-row strong{color:var(--ink)}
 
 /* ---------- 08 设置 ---------- */
-.set-head{padding:6px 20px 16px;position:relative}
-.set-head .gear{position:absolute;top:18px;right:20px;color:var(--ink-2)}
-.set-head .eyebrow{color:var(--ink-2)}
+.set-head{padding:6px 20px 16px}
 .set-head h1{font-size:32px;font-weight:800;margin:6px 0 8px}
 .set-head .lead{color:var(--ink-2);font-size:16px}
 .set-row{display:flex;gap:14px}
@@ -436,7 +433,6 @@ button{font-family:inherit;cursor:pointer;border:0;background:none;color:inherit
     width:100%;max-width:920px;margin:0 auto;padding:24px 40px 20px;
   }
   .main > .q-head h1,.main > .result-head h1,.main > .saved-head h1,.main > .lib-head h1,.main > .set-head h1{font-size:36px}
-  .set-head .gear{right:40px}
   .hero .tabbar{background:linear-gradient(180deg,var(--deep) 0%,var(--deep-2) 100%);border-top:none;border-right:1px solid rgba(255,255,255,.08)}
   .hero .tab{color:rgba(255,255,255,.72)}
   .hero .tab.active{color:var(--accent);background:rgba(232,90,43,.18);box-shadow:inset 3px 0 0 var(--accent)}

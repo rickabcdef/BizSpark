@@ -47,9 +47,12 @@ onMounted(() => {
       <button class="icon-btn" type="button" aria-label="关闭" @click="router.push('/')">
         <Icon name="close" :size="22" />
       </button>
-      <button class="icon-btn" type="button" aria-label="帮助">
-        <Icon name="help" :size="22" />
-      </button>
+      <div style="display:flex;align-items:center;gap:12px">
+        <div class="side"><span style="width:8px;height:8px;border-radius:50%;background:var(--success);display:inline-block;"></span>{{ t("side.chip") }}</div>
+        <button class="icon-btn" type="button" aria-label="帮助">
+          <Icon name="help" :size="22" />
+        </button>
+      </div>
     </div>
 
     <div class="content" style="padding-top:6px">

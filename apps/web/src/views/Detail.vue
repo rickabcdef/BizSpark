@@ -58,7 +58,7 @@ function goExport(): void {
           <Icon name="chevron" :size="22" />
         </button>
       </div>
-      <div class="side"><Icon name="monitor" :size="18" />{{ t("side.chip") }}</div>
+      <div class="side"><span style="width:8px;height:8px;border-radius:50%;background:var(--success);display:inline-block;"></span>{{ t("side.chip") }}</div>
     </div>
 
     <div v-if="d" class="content" style="padding-top:6px">

@@ -38,6 +38,10 @@ onMounted(async () => {
 
 <template>
   <AppShell>
+    <div class="topbar">
+      <div class="side"><span style="width:8px;height:8px;border-radius:50%;background:var(--success);display:inline-block;"></span>{{ t("side.chip") }}</div>
+    </div>
+
     <div class="lib-head">
       <div class="eyebrow">{{ t("library.eyebrow") }}</div>
       <h1>{{ t("library.h1") }}</h1>

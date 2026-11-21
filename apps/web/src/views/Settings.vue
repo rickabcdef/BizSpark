@@ -1,6 +1,6 @@
 <!-- Settings.vue — 对齐最新版原型 08-settings。
      脚本（getSettings 读取、各设置变量、国家标签计算）全部保留；界面按基线裁剪为三卡。
-     基线：gear 右上；方案存哪卡；隐私卡（标题 / 短句 / 盾形脚注）；关于卡（版本 + 稳定版徽章同行）。 -->
+     基线：顶栏右侧隐私标注；方案存哪卡；隐私卡（标题 / 短句 / 盾形脚注）；关于卡（版本 + 稳定版徽章同行）。 -->
 <script setup lang="ts">
 import { computed, onMounted, ref } from "vue";
 import { t } from "../i18n";
@@ -37,8 +37,11 @@ void countryLabel; void savePath; void libCheck; void followSystem; void crashNo
 
 <template>
   <AppShell>
+    <div class="topbar">
+      <div class="side"><span style="width:8px;height:8px;border-radius:50%;background:var(--success);display:inline-block;"></span>{{ t("side.chip") }}</div>
+    </div>
+
     <div class="set-head">
-      <span class="gear"><Icon name="gear" :size="26" /></span>
       <div class="eyebrow">{{ t("settings.eyebrow") }}</div>
       <h1>{{ t("settings.h1") }}</h1>
       <p class="lead">{{ t("settings.lead") }}</p>
