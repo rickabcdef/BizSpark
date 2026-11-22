@@ -457,3 +457,44 @@ button{font-family:inherit;cursor:pointer;border:0;background:none;color:inherit
   [lang="en-US"] .trust{flex-direction:column;align-items:center}
   [lang="en-US"] .trust .item{justify-content:center}
 }
+
+/* ---------- 深色模式：原本的浅色实心块翻成深底浅字 ----------
+   跟随系统深色时，普通卡片背景/文字已由 tokens.css 变量翻转；
+   本段只处理写死浅色（浅米/白/浅绿/浅棕）的块，避免浅底浅字、对比不足。 */
+@media (prefers-color-scheme: dark){
+  /* 选中选项卡：深底 + 橙边 + 橙低透明底，文字沿用浅色令牌 */
+  .option.sel,.opt.sel{background:rgba(232,90,43,.15);border-color:var(--accent)}
+
+  /* 首页信任胶囊：深灰底浅字（原近白底） */
+  .trust .item{background:var(--surface-2);color:var(--ink)}
+
+  /* 详情 pitfalls：橙低透明底 */
+  .pitfall{background:rgba(232,90,43,.15)}
+  .pitfall .ico{color:var(--accent)}
+
+  /* 白纸样板卡：深纸面，装饰线/条纹翻深 */
+  .pdf-sheet{background:var(--surface)}
+  .pdf-sheet .ps-line{background:var(--surface-2)}
+  .paper{background:var(--surface)}
+  .paper .pl{background:var(--line)}
+  .paper .pbox{background:repeating-linear-gradient(0deg,var(--line),var(--line) 6px,transparent 6px,transparent 11px)}
+
+  /* accent 标签：橙低透明底 + 亮橙字 */
+  .tag.accent{background:rgba(232,90,43,.16);color:var(--accent)}
+
+  /* 绿底徽章/成功环：绿低透明底 + 提亮绿字 */
+  .badge-saved,.badge-green{background:rgba(31,138,112,.18);color:#3FB898}
+  .success-ring{background:rgba(31,138,112,.18)}
+  .big-check{background:rgba(31,138,112,.18)}
+
+  /* 小节序号块、浅橙 why 卡 */
+  .sec-h .b{background:rgba(232,90,43,.16)}
+  .why-card{background:rgba(232,90,43,.12);border-color:rgba(232,90,43,.3)}
+
+  /* warn 浅棕提示：深棕低透明底 + 浅棕字 */
+  .warn{background:rgba(150,66,28,.22);border-color:rgba(214,74,31,.35);color:#E8A383}
+
+  /* 深底上描边/次级按钮的橙字提亮，避免 accent-2 偏暗 */
+  .btn-outline,.open-btn button,.open-btn a{color:var(--accent)}
+  .btn-ghost:hover{border-color:var(--line);background:var(--surface-2)}
+}
