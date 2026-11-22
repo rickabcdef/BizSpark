@@ -53,9 +53,9 @@ export const diagnose = (answers: Record<string, unknown>) =>
   call<{ ideas: unknown[]; checked: number; filtered: number }>("diagnose", { answers }, TIMEOUT_DIAGNOSE);
 /** C+D：完整详情对象（F05 四张内容卡 + 派生字段） */
 export const getIdea = (id: string) => call<Record<string, unknown>>("get_idea", { id }, TIMEOUT_DIAGNOSE);
-/** E：导出一页 PDF → 文件名、字节数、页数 */
+/** E：导出一页 PDF → 文件名、字节数、页数、本地绝对路径 */
 export const exportPlan = (id: string, path: string) =>
-  call<{ file_name: string; bytes: number; pages: number }>("export_plan", { id, path });
+  call<{ file_name: string; bytes: number; pages: number; path?: string }>("export_plan", { id, path });
 /** E：成本表 CSV → 文件名 */
 export const exportCsv = (id: string, path: string) => call<{ file_name: string }>("export_csv", { id, path });
 /** F：保存点子（同 id 去重） */
@@ -84,8 +84,22 @@ export const releaseSeat = () => call("release_seat");
 export const logCrash = (code: string, version: string) => call("log_crash", { code, version });
 
 /**
+ * A-05（非 §2.4 sidecar cmd，走 A 的 Tauri 命令层）：
+ * 用系统默认 PDF 阅读器打开本次导出的文件。浏览器/预览环境静默。
+ */
+export async function openFile(path: string): Promise<void> {
+  const invoke = getInvoke();
+  if (!invoke || !path) return;
+  try {
+    await invoke("open_file", { path });
+  } catch {
+    /* 静默 */
+  }
+}
+
+/**
  * A-05 附属（非 §2.4 sidecar cmd，走 A 的 Tauri 命令层）：
- * 导出完成后打开所在文件夹。A 的 open-folder 命令就绪前静默失败。
+ * 导出完成后在系统文件管理器中打开所在目录。浏览器/预览环境静默。
  */
 export async function openExportFolder(path: string): Promise<void> {
   const invoke = getInvoke();

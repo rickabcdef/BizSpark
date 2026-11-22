@@ -141,6 +141,7 @@
   "export.file_meta": "Saved to {dir} · {kb} KB · {pages} page",
   "export.saved_tag": "Saved",
   "export.open_folder": "Open folder",
+  "export.web_hint": "Opens in your PDF reader in the desktop app.",
   "export.another": "Find another idea",
   "export.inside_h": "What's inside the PDF",
   "export.inside_p": "Cost breakdown · pricing hint · 7 steps · first-customer channels · 3 pitfalls · local note.",

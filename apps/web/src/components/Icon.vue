@@ -63,6 +63,7 @@ const PATHS: Record<string, string> = {
   close: '<path d="M5 5l8 8M13 5l-8 8"/>',
   help: '<circle cx="9" cy="9" r="6.2"/><path d="M9 6.4v.2M6.8 7.9c.2-1.3 1.2-2 2.2-2 1.1 0 2 .7 2.2 1.8.3 1.6-1.6 2-1.6 3.6"/>',
   star: '<path d="M9 3l1.7 3.5 3.8.6-2.7 2.7.6 3.8L9 11.7 5.6 13.6l.6-3.8L3.5 7.1l3.8-.6z"/>',
+  open: '<path d="M13.5 3.5h-3.8M13.5 3.5v3.8M13.5 3.5 9.4 7.6"/><path d="M12.5 9.5v4a1 1 0 0 1-1 1h-5a1 1 0 0 1-1-1v-5a1 1 0 0 1 1-1h4"/>',
 };
 
 const props = defineProps<{ name: string; size?: number }>();

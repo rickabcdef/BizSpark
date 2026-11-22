@@ -16,6 +16,7 @@ use bridge::{handle_core_cmd, BridgeState};
 use std::time::Instant;
 use tauri::{Emitter, Manager};
 use tauri_plugin_dialog::DialogExt;
+use tauri_plugin_shell::ShellExt;
 
 /// A-11 性能打点：冷启动耗时。setup 完成即认为首屏可渲染，打点后推给前端/日志。
 pub fn report_cold_start(app: &tauri::AppHandle, started: Instant) {
@@ -45,7 +46,9 @@ fn main() {
             handle_core_cmd,
             get_fingerprint,
             save_export_dialog,
-            check_update_light
+            check_update_light,
+            open_file,
+            open_export_folder
         ])
         .run(tauri::generate_context!())
         .expect("error while running BizSpark");
@@ -70,6 +73,32 @@ fn save_export_dialog(
         builder = builder.add_filter("Export", &extensions);
     }
     Ok(builder.blocking_save_file().map(|p| p.to_string()))
+}
+
+/// A-05：用系统默认程序打开本次导出的 PDF（F06 导出后直接查看）。
+/// 只接收前端从 core 拿到的本地文件路径，不接受外部任意路径。
+#[tauri::command]
+#[allow(deprecated)] // shell::open 已标记弃用，本机无 opener 插件；直调 Rust 不走 scope 校验
+fn open_file(app: tauri::AppHandle, path: String) -> Result<(), String> {
+    if path.trim().is_empty() {
+        return Err("empty file path".into());
+    }
+    app.shell().open(path, None).map_err(|e| e.to_string())
+}
+
+/// A-05：在系统文件管理器中打开 PDF 所在目录（收文件路径，取父目录）。
+#[tauri::command]
+#[allow(deprecated)]
+fn open_export_folder(app: tauri::AppHandle, path: String) -> Result<(), String> {
+    let trimmed = path.trim().to_string();
+    if trimmed.is_empty() {
+        return Err("empty path".into());
+    }
+    let dir = std::path::Path::new(&trimmed)
+        .parent()
+        .map(|p| p.to_string_lossy().to_string())
+        .unwrap_or(trimmed);
+    app.shell().open(dir, None).map_err(|e| e.to_string())
 }
 
 /// A-10 F12：分销版轻更新提示（3s 超时，失败静默）。
