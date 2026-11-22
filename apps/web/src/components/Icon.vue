@@ -76,5 +76,5 @@ const markup = computed(() => PATHS[props.name] || "");
 </template>
 
 <style scoped>
-.ic{display:inline-block;vertical-align:-0.15em;flex:0 0 auto}
+.ic{display:inline-block;vertical-align:-0.15em;flex:0 0 auto;max-width:none}
 </style>

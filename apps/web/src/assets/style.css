@@ -78,7 +78,7 @@ button{font-family:inherit;cursor:pointer;border:0;background:none;color:inherit
 .card{background:var(--surface);border-radius:var(--radius-lg);box-shadow:var(--shadow-card);padding:20px;margin-bottom:16px}
 .card:last-child{margin-bottom:0}
 .card-title{display:flex;align-items:center;gap:10px;font-size:17px;font-weight:700;margin-bottom:12px}
-.card-title .ico{color:var(--accent)}
+.card-title .ico{color:var(--accent);flex:0 0 auto;display:flex;align-items:center}
 .pad{padding:26px}
 .grid{display:grid;gap:16px}
 .grid>*{min-width:0}
@@ -112,6 +112,7 @@ button{font-family:inherit;cursor:pointer;border:0;background:none;color:inherit
 .btn-row .btn + .btn{margin-top:0}
 .btn + .btn{margin-top:12px}
 .btn-row + .btn{margin-top:12px}
+.btn svg{flex:0 0 auto}
 .btn-primary:disabled,.btn-ghost:disabled{background:var(--surface-2);color:var(--ink-3);border-color:var(--line);cursor:not-allowed}
 .btn-primary:disabled:hover,.btn-ghost:disabled:hover{background:var(--surface-2)}
 .center-row{justify-content:center}
@@ -146,7 +147,7 @@ button{font-family:inherit;cursor:pointer;border:0;background:none;color:inherit
 .step{display:flex;align-items:center;gap:12px;padding:9px 0}
 .step .num{color:var(--accent);font-weight:700;width:26px}
 .step .step-text{flex:1;font-size:15px;min-width:0}
-.step .check{color:var(--ink-3)}
+.step .check{color:var(--ink-3);flex:0 0 auto;display:flex;align-items:center}
 /* 兼容旧 StepList */
 .steps{list-style:none;counter-reset:s}
 .steps li{counter-increment:s;display:flex;gap:12px;padding:9px 0;font-size:13px;color:var(--ink-2)}
@@ -174,7 +175,7 @@ button{font-family:inherit;cursor:pointer;border:0;background:none;color:inherit
 @media (min-width:720px){.tabbar{max-width:760px}}
 .tab{display:flex;flex-direction:column;align-items:center;gap:4px;font-size:12px;color:rgba(255,255,255,.72);text-decoration:none;cursor:pointer}
 .tab.active{color:var(--accent);font-weight:700}
-.tab .ico{width:22px;height:22px}
+.tab .ico{width:22px;height:22px;flex:0 0 auto}
 .side-brand{display:none}
 .sb-badge{width:34px;height:34px;border-radius:50%;background:#fff;color:var(--accent);font-weight:900;font-size:18px;display:flex;align-items:center;justify-content:center;flex:0 0 auto}
 .sb-name{color:#fff;font-size:17px;font-weight:800;letter-spacing:-.01em}
@@ -209,7 +210,7 @@ button{font-family:inherit;cursor:pointer;border:0;background:none;color:inherit
 
 /* ---------- toast ---------- */
 .toast{display:flex;align-items:center;justify-content:center;gap:8px;background:var(--surface-2);border-radius:var(--radius-md);padding:14px;color:var(--ink-2);font-size:14px;margin-top:12px}
-.toast .check{color:var(--success)}
+.toast .check{color:var(--success);flex:0 0 auto;display:flex;align-items:center}
 
 /* ---------- 首页 hero（深色品牌块） ---------- */
 .hero{background:linear-gradient(160deg,var(--deep) 0%,var(--deep-2) 60%,var(--deep) 100%);color:#fff}
@@ -230,13 +231,13 @@ button{font-family:inherit;cursor:pointer;border:0;background:none;color:inherit
 .trust{display:flex;align-items:center;justify-content:center;gap:10px;margin-top:18px;font-size:14px;flex-wrap:wrap}
 .trust .item{display:flex;align-items:center;gap:6px;background:rgba(255,255,255,.94);color:var(--ink);border-radius:999px;padding:8px 14px;min-width:0}
 [lang="zh-CN"] .trust .item{white-space:nowrap}
-.trust .item .ico{color:var(--accent)}
+.trust .item .ico{color:var(--accent);flex:0 0 auto;display:flex;align-items:center}
 .hero-card{background:var(--surface);color:var(--ink);border-radius:var(--radius-lg);padding:20px;margin-top:26px;box-shadow:var(--shadow-card)}
 .hc-top{display:flex;gap:18px;align-items:center}
 .hc-illu{flex:0 0 42%}
 .hc-list{flex:1;display:flex;flex-direction:column;gap:14px;min-width:0}
 .hc-list .li{display:flex;align-items:center;gap:10px;font-size:15px;font-weight:600}
-.hc-list .li .ico{color:var(--accent)}
+.hc-list .li .ico{color:var(--accent);flex:0 0 auto;width:20px;height:20px;display:flex;align-items:center;justify-content:center}
 .hero-card .tags{margin-top:18px}
 .footer-note{text-align:center;color:rgba(255,255,255,.7);font-size:14px;margin-top:20px}
 .hero .tabbar{background:var(--deep)}
@@ -253,6 +254,7 @@ button{font-family:inherit;cursor:pointer;border:0;background:none;color:inherit
 .step-dot.current{border-color:var(--accent);color:var(--accent)}
 .q-card{background:var(--surface);border-radius:var(--radius-lg);box-shadow:var(--shadow-card);padding:18px;margin-bottom:16px}
 .q-card .q-title{display:flex;align-items:center;gap:12px;font-size:17px;font-weight:700}
+.q-card .q-title .ico{flex:0 0 auto;display:flex;align-items:center}
 .q-card .q-sub{margin-left:32px;margin-top:6px;color:var(--ink-2);font-size:14px}
 
 /* ---------- 03 结果 ---------- */
@@ -287,6 +289,7 @@ button{font-family:inherit;cursor:pointer;border:0;background:none;color:inherit
 .detail-head .lead{color:var(--ink-2);font-size:15px}
 .detail-head .tags{margin-top:12px}
 .cost-total{margin-top:12px;background:var(--accent);color:#fff;border-radius:var(--radius-md);padding:13px 16px;display:flex;align-items:center;justify-content:center;gap:8px;font-weight:700}
+.cost-total svg{flex:0 0 auto}
 .pitfall{display:flex;align-items:center;gap:10px;background:var(--accent-soft);border-radius:var(--radius-sm);padding:12px 14px;margin-bottom:10px;color:var(--ink);font-size:14px}
 .pitfall:last-child{margin-bottom:0}
 .pitfall .ico{color:var(--accent-2);flex:0 0 auto}
@@ -296,7 +299,7 @@ button{font-family:inherit;cursor:pointer;border:0;background:none;color:inherit
 .pdf-sheet .ps-line{height:8px;background:var(--surface-2);border-radius:4px;margin-bottom:8px}
 .source-tags{display:flex;flex-wrap:wrap;gap:8px}
 .foot-note{margin-top:16px;font-size:11.5px;color:var(--ink-3);display:flex;align-items:center;gap:8px}
-.foot-note svg{vertical-align:-2.5px}
+.foot-note svg{vertical-align:-2.5px;flex:0 0 auto}
 /* 兼容旧详情 */
 .detail-wrap{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:24px;align-items:start}
 .sec{padding:24px 26px;margin-bottom:16px}
@@ -368,7 +371,7 @@ button{font-family:inherit;cursor:pointer;border:0;background:none;color:inherit
 .lib-meta{color:var(--ink-2);font-size:14px;margin-bottom:16px}
 .swap-row{display:flex;align-items:center;gap:10px;padding:10px 0;color:var(--ink-2);font-size:15px}
 .swap-row + .swap-row{border-top:1px solid var(--line)}
-.swap-row .ico{color:var(--ink-3)}
+.swap-row .ico{color:var(--ink-3);flex:0 0 auto;display:flex;align-items:center}
 .swap-row .arrow{color:var(--ink-3)}
 .swap-row strong{color:var(--ink)}
 
