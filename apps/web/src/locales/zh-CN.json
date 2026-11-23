@@ -141,7 +141,7 @@
   "export.file_meta": "已存到 {dir} · {kb} KB · {pages} 页",
   "export.saved_tag": "已保存",
   "export.open_folder": "打开文件夹",
-  "export.web_hint": "在桌面客户端中可用阅读器打开。",
+  "export.web_hint": "在桌面客户端中可用 PDF 阅读器打开。",
   "export.another": "再找一个点子",
   "export.inside_h": "PDF 里有什么",
   "export.inside_p": "成本拆解 · 定价建议 · 7 步 · 第一批客户渠道 · 3 个坑 · 本地合规一句。",
