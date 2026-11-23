@@ -127,6 +127,7 @@
   "detail.loading": "载入中…",
   "detail.costs_h": "起步要花多少钱",
   "detail.costs_total": "到第一张发票为止合计",
+  "detail.cost_note": "以上为参考价格，各地实际支出会有差异。",
   "detail.steps_h": "前 7 步",
   "detail.channels_h": "第一批客户从哪来",
   "detail.pitfalls_h": "最容易踩的 3 个坑",

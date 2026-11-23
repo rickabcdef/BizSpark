@@ -127,6 +127,7 @@
   "detail.loading": "Loading…",
   "detail.costs_h": "What it costs to start",
   "detail.costs_total": "Total to first invoice",
+  "detail.cost_note": "Reference prices only; actual local costs vary.",
   "detail.steps_h": "Your first 7 steps",
   "detail.channels_h": "Where the first customers come from",
   "detail.pitfalls_h": "Three ways people get this wrong",

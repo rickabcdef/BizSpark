@@ -82,6 +82,7 @@ function goExport(): void {
         <div v-if="d?.total_to_first_invoice" class="cost-total">
           <Icon name="receipt" :size="18" />{{ t("detail.costs_total") }} · {{ d.total_to_first_invoice }}
         </div>
+        <p class="cost-note">{{ t("detail.cost_note") }}</p>
       </div>
 
       <!-- 前 7 步 -->

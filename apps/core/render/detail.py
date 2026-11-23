@@ -162,6 +162,7 @@ def build_pdf_view(detail):
                       for r in d["cost_rows"]],
         "cost_total_label": "开出第一张账单前的总投入" if zh else "Total to first invoice",
         "cost_total": d["total_to_first_invoice"],
+        "cost_note": "以上为参考价格，各地实际支出会有差异。" if zh else "Reference prices only; actual local costs vary.",
         "steps": d["steps"],
         "pricing_payback": payback_line(d),
         "first_customers": d["first_customers"],

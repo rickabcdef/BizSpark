@@ -290,6 +290,7 @@ button{font-family:inherit;cursor:pointer;border:0;background:none;color:inherit
 .detail-head .tags{margin-top:12px}
 .cost-total{margin-top:12px;background:var(--accent);color:#fff;border-radius:var(--radius-md);padding:13px 16px;display:flex;align-items:center;justify-content:center;gap:8px;font-weight:700}
 .cost-total svg{flex:0 0 auto}
+.cost-note{margin-top:10px;font-size:11.5px;color:var(--ink-3)}
 .pitfall{display:flex;align-items:center;gap:10px;background:var(--accent-soft);border-radius:var(--radius-sm);padding:12px 14px;margin-bottom:10px;color:var(--ink);font-size:14px}
 .pitfall:last-child{margin-bottom:0}
 .pitfall .ico{color:var(--accent-2);flex:0 0 auto}

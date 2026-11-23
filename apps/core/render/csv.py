@@ -98,6 +98,9 @@ def export_csv(payload):
             writer.writeheader()
             for row in csv_rows(detail):
                 writer.writerow(row)
+            note = ("以上为参考价格，各地实际支出会有差异。" if _rd._zh()
+                    else "Reference prices only; actual local costs vary.")
+            writer.writerow({"item": note, "amount": "", "currency": ""})
     except (PermissionError, OSError) as exc:
         # T-34：目录不可写 → 唯一提示语义是换文件夹
         return None, {"code": "E_CSV_WRITE", "message": "Choose another folder (%s)" % exc,

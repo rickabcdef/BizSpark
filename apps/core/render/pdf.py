@@ -141,6 +141,9 @@ def _styles(base, font_reg="Helvetica", font_bold="Helvetica-Bold"):
         "note": ParagraphStyle("note", fontName=font_reg, fontSize=base - 1,
                                leading=(base - 1) * 1.3, textColor=colors.HexColor("#495057"),
                                spaceAfter=2),
+        "cost_note": ParagraphStyle("cost_note", fontName=font_reg, fontSize=base - 1,
+                                    leading=(base - 1) * 1.3, textColor=colors.HexColor("#868E96"),
+                                    spaceAfter=2),
         "footer": ParagraphStyle("footer", fontName=font_reg, fontSize=base - 2,
                                  textColor=colors.HexColor("#868E96"), alignment=TA_CENTER),
     }
@@ -171,6 +174,7 @@ def _build_story(view, st, cell_st):
         ("LEFTPADDING", (0, 0), (-1, -1), 0),
     ]))
     story.append(KeepTogether([Paragraph(_esc(view.get("h_costs") or _BLOCK_TITLES["costs"]), st["h2"]), t]))
+    story.append(Paragraph(_esc(view["cost_note"]), st["cost_note"]))
     # 4 First 7 steps 编号列表（01…07）
     story.append(Paragraph(_esc(view.get("h_steps") or _BLOCK_TITLES["steps"]), st["h2"]))
     for i, s in enumerate(view["steps"], 1):
