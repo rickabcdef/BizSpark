@@ -149,7 +149,7 @@ def build_pdf_view(detail):
              {"costs": "What it costs", "steps": "First 7 steps", "pricing": "Pricing & payback",
               "channels": "First customers", "pitfalls": "3 pitfalls", "note": "Local note"})
     return {
-        "eyebrow": "BizSpark · 一页方案" if zh else "BizSpark · One-page plan",
+        "eyebrow": "Buzidea · 一页方案" if zh else "Buzidea · One-page plan",
         "title": d["title"],
         "one_liner": d["one_liner"],
         "h_costs": heads["costs"],
@@ -168,5 +168,5 @@ def build_pdf_view(detail):
         "first_customers": d["first_customers"],
         "pitfalls": d["pitfalls"],
         "local_note": local_note(d),
-        "footer": "BizSpark · 一次买断 · 本机生成" if _zh() else "BizSpark · one-time purchase · generated on this device",
+        "footer": "Buzidea · 一次买断 · 本机生成" if _zh() else "Buzidea · one-time purchase · generated on this device",
     }

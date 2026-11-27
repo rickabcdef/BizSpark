@@ -11,6 +11,9 @@ import Icon from "./Icon.vue";
 
 const route = useRoute();
 
+// PM 2026-11-27（老板定稿）：侧边栏 A 图标加载失败时兜底字母 B（界面永不空）
+const logoBroken = ref(false);
+
 // 库版本行跟随实际库版本；check_library 失败静默保留回退值
 const libVer = ref<string>("2026.11");
 onMounted(async () => {
@@ -61,8 +64,13 @@ void detailTo;
     </main>
     <nav class="tabbar">
       <div class="side-brand">
-        <span class="sb-badge">B</span>
-        <span class="sb-name">BizSpark</span>
+        <!-- PM 2026-11-27（老板定稿）：全 A 制——侧边栏徽章用 A 图标（白底容器衬托），
+             任务栏/商店同为 A 图标，全站一张品牌脸；图片加载异常时兜底字母 B -->
+        <span class="sb-badge">
+          <img v-if="!logoBroken" src="/buzidea-logo.png" alt="Buzidea" @error="logoBroken = true" />
+          <template v-else>B</template>
+        </span>
+        <span class="sb-name">Buzidea</span>
       </div>
       <router-link
         v-for="tab in tabs"

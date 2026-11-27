@@ -91,7 +91,7 @@ fn default_export_dir(app: tauri::AppHandle) -> Result<String, String> {
         .desktop_dir()
         .or_else(|_| app.path().home_dir())
         .map_err(|e| format!("resolve desktop dir failed: {}", e))?;
-    let dir = base.join("BizSpark");
+    let dir = base.join("Buzidea");
     std::fs::create_dir_all(&dir).map_err(|e| format!("create export dir failed: {}", e))?;
     Ok(dir.to_string_lossy().to_string())
 }

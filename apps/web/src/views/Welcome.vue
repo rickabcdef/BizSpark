@@ -20,9 +20,11 @@ void isEn;
     <div class="content">
       <div class="topbar">
         <div class="brand">
-          <div class="brand-badge">B</div>
+          <div class="brand-badge">
+            <img src="/buzidea-logo.png" alt="Buzidea" style="width:27px;height:27px;border-radius:6px;display:block" />
+          </div>
           <div>
-            <div class="brand-name">BizSpark</div>
+            <div class="brand-name">Buzidea</div>
             <div class="brand-sub">{{ t("brand.tag") }}</div>
           </div>
         </div>

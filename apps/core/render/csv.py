@@ -87,9 +87,9 @@ def export_csv(payload):
     # PM 2026-11-14：默认文件名随语言本地化（中文「BizSpark-方案-<标题>-成本表.csv」）
     from . import detail as _rd
     if _rd._zh():
-        out_path = os.path.join(directory, "BizSpark-方案-%s-成本表.csv" % _safe_title(detail.get("title")))
+        out_path = os.path.join(directory, "Buzidea-方案-%s-成本表.csv" % _safe_title(detail.get("title")))
     else:
-        out_path = os.path.join(directory, "BizSpark-Plan-%s-costs.csv" % _slug(idea_id))
+        out_path = os.path.join(directory, "Buzidea-Plan-%s-costs.csv" % _slug(idea_id))
 
     try:
         os.makedirs(directory, exist_ok=True)

@@ -9,7 +9,7 @@ import AppShell from "../components/AppShell.vue";
 import Icon from "../components/Icon.vue";
 
 const country = ref("US");
-const savePath = ref("Documents / BizSpark");
+const savePath = ref("Desktop / Buzidea");
 const libCheck = ref(true);
 const followSystem = ref(true);
 const crashNotes = ref(false);

@@ -92,7 +92,7 @@ export const releaseSeat = () => call("release_seat");
 export const logCrash = (code: string, version: string) => call("log_crash", { code, version });
 
 /**
- * PM 2026-11-27（老板需求）：默认导出目录 = 桌面\BizSpark（壳自动创建）。
+ * PM 2026-11-27（老板需求）：默认导出目录 = 桌面\Buzidea（壳自动创建）。
  * 导出不再弹另存框，所有文件统一落这里。失败返回 null。
  */
 export async function getDefaultExportDir(): Promise<string | null> {

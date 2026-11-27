@@ -115,8 +115,8 @@ def _safe_title(name, limit=48):
 def _default_pdf_name(detail, view):
     """默认文件名：中文版「BizSpark-方案-<标题>.pdf」，英文版沿用 id slug。"""
     if rd._zh():
-        return "BizSpark-方案-%s.pdf" % _safe_title(view.get("title") or detail.get("id") or "plan")
-    return "BizSpark-Plan-%s.pdf" % _slug(detail.get("id"))
+        return "Buzidea-方案-%s.pdf" % _safe_title(view.get("title") or detail.get("id") or "plan")
+    return "Buzidea-Plan-%s.pdf" % _slug(detail.get("id"))
 
 
 def _styles(base, font_reg="Helvetica", font_bold="Helvetica-Bold"):
@@ -208,7 +208,7 @@ def _render_once(view, page_size, base):
     doc = SimpleDocTemplate(tmp, pagesize=page_size,
                             leftMargin=18 * mm, rightMargin=18 * mm,
                             topMargin=14 * mm, bottomMargin=14 * mm,
-                            title=view["title"], author="BizSpark")
+                            title=view["title"], author="Buzidea")
     doc.build(_build_story(view, st, st))
     size = os.path.getsize(tmp)
     return doc.page, size, tmp

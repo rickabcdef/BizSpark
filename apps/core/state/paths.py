@@ -95,12 +95,13 @@ def crash_log_path():
 
 
 def documents_dir():
-    """§2.5 导出默认目录 $DOCUMENTS/BizSpark/。"""
+    r"""PM 2026-11-27（老板需求）：导出默认目录 = 桌面\Buzidea/（原 $DOCUMENTS/BizSpark）。
+    实际导出路径由壳下发（桌面 Known Folder），这里作为引擎侧默认值保持口径一致。"""
     home = os.path.expanduser("~")
-    docs = os.path.join(home, "Documents")
-    if not os.path.isdir(docs):
-        docs = os.path.join(home, "文档") if os.path.isdir(os.path.join(home, "文档")) else home
-    return os.path.join(docs, "BizSpark")
+    desktop = os.path.join(home, "Desktop")
+    if not os.path.isdir(desktop):
+        desktop = os.path.join(home, "桌面") if os.path.isdir(os.path.join(home, "桌面")) else home
+    return os.path.join(desktop, "Buzidea")
 
 
 def default_export_dir():

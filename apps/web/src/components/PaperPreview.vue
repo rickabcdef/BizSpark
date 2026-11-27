@@ -6,7 +6,7 @@ defineProps<{ title: string }>();
 
 <template>
   <div class="paper">
-    <div class="pt">BizSpark · One-page plan</div>
+    <div class="pt">Buzidea · One-page plan</div>
     <div class="ph">{{ title }}</div>
     <div class="pl"></div><div class="pl"></div><div class="pl s"></div>
     <div class="pbox"></div><div class="pl s" style="margin-top:12px"></div>
