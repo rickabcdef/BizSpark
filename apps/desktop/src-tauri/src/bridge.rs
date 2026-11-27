@@ -6,7 +6,9 @@
 //! - Rust 层只转发，不做业务判断，不改写 payload
 //!
 //! 前端唯一出口是 apps/web/src/bridge/cmd.ts（B 负责），经
-//! invoke("handle_core_cmd", { reqId, cmd, payload }) 到达这里。
+//! invoke("handle_core_cmd", { request: { req_id, cmd, payload } }) 到达这里。
+//! PM 2026-11-27：Tauri v2 按参数名匹配 invoke 参数，散参数 { reqId, cmd, payload }
+//! 会在匹配层被拒（missing key `request`），且前端 catch 静默 → 打包版请求从未进过壳。
 
 use once_cell::sync::Lazy;
 use serde::{Deserialize, Serialize};
@@ -24,6 +26,10 @@ static SIDECAR_STDIN: Lazy<Arc<Mutex<Option<std::process::ChildStdin>>>> =
     Lazy::new(|| Arc::new(Mutex::new(None)));
 /// PM 2026-11-16（F09）：sidecar 首行 ready 携带的本地库版本，供月度检查比对
 static LOCAL_LIB_VERSION: Lazy<Mutex<Option<String>>> = Lazy::new(|| Mutex::new(None));
+/// PM 2026-11-27（打包版合同修复）：等待引擎响应的请求表 req_id → 发送端。
+/// handle_core_cmd 注册后原地等响应；读循环按 req_id 路由并移除。
+static PENDING: Lazy<Mutex<std::collections::HashMap<String, std::sync::mpsc::Sender<serde_json::Value>>>> =
+    Lazy::new(|| Mutex::new(std::collections::HashMap::new()));
 
 /// PM 2026-11-16（F09）：读 sidecar 首行 ready，提取 library_version（无则不动）。
 fn note_ready_line(line: &str) {
@@ -228,7 +234,7 @@ pub fn spawn_sidecar(app: AppHandle) -> Result<(), String> {
     *SIDECAR.lock().unwrap() = Some(child);
     *RESTARTS.lock().unwrap() = 0;
 
-    // 读循环：把 sidecar 的每一行 JSONL 原样推给前端（Rust 不改写内容）
+    // 读循环：把 sidecar 的每一行 JSONL 推给前端（Rust 不改写内容）
     std::thread::spawn(move || {
         let reader = BufReader::new(stdout);
         for line in reader.lines() {
@@ -238,6 +244,20 @@ pub fn spawn_sidecar(app: AppHandle) -> Result<(), String> {
                         continue;
                     }
                     note_ready_line(&l); // PM 2026-11-16（F09）：ready 行顺带记录库版本
+                    // PM 2026-11-27（打包版合同修复）：前端 invoke 期待"请求即响应"
+                    //（与开发垫片 fetch /__ipc 语义一致）。带 req_id 的响应路由给
+                    // 等待中的 handle_core_cmd 直接返回；其余行（ready 等）走事件总线。
+                    // 此前响应只发事件总线而前端无人监听 → 打包版界面永远拿不到数据。
+                    if let Ok(v) = serde_json::from_str::<serde_json::Value>(&l) {
+                        let req_id = v.get("req_id").and_then(|x| x.as_str()).map(|s| s.to_string());
+                        if let Some(req_id) = req_id {
+                            let sender = PENDING.lock().unwrap().remove(&req_id);
+                            if let Some(tx) = sender {
+                                let _ = tx.send(v);
+                                continue;
+                            }
+                        }
+                    }
                     let _ = app.emit("core://response", l);
                 }
                 Err(_) => break,
@@ -278,13 +298,17 @@ fn on_sidecar_exit(app: AppHandle) {
     let _ = spawn_sidecar(app);
 }
 
-/// A-04：前端唯一 IPC 入口。req_id + cmd 原样转发，响应按 req_id 匹配回推。
+/// A-04：前端唯一 IPC 入口。
+///
+/// PM 2026-11-27（打包版合同修复）：前端 cmd.ts 的语义是 invoke 直接返回
+/// `{ok, data}`（与开发垫片 fetch /__ipc 一致），但本函数此前转发后返回空、
+/// 响应走事件总线而前端无人监听 → 打包版界面永远空。现改为：转发后按
+/// req_id 原地等引擎响应（9 秒超时），拿到即作为 invoke 返回值。
 #[tauri::command]
-pub fn handle_core_cmd(
+pub async fn handle_core_cmd(
     app: AppHandle,
-    state: State<BridgeState>,
     request: CoreRequest,
-) -> Result<(), String> {
+) -> Result<serde_json::Value, String> {
     // Rust 层只校验协议形态，不做业务判断
     if request.req_id.trim().is_empty() || request.cmd.trim().is_empty() {
         return Err("invalid request: req_id and cmd are required".into());
@@ -297,28 +321,60 @@ pub fn handle_core_cmd(
     let mut line = payload.to_string();
     line.push('\n');
 
-    let mut guard = SIDECAR_STDIN.lock().unwrap();
-    match guard.as_mut() {
-        Some(stdin) => {
-            stdin
+    let (tx, rx) = std::sync::mpsc::channel();
+    PENDING.lock().unwrap().insert(request.req_id.clone(), tx);
+
+    let started = std::time::Instant::now();
+    let cmd_name = request.cmd.clone();
+    let send_result = {
+        let mut guard = SIDECAR_STDIN.lock().unwrap();
+        match guard.as_mut() {
+            Some(stdin) => stdin
                 .write_all(line.as_bytes())
-                .map_err(|e| format!("sidecar write failed: {}", e))?;
-            stdin.flush().map_err(|e| format!("sidecar flush failed: {}", e))?;
-            Ok(())
+                .and_then(|_| stdin.flush())
+                .map(|_| true)
+                .map_err(|e| e.to_string()),
+            None => Ok(false), // sidecar 不在
         }
-        None => {
+    };
+
+    match send_result {
+        Err(e) => {
+            PENDING.lock().unwrap().remove(&request.req_id);
+            engine_log(&app, &format!("REQ {} WRITE FAILED: {}", cmd_name, e));
+            Ok(serde_json::json!({
+                "req_id": request.req_id,
+                "ok": false,
+                "error": { "code": "E_CORE_DOWN", "message": "sidecar write failed", "recoverable": false }
+            }))
+        }
+        Ok(false) => {
+            PENDING.lock().unwrap().remove(&request.req_id);
+            engine_log(&app, &format!("REQ {} DROPPED: engine not running", cmd_name));
             // sidecar 不在：走统一降级口径（F13），错误码见附录 D
-            let _ = app.emit(
-                "core://response",
-                serde_json::json!({
+            Ok(serde_json::json!({
+                "req_id": request.req_id,
+                "ok": false,
+                "error": { "code": "E_CORE_DOWN", "message": "sidecar unavailable", "recoverable": false }
+            }))
+        }
+        Ok(true) => match rx.recv_timeout(std::time::Duration::from_secs(9)) {
+            Ok(v) => {
+                engine_log(
+                    &app,
+                    &format!("REQ {} -> RESP in {}ms", cmd_name, started.elapsed().as_millis()),
+                );
+                Ok(v)
+            }
+            Err(_) => {
+                PENDING.lock().unwrap().remove(&request.req_id);
+                engine_log(&app, &format!("REQ {} TIMEOUT 9s", cmd_name));
+                Ok(serde_json::json!({
                     "req_id": request.req_id,
                     "ok": false,
-                    "error": { "code": "E_CORE_DOWN", "message": "sidecar unavailable", "recoverable": false }
-                })
-                .to_string(),
-            );
-            let _ = state; // BridgeState 预留
-            Ok(())
-        }
+                    "error": { "code": "E_TIMEOUT", "message": "engine response timeout", "recoverable": true }
+                }))
+            }
+        },
     }
 }

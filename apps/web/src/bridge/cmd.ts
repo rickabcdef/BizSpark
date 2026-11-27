@@ -3,15 +3,19 @@
  * 唯一 IPC 出口：封装 §2.4 命令表全部 cmd，统一超时与静默失败。
  * 铁律：组件里零 fetch、零 invoke，一律经本文件。
  *
- * 链路：cmd.ts → invoke("handle_core_cmd") → A 的 bridge.rs → sidecar
+ * 链路：cmd.ts → invoke("handle_core_cmd", { request: { req_id, cmd, payload } }) → A 的 bridge.rs → sidecar
  * 协议：{ req_id, cmd, payload } → { req_id, ok, data? | error:{code,message?} }
  * 超时：§2.4 请求级 800ms（诊断类 C-08 允许放宽到 30s，见 TIMEOUT_DIAGNOSE）
  * 失败：静默——返回 null，由视图层走空态/降级，绝不弹错（§2.4 边界）
  */
 
-const DEFAULT_TIMEOUT = 800;
+const DEFAULT_TIMEOUT = 3000;
+/** PM 2026-11-27：冷启动实测首批请求 ~900ms（PyInstaller 解包+库加载），800ms 会误杀；
+ *  放宽到 3s 只影响失败/慢请求的等待上限，不影响正常流（正常请求 <1s）。 */
 /** diagnose 本地引擎 300ms 内出结果，但库大时放宽，仍远小于"loading>1s"红线 */
 const TIMEOUT_DIAGNOSE = 8000;
+/** 导出类（PDF/CSV）：reportlab+PIL 首次加载+生成可能远超 1s，800ms 必误杀 */
+const TIMEOUT_EXPORT = 15000;
 
 /** Tauri invoke 句柄（运行时由 @tauri-apps/api 提供；dev/浏览器环境为 undefined） */
 function getInvoke(): ((cmd: string, args?: unknown) => Promise<unknown>) | undefined {
@@ -32,7 +36,11 @@ export async function call<T>(cmd: string, payload: Record<string, unknown> = {}
   const reqId = nextReqId();
   try {
     const raw = (await Promise.race([
-      invoke("handle_core_cmd", { reqId, cmd, payload }),
+      // PM 2026-11-27（打包版合同修复）：Tauri v2 按参数名匹配 invoke 参数——
+    // 壳的 handle_core_cmd 只收一个 `request: CoreRequest`（字段 req_id/cmd/payload）。
+    // 此前传散参数 { reqId, cmd, payload } 在参数匹配层即被拒（missing key `request`），
+    // 被 catch 静默吞掉 → 打包版请求从未进过壳。开发垫片不走此匹配，故开发版无恙。
+    invoke("handle_core_cmd", { request: { req_id: reqId, cmd, payload } }),
       new Promise((_, rej) => setTimeout(() => rej(new Error("timeout")), timeout)),
     ])) as { ok?: boolean; data?: T } | null;
     if (raw && raw.ok === true && raw.data !== undefined) return raw.data;
@@ -55,9 +63,9 @@ export const diagnose = (answers: Record<string, unknown>) =>
 export const getIdea = (id: string) => call<Record<string, unknown>>("get_idea", { id }, TIMEOUT_DIAGNOSE);
 /** E：导出一页 PDF → 文件名、字节数、页数、本地绝对路径 */
 export const exportPlan = (id: string, path: string) =>
-  call<{ file_name: string; bytes: number; pages: number; path?: string }>("export_plan", { id, path });
+  call<{ file_name: string; bytes: number; pages: number; path?: string }>("export_plan", { id, path }, TIMEOUT_EXPORT);
 /** E：成本表 CSV → 文件名 */
-export const exportCsv = (id: string, path: string) => call<{ file_name: string }>("export_csv", { id, path });
+export const exportCsv = (id: string, path: string) => call<{ file_name: string }>("export_csv", { id, path }, TIMEOUT_EXPORT);
 /** F：保存点子（同 id 去重） */
 export const saveIdea = (id: string) => call("save_idea", { id });
 /** F：已存列表（saved_at 倒序） */
