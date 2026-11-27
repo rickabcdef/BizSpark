@@ -190,8 +190,8 @@ pub fn spawn_sidecar(app: AppHandle) -> Result<(), String> {
         }
         Err(_) => Stdio::null(),
     };
-    let mut child = Command::new(&path)
-        .stdin(Stdio::piped())
+    let mut cmd = Command::new(&path);
+    cmd.stdin(Stdio::piped())
         .stdout(Stdio::piped())
         .stderr(stderr_stdio)
         // PM 2026-11-13（中文包）：把构建目标 locale 传给 sidecar——
@@ -200,7 +200,17 @@ pub fn spawn_sidecar(app: AppHandle) -> Result<(), String> {
         .env("BIZSPARK_LOCALE", {
             let loc = std::env::var("BIZSPARK_LOCALE").unwrap_or_default();
             if loc.is_empty() { "en-US".to_string() } else { loc }
-        })
+        });
+    // PM 2026-11-27：CREATE_NO_WINDOW——引擎是控制台程序，壳是图形程序，
+    // 不加此标志 Windows 会给引擎配一个可见控制台窗口，窗口被关（360/系统/误点）
+    // 引擎即死于 0xC000013A（控制台事件，诊断日志已实测抓到）。
+    // 加上后引擎无窗口、无控制台事件通道，免疫此类查杀。
+    #[cfg(windows)]
+    {
+        use std::os::windows::process::CommandExt;
+        cmd.creation_flags(0x0800_0000); // CREATE_NO_WINDOW
+    }
+    let mut child = cmd
         .spawn()
         .map_err(|e| {
             engine_log(&app, &format!("SPAWN FAILED: {} path={}", e, path.display()));
