@@ -1,4 +1,4 @@
-# smoke.ps1 - 打包后冒烟验收（大厂工序落地，PM 2026-11-27）
+﻿# smoke.ps1 - 打包后冒烟验收（大厂工序落地，PM 2026-11-27）
 # 用途：每次 tauri build 出包后运行，绿灯=允许发版，红灯=拦截，绝不交给人肉排查。
 # 用法：powershell -File qa\smoke.ps1 [-Installer <nsis安装包路径>]
 # 验收项（对应 2026-11-27 三个真实事故）：
@@ -9,14 +9,13 @@ param(
     [string]$Installer = "D:\XiangMu\Project\BizSpark\apps\desktop\src-tauri\target\release\bundle\nsis\Buzidea_1.0.0_x64-setup.exe"
 )
 
-$ErrorActionPreference = "Stop"
+$ErrorActionPreference = "Continue"
 $fail = @()
 
 Write-Host "=== Buzidea 冒烟验收开始 ===" -ForegroundColor Cyan
 
 # ---- 准备：关闭旧实例，静默安装 ----
-taskkill /IM bizspark-desktop.exe /F 2>$null
-taskkill /IM bizspark-core.exe /F 2>$null
+Get-Process bizspark-desktop, bizspark-core -ErrorAction SilentlyContinue | Stop-Process -Force
 Start-Sleep -Seconds 2
 
 $logPath = "$env:APPDATA\com.buzidea.desktop\logs\engine.log"

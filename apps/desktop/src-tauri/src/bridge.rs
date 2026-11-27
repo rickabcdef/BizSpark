@@ -206,7 +206,13 @@ pub fn spawn_sidecar(app: AppHandle) -> Result<(), String> {
         .env("BIZSPARK_LOCALE", {
             let loc = std::env::var("BIZSPARK_LOCALE").unwrap_or_default();
             if loc.is_empty() { "en-US".to_string() } else { loc }
-        });
+        })
+        // PM 2026-11-27（GBK 崩溃修复兜底）：中文 Windows 下 Python stdio 默认 GBK，
+        // 引擎响应含 £ 等字符时 UnicodeEncodeError 即死（实测复现）。
+        // 引擎侧 main.py 已 reconfigure UTF-8；这里再加环境变量双保险，
+        // 即使旧版引擎没这行代码也不会崩。
+        .env("PYTHONUTF8", "1")
+        .env("PYTHONIOENCODING", "utf-8:replace");
     // PM 2026-11-27：CREATE_NO_WINDOW——引擎是控制台程序，壳是图形程序，
     // 不加此标志 Windows 会给引擎配一个可见控制台窗口，窗口被关（360/系统/误点）
     // 引擎即死于 0xC000013A（控制台事件，诊断日志已实测抓到）。

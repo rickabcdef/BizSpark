@@ -185,13 +185,27 @@ def _ready_line():
 
 def main():
     """stdio JSONL 主循环：首行 ready → 启动一次、常驻（§2.2）。不监听任何端口、零出网。"""
+    # PM 2026-11-27（GBK 崩溃修复）：中文 Windows 默认 stdio 编码是 GBK(cp936)，
+    # ensure_ascii=False 的响应含 £ 等字符时 UnicodeEncodeError 直接杀死引擎（实测复现）；
+    # 更致命的是：重启后首条 get_state 携带 last_result 中的同样字符 → 引擎每次启动即死，
+    # 表现为重启后所有请求永久 TIMEOUT。强制 UTF-8 + replace：任何字符都不再致命。
+    for _stream in (sys.stdin, sys.stdout, sys.stderr):
+        try:
+            _stream.reconfigure(encoding="utf-8", errors="replace")
+        except Exception:
+            pass
     sys.stdout.write(_ready_line() + "\n")
     sys.stdout.flush()
     for raw_line in sys.stdin:
         raw_line = raw_line.strip()
         if not raw_line:
             continue
-        sys.stdout.write(json.dumps(handle(raw_line), ensure_ascii=False) + "\n")
+        resp = handle(raw_line)
+        try:
+            sys.stdout.write(json.dumps(resp, ensure_ascii=False) + "\n")
+        except UnicodeEncodeError:
+            # 双保险：极端情况下退回全 ASCII 转义，绝不因编码杀死主循环
+            sys.stdout.write(json.dumps(resp, ensure_ascii=True) + "\n")
         sys.stdout.flush()
 
 
