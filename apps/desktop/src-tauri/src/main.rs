@@ -11,6 +11,7 @@ mod bridge;
 mod fingerprint;
 mod monthly_update;
 mod updater;
+mod window_fit;
 
 use bridge::{handle_core_cmd, BridgeState};
 use std::time::Instant;
@@ -33,6 +34,8 @@ fn main() {
         // A-03：sidecar 启动一次、常驻、崩溃自动重启 1 次
         // PM 2026-11-27：加 move——闭包需接管 started（Instant）所有权，否则 E0373
         .setup(move |app| {
+            // PM 2026-11-27（老板需求）：窗口自适应屏幕——智能开窗 + 记住窗口状态
+            window_fit::apply(app.handle());
             bridge::spawn_sidecar(app.handle().clone())?;
             report_cold_start(app.handle(), started);
             // PM 2026-11-16（F09）：月度库检查——1 号或距上次 ≥30 天静默拉 manifest，
