@@ -83,51 +83,117 @@ pub struct CoreResponse {
     pub error: Option<serde_json::Value>,
 }
 
-/// 拼出 sidecar 可执行文件名（externalBin 随平台带后缀，dev 阶段从 binaries/ 找）
+/// 拼出 sidecar 可执行文件路径
+///
+/// PM 2026-11-27（目录模式/onedir）：引擎改为 PyInstaller onedir 打包，
+/// 以 `core/bizspark-core/bizspark-core.exe` 目录形态随 resources 分发。
+/// 之前 onefile 模式每次启动解包到 %TEMP%，未签名 exe 从临时目录运行
+/// 会触发杀软（360 等）查杀——引擎刚启动即被终结、界面全空（已实测复现）。
+/// onedir 引擎常驻安装目录，不再碰 %TEMP%。
 fn sidecar_path(app: &AppHandle) -> Result<std::path::PathBuf, String> {
-    let name = if cfg!(windows) {
-        "bizspark-core.exe"
+    let rel = if cfg!(windows) {
+        std::path::Path::new("core")
+            .join("bizspark-core")
+            .join("bizspark-core.exe")
     } else {
-        "bizspark-core"
+        std::path::Path::new("core")
+            .join("bizspark-core")
+            .join("bizspark-core")
     };
-    // 开发期：apps/desktop/src-tauri/binaries/；打包后：资源目录
-    let dev = std::env::current_dir()
-        .map_err(|e| e.to_string())?
-        .join("binaries")
-        .join(name);
-    if dev.exists() {
-        return Ok(dev);
+    // 候选1：exe 同目录（NSIS 安装版：安装根目录即 resource_dir，二者等价）
+    if let Ok(exe) = std::env::current_exe() {
+        let p = exe.parent().unwrap_or(std::path::Path::new(".")).join(&rel);
+        if p.exists() {
+            return Ok(p);
+        }
     }
+    // 候选2：资源目录（安装版兜底）
     let resource = app
         .path()
         .resource_dir()
         .map_err(|e| e.to_string())?
-        .join("binaries")
-        .join(name);
+        .join(&rel);
     if resource.exists() {
         return Ok(resource);
     }
-    // PM 2026-11-27（安装版修复）：Tauri 的 externalBin 在安装包里放在安装根目录
-    //（如 C:\Program Files\Buzidea\bizspark-core.exe），不带 binaries/ 子层；
-    // 只查 binaries/ 会导致安装版壳找不到引擎、界面全空（已实测复现）。
-    let installed_root = app
-        .path()
-        .resource_dir()
+    // 候选3：工作目录（开发期：tauri dev 以 src-tauri 为 cwd）
+    let dev = std::env::current_dir()
         .map_err(|e| e.to_string())?
-        .join(name);
-    if installed_root.exists() {
-        return Ok(installed_root);
+        .join(&rel);
+    if dev.exists() {
+        return Ok(dev);
     }
-    Err(format!("sidecar not found: {}", name))
+    Err(format!("sidecar not found: {}", rel.display()))
+}
+
+/// PM 2026-11-27：引擎诊断日志。引擎的报错输出此前被丢弃（Stdio::null），
+/// 出事时无据可查；现在启动/退出/报错全部落到 appData/logs/engine.log。
+fn engine_log(app: &AppHandle, msg: &str) {
+    let dir = app
+        .path()
+        .app_data_dir()
+        .unwrap_or_else(|_| std::path::PathBuf::from("."))
+        .join("logs");
+    let _ = std::fs::create_dir_all(&dir);
+    let path = dir.join("engine.log");
+    if let Ok(mut f) = std::fs::OpenOptions::new().create(true).append(true).open(&path) {
+        let _ = writeln!(f, "[{}] {}", utc_now(), msg);
+    }
+}
+
+/// 紧凑 UTC 时间戳（自实现，避免引入 chrono）：2026-11-27T03:32:00Z 格式
+fn utc_now() -> String {
+    let secs = std::time::SystemTime::now()
+        .duration_since(std::time::UNIX_EPOCH)
+        .map(|d| d.as_secs() as i64)
+        .unwrap_or(0);
+    let days = secs.div_euclid(86_400);
+    let tod = secs.rem_euclid(86_400);
+    // Howard Hinnant civil_from_days
+    let z = days + 719_468;
+    let era = z.div_euclid(146_097);
+    let doe = z.rem_euclid(146_097);
+    let yoe = (doe - doe / 1460 + doe / 36524 - doe / 146_096) / 365;
+    let y = yoe + era * 400;
+    let doy = doe - (365 * yoe + yoe / 4 - yoe / 100);
+    let mp = (5 * doy + 2) / 153;
+    let d = doy - (153 * mp + 2) / 5 + 1;
+    let m = if mp < 10 { mp + 3 } else { mp - 9 };
+    let y = if m <= 2 { y + 1 } else { y };
+    format!(
+        "{:04}-{:02}-{:02}T{:02}:{:02}:{:02}Z",
+        y,
+        m,
+        d,
+        tod / 3600,
+        (tod % 3600) / 60,
+        tod % 60
+    )
 }
 
 /// A-03：启动 sidecar（启动一次、常驻、崩溃自动重启 1 次）
 pub fn spawn_sidecar(app: AppHandle) -> Result<(), String> {
     let path = sidecar_path(&app)?;
+    // PM 2026-11-27：引擎 stderr 落诊断日志（此前被丢弃）
+    let stderr_stdio = match app.path().app_data_dir() {
+        Ok(dir) => {
+            let log_dir = dir.join("logs");
+            let _ = std::fs::create_dir_all(&log_dir);
+            match std::fs::OpenOptions::new()
+                .create(true)
+                .append(true)
+                .open(log_dir.join("engine.log"))
+            {
+                Ok(f) => Stdio::from(f),
+                Err(_) => Stdio::null(),
+            }
+        }
+        Err(_) => Stdio::null(),
+    };
     let mut child = Command::new(&path)
         .stdin(Stdio::piped())
         .stdout(Stdio::piped())
-        .stderr(Stdio::null())
+        .stderr(stderr_stdio)
         // PM 2026-11-13（中文包）：把构建目标 locale 传给 sidecar——
         // 引擎文案（why/tags/回本提示/PDF 标题）与内容覆盖 zh_v1.json 按此切换；
         // A-08 双构建：build-mode.txt 第 1 行 target 以 "cn" 开头即 zh-CN
@@ -136,7 +202,15 @@ pub fn spawn_sidecar(app: AppHandle) -> Result<(), String> {
             if loc.is_empty() { "en-US".to_string() } else { loc }
         })
         .spawn()
-        .map_err(|e| format!("sidecar spawn failed: {}", e))?;
+        .map_err(|e| {
+            engine_log(&app, &format!("SPAWN FAILED: {} path={}", e, path.display()));
+            format!("sidecar spawn failed: {}", e)
+        })?;
+
+    engine_log(
+        &app,
+        &format!("SPAWN OK pid={} path={}", child.id(), path.display()),
+    );
 
     let stdout = child.stdout.take().ok_or("sidecar stdout unavailable")?;
     let stdin = child.stdin.take().ok_or("sidecar stdin unavailable")?;
@@ -167,6 +241,18 @@ pub fn spawn_sidecar(app: AppHandle) -> Result<(), String> {
 
 /// A-03：崩溃自动重启，仅 1 次；再次失败上报前端统一降级（F13）
 fn on_sidecar_exit(app: AppHandle) {
+    // PM 2026-11-27：记录引擎退出状态（退出码写进诊断日志）
+    let code = {
+        let mut guard = SIDECAR.lock().unwrap();
+        match guard.as_mut() {
+            Some(child) => match child.wait() {
+                Ok(st) => st.code().map(|c| c.to_string()).unwrap_or_else(|| "signal".into()),
+                Err(e) => format!("wait_err:{}", e),
+            },
+            None => "unknown".into(),
+        }
+    };
+    engine_log(&app, &format!("EXIT code={}", code));
     let mut restarts = RESTARTS.lock().unwrap();
     if *restarts >= 1 {
         *restarts += 1;
