@@ -112,11 +112,20 @@ def _safe_title(name, limit=48):
     return (s[:limit].rstrip(" .")) or "plan"
 
 
+def _stamp():
+    """PM 2026-11-27（老板需求）：导出文件名尾缀时间戳「-YYYYMMDD-HHMMSS-毫秒」，
+    同一方案反复导出不重名、不覆盖（引擎 os.replace 原本会静默覆盖旧文件）。
+    取本地时间，毫秒 3 位（datetime %f 为 6 位微秒，截前 3 位）。"""
+    from datetime import datetime
+    now = datetime.now()
+    return now.strftime("%Y%m%d-%H%M%S-") + now.strftime("%f")[:3]
+
+
 def _default_pdf_name(detail, view):
-    """默认文件名：中文版「BizSpark-方案-<标题>.pdf」，英文版沿用 id slug。"""
+    """默认文件名：中文版「Buzidea-方案-<标题>-<时间戳>.pdf」，英文版沿用 id slug + 时间戳。"""
     if rd._zh():
-        return "Buzidea-方案-%s.pdf" % _safe_title(view.get("title") or detail.get("id") or "plan")
-    return "Buzidea-Plan-%s.pdf" % _slug(detail.get("id"))
+        return "Buzidea-方案-%s-%s.pdf" % (_safe_title(view.get("title") or detail.get("id") or "plan"), _stamp())
+    return "Buzidea-Plan-%s-%s.pdf" % (_slug(detail.get("id")), _stamp())
 
 
 def _styles(base, font_reg="Helvetica", font_bold="Helvetica-Bold"):

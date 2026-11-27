@@ -84,12 +84,14 @@ def export_csv(payload):
         return None, err
 
     directory = os.path.dirname(path) if os.path.splitext(path)[1] else path
-    # PM 2026-11-14：默认文件名随语言本地化（中文「BizSpark-方案-<标题>-成本表.csv」）
+    # PM 2026-11-14：默认文件名随语言本地化（中文「Buzidea-方案-<标题>-成本表.csv」）
+    # PM 2026-11-27（老板需求）：尾缀时间戳防重名，与 PDF 命名共用 _stamp（口径一致）
     from . import detail as _rd
+    from .pdf import _stamp
     if _rd._zh():
-        out_path = os.path.join(directory, "Buzidea-方案-%s-成本表.csv" % _safe_title(detail.get("title")))
+        out_path = os.path.join(directory, "Buzidea-方案-%s-成本表-%s.csv" % (_safe_title(detail.get("title")), _stamp()))
     else:
-        out_path = os.path.join(directory, "Buzidea-Plan-%s-costs.csv" % _slug(idea_id))
+        out_path = os.path.join(directory, "Buzidea-Plan-%s-costs-%s.csv" % (_slug(idea_id), _stamp()))
 
     try:
         os.makedirs(directory, exist_ok=True)
