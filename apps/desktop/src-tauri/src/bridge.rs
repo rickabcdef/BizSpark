@@ -107,6 +107,17 @@ fn sidecar_path(app: &AppHandle) -> Result<std::path::PathBuf, String> {
     if resource.exists() {
         return Ok(resource);
     }
+    // PM 2026-11-27（安装版修复）：Tauri 的 externalBin 在安装包里放在安装根目录
+    //（如 C:\Program Files\Buzidea\bizspark-core.exe），不带 binaries/ 子层；
+    // 只查 binaries/ 会导致安装版壳找不到引擎、界面全空（已实测复现）。
+    let installed_root = app
+        .path()
+        .resource_dir()
+        .map_err(|e| e.to_string())?
+        .join(name);
+    if installed_root.exists() {
+        return Ok(installed_root);
+    }
     Err(format!("sidecar not found: {}", name))
 }
 

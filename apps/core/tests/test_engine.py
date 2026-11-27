@@ -3,6 +3,8 @@
 
 运行：cd apps/core && python -m unittest discover tests -v
 """
+import importlib
+import importlib.util  # PM 2026-11-27：Python 3.13 需显式导入才有 util 属性
 import json
 import os
 import sys

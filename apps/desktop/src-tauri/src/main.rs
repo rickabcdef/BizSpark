@@ -31,7 +31,8 @@ fn main() {
     tauri::Builder::default()
         .manage(BridgeState::default())
         // A-03：sidecar 启动一次、常驻、崩溃自动重启 1 次
-        .setup(|app| {
+        // PM 2026-11-27：加 move——闭包需接管 started（Instant）所有权，否则 E0373
+        .setup(move |app| {
             bridge::spawn_sidecar(app.handle().clone())?;
             report_cold_start(app.handle(), started);
             // PM 2026-11-16（F09）：月度库检查——1 号或距上次 ≥30 天静默拉 manifest，
@@ -70,7 +71,9 @@ fn save_export_dialog(
 ) -> Result<Option<String>, String> {
     let mut builder = app.dialog().file().set_file_name(&default_file_name);
     if !extensions.is_empty() {
-        builder = builder.add_filter("Export", &extensions);
+        // PM 2026-11-27：add_filter 需要 &[&str]，Vec<String> 转一次
+        let ext_refs: Vec<&str> = extensions.iter().map(|s| s.as_str()).collect();
+        builder = builder.add_filter("Export", &ext_refs);
     }
     Ok(builder.blocking_save_file().map(|p| p.to_string()))
 }

@@ -282,13 +282,5 @@ mod tests {
     }
 }
 
-#[cfg(windows)]
-trait CreationFlagsExt {
-    fn creation_flags(&mut self, flags: u32) -> &mut Self;
-}
-#[cfg(windows)]
-impl CreationFlagsExt for std::process::Command {
-    fn creation_flags(&mut self, flags: u32) -> &mut Self {
-        std::os::windows::process::CommandExt::creation_flags(self, flags)
-    }
-}
+// PM 2026-11-27：删除冗余的本地 CreationFlagsExt 过渡层——顶部已导入
+// std::os::windows::process::CommandExt，两套同名方法会引发 E0034 歧义。

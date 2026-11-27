@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """state.paths — F-01 统一路径封装（§2.5，负责人：F）
 
-§2.5 规定所有本地文件相对 `appDataDir/com.bizspark.desktop/`，本模块是**唯一**路径来源：
+§2.5 规定所有本地文件相对 `appDataDir/com.buzidea.desktop/`，本模块是**唯一**路径来源：
 其他模块禁止自己拼路径（A 的 Rust 层通过 get_state.paths 或启动参数取同一份）。
 
 | 用途 | 路径 |
@@ -20,7 +20,8 @@
 import os
 import sys
 
-APP_DIR_NAME = "com.bizspark.desktop"
+# PM 2026-11-27：应用标识定稿 Buzidea，与 tauri.conf.json identifier（com.buzidea.desktop）对齐
+APP_DIR_NAME = "com.buzidea.desktop"
 
 # 环境变量覆盖（A 的打包壳 / 开发期 / 测试注入；正常安装版不设置）
 ENV_APP_DATA = "BIZSPARK_APP_DATA"
@@ -40,7 +41,7 @@ def _repo_root():
 
 
 def app_data_dir(create=False):
-    """§2.5 appDataDir/com.bizspark.desktop/。Windows=%APPDATA%，macOS=Application Support。"""
+    """§2.5 appDataDir/com.buzidea.desktop/。Windows=%APPDATA%，macOS=Application Support。"""
     override = os.environ.get(ENV_APP_DATA)
     if override:
         base = override
