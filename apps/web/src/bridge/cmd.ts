@@ -93,6 +93,23 @@ export const logCrash = (code: string, version: string) => call("log_crash", { c
 
 /**
  * A-05（非 §2.4 sidecar cmd，走 A 的 Tauri 命令层）：
+ * 系统另存为对话框。返回用户选择的保存路径；取消/失败返回 null。浏览器/预览环境静默。
+ * PM 2026-11-27：Export.vue 此前从未调用它、直接给引擎传空 path（契约空=取消），
+ * 导出从未真正发生过——补上这层，导出链路才算闭合。
+ */
+export async function saveExportDialog(defaultFileName: string, extensions: string[]): Promise<string | null> {
+  const invoke = getInvoke();
+  if (!invoke) return null;
+  try {
+    const r = (await invoke("save_export_dialog", { defaultFileName, extensions })) as string | null;
+    return r || null;
+  } catch {
+    return null;
+  }
+}
+
+/**
+ * A-05（非 §2.4 sidecar cmd，走 A 的 Tauri 命令层）：
  * 用系统默认 PDF 阅读器打开本次导出的文件。浏览器/预览环境静默。
  */
 export async function openFile(path: string): Promise<void> {

@@ -5,7 +5,7 @@
 import { computed, onMounted, ref } from "vue";
 import { useRouter } from "vue-router";
 import { t } from "../i18n";
-import { exportPlan, openExportFolder, openFile } from "../bridge/cmd";
+import { exportPlan, openExportFolder, openFile, saveExportDialog } from "../bridge/cmd";
 import { renderPriceSlots } from "../bridge/price";
 import AppShell from "../components/AppShell.vue";
 import Icon from "../components/Icon.vue";
@@ -23,13 +23,25 @@ const canOpenFile = computed(() => {
 });
 
 async function runExport(): Promise<void> {
-  const r = await exportPlan(String(history.state?.ideaId || ""), "");
-  if (r) {
-    fileName.value = r.file_name || "";
-    filePath.value = r.path || "";
-    fileMeta.value = t("export.file_meta", { dir: "Documents / BizSpark", kb: Math.max(1, Math.round((r.bytes || 0) / 1024)), pages: r.pages || 1 });
-    done.value = true;
+  // PM 2026-11-27：此前直接传空 path——引擎契约空=用户取消（T-34），导出从未发生，
+  // 而本页仍渲染成功标题 → 假成功页。现按设计补齐：先弹另存对话框，再交给引擎写盘；
+  // 取消或引擎失败一律静默回详情，绝不显示假成功。
+  const ideaId = String(history.state?.ideaId || "");
+  const target = await saveExportDialog("BizSpark-Plan.pdf", ["pdf"]);
+  if (!target) {
+    router.back();
+    return;
   }
+  const r = await exportPlan(ideaId, target);
+  if (!r) {
+    router.back();
+    return;
+  }
+  fileName.value = r.file_name || "";
+  filePath.value = r.path || "";
+  const dir = filePath.value.replace(/[/\\][^/\\]+$/, "");
+  fileMeta.value = t("export.file_meta", { dir: dir || "Documents / BizSpark", kb: Math.max(1, Math.round((r.bytes || 0) / 1024)), pages: r.pages || 1 });
+  done.value = true;
 }
 
 function openPdf(): void {
