@@ -92,10 +92,26 @@ export const releaseSeat = () => call("release_seat");
 export const logCrash = (code: string, version: string) => call("log_crash", { code, version });
 
 /**
+ * PM 2026-11-27（老板需求）：默认导出目录 = 桌面\BizSpark（壳自动创建）。
+ * 导出不再弹另存框，所有文件统一落这里。失败返回 null。
+ */
+export async function getDefaultExportDir(): Promise<string | null> {
+  const invoke = getInvoke();
+  if (!invoke) return null;
+  try {
+    const r = (await invoke("default_export_dir")) as string;
+    return r || null;
+  } catch {
+    return null;
+  }
+}
+
+/**
  * A-05（非 §2.4 sidecar cmd，走 A 的 Tauri 命令层）：
  * 系统另存为对话框。返回用户选择的保存路径；取消/失败返回 null。浏览器/预览环境静默。
  * PM 2026-11-27：Export.vue 此前从未调用它、直接给引擎传空 path（契约空=取消），
  * 导出从未真正发生过——补上这层，导出链路才算闭合。
+ * PM 2026-11-27 晚：导出已改走 getDefaultExportDir，本封装保留备用。
  */
 export async function saveExportDialog(defaultFileName: string, extensions: string[]): Promise<string | null> {
   const invoke = getInvoke();

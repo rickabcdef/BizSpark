@@ -47,6 +47,7 @@ fn main() {
             handle_core_cmd,
             get_fingerprint,
             save_export_dialog,
+            default_export_dir,
             check_update_light,
             open_file,
             open_export_folder
@@ -63,6 +64,8 @@ fn get_fingerprint() -> Result<String, String> {
 
 /// A-05：系统另存为对话框（F06 导出用）。
 /// 返回用户选择的保存路径；取消返回 None。Rust 只提供系统能力，不写文案。
+/// PM 2026-11-27：导出改走 default_export_dir（桌面\BizSpark 自动落盘），
+/// 本命令保留但前端默认不再调用。
 #[tauri::command]
 fn save_export_dialog(
     app: tauri::AppHandle,
@@ -76,6 +79,21 @@ fn save_export_dialog(
         builder = builder.add_filter("Export", &ext_refs);
     }
     Ok(builder.blocking_save_file().map(|p| p.to_string()))
+}
+
+/// PM 2026-11-27（老板需求）：导出默认落点 = 桌面\BizSpark，目录不存在自动创建，
+/// 所有导出文件统一归档于此；前端不再弹另存框。桌面路径取系统 Known Folder
+/// （OneDrive 重定向的桌面也能拿到），异常时回退用户主目录。
+#[tauri::command]
+fn default_export_dir(app: tauri::AppHandle) -> Result<String, String> {
+    let base = app
+        .path()
+        .desktop_dir()
+        .or_else(|_| app.path().home_dir())
+        .map_err(|e| format!("resolve desktop dir failed: {}", e))?;
+    let dir = base.join("BizSpark");
+    std::fs::create_dir_all(&dir).map_err(|e| format!("create export dir failed: {}", e))?;
+    Ok(dir.to_string_lossy().to_string())
 }
 
 /// A-05：用系统默认程序打开本次导出的 PDF（F06 导出后直接查看）。

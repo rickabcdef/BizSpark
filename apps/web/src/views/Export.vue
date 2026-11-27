@@ -5,7 +5,7 @@
 import { computed, onMounted, ref } from "vue";
 import { useRouter } from "vue-router";
 import { t } from "../i18n";
-import { exportPlan, openExportFolder, openFile, saveExportDialog } from "../bridge/cmd";
+import { exportPlan, getDefaultExportDir, openExportFolder, openFile } from "../bridge/cmd";
 import { renderPriceSlots } from "../bridge/price";
 import AppShell from "../components/AppShell.vue";
 import Icon from "../components/Icon.vue";
@@ -23,24 +23,23 @@ const canOpenFile = computed(() => {
 });
 
 async function runExport(): Promise<void> {
-  // PM 2026-11-27：此前直接传空 path——引擎契约空=用户取消（T-34），导出从未发生，
-  // 而本页仍渲染成功标题 → 假成功页。现按设计补齐：先弹另存对话框，再交给引擎写盘；
-  // 取消或引擎失败一律静默回详情，绝不显示假成功。
+  // PM 2026-11-27 晚（老板需求）：去掉另存弹框，导出统一自动落桌面\BizSpark
+  // （壳负责建目录），文件名由引擎按语言自动命名；失败静默回详情，绝不显示假成功。
   const ideaId = String(history.state?.ideaId || "");
-  const target = await saveExportDialog("BizSpark-Plan.pdf", ["pdf"]);
-  if (!target) {
+  const dir = await getDefaultExportDir();
+  if (!dir) {
     router.back();
     return;
   }
-  const r = await exportPlan(ideaId, target);
+  const r = await exportPlan(ideaId, dir);
   if (!r) {
     router.back();
     return;
   }
   fileName.value = r.file_name || "";
   filePath.value = r.path || "";
-  const dir = filePath.value.replace(/[/\\][^/\\]+$/, "");
-  fileMeta.value = t("export.file_meta", { dir: dir || "Documents / BizSpark", kb: Math.max(1, Math.round((r.bytes || 0) / 1024)), pages: r.pages || 1 });
+  const parent = filePath.value.replace(/[/\\][^/\\]+$/, "");
+  fileMeta.value = t("export.file_meta", { dir: parent || dir, kb: Math.max(1, Math.round((r.bytes || 0) / 1024)), pages: r.pages || 1 });
   done.value = true;
 }
 
