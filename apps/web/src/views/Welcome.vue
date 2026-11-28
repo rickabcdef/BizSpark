@@ -7,6 +7,7 @@ import { computed, onMounted } from "vue";
 import { locale, t } from "../i18n";
 import { renderPriceSlots } from "../bridge/price";
 import AppShell from "../components/AppShell.vue";
+import BrandLogo from "../components/BrandLogo.vue";
 import Icon from "../components/Icon.vue";
 
 onMounted(renderPriceSlots);
@@ -20,9 +21,9 @@ void isEn;
     <div class="content">
       <div class="topbar">
         <div class="brand">
-          <div class="brand-badge">
-            <img src="/buzidea-logo.png" alt="Buzidea" style="width:27px;height:27px;border-radius:6px;display:block" />
-          </div>
+          <!-- PM 2026-11-28（老板需求）：换共用 BrandLogo——与侧边栏同貌（同比例同圆角），
+               恢复饱满度；原内联样式散装写法删除 -->
+          <BrandLogo :size="48" />
           <div>
             <div class="brand-name">Buzidea</div>
             <div class="brand-sub">{{ t("brand.tag") }}</div>

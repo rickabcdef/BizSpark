@@ -7,12 +7,10 @@ import { computed, onMounted, ref, watch } from "vue";
 import { useRoute } from "vue-router";
 import { t } from "../i18n";
 import { checkLibrary, diagnose, getState } from "../bridge/cmd";
+import BrandLogo from "./BrandLogo.vue";
 import Icon from "./Icon.vue";
 
 const route = useRoute();
-
-// PM 2026-11-27（老板定稿）：侧边栏 A 图标加载失败时兜底字母 B（界面永不空）
-const logoBroken = ref(false);
 
 // 库版本行跟随实际库版本；check_library 失败静默保留回退值
 const libVer = ref<string>("2026.11");
@@ -66,10 +64,9 @@ void detailTo;
       <div class="side-brand">
         <!-- PM 2026-11-27（老板定稿）：全 A 制——侧边栏徽章用 A 图标（白底容器衬托），
              任务栏/商店同为 A 图标，全站一张品牌脸；图片加载异常时兜底字母 B -->
-        <span class="sb-badge">
-          <img v-if="!logoBroken" src="/buzidea-logo.png" alt="Buzidea" @error="logoBroken = true" />
-          <template v-else>B</template>
-        </span>
+        <!-- PM 2026-11-28（老板需求）：换共用 BrandLogo——与首页同貌（同比例同圆角），
+             等比缩小；兜底字母 B 移入组件 -->
+        <BrandLogo :size="34" />
         <span class="sb-name">Buzidea</span>
       </div>
       <router-link

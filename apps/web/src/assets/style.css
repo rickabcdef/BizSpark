@@ -177,8 +177,7 @@ button{font-family:inherit;cursor:pointer;border:0;background:none;color:inherit
 .tab.active{color:var(--accent);font-weight:700}
 .tab .ico{width:22px;height:22px;flex:0 0 auto}
 .side-brand{display:none}
-.sb-badge{width:34px;height:34px;border-radius:9px;background:#fff;color:var(--accent);font-weight:900;font-size:18px;display:flex;align-items:center;justify-content:center;flex:0 0 auto;border:1px solid rgba(255,255,255,.18);overflow:hidden}
-.sb-badge img{width:27px;height:27px;border-radius:6px;display:block}
+/* PM 2026-11-28：sb-badge 徽章样式删除，改用共用 BrandLogo 组件（components/BrandLogo.vue） */
 .sb-name{color:#fff;font-size:17px;font-weight:800;letter-spacing:-.01em}
 
 /* ---------- 成功状态 / 提示条 ---------- */
@@ -218,7 +217,7 @@ button{font-family:inherit;cursor:pointer;border:0;background:none;color:inherit
 /* 品牌行嵌在 .content 内：左右边距交给 content，不再叠加 topbar 自身左右 padding，使 badge 与下方正文左基线对齐 */
 .hero .topbar{padding-left:0;padding-right:0}
 .hero .brand{display:flex;align-items:center;gap:12px}
-.brand-badge{width:48px;height:48px;border-radius:12px;background:#fff;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:26px;color:var(--accent);border:1px solid rgba(0,0,0,.08);overflow:hidden}
+/* PM 2026-11-28：brand-badge 样式删除，改用共用 BrandLogo 组件（components/BrandLogo.vue） */
 .brand-name{font-size:22px;font-weight:800}
 .brand-sub{font-size:13px;color:rgba(255,255,255,.65)}
 .version{color:rgba(255,255,255,.55);font-size:15px}
@@ -425,12 +424,15 @@ button{font-family:inherit;cursor:pointer;border:0;background:none;color:inherit
 /* 装饰元素只读，不冒充控件 */
 .hero-meta,.chip,.side-ver,.badge-line,.crumb,.state-pill,.bookmark{user-select:none;-webkit-user-select:none}
 
-/* ---------- 宽屏（电脑端）：同一套导航转左侧竖向栏，内容并入 920px 居中 ---------- */
+/* ---------- 宽屏（电脑端）：同一套导航转左侧竖向栏，内容并入 920px 居中 ----------
+   PM 2026-11-28（老板需求）：侧边栏焊死——.page 固定为窗口高度，.main 内部滚动，
+   侧边栏不再 sticky（sticky 逐帧重算在 WebView2 上产生 1px 抖动，滚动时 logo 上下抖）。
+   焊死后侧边栏物理上不参与滚动，想抖都没有机制。窄屏分支不受影响。 */
 @media (min-width:1024px){
-  .page{max-width:1280px;display:grid;grid-template-columns:224px 1fr;align-items:start;padding-bottom:0}
-  .main{grid-column:2;grid-row:1 / -1;min-width:0}
+  .page{max-width:1280px;display:grid;grid-template-columns:224px 1fr;align-items:stretch;padding-bottom:0;height:100vh;min-height:0}
+  .main{grid-column:2;grid-row:1 / -1;min-width:0;height:100vh;overflow-y:auto;overflow-x:hidden}
   .tabbar{
-    grid-column:1;grid-row:1 / -1;position:sticky;top:0;left:auto;transform:none;
+    grid-column:1;grid-row:1 / -1;position:relative;top:auto;left:auto;transform:none;
     width:auto;max-width:none;height:100vh;flex:0 0 auto;flex-direction:column;
     align-items:stretch;justify-content:flex-start;gap:6px;padding:20px 16px;
     border-radius:0;box-shadow:none;
