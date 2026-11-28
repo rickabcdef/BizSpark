@@ -3,6 +3,10 @@
 //!    （根因：老板机器 1366×768，旧配置硬开 900 高 → 窗口底边伸到屏幕外，滚不到底）
 //! ② 记住窗口状态——关闭时存位置/尺寸到 app_data_dir，下次启动恢复；
 //!    恢复值一律夹回当前屏幕范围（换小屏显示器也不会开到屏幕外）
+//! ③ 先定尺寸后显示（PM 2026-11-28，老板需求方案：消灭"大窗闪缩"）——
+//!    窗口 visible:false 隐藏创建（tauri.conf.json），本模块测屏/恢复/夹回全部做完
+//!    才调用一次 show()。用户看到的第一帧就是正确尺寸，无任何可见调整过程
+//!    （豆包/千问同款时序：hidden 创建 → 设定 → 一次性 show）。
 //! Rust 层只做系统能力，不写界面文案（§2.2）。
 
 use serde::{Deserialize, Serialize};
@@ -44,6 +48,11 @@ pub fn apply(app: &tauri::AppHandle) {
         let _ = win.set_size(PhysicalSize::new(fit_w, fit_h));
         let _ = win.center();
     }
+
+    // ③ 尺寸/位置全部就绪后才显示——任何兜底分支都汇到这里，
+    //    show 无条件执行，绝不出现"点了图标窗口不出现"。
+    let _ = win.show();
+    let _ = win.set_focus();
 
     // ② 关闭时保存窗口状态
     let win2 = win.clone();
